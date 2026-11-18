@@ -1,0 +1,199 @@
+{
+ "session": {
+  "session_id": "ses_chw1p0nggm",
+  "start_ts": "2026-11-11T13:26:30.000Z",
+  "duration_s": 14,
+  "request_count": 10,
+  "page_count": 3,
+  "identity_tier": "suspected",
+  "operator": "unknown",
+  "agent_name": "Unidentified browsing agent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 0.89,
+  "entry_page": "/",
+  "exit_page": "/api/cart",
+  "max_stage": "S4",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B05",
+  "terminal_blocker_name": "Pincode wall",
+  "blocker_confidence": 0.68,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 89,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 HeadlessChrome/130.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "req_zdh107z993",
+   "ts": "2026-11-11T13:26:30.000Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 210,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_hvm2s6fpd8",
+   "ts": "2026-11-11T13:26:30.874Z",
+   "offset_ms": 874,
+   "method": "GET",
+   "path": "/search?q=block",
+   "status": 200,
+   "duration_ms": 294,
+   "page_type": "listing",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "req_d3306e3g9m",
+   "ts": "2026-11-11T13:26:31.635Z",
+   "offset_ms": 1635,
+   "method": "GET",
+   "path": "/p/block-print-dupatta",
+   "status": 200,
+   "duration_ms": 238,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_d7g81z1fk6",
+   "ts": "2026-11-11T13:26:32.079Z",
+   "offset_ms": 2079,
+   "method": "GET",
+   "path": "/static/app.4f2c.js",
+   "status": 200,
+   "duration_ms": 71,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_w0mf46b7d9",
+   "ts": "2026-11-11T13:26:34.050Z",
+   "offset_ms": 4050,
+   "method": "POST",
+   "path": "/beacon",
+   "status": 204,
+   "duration_ms": 24,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_gmm0v5hk8z",
+   "ts": "2026-11-11T13:26:37.357Z",
+   "offset_ms": 7357,
+   "method": "GET",
+   "path": "/api/products/block-print-dupatta/variants?size=9",
+   "status": 200,
+   "duration_ms": 161,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_nch5qbngz5",
+   "ts": "2026-11-11T13:26:38.439Z",
+   "offset_ms": 8439,
+   "method": "GET",
+   "path": "/api/serviceability?pincode=500001",
+   "status": 200,
+   "duration_ms": 203,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S4",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_qb6bjqfsrs",
+   "ts": "2026-11-11T13:26:39.639Z",
+   "offset_ms": 9639,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 138,
+   "page_type": "api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "req_cpvdbvvpek",
+   "ts": "2026-11-11T13:26:41.639Z",
+   "offset_ms": 11639,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 109,
+   "page_type": "api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "req_2wdwygjh1d",
+   "ts": "2026-11-11T13:26:43.639Z",
+   "offset_ms": 13639,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 165,
+   "page_type": "api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-11T13:26:30.000Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-11T13:26:31.635Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-11T13:26:37.357Z"
+  },
+  {
+   "stage_id": "S4",
+   "first_reached_ts": "2026-11-11T13:26:38.439Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B05",
+   "name": "Pincode wall",
+   "stage": "S5",
+   "confidence": 0.68,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "req_2wdwygjh1d",
+     "summary": "POST /api/cart → 409 PINCODE_REQUIRED (×3) · session ended 6 s later"
+    }
+   ]
+  }
+ ],
+ "replay_ids": [
+  "rpl_b05_b"
+ ]
+}

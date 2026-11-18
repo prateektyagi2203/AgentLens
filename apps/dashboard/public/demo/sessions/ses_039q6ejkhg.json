@@ -1,0 +1,211 @@
+{
+ "session": {
+  "session_id": "ses_039q6ejkhg",
+  "start_ts": "2026-11-18T12:19:42.000Z",
+  "duration_s": 26,
+  "request_count": 11,
+  "page_count": 5,
+  "identity_tier": "declared",
+  "operator": "Google",
+  "agent_name": "Gemini agent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 0.9,
+  "entry_page": "/",
+  "exit_page": "/order/confirmed/ORD-39318",
+  "max_stage": "S8",
+  "converted": true,
+  "order_value_inr": 2100,
+  "terminal_blocker_id": null,
+  "terminal_blocker_name": null,
+  "blocker_confidence": null,
+  "diagnosis_method": "none"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": null,
+  "user_agent": "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/131.0 Mobile Safari/537.36 Google-Agent",
+  "ip_match": true
+ },
+ "requests": [
+  {
+   "request_id": "req_6fk0861aen",
+   "ts": "2026-11-18T12:19:42.000Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 149,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_pr3kd2hzmg",
+   "ts": "2026-11-18T12:19:43.872Z",
+   "offset_ms": 1872,
+   "method": "GET",
+   "path": "/search?q=block",
+   "status": 200,
+   "duration_ms": 160,
+   "page_type": "listing",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "req_kkrs706wm9",
+   "ts": "2026-11-18T12:19:44.449Z",
+   "offset_ms": 2449,
+   "method": "GET",
+   "path": "/p/block-print-dupatta",
+   "status": 200,
+   "duration_ms": 296,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_0bhjt08v8n",
+   "ts": "2026-11-18T12:19:46.400Z",
+   "offset_ms": 4400,
+   "method": "GET",
+   "path": "/static/app.4f2c.js",
+   "status": 200,
+   "duration_ms": 82,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_q49pjhqkd7",
+   "ts": "2026-11-18T12:19:48.940Z",
+   "offset_ms": 6940,
+   "method": "POST",
+   "path": "/beacon",
+   "status": 204,
+   "duration_ms": 32,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_1ak3rvp5x8",
+   "ts": "2026-11-18T12:19:52.362Z",
+   "offset_ms": 10362,
+   "method": "GET",
+   "path": "/api/products/block-print-dupatta/variants?size=9",
+   "status": 200,
+   "duration_ms": 83,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_ayz75mh22t",
+   "ts": "2026-11-18T12:19:55.586Z",
+   "offset_ms": 13586,
+   "method": "GET",
+   "path": "/api/serviceability?pincode=411001",
+   "status": 200,
+   "duration_ms": 206,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S4",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_vegwvbg943",
+   "ts": "2026-11-18T12:19:58.984Z",
+   "offset_ms": 16984,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 201,
+   "duration_ms": 265,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S5",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_wj580v4bwm",
+   "ts": "2026-11-18T12:20:02.268Z",
+   "offset_ms": 20268,
+   "method": "GET",
+   "path": "/checkout",
+   "status": 200,
+   "duration_ms": 180,
+   "page_type": "checkout",
+   "error_code": null,
+   "stage_id": "S6",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_45r85cxqvw",
+   "ts": "2026-11-18T12:20:05.829Z",
+   "offset_ms": 23829,
+   "method": "POST",
+   "path": "/api/checkout",
+   "status": 201,
+   "duration_ms": 227,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S7",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_vb9cd16jkm",
+   "ts": "2026-11-18T12:20:07.527Z",
+   "offset_ms": 25527,
+   "method": "GET",
+   "path": "/order/confirmed/ORD-39318",
+   "status": 200,
+   "duration_ms": 158,
+   "page_type": "order",
+   "error_code": null,
+   "stage_id": "S8",
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-18T12:19:42.000Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-18T12:19:44.449Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-18T12:19:52.362Z"
+  },
+  {
+   "stage_id": "S4",
+   "first_reached_ts": "2026-11-18T12:19:55.586Z"
+  },
+  {
+   "stage_id": "S5",
+   "first_reached_ts": "2026-11-18T12:19:58.984Z"
+  },
+  {
+   "stage_id": "S6",
+   "first_reached_ts": "2026-11-18T12:20:02.268Z"
+  },
+  {
+   "stage_id": "S7",
+   "first_reached_ts": "2026-11-18T12:20:05.829Z"
+  },
+  {
+   "stage_id": "S8",
+   "first_reached_ts": "2026-11-18T12:20:07.527Z"
+  }
+ ],
+ "fired_rules": [],
+ "replay_ids": []
+}

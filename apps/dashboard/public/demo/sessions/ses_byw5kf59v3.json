@@ -1,0 +1,99 @@
+{
+ "session": {
+  "session_id": "ses_byw5kf59v3",
+  "start_ts": "2026-11-11T11:25:45.000Z",
+  "duration_s": 3,
+  "request_count": 3,
+  "page_count": 3,
+  "identity_tier": "declared",
+  "operator": "Perplexity",
+  "agent_name": "Perplexity-User",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.9,
+  "entry_page": "/",
+  "exit_page": "/p/leather-kolhapuri-sandal",
+  "max_stage": "S1",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B03",
+  "terminal_blocker_name": "JS-only price and stock",
+  "blocker_confidence": 0.83,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": null,
+  "user_agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Perplexity-User/1.0; +https://perplexity.ai/perplexity-user)",
+  "ip_match": true
+ },
+ "requests": [
+  {
+   "request_id": "req_s4fztps3qv",
+   "ts": "2026-11-11T11:25:45.000Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 167,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_70nmmsrf2m",
+   "ts": "2026-11-11T11:25:47.010Z",
+   "offset_ms": 2010,
+   "method": "GET",
+   "path": "/c/sneakers",
+   "status": 200,
+   "duration_ms": 332,
+   "page_type": "listing",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "req_6bg96wb4yw",
+   "ts": "2026-11-11T11:25:48.434Z",
+   "offset_ms": 3434,
+   "method": "GET",
+   "path": "/p/leather-kolhapuri-sandal",
+   "status": 200,
+   "duration_ms": 331,
+   "page_type": "pdp",
+   "error_code": "PRICE_NOT_IN_HTML",
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-11T11:25:45.000Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B03",
+   "name": "JS-only price and stock",
+   "stage": "S2",
+   "confidence": 0.83,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "site_check",
+     "check": "pdp_ssr_price",
+     "result": "missing"
+    },
+    {
+     "type": "request",
+     "request_id": "req_6bg96wb4yw",
+     "summary": "GET /p/leather-kolhapuri-sandal → 200 · fetched and ended (no JavaScript executed)"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

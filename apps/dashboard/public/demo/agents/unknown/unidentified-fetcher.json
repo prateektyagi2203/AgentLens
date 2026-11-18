@@ -1,0 +1,256 @@
+{
+ "window": {
+  "from": "2026-11-05",
+  "to": "2026-11-11",
+  "days": 7
+ },
+ "agent": {
+  "operator": "unknown",
+  "agent_name": "Unidentified fetcher",
+  "agent_class": "user_fetcher",
+  "sessions": 190,
+  "share_of_agent_sessions": 0.045838359469240045,
+  "pages_per_session": 2.6,
+  "conversion": 0.03684210526315789,
+  "tier_mix": {
+   "verified": 0,
+   "declared": 0,
+   "suspected": 1
+  },
+  "top_blocker": {
+   "blocker_id": "B03",
+   "name": "JS-only price and stock",
+   "share_of_failed": 0.5081967213114754
+  },
+  "signature_status_counts": {
+   "valid": 0,
+   "invalid_sig": 15,
+   "expired": 0,
+   "unknown_key": 0,
+   "fetch_failed": 0,
+   "none": 175
+  },
+  "last_seen": "2026-11-11T18:42:00Z"
+ },
+ "identity": {
+  "user_agent_example": "python-requests/2.32",
+  "signature_agent": null,
+  "ip_match_rate": null,
+  "avg_identity_confidence": 0.58
+ },
+ "trend": [
+  {
+   "date": "2026-11-05",
+   "sessions": 126,
+   "conversion": 0.03968253968253968
+  },
+  {
+   "date": "2026-11-06",
+   "sessions": 133,
+   "conversion": 0.03759398496240601
+  },
+  {
+   "date": "2026-11-07",
+   "sessions": 110,
+   "conversion": 0.03636363636363636
+  },
+  {
+   "date": "2026-11-08",
+   "sessions": 99,
+   "conversion": 0.04040404040404041
+  },
+  {
+   "date": "2026-11-09",
+   "sessions": 130,
+   "conversion": 0.038461538461538464
+  },
+  {
+   "date": "2026-11-10",
+   "sessions": 139,
+   "conversion": 0.03597122302158273
+  },
+  {
+   "date": "2026-11-11",
+   "sessions": 118,
+   "conversion": 0.03389830508474576
+  }
+ ],
+ "blockers": [
+  {
+   "blocker_id": "B03",
+   "name": "JS-only price and stock",
+   "sessions": 93,
+   "share_of_failed": 0.5081967213114754
+  },
+  {
+   "blocker_id": "B99",
+   "name": "Unknown",
+   "sessions": 35,
+   "share_of_failed": 0.1912568306010929
+  },
+  {
+   "blocker_id": "B09",
+   "name": "Size guide image-only",
+   "sessions": 20,
+   "share_of_failed": 0.1092896174863388
+  },
+  {
+   "blocker_id": "B08",
+   "name": "Out-of-stock dead end",
+   "sessions": 9,
+   "share_of_failed": 0.04918032786885246
+  },
+  {
+   "blocker_id": "B01",
+   "name": "Bot wall / WAF block",
+   "sessions": 7,
+   "share_of_failed": 0.03825136612021858
+  },
+  {
+   "blocker_id": "B04",
+   "name": "Missing structured data",
+   "sessions": 7,
+   "share_of_failed": 0.03825136612021858
+  },
+  {
+   "blocker_id": "B12",
+   "name": "Rate limited",
+   "sessions": 7,
+   "share_of_failed": 0.03825136612021858
+  },
+  {
+   "blocker_id": "B13",
+   "name": "Slow response / timeout",
+   "sessions": 5,
+   "share_of_failed": 0.0273224043715847
+  }
+ ],
+ "recent_sessions": [
+  {
+   "session_id": "ses_2vg371ep9t",
+   "start_ts": "2026-11-10T04:48:18.000Z",
+   "duration_s": 6,
+   "request_count": 4,
+   "page_count": 3,
+   "identity_tier": "suspected",
+   "operator": "unknown",
+   "agent_name": "Unidentified fetcher",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.77,
+   "entry_page": "/",
+   "exit_page": "/api/products/cotton-linen-shirt/variants?size=9",
+   "max_stage": "S3",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B99",
+   "terminal_blocker_name": "Unknown",
+   "blocker_confidence": null,
+   "diagnosis_method": "none"
+  },
+  {
+   "session_id": "ses_mvctwcds3d",
+   "start_ts": "2026-11-09T06:02:39.000Z",
+   "duration_s": 6,
+   "request_count": 3,
+   "page_count": 3,
+   "identity_tier": "suspected",
+   "operator": "unknown",
+   "agent_name": "Unidentified fetcher",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.68,
+   "entry_page": "/",
+   "exit_page": "/p/block-print-dupatta",
+   "max_stage": "S1",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B03",
+   "terminal_blocker_name": "JS-only price and stock",
+   "blocker_confidence": 0.89,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_xphzzet47x",
+   "start_ts": "2026-11-07T14:54:19.000Z",
+   "duration_s": 3,
+   "request_count": 2,
+   "page_count": 2,
+   "identity_tier": "suspected",
+   "operator": "unknown",
+   "agent_name": "Unidentified fetcher",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.69,
+   "entry_page": "/c/sneakers",
+   "exit_page": "/p/leather-kolhapuri-sandal",
+   "max_stage": "S1",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B03",
+   "terminal_blocker_name": "JS-only price and stock",
+   "blocker_confidence": 0.66,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_03f9mretan",
+   "start_ts": "2026-11-07T12:57:52.000Z",
+   "duration_s": 5,
+   "request_count": 3,
+   "page_count": 2,
+   "identity_tier": "suspected",
+   "operator": "unknown",
+   "agent_name": "Unidentified fetcher",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.81,
+   "entry_page": "/",
+   "exit_page": "/c/sneakers",
+   "max_stage": "S1",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B13",
+   "terminal_blocker_name": "Slow response / timeout",
+   "blocker_confidence": 0.78,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_1ntp9d0rjw",
+   "start_ts": "2026-11-06T13:38:49.000Z",
+   "duration_s": 4,
+   "request_count": 3,
+   "page_count": 2,
+   "identity_tier": "suspected",
+   "operator": "unknown",
+   "agent_name": "Unidentified fetcher",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.88,
+   "entry_page": "/",
+   "exit_page": "/c/sneakers",
+   "max_stage": "S1",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B13",
+   "terminal_blocker_name": "Slow response / timeout",
+   "blocker_confidence": 0.89,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_g48dwpasds",
+   "start_ts": "2026-11-06T05:57:51.000Z",
+   "duration_s": 3,
+   "request_count": 2,
+   "page_count": 2,
+   "identity_tier": "suspected",
+   "operator": "unknown",
+   "agent_name": "Unidentified fetcher",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.83,
+   "entry_page": "/search?q=white",
+   "exit_page": "/p/white-court-sneaker",
+   "max_stage": "S1",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B03",
+   "terminal_blocker_name": "JS-only price and stock",
+   "blocker_confidence": 0.71,
+   "diagnosis_method": "rule"
+  }
+ ]
+}

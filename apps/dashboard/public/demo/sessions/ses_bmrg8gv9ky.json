@@ -1,0 +1,171 @@
+{
+ "session": {
+  "session_id": "ses_bmrg8gv9ky",
+  "start_ts": "2026-11-08T15:21:49.000Z",
+  "duration_s": 15,
+  "request_count": 8,
+  "page_count": 2,
+  "identity_tier": "suspected",
+  "operator": "unknown",
+  "agent_name": "Unidentified browsing agent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 0.71,
+  "entry_page": "/c/sneakers",
+  "exit_page": "/api/cart",
+  "max_stage": "S4",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B05",
+  "terminal_blocker_name": "Pincode wall",
+  "blocker_confidence": 0.8,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 71,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 HeadlessChrome/130.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "req_yvbgarj37c",
+   "ts": "2026-11-08T15:21:49.000Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/c/sneakers",
+   "status": 200,
+   "duration_ms": 315,
+   "page_type": "listing",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_v1s5tq8n8h",
+   "ts": "2026-11-08T15:21:51.821Z",
+   "offset_ms": 2821,
+   "method": "GET",
+   "path": "/p/cotton-linen-shirt",
+   "status": 200,
+   "duration_ms": 361,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_2h765e2qjq",
+   "ts": "2026-11-08T15:21:55.102Z",
+   "offset_ms": 6102,
+   "method": "GET",
+   "path": "/static/app.4f2c.js",
+   "status": 200,
+   "duration_ms": 68,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_pw3keh9yts",
+   "ts": "2026-11-08T15:21:58.252Z",
+   "offset_ms": 9252,
+   "method": "POST",
+   "path": "/beacon",
+   "status": 204,
+   "duration_ms": 38,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_1yagc8rgys",
+   "ts": "2026-11-08T15:21:59.363Z",
+   "offset_ms": 10363,
+   "method": "GET",
+   "path": "/api/products/cotton-linen-shirt/variants?size=9",
+   "status": 200,
+   "duration_ms": 170,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_xqzjb27q29",
+   "ts": "2026-11-08T15:22:00.473Z",
+   "offset_ms": 11473,
+   "method": "GET",
+   "path": "/api/serviceability?pincode=400001",
+   "status": 200,
+   "duration_ms": 204,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S4",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_rvkwjx6182",
+   "ts": "2026-11-08T15:22:01.673Z",
+   "offset_ms": 12673,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 108,
+   "page_type": "api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "req_y466qqrn4f",
+   "ts": "2026-11-08T15:22:03.673Z",
+   "offset_ms": 14673,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 106,
+   "page_type": "api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-08T15:21:49.000Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-08T15:21:51.821Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-08T15:21:59.363Z"
+  },
+  {
+   "stage_id": "S4",
+   "first_reached_ts": "2026-11-08T15:22:00.473Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B05",
+   "name": "Pincode wall",
+   "stage": "S5",
+   "confidence": 0.8,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "req_y466qqrn4f",
+     "summary": "POST /api/cart → 409 PINCODE_REQUIRED (×2) · session ended 6 s later"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

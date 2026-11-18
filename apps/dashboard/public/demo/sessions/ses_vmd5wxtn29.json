@@ -1,0 +1,198 @@
+{
+ "session": {
+  "session_id": "ses_vmd5wxtn29",
+  "start_ts": "2026-11-07T03:19:37.000Z",
+  "duration_s": 18,
+  "request_count": 9,
+  "page_count": 2,
+  "identity_tier": "declared",
+  "operator": "OpenAI",
+  "agent_name": "ChatGPT agent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 0.9,
+  "entry_page": "/search?q=cotton",
+  "exit_page": "/api/cart",
+  "max_stage": "S4",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B05",
+  "terminal_blocker_name": "Pincode wall",
+  "blocker_confidence": 0.95,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": null,
+  "user_agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; ChatGPT-Agent/1.0)",
+  "ip_match": true
+ },
+ "requests": [
+  {
+   "request_id": "req_pthg52ev75",
+   "ts": "2026-11-07T03:19:37.000Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/search?q=cotton",
+   "status": 200,
+   "duration_ms": 308,
+   "page_type": "listing",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_pcxfbq8nbv",
+   "ts": "2026-11-07T03:19:39.194Z",
+   "offset_ms": 2194,
+   "method": "GET",
+   "path": "/p/cotton-linen-shirt",
+   "status": 200,
+   "duration_ms": 193,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_qcnk34nb38",
+   "ts": "2026-11-07T03:19:42.503Z",
+   "offset_ms": 5503,
+   "method": "GET",
+   "path": "/static/app.4f2c.js",
+   "status": 200,
+   "duration_ms": 57,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_6mx81qsehd",
+   "ts": "2026-11-07T03:19:46.200Z",
+   "offset_ms": 9200,
+   "method": "POST",
+   "path": "/beacon",
+   "status": 204,
+   "duration_ms": 37,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_vwfee2ws4e",
+   "ts": "2026-11-07T03:19:49.294Z",
+   "offset_ms": 12294,
+   "method": "GET",
+   "path": "/api/products/cotton-linen-shirt/variants?size=9",
+   "status": 200,
+   "duration_ms": 93,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_rk1z3tgh0w",
+   "ts": "2026-11-07T03:19:49.783Z",
+   "offset_ms": 12783,
+   "method": "GET",
+   "path": "/api/serviceability?pincode=560001",
+   "status": 200,
+   "duration_ms": 125,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S4",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_74hpgc33kj",
+   "ts": "2026-11-07T03:19:50.983Z",
+   "offset_ms": 13983,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 130,
+   "page_type": "api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "req_szvbx3h49v",
+   "ts": "2026-11-07T03:19:52.983Z",
+   "offset_ms": 15983,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 191,
+   "page_type": "api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "req_ygq3h6tfrb",
+   "ts": "2026-11-07T03:19:54.983Z",
+   "offset_ms": 17983,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 196,
+   "page_type": "api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-07T03:19:37.000Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-07T03:19:39.194Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-07T03:19:49.294Z"
+  },
+  {
+   "stage_id": "S4",
+   "first_reached_ts": "2026-11-07T03:19:49.783Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B05",
+   "name": "Pincode wall",
+   "stage": "S5",
+   "confidence": 0.95,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "req_ygq3h6tfrb",
+     "summary": "POST /api/cart → 409 PINCODE_REQUIRED (×3) · session ended 7 s later"
+    }
+   ]
+  },
+  {
+   "blocker_id": "B07",
+   "name": "App-download interstitial",
+   "stage": "S2",
+   "confidence": 0.41,
+   "is_terminal": false,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "req_pcxfbq8nbv",
+     "summary": "Overlay detected on the landing page (no interaction for 12 s)"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

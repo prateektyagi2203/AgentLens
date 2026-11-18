@@ -1,0 +1,184 @@
+{
+ "session": {
+  "session_id": "ses_hbffmhdjaz",
+  "start_ts": "2026-11-09T08:04:49.000Z",
+  "duration_s": 19,
+  "request_count": 9,
+  "page_count": 3,
+  "identity_tier": "verified",
+  "operator": "TestOperator",
+  "agent_name": "AgentLens Test Agent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 1,
+  "entry_page": "/search?q=white",
+  "exit_page": "/api/otp/send",
+  "max_stage": "S4",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B06",
+  "terminal_blocker_name": "Login / OTP wall before cart",
+  "blocker_confidence": 0.8,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "valid",
+  "signature_agent": "https://agents.desithreads.test",
+  "suspicion_score": null,
+  "user_agent": "AgentLens-Synth/1.0 (+https://agents.desithreads.test)",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "req_v2cdnpvxv7",
+   "ts": "2026-11-09T08:04:49.000Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/search?q=white",
+   "status": 200,
+   "duration_ms": 283,
+   "page_type": "listing",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_kjtmfkn0x4",
+   "ts": "2026-11-09T08:04:52.641Z",
+   "offset_ms": 3641,
+   "method": "GET",
+   "path": "/p/white-court-sneaker",
+   "status": 200,
+   "duration_ms": 277,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_a1qyxnm3vs",
+   "ts": "2026-11-09T08:04:53.851Z",
+   "offset_ms": 4851,
+   "method": "GET",
+   "path": "/static/app.4f2c.js",
+   "status": 200,
+   "duration_ms": 67,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_s2czve2kk1",
+   "ts": "2026-11-09T08:04:57.330Z",
+   "offset_ms": 8330,
+   "method": "POST",
+   "path": "/beacon",
+   "status": 204,
+   "duration_ms": 15,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_3p5a1n0dmq",
+   "ts": "2026-11-09T08:05:01.212Z",
+   "offset_ms": 12212,
+   "method": "GET",
+   "path": "/api/products/white-court-sneaker/variants?size=9",
+   "status": 200,
+   "duration_ms": 75,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_w4tpxr70rp",
+   "ts": "2026-11-09T08:05:03.841Z",
+   "offset_ms": 14841,
+   "method": "GET",
+   "path": "/api/serviceability?pincode=560001",
+   "status": 200,
+   "duration_ms": 80,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S4",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_4ajrzv73wj",
+   "ts": "2026-11-09T08:05:05.027Z",
+   "offset_ms": 16027,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 401,
+   "duration_ms": 90,
+   "page_type": "api",
+   "error_code": "UNAUTHENTICATED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "req_5hc46j8zsb",
+   "ts": "2026-11-09T08:05:06.662Z",
+   "offset_ms": 17662,
+   "method": "GET",
+   "path": "/login",
+   "status": 200,
+   "duration_ms": 119,
+   "page_type": "login",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "req_0d1z96q2b4",
+   "ts": "2026-11-09T08:05:07.815Z",
+   "offset_ms": 18815,
+   "method": "POST",
+   "path": "/api/otp/send",
+   "status": 200,
+   "duration_ms": 592,
+   "page_type": "api",
+   "error_code": "OTP_SENT_NO_VERIFY",
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-09T08:04:49.000Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-09T08:04:52.641Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-09T08:05:01.212Z"
+  },
+  {
+   "stage_id": "S4",
+   "first_reached_ts": "2026-11-09T08:05:03.841Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B06",
+   "name": "Login / OTP wall before cart",
+   "stage": "S5",
+   "confidence": 0.8,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "req_0d1z96q2b4",
+     "summary": "POST /api/cart → 401 → GET /login → POST /api/otp/send · no verify · ended"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

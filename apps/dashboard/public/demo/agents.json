@@ -1,0 +1,298 @@
+{
+ "window": {
+  "from": "2026-11-05",
+  "to": "2026-11-11",
+  "days": 7
+ },
+ "items": [
+  {
+   "operator": "OpenAI",
+   "agent_name": "ChatGPT agent",
+   "agent_class": "browsing_agent",
+   "sessions": 1564,
+   "share_of_agent_sessions": 0.3773220747889023,
+   "pages_per_session": 7.951406649616368,
+   "conversion": 0.04219948849104859,
+   "tier_mix": {
+    "verified": 0.6892583120204604,
+    "declared": 0.31074168797953966,
+    "suspected": 0
+   },
+   "top_blocker": {
+    "blocker_id": "B05",
+    "name": "Pincode wall",
+    "share_of_failed": 0.4485981308411215
+   },
+   "signature_status_counts": {
+    "valid": 1002,
+    "invalid_sig": 15,
+    "expired": 51,
+    "unknown_key": 22,
+    "fetch_failed": 22,
+    "none": 452
+   },
+   "last_seen": "2026-11-11T18:42:00Z"
+  },
+  {
+   "operator": "unknown",
+   "agent_name": "Unidentified browsing agent",
+   "agent_class": "browsing_agent",
+   "sessions": 665,
+   "share_of_agent_sessions": 0.16043425814234016,
+   "pages_per_session": 6.8,
+   "conversion": 0.03759398496240601,
+   "tier_mix": {
+    "verified": 0,
+    "declared": 0,
+    "suspected": 1
+   },
+   "top_blocker": {
+    "blocker_id": "B05",
+    "name": "Pincode wall",
+    "share_of_failed": 0.44375
+   },
+   "signature_status_counts": {
+    "valid": 0,
+    "invalid_sig": 53,
+    "expired": 0,
+    "unknown_key": 0,
+    "fetch_failed": 0,
+    "none": 612
+   },
+   "last_seen": "2026-11-11T18:42:00Z"
+  },
+  {
+   "operator": "OpenAI",
+   "agent_name": "ChatGPT-User",
+   "agent_class": "user_fetcher",
+   "sessions": 480,
+   "share_of_agent_sessions": 0.1158021712907117,
+   "pages_per_session": 2.9,
+   "conversion": 0.014583333333333334,
+   "tier_mix": {
+    "verified": 0,
+    "declared": 1,
+    "suspected": 0
+   },
+   "top_blocker": {
+    "blocker_id": "B03",
+    "name": "JS-only price and stock",
+    "share_of_failed": 0.48625792811839325
+   },
+   "signature_status_counts": {
+    "valid": 0,
+    "invalid_sig": 14,
+    "expired": 19,
+    "unknown_key": 0,
+    "fetch_failed": 0,
+    "none": 447
+   },
+   "last_seen": "2026-11-11T18:42:00Z"
+  },
+  {
+   "operator": "Google",
+   "agent_name": "Gemini agent",
+   "agent_class": "browsing_agent",
+   "sessions": 415,
+   "share_of_agent_sessions": 0.10012062726176116,
+   "pages_per_session": 7,
+   "conversion": 0.03614457831325301,
+   "tier_mix": {
+    "verified": 0,
+    "declared": 1,
+    "suspected": 0
+   },
+   "top_blocker": {
+    "blocker_id": "B05",
+    "name": "Pincode wall",
+    "share_of_failed": 0.45
+   },
+   "signature_status_counts": {
+    "valid": 0,
+    "invalid_sig": 12,
+    "expired": 17,
+    "unknown_key": 0,
+    "fetch_failed": 0,
+    "none": 386
+   },
+   "last_seen": "2026-11-11T18:42:00Z"
+  },
+  {
+   "operator": "Anthropic",
+   "agent_name": "Claude-User",
+   "agent_class": "user_fetcher",
+   "sessions": 301,
+   "share_of_agent_sessions": 0.07261761158021712,
+   "pages_per_session": 2.4,
+   "conversion": 0.019933554817275746,
+   "tier_mix": {
+    "verified": 0,
+    "declared": 1,
+    "suspected": 0
+   },
+   "top_blocker": {
+    "blocker_id": "B03",
+    "name": "JS-only price and stock",
+    "share_of_failed": 0.4745762711864407
+   },
+   "signature_status_counts": {
+    "valid": 0,
+    "invalid_sig": 9,
+    "expired": 12,
+    "unknown_key": 0,
+    "fetch_failed": 0,
+    "none": 280
+   },
+   "last_seen": "2026-11-11T18:42:00Z"
+  },
+  {
+   "operator": "Perplexity",
+   "agent_name": "Perplexity-User",
+   "agent_class": "user_fetcher",
+   "sessions": 288,
+   "share_of_agent_sessions": 0.06948130277442702,
+   "pages_per_session": 2.2,
+   "conversion": 0.017361111111111112,
+   "tier_mix": {
+    "verified": 0,
+    "declared": 1,
+    "suspected": 0
+   },
+   "top_blocker": {
+    "blocker_id": "B03",
+    "name": "JS-only price and stock",
+    "share_of_failed": 0.4840989399293286
+   },
+   "signature_status_counts": {
+    "valid": 0,
+    "invalid_sig": 9,
+    "expired": 11,
+    "unknown_key": 0,
+    "fetch_failed": 0,
+    "none": 268
+   },
+   "last_seen": "2026-11-11T18:42:00Z"
+  },
+  {
+   "operator": "TestOperator",
+   "agent_name": "AgentLens Test Agent",
+   "agent_class": "browsing_agent",
+   "sessions": 242,
+   "share_of_agent_sessions": 0.05838359469240048,
+   "pages_per_session": 7.800000000000001,
+   "conversion": 0.05785123966942149,
+   "tier_mix": {
+    "verified": 1,
+    "declared": 0,
+    "suspected": 0
+   },
+   "top_blocker": {
+    "blocker_id": "B05",
+    "name": "Pincode wall",
+    "share_of_failed": 0.45614035087719296
+   },
+   "signature_status_counts": {
+    "valid": 225,
+    "invalid_sig": 0,
+    "expired": 7,
+    "unknown_key": 5,
+    "fetch_failed": 5,
+    "none": 0
+   },
+   "last_seen": "2026-11-11T18:42:00Z"
+  },
+  {
+   "operator": "unknown",
+   "agent_name": "Unidentified fetcher",
+   "agent_class": "user_fetcher",
+   "sessions": 190,
+   "share_of_agent_sessions": 0.045838359469240045,
+   "pages_per_session": 2.6,
+   "conversion": 0.03684210526315789,
+   "tier_mix": {
+    "verified": 0,
+    "declared": 0,
+    "suspected": 1
+   },
+   "top_blocker": {
+    "blocker_id": "B03",
+    "name": "JS-only price and stock",
+    "share_of_failed": 0.5081967213114754
+   },
+   "signature_status_counts": {
+    "valid": 0,
+    "invalid_sig": 15,
+    "expired": 0,
+    "unknown_key": 0,
+    "fetch_failed": 0,
+    "none": 175
+   },
+   "last_seen": "2026-11-11T18:42:00Z"
+  }
+ ],
+ "crawlers": [
+  {
+   "operator": "Google",
+   "agent_name": "Googlebot",
+   "agent_class": "search_crawler",
+   "requests": 20600,
+   "pages": 16892,
+   "robots_txt_fetched": true,
+   "last_seen": "2026-11-11T18:42:00Z"
+  },
+  {
+   "operator": "Microsoft",
+   "agent_name": "Bingbot",
+   "agent_class": "search_crawler",
+   "requests": 8900,
+   "pages": 7120,
+   "robots_txt_fetched": true,
+   "last_seen": "2026-11-11T18:42:00Z"
+  },
+  {
+   "operator": "OpenAI",
+   "agent_name": "OAI-SearchBot",
+   "agent_class": "search_crawler",
+   "requests": 3450,
+   "pages": 3105,
+   "robots_txt_fetched": true,
+   "last_seen": "2026-11-11T18:42:00Z"
+  },
+  {
+   "operator": "OpenAI",
+   "agent_name": "GPTBot",
+   "agent_class": "training_crawler",
+   "requests": 6200,
+   "pages": 5332,
+   "robots_txt_fetched": true,
+   "last_seen": "2026-11-11T18:42:00Z"
+  },
+  {
+   "operator": "Anthropic",
+   "agent_name": "ClaudeBot",
+   "agent_class": "training_crawler",
+   "requests": 4650,
+   "pages": 3906,
+   "robots_txt_fetched": true,
+   "last_seen": "2026-11-11T18:42:00Z"
+  },
+  {
+   "operator": "Perplexity",
+   "agent_name": "PerplexityBot",
+   "agent_class": "search_crawler",
+   "requests": 2050,
+   "pages": 1804,
+   "robots_txt_fetched": false,
+   "last_seen": "2026-11-11T18:42:00Z"
+  },
+  {
+   "operator": "Common Crawl",
+   "agent_name": "CCBot",
+   "agent_class": "training_crawler",
+   "requests": 1650,
+   "pages": 1485,
+   "robots_txt_fetched": true,
+   "last_seen": "2026-11-11T18:42:00Z"
+  }
+ ]
+}

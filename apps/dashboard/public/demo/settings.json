@@ -1,0 +1,48 @@
+{
+ "impact": {
+  "recoverable_rate": {
+   "low": 0.4,
+   "base": 0.6,
+   "high": 0.8
+  },
+  "p_stage_band": 0.2,
+  "default_aov_inr": 2200,
+  "agent_vs_human_factor": 1,
+  "min_sample": 30,
+  "effort_weights": {
+   "S": 1,
+   "M": 2,
+   "L": 4
+  }
+ },
+ "identification": {
+  "signature": {
+   "clock_skew_s": 60,
+   "key_cache_ttl_s": 3600,
+   "offline_mode": false
+  },
+  "suspicion": {
+   "threshold": 60,
+   "page_velocity_per_min": 15,
+   "weights": {
+    "no_beacon_with_browser_ua": 25,
+    "no_assets": 15,
+    "headless_hint": 30,
+    "missing_sec_fetch": 10,
+    "regular_timing": 10,
+    "high_velocity": 10,
+    "deep_link_cart_rush": 5,
+    "atypical_accept": 5,
+    "invalid_signature": 30
+   }
+  },
+  "sessions": {
+   "timeout_min_human": 30,
+   "timeout_min_agent": 10
+  }
+ },
+ "thresholds": {
+  "slow_response_ms": 5000,
+  "significance_min_sessions": 100
+ }
+}

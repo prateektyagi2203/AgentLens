@@ -1,0 +1,98 @@
+{
+ "session": {
+  "session_id": "ses_rs9av3gdc7",
+  "start_ts": "2026-11-16T06:37:31.000Z",
+  "duration_s": 7,
+  "request_count": 3,
+  "page_count": 3,
+  "identity_tier": "declared",
+  "operator": "Anthropic",
+  "agent_name": "Claude-User",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.9,
+  "entry_page": "/c/sneakers",
+  "exit_page": "/size-guide/cotton-linen-shirt.png",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B09",
+  "terminal_blocker_name": "Size guide image-only",
+  "blocker_confidence": 0.88,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": null,
+  "user_agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Claude-User/1.0; +Claude-User@anthropic.com)",
+  "ip_match": true
+ },
+ "requests": [
+  {
+   "request_id": "req_texrfj0159",
+   "ts": "2026-11-16T06:37:31.000Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/c/sneakers",
+   "status": 200,
+   "duration_ms": 321,
+   "page_type": "listing",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_pxda0p5ben",
+   "ts": "2026-11-16T06:37:34.580Z",
+   "offset_ms": 3580,
+   "method": "GET",
+   "path": "/p/cotton-linen-shirt",
+   "status": 200,
+   "duration_ms": 413,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_30sjtp3pmn",
+   "ts": "2026-11-16T06:37:38.299Z",
+   "offset_ms": 7299,
+   "method": "GET",
+   "path": "/size-guide/cotton-linen-shirt.png",
+   "status": 200,
+   "duration_ms": 121,
+   "page_type": "size_guide_image",
+   "error_code": "SIZE_GUIDE_IMAGE",
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-16T06:37:31.000Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-16T06:37:34.580Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B09",
+   "name": "Size guide image-only",
+   "stage": "S3",
+   "confidence": 0.88,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "site_check",
+     "check": "size_guide_format",
+     "result": "fail"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

@@ -1,0 +1,163 @@
+{
+ "window": {
+  "from": "2026-11-05",
+  "to": "2026-11-11",
+  "days": 7
+ },
+ "blocker": {
+  "blocker_id": "B13",
+  "name": "Slow response / timeout",
+  "stage": "S1",
+  "sessions_blocked": 50,
+  "share_of_failed": 0.0125,
+  "risk_inr": {
+   "low": 4526,
+   "base": 8486,
+   "high": 13577
+  },
+  "replay_status": "not_run",
+  "effort": "M",
+  "priority_score": 4243,
+  "low_confidence": false
+ },
+ "description": "A request takes longer than the agent's patience, or is abandoned in flight.",
+ "detection": "Last request duration over the threshold (default 5 s) or abandoned in flight.",
+ "evidence": {
+  "top_error_codes": [
+   {
+    "code": "TIMEOUT",
+    "count": 50,
+    "share": 1
+   }
+  ],
+  "example_requests": [
+   {
+    "request_id": "req_B13_1",
+    "summary": "GET /c/sneakers → 504 after 7.4 s · ended",
+    "count": 50
+   }
+  ],
+  "site_checks": []
+ },
+ "risk_breakdown": {
+  "sessions_blocked": 50,
+  "recoverable_rate": 0.6,
+  "p_stage": 0.0300010101010101,
+  "aov_inr": 2200,
+  "k": 4.285714285714286
+ },
+ "trend": [
+  {
+   "date": "2026-11-05",
+   "sessions_blocked": 7
+  },
+  {
+   "date": "2026-11-06",
+   "sessions_blocked": 8
+  },
+  {
+   "date": "2026-11-07",
+   "sessions_blocked": 6
+  },
+  {
+   "date": "2026-11-08",
+   "sessions_blocked": 6
+  },
+  {
+   "date": "2026-11-09",
+   "sessions_blocked": 8
+  },
+  {
+   "date": "2026-11-10",
+   "sessions_blocked": 8
+  },
+  {
+   "date": "2026-11-11",
+   "sessions_blocked": 7
+  }
+ ],
+ "sample_sessions": [
+  {
+   "session_id": "ses_03f9mretan",
+   "start_ts": "2026-11-07T12:57:52.000Z",
+   "duration_s": 5,
+   "request_count": 3,
+   "page_count": 2,
+   "identity_tier": "suspected",
+   "operator": "unknown",
+   "agent_name": "Unidentified fetcher",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.81,
+   "entry_page": "/",
+   "exit_page": "/c/sneakers",
+   "max_stage": "S1",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B13",
+   "terminal_blocker_name": "Slow response / timeout",
+   "blocker_confidence": 0.78,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_1ntp9d0rjw",
+   "start_ts": "2026-11-06T13:38:49.000Z",
+   "duration_s": 4,
+   "request_count": 3,
+   "page_count": 2,
+   "identity_tier": "suspected",
+   "operator": "unknown",
+   "agent_name": "Unidentified fetcher",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.88,
+   "entry_page": "/",
+   "exit_page": "/c/sneakers",
+   "max_stage": "S1",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B13",
+   "terminal_blocker_name": "Slow response / timeout",
+   "blocker_confidence": 0.89,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_cgfybtjsv4",
+   "start_ts": "2026-11-06T13:09:42.000Z",
+   "duration_s": 4,
+   "request_count": 3,
+   "page_count": 2,
+   "identity_tier": "declared",
+   "operator": "OpenAI",
+   "agent_name": "ChatGPT agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 0.7,
+   "entry_page": "/",
+   "exit_page": "/c/sneakers",
+   "max_stage": "S1",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B13",
+   "terminal_blocker_name": "Slow response / timeout",
+   "blocker_confidence": 0.97,
+   "diagnosis_method": "rule"
+  }
+ ],
+ "replays": [],
+ "recommendation": {
+  "rec_id": "rec_B13",
+  "run_id": "run_20261118_0610",
+  "blocker_id": "B13",
+  "blocker_name": "Slow response / timeout",
+  "title": "Cache listing and product pages",
+  "body": "Serve cached HTML for listing and product pages and investigate the slow endpoints.",
+  "why_it_helps": "Agents run on a tight time budget and abandon slow pages.",
+  "how_to_verify": "p95 should fall below the 5 s threshold.",
+  "verify_metric": "p95 response time for agent sessions",
+  "effort": "M",
+  "owner": "Eng",
+  "priority_score": 4243,
+  "risk_inr_base": 8486,
+  "status": "open",
+  "fixed_annotation_id": null,
+  "llm_explanation": null
+ }
+}

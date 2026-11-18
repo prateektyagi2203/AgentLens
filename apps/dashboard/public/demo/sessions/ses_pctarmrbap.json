@@ -1,0 +1,111 @@
+{
+ "session": {
+  "session_id": "ses_pctarmrbap",
+  "start_ts": "2026-11-12T05:16:49.000Z",
+  "duration_s": 6,
+  "request_count": 4,
+  "page_count": 4,
+  "identity_tier": "declared",
+  "operator": "OpenAI",
+  "agent_name": "ChatGPT-User",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.7,
+  "entry_page": "/",
+  "exit_page": "/size-guide/white-court-sneaker.png",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B09",
+  "terminal_blocker_name": "Size guide image-only",
+  "blocker_confidence": 0.83,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "expired",
+  "signature_agent": null,
+  "suspicion_score": null,
+  "user_agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+  "ip_match": true
+ },
+ "requests": [
+  {
+   "request_id": "req_v8kyey7tfj",
+   "ts": "2026-11-12T05:16:49.000Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 226,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_pvajfktxxf",
+   "ts": "2026-11-12T05:16:50.803Z",
+   "offset_ms": 1803,
+   "method": "GET",
+   "path": "/c/sneakers",
+   "status": 200,
+   "duration_ms": 170,
+   "page_type": "listing",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "req_jeq0s8nw4e",
+   "ts": "2026-11-12T05:16:51.512Z",
+   "offset_ms": 2512,
+   "method": "GET",
+   "path": "/p/white-court-sneaker",
+   "status": 200,
+   "duration_ms": 195,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_azbg1etaay",
+   "ts": "2026-11-12T05:16:54.561Z",
+   "offset_ms": 5561,
+   "method": "GET",
+   "path": "/size-guide/white-court-sneaker.png",
+   "status": 200,
+   "duration_ms": 118,
+   "page_type": "size_guide_image",
+   "error_code": "SIZE_GUIDE_IMAGE",
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-12T05:16:49.000Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-12T05:16:51.512Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B09",
+   "name": "Size guide image-only",
+   "stage": "S3",
+   "confidence": 0.83,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "site_check",
+     "check": "size_guide_format",
+     "result": "fail"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

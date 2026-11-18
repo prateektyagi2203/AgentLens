@@ -1,0 +1,100 @@
+{
+ "version": "0.1.0",
+ "demo_mode": true,
+ "store_name": "Demo Store (synthetic)",
+ "currency": "INR",
+ "operators": [
+  "Anthropic",
+  "Google",
+  "OpenAI",
+  "Perplexity",
+  "TestOperator",
+  "unknown"
+ ],
+ "agent_classes": [
+  "user_fetcher",
+  "browsing_agent",
+  "search_crawler",
+  "training_crawler"
+ ],
+ "segments": [
+  "all_agents",
+  "verified",
+  "declared",
+  "suspected",
+  "humans"
+ ],
+ "date_bounds": {
+  "min": "2026-11-05",
+  "max": "2026-11-18"
+ },
+ "default_window": {
+  "from": "2026-11-05",
+  "to": "2026-11-18"
+ },
+ "last_run": {
+  "run_id": "run_20261118_0610",
+  "kind": "pipeline",
+  "status": "succeeded",
+  "started_at": "2026-11-18T06:08:00Z",
+  "finished_at": "2026-11-18T06:10:21Z",
+  "steps": [
+   {
+    "name": "ingest",
+    "status": "succeeded",
+    "started_at": "2026-11-18T06:08:00.000Z",
+    "finished_at": "2026-11-18T06:08:19.000Z",
+    "message": null
+   },
+   {
+    "name": "identify",
+    "status": "succeeded",
+    "started_at": "2026-11-18T06:08:20.000Z",
+    "finished_at": "2026-11-18T06:08:39.000Z",
+    "message": null
+   },
+   {
+    "name": "sessionize",
+    "status": "succeeded",
+    "started_at": "2026-11-18T06:08:40.000Z",
+    "finished_at": "2026-11-18T06:08:59.000Z",
+    "message": null
+   },
+   {
+    "name": "funnel",
+    "status": "succeeded",
+    "started_at": "2026-11-18T06:09:00.000Z",
+    "finished_at": "2026-11-18T06:09:19.000Z",
+    "message": null
+   },
+   {
+    "name": "diagnose",
+    "status": "succeeded",
+    "started_at": "2026-11-18T06:09:20.000Z",
+    "finished_at": "2026-11-18T06:09:39.000Z",
+    "message": null
+   },
+   {
+    "name": "impact",
+    "status": "succeeded",
+    "started_at": "2026-11-18T06:09:40.000Z",
+    "finished_at": "2026-11-18T06:09:59.000Z",
+    "message": null
+   },
+   {
+    "name": "recommend",
+    "status": "succeeded",
+    "started_at": "2026-11-18T06:10:00.000Z",
+    "finished_at": "2026-11-18T06:10:19.000Z",
+    "message": null
+   }
+  ],
+  "counts": {
+   "requests": 1204330,
+   "sessions": 52944,
+   "agent_sessions": 8460,
+   "blocker_hits": 7990
+  },
+  "error": null
+ }
+}

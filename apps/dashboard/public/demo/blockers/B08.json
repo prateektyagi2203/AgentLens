@@ -1,0 +1,198 @@
+{
+ "window": {
+  "from": "2026-11-05",
+  "to": "2026-11-11",
+  "days": 7
+ },
+ "blocker": {
+  "blocker_id": "B08",
+  "name": "Out-of-stock dead end",
+  "stage": "S3",
+  "sessions_blocked": 120,
+  "share_of_failed": 0.03,
+  "risk_inr": {
+   "low": 25344,
+   "base": 47520,
+   "high": 76032
+  },
+  "replay_status": "inconclusive",
+  "effort": "S",
+  "priority_score": 47520,
+  "low_confidence": false
+ },
+ "description": "The chosen variant is out of stock and the page offers no alternative the agent can pick up.",
+ "detection": "Variant API returned 409 out of stock as the last meaningful request with no alternative variant requested.",
+ "evidence": {
+  "top_error_codes": [
+   {
+    "code": "VARIANT_OUT_OF_STOCK",
+    "count": 120,
+    "share": 1
+   }
+  ],
+  "example_requests": [
+   {
+    "request_id": "req_B08_1",
+    "summary": "GET /api/products/white-court-sneaker/variants?size=9 → 409 VARIANT_OUT_OF_STOCK · ended",
+    "count": 120
+   }
+  ],
+  "site_checks": []
+ },
+ "risk_breakdown": {
+  "sessions_blocked": 120,
+  "recoverable_rate": 0.6,
+  "p_stage": 0.07,
+  "aov_inr": 2200,
+  "k": 4.285714285714286
+ },
+ "trend": [
+  {
+   "date": "2026-11-05",
+   "sessions_blocked": 18
+  },
+  {
+   "date": "2026-11-06",
+   "sessions_blocked": 19
+  },
+  {
+   "date": "2026-11-07",
+   "sessions_blocked": 15
+  },
+  {
+   "date": "2026-11-08",
+   "sessions_blocked": 14
+  },
+  {
+   "date": "2026-11-09",
+   "sessions_blocked": 18
+  },
+  {
+   "date": "2026-11-10",
+   "sessions_blocked": 19
+  },
+  {
+   "date": "2026-11-11",
+   "sessions_blocked": 17
+  }
+ ],
+ "sample_sessions": [
+  {
+   "session_id": "ses_qgg6enpjqj",
+   "start_ts": "2026-11-11T13:46:58.000Z",
+   "duration_s": 8,
+   "request_count": 5,
+   "page_count": 2,
+   "identity_tier": "suspected",
+   "operator": "unknown",
+   "agent_name": "Unidentified browsing agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 0.79,
+   "entry_page": "/c/sneakers",
+   "exit_page": "/api/products/indigo-kurta-set/variants?size=9",
+   "max_stage": "S2",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B08",
+   "terminal_blocker_name": "Out-of-stock dead end",
+   "blocker_confidence": 0.85,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_7kj8jbxvnm",
+   "start_ts": "2026-11-11T04:32:49.000Z",
+   "duration_s": 7,
+   "request_count": 5,
+   "page_count": 2,
+   "identity_tier": "verified",
+   "operator": "TestOperator",
+   "agent_name": "AgentLens Test Agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 1,
+   "entry_page": "/c/sneakers",
+   "exit_page": "/api/products/cotton-linen-shirt/variants?size=9",
+   "max_stage": "S2",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B08",
+   "terminal_blocker_name": "Out-of-stock dead end",
+   "blocker_confidence": 0.72,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_gexbb9ghqb",
+   "start_ts": "2026-11-09T06:55:36.000Z",
+   "duration_s": 3,
+   "request_count": 3,
+   "page_count": 2,
+   "identity_tier": "declared",
+   "operator": "Perplexity",
+   "agent_name": "Perplexity-User",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.7,
+   "entry_page": "/c/sneakers",
+   "exit_page": "/api/products/white-court-sneaker/variants?size=9",
+   "max_stage": "S2",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B08",
+   "terminal_blocker_name": "Out-of-stock dead end",
+   "blocker_confidence": 0.71,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_fw4b77pskh",
+   "start_ts": "2026-11-06T11:38:43.000Z",
+   "duration_s": 14,
+   "request_count": 6,
+   "page_count": 3,
+   "identity_tier": "suspected",
+   "operator": "unknown",
+   "agent_name": "Unidentified browsing agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 0.68,
+   "entry_page": "/",
+   "exit_page": "/api/products/cotton-linen-shirt/variants?size=9",
+   "max_stage": "S2",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B08",
+   "terminal_blocker_name": "Out-of-stock dead end",
+   "blocker_confidence": 0.85,
+   "diagnosis_method": "rule"
+  }
+ ],
+ "replays": [
+  {
+   "replay_id": "rpl_b08",
+   "blocker_id": "B08",
+   "blocker_name": "Out-of-stock dead end",
+   "source_session_id": "ses_qgg6enpjqj",
+   "mode": "browser",
+   "status": "completed",
+   "verdict": "inconclusive",
+   "started_at": "2026-11-11T17:48:00Z",
+   "finished_at": "2026-11-11T17:48:06.700Z",
+   "steps_count": 2,
+   "verdict_explanation": "Inconclusive. The variant was in stock when replayed, so the out-of-stock dead end could not be reproduced. The source session may have hit a transient stock state."
+  }
+ ],
+ "recommendation": {
+  "rec_id": "rec_B08",
+  "run_id": "run_20261118_0610",
+  "blocker_id": "B08",
+  "blocker_name": "Out-of-stock dead end",
+  "title": "Suggest in-stock alternatives",
+  "body": "Expose availability per variant in HTML and JSON-LD and link to the nearest in-stock size or colour.",
+  "why_it_helps": "A dead end gives an agent no next action, so it reports failure to the shopper.",
+  "how_to_verify": "Sessions ending on a 409 variant response should fall.",
+  "verify_metric": "Variant API 409 share",
+  "effort": "S",
+  "owner": "Product",
+  "priority_score": 47520,
+  "risk_inr_base": 47520,
+  "status": "open",
+  "fixed_annotation_id": null,
+  "llm_explanation": null
+ }
+}

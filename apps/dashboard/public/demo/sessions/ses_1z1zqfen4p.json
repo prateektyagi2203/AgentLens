@@ -1,0 +1,137 @@
+{
+ "session": {
+  "session_id": "ses_1z1zqfen4p",
+  "start_ts": "2026-11-08T16:17:52.000Z",
+  "duration_s": 11,
+  "request_count": 6,
+  "page_count": 4,
+  "identity_tier": "suspected",
+  "operator": "unknown",
+  "agent_name": "Unidentified browsing agent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 0.69,
+  "entry_page": "/",
+  "exit_page": "/size-guide/block-print-dupatta.png",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B09",
+  "terminal_blocker_name": "Size guide image-only",
+  "blocker_confidence": 0.92,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 69,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 HeadlessChrome/130.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "req_qc875vrtr4",
+   "ts": "2026-11-08T16:17:52.000Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 137,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_6qgkvdbwym",
+   "ts": "2026-11-08T16:17:53.231Z",
+   "offset_ms": 1231,
+   "method": "GET",
+   "path": "/search?q=block",
+   "status": 200,
+   "duration_ms": 319,
+   "page_type": "listing",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "req_1f9gf2c1hn",
+   "ts": "2026-11-08T16:17:54.726Z",
+   "offset_ms": 2726,
+   "method": "GET",
+   "path": "/p/block-print-dupatta",
+   "status": 200,
+   "duration_ms": 299,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_4x4mgb0nke",
+   "ts": "2026-11-08T16:17:56.132Z",
+   "offset_ms": 4132,
+   "method": "GET",
+   "path": "/static/app.4f2c.js",
+   "status": 200,
+   "duration_ms": 81,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_xws7xm8wzp",
+   "ts": "2026-11-08T16:17:58.972Z",
+   "offset_ms": 6972,
+   "method": "POST",
+   "path": "/beacon",
+   "status": 204,
+   "duration_ms": 16,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_2qk6eb92gk",
+   "ts": "2026-11-08T16:18:02.566Z",
+   "offset_ms": 10566,
+   "method": "GET",
+   "path": "/size-guide/block-print-dupatta.png",
+   "status": 200,
+   "duration_ms": 96,
+   "page_type": "size_guide_image",
+   "error_code": "SIZE_GUIDE_IMAGE",
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-08T16:17:52.000Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-08T16:17:54.726Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B09",
+   "name": "Size guide image-only",
+   "stage": "S3",
+   "confidence": 0.92,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "site_check",
+     "check": "size_guide_format",
+     "result": "fail"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

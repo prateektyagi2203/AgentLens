@@ -1,0 +1,111 @@
+{
+ "session": {
+  "session_id": "ses_f6h89ht8fw",
+  "start_ts": "2026-11-12T09:09:19.000Z",
+  "duration_s": 5,
+  "request_count": 4,
+  "page_count": 3,
+  "identity_tier": "declared",
+  "operator": "OpenAI",
+  "agent_name": "ChatGPT-User",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.9,
+  "entry_page": "/",
+  "exit_page": "/api/products/leather-kolhapuri-sandal/variants?size=9",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B08",
+  "terminal_blocker_name": "Out-of-stock dead end",
+  "blocker_confidence": 0.65,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": null,
+  "user_agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+  "ip_match": true
+ },
+ "requests": [
+  {
+   "request_id": "req_679f601xk1",
+   "ts": "2026-11-12T09:09:19.000Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 180,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_gdr9jfgdtd",
+   "ts": "2026-11-12T09:09:19.660Z",
+   "offset_ms": 660,
+   "method": "GET",
+   "path": "/c/sneakers",
+   "status": 200,
+   "duration_ms": 238,
+   "page_type": "listing",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "req_661yawy1b5",
+   "ts": "2026-11-12T09:09:21.533Z",
+   "offset_ms": 2533,
+   "method": "GET",
+   "path": "/p/leather-kolhapuri-sandal",
+   "status": 200,
+   "duration_ms": 182,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_f0g0gvaae7",
+   "ts": "2026-11-12T09:09:24.171Z",
+   "offset_ms": 5171,
+   "method": "GET",
+   "path": "/api/products/leather-kolhapuri-sandal/variants?size=9",
+   "status": 409,
+   "duration_ms": 129,
+   "page_type": "api",
+   "error_code": "VARIANT_OUT_OF_STOCK",
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-12T09:09:19.000Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-12T09:09:21.533Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B08",
+   "name": "Out-of-stock dead end",
+   "stage": "S3",
+   "confidence": 0.65,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "req_f0g0gvaae7",
+     "summary": "GET /api/products/leather-kolhapuri-sandal/variants?size=9 → 409 VARIANT_OUT_OF_STOCK · ended"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

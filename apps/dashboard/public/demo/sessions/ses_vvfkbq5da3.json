@@ -1,0 +1,53 @@
+{
+ "session": {
+  "session_id": "ses_vvfkbq5da3",
+  "start_ts": "2026-11-13T04:39:50.000Z",
+  "duration_s": 1,
+  "request_count": 1,
+  "page_count": 1,
+  "identity_tier": "human",
+  "operator": "human",
+  "agent_name": "Browser (human)",
+  "agent_class": "human",
+  "identity_confidence": 0.9,
+  "entry_page": "/search?q=block",
+  "exit_page": "/search?q=block",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": null,
+  "terminal_blocker_name": null,
+  "blocker_confidence": null,
+  "diagnosis_method": "none"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 18,
+  "user_agent": "Mozilla/5.0 (Linux; Android 14; Pixel 8) AppleWebKit/537.36 Chrome/131.0 Mobile Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "req_3sjs5873j5",
+   "ts": "2026-11-13T04:39:50.000Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/search?q=block",
+   "status": 200,
+   "duration_ms": 301,
+   "page_type": "listing",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-13T04:39:50.000Z"
+  }
+ ],
+ "fired_rules": [],
+ "replay_ids": []
+}

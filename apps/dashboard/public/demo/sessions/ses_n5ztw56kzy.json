@@ -1,0 +1,185 @@
+{
+ "session": {
+  "session_id": "ses_n5ztw56kzy",
+  "start_ts": "2026-11-06T14:36:08.000Z",
+  "duration_s": 14,
+  "request_count": 8,
+  "page_count": 2,
+  "identity_tier": "suspected",
+  "operator": "unknown",
+  "agent_name": "Unidentified browsing agent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 0.7,
+  "entry_page": "/search?q=leather",
+  "exit_page": "/api/cart",
+  "max_stage": "S4",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B05",
+  "terminal_blocker_name": "Pincode wall",
+  "blocker_confidence": 0.76,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 70,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 HeadlessChrome/130.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "req_bk8dayaqam",
+   "ts": "2026-11-06T14:36:08.000Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/search?q=leather",
+   "status": 200,
+   "duration_ms": 172,
+   "page_type": "listing",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_1traggaddj",
+   "ts": "2026-11-06T14:36:11.340Z",
+   "offset_ms": 3340,
+   "method": "GET",
+   "path": "/p/leather-kolhapuri-sandal",
+   "status": 200,
+   "duration_ms": 253,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_anp9npwkcs",
+   "ts": "2026-11-06T14:36:13.286Z",
+   "offset_ms": 5286,
+   "method": "GET",
+   "path": "/static/app.4f2c.js",
+   "status": 200,
+   "duration_ms": 76,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_d0h2nr9y6b",
+   "ts": "2026-11-06T14:36:13.943Z",
+   "offset_ms": 5943,
+   "method": "POST",
+   "path": "/beacon",
+   "status": 204,
+   "duration_ms": 35,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_17va8yq5dm",
+   "ts": "2026-11-06T14:36:16.315Z",
+   "offset_ms": 8315,
+   "method": "GET",
+   "path": "/api/products/leather-kolhapuri-sandal/variants?size=9",
+   "status": 200,
+   "duration_ms": 167,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_0awrp5eq9q",
+   "ts": "2026-11-06T14:36:19.259Z",
+   "offset_ms": 11259,
+   "method": "GET",
+   "path": "/api/serviceability?pincode=110001",
+   "status": 200,
+   "duration_ms": 131,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S4",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_79660b4jpj",
+   "ts": "2026-11-06T14:36:20.459Z",
+   "offset_ms": 12459,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 150,
+   "page_type": "api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "req_1y7rawnnhc",
+   "ts": "2026-11-06T14:36:22.459Z",
+   "offset_ms": 14459,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 198,
+   "page_type": "api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-06T14:36:08.000Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-06T14:36:11.340Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-06T14:36:16.315Z"
+  },
+  {
+   "stage_id": "S4",
+   "first_reached_ts": "2026-11-06T14:36:19.259Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B05",
+   "name": "Pincode wall",
+   "stage": "S5",
+   "confidence": 0.76,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "req_1y7rawnnhc",
+     "summary": "POST /api/cart → 409 PINCODE_REQUIRED (×2) · session ended 2 s later"
+    }
+   ]
+  },
+  {
+   "blocker_id": "B07",
+   "name": "App-download interstitial",
+   "stage": "S2",
+   "confidence": 0.41,
+   "is_terminal": false,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "req_1traggaddj",
+     "summary": "Overlay detected on the landing page (no interaction for 12 s)"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

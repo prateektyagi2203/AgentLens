@@ -1,0 +1,310 @@
+{
+ "window": {
+  "from": "2026-11-05",
+  "to": "2026-11-11",
+  "days": 7
+ },
+ "agent": {
+  "operator": "OpenAI",
+  "agent_name": "ChatGPT-User",
+  "agent_class": "user_fetcher",
+  "sessions": 480,
+  "share_of_agent_sessions": 0.1158021712907117,
+  "pages_per_session": 2.9,
+  "conversion": 0.014583333333333334,
+  "tier_mix": {
+   "verified": 0,
+   "declared": 1,
+   "suspected": 0
+  },
+  "top_blocker": {
+   "blocker_id": "B03",
+   "name": "JS-only price and stock",
+   "share_of_failed": 0.48625792811839325
+  },
+  "signature_status_counts": {
+   "valid": 0,
+   "invalid_sig": 14,
+   "expired": 19,
+   "unknown_key": 0,
+   "fetch_failed": 0,
+   "none": 447
+  },
+  "last_seen": "2026-11-11T18:42:00Z"
+ },
+ "identity": {
+  "user_agent_example": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+  "signature_agent": null,
+  "ip_match_rate": 0.55,
+  "avg_identity_confidence": 0.82
+ },
+ "trend": [
+  {
+   "date": "2026-11-05",
+   "sessions": 304,
+   "conversion": 0.03618421052631579
+  },
+  {
+   "date": "2026-11-06",
+   "sessions": 314,
+   "conversion": 0.03503184713375796
+  },
+  {
+   "date": "2026-11-07",
+   "sessions": 263,
+   "conversion": 0.034220532319391636
+  },
+  {
+   "date": "2026-11-08",
+   "sessions": 241,
+   "conversion": 0.03734439834024896
+  },
+  {
+   "date": "2026-11-09",
+   "sessions": 309,
+   "conversion": 0.03559870550161812
+  },
+  {
+   "date": "2026-11-10",
+   "sessions": 327,
+   "conversion": 0.03669724770642202
+  },
+  {
+   "date": "2026-11-11",
+   "sessions": 286,
+   "conversion": 0.03496503496503497
+  }
+ ],
+ "blockers": [
+  {
+   "blocker_id": "B03",
+   "name": "JS-only price and stock",
+   "sessions": 230,
+   "share_of_failed": 0.48625792811839325
+  },
+  {
+   "blocker_id": "B99",
+   "name": "Unknown",
+   "sessions": 88,
+   "share_of_failed": 0.18604651162790697
+  },
+  {
+   "blocker_id": "B09",
+   "name": "Size guide image-only",
+   "sessions": 51,
+   "share_of_failed": 0.10782241014799154
+  },
+  {
+   "blocker_id": "B08",
+   "name": "Out-of-stock dead end",
+   "sessions": 26,
+   "share_of_failed": 0.05496828752642706
+  },
+  {
+   "blocker_id": "B01",
+   "name": "Bot wall / WAF block",
+   "sessions": 22,
+   "share_of_failed": 0.046511627906976744
+  },
+  {
+   "blocker_id": "B04",
+   "name": "Missing structured data",
+   "sessions": 19,
+   "share_of_failed": 0.040169133192389
+  },
+  {
+   "blocker_id": "B12",
+   "name": "Rate limited",
+   "sessions": 13,
+   "share_of_failed": 0.02748414376321353
+  },
+  {
+   "blocker_id": "B13",
+   "name": "Slow response / timeout",
+   "sessions": 10,
+   "share_of_failed": 0.021141649048625793
+  },
+  {
+   "blocker_id": "B14",
+   "name": "robots.txt disallow",
+   "sessions": 7,
+   "share_of_failed": 0.014799154334038054
+  },
+  {
+   "blocker_id": "B16",
+   "name": "Broken link / 404",
+   "sessions": 7,
+   "share_of_failed": 0.014799154334038054
+  }
+ ],
+ "recent_sessions": [
+  {
+   "session_id": "ses_97347aw1da",
+   "start_ts": "2026-11-10T14:21:02.000Z",
+   "duration_s": 5,
+   "request_count": 3,
+   "page_count": 3,
+   "identity_tier": "declared",
+   "operator": "OpenAI",
+   "agent_name": "ChatGPT-User",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.7,
+   "entry_page": "/",
+   "exit_page": "/p/cotton-linen-shirt",
+   "max_stage": "S1",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B03",
+   "terminal_blocker_name": "JS-only price and stock",
+   "blocker_confidence": 0.95,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_je7n8f4qgc",
+   "start_ts": "2026-11-10T04:22:30.000Z",
+   "duration_s": 5,
+   "request_count": 3,
+   "page_count": 3,
+   "identity_tier": "declared",
+   "operator": "OpenAI",
+   "agent_name": "ChatGPT-User",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.7,
+   "entry_page": "/search?q=leather",
+   "exit_page": "/size-guide/leather-kolhapuri-sandal.png",
+   "max_stage": "S2",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B09",
+   "terminal_blocker_name": "Size guide image-only",
+   "blocker_confidence": 0.93,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_k6w8xa76ca",
+   "start_ts": "2026-11-09T07:55:13.000Z",
+   "duration_s": 5,
+   "request_count": 3,
+   "page_count": 3,
+   "identity_tier": "declared",
+   "operator": "OpenAI",
+   "agent_name": "ChatGPT-User",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.9,
+   "entry_page": "/",
+   "exit_page": "/p/indigo-kurta-set",
+   "max_stage": "S1",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B03",
+   "terminal_blocker_name": "JS-only price and stock",
+   "blocker_confidence": 0.83,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_r08e4wb5z0",
+   "start_ts": "2026-11-09T06:08:15.000Z",
+   "duration_s": 5,
+   "request_count": 3,
+   "page_count": 3,
+   "identity_tier": "declared",
+   "operator": "OpenAI",
+   "agent_name": "ChatGPT-User",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.9,
+   "entry_page": "/",
+   "exit_page": "/p/block-print-dupatta",
+   "max_stage": "S1",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B03",
+   "terminal_blocker_name": "JS-only price and stock",
+   "blocker_confidence": 0.74,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_dmaahswy7q",
+   "start_ts": "2026-11-09T05:00:31.000Z",
+   "duration_s": 4,
+   "request_count": 3,
+   "page_count": 3,
+   "identity_tier": "declared",
+   "operator": "OpenAI",
+   "agent_name": "ChatGPT-User",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.7,
+   "entry_page": "/",
+   "exit_page": "/p/leather-kolhapuri-sandal",
+   "max_stage": "S1",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B04",
+   "terminal_blocker_name": "Missing structured data",
+   "blocker_confidence": 0.64,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_xfgny5ptgg",
+   "start_ts": "2026-11-06T14:04:05.000Z",
+   "duration_s": 7,
+   "request_count": 3,
+   "page_count": 3,
+   "identity_tier": "declared",
+   "operator": "OpenAI",
+   "agent_name": "ChatGPT-User",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.9,
+   "entry_page": "/",
+   "exit_page": "/p/white-court-sneaker",
+   "max_stage": "S1",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B03",
+   "terminal_blocker_name": "JS-only price and stock",
+   "blocker_confidence": 0.87,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_pv1cn6mvqs",
+   "start_ts": "2026-11-06T04:59:48.000Z",
+   "duration_s": 1,
+   "request_count": 2,
+   "page_count": 2,
+   "identity_tier": "declared",
+   "operator": "OpenAI",
+   "agent_name": "ChatGPT-User",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.9,
+   "entry_page": "/search?q=indigo",
+   "exit_page": "/p/indigo-kurta-set",
+   "max_stage": "S1",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B03",
+   "terminal_blocker_name": "JS-only price and stock",
+   "blocker_confidence": 0.67,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_8c0be699v7",
+   "start_ts": "2026-11-05T10:57:14.000Z",
+   "duration_s": 2,
+   "request_count": 2,
+   "page_count": 2,
+   "identity_tier": "declared",
+   "operator": "OpenAI",
+   "agent_name": "ChatGPT-User",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.9,
+   "entry_page": "/c/sneakers",
+   "exit_page": "/p/block-print-dupatta",
+   "max_stage": "S1",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B03",
+   "terminal_blocker_name": "JS-only price and stock",
+   "blocker_confidence": 0.95,
+   "diagnosis_method": "rule"
+  }
+ ]
+}

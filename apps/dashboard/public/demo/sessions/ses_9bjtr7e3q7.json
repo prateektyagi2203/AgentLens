@@ -1,0 +1,137 @@
+{
+ "session": {
+  "session_id": "ses_9bjtr7e3q7",
+  "start_ts": "2026-11-14T10:11:44.000Z",
+  "duration_s": 13,
+  "request_count": 6,
+  "page_count": 4,
+  "identity_tier": "verified",
+  "operator": "OpenAI",
+  "agent_name": "ChatGPT agent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 1,
+  "entry_page": "/",
+  "exit_page": "/size-guide/block-print-dupatta.png",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B09",
+  "terminal_blocker_name": "Size guide image-only",
+  "blocker_confidence": 0.75,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "valid",
+  "signature_agent": "https://chatgpt.com",
+  "suspicion_score": null,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "req_yeabs93c21",
+   "ts": "2026-11-14T10:11:44.000Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 236,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_qka02b51t4",
+   "ts": "2026-11-14T10:11:46.238Z",
+   "offset_ms": 2238,
+   "method": "GET",
+   "path": "/c/sneakers",
+   "status": 200,
+   "duration_ms": 220,
+   "page_type": "listing",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "req_gphjg3hd28",
+   "ts": "2026-11-14T10:11:49.837Z",
+   "offset_ms": 5837,
+   "method": "GET",
+   "path": "/p/block-print-dupatta",
+   "status": 200,
+   "duration_ms": 146,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_pbt3ma0e2k",
+   "ts": "2026-11-14T10:11:52.194Z",
+   "offset_ms": 8194,
+   "method": "GET",
+   "path": "/static/app.4f2c.js",
+   "status": 200,
+   "duration_ms": 71,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_j301dds83p",
+   "ts": "2026-11-14T10:11:55.523Z",
+   "offset_ms": 11523,
+   "method": "POST",
+   "path": "/beacon",
+   "status": 204,
+   "duration_ms": 26,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_19gqmrt8nq",
+   "ts": "2026-11-14T10:11:56.850Z",
+   "offset_ms": 12850,
+   "method": "GET",
+   "path": "/size-guide/block-print-dupatta.png",
+   "status": 200,
+   "duration_ms": 122,
+   "page_type": "size_guide_image",
+   "error_code": "SIZE_GUIDE_IMAGE",
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-14T10:11:44.000Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-14T10:11:49.837Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B09",
+   "name": "Size guide image-only",
+   "stage": "S3",
+   "confidence": 0.75,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "site_check",
+     "check": "size_guide_format",
+     "result": "fail"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

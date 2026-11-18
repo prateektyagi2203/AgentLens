@@ -1,0 +1,108 @@
+{
+ "items": [
+  {
+   "replay_id": "rpl_b05_a",
+   "blocker_id": "B05",
+   "blocker_name": "Pincode wall",
+   "source_session_id": "ses_3n9ek3c19c",
+   "mode": "browser",
+   "status": "completed",
+   "verdict": "confirmed",
+   "started_at": "2026-11-11T17:02:10Z",
+   "finished_at": "2026-11-11T17:02:24.500Z",
+   "steps_count": 5,
+   "verdict_explanation": "Confirmed. The test agent reproduced the journey: add-to-cart returned 409 PINCODE_REQUIRED and a blocking 'Enter delivery pincode' modal appeared. The agent had no way to continue without opening and filling the modal."
+  },
+  {
+   "replay_id": "rpl_b05_b",
+   "blocker_id": "B05",
+   "blocker_name": "Pincode wall",
+   "source_session_id": "ses_chw1p0nggm",
+   "mode": "browser",
+   "status": "completed",
+   "verdict": "confirmed",
+   "started_at": "2026-11-11T17:09:42Z",
+   "finished_at": "2026-11-11T17:09:51.300Z",
+   "steps_count": 3,
+   "verdict_explanation": "Confirmed a second time with a different product and a different pincode. Same 409 PINCODE_REQUIRED on add-to-cart, same modal."
+  },
+  {
+   "replay_id": "rpl_b03",
+   "blocker_id": "B03",
+   "blocker_name": "JS-only price and stock",
+   "source_session_id": "ses_j97jxy7z2z",
+   "mode": "fetch",
+   "status": "completed",
+   "verdict": "confirmed",
+   "started_at": "2026-11-11T17:14:03Z",
+   "finished_at": "2026-11-11T17:14:07.100Z",
+   "steps_count": 1,
+   "verdict_explanation": "Confirmed. A plain HTTP fetch of the product page returned 200 but neither the server HTML nor the JSON-LD contains a price or stock status; both are filled in by JavaScript after load. Fetch-mode replays take no screenshots."
+  },
+  {
+   "replay_id": "rpl_b06",
+   "blocker_id": "B06",
+   "blocker_name": "Login / OTP wall before cart",
+   "source_session_id": "ses_zmhq2zs3yp",
+   "mode": "browser",
+   "status": "completed",
+   "verdict": "confirmed",
+   "started_at": "2026-11-11T17:21:30Z",
+   "finished_at": "2026-11-11T17:21:41.900Z",
+   "steps_count": 4,
+   "verdict_explanation": "Confirmed. Add-to-cart returned 401 and redirected to /login, where an SMS OTP was sent to a phone the agent does not control."
+  },
+  {
+   "replay_id": "rpl_b07",
+   "blocker_id": "B07",
+   "blocker_name": "App-download interstitial",
+   "source_session_id": "ses_07z65r0td5",
+   "mode": "browser",
+   "status": "completed",
+   "verdict": "confirmed",
+   "started_at": "2026-11-11T17:28:11Z",
+   "finished_at": "2026-11-11T17:28:17.700Z",
+   "steps_count": 2,
+   "verdict_explanation": "Confirmed. A full-screen 'Get the app' overlay covered the landing page and product page. The close control is a small unlabeled icon, and the agent saw no clickable product content."
+  },
+  {
+   "replay_id": "rpl_b09",
+   "blocker_id": "B09",
+   "blocker_name": "Size guide image-only",
+   "source_session_id": "ses_je7n8f4qgc",
+   "mode": "fetch",
+   "status": "completed",
+   "verdict": "confirmed",
+   "started_at": "2026-11-11T17:33:50Z",
+   "finished_at": "2026-11-11T17:33:56.700Z",
+   "steps_count": 2,
+   "verdict_explanation": "Confirmed. The size guide is served as a PNG (image/png) with no text alternative or HTML table, so a text-reading agent cannot choose a size."
+  },
+  {
+   "replay_id": "rpl_b10",
+   "blocker_id": "B10",
+   "blocker_name": "Checkout validation failure",
+   "source_session_id": "ses_1hc4dfmn5y",
+   "mode": "browser",
+   "status": "completed",
+   "verdict": "confirmed",
+   "started_at": "2026-11-11T17:41:25Z",
+   "finished_at": "2026-11-11T17:41:34.300Z",
+   "steps_count": 3,
+   "verdict_explanation": "Confirmed. Submitting checkout with the phone number +91 98765 43210 returned 422 PHONE_FORMAT three times; the form only accepts a bare 10-digit number."
+  },
+  {
+   "replay_id": "rpl_b08",
+   "blocker_id": "B08",
+   "blocker_name": "Out-of-stock dead end",
+   "source_session_id": "ses_qgg6enpjqj",
+   "mode": "browser",
+   "status": "completed",
+   "verdict": "inconclusive",
+   "started_at": "2026-11-11T17:48:00Z",
+   "finished_at": "2026-11-11T17:48:06.700Z",
+   "steps_count": 2,
+   "verdict_explanation": "Inconclusive. The variant was in stock when replayed, so the out-of-stock dead end could not be reproduced. The source session may have hit a transient stock state."
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "session": {
+  "session_id": "ses_z9ppkpayd6",
+  "start_ts": "2026-11-10T09:34:41.000Z",
+  "duration_s": 14,
+  "request_count": 2,
+  "page_count": 2,
+  "identity_tier": "human",
+  "operator": "human",
+  "agent_name": "Browser (human)",
+  "agent_class": "human",
+  "identity_confidence": 0.9,
+  "entry_page": "/",
+  "exit_page": "/c/sneakers",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": null,
+  "terminal_blocker_name": null,
+  "blocker_confidence": null,
+  "diagnosis_method": "none"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 14,
+  "user_agent": "Mozilla/5.0 (Linux; Android 14; Pixel 8) AppleWebKit/537.36 Chrome/131.0 Mobile Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "req_hgtt9twr0z",
+   "ts": "2026-11-10T09:34:41.000Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 90,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_hmke82m0qf",
+   "ts": "2026-11-10T09:34:55.018Z",
+   "offset_ms": 14018,
+   "method": "GET",
+   "path": "/c/sneakers",
+   "status": 200,
+   "duration_ms": 263,
+   "page_type": "listing",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-10T09:34:41.000Z"
+  }
+ ],
+ "fired_rules": [],
+ "replay_ids": []
+}

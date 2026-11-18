@@ -1,0 +1,240 @@
+{
+ "window": {
+  "from": "2026-11-05",
+  "to": "2026-11-11",
+  "days": 7
+ },
+ "blocker": {
+  "blocker_id": "B07",
+  "name": "App-download interstitial",
+  "stage": "S2",
+  "sessions_blocked": 320,
+  "share_of_failed": 0.08,
+  "risk_inr": {
+   "low": 38619,
+   "base": 72411,
+   "high": 115858
+  },
+  "replay_status": "confirmed",
+  "effort": "S",
+  "priority_score": 72411,
+  "low_confidence": false
+ },
+ "description": "A full-screen 'get the app' overlay covers the landing and product pages. Browsing agents see no clickable content and stall.",
+ "detection": "Browsing agent with beacons but no further interaction after landing or PDP within the threshold; a replay confirms the overlay.",
+ "evidence": {
+  "top_error_codes": [
+   {
+    "code": "OVERLAY_NO_INTERACTION",
+    "count": 320,
+    "share": 1
+   }
+  ],
+  "example_requests": [
+   {
+    "request_id": "req_B07_1",
+    "summary": "GET /p/white-court-sneaker → 200 · beacon seen · no further request for 41 s",
+    "count": 320
+   }
+  ],
+  "site_checks": []
+ },
+ "risk_breakdown": {
+  "sessions_blocked": 320,
+  "recoverable_rate": 0.6,
+  "p_stage": 0.03999976325757576,
+  "aov_inr": 2200,
+  "k": 4.285714285714286
+ },
+ "trend": [
+  {
+   "date": "2026-11-05",
+   "sessions_blocked": 48
+  },
+  {
+   "date": "2026-11-06",
+   "sessions_blocked": 49
+  },
+  {
+   "date": "2026-11-07",
+   "sessions_blocked": 41
+  },
+  {
+   "date": "2026-11-08",
+   "sessions_blocked": 38
+  },
+  {
+   "date": "2026-11-09",
+   "sessions_blocked": 48
+  },
+  {
+   "date": "2026-11-10",
+   "sessions_blocked": 51
+  },
+  {
+   "date": "2026-11-11",
+   "sessions_blocked": 45
+  }
+ ],
+ "sample_sessions": [
+  {
+   "session_id": "ses_07z65r0td5",
+   "start_ts": "2026-11-11T14:38:29.000Z",
+   "duration_s": 4,
+   "request_count": 3,
+   "page_count": 2,
+   "identity_tier": "verified",
+   "operator": "OpenAI",
+   "agent_name": "ChatGPT agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 1,
+   "entry_page": "/search?q=indigo",
+   "exit_page": "/p/indigo-kurta-set",
+   "max_stage": "S1",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B07",
+   "terminal_blocker_name": "App-download interstitial",
+   "blocker_confidence": 0.68,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_b12dkw0t19",
+   "start_ts": "2026-11-11T12:01:50.000Z",
+   "duration_s": 6,
+   "request_count": 3,
+   "page_count": 2,
+   "identity_tier": "verified",
+   "operator": "TestOperator",
+   "agent_name": "AgentLens Test Agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 1,
+   "entry_page": "/search?q=cotton",
+   "exit_page": "/p/cotton-linen-shirt",
+   "max_stage": "S1",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B07",
+   "terminal_blocker_name": "App-download interstitial",
+   "blocker_confidence": 0.62,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_sq4s7nd51n",
+   "start_ts": "2026-11-11T10:26:42.000Z",
+   "duration_s": 3,
+   "request_count": 3,
+   "page_count": 2,
+   "identity_tier": "declared",
+   "operator": "Google",
+   "agent_name": "Gemini agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 0.9,
+   "entry_page": "/search?q=block",
+   "exit_page": "/p/block-print-dupatta",
+   "max_stage": "S1",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B07",
+   "terminal_blocker_name": "App-download interstitial",
+   "blocker_confidence": 0.63,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_vje43p0bw6",
+   "start_ts": "2026-11-08T16:26:48.000Z",
+   "duration_s": 8,
+   "request_count": 4,
+   "page_count": 3,
+   "identity_tier": "suspected",
+   "operator": "unknown",
+   "agent_name": "Unidentified browsing agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 0.84,
+   "entry_page": "/",
+   "exit_page": "/p/white-court-sneaker",
+   "max_stage": "S1",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B07",
+   "terminal_blocker_name": "App-download interstitial",
+   "blocker_confidence": 0.96,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_jp2b5m6b79",
+   "start_ts": "2026-11-08T16:12:06.000Z",
+   "duration_s": 10,
+   "request_count": 4,
+   "page_count": 3,
+   "identity_tier": "declared",
+   "operator": "OpenAI",
+   "agent_name": "ChatGPT agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 0.9,
+   "entry_page": "/",
+   "exit_page": "/p/white-court-sneaker",
+   "max_stage": "S1",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B07",
+   "terminal_blocker_name": "App-download interstitial",
+   "blocker_confidence": 0.72,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_f6899krjfz",
+   "start_ts": "2026-11-08T06:25:03.000Z",
+   "duration_s": 9,
+   "request_count": 4,
+   "page_count": 3,
+   "identity_tier": "declared",
+   "operator": "OpenAI",
+   "agent_name": "ChatGPT agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 0.9,
+   "entry_page": "/",
+   "exit_page": "/p/leather-kolhapuri-sandal",
+   "max_stage": "S1",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B07",
+   "terminal_blocker_name": "App-download interstitial",
+   "blocker_confidence": 0.77,
+   "diagnosis_method": "rule"
+  }
+ ],
+ "replays": [
+  {
+   "replay_id": "rpl_b07",
+   "blocker_id": "B07",
+   "blocker_name": "App-download interstitial",
+   "source_session_id": "ses_07z65r0td5",
+   "mode": "browser",
+   "status": "completed",
+   "verdict": "confirmed",
+   "started_at": "2026-11-11T17:28:11Z",
+   "finished_at": "2026-11-11T17:28:17.700Z",
+   "steps_count": 2,
+   "verdict_explanation": "Confirmed. A full-screen 'Get the app' overlay covered the landing page and product page. The close control is a small unlabeled icon, and the agent saw no clickable product content."
+  }
+ ],
+ "recommendation": {
+  "rec_id": "rec_B07",
+  "run_id": "run_20261118_0610",
+  "blocker_id": "B07",
+  "blocker_name": "App-download interstitial",
+  "title": "Delay or remove the interstitial and keep a close button",
+  "body": "Never block content with an overlay; show the app banner inline and give it an accessible close control.",
+  "why_it_helps": "Agents interpret the overlay as the page content and cannot dismiss it reliably.",
+  "how_to_verify": "Step conversion S1 → S2 for browsing agents should rise.",
+  "verify_metric": "Landing → product step conversion (browsing agents)",
+  "effort": "S",
+  "owner": "Product",
+  "priority_score": 72411,
+  "risk_inr_base": 72411,
+  "status": "open",
+  "fixed_annotation_id": null,
+  "llm_explanation": null
+ }
+}

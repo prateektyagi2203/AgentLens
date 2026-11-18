@@ -1,0 +1,211 @@
+{
+ "session": {
+  "session_id": "ses_vb02rv59pd",
+  "start_ts": "2026-11-18T09:47:50.000Z",
+  "duration_s": 19,
+  "request_count": 11,
+  "page_count": 5,
+  "identity_tier": "declared",
+  "operator": "OpenAI",
+  "agent_name": "ChatGPT-User",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.7,
+  "entry_page": "/",
+  "exit_page": "/order/confirmed/ORD-64527",
+  "max_stage": "S8",
+  "converted": true,
+  "order_value_inr": 2700,
+  "terminal_blocker_id": null,
+  "terminal_blocker_name": null,
+  "blocker_confidence": null,
+  "diagnosis_method": "none"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": null,
+  "user_agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+  "ip_match": false
+ },
+ "requests": [
+  {
+   "request_id": "req_h3kwx7xbt9",
+   "ts": "2026-11-18T09:47:50.000Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 196,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_ytbfkkka15",
+   "ts": "2026-11-18T09:47:53.837Z",
+   "offset_ms": 3837,
+   "method": "GET",
+   "path": "/search?q=indigo",
+   "status": 200,
+   "duration_ms": 192,
+   "page_type": "listing",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "req_efn5qmtbpf",
+   "ts": "2026-11-18T09:47:57.553Z",
+   "offset_ms": 7553,
+   "method": "GET",
+   "path": "/p/indigo-kurta-set",
+   "status": 200,
+   "duration_ms": 303,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_ssefb86bs8",
+   "ts": "2026-11-18T09:47:58.053Z",
+   "offset_ms": 8053,
+   "method": "GET",
+   "path": "/static/app.4f2c.js",
+   "status": 200,
+   "duration_ms": 83,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_b2qjevg8cy",
+   "ts": "2026-11-18T09:47:59.125Z",
+   "offset_ms": 9125,
+   "method": "POST",
+   "path": "/beacon",
+   "status": 204,
+   "duration_ms": 11,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_m47z5syrmw",
+   "ts": "2026-11-18T09:47:59.710Z",
+   "offset_ms": 9710,
+   "method": "GET",
+   "path": "/api/products/indigo-kurta-set/variants?size=9",
+   "status": 200,
+   "duration_ms": 98,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_scz0d6spme",
+   "ts": "2026-11-18T09:48:00.406Z",
+   "offset_ms": 10406,
+   "method": "GET",
+   "path": "/api/serviceability?pincode=400001",
+   "status": 200,
+   "duration_ms": 106,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S4",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_2v9d2d7whx",
+   "ts": "2026-11-18T09:48:03.726Z",
+   "offset_ms": 13726,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 201,
+   "duration_ms": 279,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S5",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_jf7vmjbcdq",
+   "ts": "2026-11-18T09:48:04.409Z",
+   "offset_ms": 14409,
+   "method": "GET",
+   "path": "/checkout",
+   "status": 200,
+   "duration_ms": 189,
+   "page_type": "checkout",
+   "error_code": null,
+   "stage_id": "S6",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_kgtkxeh6hr",
+   "ts": "2026-11-18T09:48:07.618Z",
+   "offset_ms": 17618,
+   "method": "POST",
+   "path": "/api/checkout",
+   "status": 201,
+   "duration_ms": 342,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S7",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_6vns6vc1mm",
+   "ts": "2026-11-18T09:48:09.061Z",
+   "offset_ms": 19061,
+   "method": "GET",
+   "path": "/order/confirmed/ORD-64527",
+   "status": 200,
+   "duration_ms": 129,
+   "page_type": "order",
+   "error_code": null,
+   "stage_id": "S8",
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-18T09:47:50.000Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-18T09:47:57.553Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-18T09:47:59.710Z"
+  },
+  {
+   "stage_id": "S4",
+   "first_reached_ts": "2026-11-18T09:48:00.406Z"
+  },
+  {
+   "stage_id": "S5",
+   "first_reached_ts": "2026-11-18T09:48:03.726Z"
+  },
+  {
+   "stage_id": "S6",
+   "first_reached_ts": "2026-11-18T09:48:04.409Z"
+  },
+  {
+   "stage_id": "S7",
+   "first_reached_ts": "2026-11-18T09:48:07.618Z"
+  },
+  {
+   "stage_id": "S8",
+   "first_reached_ts": "2026-11-18T09:48:09.061Z"
+  }
+ ],
+ "fired_rules": [],
+ "replay_ids": []
+}

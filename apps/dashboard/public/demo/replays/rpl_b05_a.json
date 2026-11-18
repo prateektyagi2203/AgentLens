@@ -1,0 +1,112 @@
+{
+ "replay": {
+  "replay_id": "rpl_b05_a",
+  "blocker_id": "B05",
+  "blocker_name": "Pincode wall",
+  "source_session_id": "ses_3n9ek3c19c",
+  "mode": "browser",
+  "status": "completed",
+  "verdict": "confirmed",
+  "started_at": "2026-11-11T17:02:10Z",
+  "finished_at": "2026-11-11T17:02:24.500Z",
+  "steps_count": 5,
+  "verdict_explanation": "Confirmed. The test agent reproduced the journey: add-to-cart returned 409 PINCODE_REQUIRED and a blocking 'Enter delivery pincode' modal appeared. The agent had no way to continue without opening and filling the modal."
+ },
+ "user_agent": "AgentLens-Replay/1.0 (+https://github.com/<user>/agentlens)",
+ "signed_requests": false,
+ "steps": [
+  {
+   "n": 1,
+   "action": "Open the landing page",
+   "method": "GET",
+   "url": "/",
+   "status": 200,
+   "duration_ms": 237,
+   "note": "Landing page loads normally.",
+   "screenshot_url": "/demo/replays/rpl_b05_a/step_1.svg"
+  },
+  {
+   "n": 2,
+   "action": "Open the product page",
+   "method": "GET",
+   "url": "/p/white-court-sneaker",
+   "status": 200,
+   "duration_ms": 334,
+   "note": "Price and sizes are visible.",
+   "screenshot_url": "/demo/replays/rpl_b05_a/step_2.svg"
+  },
+  {
+   "n": 3,
+   "action": "Choose size 9",
+   "method": "GET",
+   "url": "/api/products/white-court-sneaker/variants?size=9",
+   "status": 200,
+   "duration_ms": 171,
+   "note": "Variant available.",
+   "screenshot_url": "/demo/replays/rpl_b05_a/step_3.svg"
+  },
+  {
+   "n": 4,
+   "action": "Check delivery",
+   "method": "GET",
+   "url": "/api/serviceability?pincode=560001",
+   "status": 200,
+   "duration_ms": 268,
+   "note": "Serviceability answered, but no pincode is stored for the session.",
+   "screenshot_url": "/demo/replays/rpl_b05_a/step_4.svg"
+  },
+  {
+   "n": 5,
+   "action": "Click “Add to cart”",
+   "method": "POST",
+   "url": "/api/cart",
+   "status": 409,
+   "duration_ms": 365,
+   "note": "Cart rejected the request and a blocking pincode modal appeared. The agent stopped here.",
+   "screenshot_url": "/demo/replays/rpl_b05_a/step_5.svg"
+  }
+ ],
+ "network_log": [
+  {
+   "ts": "2026-11-11T17:02:10.000Z",
+   "method": "GET",
+   "url": "/",
+   "status": 200,
+   "duration_ms": 237,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-11T17:02:12.600Z",
+   "method": "GET",
+   "url": "/p/white-court-sneaker",
+   "status": 200,
+   "duration_ms": 334,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-11T17:02:15.200Z",
+   "method": "GET",
+   "url": "/api/products/white-court-sneaker/variants?size=9",
+   "status": 200,
+   "duration_ms": 171,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-11T17:02:17.800Z",
+   "method": "GET",
+   "url": "/api/serviceability?pincode=560001",
+   "status": 200,
+   "duration_ms": 268,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-11T17:02:20.400Z",
+   "method": "POST",
+   "url": "/api/cart",
+   "status": 409,
+   "duration_ms": 365,
+   "error_code": "PINCODE_REQUIRED"
+  }
+ ],
+ "explanation": "Confirmed. The test agent reproduced the journey: add-to-cart returned 409 PINCODE_REQUIRED and a blocking 'Enter delivery pincode' modal appeared. The agent had no way to continue without opening and filling the modal."
+}

@@ -1,0 +1,58 @@
+{
+ "replay": {
+  "replay_id": "rpl_b07",
+  "blocker_id": "B07",
+  "blocker_name": "App-download interstitial",
+  "source_session_id": "ses_07z65r0td5",
+  "mode": "browser",
+  "status": "completed",
+  "verdict": "confirmed",
+  "started_at": "2026-11-11T17:28:11Z",
+  "finished_at": "2026-11-11T17:28:17.700Z",
+  "steps_count": 2,
+  "verdict_explanation": "Confirmed. A full-screen 'Get the app' overlay covered the landing page and product page. The close control is a small unlabeled icon, and the agent saw no clickable product content."
+ },
+ "user_agent": "AgentLens-Replay/1.0 (+https://github.com/<user>/agentlens)",
+ "signed_requests": false,
+ "steps": [
+  {
+   "n": 1,
+   "action": "Open the landing page",
+   "method": "GET",
+   "url": "/",
+   "status": 200,
+   "duration_ms": 211,
+   "note": "Overlay covers the whole viewport.",
+   "screenshot_url": "/demo/replays/rpl_b07/step_1.svg"
+  },
+  {
+   "n": 2,
+   "action": "Try to continue to a product",
+   "method": "GET",
+   "url": "/p/white-court-sneaker",
+   "status": 200,
+   "duration_ms": 308,
+   "note": "Overlay appears again on the product page.",
+   "screenshot_url": "/demo/replays/rpl_b07/step_2.svg"
+  }
+ ],
+ "network_log": [
+  {
+   "ts": "2026-11-11T17:28:11.000Z",
+   "method": "GET",
+   "url": "/",
+   "status": 200,
+   "duration_ms": 211,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-11T17:28:13.600Z",
+   "method": "GET",
+   "url": "/p/white-court-sneaker",
+   "status": 200,
+   "duration_ms": 308,
+   "error_code": null
+  }
+ ],
+ "explanation": "Confirmed. A full-screen 'Get the app' overlay covered the landing page and product page. The close control is a small unlabeled icon, and the agent saw no clickable product content."
+}

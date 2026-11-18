@@ -1,0 +1,113 @@
+{
+ "run_id": "eval_2026-11-18",
+ "ts": "2026-11-18T06:20:00Z",
+ "dataset": "tests/golden (2,000 sessions, seed 42)",
+ "identification": {
+  "tier_accuracy": 0.962,
+  "verified_precision": 1,
+  "verified_recall": 0.994,
+  "declared_precision": 0.981,
+  "declared_recall": 0.972,
+  "suspected_precision": 0.874,
+  "suspected_recall": 0.861,
+  "confusion": [
+   [
+    348,
+    2,
+    0,
+    0
+   ],
+   [
+    0,
+    801,
+    9,
+    14
+   ],
+   [
+    0,
+    6,
+    231,
+    31
+   ],
+   [
+    0,
+    5,
+    21,
+    532
+   ]
+  ]
+ },
+ "diagnosis": {
+  "top1_accuracy": 0.908,
+  "coverage": 0.887,
+  "per_blocker": [
+   {
+    "blocker_id": "B05",
+    "precision": 0.97,
+    "recall": 0.95,
+    "f1": 0.96,
+    "support": 240
+   },
+   {
+    "blocker_id": "B03",
+    "precision": 0.94,
+    "recall": 0.93,
+    "f1": 0.935,
+    "support": 160
+   },
+   {
+    "blocker_id": "B06",
+    "precision": 0.92,
+    "recall": 0.9,
+    "f1": 0.91,
+    "support": 120
+   },
+   {
+    "blocker_id": "B07",
+    "precision": 0.83,
+    "recall": 0.79,
+    "f1": 0.81,
+    "support": 100
+   },
+   {
+    "blocker_id": "B09",
+    "precision": 0.95,
+    "recall": 0.92,
+    "f1": 0.935,
+    "support": 90
+   },
+   {
+    "blocker_id": "B10",
+    "precision": 0.96,
+    "recall": 0.94,
+    "f1": 0.95,
+    "support": 90
+   },
+   {
+    "blocker_id": "B08",
+    "precision": 0.88,
+    "recall": 0.86,
+    "f1": 0.87,
+    "support": 60
+   },
+   {
+    "blocker_id": "B12",
+    "precision": 1,
+    "recall": 0.98,
+    "f1": 0.99,
+    "support": 50
+   }
+  ]
+ },
+ "impact": {
+  "mean_abs_pct_error": 0.11
+ },
+ "replay": {
+  "confirmation_rate": 0.875,
+  "completed": 8
+ },
+ "notes": [
+  "Scores are measured on the labelled synthetic golden dataset, not on real shopper traffic.",
+  "Suspected-tier precision is lower because behaviour is a weaker signal than a signature or a declared user agent."
+ ]
+}

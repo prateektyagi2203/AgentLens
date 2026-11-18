@@ -1,0 +1,111 @@
+{
+ "session": {
+  "session_id": "ses_d83xc7ex86",
+  "start_ts": "2026-11-17T04:55:43.000Z",
+  "duration_s": 6,
+  "request_count": 4,
+  "page_count": 4,
+  "identity_tier": "declared",
+  "operator": "Anthropic",
+  "agent_name": "Claude-User",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.9,
+  "entry_page": "/",
+  "exit_page": "/size-guide/cotton-linen-shirt.png",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B09",
+  "terminal_blocker_name": "Size guide image-only",
+  "blocker_confidence": 0.79,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": null,
+  "user_agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Claude-User/1.0; +Claude-User@anthropic.com)",
+  "ip_match": true
+ },
+ "requests": [
+  {
+   "request_id": "req_7csbfvx3vy",
+   "ts": "2026-11-17T04:55:43.000Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 182,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_dvwrvh9ape",
+   "ts": "2026-11-17T04:55:43.481Z",
+   "offset_ms": 481,
+   "method": "GET",
+   "path": "/search?q=cotton",
+   "status": 200,
+   "duration_ms": 232,
+   "page_type": "listing",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "req_fbs02pmyje",
+   "ts": "2026-11-17T04:55:46.395Z",
+   "offset_ms": 3395,
+   "method": "GET",
+   "path": "/p/cotton-linen-shirt",
+   "status": 200,
+   "duration_ms": 355,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_bzxfae72y5",
+   "ts": "2026-11-17T04:55:49.447Z",
+   "offset_ms": 6447,
+   "method": "GET",
+   "path": "/size-guide/cotton-linen-shirt.png",
+   "status": 200,
+   "duration_ms": 107,
+   "page_type": "size_guide_image",
+   "error_code": "SIZE_GUIDE_IMAGE",
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-17T04:55:43.000Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-17T04:55:46.395Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B09",
+   "name": "Size guide image-only",
+   "stage": "S3",
+   "confidence": 0.79,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "site_check",
+     "check": "size_guide_format",
+     "result": "fail"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

@@ -1,0 +1,151 @@
+{
+ "session": {
+  "session_id": "ses_cyc39hrwm6",
+  "start_ts": "2026-11-16T16:54:31.000Z",
+  "duration_s": 13,
+  "request_count": 6,
+  "page_count": 4,
+  "identity_tier": "declared",
+  "operator": "OpenAI",
+  "agent_name": "ChatGPT agent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 0.7,
+  "entry_page": "/",
+  "exit_page": "/size-guide/cotton-linen-shirt.png",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B09",
+  "terminal_blocker_name": "Size guide image-only",
+  "blocker_confidence": 0.75,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": null,
+  "user_agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; ChatGPT-Agent/1.0)",
+  "ip_match": false
+ },
+ "requests": [
+  {
+   "request_id": "req_gj3q5zfvxn",
+   "ts": "2026-11-16T16:54:31.000Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 199,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_hqm943q6nd",
+   "ts": "2026-11-16T16:54:33.984Z",
+   "offset_ms": 2984,
+   "method": "GET",
+   "path": "/c/sneakers",
+   "status": 200,
+   "duration_ms": 196,
+   "page_type": "listing",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "req_h600efswmc",
+   "ts": "2026-11-16T16:54:36.171Z",
+   "offset_ms": 5171,
+   "method": "GET",
+   "path": "/p/cotton-linen-shirt",
+   "status": 200,
+   "duration_ms": 360,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_77k1d37nng",
+   "ts": "2026-11-16T16:54:38.238Z",
+   "offset_ms": 7238,
+   "method": "GET",
+   "path": "/static/app.4f2c.js",
+   "status": 200,
+   "duration_ms": 43,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_jy05w0cnm6",
+   "ts": "2026-11-16T16:54:40.903Z",
+   "offset_ms": 9903,
+   "method": "POST",
+   "path": "/beacon",
+   "status": 204,
+   "duration_ms": 32,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_416annetw3",
+   "ts": "2026-11-16T16:54:44.239Z",
+   "offset_ms": 13239,
+   "method": "GET",
+   "path": "/size-guide/cotton-linen-shirt.png",
+   "status": 200,
+   "duration_ms": 106,
+   "page_type": "size_guide_image",
+   "error_code": "SIZE_GUIDE_IMAGE",
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-16T16:54:31.000Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-16T16:54:36.171Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B09",
+   "name": "Size guide image-only",
+   "stage": "S3",
+   "confidence": 0.75,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "site_check",
+     "check": "size_guide_format",
+     "result": "fail"
+    }
+   ]
+  },
+  {
+   "blocker_id": "B07",
+   "name": "App-download interstitial",
+   "stage": "S2",
+   "confidence": 0.41,
+   "is_terminal": false,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "req_hqm943q6nd",
+     "summary": "Overlay detected on the landing page (no interaction for 12 s)"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

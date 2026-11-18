@@ -1,0 +1,310 @@
+{
+ "window": {
+  "from": "2026-11-05",
+  "to": "2026-11-11",
+  "days": 7
+ },
+ "agent": {
+  "operator": "Perplexity",
+  "agent_name": "Perplexity-User",
+  "agent_class": "user_fetcher",
+  "sessions": 288,
+  "share_of_agent_sessions": 0.06948130277442702,
+  "pages_per_session": 2.2,
+  "conversion": 0.017361111111111112,
+  "tier_mix": {
+   "verified": 0,
+   "declared": 1,
+   "suspected": 0
+  },
+  "top_blocker": {
+   "blocker_id": "B03",
+   "name": "JS-only price and stock",
+   "share_of_failed": 0.4840989399293286
+  },
+  "signature_status_counts": {
+   "valid": 0,
+   "invalid_sig": 9,
+   "expired": 11,
+   "unknown_key": 0,
+   "fetch_failed": 0,
+   "none": 268
+  },
+  "last_seen": "2026-11-11T18:42:00Z"
+ },
+ "identity": {
+  "user_agent_example": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Perplexity-User/1.0; +https://perplexity.ai/perplexity-user)",
+  "signature_agent": null,
+  "ip_match_rate": 0.55,
+  "avg_identity_confidence": 0.82
+ },
+ "trend": [
+  {
+   "date": "2026-11-05",
+   "sessions": 43,
+   "conversion": 0.023255813953488372
+  },
+  {
+   "date": "2026-11-06",
+   "sessions": 45,
+   "conversion": 0.022222222222222223
+  },
+  {
+   "date": "2026-11-07",
+   "sessions": 38,
+   "conversion": 0.02631578947368421
+  },
+  {
+   "date": "2026-11-08",
+   "sessions": 32,
+   "conversion": 0
+  },
+  {
+   "date": "2026-11-09",
+   "sessions": 45,
+   "conversion": 0.022222222222222223
+  },
+  {
+   "date": "2026-11-10",
+   "sessions": 45,
+   "conversion": 0
+  },
+  {
+   "date": "2026-11-11",
+   "sessions": 40,
+   "conversion": 0.025
+  }
+ ],
+ "blockers": [
+  {
+   "blocker_id": "B03",
+   "name": "JS-only price and stock",
+   "sessions": 137,
+   "share_of_failed": 0.4840989399293286
+  },
+  {
+   "blocker_id": "B99",
+   "name": "Unknown",
+   "sessions": 52,
+   "share_of_failed": 0.18374558303886926
+  },
+  {
+   "blocker_id": "B09",
+   "name": "Size guide image-only",
+   "sessions": 32,
+   "share_of_failed": 0.11307420494699646
+  },
+  {
+   "blocker_id": "B08",
+   "name": "Out-of-stock dead end",
+   "sessions": 14,
+   "share_of_failed": 0.04946996466431095
+  },
+  {
+   "blocker_id": "B01",
+   "name": "Bot wall / WAF block",
+   "sessions": 12,
+   "share_of_failed": 0.04240282685512368
+  },
+  {
+   "blocker_id": "B04",
+   "name": "Missing structured data",
+   "sessions": 10,
+   "share_of_failed": 0.0353356890459364
+  },
+  {
+   "blocker_id": "B12",
+   "name": "Rate limited",
+   "sessions": 7,
+   "share_of_failed": 0.024734982332155476
+  },
+  {
+   "blocker_id": "B13",
+   "name": "Slow response / timeout",
+   "sessions": 7,
+   "share_of_failed": 0.024734982332155476
+  },
+  {
+   "blocker_id": "B14",
+   "name": "robots.txt disallow",
+   "sessions": 6,
+   "share_of_failed": 0.02120141342756184
+  },
+  {
+   "blocker_id": "B16",
+   "name": "Broken link / 404",
+   "sessions": 6,
+   "share_of_failed": 0.02120141342756184
+  }
+ ],
+ "recent_sessions": [
+  {
+   "session_id": "ses_byw5kf59v3",
+   "start_ts": "2026-11-11T11:25:45.000Z",
+   "duration_s": 3,
+   "request_count": 3,
+   "page_count": 3,
+   "identity_tier": "declared",
+   "operator": "Perplexity",
+   "agent_name": "Perplexity-User",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.9,
+   "entry_page": "/",
+   "exit_page": "/p/leather-kolhapuri-sandal",
+   "max_stage": "S1",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B03",
+   "terminal_blocker_name": "JS-only price and stock",
+   "blocker_confidence": 0.83,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_nh7vfaqa7f",
+   "start_ts": "2026-11-10T12:22:59.000Z",
+   "duration_s": 2,
+   "request_count": 2,
+   "page_count": 2,
+   "identity_tier": "declared",
+   "operator": "Perplexity",
+   "agent_name": "Perplexity-User",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.9,
+   "entry_page": "/search?q=indigo",
+   "exit_page": "/p/indigo-kurta-set",
+   "max_stage": "S1",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B03",
+   "terminal_blocker_name": "JS-only price and stock",
+   "blocker_confidence": 0.86,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_5aasj3qeh7",
+   "start_ts": "2026-11-10T09:07:35.000Z",
+   "duration_s": 5,
+   "request_count": 3,
+   "page_count": 3,
+   "identity_tier": "declared",
+   "operator": "Perplexity",
+   "agent_name": "Perplexity-User",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.7,
+   "entry_page": "/",
+   "exit_page": "/p/leather-kolhapuri-sandal",
+   "max_stage": "S1",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B03",
+   "terminal_blocker_name": "JS-only price and stock",
+   "blocker_confidence": 0.97,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_xekgekdg0p",
+   "start_ts": "2026-11-09T14:47:54.000Z",
+   "duration_s": 5,
+   "request_count": 3,
+   "page_count": 2,
+   "identity_tier": "declared",
+   "operator": "Perplexity",
+   "agent_name": "Perplexity-User",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.7,
+   "entry_page": "/",
+   "exit_page": "/p/leather-kolhapuri-sandal",
+   "max_stage": "S1",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B01",
+   "terminal_blocker_name": "Bot wall / WAF block",
+   "blocker_confidence": 0.63,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_3pa805y6f9",
+   "start_ts": "2026-11-09T08:28:59.000Z",
+   "duration_s": 5,
+   "request_count": 4,
+   "page_count": 3,
+   "identity_tier": "declared",
+   "operator": "Perplexity",
+   "agent_name": "Perplexity-User",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.9,
+   "entry_page": "/",
+   "exit_page": "/api/products/leather-kolhapuri-sandal/variants?size=9",
+   "max_stage": "S3",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B99",
+   "terminal_blocker_name": "Unknown",
+   "blocker_confidence": null,
+   "diagnosis_method": "llm"
+  },
+  {
+   "session_id": "ses_gexbb9ghqb",
+   "start_ts": "2026-11-09T06:55:36.000Z",
+   "duration_s": 3,
+   "request_count": 3,
+   "page_count": 2,
+   "identity_tier": "declared",
+   "operator": "Perplexity",
+   "agent_name": "Perplexity-User",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.7,
+   "entry_page": "/c/sneakers",
+   "exit_page": "/api/products/white-court-sneaker/variants?size=9",
+   "max_stage": "S2",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B08",
+   "terminal_blocker_name": "Out-of-stock dead end",
+   "blocker_confidence": 0.71,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_a0g4g6caa5",
+   "start_ts": "2026-11-08T09:19:34.000Z",
+   "duration_s": 2,
+   "request_count": 3,
+   "page_count": 3,
+   "identity_tier": "declared",
+   "operator": "Perplexity",
+   "agent_name": "Perplexity-User",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.9,
+   "entry_page": "/search?q=block",
+   "exit_page": "/size-guide/block-print-dupatta.png",
+   "max_stage": "S2",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B09",
+   "terminal_blocker_name": "Size guide image-only",
+   "blocker_confidence": 0.8,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_ta3a8d713a",
+   "start_ts": "2026-11-07T11:58:18.000Z",
+   "duration_s": 8,
+   "request_count": 4,
+   "page_count": 3,
+   "identity_tier": "declared",
+   "operator": "Perplexity",
+   "agent_name": "Perplexity-User",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.7,
+   "entry_page": "/",
+   "exit_page": "/api/products/indigo-kurta-set/variants?size=9",
+   "max_stage": "S3",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B99",
+   "terminal_blocker_name": "Unknown",
+   "blocker_confidence": null,
+   "diagnosis_method": "llm"
+  }
+ ]
+}

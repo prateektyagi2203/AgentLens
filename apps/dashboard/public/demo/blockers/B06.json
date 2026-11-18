@@ -1,0 +1,245 @@
+{
+ "window": {
+  "from": "2026-11-05",
+  "to": "2026-11-11",
+  "days": 7
+ },
+ "blocker": {
+  "blocker_id": "B06",
+  "name": "Login / OTP wall before cart",
+  "stage": "S5",
+  "sessions_blocked": 480,
+  "share_of_failed": 0.12,
+  "risk_inr": {
+   "low": 260681,
+   "base": 488777,
+   "high": 782043
+  },
+  "replay_status": "confirmed",
+  "effort": "M",
+  "priority_score": 244389,
+  "low_confidence": false
+ },
+ "description": "Cart creation requires a logged-in user. The agent is redirected to an OTP login it cannot complete.",
+ "detection": "Cart POST returned 401, redirect to /login, OTP sent without a verify, session ended.",
+ "evidence": {
+  "top_error_codes": [
+   {
+    "code": "UNAUTHENTICATED",
+    "count": 355,
+    "share": 0.74
+   },
+   {
+    "code": "OTP_SENT_NO_VERIFY",
+    "count": 125,
+    "share": 0.26
+   }
+  ],
+  "example_requests": [
+   {
+    "request_id": "req_B06_1",
+    "summary": "POST /api/cart → 401 → GET /login → POST /api/otp/send · no verify · ended",
+    "count": 480
+   }
+  ],
+  "site_checks": []
+ },
+ "risk_breakdown": {
+  "sessions_blocked": 480,
+  "recoverable_rate": 0.6,
+  "p_stage": 0.1799999473905724,
+  "aov_inr": 2200,
+  "k": 4.285714285714286
+ },
+ "trend": [
+  {
+   "date": "2026-11-05",
+   "sessions_blocked": 71
+  },
+  {
+   "date": "2026-11-06",
+   "sessions_blocked": 74
+  },
+  {
+   "date": "2026-11-07",
+   "sessions_blocked": 62
+  },
+  {
+   "date": "2026-11-08",
+   "sessions_blocked": 56
+  },
+  {
+   "date": "2026-11-09",
+   "sessions_blocked": 73
+  },
+  {
+   "date": "2026-11-10",
+   "sessions_blocked": 77
+  },
+  {
+   "date": "2026-11-11",
+   "sessions_blocked": 67
+  }
+ ],
+ "sample_sessions": [
+  {
+   "session_id": "ses_zmhq2zs3yp",
+   "start_ts": "2026-11-11T16:52:59.000Z",
+   "duration_s": 18,
+   "request_count": 10,
+   "page_count": 4,
+   "identity_tier": "verified",
+   "operator": "OpenAI",
+   "agent_name": "ChatGPT agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 1,
+   "entry_page": "/",
+   "exit_page": "/api/otp/send",
+   "max_stage": "S4",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B06",
+   "terminal_blocker_name": "Login / OTP wall before cart",
+   "blocker_confidence": 0.87,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_eqxt56vncw",
+   "start_ts": "2026-11-11T13:58:42.000Z",
+   "duration_s": 21,
+   "request_count": 10,
+   "page_count": 4,
+   "identity_tier": "verified",
+   "operator": "OpenAI",
+   "agent_name": "ChatGPT agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 1,
+   "entry_page": "/",
+   "exit_page": "/api/otp/send",
+   "max_stage": "S4",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B06",
+   "terminal_blocker_name": "Login / OTP wall before cart",
+   "blocker_confidence": 0.78,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_5b5mafcg7d",
+   "start_ts": "2026-11-11T06:54:33.000Z",
+   "duration_s": 18,
+   "request_count": 10,
+   "page_count": 4,
+   "identity_tier": "declared",
+   "operator": "OpenAI",
+   "agent_name": "ChatGPT agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 0.9,
+   "entry_page": "/",
+   "exit_page": "/api/otp/send",
+   "max_stage": "S4",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B06",
+   "terminal_blocker_name": "Login / OTP wall before cart",
+   "blocker_confidence": 0.92,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_hbffmhdjaz",
+   "start_ts": "2026-11-09T08:04:49.000Z",
+   "duration_s": 19,
+   "request_count": 9,
+   "page_count": 3,
+   "identity_tier": "verified",
+   "operator": "TestOperator",
+   "agent_name": "AgentLens Test Agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 1,
+   "entry_page": "/search?q=white",
+   "exit_page": "/api/otp/send",
+   "max_stage": "S4",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B06",
+   "terminal_blocker_name": "Login / OTP wall before cart",
+   "blocker_confidence": 0.8,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_f2pjm4j79p",
+   "start_ts": "2026-11-09T03:33:37.000Z",
+   "duration_s": 17,
+   "request_count": 10,
+   "page_count": 4,
+   "identity_tier": "declared",
+   "operator": "Google",
+   "agent_name": "Gemini agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 0.7,
+   "entry_page": "/",
+   "exit_page": "/api/otp/send",
+   "max_stage": "S4",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B06",
+   "terminal_blocker_name": "Login / OTP wall before cart",
+   "blocker_confidence": 0.8,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_kadedscedq",
+   "start_ts": "2026-11-07T10:45:33.000Z",
+   "duration_s": 20,
+   "request_count": 10,
+   "page_count": 4,
+   "identity_tier": "suspected",
+   "operator": "unknown",
+   "agent_name": "Unidentified browsing agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 0.75,
+   "entry_page": "/",
+   "exit_page": "/api/otp/send",
+   "max_stage": "S4",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B06",
+   "terminal_blocker_name": "Login / OTP wall before cart",
+   "blocker_confidence": 0.79,
+   "diagnosis_method": "rule"
+  }
+ ],
+ "replays": [
+  {
+   "replay_id": "rpl_b06",
+   "blocker_id": "B06",
+   "blocker_name": "Login / OTP wall before cart",
+   "source_session_id": "ses_zmhq2zs3yp",
+   "mode": "browser",
+   "status": "completed",
+   "verdict": "confirmed",
+   "started_at": "2026-11-11T17:21:30Z",
+   "finished_at": "2026-11-11T17:21:41.900Z",
+   "steps_count": 4,
+   "verdict_explanation": "Confirmed. Add-to-cart returned 401 and redirected to /login, where an SMS OTP was sent to a phone the agent does not control."
+  }
+ ],
+ "recommendation": {
+  "rec_id": "rec_B06",
+  "run_id": "run_20261118_0610",
+  "blocker_id": "B06",
+  "blocker_name": "Login / OTP wall before cart",
+  "title": "Allow guest cart, defer login to checkout",
+  "body": "Let anonymous sessions create carts and ask for login (or guest checkout) only at payment.",
+  "why_it_helps": "An SMS OTP goes to the shopper's phone, so an agent cannot complete it.",
+  "how_to_verify": "401 responses on POST /api/cart should disappear and add-to-cart step conversion should rise.",
+  "verify_metric": "Step conversion S4 → S5 for agents",
+  "effort": "M",
+  "owner": "Product",
+  "priority_score": 244389,
+  "risk_inr_base": 488777,
+  "status": "open",
+  "fixed_annotation_id": null,
+  "llm_explanation": null
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "session": {
+  "session_id": "ses_h6a0kys42y",
+  "start_ts": "2026-11-16T13:04:32.000Z",
+  "duration_s": 59,
+  "request_count": 5,
+  "page_count": 3,
+  "identity_tier": "human",
+  "operator": "human",
+  "agent_name": "Browser (human)",
+  "agent_class": "human",
+  "identity_confidence": 0.9,
+  "entry_page": "/",
+  "exit_page": "/p/indigo-kurta-set",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": null,
+  "terminal_blocker_name": null,
+  "blocker_confidence": null,
+  "diagnosis_method": "none"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 12,
+  "user_agent": "Mozilla/5.0 (Linux; Android 14; Pixel 8) AppleWebKit/537.36 Chrome/131.0 Mobile Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "req_adf1mya6fg",
+   "ts": "2026-11-16T13:04:32.000Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 215,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_zwr8aq4brp",
+   "ts": "2026-11-16T13:04:41.557Z",
+   "offset_ms": 9557,
+   "method": "GET",
+   "path": "/search?q=indigo",
+   "status": 200,
+   "duration_ms": 209,
+   "page_type": "listing",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "req_xz0dvxgm74",
+   "ts": "2026-11-16T13:05:05.486Z",
+   "offset_ms": 33486,
+   "method": "GET",
+   "path": "/p/indigo-kurta-set",
+   "status": 200,
+   "duration_ms": 240,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_p2jvgb6dek",
+   "ts": "2026-11-16T13:05:14.945Z",
+   "offset_ms": 42945,
+   "method": "GET",
+   "path": "/static/app.4f2c.js",
+   "status": 200,
+   "duration_ms": 65,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_51ptkwhbbb",
+   "ts": "2026-11-16T13:05:30.619Z",
+   "offset_ms": 58619,
+   "method": "POST",
+   "path": "/beacon",
+   "status": 204,
+   "duration_ms": 38,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-16T13:04:32.000Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-16T13:05:05.486Z"
+  }
+ ],
+ "fired_rules": [],
+ "replay_ids": []
+}

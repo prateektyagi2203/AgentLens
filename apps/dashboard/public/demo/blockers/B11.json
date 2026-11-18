@@ -1,0 +1,126 @@
+{
+ "window": {
+  "from": "2026-11-05",
+  "to": "2026-11-11",
+  "days": 7
+ },
+ "blocker": {
+  "blocker_id": "B11",
+  "name": "Unsupported payment step",
+  "stage": "S7",
+  "sessions_blocked": 40,
+  "share_of_failed": 0.01,
+  "risk_inr": {
+   "low": 48274,
+   "base": 90514,
+   "high": 144823
+  },
+  "replay_status": "not_run",
+  "effort": "L",
+  "priority_score": 22629,
+  "low_confidence": false
+ },
+ "description": "The only available payment options are a COD OTP and a UPI intent flow that an agent cannot complete.",
+ "detection": "COD OTP step or UPI intent step reached with no completion.",
+ "evidence": {
+  "top_error_codes": [
+   {
+    "code": "COD_OTP_REQUIRED",
+    "count": 24,
+    "share": 0.6
+   },
+   {
+    "code": "UPI_INTENT_ONLY",
+    "count": 16,
+    "share": 0.4
+   }
+  ],
+  "example_requests": [
+   {
+    "request_id": "req_B11_1",
+    "summary": "POST /api/checkout → 200 · GET /api/payment/cod-otp → 200 · no verify · ended",
+    "count": 40
+   }
+  ],
+  "site_checks": []
+ },
+ "risk_breakdown": {
+  "sessions_blocked": 40,
+  "recoverable_rate": 0.6,
+  "p_stage": 0.39999873737373737,
+  "aov_inr": 2200,
+  "k": 4.285714285714286
+ },
+ "trend": [
+  {
+   "date": "2026-11-05",
+   "sessions_blocked": 6
+  },
+  {
+   "date": "2026-11-06",
+   "sessions_blocked": 6
+  },
+  {
+   "date": "2026-11-07",
+   "sessions_blocked": 5
+  },
+  {
+   "date": "2026-11-08",
+   "sessions_blocked": 5
+  },
+  {
+   "date": "2026-11-09",
+   "sessions_blocked": 6
+  },
+  {
+   "date": "2026-11-10",
+   "sessions_blocked": 6
+  },
+  {
+   "date": "2026-11-11",
+   "sessions_blocked": 6
+  }
+ ],
+ "sample_sessions": [
+  {
+   "session_id": "ses_r9g2m6xpp0",
+   "start_ts": "2026-11-07T05:10:05.000Z",
+   "duration_s": 23,
+   "request_count": 11,
+   "page_count": 4,
+   "identity_tier": "verified",
+   "operator": "OpenAI",
+   "agent_name": "ChatGPT agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 1,
+   "entry_page": "/",
+   "exit_page": "/api/payment/cod-otp",
+   "max_stage": "S6",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B11",
+   "terminal_blocker_name": "Unsupported payment step",
+   "blocker_confidence": 0.78,
+   "diagnosis_method": "rule"
+  }
+ ],
+ "replays": [],
+ "recommendation": {
+  "rec_id": "rec_B11",
+  "run_id": "run_20261118_0610",
+  "blocker_id": "B11",
+  "blocker_name": "Unsupported payment step",
+  "title": "Offer an agent-compatible payment option",
+  "body": "Add card tokens or a prepaid payment link and skip the COD OTP for verified agents.",
+  "why_it_helps": "The shopper's phone receives the OTP and the UPI app opens on a device the agent does not control.",
+  "how_to_verify": "Step conversion S7 → S8 should rise for agents.",
+  "verify_metric": "Checkout submitted → order placed step conversion",
+  "effort": "L",
+  "owner": "Product",
+  "priority_score": 22629,
+  "risk_inr_base": 90514,
+  "status": "open",
+  "fixed_annotation_id": null,
+  "llm_explanation": null
+ }
+}

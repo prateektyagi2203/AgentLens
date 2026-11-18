@@ -1,0 +1,98 @@
+{
+ "session": {
+  "session_id": "ses_prrq09zcv5",
+  "start_ts": "2026-11-18T05:15:52.000Z",
+  "duration_s": 4,
+  "request_count": 3,
+  "page_count": 3,
+  "identity_tier": "declared",
+  "operator": "OpenAI",
+  "agent_name": "ChatGPT-User",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.7,
+  "entry_page": "/search?q=white",
+  "exit_page": "/size-guide/white-court-sneaker.png",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B09",
+  "terminal_blocker_name": "Size guide image-only",
+  "blocker_confidence": 0.74,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": null,
+  "user_agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+  "ip_match": true
+ },
+ "requests": [
+  {
+   "request_id": "req_q57cncw140",
+   "ts": "2026-11-18T05:15:52.000Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/search?q=white",
+   "status": 200,
+   "duration_ms": 212,
+   "page_type": "listing",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_7gn2p0hjj6",
+   "ts": "2026-11-18T05:15:54.999Z",
+   "offset_ms": 2999,
+   "method": "GET",
+   "path": "/p/white-court-sneaker",
+   "status": 200,
+   "duration_ms": 330,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_6c819vea0f",
+   "ts": "2026-11-18T05:15:55.613Z",
+   "offset_ms": 3613,
+   "method": "GET",
+   "path": "/size-guide/white-court-sneaker.png",
+   "status": 200,
+   "duration_ms": 161,
+   "page_type": "size_guide_image",
+   "error_code": "SIZE_GUIDE_IMAGE",
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-18T05:15:52.000Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-18T05:15:54.999Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B09",
+   "name": "Size guide image-only",
+   "stage": "S3",
+   "confidence": 0.74,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "site_check",
+     "check": "size_guide_format",
+     "result": "fail"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

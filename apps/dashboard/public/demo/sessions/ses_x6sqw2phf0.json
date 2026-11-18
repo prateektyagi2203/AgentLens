@@ -1,0 +1,137 @@
+{
+ "session": {
+  "session_id": "ses_x6sqw2phf0",
+  "start_ts": "2026-11-07T03:51:43.000Z",
+  "duration_s": 5,
+  "request_count": 6,
+  "page_count": 4,
+  "identity_tier": "declared",
+  "operator": "OpenAI",
+  "agent_name": "ChatGPT agent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 0.9,
+  "entry_page": "/",
+  "exit_page": "/size-guide/indigo-kurta-set.png",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B09",
+  "terminal_blocker_name": "Size guide image-only",
+  "blocker_confidence": 0.81,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "invalid_sig",
+  "signature_agent": null,
+  "suspicion_score": null,
+  "user_agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; ChatGPT-Agent/1.0)",
+  "ip_match": true
+ },
+ "requests": [
+  {
+   "request_id": "req_kews09mf5h",
+   "ts": "2026-11-07T03:51:43.000Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 148,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_ypb5494dgx",
+   "ts": "2026-11-07T03:51:43.991Z",
+   "offset_ms": 991,
+   "method": "GET",
+   "path": "/c/sneakers",
+   "status": 200,
+   "duration_ms": 192,
+   "page_type": "listing",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "req_k4w0vhjy5d",
+   "ts": "2026-11-07T03:51:45.788Z",
+   "offset_ms": 2788,
+   "method": "GET",
+   "path": "/p/indigo-kurta-set",
+   "status": 200,
+   "duration_ms": 156,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_csmcdsy5e9",
+   "ts": "2026-11-07T03:51:46.583Z",
+   "offset_ms": 3583,
+   "method": "GET",
+   "path": "/static/app.4f2c.js",
+   "status": 200,
+   "duration_ms": 67,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_qrg4d98g5y",
+   "ts": "2026-11-07T03:51:47.168Z",
+   "offset_ms": 4168,
+   "method": "POST",
+   "path": "/beacon",
+   "status": 204,
+   "duration_ms": 11,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_76rf7cnxrd",
+   "ts": "2026-11-07T03:51:48.038Z",
+   "offset_ms": 5038,
+   "method": "GET",
+   "path": "/size-guide/indigo-kurta-set.png",
+   "status": 200,
+   "duration_ms": 202,
+   "page_type": "size_guide_image",
+   "error_code": "SIZE_GUIDE_IMAGE",
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-07T03:51:43.000Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-07T03:51:45.788Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B09",
+   "name": "Size guide image-only",
+   "stage": "S3",
+   "confidence": 0.81,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "site_check",
+     "check": "size_guide_format",
+     "result": "fail"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

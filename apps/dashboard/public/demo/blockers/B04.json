@@ -1,0 +1,155 @@
+{
+ "window": {
+  "from": "2026-11-05",
+  "to": "2026-11-11",
+  "days": 7
+ },
+ "blocker": {
+  "blocker_id": "B04",
+  "name": "Missing structured data",
+  "stage": "S2",
+  "sessions_blocked": 50,
+  "share_of_failed": 0.0125,
+  "risk_inr": {
+   "low": 6034,
+   "base": 11314,
+   "high": 18103
+  },
+  "replay_status": "not_run",
+  "effort": "S",
+  "priority_score": 11314,
+  "low_confidence": false
+ },
+ "description": "Product pages lack complete schema.org Product markup (price, availability, variants).",
+ "detection": "Site check: JSON-LD Product missing or incomplete.",
+ "evidence": {
+  "top_error_codes": [
+   {
+    "code": "JSONLD_INCOMPLETE",
+    "count": 50,
+    "share": 1
+   }
+  ],
+  "example_requests": [
+   {
+    "request_id": "req_B04_1",
+    "summary": "Site check: JSON-LD Product missing availability on 2/5 sampled PDPs",
+    "count": 50
+   }
+  ],
+  "site_checks": [
+   {
+    "check_id": "chk_jsonld_product",
+    "run_ts": "2026-11-11T16:55:00Z",
+    "check_name": "jsonld_product",
+    "target": "5 random product pages",
+    "result": "warn",
+    "details": {
+     "sampled": 5,
+     "complete": 3,
+     "message": "JSON-LD Product present but availability missing on 2/5 sampled PDPs"
+    }
+   }
+  ]
+ },
+ "risk_breakdown": {
+  "sessions_blocked": 50,
+  "recoverable_rate": 0.6,
+  "p_stage": 0.0399989898989899,
+  "aov_inr": 2200,
+  "k": 4.285714285714286
+ },
+ "trend": [
+  {
+   "date": "2026-11-05",
+   "sessions_blocked": 7
+  },
+  {
+   "date": "2026-11-06",
+   "sessions_blocked": 8
+  },
+  {
+   "date": "2026-11-07",
+   "sessions_blocked": 6
+  },
+  {
+   "date": "2026-11-08",
+   "sessions_blocked": 6
+  },
+  {
+   "date": "2026-11-09",
+   "sessions_blocked": 8
+  },
+  {
+   "date": "2026-11-10",
+   "sessions_blocked": 8
+  },
+  {
+   "date": "2026-11-11",
+   "sessions_blocked": 7
+  }
+ ],
+ "sample_sessions": [
+  {
+   "session_id": "ses_dmaahswy7q",
+   "start_ts": "2026-11-09T05:00:31.000Z",
+   "duration_s": 4,
+   "request_count": 3,
+   "page_count": 3,
+   "identity_tier": "declared",
+   "operator": "OpenAI",
+   "agent_name": "ChatGPT-User",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.7,
+   "entry_page": "/",
+   "exit_page": "/p/leather-kolhapuri-sandal",
+   "max_stage": "S1",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B04",
+   "terminal_blocker_name": "Missing structured data",
+   "blocker_confidence": 0.64,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_1pqa3ps4zz",
+   "start_ts": "2026-11-05T06:28:31.000Z",
+   "duration_s": 4,
+   "request_count": 2,
+   "page_count": 2,
+   "identity_tier": "declared",
+   "operator": "Anthropic",
+   "agent_name": "Claude-User",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.7,
+   "entry_page": "/c/sneakers",
+   "exit_page": "/p/leather-kolhapuri-sandal",
+   "max_stage": "S1",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B04",
+   "terminal_blocker_name": "Missing structured data",
+   "blocker_confidence": 0.79,
+   "diagnosis_method": "rule"
+  }
+ ],
+ "replays": [],
+ "recommendation": {
+  "rec_id": "rec_B04",
+  "run_id": "run_20261118_0610",
+  "blocker_id": "B04",
+  "blocker_name": "Missing structured data",
+  "title": "Add complete schema.org Product markup",
+  "body": "Emit Product, Offer and ItemAvailability for every variant in JSON-LD.",
+  "why_it_helps": "Structured data is the cheapest reliable way for agents to read product facts.",
+  "how_to_verify": "The JSON-LD site check should pass on all sampled PDPs.",
+  "verify_metric": "Site check: jsonld_product",
+  "effort": "S",
+  "owner": "Content",
+  "priority_score": 11314,
+  "risk_inr_base": 11314,
+  "status": "open",
+  "fixed_annotation_id": null,
+  "llm_explanation": null
+ }
+}

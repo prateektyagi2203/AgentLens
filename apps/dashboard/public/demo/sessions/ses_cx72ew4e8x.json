@@ -1,0 +1,109 @@
+{
+ "session": {
+  "session_id": "ses_cx72ew4e8x",
+  "start_ts": "2026-11-05T14:48:53.000Z",
+  "duration_s": 56,
+  "request_count": 5,
+  "page_count": 3,
+  "identity_tier": "human",
+  "operator": "human",
+  "agent_name": "Browser (human)",
+  "agent_class": "human",
+  "identity_confidence": 0.9,
+  "entry_page": "/",
+  "exit_page": "/p/block-print-dupatta",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": null,
+  "terminal_blocker_name": null,
+  "blocker_confidence": null,
+  "diagnosis_method": "none"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 20,
+  "user_agent": "Mozilla/5.0 (Linux; Android 14; Pixel 8) AppleWebKit/537.36 Chrome/131.0 Mobile Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "req_47ezfdv82q",
+   "ts": "2026-11-05T14:48:53.000Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 94,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_wydc5yr0jn",
+   "ts": "2026-11-05T14:49:16.660Z",
+   "offset_ms": 23660,
+   "method": "GET",
+   "path": "/search?q=block",
+   "status": 200,
+   "duration_ms": 143,
+   "page_type": "listing",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "req_pxvkgy9701",
+   "ts": "2026-11-05T14:49:32.331Z",
+   "offset_ms": 39331,
+   "method": "GET",
+   "path": "/p/block-print-dupatta",
+   "status": 200,
+   "duration_ms": 400,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_s2ct6fyz1q",
+   "ts": "2026-11-05T14:49:38.402Z",
+   "offset_ms": 45402,
+   "method": "GET",
+   "path": "/static/app.4f2c.js",
+   "status": 200,
+   "duration_ms": 34,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_bq89ge66yc",
+   "ts": "2026-11-05T14:49:49.479Z",
+   "offset_ms": 56479,
+   "method": "POST",
+   "path": "/beacon",
+   "status": 204,
+   "duration_ms": 34,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-05T14:48:53.000Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-05T14:49:32.331Z"
+  }
+ ],
+ "fired_rules": [],
+ "replay_ids": []
+}

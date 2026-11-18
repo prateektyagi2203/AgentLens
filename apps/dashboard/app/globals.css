@@ -1,3 +1,173 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/*
+ * THEME TOKENS - this file is the single place to change colours, radius and fonts.
+ * Light palette = docs/theme.md verbatim. The [data-theme="dark"] block is a derived cool-dark
+ * palette with the same token names. Components only use the semantic utilities
+ * (bg-background, bg-card, text-muted-foreground, border-border, bg-primary, text-destructive,
+ * text-success, text-agent, text-human ...) - never hex/oklch.
+ * Agents vs humans are ALWAYS --agent (blue) and --human (slate) in both themes (DX4).
+ */
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-agent: var(--agent);
+  --color-human: var(--human);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+
+  --font-display: var(--font-display);
+  --font-mono: var(--font-mono);
+}
+
+:root {
+  --radius: 0.5rem;
+  --font-display: "Sora", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --background: oklch(0.985 0.003 250);      /* cool white page background */
+  --foreground: oklch(0.216 0.006 56);       /* near-black ink text */
+  --card: oklch(0.962 0.005 250);            /* cool light-grey cards */
+  --card-foreground: oklch(0.216 0.006 56);
+  --popover: oklch(0.962 0.005 250);
+  --popover-foreground: oklch(0.216 0.006 56);
+  --primary: oklch(0.55 0.18 255);           /* blue accent: buttons, labels, highlights */
+  --primary-foreground: oklch(0.985 0.003 250);
+  --secondary: oklch(0.935 0.006 250);
+  --secondary-foreground: oklch(0.216 0.006 56);
+  --muted: oklch(0.935 0.006 250);
+  --muted-foreground: oklch(0.52 0.015 260); /* cool grey secondary text */
+  --accent: oklch(0.91 0.012 250);
+  --accent-foreground: oklch(0.216 0.006 56);
+  --destructive: oklch(0.577 0.215 27);      /* red for errors / blockers */
+  --destructive-foreground: oklch(0.985 0.003 250);
+  --success: oklch(0.62 0.12 155);           /* green for fixed / healthy */
+  --border: oklch(0.885 0.006 250);
+  --input: oklch(0.885 0.006 250);
+  --ring: oklch(0.55 0.18 255);              /* focus ring = blue */
+  --grid-line: oklch(0.865 0.007 250 / 70%);
+
+  /* additions for the dashboard */
+  --warning: oklch(0.6 0.14 70);
+  --agent: oklch(0.55 0.18 255);             /* agents = primary blue */
+  --human: oklch(0.5 0.03 250);              /* humans = neutral cool slate */
+  --chart-1: oklch(0.55 0.18 255);           /* blue */
+  --chart-2: oklch(0.62 0.12 155);           /* green */
+  --chart-3: oklch(0.577 0.215 27);          /* red */
+  --chart-4: oklch(0.7 0.02 255);            /* grey */
+  --chart-5: oklch(0.76 0.1 250);            /* light blue */
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --background: oklch(0.18 0.01 255);
+  --foreground: oklch(0.96 0.004 250);
+  --card: oklch(0.225 0.012 255);
+  --card-foreground: oklch(0.96 0.004 250);
+  --popover: oklch(0.25 0.013 255);
+  --popover-foreground: oklch(0.96 0.004 250);
+  --primary: oklch(0.72 0.14 255);
+  --primary-foreground: oklch(0.16 0.01 255);
+  --secondary: oklch(0.27 0.012 255);
+  --secondary-foreground: oklch(0.96 0.004 250);
+  --muted: oklch(0.27 0.012 255);
+  --muted-foreground: oklch(0.73 0.015 255);
+  --accent: oklch(0.31 0.016 255);
+  --accent-foreground: oklch(0.96 0.004 250);
+  --destructive: oklch(0.7 0.19 25);
+  --destructive-foreground: oklch(0.16 0.01 255);
+  --success: oklch(0.76 0.15 155);
+  --border: oklch(0.33 0.012 255);
+  --input: oklch(0.36 0.012 255);
+  --ring: oklch(0.72 0.14 255);
+  --grid-line: oklch(0.32 0.012 255 / 70%);
+
+  --warning: oklch(0.78 0.13 80);
+  --agent: oklch(0.72 0.14 255);
+  --human: oklch(0.78 0.02 250);
+  --chart-1: oklch(0.72 0.14 255);
+  --chart-2: oklch(0.76 0.15 155);
+  --chart-3: oklch(0.7 0.19 25);
+  --chart-4: oklch(0.6 0.02 255);
+  --chart-5: oklch(0.55 0.1 250);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  html[data-story="on"] {
+    font-size: 118%;
+  }
+  body {
+    font-family: var(--font-display);
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-ring);
+    outline-offset: 2px;
+  }
+  button:not(:disabled),
+  [role="button"],
+  summary {
+    cursor: pointer;
+  }
+  table {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Story mode (DX5): dense content is hidden, hero numbers are shown. */
+html[data-story="on"] .hide-in-story {
+  display: none !important;
+}
+
+/* Optional: faint blueprint grid used behind wireframe panels */
+@utility blueprint-grid {
+  background-image: linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: calc(100% / 12) calc(100% / 8);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.recharts-text,
+.recharts-cartesian-axis-tick-value {
+  font-family: var(--font-mono);
+}

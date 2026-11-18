@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" width="1280" height="800" role="img" aria-label="Redirected to login">
+<rect x="0" y="0" width="1280" height="800" rx="0" fill="#fafafa" />
+<rect x="0" y="0" width="1280" height="70" rx="0" fill="#ffffff" stroke="#e5e7eb"/>
+<rect x="20" y="22" width="12" height="12" rx="6" fill="#f87171" /><rect x="40" y="22" width="12" height="12" rx="6" fill="#fbbf24" /><rect x="60" y="22" width="12" height="12" rx="6" fill="#34d399" />
+<rect x="110" y="16" width="760" height="36" rx="18" fill="#f3f4f6" /><text x="134" y="40" font-size="15" fill="#6b7280" font-weight="400" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">demo-store.example</text>
+<text x="1050" y="40" font-size="15" fill="#6b7280" font-weight="400" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Step 3</text>
+<rect x="430" y="170" width="420" height="440" rx="16" fill="#ffffff" stroke="#e5e7eb"/><text x="640" y="240" font-size="28" fill="#111827" font-weight="700" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif">Log in to continue</text><rect x="470" y="290" width="340" height="48" rx="8" fill="#ffffff" stroke="#9ca3af"/><text x="490" y="321" font-size="16" fill="#9ca3af" font-weight="400" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">Mobile number</text><rect x="470" y="360" width="340" height="52" rx="10" fill="#111827" /><text x="640" y="393" font-size="18" fill="#ffffff" font-weight="600" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif">Send OTP</text><text x="640" y="450" font-size="14" fill="#6b7280" font-weight="400" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif">We will text you a 6 digit code</text>
+<rect x="0" y="740" width="1280" height="60" rx="0" fill="#f0fdf4" />
+<text x="30" y="777" font-size="17" fill="#15803d" font-weight="600" text-anchor="start" font-family="Inter, Segoe UI, Arial, sans-serif">✓ Redirected to login</text>
+</svg>

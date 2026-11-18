@@ -1,0 +1,245 @@
+{
+ "session": {
+  "session_id": "ses_g2snxv9hhp",
+  "start_ts": "2026-11-17T08:49:25.000Z",
+  "duration_s": 27,
+  "request_count": 12,
+  "page_count": 4,
+  "identity_tier": "verified",
+  "operator": "OpenAI",
+  "agent_name": "ChatGPT agent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 1,
+  "entry_page": "/",
+  "exit_page": "/api/checkout",
+  "max_stage": "S6",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B10",
+  "terminal_blocker_name": "Checkout validation failure",
+  "blocker_confidence": 0.68,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "valid",
+  "signature_agent": "https://chatgpt.com",
+  "suspicion_score": null,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "req_2b2kzw3y92",
+   "ts": "2026-11-17T08:49:25.000Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 97,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_1ph6ybe6z6",
+   "ts": "2026-11-17T08:49:27.470Z",
+   "offset_ms": 2470,
+   "method": "GET",
+   "path": "/search?q=leather",
+   "status": 200,
+   "duration_ms": 210,
+   "page_type": "listing",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "req_4t68j04b86",
+   "ts": "2026-11-17T08:49:29.123Z",
+   "offset_ms": 4123,
+   "method": "GET",
+   "path": "/p/leather-kolhapuri-sandal",
+   "status": 200,
+   "duration_ms": 389,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_95ddqy33gp",
+   "ts": "2026-11-17T08:49:32.777Z",
+   "offset_ms": 7777,
+   "method": "GET",
+   "path": "/static/app.4f2c.js",
+   "status": 200,
+   "duration_ms": 66,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_fam62yp5ct",
+   "ts": "2026-11-17T08:49:35.213Z",
+   "offset_ms": 10213,
+   "method": "POST",
+   "path": "/beacon",
+   "status": 204,
+   "duration_ms": 28,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_qkh2c7v1p5",
+   "ts": "2026-11-17T08:49:38.764Z",
+   "offset_ms": 13764,
+   "method": "GET",
+   "path": "/api/products/leather-kolhapuri-sandal/variants?size=9",
+   "status": 200,
+   "duration_ms": 140,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_36p7akzxmf",
+   "ts": "2026-11-17T08:49:40.582Z",
+   "offset_ms": 15582,
+   "method": "GET",
+   "path": "/api/serviceability?pincode=560001",
+   "status": 200,
+   "duration_ms": 207,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S4",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_1g5ddgjfx2",
+   "ts": "2026-11-17T08:49:41.767Z",
+   "offset_ms": 16767,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 201,
+   "duration_ms": 184,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S5",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_dkrv0rhry5",
+   "ts": "2026-11-17T08:49:45.458Z",
+   "offset_ms": 20458,
+   "method": "GET",
+   "path": "/checkout",
+   "status": 200,
+   "duration_ms": 204,
+   "page_type": "checkout",
+   "error_code": null,
+   "stage_id": "S6",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_1ds7wpx8ak",
+   "ts": "2026-11-17T08:49:46.958Z",
+   "offset_ms": 21958,
+   "method": "POST",
+   "path": "/api/checkout",
+   "status": 422,
+   "duration_ms": 165,
+   "page_type": "api",
+   "error_code": "PHONE_FORMAT",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "req_bq6xj17aee",
+   "ts": "2026-11-17T08:49:49.458Z",
+   "offset_ms": 24458,
+   "method": "POST",
+   "path": "/api/checkout",
+   "status": 422,
+   "duration_ms": 120,
+   "page_type": "api",
+   "error_code": "PHONE_FORMAT",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "req_94krbhyxnt",
+   "ts": "2026-11-17T08:49:51.958Z",
+   "offset_ms": 26958,
+   "method": "POST",
+   "path": "/api/checkout",
+   "status": 422,
+   "duration_ms": 165,
+   "page_type": "api",
+   "error_code": "PHONE_FORMAT",
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-17T08:49:25.000Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-17T08:49:29.123Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-17T08:49:38.764Z"
+  },
+  {
+   "stage_id": "S4",
+   "first_reached_ts": "2026-11-17T08:49:40.582Z"
+  },
+  {
+   "stage_id": "S5",
+   "first_reached_ts": "2026-11-17T08:49:41.767Z"
+  },
+  {
+   "stage_id": "S6",
+   "first_reached_ts": "2026-11-17T08:49:45.458Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B10",
+   "name": "Checkout validation failure",
+   "stage": "S7",
+   "confidence": 0.68,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "req_94krbhyxnt",
+     "summary": "POST /api/checkout → 422 PHONE_FORMAT (×3)"
+    }
+   ]
+  },
+  {
+   "blocker_id": "B07",
+   "name": "App-download interstitial",
+   "stage": "S2",
+   "confidence": 0.41,
+   "is_terminal": false,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "req_1ph6ybe6z6",
+     "summary": "Overlay detected on the landing page (no interaction for 12 s)"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

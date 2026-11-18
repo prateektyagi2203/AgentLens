@@ -1,0 +1,94 @@
+{
+ "replay": {
+  "replay_id": "rpl_b06",
+  "blocker_id": "B06",
+  "blocker_name": "Login / OTP wall before cart",
+  "source_session_id": "ses_zmhq2zs3yp",
+  "mode": "browser",
+  "status": "completed",
+  "verdict": "confirmed",
+  "started_at": "2026-11-11T17:21:30Z",
+  "finished_at": "2026-11-11T17:21:41.900Z",
+  "steps_count": 4,
+  "verdict_explanation": "Confirmed. Add-to-cart returned 401 and redirected to /login, where an SMS OTP was sent to a phone the agent does not control."
+ },
+ "user_agent": "AgentLens-Replay/1.0 (+https://github.com/<user>/agentlens)",
+ "signed_requests": false,
+ "steps": [
+  {
+   "n": 1,
+   "action": "Open the product page",
+   "method": "GET",
+   "url": "/p/white-court-sneaker",
+   "status": 200,
+   "duration_ms": 211,
+   "note": "Product page loads.",
+   "screenshot_url": "/demo/replays/rpl_b06/step_1.svg"
+  },
+  {
+   "n": 2,
+   "action": "Click “Add to cart”",
+   "method": "POST",
+   "url": "/api/cart",
+   "status": 401,
+   "duration_ms": 308,
+   "note": "Cart requires a logged-in user.",
+   "screenshot_url": "/demo/replays/rpl_b06/step_2.svg"
+  },
+  {
+   "n": 3,
+   "action": "Redirected to login",
+   "method": "GET",
+   "url": "/login",
+   "status": 200,
+   "duration_ms": 145,
+   "note": "Login page asks for a mobile number.",
+   "screenshot_url": "/demo/replays/rpl_b06/step_3.svg"
+  },
+  {
+   "n": 4,
+   "action": "Request OTP",
+   "method": "POST",
+   "url": "/api/otp/send",
+   "status": 200,
+   "duration_ms": 242,
+   "note": "OTP sent to the shopper's phone. The agent cannot read it, so the journey ends.",
+   "screenshot_url": "/demo/replays/rpl_b06/step_4.svg"
+  }
+ ],
+ "network_log": [
+  {
+   "ts": "2026-11-11T17:21:30.000Z",
+   "method": "GET",
+   "url": "/p/white-court-sneaker",
+   "status": 200,
+   "duration_ms": 211,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-11T17:21:32.600Z",
+   "method": "POST",
+   "url": "/api/cart",
+   "status": 401,
+   "duration_ms": 308,
+   "error_code": "UNAUTHENTICATED"
+  },
+  {
+   "ts": "2026-11-11T17:21:35.200Z",
+   "method": "GET",
+   "url": "/login",
+   "status": 200,
+   "duration_ms": 145,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-11T17:21:37.800Z",
+   "method": "POST",
+   "url": "/api/otp/send",
+   "status": 200,
+   "duration_ms": 242,
+   "error_code": "OTP_SENT_NO_VERIFY"
+  }
+ ],
+ "explanation": "Confirmed. Add-to-cart returned 401 and redirected to /login, where an SMS OTP was sent to a phone the agent does not control."
+}

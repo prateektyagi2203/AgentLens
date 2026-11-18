@@ -1,0 +1,198 @@
+{
+ "session": {
+  "session_id": "ses_nj3m9rz9ay",
+  "start_ts": "2026-11-13T04:49:27.000Z",
+  "duration_s": 15,
+  "request_count": 10,
+  "page_count": 4,
+  "identity_tier": "verified",
+  "operator": "TestOperator",
+  "agent_name": "AgentLens Test Agent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 1,
+  "entry_page": "/search?q=leather",
+  "exit_page": "/order/confirmed/ORD-32192",
+  "max_stage": "S8",
+  "converted": true,
+  "order_value_inr": 2330,
+  "terminal_blocker_id": null,
+  "terminal_blocker_name": null,
+  "blocker_confidence": null,
+  "diagnosis_method": "none"
+ },
+ "identity": {
+  "signature_status": "valid",
+  "signature_agent": "https://agents.desithreads.test",
+  "suspicion_score": null,
+  "user_agent": "AgentLens-Synth/1.0 (+https://agents.desithreads.test)",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "req_f6m1dp10cx",
+   "ts": "2026-11-13T04:49:27.000Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/search?q=leather",
+   "status": 200,
+   "duration_ms": 257,
+   "page_type": "listing",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_y02898t4p1",
+   "ts": "2026-11-13T04:49:28.111Z",
+   "offset_ms": 1111,
+   "method": "GET",
+   "path": "/p/leather-kolhapuri-sandal",
+   "status": 200,
+   "duration_ms": 261,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_dpe9qcpgyt",
+   "ts": "2026-11-13T04:49:28.555Z",
+   "offset_ms": 1555,
+   "method": "GET",
+   "path": "/static/app.4f2c.js",
+   "status": 200,
+   "duration_ms": 63,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_vqd1x6q31w",
+   "ts": "2026-11-13T04:49:31.426Z",
+   "offset_ms": 4426,
+   "method": "POST",
+   "path": "/beacon",
+   "status": 204,
+   "duration_ms": 12,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_sr9z6sy99h",
+   "ts": "2026-11-13T04:49:32.037Z",
+   "offset_ms": 5037,
+   "method": "GET",
+   "path": "/api/products/leather-kolhapuri-sandal/variants?size=9",
+   "status": 200,
+   "duration_ms": 125,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_xfcm5k6hcx",
+   "ts": "2026-11-13T04:49:33.992Z",
+   "offset_ms": 6992,
+   "method": "GET",
+   "path": "/api/serviceability?pincode=411001",
+   "status": 200,
+   "duration_ms": 130,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S4",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_pfyg3x123c",
+   "ts": "2026-11-13T04:49:34.806Z",
+   "offset_ms": 7806,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 201,
+   "duration_ms": 210,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S5",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_y9x4eh0vye",
+   "ts": "2026-11-13T04:49:36.616Z",
+   "offset_ms": 9616,
+   "method": "GET",
+   "path": "/checkout",
+   "status": 200,
+   "duration_ms": 280,
+   "page_type": "checkout",
+   "error_code": null,
+   "stage_id": "S6",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_z2zvx7cw49",
+   "ts": "2026-11-13T04:49:38.524Z",
+   "offset_ms": 11524,
+   "method": "POST",
+   "path": "/api/checkout",
+   "status": 201,
+   "duration_ms": 252,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S7",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_0d7b8ak3xy",
+   "ts": "2026-11-13T04:49:41.907Z",
+   "offset_ms": 14907,
+   "method": "GET",
+   "path": "/order/confirmed/ORD-32192",
+   "status": 200,
+   "duration_ms": 138,
+   "page_type": "order",
+   "error_code": null,
+   "stage_id": "S8",
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-13T04:49:27.000Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-13T04:49:28.111Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-13T04:49:32.037Z"
+  },
+  {
+   "stage_id": "S4",
+   "first_reached_ts": "2026-11-13T04:49:33.992Z"
+  },
+  {
+   "stage_id": "S5",
+   "first_reached_ts": "2026-11-13T04:49:34.806Z"
+  },
+  {
+   "stage_id": "S6",
+   "first_reached_ts": "2026-11-13T04:49:36.616Z"
+  },
+  {
+   "stage_id": "S7",
+   "first_reached_ts": "2026-11-13T04:49:38.524Z"
+  },
+  {
+   "stage_id": "S8",
+   "first_reached_ts": "2026-11-13T04:49:41.907Z"
+  }
+ ],
+ "fired_rules": [],
+ "replay_ids": []
+}

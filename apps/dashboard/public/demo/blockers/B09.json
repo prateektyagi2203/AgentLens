@@ -1,0 +1,253 @@
+{
+ "window": {
+  "from": "2026-11-05",
+  "to": "2026-11-11",
+  "days": 7
+ },
+ "blocker": {
+  "blocker_id": "B09",
+  "name": "Size guide image-only",
+  "stage": "S3",
+  "sessions_blocked": 260,
+  "share_of_failed": 0.065,
+  "risk_inr": {
+   "low": 54912,
+   "base": 102960,
+   "high": 164736
+  },
+  "replay_status": "confirmed",
+  "effort": "S",
+  "priority_score": 102960,
+  "low_confidence": false
+ },
+ "description": "The size guide is a single image. Agents cannot read it, cannot pick a size and stop before the cart.",
+ "detection": "Size guide requested, served as an image, session ended before cart.",
+ "evidence": {
+  "top_error_codes": [
+   {
+    "code": "SIZE_GUIDE_IMAGE",
+    "count": 260,
+    "share": 1
+   }
+  ],
+  "example_requests": [
+   {
+    "request_id": "req_B09_1",
+    "summary": "GET /size-guide/white-court-sneaker.png → 200 (image/png) · session ended before cart",
+    "count": 260
+   }
+  ],
+  "site_checks": [
+   {
+    "check_id": "chk_size_guide_format",
+    "run_ts": "2026-11-11T16:55:00Z",
+    "check_name": "size_guide_format",
+    "target": "/size-guide/*",
+    "result": "fail",
+    "details": {
+     "sampled": 5,
+     "html_table": 0,
+     "message": "Size guide is image-only (image/png) on 5/5 sampled pages"
+    }
+   }
+  ]
+ },
+ "risk_breakdown": {
+  "sessions_blocked": 260,
+  "recoverable_rate": 0.6,
+  "p_stage": 0.07,
+  "aov_inr": 2200,
+  "k": 4.285714285714286
+ },
+ "trend": [
+  {
+   "date": "2026-11-05",
+   "sessions_blocked": 39
+  },
+  {
+   "date": "2026-11-06",
+   "sessions_blocked": 40
+  },
+  {
+   "date": "2026-11-07",
+   "sessions_blocked": 33
+  },
+  {
+   "date": "2026-11-08",
+   "sessions_blocked": 31
+  },
+  {
+   "date": "2026-11-09",
+   "sessions_blocked": 39
+  },
+  {
+   "date": "2026-11-10",
+   "sessions_blocked": 42
+  },
+  {
+   "date": "2026-11-11",
+   "sessions_blocked": 36
+  }
+ ],
+ "sample_sessions": [
+  {
+   "session_id": "ses_je7n8f4qgc",
+   "start_ts": "2026-11-10T04:22:30.000Z",
+   "duration_s": 5,
+   "request_count": 3,
+   "page_count": 3,
+   "identity_tier": "declared",
+   "operator": "OpenAI",
+   "agent_name": "ChatGPT-User",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.7,
+   "entry_page": "/search?q=leather",
+   "exit_page": "/size-guide/leather-kolhapuri-sandal.png",
+   "max_stage": "S2",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B09",
+   "terminal_blocker_name": "Size guide image-only",
+   "blocker_confidence": 0.93,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_1z1zqfen4p",
+   "start_ts": "2026-11-08T16:17:52.000Z",
+   "duration_s": 11,
+   "request_count": 6,
+   "page_count": 4,
+   "identity_tier": "suspected",
+   "operator": "unknown",
+   "agent_name": "Unidentified browsing agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 0.69,
+   "entry_page": "/",
+   "exit_page": "/size-guide/block-print-dupatta.png",
+   "max_stage": "S2",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B09",
+   "terminal_blocker_name": "Size guide image-only",
+   "blocker_confidence": 0.92,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_a0g4g6caa5",
+   "start_ts": "2026-11-08T09:19:34.000Z",
+   "duration_s": 2,
+   "request_count": 3,
+   "page_count": 3,
+   "identity_tier": "declared",
+   "operator": "Perplexity",
+   "agent_name": "Perplexity-User",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.9,
+   "entry_page": "/search?q=block",
+   "exit_page": "/size-guide/block-print-dupatta.png",
+   "max_stage": "S2",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B09",
+   "terminal_blocker_name": "Size guide image-only",
+   "blocker_confidence": 0.8,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_ana0cqqyeh",
+   "start_ts": "2026-11-08T08:21:11.000Z",
+   "duration_s": 9,
+   "request_count": 6,
+   "page_count": 4,
+   "identity_tier": "verified",
+   "operator": "TestOperator",
+   "agent_name": "AgentLens Test Agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 1,
+   "entry_page": "/",
+   "exit_page": "/size-guide/leather-kolhapuri-sandal.png",
+   "max_stage": "S2",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B09",
+   "terminal_blocker_name": "Size guide image-only",
+   "blocker_confidence": 0.91,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_x6sqw2phf0",
+   "start_ts": "2026-11-07T03:51:43.000Z",
+   "duration_s": 5,
+   "request_count": 6,
+   "page_count": 4,
+   "identity_tier": "declared",
+   "operator": "OpenAI",
+   "agent_name": "ChatGPT agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 0.9,
+   "entry_page": "/",
+   "exit_page": "/size-guide/indigo-kurta-set.png",
+   "max_stage": "S2",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B09",
+   "terminal_blocker_name": "Size guide image-only",
+   "blocker_confidence": 0.81,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_6cjq0r63zy",
+   "start_ts": "2026-11-06T08:46:03.000Z",
+   "duration_s": 5,
+   "request_count": 3,
+   "page_count": 3,
+   "identity_tier": "declared",
+   "operator": "Perplexity",
+   "agent_name": "Perplexity-User",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.7,
+   "entry_page": "/c/sneakers",
+   "exit_page": "/size-guide/white-court-sneaker.png",
+   "max_stage": "S2",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B09",
+   "terminal_blocker_name": "Size guide image-only",
+   "blocker_confidence": 0.88,
+   "diagnosis_method": "rule"
+  }
+ ],
+ "replays": [
+  {
+   "replay_id": "rpl_b09",
+   "blocker_id": "B09",
+   "blocker_name": "Size guide image-only",
+   "source_session_id": "ses_je7n8f4qgc",
+   "mode": "fetch",
+   "status": "completed",
+   "verdict": "confirmed",
+   "started_at": "2026-11-11T17:33:50Z",
+   "finished_at": "2026-11-11T17:33:56.700Z",
+   "steps_count": 2,
+   "verdict_explanation": "Confirmed. The size guide is served as a PNG (image/png) with no text alternative or HTML table, so a text-reading agent cannot choose a size."
+  }
+ ],
+ "recommendation": {
+  "rec_id": "rec_B09",
+  "run_id": "run_20261118_0610",
+  "blocker_id": "B09",
+  "blocker_name": "Size guide image-only",
+  "title": "Provide an HTML size table",
+  "body": "Replace the size chart image with an HTML table (and keep the image as a visual aid).",
+  "why_it_helps": "Agents rely on text. An image-only chart hides the information they need to choose a size.",
+  "how_to_verify": "Step conversion S3 → S4 should rise and size guide requests should stop ending sessions.",
+  "verify_metric": "Variant selected → delivery check step conversion",
+  "effort": "S",
+  "owner": "Content",
+  "priority_score": 102960,
+  "risk_inr_base": 102960,
+  "status": "open",
+  "fixed_annotation_id": null,
+  "llm_explanation": null
+ }
+}

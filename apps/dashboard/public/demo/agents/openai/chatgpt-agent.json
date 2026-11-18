@@ -1,0 +1,328 @@
+{
+ "window": {
+  "from": "2026-11-05",
+  "to": "2026-11-11",
+  "days": 7
+ },
+ "agent": {
+  "operator": "OpenAI",
+  "agent_name": "ChatGPT agent",
+  "agent_class": "browsing_agent",
+  "sessions": 1564,
+  "share_of_agent_sessions": 0.3773220747889023,
+  "pages_per_session": 7.951406649616368,
+  "conversion": 0.04219948849104859,
+  "tier_mix": {
+   "verified": 0.6892583120204604,
+   "declared": 0.31074168797953966,
+   "suspected": 0
+  },
+  "top_blocker": {
+   "blocker_id": "B05",
+   "name": "Pincode wall",
+   "share_of_failed": 0.4485981308411215
+  },
+  "signature_status_counts": {
+   "valid": 1002,
+   "invalid_sig": 15,
+   "expired": 51,
+   "unknown_key": 22,
+   "fetch_failed": 22,
+   "none": 452
+  },
+  "last_seen": "2026-11-11T18:42:00Z"
+ },
+ "identity": {
+  "user_agent_example": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131.0 Safari/537.36",
+  "signature_agent": "https://chatgpt.com",
+  "ip_match_rate": 1,
+  "avg_identity_confidence": 0.98
+ },
+ "trend": [
+  {
+   "date": "2026-11-05",
+   "sessions": 304,
+   "conversion": 0.03618421052631579
+  },
+  {
+   "date": "2026-11-06",
+   "sessions": 314,
+   "conversion": 0.03503184713375796
+  },
+  {
+   "date": "2026-11-07",
+   "sessions": 263,
+   "conversion": 0.034220532319391636
+  },
+  {
+   "date": "2026-11-08",
+   "sessions": 241,
+   "conversion": 0.03734439834024896
+  },
+  {
+   "date": "2026-11-09",
+   "sessions": 309,
+   "conversion": 0.03559870550161812
+  },
+  {
+   "date": "2026-11-10",
+   "sessions": 327,
+   "conversion": 0.03669724770642202
+  },
+  {
+   "date": "2026-11-11",
+   "sessions": 286,
+   "conversion": 0.03496503496503497
+  }
+ ],
+ "blockers": [
+  {
+   "blocker_id": "B05",
+   "name": "Pincode wall",
+   "sessions": 672,
+   "share_of_failed": 0.4485981308411215
+  },
+  {
+   "blocker_id": "B06",
+   "name": "Login / OTP wall before cart",
+   "sessions": 260,
+   "share_of_failed": 0.17356475300400534
+  },
+  {
+   "blocker_id": "B07",
+   "name": "App-download interstitial",
+   "sessions": 173,
+   "share_of_failed": 0.11548731642189586
+  },
+  {
+   "blocker_id": "B99",
+   "name": "Unknown",
+   "sessions": 113,
+   "share_of_failed": 0.07543391188251002
+  },
+  {
+   "blocker_id": "B10",
+   "name": "Checkout validation failure",
+   "sessions": 109,
+   "share_of_failed": 0.07276368491321762
+  },
+  {
+   "blocker_id": "B09",
+   "name": "Size guide image-only",
+   "sessions": 69,
+   "share_of_failed": 0.04606141522029372
+  },
+  {
+   "blocker_id": "B08",
+   "name": "Out-of-stock dead end",
+   "sessions": 31,
+   "share_of_failed": 0.02069425901201602
+  },
+  {
+   "blocker_id": "B11",
+   "name": "Unsupported payment step",
+   "sessions": 21,
+   "share_of_failed": 0.014018691588785047
+  },
+  {
+   "blocker_id": "B12",
+   "name": "Rate limited",
+   "sessions": 15,
+   "share_of_failed": 0.010013351134846462
+  },
+  {
+   "blocker_id": "B13",
+   "name": "Slow response / timeout",
+   "sessions": 14,
+   "share_of_failed": 0.009345794392523364
+  },
+  {
+   "blocker_id": "B15",
+   "name": "Price mismatch PDP vs cart",
+   "sessions": 7,
+   "share_of_failed": 0.004672897196261682
+  },
+  {
+   "blocker_id": "B16",
+   "name": "Broken link / 404",
+   "sessions": 7,
+   "share_of_failed": 0.004672897196261682
+  },
+  {
+   "blocker_id": "B01",
+   "name": "Bot wall / WAF block",
+   "sessions": 7,
+   "share_of_failed": 0.004672897196261682
+  }
+ ],
+ "recent_sessions": [
+  {
+   "session_id": "ses_zmhq2zs3yp",
+   "start_ts": "2026-11-11T16:52:59.000Z",
+   "duration_s": 18,
+   "request_count": 10,
+   "page_count": 4,
+   "identity_tier": "verified",
+   "operator": "OpenAI",
+   "agent_name": "ChatGPT agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 1,
+   "entry_page": "/",
+   "exit_page": "/api/otp/send",
+   "max_stage": "S4",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B06",
+   "terminal_blocker_name": "Login / OTP wall before cart",
+   "blocker_confidence": 0.87,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_07z65r0td5",
+   "start_ts": "2026-11-11T14:38:29.000Z",
+   "duration_s": 4,
+   "request_count": 3,
+   "page_count": 2,
+   "identity_tier": "verified",
+   "operator": "OpenAI",
+   "agent_name": "ChatGPT agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 1,
+   "entry_page": "/search?q=indigo",
+   "exit_page": "/p/indigo-kurta-set",
+   "max_stage": "S1",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B07",
+   "terminal_blocker_name": "App-download interstitial",
+   "blocker_confidence": 0.68,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_eqxt56vncw",
+   "start_ts": "2026-11-11T13:58:42.000Z",
+   "duration_s": 21,
+   "request_count": 10,
+   "page_count": 4,
+   "identity_tier": "verified",
+   "operator": "OpenAI",
+   "agent_name": "ChatGPT agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 1,
+   "entry_page": "/",
+   "exit_page": "/api/otp/send",
+   "max_stage": "S4",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B06",
+   "terminal_blocker_name": "Login / OTP wall before cart",
+   "blocker_confidence": 0.78,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_5b5mafcg7d",
+   "start_ts": "2026-11-11T06:54:33.000Z",
+   "duration_s": 18,
+   "request_count": 10,
+   "page_count": 4,
+   "identity_tier": "declared",
+   "operator": "OpenAI",
+   "agent_name": "ChatGPT agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 0.9,
+   "entry_page": "/",
+   "exit_page": "/api/otp/send",
+   "max_stage": "S4",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B06",
+   "terminal_blocker_name": "Login / OTP wall before cart",
+   "blocker_confidence": 0.92,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_1hc4dfmn5y",
+   "start_ts": "2026-11-11T04:36:06.000Z",
+   "duration_s": 28,
+   "request_count": 12,
+   "page_count": 4,
+   "identity_tier": "verified",
+   "operator": "OpenAI",
+   "agent_name": "ChatGPT agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 1,
+   "entry_page": "/",
+   "exit_page": "/api/checkout",
+   "max_stage": "S6",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B10",
+   "terminal_blocker_name": "Checkout validation failure",
+   "blocker_confidence": 0.83,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_w0swj06vxz",
+   "start_ts": "2026-11-11T03:38:24.000Z",
+   "duration_s": 20,
+   "request_count": 9,
+   "page_count": 3,
+   "identity_tier": "verified",
+   "operator": "OpenAI",
+   "agent_name": "ChatGPT agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 1,
+   "entry_page": "/",
+   "exit_page": "/api/cart",
+   "max_stage": "S4",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B05",
+   "terminal_blocker_name": "Pincode wall",
+   "blocker_confidence": 0.66,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_hh9fwvngpc",
+   "start_ts": "2026-11-10T10:36:00.000Z",
+   "duration_s": 20,
+   "request_count": 12,
+   "page_count": 4,
+   "identity_tier": "declared",
+   "operator": "OpenAI",
+   "agent_name": "ChatGPT agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 0.7,
+   "entry_page": "/",
+   "exit_page": "/api/checkout",
+   "max_stage": "S6",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B10",
+   "terminal_blocker_name": "Checkout validation failure",
+   "blocker_confidence": 0.64,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_tzqj4hbd7m",
+   "start_ts": "2026-11-10T10:21:14.000Z",
+   "duration_s": 19,
+   "request_count": 10,
+   "page_count": 4,
+   "identity_tier": "verified",
+   "operator": "OpenAI",
+   "agent_name": "ChatGPT agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 1,
+   "entry_page": "/search?q=white",
+   "exit_page": "/order/confirmed/ORD-62824",
+   "max_stage": "S8",
+   "converted": true,
+   "order_value_inr": 2400,
+   "terminal_blocker_id": null,
+   "terminal_blocker_name": null,
+   "blocker_confidence": null,
+   "diagnosis_method": "none"
+  }
+ ]
+}

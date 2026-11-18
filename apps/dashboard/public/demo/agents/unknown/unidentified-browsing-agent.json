@@ -1,0 +1,328 @@
+{
+ "window": {
+  "from": "2026-11-05",
+  "to": "2026-11-11",
+  "days": 7
+ },
+ "agent": {
+  "operator": "unknown",
+  "agent_name": "Unidentified browsing agent",
+  "agent_class": "browsing_agent",
+  "sessions": 665,
+  "share_of_agent_sessions": 0.16043425814234016,
+  "pages_per_session": 6.8,
+  "conversion": 0.03759398496240601,
+  "tier_mix": {
+   "verified": 0,
+   "declared": 0,
+   "suspected": 1
+  },
+  "top_blocker": {
+   "blocker_id": "B05",
+   "name": "Pincode wall",
+   "share_of_failed": 0.44375
+  },
+  "signature_status_counts": {
+   "valid": 0,
+   "invalid_sig": 53,
+   "expired": 0,
+   "unknown_key": 0,
+   "fetch_failed": 0,
+   "none": 612
+  },
+  "last_seen": "2026-11-11T18:42:00Z"
+ },
+ "identity": {
+  "user_agent_example": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 HeadlessChrome/130.0 Safari/537.36",
+  "signature_agent": null,
+  "ip_match_rate": null,
+  "avg_identity_confidence": 0.58
+ },
+ "trend": [
+  {
+   "date": "2026-11-05",
+   "sessions": 126,
+   "conversion": 0.03968253968253968
+  },
+  {
+   "date": "2026-11-06",
+   "sessions": 133,
+   "conversion": 0.03759398496240601
+  },
+  {
+   "date": "2026-11-07",
+   "sessions": 110,
+   "conversion": 0.03636363636363636
+  },
+  {
+   "date": "2026-11-08",
+   "sessions": 99,
+   "conversion": 0.04040404040404041
+  },
+  {
+   "date": "2026-11-09",
+   "sessions": 130,
+   "conversion": 0.038461538461538464
+  },
+  {
+   "date": "2026-11-10",
+   "sessions": 139,
+   "conversion": 0.03597122302158273
+  },
+  {
+   "date": "2026-11-11",
+   "sessions": 118,
+   "conversion": 0.03389830508474576
+  }
+ ],
+ "blockers": [
+  {
+   "blocker_id": "B05",
+   "name": "Pincode wall",
+   "sessions": 284,
+   "share_of_failed": 0.44375
+  },
+  {
+   "blocker_id": "B06",
+   "name": "Login / OTP wall before cart",
+   "sessions": 110,
+   "share_of_failed": 0.171875
+  },
+  {
+   "blocker_id": "B07",
+   "name": "App-download interstitial",
+   "sessions": 73,
+   "share_of_failed": 0.1140625
+  },
+  {
+   "blocker_id": "B99",
+   "name": "Unknown",
+   "sessions": 49,
+   "share_of_failed": 0.0765625
+  },
+  {
+   "blocker_id": "B10",
+   "name": "Checkout validation failure",
+   "sessions": 45,
+   "share_of_failed": 0.0703125
+  },
+  {
+   "blocker_id": "B09",
+   "name": "Size guide image-only",
+   "sessions": 28,
+   "share_of_failed": 0.04375
+  },
+  {
+   "blocker_id": "B08",
+   "name": "Out-of-stock dead end",
+   "sessions": 13,
+   "share_of_failed": 0.0203125
+  },
+  {
+   "blocker_id": "B01",
+   "name": "Bot wall / WAF block",
+   "sessions": 11,
+   "share_of_failed": 0.0171875
+  },
+  {
+   "blocker_id": "B11",
+   "name": "Unsupported payment step",
+   "sessions": 7,
+   "share_of_failed": 0.0109375
+  },
+  {
+   "blocker_id": "B12",
+   "name": "Rate limited",
+   "sessions": 7,
+   "share_of_failed": 0.0109375
+  },
+  {
+   "blocker_id": "B13",
+   "name": "Slow response / timeout",
+   "sessions": 7,
+   "share_of_failed": 0.0109375
+  },
+  {
+   "blocker_id": "B15",
+   "name": "Price mismatch PDP vs cart",
+   "sessions": 3,
+   "share_of_failed": 0.0046875
+  },
+  {
+   "blocker_id": "B16",
+   "name": "Broken link / 404",
+   "sessions": 3,
+   "share_of_failed": 0.0046875
+  }
+ ],
+ "recent_sessions": [
+  {
+   "session_id": "ses_qgg6enpjqj",
+   "start_ts": "2026-11-11T13:46:58.000Z",
+   "duration_s": 8,
+   "request_count": 5,
+   "page_count": 2,
+   "identity_tier": "suspected",
+   "operator": "unknown",
+   "agent_name": "Unidentified browsing agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 0.79,
+   "entry_page": "/c/sneakers",
+   "exit_page": "/api/products/indigo-kurta-set/variants?size=9",
+   "max_stage": "S2",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B08",
+   "terminal_blocker_name": "Out-of-stock dead end",
+   "blocker_confidence": 0.85,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_chw1p0nggm",
+   "start_ts": "2026-11-11T13:26:30.000Z",
+   "duration_s": 14,
+   "request_count": 10,
+   "page_count": 3,
+   "identity_tier": "suspected",
+   "operator": "unknown",
+   "agent_name": "Unidentified browsing agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 0.89,
+   "entry_page": "/",
+   "exit_page": "/api/cart",
+   "max_stage": "S4",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B05",
+   "terminal_blocker_name": "Pincode wall",
+   "blocker_confidence": 0.68,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_q45sg2jye7",
+   "start_ts": "2026-11-11T08:00:04.000Z",
+   "duration_s": 9,
+   "request_count": 6,
+   "page_count": 3,
+   "identity_tier": "suspected",
+   "operator": "unknown",
+   "agent_name": "Unidentified browsing agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 0.86,
+   "entry_page": "/",
+   "exit_page": "/api/products/white-court-sneaker/variants?size=9",
+   "max_stage": "S3",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B99",
+   "terminal_blocker_name": "Unknown",
+   "blocker_confidence": null,
+   "diagnosis_method": "llm"
+  },
+  {
+   "session_id": "ses_w1k4yjknhq",
+   "start_ts": "2026-11-11T03:02:51.000Z",
+   "duration_s": 25,
+   "request_count": 12,
+   "page_count": 4,
+   "identity_tier": "suspected",
+   "operator": "unknown",
+   "agent_name": "Unidentified browsing agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 0.83,
+   "entry_page": "/",
+   "exit_page": "/api/checkout",
+   "max_stage": "S6",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B10",
+   "terminal_blocker_name": "Checkout validation failure",
+   "blocker_confidence": 0.89,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_f5e5gaphrr",
+   "start_ts": "2026-11-10T12:30:28.000Z",
+   "duration_s": 21,
+   "request_count": 12,
+   "page_count": 4,
+   "identity_tier": "suspected",
+   "operator": "unknown",
+   "agent_name": "Unidentified browsing agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 0.7,
+   "entry_page": "/",
+   "exit_page": "/api/checkout",
+   "max_stage": "S6",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B10",
+   "terminal_blocker_name": "Checkout validation failure",
+   "blocker_confidence": 0.64,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_1zfkvxtd3z",
+   "start_ts": "2026-11-10T05:47:37.000Z",
+   "duration_s": 19,
+   "request_count": 8,
+   "page_count": 2,
+   "identity_tier": "suspected",
+   "operator": "unknown",
+   "agent_name": "Unidentified browsing agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 0.85,
+   "entry_page": "/c/sneakers",
+   "exit_page": "/api/cart",
+   "max_stage": "S4",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B05",
+   "terminal_blocker_name": "Pincode wall",
+   "blocker_confidence": 0.72,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_7f44q4kjpv",
+   "start_ts": "2026-11-10T05:03:45.000Z",
+   "duration_s": 20,
+   "request_count": 10,
+   "page_count": 3,
+   "identity_tier": "suspected",
+   "operator": "unknown",
+   "agent_name": "Unidentified browsing agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 0.74,
+   "entry_page": "/",
+   "exit_page": "/api/cart",
+   "max_stage": "S4",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B05",
+   "terminal_blocker_name": "Pincode wall",
+   "blocker_confidence": 0.69,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_vwtp37vy0h",
+   "start_ts": "2026-11-09T14:23:12.000Z",
+   "duration_s": 14,
+   "request_count": 8,
+   "page_count": 2,
+   "identity_tier": "suspected",
+   "operator": "unknown",
+   "agent_name": "Unidentified browsing agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 0.85,
+   "entry_page": "/search?q=white",
+   "exit_page": "/api/cart",
+   "max_stage": "S4",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B05",
+   "terminal_blocker_name": "Pincode wall",
+   "blocker_confidence": 0.64,
+   "diagnosis_method": "rule"
+  }
+ ]
+}

@@ -1,0 +1,124 @@
+{
+ "session": {
+  "session_id": "ses_7kj8jbxvnm",
+  "start_ts": "2026-11-11T04:32:49.000Z",
+  "duration_s": 7,
+  "request_count": 5,
+  "page_count": 2,
+  "identity_tier": "verified",
+  "operator": "TestOperator",
+  "agent_name": "AgentLens Test Agent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 1,
+  "entry_page": "/c/sneakers",
+  "exit_page": "/api/products/cotton-linen-shirt/variants?size=9",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B08",
+  "terminal_blocker_name": "Out-of-stock dead end",
+  "blocker_confidence": 0.72,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "valid",
+  "signature_agent": "https://agents.desithreads.test",
+  "suspicion_score": null,
+  "user_agent": "AgentLens-Synth/1.0 (+https://agents.desithreads.test)",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "req_c095r8q53m",
+   "ts": "2026-11-11T04:32:49.000Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/c/sneakers",
+   "status": 200,
+   "duration_ms": 317,
+   "page_type": "listing",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_jg6whrabn4",
+   "ts": "2026-11-11T04:32:49.577Z",
+   "offset_ms": 577,
+   "method": "GET",
+   "path": "/p/cotton-linen-shirt",
+   "status": 200,
+   "duration_ms": 327,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_nqvq60g1pr",
+   "ts": "2026-11-11T04:32:52.976Z",
+   "offset_ms": 3976,
+   "method": "GET",
+   "path": "/static/app.4f2c.js",
+   "status": 200,
+   "duration_ms": 71,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_ry9dry72pg",
+   "ts": "2026-11-11T04:32:55.225Z",
+   "offset_ms": 6225,
+   "method": "POST",
+   "path": "/beacon",
+   "status": 204,
+   "duration_ms": 29,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_fr2svj11r0",
+   "ts": "2026-11-11T04:32:55.851Z",
+   "offset_ms": 6851,
+   "method": "GET",
+   "path": "/api/products/cotton-linen-shirt/variants?size=9",
+   "status": 409,
+   "duration_ms": 72,
+   "page_type": "api",
+   "error_code": "VARIANT_OUT_OF_STOCK",
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-11T04:32:49.000Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-11T04:32:49.577Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B08",
+   "name": "Out-of-stock dead end",
+   "stage": "S3",
+   "confidence": 0.72,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "req_fr2svj11r0",
+     "summary": "GET /api/products/cotton-linen-shirt/variants?size=9 → 409 VARIANT_OUT_OF_STOCK · ended"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

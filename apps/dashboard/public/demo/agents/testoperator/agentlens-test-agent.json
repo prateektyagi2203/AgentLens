@@ -1,0 +1,298 @@
+{
+ "window": {
+  "from": "2026-11-05",
+  "to": "2026-11-11",
+  "days": 7
+ },
+ "agent": {
+  "operator": "TestOperator",
+  "agent_name": "AgentLens Test Agent",
+  "agent_class": "browsing_agent",
+  "sessions": 242,
+  "share_of_agent_sessions": 0.05838359469240048,
+  "pages_per_session": 7.800000000000001,
+  "conversion": 0.05785123966942149,
+  "tier_mix": {
+   "verified": 1,
+   "declared": 0,
+   "suspected": 0
+  },
+  "top_blocker": {
+   "blocker_id": "B05",
+   "name": "Pincode wall",
+   "share_of_failed": 0.45614035087719296
+  },
+  "signature_status_counts": {
+   "valid": 225,
+   "invalid_sig": 0,
+   "expired": 7,
+   "unknown_key": 5,
+   "fetch_failed": 5,
+   "none": 0
+  },
+  "last_seen": "2026-11-11T18:42:00Z"
+ },
+ "identity": {
+  "user_agent_example": "AgentLens-Synth/1.0 (+https://agents.desithreads.test)",
+  "signature_agent": "https://agents.desithreads.test",
+  "ip_match_rate": 1,
+  "avg_identity_confidence": 0.98
+ },
+ "trend": [
+  {
+   "date": "2026-11-05",
+   "sessions": 36,
+   "conversion": 0.05555555555555555
+  },
+  {
+   "date": "2026-11-06",
+   "sessions": 38,
+   "conversion": 0.05263157894736842
+  },
+  {
+   "date": "2026-11-07",
+   "sessions": 29,
+   "conversion": 0.06896551724137931
+  },
+  {
+   "date": "2026-11-08",
+   "sessions": 28,
+   "conversion": 0.07142857142857142
+  },
+  {
+   "date": "2026-11-09",
+   "sessions": 37,
+   "conversion": 0.05405405405405406
+  },
+  {
+   "date": "2026-11-10",
+   "sessions": 39,
+   "conversion": 0.05128205128205128
+  },
+  {
+   "date": "2026-11-11",
+   "sessions": 35,
+   "conversion": 0.05714285714285714
+  }
+ ],
+ "blockers": [
+  {
+   "blocker_id": "B05",
+   "name": "Pincode wall",
+   "sessions": 104,
+   "share_of_failed": 0.45614035087719296
+  },
+  {
+   "blocker_id": "B06",
+   "name": "Login / OTP wall before cart",
+   "sessions": 40,
+   "share_of_failed": 0.17543859649122806
+  },
+  {
+   "blocker_id": "B07",
+   "name": "App-download interstitial",
+   "sessions": 27,
+   "share_of_failed": 0.11842105263157894
+  },
+  {
+   "blocker_id": "B99",
+   "name": "Unknown",
+   "sessions": 19,
+   "share_of_failed": 0.08333333333333333
+  },
+  {
+   "blocker_id": "B10",
+   "name": "Checkout validation failure",
+   "sessions": 18,
+   "share_of_failed": 0.07894736842105263
+  },
+  {
+   "blocker_id": "B09",
+   "name": "Size guide image-only",
+   "sessions": 9,
+   "share_of_failed": 0.039473684210526314
+  },
+  {
+   "blocker_id": "B08",
+   "name": "Out-of-stock dead end",
+   "sessions": 6,
+   "share_of_failed": 0.02631578947368421
+  },
+  {
+   "blocker_id": "B11",
+   "name": "Unsupported payment step",
+   "sessions": 5,
+   "share_of_failed": 0.021929824561403508
+  }
+ ],
+ "recent_sessions": [
+  {
+   "session_id": "ses_3n9ek3c19c",
+   "start_ts": "2026-11-11T15:15:20.000Z",
+   "duration_s": 15,
+   "request_count": 8,
+   "page_count": 2,
+   "identity_tier": "verified",
+   "operator": "TestOperator",
+   "agent_name": "AgentLens Test Agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 1,
+   "entry_page": "/c/sneakers",
+   "exit_page": "/api/cart",
+   "max_stage": "S4",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B05",
+   "terminal_blocker_name": "Pincode wall",
+   "blocker_confidence": 0.71,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_b12dkw0t19",
+   "start_ts": "2026-11-11T12:01:50.000Z",
+   "duration_s": 6,
+   "request_count": 3,
+   "page_count": 2,
+   "identity_tier": "verified",
+   "operator": "TestOperator",
+   "agent_name": "AgentLens Test Agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 1,
+   "entry_page": "/search?q=cotton",
+   "exit_page": "/p/cotton-linen-shirt",
+   "max_stage": "S1",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B07",
+   "terminal_blocker_name": "App-download interstitial",
+   "blocker_confidence": 0.62,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_7kj8jbxvnm",
+   "start_ts": "2026-11-11T04:32:49.000Z",
+   "duration_s": 7,
+   "request_count": 5,
+   "page_count": 2,
+   "identity_tier": "verified",
+   "operator": "TestOperator",
+   "agent_name": "AgentLens Test Agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 1,
+   "entry_page": "/c/sneakers",
+   "exit_page": "/api/products/cotton-linen-shirt/variants?size=9",
+   "max_stage": "S2",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B08",
+   "terminal_blocker_name": "Out-of-stock dead end",
+   "blocker_confidence": 0.72,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_aq4hxekakm",
+   "start_ts": "2026-11-10T07:13:28.000Z",
+   "duration_s": 18,
+   "request_count": 11,
+   "page_count": 5,
+   "identity_tier": "verified",
+   "operator": "TestOperator",
+   "agent_name": "AgentLens Test Agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 1,
+   "entry_page": "/",
+   "exit_page": "/order/confirmed/ORD-48722",
+   "max_stage": "S8",
+   "converted": true,
+   "order_value_inr": 3970,
+   "terminal_blocker_id": null,
+   "terminal_blocker_name": null,
+   "blocker_confidence": null,
+   "diagnosis_method": "none"
+  },
+  {
+   "session_id": "ses_hbffmhdjaz",
+   "start_ts": "2026-11-09T08:04:49.000Z",
+   "duration_s": 19,
+   "request_count": 9,
+   "page_count": 3,
+   "identity_tier": "verified",
+   "operator": "TestOperator",
+   "agent_name": "AgentLens Test Agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 1,
+   "entry_page": "/search?q=white",
+   "exit_page": "/api/otp/send",
+   "max_stage": "S4",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B06",
+   "terminal_blocker_name": "Login / OTP wall before cart",
+   "blocker_confidence": 0.8,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_cv6rxabb1v",
+   "start_ts": "2026-11-09T06:37:31.000Z",
+   "duration_s": 14,
+   "request_count": 9,
+   "page_count": 3,
+   "identity_tier": "verified",
+   "operator": "TestOperator",
+   "agent_name": "AgentLens Test Agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 1,
+   "entry_page": "/",
+   "exit_page": "/api/cart",
+   "max_stage": "S4",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B05",
+   "terminal_blocker_name": "Pincode wall",
+   "blocker_confidence": 0.72,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_ana0cqqyeh",
+   "start_ts": "2026-11-08T08:21:11.000Z",
+   "duration_s": 9,
+   "request_count": 6,
+   "page_count": 4,
+   "identity_tier": "verified",
+   "operator": "TestOperator",
+   "agent_name": "AgentLens Test Agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 1,
+   "entry_page": "/",
+   "exit_page": "/size-guide/leather-kolhapuri-sandal.png",
+   "max_stage": "S2",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B09",
+   "terminal_blocker_name": "Size guide image-only",
+   "blocker_confidence": 0.91,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_jyvfz21za0",
+   "start_ts": "2026-11-05T13:05:04.000Z",
+   "duration_s": 27,
+   "request_count": 12,
+   "page_count": 4,
+   "identity_tier": "verified",
+   "operator": "TestOperator",
+   "agent_name": "AgentLens Test Agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 1,
+   "entry_page": "/",
+   "exit_page": "/api/checkout",
+   "max_stage": "S6",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B10",
+   "terminal_blocker_name": "Checkout validation failure",
+   "blocker_confidence": 0.95,
+   "diagnosis_method": "rule"
+  }
+ ]
+}

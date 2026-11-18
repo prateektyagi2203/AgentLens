@@ -1,0 +1,184 @@
+{
+ "session": {
+  "session_id": "ses_tnfhhm8xvq",
+  "start_ts": "2026-11-09T05:21:02.000Z",
+  "duration_s": 14,
+  "request_count": 9,
+  "page_count": 2,
+  "identity_tier": "verified",
+  "operator": "OpenAI",
+  "agent_name": "ChatGPT agent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 1,
+  "entry_page": "/c/sneakers",
+  "exit_page": "/api/cart",
+  "max_stage": "S4",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B05",
+  "terminal_blocker_name": "Pincode wall",
+  "blocker_confidence": 0.8,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "valid",
+  "signature_agent": "https://chatgpt.com",
+  "suspicion_score": null,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "req_qm5brqtqhj",
+   "ts": "2026-11-09T05:21:02.000Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/c/sneakers",
+   "status": 200,
+   "duration_ms": 197,
+   "page_type": "listing",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_48asa6js8p",
+   "ts": "2026-11-09T05:21:04.247Z",
+   "offset_ms": 2247,
+   "method": "GET",
+   "path": "/p/white-court-sneaker",
+   "status": 200,
+   "duration_ms": 350,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_0w2b4ssh0k",
+   "ts": "2026-11-09T05:21:05.263Z",
+   "offset_ms": 3263,
+   "method": "GET",
+   "path": "/static/app.4f2c.js",
+   "status": 200,
+   "duration_ms": 60,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_xwkv29r5zg",
+   "ts": "2026-11-09T05:21:06.772Z",
+   "offset_ms": 4772,
+   "method": "POST",
+   "path": "/beacon",
+   "status": 204,
+   "duration_ms": 22,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_v8msypfne0",
+   "ts": "2026-11-09T05:21:09.003Z",
+   "offset_ms": 7003,
+   "method": "GET",
+   "path": "/api/products/white-court-sneaker/variants?size=9",
+   "status": 200,
+   "duration_ms": 74,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_k3w7et9snk",
+   "ts": "2026-11-09T05:21:10.701Z",
+   "offset_ms": 8701,
+   "method": "GET",
+   "path": "/api/serviceability?pincode=110001",
+   "status": 200,
+   "duration_ms": 127,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S4",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_b4btfj3j58",
+   "ts": "2026-11-09T05:21:11.901Z",
+   "offset_ms": 9901,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 155,
+   "page_type": "api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "req_bd86smdqps",
+   "ts": "2026-11-09T05:21:13.901Z",
+   "offset_ms": 11901,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 178,
+   "page_type": "api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "req_5khmv1pm1e",
+   "ts": "2026-11-09T05:21:15.901Z",
+   "offset_ms": 13901,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 120,
+   "page_type": "api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-09T05:21:02.000Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-09T05:21:04.247Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-09T05:21:09.003Z"
+  },
+  {
+   "stage_id": "S4",
+   "first_reached_ts": "2026-11-09T05:21:10.701Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B05",
+   "name": "Pincode wall",
+   "stage": "S5",
+   "confidence": 0.8,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "req_5khmv1pm1e",
+     "summary": "POST /api/cart → 409 PINCODE_REQUIRED (×3) · session ended 2 s later"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

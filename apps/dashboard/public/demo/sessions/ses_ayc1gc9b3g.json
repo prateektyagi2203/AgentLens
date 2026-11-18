@@ -1,0 +1,98 @@
+{
+ "session": {
+  "session_id": "ses_ayc1gc9b3g",
+  "start_ts": "2026-11-18T07:35:34.000Z",
+  "duration_s": 4,
+  "request_count": 3,
+  "page_count": 2,
+  "identity_tier": "declared",
+  "operator": "Anthropic",
+  "agent_name": "Claude-User",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.9,
+  "entry_page": "/search?q=indigo",
+  "exit_page": "/api/products/indigo-kurta-set/variants?size=9",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B08",
+  "terminal_blocker_name": "Out-of-stock dead end",
+  "blocker_confidence": 0.89,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": null,
+  "user_agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Claude-User/1.0; +Claude-User@anthropic.com)",
+  "ip_match": false
+ },
+ "requests": [
+  {
+   "request_id": "req_6p2kk9vfnp",
+   "ts": "2026-11-18T07:35:34.000Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/search?q=indigo",
+   "status": 200,
+   "duration_ms": 231,
+   "page_type": "listing",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_mq9r2zd303",
+   "ts": "2026-11-18T07:35:35.799Z",
+   "offset_ms": 1799,
+   "method": "GET",
+   "path": "/p/indigo-kurta-set",
+   "status": 200,
+   "duration_ms": 336,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_vadsj3pvzc",
+   "ts": "2026-11-18T07:35:37.864Z",
+   "offset_ms": 3864,
+   "method": "GET",
+   "path": "/api/products/indigo-kurta-set/variants?size=9",
+   "status": 409,
+   "duration_ms": 126,
+   "page_type": "api",
+   "error_code": "VARIANT_OUT_OF_STOCK",
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-18T07:35:34.000Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-18T07:35:35.799Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B08",
+   "name": "Out-of-stock dead end",
+   "stage": "S3",
+   "confidence": 0.89,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "req_vadsj3pvzc",
+     "summary": "GET /api/products/indigo-kurta-set/variants?size=9 → 409 VARIANT_OUT_OF_STOCK · ended"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

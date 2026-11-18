@@ -1,0 +1,119 @@
+{
+ "window": {
+  "from": "2026-11-05",
+  "to": "2026-11-11",
+  "days": 7
+ },
+ "blocker": {
+  "blocker_id": "B14",
+  "name": "robots.txt disallow",
+  "stage": "S1",
+  "sessions_blocked": 20,
+  "share_of_failed": 0.005,
+  "risk_inr": {
+   "low": 1810,
+   "base": 3394,
+   "high": 5431
+  },
+  "replay_status": "not_run",
+  "effort": "S",
+  "priority_score": 3394,
+  "low_confidence": true
+ },
+ "description": "The agent fetched robots.txt, found its token disallowed, and left.",
+ "detection": "Agent fetched robots.txt, the path is disallowed for its token, the agent left.",
+ "evidence": {
+  "top_error_codes": [
+   {
+    "code": "ROBOTS_DISALLOW",
+    "count": 20,
+    "share": 1
+   }
+  ],
+  "example_requests": [
+   {
+    "request_id": "req_B14_1",
+    "summary": "GET /robots.txt → 200 · User-agent: ChatGPT-User Disallow: /",
+    "count": 20
+   }
+  ],
+  "site_checks": [
+   {
+    "check_id": "chk_robots_txt",
+    "run_ts": "2026-11-11T16:55:00Z",
+    "check_name": "robots_txt",
+    "target": "/robots.txt",
+    "result": "warn",
+    "details": {
+     "allowed": [
+      "ChatGPT-User",
+      "Claude-User",
+      "Perplexity-User",
+      "Googlebot"
+     ],
+     "disallowed": [
+      "PerplexityBot"
+     ],
+     "message": "User-triggered agents allowed. PerplexityBot (search crawler) is disallowed."
+    }
+   }
+  ]
+ },
+ "risk_breakdown": {
+  "sessions_blocked": 20,
+  "recoverable_rate": 0.6,
+  "p_stage": 0.02999747474747475,
+  "aov_inr": 2200,
+  "k": 4.285714285714286
+ },
+ "trend": [
+  {
+   "date": "2026-11-05",
+   "sessions_blocked": 3
+  },
+  {
+   "date": "2026-11-06",
+   "sessions_blocked": 3
+  },
+  {
+   "date": "2026-11-07",
+   "sessions_blocked": 3
+  },
+  {
+   "date": "2026-11-08",
+   "sessions_blocked": 2
+  },
+  {
+   "date": "2026-11-09",
+   "sessions_blocked": 3
+  },
+  {
+   "date": "2026-11-10",
+   "sessions_blocked": 3
+  },
+  {
+   "date": "2026-11-11",
+   "sessions_blocked": 3
+  }
+ ],
+ "sample_sessions": [],
+ "replays": [],
+ "recommendation": {
+  "rec_id": "rec_B14",
+  "run_id": "run_20261118_0610",
+  "blocker_id": "B14",
+  "blocker_name": "robots.txt disallow",
+  "title": "Review the robots policy for user-triggered agents",
+  "body": "Allow user-triggered fetchers that act for a shopper while keeping training crawlers blocked if desired.",
+  "why_it_helps": "A user-triggered agent honouring robots.txt cannot complete a purchase the shopper asked for.",
+  "how_to_verify": "The robots site check should pass for user-triggered agents.",
+  "verify_metric": "Site check: robots_txt",
+  "effort": "S",
+  "owner": "Content",
+  "priority_score": 3394,
+  "risk_inr_base": 3394,
+  "status": "open",
+  "fixed_annotation_id": null,
+  "llm_explanation": null
+ }
+}

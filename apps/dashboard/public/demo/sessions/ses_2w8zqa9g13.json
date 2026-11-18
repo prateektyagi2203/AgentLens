@@ -1,0 +1,218 @@
+{
+ "session": {
+  "session_id": "ses_2w8zqa9g13",
+  "start_ts": "2026-11-09T06:57:30.000Z",
+  "duration_s": 17,
+  "request_count": 11,
+  "page_count": 3,
+  "identity_tier": "verified",
+  "operator": "OpenAI",
+  "agent_name": "ChatGPT agent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 1,
+  "entry_page": "/c/sneakers",
+  "exit_page": "/api/checkout",
+  "max_stage": "S6",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B10",
+  "terminal_blocker_name": "Checkout validation failure",
+  "blocker_confidence": 0.8,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "valid",
+  "signature_agent": "https://chatgpt.com",
+  "suspicion_score": null,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "req_tsxn7yhgxe",
+   "ts": "2026-11-09T06:57:30.000Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/c/sneakers",
+   "status": 200,
+   "duration_ms": 147,
+   "page_type": "listing",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_pzpa68y69s",
+   "ts": "2026-11-09T06:57:31.080Z",
+   "offset_ms": 1080,
+   "method": "GET",
+   "path": "/p/white-court-sneaker",
+   "status": 200,
+   "duration_ms": 188,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_2r8atsymfv",
+   "ts": "2026-11-09T06:57:33.434Z",
+   "offset_ms": 3434,
+   "method": "GET",
+   "path": "/static/app.4f2c.js",
+   "status": 200,
+   "duration_ms": 82,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_ztcxymnre2",
+   "ts": "2026-11-09T06:57:33.884Z",
+   "offset_ms": 3884,
+   "method": "POST",
+   "path": "/beacon",
+   "status": 204,
+   "duration_ms": 25,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_2ba3vt7cf2",
+   "ts": "2026-11-09T06:57:35.067Z",
+   "offset_ms": 5067,
+   "method": "GET",
+   "path": "/api/products/white-court-sneaker/variants?size=9",
+   "status": 200,
+   "duration_ms": 81,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_8pvbsg1jkb",
+   "ts": "2026-11-09T06:57:38.521Z",
+   "offset_ms": 8521,
+   "method": "GET",
+   "path": "/api/serviceability?pincode=560001",
+   "status": 200,
+   "duration_ms": 174,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S4",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_7knp5wq92d",
+   "ts": "2026-11-09T06:57:40.148Z",
+   "offset_ms": 10148,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 201,
+   "duration_ms": 278,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S5",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_8v2fv9b0ep",
+   "ts": "2026-11-09T06:57:40.634Z",
+   "offset_ms": 10634,
+   "method": "GET",
+   "path": "/checkout",
+   "status": 200,
+   "duration_ms": 229,
+   "page_type": "checkout",
+   "error_code": null,
+   "stage_id": "S6",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_v4avbq3j68",
+   "ts": "2026-11-09T06:57:42.134Z",
+   "offset_ms": 12134,
+   "method": "POST",
+   "path": "/api/checkout",
+   "status": 422,
+   "duration_ms": 250,
+   "page_type": "api",
+   "error_code": "PHONE_FORMAT",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "req_bn08tzvkj3",
+   "ts": "2026-11-09T06:57:44.634Z",
+   "offset_ms": 14634,
+   "method": "POST",
+   "path": "/api/checkout",
+   "status": 422,
+   "duration_ms": 180,
+   "page_type": "api",
+   "error_code": "PHONE_FORMAT",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "req_cxncn7a7j8",
+   "ts": "2026-11-09T06:57:47.134Z",
+   "offset_ms": 17134,
+   "method": "POST",
+   "path": "/api/checkout",
+   "status": 422,
+   "duration_ms": 149,
+   "page_type": "api",
+   "error_code": "PHONE_FORMAT",
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-09T06:57:30.000Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-09T06:57:31.080Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-09T06:57:35.067Z"
+  },
+  {
+   "stage_id": "S4",
+   "first_reached_ts": "2026-11-09T06:57:38.521Z"
+  },
+  {
+   "stage_id": "S5",
+   "first_reached_ts": "2026-11-09T06:57:40.148Z"
+  },
+  {
+   "stage_id": "S6",
+   "first_reached_ts": "2026-11-09T06:57:40.634Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B10",
+   "name": "Checkout validation failure",
+   "stage": "S7",
+   "confidence": 0.8,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "req_cxncn7a7j8",
+     "summary": "POST /api/checkout → 422 PHONE_FORMAT (×3)"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

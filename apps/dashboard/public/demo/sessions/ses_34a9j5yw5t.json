@@ -1,0 +1,111 @@
+{
+ "session": {
+  "session_id": "ses_34a9j5yw5t",
+  "start_ts": "2026-11-12T05:27:45.000Z",
+  "duration_s": 9,
+  "request_count": 4,
+  "page_count": 3,
+  "identity_tier": "declared",
+  "operator": "OpenAI",
+  "agent_name": "ChatGPT-User",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.7,
+  "entry_page": "/",
+  "exit_page": "/api/products/block-print-dupatta/variants?size=9",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B08",
+  "terminal_blocker_name": "Out-of-stock dead end",
+  "blocker_confidence": 0.86,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": null,
+  "user_agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+  "ip_match": false
+ },
+ "requests": [
+  {
+   "request_id": "req_3bmd95527k",
+   "ts": "2026-11-12T05:27:45.000Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 221,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_h0jyfbgxaf",
+   "ts": "2026-11-12T05:27:46.759Z",
+   "offset_ms": 1759,
+   "method": "GET",
+   "path": "/search?q=block",
+   "status": 200,
+   "duration_ms": 130,
+   "page_type": "listing",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "req_8gpec0448w",
+   "ts": "2026-11-12T05:27:50.160Z",
+   "offset_ms": 5160,
+   "method": "GET",
+   "path": "/p/block-print-dupatta",
+   "status": 200,
+   "duration_ms": 235,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_7qsg8nter7",
+   "ts": "2026-11-12T05:27:54.015Z",
+   "offset_ms": 9015,
+   "method": "GET",
+   "path": "/api/products/block-print-dupatta/variants?size=9",
+   "status": 409,
+   "duration_ms": 70,
+   "page_type": "api",
+   "error_code": "VARIANT_OUT_OF_STOCK",
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-12T05:27:45.000Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-12T05:27:50.160Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B08",
+   "name": "Out-of-stock dead end",
+   "stage": "S3",
+   "confidence": 0.86,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "req_7qsg8nter7",
+     "summary": "GET /api/products/block-print-dupatta/variants?size=9 → 409 VARIANT_OUT_OF_STOCK · ended"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

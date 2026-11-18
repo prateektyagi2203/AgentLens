@@ -1,0 +1,188 @@
+{
+ "session": {
+  "session_id": "ses_xnxemt2yfk",
+  "start_ts": "2026-11-15T04:26:04.000Z",
+  "duration_s": 19,
+  "request_count": 9,
+  "page_count": 4,
+  "identity_tier": "verified",
+  "operator": "OpenAI",
+  "agent_name": "ChatGPT agent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 1,
+  "entry_page": "/",
+  "exit_page": "/cart",
+  "max_stage": "S5",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B15",
+  "terminal_blocker_name": "Price mismatch PDP vs cart",
+  "blocker_confidence": 0.94,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "valid",
+  "signature_agent": "https://chatgpt.com",
+  "suspicion_score": null,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "req_44whyf3ghs",
+   "ts": "2026-11-15T04:26:04.000Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 203,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_qrc703gws6",
+   "ts": "2026-11-15T04:26:07.436Z",
+   "offset_ms": 3436,
+   "method": "GET",
+   "path": "/search?q=leather",
+   "status": 200,
+   "duration_ms": 123,
+   "page_type": "listing",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "req_k4t527entb",
+   "ts": "2026-11-15T04:26:08.220Z",
+   "offset_ms": 4220,
+   "method": "GET",
+   "path": "/p/leather-kolhapuri-sandal",
+   "status": 200,
+   "duration_ms": 248,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_6nhtg7dwr3",
+   "ts": "2026-11-15T04:26:09.278Z",
+   "offset_ms": 5278,
+   "method": "GET",
+   "path": "/static/app.4f2c.js",
+   "status": 200,
+   "duration_ms": 81,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_s7a4fkk4vv",
+   "ts": "2026-11-15T04:26:11.548Z",
+   "offset_ms": 7548,
+   "method": "POST",
+   "path": "/beacon",
+   "status": 204,
+   "duration_ms": 11,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_ce885jdfvd",
+   "ts": "2026-11-15T04:26:14.915Z",
+   "offset_ms": 10915,
+   "method": "GET",
+   "path": "/api/products/leather-kolhapuri-sandal/variants?size=9",
+   "status": 200,
+   "duration_ms": 133,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_k0nraxyj0n",
+   "ts": "2026-11-15T04:26:15.539Z",
+   "offset_ms": 11539,
+   "method": "GET",
+   "path": "/api/serviceability?pincode=560001",
+   "status": 200,
+   "duration_ms": 204,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S4",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_tqzkzc5ws7",
+   "ts": "2026-11-15T04:26:19.232Z",
+   "offset_ms": 15232,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 201,
+   "duration_ms": 164,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S5",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_gynxq28syr",
+   "ts": "2026-11-15T04:26:22.939Z",
+   "offset_ms": 18939,
+   "method": "GET",
+   "path": "/cart",
+   "status": 200,
+   "duration_ms": 200,
+   "page_type": "cart",
+   "error_code": "PRICE_MISMATCH",
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-15T04:26:04.000Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-15T04:26:08.220Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-15T04:26:14.915Z"
+  },
+  {
+   "stage_id": "S4",
+   "first_reached_ts": "2026-11-15T04:26:15.539Z"
+  },
+  {
+   "stage_id": "S5",
+   "first_reached_ts": "2026-11-15T04:26:19.232Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B15",
+   "name": "Price mismatch PDP vs cart",
+   "stage": "S6",
+   "confidence": 0.94,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "req_gynxq28syr",
+     "summary": "PDP ₹2,199 · cart ₹2,499 · session ended"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

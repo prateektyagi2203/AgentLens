@@ -1,0 +1,94 @@
+{
+ "session": {
+  "session_id": "ses_zcva64fvqh",
+  "start_ts": "2026-11-15T03:00:04.000Z",
+  "duration_s": 6,
+  "request_count": 3,
+  "page_count": 2,
+  "identity_tier": "suspected",
+  "operator": "unknown",
+  "agent_name": "Unidentified browsing agent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 0.65,
+  "entry_page": "/c/sneakers",
+  "exit_page": "/p/cotton-linen-shirt",
+  "max_stage": "S1",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B07",
+  "terminal_blocker_name": "App-download interstitial",
+  "blocker_confidence": 0.9,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 65,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 HeadlessChrome/130.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "req_dbwmthb9f6",
+   "ts": "2026-11-15T03:00:04.000Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/c/sneakers",
+   "status": 200,
+   "duration_ms": 235,
+   "page_type": "listing",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_8vs2f70x4g",
+   "ts": "2026-11-15T03:00:06.583Z",
+   "offset_ms": 2583,
+   "method": "GET",
+   "path": "/p/cotton-linen-shirt",
+   "status": 200,
+   "duration_ms": 193,
+   "page_type": "pdp",
+   "error_code": "OVERLAY_NO_INTERACTION",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "req_vyangmmcwv",
+   "ts": "2026-11-15T03:00:10.187Z",
+   "offset_ms": 6187,
+   "method": "POST",
+   "path": "/beacon",
+   "status": 204,
+   "duration_ms": 14,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-15T03:00:04.000Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B07",
+   "name": "App-download interstitial",
+   "stage": "S2",
+   "confidence": 0.9,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "req_vyangmmcwv",
+     "summary": "GET /p/cotton-linen-shirt → 200 · beacon seen · no further request for 31 s"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

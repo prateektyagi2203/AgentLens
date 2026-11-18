@@ -1,0 +1,81 @@
+{
+ "session": {
+  "session_id": "ses_bzcgq5md3j",
+  "start_ts": "2026-11-13T09:59:12.000Z",
+  "duration_s": 3,
+  "request_count": 2,
+  "page_count": 1,
+  "identity_tier": "declared",
+  "operator": "Google",
+  "agent_name": "Gemini agent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 0.7,
+  "entry_page": "/search?q=block",
+  "exit_page": "/p/block-print-dupatta",
+  "max_stage": "S1",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B12",
+  "terminal_blocker_name": "Rate limited",
+  "blocker_confidence": 0.79,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": null,
+  "user_agent": "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/131.0 Mobile Safari/537.36 Google-Agent",
+  "ip_match": false
+ },
+ "requests": [
+  {
+   "request_id": "req_xqtngqfr9r",
+   "ts": "2026-11-13T09:59:12.000Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/search?q=block",
+   "status": 200,
+   "duration_ms": 268,
+   "page_type": "listing",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_38jpnd2vt1",
+   "ts": "2026-11-13T09:59:14.947Z",
+   "offset_ms": 2947,
+   "method": "GET",
+   "path": "/p/block-print-dupatta",
+   "status": 429,
+   "duration_ms": 36,
+   "page_type": "pdp",
+   "error_code": "RATE_LIMITED",
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-13T09:59:12.000Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B12",
+   "name": "Rate limited",
+   "stage": "S1",
+   "confidence": 0.79,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "req_38jpnd2vt1",
+     "summary": "GET /p/block-print-dupatta → 429 Retry-After: 60 · ended"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

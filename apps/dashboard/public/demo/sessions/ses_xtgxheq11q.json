@@ -1,0 +1,113 @@
+{
+ "session": {
+  "session_id": "ses_xtgxheq11q",
+  "start_ts": "2026-11-06T15:19:47.000Z",
+  "duration_s": 66,
+  "request_count": 5,
+  "page_count": 2,
+  "identity_tier": "human",
+  "operator": "human",
+  "agent_name": "Browser (human)",
+  "agent_class": "human",
+  "identity_confidence": 0.9,
+  "entry_page": "/search?q=indigo",
+  "exit_page": "/api/products/indigo-kurta-set/variants?size=9",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": null,
+  "terminal_blocker_name": null,
+  "blocker_confidence": null,
+  "diagnosis_method": "none"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 22,
+  "user_agent": "Mozilla/5.0 (Linux; Android 14; Pixel 8) AppleWebKit/537.36 Chrome/131.0 Mobile Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "req_qgf5j6fbha",
+   "ts": "2026-11-06T15:19:47.000Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/search?q=indigo",
+   "status": 200,
+   "duration_ms": 242,
+   "page_type": "listing",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_v60g6743bw",
+   "ts": "2026-11-06T15:19:53.332Z",
+   "offset_ms": 6332,
+   "method": "GET",
+   "path": "/p/indigo-kurta-set",
+   "status": 200,
+   "duration_ms": 396,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_82q7rz8521",
+   "ts": "2026-11-06T15:20:14.379Z",
+   "offset_ms": 27379,
+   "method": "GET",
+   "path": "/static/app.4f2c.js",
+   "status": 200,
+   "duration_ms": 58,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_m004e3424s",
+   "ts": "2026-11-06T15:20:33.448Z",
+   "offset_ms": 46448,
+   "method": "POST",
+   "path": "/beacon",
+   "status": 204,
+   "duration_ms": 17,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_2w8ff7zzgc",
+   "ts": "2026-11-06T15:20:53.067Z",
+   "offset_ms": 66067,
+   "method": "GET",
+   "path": "/api/products/indigo-kurta-set/variants?size=9",
+   "status": 200,
+   "duration_ms": 127,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-06T15:19:47.000Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-06T15:19:53.332Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-06T15:20:53.067Z"
+  }
+ ],
+ "fired_rules": [],
+ "replay_ids": []
+}

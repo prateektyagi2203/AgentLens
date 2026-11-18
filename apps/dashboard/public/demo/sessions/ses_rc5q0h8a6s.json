@@ -1,0 +1,137 @@
+{
+ "session": {
+  "session_id": "ses_rc5q0h8a6s",
+  "start_ts": "2026-11-15T07:37:42.000Z",
+  "duration_s": 12,
+  "request_count": 6,
+  "page_count": 3,
+  "identity_tier": "declared",
+  "operator": "OpenAI",
+  "agent_name": "ChatGPT agent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 0.7,
+  "entry_page": "/",
+  "exit_page": "/api/products/white-court-sneaker/variants?size=9",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B08",
+  "terminal_blocker_name": "Out-of-stock dead end",
+  "blocker_confidence": 0.87,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": null,
+  "user_agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; ChatGPT-Agent/1.0)",
+  "ip_match": false
+ },
+ "requests": [
+  {
+   "request_id": "req_67skved1eh",
+   "ts": "2026-11-15T07:37:42.000Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 161,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_4rhk0e468c",
+   "ts": "2026-11-15T07:37:45.242Z",
+   "offset_ms": 3242,
+   "method": "GET",
+   "path": "/c/sneakers",
+   "status": 200,
+   "duration_ms": 138,
+   "page_type": "listing",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "req_qsxdx5cazm",
+   "ts": "2026-11-15T07:37:46.736Z",
+   "offset_ms": 4736,
+   "method": "GET",
+   "path": "/p/white-court-sneaker",
+   "status": 200,
+   "duration_ms": 190,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_c7kxam8ft9",
+   "ts": "2026-11-15T07:37:50.088Z",
+   "offset_ms": 8088,
+   "method": "GET",
+   "path": "/static/app.4f2c.js",
+   "status": 200,
+   "duration_ms": 89,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_4jrvwsfswy",
+   "ts": "2026-11-15T07:37:50.853Z",
+   "offset_ms": 8853,
+   "method": "POST",
+   "path": "/beacon",
+   "status": 204,
+   "duration_ms": 10,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_4cteybfzwc",
+   "ts": "2026-11-15T07:37:53.780Z",
+   "offset_ms": 11780,
+   "method": "GET",
+   "path": "/api/products/white-court-sneaker/variants?size=9",
+   "status": 409,
+   "duration_ms": 96,
+   "page_type": "api",
+   "error_code": "VARIANT_OUT_OF_STOCK",
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-15T07:37:42.000Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-15T07:37:46.736Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B08",
+   "name": "Out-of-stock dead end",
+   "stage": "S3",
+   "confidence": 0.87,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "req_4cteybfzwc",
+     "summary": "GET /api/products/white-court-sneaker/variants?size=9 → 409 VARIANT_OUT_OF_STOCK · ended"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

@@ -1,0 +1,198 @@
+{
+ "session": {
+  "session_id": "ses_2vv7bw0614",
+  "start_ts": "2026-11-16T05:03:00.000Z",
+  "duration_s": 16,
+  "request_count": 10,
+  "page_count": 4,
+  "identity_tier": "declared",
+  "operator": "Google",
+  "agent_name": "Gemini agent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 0.7,
+  "entry_page": "/c/sneakers",
+  "exit_page": "/order/confirmed/ORD-60006",
+  "max_stage": "S8",
+  "converted": true,
+  "order_value_inr": 2850,
+  "terminal_blocker_id": null,
+  "terminal_blocker_name": null,
+  "blocker_confidence": null,
+  "diagnosis_method": "none"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": null,
+  "user_agent": "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/131.0 Mobile Safari/537.36 Google-Agent",
+  "ip_match": true
+ },
+ "requests": [
+  {
+   "request_id": "req_w5x5b8czg8",
+   "ts": "2026-11-16T05:03:00.000Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/c/sneakers",
+   "status": 200,
+   "duration_ms": 258,
+   "page_type": "listing",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_vz7mnjc0wf",
+   "ts": "2026-11-16T05:03:01.735Z",
+   "offset_ms": 1735,
+   "method": "GET",
+   "path": "/p/indigo-kurta-set",
+   "status": 200,
+   "duration_ms": 233,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_986s2bbrfm",
+   "ts": "2026-11-16T05:03:02.590Z",
+   "offset_ms": 2590,
+   "method": "GET",
+   "path": "/static/app.4f2c.js",
+   "status": 200,
+   "duration_ms": 40,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_cbv24xspe4",
+   "ts": "2026-11-16T05:03:03.878Z",
+   "offset_ms": 3878,
+   "method": "POST",
+   "path": "/beacon",
+   "status": 204,
+   "duration_ms": 13,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_dwnh6tyvs9",
+   "ts": "2026-11-16T05:03:05.134Z",
+   "offset_ms": 5134,
+   "method": "GET",
+   "path": "/api/products/indigo-kurta-set/variants?size=9",
+   "status": 200,
+   "duration_ms": 101,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_f9sdqwht7n",
+   "ts": "2026-11-16T05:03:07.851Z",
+   "offset_ms": 7851,
+   "method": "GET",
+   "path": "/api/serviceability?pincode=600001",
+   "status": 200,
+   "duration_ms": 74,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S4",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_3aq4qhxpj8",
+   "ts": "2026-11-16T05:03:10.011Z",
+   "offset_ms": 10011,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 201,
+   "duration_ms": 258,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S5",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_9v5errbn2q",
+   "ts": "2026-11-16T05:03:11.876Z",
+   "offset_ms": 11876,
+   "method": "GET",
+   "path": "/checkout",
+   "status": 200,
+   "duration_ms": 202,
+   "page_type": "checkout",
+   "error_code": null,
+   "stage_id": "S6",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_nm9f073847",
+   "ts": "2026-11-16T05:03:14.201Z",
+   "offset_ms": 14201,
+   "method": "POST",
+   "path": "/api/checkout",
+   "status": 201,
+   "duration_ms": 515,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S7",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_djn29feq5h",
+   "ts": "2026-11-16T05:03:15.915Z",
+   "offset_ms": 15915,
+   "method": "GET",
+   "path": "/order/confirmed/ORD-60006",
+   "status": 200,
+   "duration_ms": 183,
+   "page_type": "order",
+   "error_code": null,
+   "stage_id": "S8",
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-16T05:03:00.000Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-16T05:03:01.735Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-16T05:03:05.134Z"
+  },
+  {
+   "stage_id": "S4",
+   "first_reached_ts": "2026-11-16T05:03:07.851Z"
+  },
+  {
+   "stage_id": "S5",
+   "first_reached_ts": "2026-11-16T05:03:10.011Z"
+  },
+  {
+   "stage_id": "S6",
+   "first_reached_ts": "2026-11-16T05:03:11.876Z"
+  },
+  {
+   "stage_id": "S7",
+   "first_reached_ts": "2026-11-16T05:03:14.201Z"
+  },
+  {
+   "stage_id": "S8",
+   "first_reached_ts": "2026-11-16T05:03:15.915Z"
+  }
+ ],
+ "fired_rules": [],
+ "replay_ids": []
+}

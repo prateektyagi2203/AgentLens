@@ -1,0 +1,233 @@
+{
+ "session": {
+  "session_id": "ses_1hc4dfmn5y",
+  "start_ts": "2026-11-11T04:36:06.000Z",
+  "duration_s": 28,
+  "request_count": 12,
+  "page_count": 4,
+  "identity_tier": "verified",
+  "operator": "OpenAI",
+  "agent_name": "ChatGPT agent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 1,
+  "entry_page": "/",
+  "exit_page": "/api/checkout",
+  "max_stage": "S6",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B10",
+  "terminal_blocker_name": "Checkout validation failure",
+  "blocker_confidence": 0.83,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "valid",
+  "signature_agent": "https://chatgpt.com",
+  "suspicion_score": null,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "req_sqj5k99hj9",
+   "ts": "2026-11-11T04:36:06.000Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 105,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_91k9hf6gzr",
+   "ts": "2026-11-11T04:36:08.686Z",
+   "offset_ms": 2686,
+   "method": "GET",
+   "path": "/c/sneakers",
+   "status": 200,
+   "duration_ms": 244,
+   "page_type": "listing",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "req_05mmzgsagj",
+   "ts": "2026-11-11T04:36:11.461Z",
+   "offset_ms": 5461,
+   "method": "GET",
+   "path": "/p/cotton-linen-shirt",
+   "status": 200,
+   "duration_ms": 332,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_3ssj7bx1kh",
+   "ts": "2026-11-11T04:36:15.359Z",
+   "offset_ms": 9359,
+   "method": "GET",
+   "path": "/static/app.4f2c.js",
+   "status": 200,
+   "duration_ms": 46,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_zdm2cp9etm",
+   "ts": "2026-11-11T04:36:19.223Z",
+   "offset_ms": 13223,
+   "method": "POST",
+   "path": "/beacon",
+   "status": 204,
+   "duration_ms": 29,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_prhww83m2g",
+   "ts": "2026-11-11T04:36:19.907Z",
+   "offset_ms": 13907,
+   "method": "GET",
+   "path": "/api/products/cotton-linen-shirt/variants?size=9",
+   "status": 200,
+   "duration_ms": 136,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_t4d9s4np40",
+   "ts": "2026-11-11T04:36:22.851Z",
+   "offset_ms": 16851,
+   "method": "GET",
+   "path": "/api/serviceability?pincode=400001",
+   "status": 200,
+   "duration_ms": 84,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S4",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_efeh9ad77w",
+   "ts": "2026-11-11T04:36:25.556Z",
+   "offset_ms": 19556,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 201,
+   "duration_ms": 183,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S5",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_m5qbw6dy2v",
+   "ts": "2026-11-11T04:36:27.836Z",
+   "offset_ms": 21836,
+   "method": "GET",
+   "path": "/checkout",
+   "status": 200,
+   "duration_ms": 320,
+   "page_type": "checkout",
+   "error_code": null,
+   "stage_id": "S6",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_zdnxx0f5en",
+   "ts": "2026-11-11T04:36:29.336Z",
+   "offset_ms": 23336,
+   "method": "POST",
+   "path": "/api/checkout",
+   "status": 422,
+   "duration_ms": 220,
+   "page_type": "api",
+   "error_code": "PHONE_FORMAT",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "req_5zm5r15528",
+   "ts": "2026-11-11T04:36:31.836Z",
+   "offset_ms": 25836,
+   "method": "POST",
+   "path": "/api/checkout",
+   "status": 422,
+   "duration_ms": 128,
+   "page_type": "api",
+   "error_code": "PHONE_FORMAT",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "req_n292jjyy5z",
+   "ts": "2026-11-11T04:36:34.336Z",
+   "offset_ms": 28336,
+   "method": "POST",
+   "path": "/api/checkout",
+   "status": 422,
+   "duration_ms": 195,
+   "page_type": "api",
+   "error_code": "PHONE_FORMAT",
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-11T04:36:06.000Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-11T04:36:11.461Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-11T04:36:19.907Z"
+  },
+  {
+   "stage_id": "S4",
+   "first_reached_ts": "2026-11-11T04:36:22.851Z"
+  },
+  {
+   "stage_id": "S5",
+   "first_reached_ts": "2026-11-11T04:36:25.556Z"
+  },
+  {
+   "stage_id": "S6",
+   "first_reached_ts": "2026-11-11T04:36:27.836Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B10",
+   "name": "Checkout validation failure",
+   "stage": "S7",
+   "confidence": 0.83,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "req_n292jjyy5z",
+     "summary": "POST /api/checkout → 422 PHONE_FORMAT (×3)"
+    }
+   ]
+  }
+ ],
+ "replay_ids": [
+  "rpl_b10"
+ ]
+}

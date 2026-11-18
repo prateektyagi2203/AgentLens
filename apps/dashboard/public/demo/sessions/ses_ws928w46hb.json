@@ -1,0 +1,211 @@
+{
+ "session": {
+  "session_id": "ses_ws928w46hb",
+  "start_ts": "2026-11-18T10:29:39.000Z",
+  "duration_s": 22,
+  "request_count": 11,
+  "page_count": 5,
+  "identity_tier": "verified",
+  "operator": "OpenAI",
+  "agent_name": "ChatGPT agent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 1,
+  "entry_page": "/",
+  "exit_page": "/order/confirmed/ORD-89482",
+  "max_stage": "S8",
+  "converted": true,
+  "order_value_inr": 3510,
+  "terminal_blocker_id": null,
+  "terminal_blocker_name": null,
+  "blocker_confidence": null,
+  "diagnosis_method": "none"
+ },
+ "identity": {
+  "signature_status": "valid",
+  "signature_agent": "https://chatgpt.com",
+  "suspicion_score": null,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "req_5dvq627sw3",
+   "ts": "2026-11-18T10:29:39.000Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 160,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_th3cpx2904",
+   "ts": "2026-11-18T10:29:42.236Z",
+   "offset_ms": 3236,
+   "method": "GET",
+   "path": "/c/sneakers",
+   "status": 200,
+   "duration_ms": 129,
+   "page_type": "listing",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "req_wh9307381s",
+   "ts": "2026-11-18T10:29:44.154Z",
+   "offset_ms": 5154,
+   "method": "GET",
+   "path": "/p/white-court-sneaker",
+   "status": 200,
+   "duration_ms": 293,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_qsvg5k8ggy",
+   "ts": "2026-11-18T10:29:47.141Z",
+   "offset_ms": 8141,
+   "method": "GET",
+   "path": "/static/app.4f2c.js",
+   "status": 200,
+   "duration_ms": 76,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_sx8jt6spdy",
+   "ts": "2026-11-18T10:29:47.697Z",
+   "offset_ms": 8697,
+   "method": "POST",
+   "path": "/beacon",
+   "status": 204,
+   "duration_ms": 16,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_ddxc3r9jf0",
+   "ts": "2026-11-18T10:29:48.100Z",
+   "offset_ms": 9100,
+   "method": "GET",
+   "path": "/api/products/white-court-sneaker/variants?size=9",
+   "status": 200,
+   "duration_ms": 97,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_g09jk9mkh8",
+   "ts": "2026-11-18T10:29:49.072Z",
+   "offset_ms": 10072,
+   "method": "GET",
+   "path": "/api/serviceability?pincode=400001",
+   "status": 200,
+   "duration_ms": 92,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S4",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_gcw6bh07pk",
+   "ts": "2026-11-18T10:29:51.625Z",
+   "offset_ms": 12625,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 201,
+   "duration_ms": 194,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S5",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_wqvf83tm9d",
+   "ts": "2026-11-18T10:29:55.465Z",
+   "offset_ms": 16465,
+   "method": "GET",
+   "path": "/checkout",
+   "status": 200,
+   "duration_ms": 263,
+   "page_type": "checkout",
+   "error_code": null,
+   "stage_id": "S6",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_mntj42qfb7",
+   "ts": "2026-11-18T10:29:57.908Z",
+   "offset_ms": 18908,
+   "method": "POST",
+   "path": "/api/checkout",
+   "status": 201,
+   "duration_ms": 331,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S7",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_mkh12vbbd3",
+   "ts": "2026-11-18T10:30:01.430Z",
+   "offset_ms": 22430,
+   "method": "GET",
+   "path": "/order/confirmed/ORD-89482",
+   "status": 200,
+   "duration_ms": 244,
+   "page_type": "order",
+   "error_code": null,
+   "stage_id": "S8",
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-18T10:29:39.000Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-18T10:29:44.154Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-18T10:29:48.100Z"
+  },
+  {
+   "stage_id": "S4",
+   "first_reached_ts": "2026-11-18T10:29:49.072Z"
+  },
+  {
+   "stage_id": "S5",
+   "first_reached_ts": "2026-11-18T10:29:51.625Z"
+  },
+  {
+   "stage_id": "S6",
+   "first_reached_ts": "2026-11-18T10:29:55.465Z"
+  },
+  {
+   "stage_id": "S7",
+   "first_reached_ts": "2026-11-18T10:29:57.908Z"
+  },
+  {
+   "stage_id": "S8",
+   "first_reached_ts": "2026-11-18T10:30:01.430Z"
+  }
+ ],
+ "fired_rules": [],
+ "replay_ids": []
+}

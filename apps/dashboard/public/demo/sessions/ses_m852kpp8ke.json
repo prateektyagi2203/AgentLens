@@ -1,0 +1,99 @@
+{
+ "session": {
+  "session_id": "ses_m852kpp8ke",
+  "start_ts": "2026-11-06T13:37:35.000Z",
+  "duration_s": 5,
+  "request_count": 3,
+  "page_count": 3,
+  "identity_tier": "declared",
+  "operator": "Anthropic",
+  "agent_name": "Claude-User",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.9,
+  "entry_page": "/",
+  "exit_page": "/p/indigo-kurta-set",
+  "max_stage": "S1",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B03",
+  "terminal_blocker_name": "JS-only price and stock",
+  "blocker_confidence": 0.93,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": null,
+  "user_agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Claude-User/1.0; +Claude-User@anthropic.com)",
+  "ip_match": true
+ },
+ "requests": [
+  {
+   "request_id": "req_w3neardky7",
+   "ts": "2026-11-06T13:37:35.000Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 90,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_8vyn7mdg4e",
+   "ts": "2026-11-06T13:37:38.708Z",
+   "offset_ms": 3708,
+   "method": "GET",
+   "path": "/search?q=indigo",
+   "status": 200,
+   "duration_ms": 171,
+   "page_type": "listing",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "req_p1193q43d6",
+   "ts": "2026-11-06T13:37:40.018Z",
+   "offset_ms": 5018,
+   "method": "GET",
+   "path": "/p/indigo-kurta-set",
+   "status": 200,
+   "duration_ms": 181,
+   "page_type": "pdp",
+   "error_code": "PRICE_NOT_IN_HTML",
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-06T13:37:35.000Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B03",
+   "name": "JS-only price and stock",
+   "stage": "S2",
+   "confidence": 0.93,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "site_check",
+     "check": "pdp_ssr_price",
+     "result": "missing"
+    },
+    {
+     "type": "request",
+     "request_id": "req_p1193q43d6",
+     "summary": "GET /p/indigo-kurta-set → 200 · fetched and ended (no JavaScript executed)"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

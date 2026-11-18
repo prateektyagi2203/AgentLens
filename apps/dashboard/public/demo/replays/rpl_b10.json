@@ -1,0 +1,76 @@
+{
+ "replay": {
+  "replay_id": "rpl_b10",
+  "blocker_id": "B10",
+  "blocker_name": "Checkout validation failure",
+  "source_session_id": "ses_1hc4dfmn5y",
+  "mode": "browser",
+  "status": "completed",
+  "verdict": "confirmed",
+  "started_at": "2026-11-11T17:41:25Z",
+  "finished_at": "2026-11-11T17:41:34.300Z",
+  "steps_count": 3,
+  "verdict_explanation": "Confirmed. Submitting checkout with the phone number +91 98765 43210 returned 422 PHONE_FORMAT three times; the form only accepts a bare 10-digit number."
+ },
+ "user_agent": "AgentLens-Replay/1.0 (+https://github.com/<user>/agentlens)",
+ "signed_requests": false,
+ "steps": [
+  {
+   "n": 1,
+   "action": "Open checkout",
+   "method": "GET",
+   "url": "/checkout",
+   "status": 200,
+   "duration_ms": 211,
+   "note": "Checkout form loads.",
+   "screenshot_url": "/demo/replays/rpl_b10/step_1.svg"
+  },
+  {
+   "n": 2,
+   "action": "Submit with +91 98765 43210",
+   "method": "POST",
+   "url": "/api/checkout",
+   "status": 422,
+   "duration_ms": 308,
+   "note": "Validation error under the phone field.",
+   "screenshot_url": "/demo/replays/rpl_b10/step_2.svg"
+  },
+  {
+   "n": 3,
+   "action": "Retry with 91 98765 43210",
+   "method": "POST",
+   "url": "/api/checkout",
+   "status": 422,
+   "duration_ms": 145,
+   "note": "Same error. The agent gave up after three tries.",
+   "screenshot_url": "/demo/replays/rpl_b10/step_3.svg"
+  }
+ ],
+ "network_log": [
+  {
+   "ts": "2026-11-11T17:41:25.000Z",
+   "method": "GET",
+   "url": "/checkout",
+   "status": 200,
+   "duration_ms": 211,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-11T17:41:27.600Z",
+   "method": "POST",
+   "url": "/api/checkout",
+   "status": 422,
+   "duration_ms": 308,
+   "error_code": "PHONE_FORMAT"
+  },
+  {
+   "ts": "2026-11-11T17:41:30.200Z",
+   "method": "POST",
+   "url": "/api/checkout",
+   "status": 422,
+   "duration_ms": 145,
+   "error_code": "PHONE_FORMAT"
+  }
+ ],
+ "explanation": "Confirmed. Submitting checkout with the phone number +91 98765 43210 returned 422 PHONE_FORMAT three times; the form only accepts a bare 10-digit number."
+}

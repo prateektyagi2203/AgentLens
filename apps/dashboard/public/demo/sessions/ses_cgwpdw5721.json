@@ -1,0 +1,184 @@
+{
+ "session": {
+  "session_id": "ses_cgwpdw5721",
+  "start_ts": "2026-11-05T11:07:40.000Z",
+  "duration_s": 17,
+  "request_count": 9,
+  "page_count": 3,
+  "identity_tier": "declared",
+  "operator": "OpenAI",
+  "agent_name": "ChatGPT agent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 0.7,
+  "entry_page": "/search?q=cotton",
+  "exit_page": "/api/otp/send",
+  "max_stage": "S4",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B06",
+  "terminal_blocker_name": "Login / OTP wall before cart",
+  "blocker_confidence": 0.86,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": null,
+  "user_agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; ChatGPT-Agent/1.0)",
+  "ip_match": false
+ },
+ "requests": [
+  {
+   "request_id": "req_zcapmpznmp",
+   "ts": "2026-11-05T11:07:40.000Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/search?q=cotton",
+   "status": 200,
+   "duration_ms": 319,
+   "page_type": "listing",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_16j6mt7gn6",
+   "ts": "2026-11-05T11:07:40.624Z",
+   "offset_ms": 624,
+   "method": "GET",
+   "path": "/p/cotton-linen-shirt",
+   "status": 200,
+   "duration_ms": 301,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_q82fzwed2q",
+   "ts": "2026-11-05T11:07:42.978Z",
+   "offset_ms": 2978,
+   "method": "GET",
+   "path": "/static/app.4f2c.js",
+   "status": 200,
+   "duration_ms": 56,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_15jds9nazn",
+   "ts": "2026-11-05T11:07:45.939Z",
+   "offset_ms": 5939,
+   "method": "POST",
+   "path": "/beacon",
+   "status": 204,
+   "duration_ms": 19,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_gdce5mx21j",
+   "ts": "2026-11-05T11:07:47.653Z",
+   "offset_ms": 7653,
+   "method": "GET",
+   "path": "/api/products/cotton-linen-shirt/variants?size=9",
+   "status": 200,
+   "duration_ms": 90,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_dq5xg7p3n1",
+   "ts": "2026-11-05T11:07:50.086Z",
+   "offset_ms": 10086,
+   "method": "GET",
+   "path": "/api/serviceability?pincode=110001",
+   "status": 200,
+   "duration_ms": 137,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S4",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_xfdv8g4nvh",
+   "ts": "2026-11-05T11:07:50.736Z",
+   "offset_ms": 10736,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 401,
+   "duration_ms": 89,
+   "page_type": "api",
+   "error_code": "UNAUTHENTICATED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "req_680zwd1yzm",
+   "ts": "2026-11-05T11:07:53.510Z",
+   "offset_ms": 13510,
+   "method": "GET",
+   "path": "/login",
+   "status": 200,
+   "duration_ms": 107,
+   "page_type": "login",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "req_a5h022dnt9",
+   "ts": "2026-11-05T11:07:56.615Z",
+   "offset_ms": 16615,
+   "method": "POST",
+   "path": "/api/otp/send",
+   "status": 200,
+   "duration_ms": 360,
+   "page_type": "api",
+   "error_code": "OTP_SENT_NO_VERIFY",
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-05T11:07:40.000Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-05T11:07:40.624Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-05T11:07:47.653Z"
+  },
+  {
+   "stage_id": "S4",
+   "first_reached_ts": "2026-11-05T11:07:50.086Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B06",
+   "name": "Login / OTP wall before cart",
+   "stage": "S5",
+   "confidence": 0.86,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "req_a5h022dnt9",
+     "summary": "POST /api/cart → 401 → GET /login → POST /api/otp/send · no verify · ended"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

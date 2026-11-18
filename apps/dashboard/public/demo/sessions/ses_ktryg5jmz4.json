@@ -1,0 +1,205 @@
+{
+ "session": {
+  "session_id": "ses_ktryg5jmz4",
+  "start_ts": "2026-11-14T16:54:58.000Z",
+  "duration_s": 19,
+  "request_count": 10,
+  "page_count": 3,
+  "identity_tier": "verified",
+  "operator": "OpenAI",
+  "agent_name": "ChatGPT agent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 1,
+  "entry_page": "/search?q=leather",
+  "exit_page": "/api/payment/cod-otp",
+  "max_stage": "S6",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B11",
+  "terminal_blocker_name": "Unsupported payment step",
+  "blocker_confidence": 0.73,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "valid",
+  "signature_agent": "https://chatgpt.com",
+  "suspicion_score": null,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "req_h9y9b20mz5",
+   "ts": "2026-11-14T16:54:58.000Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/search?q=leather",
+   "status": 200,
+   "duration_ms": 123,
+   "page_type": "listing",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_1gfee0wp1n",
+   "ts": "2026-11-14T16:55:00.614Z",
+   "offset_ms": 2614,
+   "method": "GET",
+   "path": "/p/leather-kolhapuri-sandal",
+   "status": 200,
+   "duration_ms": 324,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_n3yw0rcszy",
+   "ts": "2026-11-14T16:55:03.942Z",
+   "offset_ms": 5942,
+   "method": "GET",
+   "path": "/static/app.4f2c.js",
+   "status": 200,
+   "duration_ms": 48,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_ch3apnvg5z",
+   "ts": "2026-11-14T16:55:05.561Z",
+   "offset_ms": 7561,
+   "method": "POST",
+   "path": "/beacon",
+   "status": 204,
+   "duration_ms": 19,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_dtk2z8wed7",
+   "ts": "2026-11-14T16:55:06.944Z",
+   "offset_ms": 8944,
+   "method": "GET",
+   "path": "/api/products/leather-kolhapuri-sandal/variants?size=9",
+   "status": 200,
+   "duration_ms": 171,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_bae3hf5fdm",
+   "ts": "2026-11-14T16:55:08.374Z",
+   "offset_ms": 10374,
+   "method": "GET",
+   "path": "/api/serviceability?pincode=500001",
+   "status": 200,
+   "duration_ms": 189,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S4",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_ysm64tmm4k",
+   "ts": "2026-11-14T16:55:11.857Z",
+   "offset_ms": 13857,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 201,
+   "duration_ms": 244,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S5",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_s6aczse5gs",
+   "ts": "2026-11-14T16:55:13.430Z",
+   "offset_ms": 15430,
+   "method": "GET",
+   "path": "/checkout",
+   "status": 200,
+   "duration_ms": 204,
+   "page_type": "checkout",
+   "error_code": null,
+   "stage_id": "S6",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_rjeqag88xm",
+   "ts": "2026-11-14T16:55:13.988Z",
+   "offset_ms": 15988,
+   "method": "POST",
+   "path": "/api/checkout",
+   "status": 202,
+   "duration_ms": 232,
+   "page_type": "api",
+   "error_code": "COD_OTP_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "req_t8cw6y18yn",
+   "ts": "2026-11-14T16:55:16.914Z",
+   "offset_ms": 18914,
+   "method": "GET",
+   "path": "/api/payment/cod-otp",
+   "status": 200,
+   "duration_ms": 139,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-14T16:54:58.000Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-14T16:55:00.614Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-14T16:55:06.944Z"
+  },
+  {
+   "stage_id": "S4",
+   "first_reached_ts": "2026-11-14T16:55:08.374Z"
+  },
+  {
+   "stage_id": "S5",
+   "first_reached_ts": "2026-11-14T16:55:11.857Z"
+  },
+  {
+   "stage_id": "S6",
+   "first_reached_ts": "2026-11-14T16:55:13.430Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B11",
+   "name": "Unsupported payment step",
+   "stage": "S7",
+   "confidence": 0.73,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "req_t8cw6y18yn",
+     "summary": "POST /api/checkout → 202 COD_OTP_REQUIRED · no OTP verify · ended"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

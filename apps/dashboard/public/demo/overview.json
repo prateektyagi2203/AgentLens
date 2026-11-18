@@ -1,0 +1,303 @@
+{
+ "window": {
+  "from": "2026-11-05",
+  "to": "2026-11-18",
+  "days": 14
+ },
+ "kpis": {
+  "agent_sessions": 8460,
+  "total_sessions": 56460,
+  "agent_share": 0.14984059511158343,
+  "agent_converted": 470,
+  "agent_conversion": 0.05555555555555555,
+  "human_sessions": 48000,
+  "human_conversion": 0.042375,
+  "agent_revenue_inr": 1065036,
+  "risk_inr": {
+   "low": 1381609,
+   "base": 2590515,
+   "high": 4144823
+  },
+  "risk_pct_of_agent_revenue": 1.135085574572127,
+  "identity_coverage": 0.7939716312056737,
+  "verified_share": 0.32092198581560283,
+  "diagnosis_coverage": 0.8798498122653317
+ },
+ "kpi_deltas": {
+  "agent_sessions": null,
+  "total_sessions": null,
+  "agent_share": null,
+  "agent_converted": null,
+  "agent_conversion": null,
+  "human_sessions": null,
+  "human_conversion": null,
+  "agent_revenue_inr": null,
+  "risk_inr": null,
+  "risk_pct_of_agent_revenue": null,
+  "identity_coverage": null,
+  "verified_share": null,
+  "diagnosis_coverage": null
+ },
+ "timeseries": [
+  {
+   "date": "2026-11-05",
+   "human": 3566,
+   "verified": 196,
+   "declared": 293,
+   "suspected": 126,
+   "agent_conversion": 0.03577235772357724,
+   "human_conversion": 0.04206393718452047
+  },
+  {
+   "date": "2026-11-06",
+   "human": 3703,
+   "verified": 203,
+   "declared": 304,
+   "suspected": 133,
+   "agent_conversion": 0.034375,
+   "human_conversion": 0.04401836348906292
+  },
+  {
+   "date": "2026-11-07",
+   "human": 3086,
+   "verified": 168,
+   "declared": 255,
+   "suspected": 110,
+   "agent_conversion": 0.03564727954971857,
+   "human_conversion": 0.04309786130913804
+  },
+  {
+   "date": "2026-11-08",
+   "human": 2811,
+   "verified": 156,
+   "declared": 230,
+   "suspected": 99,
+   "agent_conversion": 0.03505154639175258,
+   "human_conversion": 0.04055496264674493
+  },
+  {
+   "date": "2026-11-09",
+   "human": 3634,
+   "verified": 199,
+   "declared": 300,
+   "suspected": 130,
+   "agent_conversion": 0.034976152623211444,
+   "human_conversion": 0.040176114474408366
+  },
+  {
+   "date": "2026-11-10",
+   "human": 3840,
+   "verified": 211,
+   "declared": 313,
+   "suspected": 139,
+   "agent_conversion": 0.03469079939668175,
+   "human_conversion": 0.04244791666666667
+  },
+  {
+   "date": "2026-11-11",
+   "human": 3360,
+   "verified": 187,
+   "declared": 275,
+   "suspected": 118,
+   "agent_conversion": 0.034482758620689655,
+   "human_conversion": 0.04404761904761905
+  },
+  {
+   "date": "2026-11-12",
+   "human": 3634,
+   "verified": 213,
+   "declared": 309,
+   "suspected": 134,
+   "agent_conversion": 0.07469512195121951,
+   "human_conversion": 0.042102366538249864
+  },
+  {
+   "date": "2026-11-13",
+   "human": 3600,
+   "verified": 209,
+   "declared": 305,
+   "suspected": 133,
+   "agent_conversion": 0.07573415765069552,
+   "human_conversion": 0.04388888888888889
+  },
+  {
+   "date": "2026-11-14",
+   "human": 3154,
+   "verified": 184,
+   "declared": 264,
+   "suspected": 117,
+   "agent_conversion": 0.07610619469026549,
+   "human_conversion": 0.04311984781230184
+  },
+  {
+   "date": "2026-11-15",
+   "human": 2743,
+   "verified": 158,
+   "declared": 233,
+   "suspected": 102,
+   "agent_conversion": 0.07505070993914807,
+   "human_conversion": 0.04046664236237696
+  },
+  {
+   "date": "2026-11-16",
+   "human": 3771,
+   "verified": 216,
+   "declared": 322,
+   "suspected": 140,
+   "agent_conversion": 0.0752212389380531,
+   "human_conversion": 0.04030761071333864
+  },
+  {
+   "date": "2026-11-17",
+   "human": 3669,
+   "verified": 214,
+   "declared": 311,
+   "suspected": 135,
+   "agent_conversion": 0.07575757575757576,
+   "human_conversion": 0.04251839738348324
+  },
+  {
+   "date": "2026-11-18",
+   "human": 3429,
+   "verified": 201,
+   "declared": 288,
+   "suspected": 127,
+   "agent_conversion": 0.07467532467532467,
+   "human_conversion": 0.04403616214639837
+  }
+ ],
+ "annotations": [
+  {
+   "annotation_id": "ann_0001",
+   "ts": "2026-11-08T09:00:00Z",
+   "type": "note",
+   "label": "Perplexity-User traffic ramps up",
+   "details": {
+    "source": "synthetic traffic mix v2"
+   }
+  },
+  {
+   "annotation_id": "ann_0002",
+   "ts": "2026-11-12T06:30:00Z",
+   "type": "config_change",
+   "label": "Switched off pincode wall, OTP-before-cart and JS-only price",
+   "details": {
+    "toggles_off": [
+     "F03",
+     "F05",
+     "F06"
+    ],
+    "source": "store /admin"
+   }
+  }
+ ],
+ "operator_mix": [
+  {
+   "operator": "OpenAI",
+   "sessions": 4175,
+   "share": 0.4934988179669031,
+   "tier_mix": {
+    "verified": 0.5291017964071856,
+    "declared": 0.47089820359281437,
+    "suspected": 0
+   }
+  },
+  {
+   "operator": "unknown",
+   "sessions": 1743,
+   "share": 0.20602836879432623,
+   "tier_mix": {
+    "verified": 0,
+    "declared": 0,
+    "suspected": 1
+   }
+  },
+  {
+   "operator": "Google",
+   "sessions": 861,
+   "share": 0.10177304964539007,
+   "tier_mix": {
+    "verified": 0,
+    "declared": 1,
+    "suspected": 0
+   }
+  },
+  {
+   "operator": "Anthropic",
+   "sessions": 600,
+   "share": 0.07092198581560284,
+   "tier_mix": {
+    "verified": 0,
+    "declared": 1,
+    "suspected": 0
+   }
+  },
+  {
+   "operator": "Perplexity",
+   "sessions": 575,
+   "share": 0.06796690307328605,
+   "tier_mix": {
+    "verified": 0,
+    "declared": 1,
+    "suspected": 0
+   }
+  },
+  {
+   "operator": "TestOperator",
+   "sessions": 506,
+   "share": 0.05981087470449173,
+   "tier_mix": {
+    "verified": 1,
+    "declared": 0,
+    "suspected": 0
+   }
+  }
+ ],
+ "class_mix": [
+  {
+   "agent_class": "browsing_agent",
+   "sessions": 5933,
+   "share": 0.7013002364066194
+  },
+  {
+   "agent_class": "user_fetcher",
+   "sessions": 2527,
+   "share": 0.29869976359338063
+  }
+ ],
+ "top_fixes": [
+  {
+   "rec_id": "rec_B10",
+   "blocker_id": "B10",
+   "blocker_name": "Checkout validation failure",
+   "title": "Normalise phone numbers and relax validation",
+   "risk_inr_base": 675926,
+   "effort": "S",
+   "priority_score": 675926,
+   "owner": "Eng",
+   "status": "open"
+  },
+  {
+   "rec_id": "rec_B05",
+   "blocker_id": "B05",
+   "blocker_name": "Pincode wall",
+   "title": "Make the pincode optional before cart",
+   "risk_inr_base": 650287,
+   "effort": "S",
+   "priority_score": 650287,
+   "owner": "Product",
+   "status": "open"
+  },
+  {
+   "rec_id": "rec_B09",
+   "blocker_id": "B09",
+   "blocker_name": "Size guide image-only",
+   "title": "Provide an HTML size table",
+   "risk_inr_base": 256968,
+   "effort": "S",
+   "priority_score": 256968,
+   "owner": "Content",
+   "status": "open"
+  }
+ ]
+}

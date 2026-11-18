@@ -1,0 +1,209 @@
+{
+ "window": {
+  "from": "2026-11-05",
+  "to": "2026-11-11",
+  "days": 7
+ },
+ "blocker": {
+  "blocker_id": "B99",
+  "name": "Unknown",
+  "stage": "S4",
+  "sessions_blocked": 440,
+  "share_of_failed": 0.11,
+  "risk_inr": {
+   "low": 0,
+   "base": 0,
+   "high": 0
+  },
+  "replay_status": "not_run",
+  "effort": "M",
+  "priority_score": 0,
+  "low_confidence": false
+ },
+ "description": "No rule fired. The session needs the LLM classifier or manual review.",
+ "detection": "Nothing fired.",
+ "evidence": {
+  "top_error_codes": [
+   {
+    "code": "NONE",
+    "count": 440,
+    "share": 1
+   }
+  ],
+  "example_requests": [
+   {
+    "request_id": "req_B99_1",
+    "summary": "GET /c/sneakers → 200 · GET /p/white-court-sneaker → 200 · ended",
+    "count": 440
+   }
+  ],
+  "site_checks": []
+ },
+ "risk_breakdown": {
+  "sessions_blocked": 440,
+  "recoverable_rate": 0.6,
+  "p_stage": 0,
+  "aov_inr": 2200,
+  "k": 4.285714285714286
+ },
+ "trend": [
+  {
+   "date": "2026-11-05",
+   "sessions_blocked": 65
+  },
+  {
+   "date": "2026-11-06",
+   "sessions_blocked": 68
+  },
+  {
+   "date": "2026-11-07",
+   "sessions_blocked": 57
+  },
+  {
+   "date": "2026-11-08",
+   "sessions_blocked": 51
+  },
+  {
+   "date": "2026-11-09",
+   "sessions_blocked": 67
+  },
+  {
+   "date": "2026-11-10",
+   "sessions_blocked": 70
+  },
+  {
+   "date": "2026-11-11",
+   "sessions_blocked": 62
+  }
+ ],
+ "sample_sessions": [
+  {
+   "session_id": "ses_s16pb77fbh",
+   "start_ts": "2026-11-11T13:40:49.000Z",
+   "duration_s": 5,
+   "request_count": 3,
+   "page_count": 2,
+   "identity_tier": "declared",
+   "operator": "Anthropic",
+   "agent_name": "Claude-User",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.9,
+   "entry_page": "/search?q=leather",
+   "exit_page": "/api/products/leather-kolhapuri-sandal/variants?size=9",
+   "max_stage": "S3",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B99",
+   "terminal_blocker_name": "Unknown",
+   "blocker_confidence": null,
+   "diagnosis_method": "none"
+  },
+  {
+   "session_id": "ses_q45sg2jye7",
+   "start_ts": "2026-11-11T08:00:04.000Z",
+   "duration_s": 9,
+   "request_count": 6,
+   "page_count": 3,
+   "identity_tier": "suspected",
+   "operator": "unknown",
+   "agent_name": "Unidentified browsing agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 0.86,
+   "entry_page": "/",
+   "exit_page": "/api/products/white-court-sneaker/variants?size=9",
+   "max_stage": "S3",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B99",
+   "terminal_blocker_name": "Unknown",
+   "blocker_confidence": null,
+   "diagnosis_method": "llm"
+  },
+  {
+   "session_id": "ses_2vg371ep9t",
+   "start_ts": "2026-11-10T04:48:18.000Z",
+   "duration_s": 6,
+   "request_count": 4,
+   "page_count": 3,
+   "identity_tier": "suspected",
+   "operator": "unknown",
+   "agent_name": "Unidentified fetcher",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.77,
+   "entry_page": "/",
+   "exit_page": "/api/products/cotton-linen-shirt/variants?size=9",
+   "max_stage": "S3",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B99",
+   "terminal_blocker_name": "Unknown",
+   "blocker_confidence": null,
+   "diagnosis_method": "none"
+  },
+  {
+   "session_id": "ses_wxhkzbc62x",
+   "start_ts": "2026-11-09T10:06:48.000Z",
+   "duration_s": 9,
+   "request_count": 5,
+   "page_count": 2,
+   "identity_tier": "suspected",
+   "operator": "unknown",
+   "agent_name": "Unidentified browsing agent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 0.81,
+   "entry_page": "/c/sneakers",
+   "exit_page": "/api/products/cotton-linen-shirt/variants?size=9",
+   "max_stage": "S3",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B99",
+   "terminal_blocker_name": "Unknown",
+   "blocker_confidence": null,
+   "diagnosis_method": "none"
+  },
+  {
+   "session_id": "ses_3pa805y6f9",
+   "start_ts": "2026-11-09T08:28:59.000Z",
+   "duration_s": 5,
+   "request_count": 4,
+   "page_count": 3,
+   "identity_tier": "declared",
+   "operator": "Perplexity",
+   "agent_name": "Perplexity-User",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.9,
+   "entry_page": "/",
+   "exit_page": "/api/products/leather-kolhapuri-sandal/variants?size=9",
+   "max_stage": "S3",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B99",
+   "terminal_blocker_name": "Unknown",
+   "blocker_confidence": null,
+   "diagnosis_method": "llm"
+  },
+  {
+   "session_id": "ses_74x8z9a62n",
+   "start_ts": "2026-11-08T14:02:56.000Z",
+   "duration_s": 9,
+   "request_count": 4,
+   "page_count": 3,
+   "identity_tier": "declared",
+   "operator": "Anthropic",
+   "agent_name": "Claude-User",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.9,
+   "entry_page": "/",
+   "exit_page": "/api/products/white-court-sneaker/variants?size=9",
+   "max_stage": "S3",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B99",
+   "terminal_blocker_name": "Unknown",
+   "blocker_confidence": null,
+   "diagnosis_method": "none"
+  }
+ ],
+ "replays": [],
+ "recommendation": null
+}

@@ -1,0 +1,27 @@
+{
+ "items": [
+  {
+   "annotation_id": "ann_0001",
+   "ts": "2026-11-08T09:00:00Z",
+   "type": "note",
+   "label": "Perplexity-User traffic ramps up",
+   "details": {
+    "source": "synthetic traffic mix v2"
+   }
+  },
+  {
+   "annotation_id": "ann_0002",
+   "ts": "2026-11-12T06:30:00Z",
+   "type": "config_change",
+   "label": "Switched off pincode wall, OTP-before-cart and JS-only price",
+   "details": {
+    "toggles_off": [
+     "F03",
+     "F05",
+     "F06"
+    ],
+    "source": "store /admin"
+   }
+  }
+ ]
+}

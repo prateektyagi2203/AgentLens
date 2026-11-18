@@ -1,0 +1,94 @@
+{
+ "session": {
+  "session_id": "ses_70wpg2p927",
+  "start_ts": "2026-11-14T16:55:51.000Z",
+  "duration_s": 5,
+  "request_count": 3,
+  "page_count": 2,
+  "identity_tier": "suspected",
+  "operator": "unknown",
+  "agent_name": "Unidentified browsing agent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 0.78,
+  "entry_page": "/",
+  "exit_page": "/c/sneakers",
+  "max_stage": "S1",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B13",
+  "terminal_blocker_name": "Slow response / timeout",
+  "blocker_confidence": 0.67,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 78,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 HeadlessChrome/130.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "req_dag476gt33",
+   "ts": "2026-11-14T16:55:51.000Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 128,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_jrtgbfb4ds",
+   "ts": "2026-11-14T16:55:54.002Z",
+   "offset_ms": 3002,
+   "method": "GET",
+   "path": "/search?q=block",
+   "status": 200,
+   "duration_ms": 297,
+   "page_type": "listing",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "req_b84h5q3npk",
+   "ts": "2026-11-14T16:55:55.564Z",
+   "offset_ms": 4564,
+   "method": "GET",
+   "path": "/c/sneakers",
+   "status": 504,
+   "duration_ms": 7400,
+   "page_type": "listing",
+   "error_code": "TIMEOUT",
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-14T16:55:51.000Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B13",
+   "name": "Slow response / timeout",
+   "stage": "S1",
+   "confidence": 0.67,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "req_b84h5q3npk",
+     "summary": "GET /c/sneakers → 504 after 7.4 s · ended"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

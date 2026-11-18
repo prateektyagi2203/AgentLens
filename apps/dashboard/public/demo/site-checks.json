@@ -1,0 +1,71 @@
+{
+ "items": [
+  {
+   "check_id": "chk_pdp_ssr_price",
+   "run_ts": "2026-11-11T16:55:00Z",
+   "check_name": "pdp_ssr_price",
+   "target": "5 random product pages",
+   "result": "fail",
+   "details": {
+    "sampled": 5,
+    "found": 0,
+    "message": "Price not found in server HTML or JSON-LD on 5/5 sampled PDPs"
+   }
+  },
+  {
+   "check_id": "chk_pdp_ssr_stock",
+   "run_ts": "2026-11-11T16:55:00Z",
+   "check_name": "pdp_ssr_stock",
+   "target": "5 random product pages",
+   "result": "fail",
+   "details": {
+    "sampled": 5,
+    "found": 0,
+    "message": "Availability missing from server HTML on 5/5 sampled PDPs"
+   }
+  },
+  {
+   "check_id": "chk_jsonld_product",
+   "run_ts": "2026-11-11T16:55:00Z",
+   "check_name": "jsonld_product",
+   "target": "5 random product pages",
+   "result": "warn",
+   "details": {
+    "sampled": 5,
+    "complete": 3,
+    "message": "JSON-LD Product present but availability missing on 2/5 sampled PDPs"
+   }
+  },
+  {
+   "check_id": "chk_size_guide_format",
+   "run_ts": "2026-11-11T16:55:00Z",
+   "check_name": "size_guide_format",
+   "target": "/size-guide/*",
+   "result": "fail",
+   "details": {
+    "sampled": 5,
+    "html_table": 0,
+    "message": "Size guide is image-only (image/png) on 5/5 sampled pages"
+   }
+  },
+  {
+   "check_id": "chk_robots_txt",
+   "run_ts": "2026-11-11T16:55:00Z",
+   "check_name": "robots_txt",
+   "target": "/robots.txt",
+   "result": "warn",
+   "details": {
+    "allowed": [
+     "ChatGPT-User",
+     "Claude-User",
+     "Perplexity-User",
+     "Googlebot"
+    ],
+    "disallowed": [
+     "PerplexityBot"
+    ],
+    "message": "User-triggered agents allowed. PerplexityBot (search crawler) is disallowed."
+   }
+  }
+ ]
+}

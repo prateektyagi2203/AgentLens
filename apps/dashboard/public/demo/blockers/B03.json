@@ -1,0 +1,277 @@
+{
+ "window": {
+  "from": "2026-11-05",
+  "to": "2026-11-11",
+  "days": 7
+ },
+ "blocker": {
+  "blocker_id": "B03",
+  "name": "JS-only price and stock",
+  "stage": "S2",
+  "sessions_blocked": 600,
+  "share_of_failed": 0.15,
+  "risk_inr": {
+   "low": 72411,
+   "base": 135771,
+   "high": 217234
+  },
+  "replay_status": "confirmed",
+  "effort": "M",
+  "priority_score": 67886,
+  "low_confidence": false
+ },
+ "description": "Price and stock are rendered by client-side JavaScript. Agents that fetch HTML see a product with no price or availability and give up.",
+ "detection": "A user_fetcher session fetched the product page and ended; the site check shows price/stock missing from server HTML and JSON-LD.",
+ "evidence": {
+  "top_error_codes": [
+   {
+    "code": "PRICE_NOT_IN_HTML",
+    "count": 600,
+    "share": 1
+   }
+  ],
+  "example_requests": [
+   {
+    "request_id": "req_B03_1",
+    "summary": "Site check: price not found in server HTML or JSON-LD on 5/5 sampled PDPs",
+    "count": 600
+   }
+  ],
+  "site_checks": [
+   {
+    "check_id": "chk_pdp_ssr_price",
+    "run_ts": "2026-11-11T16:55:00Z",
+    "check_name": "pdp_ssr_price",
+    "target": "5 random product pages",
+    "result": "fail",
+    "details": {
+     "sampled": 5,
+     "found": 0,
+     "message": "Price not found in server HTML or JSON-LD on 5/5 sampled PDPs"
+    }
+   },
+   {
+    "check_id": "chk_pdp_ssr_stock",
+    "run_ts": "2026-11-11T16:55:00Z",
+    "check_name": "pdp_ssr_stock",
+    "target": "5 random product pages",
+    "result": "fail",
+    "details": {
+     "sampled": 5,
+     "found": 0,
+     "message": "Availability missing from server HTML on 5/5 sampled PDPs"
+    }
+   },
+   {
+    "check_id": "chk_jsonld_product",
+    "run_ts": "2026-11-11T16:55:00Z",
+    "check_name": "jsonld_product",
+    "target": "5 random product pages",
+    "result": "warn",
+    "details": {
+     "sampled": 5,
+     "complete": 3,
+     "message": "JSON-LD Product present but availability missing on 2/5 sampled PDPs"
+    }
+   }
+  ]
+ },
+ "risk_breakdown": {
+  "sessions_blocked": 600,
+  "recoverable_rate": 0.6,
+  "p_stage": 0.03999987373737374,
+  "aov_inr": 2200,
+  "k": 4.285714285714286
+ },
+ "trend": [
+  {
+   "date": "2026-11-05",
+   "sessions_blocked": 89
+  },
+  {
+   "date": "2026-11-06",
+   "sessions_blocked": 93
+  },
+  {
+   "date": "2026-11-07",
+   "sessions_blocked": 77
+  },
+  {
+   "date": "2026-11-08",
+   "sessions_blocked": 70
+  },
+  {
+   "date": "2026-11-09",
+   "sessions_blocked": 91
+  },
+  {
+   "date": "2026-11-10",
+   "sessions_blocked": 96
+  },
+  {
+   "date": "2026-11-11",
+   "sessions_blocked": 84
+  }
+ ],
+ "sample_sessions": [
+  {
+   "session_id": "ses_j97jxy7z2z",
+   "start_ts": "2026-11-11T13:29:55.000Z",
+   "duration_s": 2,
+   "request_count": 2,
+   "page_count": 2,
+   "identity_tier": "declared",
+   "operator": "Anthropic",
+   "agent_name": "Claude-User",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.9,
+   "entry_page": "/search?q=white",
+   "exit_page": "/p/white-court-sneaker",
+   "max_stage": "S1",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B03",
+   "terminal_blocker_name": "JS-only price and stock",
+   "blocker_confidence": 0.62,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_8v0sk20cn2",
+   "start_ts": "2026-11-11T12:46:27.000Z",
+   "duration_s": 3,
+   "request_count": 2,
+   "page_count": 2,
+   "identity_tier": "declared",
+   "operator": "Anthropic",
+   "agent_name": "Claude-User",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.9,
+   "entry_page": "/c/sneakers",
+   "exit_page": "/p/block-print-dupatta",
+   "max_stage": "S1",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B03",
+   "terminal_blocker_name": "JS-only price and stock",
+   "blocker_confidence": 0.84,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_byw5kf59v3",
+   "start_ts": "2026-11-11T11:25:45.000Z",
+   "duration_s": 3,
+   "request_count": 3,
+   "page_count": 3,
+   "identity_tier": "declared",
+   "operator": "Perplexity",
+   "agent_name": "Perplexity-User",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.9,
+   "entry_page": "/",
+   "exit_page": "/p/leather-kolhapuri-sandal",
+   "max_stage": "S1",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B03",
+   "terminal_blocker_name": "JS-only price and stock",
+   "blocker_confidence": 0.83,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_97347aw1da",
+   "start_ts": "2026-11-10T14:21:02.000Z",
+   "duration_s": 5,
+   "request_count": 3,
+   "page_count": 3,
+   "identity_tier": "declared",
+   "operator": "OpenAI",
+   "agent_name": "ChatGPT-User",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.7,
+   "entry_page": "/",
+   "exit_page": "/p/cotton-linen-shirt",
+   "max_stage": "S1",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B03",
+   "terminal_blocker_name": "JS-only price and stock",
+   "blocker_confidence": 0.95,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_nh7vfaqa7f",
+   "start_ts": "2026-11-10T12:22:59.000Z",
+   "duration_s": 2,
+   "request_count": 2,
+   "page_count": 2,
+   "identity_tier": "declared",
+   "operator": "Perplexity",
+   "agent_name": "Perplexity-User",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.9,
+   "entry_page": "/search?q=indigo",
+   "exit_page": "/p/indigo-kurta-set",
+   "max_stage": "S1",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B03",
+   "terminal_blocker_name": "JS-only price and stock",
+   "blocker_confidence": 0.86,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_5aasj3qeh7",
+   "start_ts": "2026-11-10T09:07:35.000Z",
+   "duration_s": 5,
+   "request_count": 3,
+   "page_count": 3,
+   "identity_tier": "declared",
+   "operator": "Perplexity",
+   "agent_name": "Perplexity-User",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.7,
+   "entry_page": "/",
+   "exit_page": "/p/leather-kolhapuri-sandal",
+   "max_stage": "S1",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B03",
+   "terminal_blocker_name": "JS-only price and stock",
+   "blocker_confidence": 0.97,
+   "diagnosis_method": "rule"
+  }
+ ],
+ "replays": [
+  {
+   "replay_id": "rpl_b03",
+   "blocker_id": "B03",
+   "blocker_name": "JS-only price and stock",
+   "source_session_id": "ses_j97jxy7z2z",
+   "mode": "fetch",
+   "status": "completed",
+   "verdict": "confirmed",
+   "started_at": "2026-11-11T17:14:03Z",
+   "finished_at": "2026-11-11T17:14:07.100Z",
+   "steps_count": 1,
+   "verdict_explanation": "Confirmed. A plain HTTP fetch of the product page returned 200 but neither the server HTML nor the JSON-LD contains a price or stock status; both are filled in by JavaScript after load. Fetch-mode replays take no screenshots."
+  }
+ ],
+ "recommendation": {
+  "rec_id": "rec_B03",
+  "run_id": "run_20261118_0610",
+  "blocker_id": "B03",
+  "blocker_name": "JS-only price and stock",
+  "title": "Server-render price and stock, and include them in JSON-LD",
+  "body": "Render price, currency and availability in the initial HTML and add a complete schema.org Offer to each product page.",
+  "why_it_helps": "Fetch-based agents never run your JavaScript, so anything rendered client-side is invisible to them.",
+  "how_to_verify": "Step conversion S2 → S3 for user_fetcher sessions should rise.",
+  "verify_metric": "PDP → variant step conversion (fetchers)",
+  "effort": "M",
+  "owner": "Eng",
+  "priority_score": 67886,
+  "risk_inr_base": 135771,
+  "status": "open",
+  "fixed_annotation_id": null,
+  "llm_explanation": null
+ }
+}

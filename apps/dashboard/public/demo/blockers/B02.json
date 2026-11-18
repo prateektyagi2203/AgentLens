@@ -1,0 +1,99 @@
+{
+ "window": {
+  "from": "2026-11-05",
+  "to": "2026-11-11",
+  "days": 7
+ },
+ "blocker": {
+  "blocker_id": "B02",
+  "name": "Captcha",
+  "stage": "S6",
+  "sessions_blocked": 0,
+  "share_of_failed": 0,
+  "risk_inr": {
+   "low": 0,
+   "base": 0,
+   "high": 0
+  },
+  "replay_status": "not_run",
+  "effort": "M",
+  "priority_score": 0,
+  "low_confidence": true
+ },
+ "description": "A captcha appears at checkout and the agent never submits a solution.",
+ "detection": "Session reaches checkout, a captcha endpoint or page is requested, and no successful submit follows.",
+ "evidence": {
+  "top_error_codes": [
+   {
+    "code": "CAPTCHA_REQUIRED",
+    "count": 0,
+    "share": 1
+   }
+  ],
+  "example_requests": [
+   {
+    "request_id": "req_B02_1",
+    "summary": "GET /checkout → 200 · GET /captcha/challenge → 200 · session ended",
+    "count": 0
+   }
+  ],
+  "site_checks": []
+ },
+ "risk_breakdown": {
+  "sessions_blocked": 0,
+  "recoverable_rate": 0.6,
+  "p_stage": 0,
+  "aov_inr": 2200,
+  "k": 4.285714285714286
+ },
+ "trend": [
+  {
+   "date": "2026-11-05",
+   "sessions_blocked": 0
+  },
+  {
+   "date": "2026-11-06",
+   "sessions_blocked": 0
+  },
+  {
+   "date": "2026-11-07",
+   "sessions_blocked": 0
+  },
+  {
+   "date": "2026-11-08",
+   "sessions_blocked": 0
+  },
+  {
+   "date": "2026-11-09",
+   "sessions_blocked": 0
+  },
+  {
+   "date": "2026-11-10",
+   "sessions_blocked": 0
+  },
+  {
+   "date": "2026-11-11",
+   "sessions_blocked": 0
+  }
+ ],
+ "sample_sessions": [],
+ "replays": [],
+ "recommendation": {
+  "rec_id": "rec_B02",
+  "run_id": "run_20261118_0610",
+  "blocker_id": "B02",
+  "blocker_name": "Captcha",
+  "title": "Use risk-based challenges, skip captcha for verified agents",
+  "body": "Remove the unconditional checkout captcha and challenge only sessions with a high risk score.",
+  "why_it_helps": "Captchas are built to stop automation, including agents acting for a paying shopper.",
+  "how_to_verify": "Step conversion from S6 to S7 should rise for agents.",
+  "verify_metric": "Checkout started → submitted conversion",
+  "effort": "M",
+  "owner": "Security",
+  "priority_score": 0,
+  "risk_inr_base": 0,
+  "status": "open",
+  "fixed_annotation_id": null,
+  "llm_explanation": null
+ }
+}

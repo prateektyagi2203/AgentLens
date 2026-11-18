@@ -1,0 +1,184 @@
+{
+ "session": {
+  "session_id": "ses_dpzgpenh74",
+  "start_ts": "2026-11-07T12:31:01.000Z",
+  "duration_s": 20,
+  "request_count": 9,
+  "page_count": 3,
+  "identity_tier": "declared",
+  "operator": "OpenAI",
+  "agent_name": "ChatGPT agent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 0.7,
+  "entry_page": "/",
+  "exit_page": "/api/cart",
+  "max_stage": "S4",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B05",
+  "terminal_blocker_name": "Pincode wall",
+  "blocker_confidence": 0.73,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": null,
+  "user_agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; ChatGPT-Agent/1.0)",
+  "ip_match": true
+ },
+ "requests": [
+  {
+   "request_id": "req_n9npx2mj51",
+   "ts": "2026-11-07T12:31:01.000Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 173,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_8q8p90k7g9",
+   "ts": "2026-11-07T12:31:04.351Z",
+   "offset_ms": 3351,
+   "method": "GET",
+   "path": "/c/sneakers",
+   "status": 200,
+   "duration_ms": 141,
+   "page_type": "listing",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "req_bgarecazf6",
+   "ts": "2026-11-07T12:31:08.211Z",
+   "offset_ms": 7211,
+   "method": "GET",
+   "path": "/p/indigo-kurta-set",
+   "status": 200,
+   "duration_ms": 296,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_04b019bz11",
+   "ts": "2026-11-07T12:31:08.624Z",
+   "offset_ms": 7624,
+   "method": "GET",
+   "path": "/static/app.4f2c.js",
+   "status": 200,
+   "duration_ms": 89,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_2635mdttc6",
+   "ts": "2026-11-07T12:31:10.986Z",
+   "offset_ms": 9986,
+   "method": "POST",
+   "path": "/beacon",
+   "status": 204,
+   "duration_ms": 19,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_zqdv977pd5",
+   "ts": "2026-11-07T12:31:14.335Z",
+   "offset_ms": 13335,
+   "method": "GET",
+   "path": "/api/products/indigo-kurta-set/variants?size=9",
+   "status": 200,
+   "duration_ms": 60,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_3xs7en59fn",
+   "ts": "2026-11-07T12:31:18.126Z",
+   "offset_ms": 17126,
+   "method": "GET",
+   "path": "/api/serviceability?pincode=400001",
+   "status": 200,
+   "duration_ms": 115,
+   "page_type": "api",
+   "error_code": null,
+   "stage_id": "S4",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_rt4hkjqyb8",
+   "ts": "2026-11-07T12:31:19.326Z",
+   "offset_ms": 18326,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 127,
+   "page_type": "api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "req_2cb87qqmhg",
+   "ts": "2026-11-07T12:31:21.326Z",
+   "offset_ms": 20326,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 197,
+   "page_type": "api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-07T12:31:01.000Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-07T12:31:08.211Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-07T12:31:14.335Z"
+  },
+  {
+   "stage_id": "S4",
+   "first_reached_ts": "2026-11-07T12:31:18.126Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B05",
+   "name": "Pincode wall",
+   "stage": "S5",
+   "confidence": 0.73,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "req_2cb87qqmhg",
+     "summary": "POST /api/cart → 409 PINCODE_REQUIRED (×2) · session ended 5 s later"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

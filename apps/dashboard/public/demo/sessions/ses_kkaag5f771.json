@@ -1,0 +1,137 @@
+{
+ "session": {
+  "session_id": "ses_kkaag5f771",
+  "start_ts": "2026-11-15T08:11:57.000Z",
+  "duration_s": 8,
+  "request_count": 6,
+  "page_count": 4,
+  "identity_tier": "declared",
+  "operator": "Google",
+  "agent_name": "Gemini agent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 0.9,
+  "entry_page": "/",
+  "exit_page": "/size-guide/leather-kolhapuri-sandal.png",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B09",
+  "terminal_blocker_name": "Size guide image-only",
+  "blocker_confidence": 0.84,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": null,
+  "user_agent": "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/131.0 Mobile Safari/537.36 Google-Agent",
+  "ip_match": true
+ },
+ "requests": [
+  {
+   "request_id": "req_v4e79h0jmq",
+   "ts": "2026-11-15T08:11:57.000Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 127,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_fa9pha3rw8",
+   "ts": "2026-11-15T08:11:57.937Z",
+   "offset_ms": 937,
+   "method": "GET",
+   "path": "/search?q=leather",
+   "status": 200,
+   "duration_ms": 224,
+   "page_type": "listing",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "req_ccy6b5d7bq",
+   "ts": "2026-11-15T08:11:58.806Z",
+   "offset_ms": 1806,
+   "method": "GET",
+   "path": "/p/leather-kolhapuri-sandal",
+   "status": 200,
+   "duration_ms": 248,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "req_6gt82g13vh",
+   "ts": "2026-11-15T08:11:59.906Z",
+   "offset_ms": 2906,
+   "method": "GET",
+   "path": "/static/app.4f2c.js",
+   "status": 200,
+   "duration_ms": 84,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_s071cntyke",
+   "ts": "2026-11-15T08:12:03.757Z",
+   "offset_ms": 6757,
+   "method": "POST",
+   "path": "/beacon",
+   "status": 204,
+   "duration_ms": 11,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "req_08zgnkp0wa",
+   "ts": "2026-11-15T08:12:05.015Z",
+   "offset_ms": 8015,
+   "method": "GET",
+   "path": "/size-guide/leather-kolhapuri-sandal.png",
+   "status": 200,
+   "duration_ms": 213,
+   "page_type": "size_guide_image",
+   "error_code": "SIZE_GUIDE_IMAGE",
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-15T08:11:57.000Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-15T08:11:58.806Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B09",
+   "name": "Size guide image-only",
+   "stage": "S3",
+   "confidence": 0.84,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "site_check",
+     "check": "size_guide_format",
+     "result": "fail"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

@@ -1,0 +1,310 @@
+{
+ "window": {
+  "from": "2026-11-05",
+  "to": "2026-11-11",
+  "days": 7
+ },
+ "agent": {
+  "operator": "Anthropic",
+  "agent_name": "Claude-User",
+  "agent_class": "user_fetcher",
+  "sessions": 301,
+  "share_of_agent_sessions": 0.07261761158021712,
+  "pages_per_session": 2.4,
+  "conversion": 0.019933554817275746,
+  "tier_mix": {
+   "verified": 0,
+   "declared": 1,
+   "suspected": 0
+  },
+  "top_blocker": {
+   "blocker_id": "B03",
+   "name": "JS-only price and stock",
+   "share_of_failed": 0.4745762711864407
+  },
+  "signature_status_counts": {
+   "valid": 0,
+   "invalid_sig": 9,
+   "expired": 12,
+   "unknown_key": 0,
+   "fetch_failed": 0,
+   "none": 280
+  },
+  "last_seen": "2026-11-11T18:42:00Z"
+ },
+ "identity": {
+  "user_agent_example": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Claude-User/1.0; +Claude-User@anthropic.com)",
+  "signature_agent": null,
+  "ip_match_rate": 0.55,
+  "avg_identity_confidence": 0.82
+ },
+ "trend": [
+  {
+   "date": "2026-11-05",
+   "sessions": 45,
+   "conversion": 0.022222222222222223
+  },
+  {
+   "date": "2026-11-06",
+   "sessions": 46,
+   "conversion": 0.021739130434782608
+  },
+  {
+   "date": "2026-11-07",
+   "sessions": 40,
+   "conversion": 0.025
+  },
+  {
+   "date": "2026-11-08",
+   "sessions": 36,
+   "conversion": 0
+  },
+  {
+   "date": "2026-11-09",
+   "sessions": 45,
+   "conversion": 0.022222222222222223
+  },
+  {
+   "date": "2026-11-10",
+   "sessions": 46,
+   "conversion": 0.021739130434782608
+  },
+  {
+   "date": "2026-11-11",
+   "sessions": 43,
+   "conversion": 0.023255813953488372
+  }
+ ],
+ "blockers": [
+  {
+   "blocker_id": "B03",
+   "name": "JS-only price and stock",
+   "sessions": 140,
+   "share_of_failed": 0.4745762711864407
+  },
+  {
+   "blocker_id": "B99",
+   "name": "Unknown",
+   "sessions": 53,
+   "share_of_failed": 0.17966101694915254
+  },
+  {
+   "blocker_id": "B09",
+   "name": "Size guide image-only",
+   "sessions": 32,
+   "share_of_failed": 0.10847457627118644
+  },
+  {
+   "blocker_id": "B01",
+   "name": "Bot wall / WAF block",
+   "sessions": 14,
+   "share_of_failed": 0.04745762711864407
+  },
+  {
+   "blocker_id": "B04",
+   "name": "Missing structured data",
+   "sessions": 14,
+   "share_of_failed": 0.04745762711864407
+  },
+  {
+   "blocker_id": "B08",
+   "name": "Out-of-stock dead end",
+   "sessions": 14,
+   "share_of_failed": 0.04745762711864407
+  },
+  {
+   "blocker_id": "B12",
+   "name": "Rate limited",
+   "sessions": 7,
+   "share_of_failed": 0.023728813559322035
+  },
+  {
+   "blocker_id": "B13",
+   "name": "Slow response / timeout",
+   "sessions": 7,
+   "share_of_failed": 0.023728813559322035
+  },
+  {
+   "blocker_id": "B14",
+   "name": "robots.txt disallow",
+   "sessions": 7,
+   "share_of_failed": 0.023728813559322035
+  },
+  {
+   "blocker_id": "B16",
+   "name": "Broken link / 404",
+   "sessions": 7,
+   "share_of_failed": 0.023728813559322035
+  }
+ ],
+ "recent_sessions": [
+  {
+   "session_id": "ses_s16pb77fbh",
+   "start_ts": "2026-11-11T13:40:49.000Z",
+   "duration_s": 5,
+   "request_count": 3,
+   "page_count": 2,
+   "identity_tier": "declared",
+   "operator": "Anthropic",
+   "agent_name": "Claude-User",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.9,
+   "entry_page": "/search?q=leather",
+   "exit_page": "/api/products/leather-kolhapuri-sandal/variants?size=9",
+   "max_stage": "S3",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B99",
+   "terminal_blocker_name": "Unknown",
+   "blocker_confidence": null,
+   "diagnosis_method": "none"
+  },
+  {
+   "session_id": "ses_j97jxy7z2z",
+   "start_ts": "2026-11-11T13:29:55.000Z",
+   "duration_s": 2,
+   "request_count": 2,
+   "page_count": 2,
+   "identity_tier": "declared",
+   "operator": "Anthropic",
+   "agent_name": "Claude-User",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.9,
+   "entry_page": "/search?q=white",
+   "exit_page": "/p/white-court-sneaker",
+   "max_stage": "S1",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B03",
+   "terminal_blocker_name": "JS-only price and stock",
+   "blocker_confidence": 0.62,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_8v0sk20cn2",
+   "start_ts": "2026-11-11T12:46:27.000Z",
+   "duration_s": 3,
+   "request_count": 2,
+   "page_count": 2,
+   "identity_tier": "declared",
+   "operator": "Anthropic",
+   "agent_name": "Claude-User",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.9,
+   "entry_page": "/c/sneakers",
+   "exit_page": "/p/block-print-dupatta",
+   "max_stage": "S1",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B03",
+   "terminal_blocker_name": "JS-only price and stock",
+   "blocker_confidence": 0.84,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_en68prnsne",
+   "start_ts": "2026-11-10T08:22:29.000Z",
+   "duration_s": 7,
+   "request_count": 3,
+   "page_count": 3,
+   "identity_tier": "declared",
+   "operator": "Anthropic",
+   "agent_name": "Claude-User",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.9,
+   "entry_page": "/",
+   "exit_page": "/p/indigo-kurta-set",
+   "max_stage": "S1",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B03",
+   "terminal_blocker_name": "JS-only price and stock",
+   "blocker_confidence": 0.78,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_cta2kv14h0",
+   "start_ts": "2026-11-10T06:23:14.000Z",
+   "duration_s": 2,
+   "request_count": 2,
+   "page_count": 2,
+   "identity_tier": "declared",
+   "operator": "Anthropic",
+   "agent_name": "Claude-User",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.7,
+   "entry_page": "/c/sneakers",
+   "exit_page": "/p/white-court-sneaker",
+   "max_stage": "S1",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B03",
+   "terminal_blocker_name": "JS-only price and stock",
+   "blocker_confidence": 0.96,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_74x8z9a62n",
+   "start_ts": "2026-11-08T14:02:56.000Z",
+   "duration_s": 9,
+   "request_count": 4,
+   "page_count": 3,
+   "identity_tier": "declared",
+   "operator": "Anthropic",
+   "agent_name": "Claude-User",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.9,
+   "entry_page": "/",
+   "exit_page": "/api/products/white-court-sneaker/variants?size=9",
+   "max_stage": "S3",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B99",
+   "terminal_blocker_name": "Unknown",
+   "blocker_confidence": null,
+   "diagnosis_method": "none"
+  },
+  {
+   "session_id": "ses_75157wf7ng",
+   "start_ts": "2026-11-06T13:52:19.000Z",
+   "duration_s": 4,
+   "request_count": 3,
+   "page_count": 3,
+   "identity_tier": "declared",
+   "operator": "Anthropic",
+   "agent_name": "Claude-User",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.9,
+   "entry_page": "/",
+   "exit_page": "/p/white-court-sneaker",
+   "max_stage": "S1",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B03",
+   "terminal_blocker_name": "JS-only price and stock",
+   "blocker_confidence": 0.72,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "ses_m852kpp8ke",
+   "start_ts": "2026-11-06T13:37:35.000Z",
+   "duration_s": 5,
+   "request_count": 3,
+   "page_count": 3,
+   "identity_tier": "declared",
+   "operator": "Anthropic",
+   "agent_name": "Claude-User",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.9,
+   "entry_page": "/",
+   "exit_page": "/p/indigo-kurta-set",
+   "max_stage": "S1",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B03",
+   "terminal_blocker_name": "JS-only price and stock",
+   "blocker_confidence": 0.93,
+   "diagnosis_method": "rule"
+  }
+ ]
+}
