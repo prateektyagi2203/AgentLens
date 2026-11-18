@@ -1,0 +1,79 @@
+{
+ "session": {
+  "session_id": "170cb5bf734bd95a",
+  "start_ts": "2026-11-10T21:10:36Z",
+  "duration_s": 3.049,
+  "request_count": 3,
+  "page_count": 3,
+  "identity_tier": "declared",
+  "operator": "Perplexity",
+  "agent_name": "Perplexity-User",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.7,
+  "entry_page": "/p/baseball-cap-in-teal",
+  "exit_page": "/p/everyday-backpack-in-olive",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": null,
+  "terminal_blocker_name": null,
+  "blocker_confidence": null,
+  "diagnosis_method": "none"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Perplexity-User/1.0; +https://perplexity.ai/perplexity-user)",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "5e46ed00-7178-43d5-87fd-7f76ffcb0a1f",
+   "ts": "2026-11-10T21:10:36Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/p/baseball-cap-in-teal",
+   "status": 200,
+   "duration_ms": 47,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "ad3edc0d-d89e-46a3-8f05-54e9be9ca14f",
+   "ts": "2026-11-10T21:10:38Z",
+   "offset_ms": 2040,
+   "method": "GET",
+   "path": "/p/daily-wear-pintuck-kurta-in-teal",
+   "status": 200,
+   "duration_ms": 201,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "ab9b182f-0f2b-44fd-8961-d0d7955eab19",
+   "ts": "2026-11-10T21:10:39Z",
+   "offset_ms": 3049,
+   "method": "GET",
+   "path": "/p/everyday-backpack-in-olive",
+   "status": 200,
+   "duration_ms": 67,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-10T21:10:36Z"
+  }
+ ],
+ "fired_rules": [],
+ "replay_ids": []
+}

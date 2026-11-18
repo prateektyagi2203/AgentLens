@@ -1,0 +1,96 @@
+{
+ "session": {
+  "session_id": "fdb97825c3be15ee",
+  "start_ts": "2026-11-10T08:43:03Z",
+  "duration_s": 3.228,
+  "request_count": 4,
+  "page_count": 4,
+  "identity_tier": "declared",
+  "operator": "Perplexity",
+  "agent_name": "Perplexity-User",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.7,
+  "entry_page": "/search",
+  "exit_page": "/p/indigo-terrain-trail-sneaker",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": null,
+  "terminal_blocker_name": null,
+  "blocker_confidence": null,
+  "diagnosis_method": "none"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Perplexity-User/1.0; +https://perplexity.ai/perplexity-user)",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "6bfdcddc-01c2-4ab0-8285-bae6a90fd185",
+   "ts": "2026-11-10T08:43:03Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/search",
+   "status": 200,
+   "duration_ms": 98,
+   "page_type": "search",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "4827a650-d442-452f-8471-77106ea5ed6d",
+   "ts": "2026-11-10T08:43:03Z",
+   "offset_ms": 313,
+   "method": "GET",
+   "path": "/c/mens-sneakers",
+   "status": 200,
+   "duration_ms": 87,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "2bbd2456-2611-4eeb-8394-8ca140bb2382",
+   "ts": "2026-11-10T08:43:04Z",
+   "offset_ms": 1114,
+   "method": "GET",
+   "path": "/p/navy-daily-walk-sneaker",
+   "status": 200,
+   "duration_ms": 156,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "aff9b7fc-88b4-4b7f-8cc7-a4dbfba6e2da",
+   "ts": "2026-11-10T08:43:06Z",
+   "offset_ms": 3228,
+   "method": "GET",
+   "path": "/p/indigo-terrain-trail-sneaker",
+   "status": 200,
+   "duration_ms": 97,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-10T08:43:03Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-10T08:43:04Z"
+  }
+ ],
+ "fired_rules": [],
+ "replay_ids": []
+}

@@ -1,0 +1,293 @@
+{
+ "session": {
+  "session_id": "87d0e59fade7030f",
+  "start_ts": "2026-11-13T04:02:15Z",
+  "duration_s": 5.778,
+  "request_count": 18,
+  "page_count": 3,
+  "identity_tier": "verified",
+  "operator": "AgentLens Test Operator",
+  "agent_name": "TestSignedAgent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 1.0,
+  "entry_page": "/",
+  "exit_page": "/p/sling-crossbody-bag-in-white",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B07",
+  "terminal_blocker_name": "Interstitial / popup overlay",
+  "blocker_confidence": 0.6,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "valid",
+  "signature_agent": "https://agents.desithreads.test",
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 TestSignedAgent/1.0",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "8cd5b8e7-cf7e-4871-8dfb-a3eb4a580608",
+   "ts": "2026-11-13T04:02:15Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 58,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "841b6718-3104-47ff-8110-cd68afdd75c3",
+   "ts": "2026-11-13T04:02:15Z",
+   "offset_ms": 92,
+   "method": "GET",
+   "path": "/_next/static/chunks/app.js",
+   "status": 200,
+   "duration_ms": 10,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "e9f74206-c15e-41dd-8182-7a397c4cd1db",
+   "ts": "2026-11-13T04:02:15Z",
+   "offset_ms": 113,
+   "method": "GET",
+   "path": "/img/p/everyday-backpack-in-olive-3.svg",
+   "status": 200,
+   "duration_ms": 29,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "b8cd009d-316d-4d44-8d08-f9f65d0fa29e",
+   "ts": "2026-11-13T04:02:15Z",
+   "offset_ms": 198,
+   "method": "GET",
+   "path": "/favicon.ico",
+   "status": 200,
+   "duration_ms": 9,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "71623279-9c10-409a-89c4-513f37ff22d1",
+   "ts": "2026-11-13T04:02:15Z",
+   "offset_ms": 230,
+   "method": "GET",
+   "path": "/_next/static/chunks/main.js",
+   "status": 200,
+   "duration_ms": 25,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "bd8a16b7-45c3-4a3f-83ab-4356905e64db",
+   "ts": "2026-11-13T04:02:15Z",
+   "offset_ms": 450,
+   "method": "GET",
+   "path": "/_next/static/css/app.css",
+   "status": 200,
+   "duration_ms": 4,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "21d34fd8-bed0-47ce-807c-22f8db3db1e8",
+   "ts": "2026-11-13T04:02:15Z",
+   "offset_ms": 521,
+   "method": "GET",
+   "path": "/img/p/tan-printed-resort-shirt-3.svg",
+   "status": 200,
+   "duration_ms": 16,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "18969bc6-cf10-49e5-8055-92668d6b10b1",
+   "ts": "2026-11-13T04:02:16Z",
+   "offset_ms": 996,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 7,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "411c714b-d78b-4d83-8460-7905078c7071",
+   "ts": "2026-11-13T04:02:17Z",
+   "offset_ms": 2140,
+   "method": "GET",
+   "path": "/c/accessories",
+   "status": 200,
+   "duration_ms": 109,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "0877508f-871b-4ad9-84e1-9a37b733be03",
+   "ts": "2026-11-13T04:02:17Z",
+   "offset_ms": 2303,
+   "method": "GET",
+   "path": "/img/p/sling-crossbody-bag-in-white-1.svg",
+   "status": 200,
+   "duration_ms": 7,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "91866bcb-cc92-4fe9-8739-aba88ee8c173",
+   "ts": "2026-11-13T04:02:17Z",
+   "offset_ms": 2314,
+   "method": "GET",
+   "path": "/img/p/tan-pace-lite-trainer-2.svg",
+   "status": 200,
+   "duration_ms": 8,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "8e73e2ae-48c7-42ef-8cd5-2312282f7dd0",
+   "ts": "2026-11-13T04:02:17Z",
+   "offset_ms": 2568,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 7,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "0992bd4f-b27f-4571-8c46-8f8a697e9558",
+   "ts": "2026-11-13T04:02:18Z",
+   "offset_ms": 2664,
+   "method": "GET",
+   "path": "/img/p/maroon-street-runner-2.svg",
+   "status": 200,
+   "duration_ms": 11,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "34af9106-daf3-49e1-8fbf-937030646e10",
+   "ts": "2026-11-13T04:02:20Z",
+   "offset_ms": 5112,
+   "method": "GET",
+   "path": "/p/sling-crossbody-bag-in-white",
+   "status": 200,
+   "duration_ms": 97,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "16f0e83a-d9d4-4cb9-88a2-9d7a6c72839e",
+   "ts": "2026-11-13T04:02:20Z",
+   "offset_ms": 5428,
+   "method": "GET",
+   "path": "/img/p/bandhani-flared-kurta-in-sky-blue-3.svg",
+   "status": 200,
+   "duration_ms": 12,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "e17f68c6-560f-445b-8dbd-8c9fa8c2db7d",
+   "ts": "2026-11-13T04:02:21Z",
+   "offset_ms": 5673,
+   "method": "GET",
+   "path": "/img/p/leather-watch-strap-in-navy-1.svg",
+   "status": 200,
+   "duration_ms": 12,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "32c50393-4411-4f45-8811-64fd8b8a4adf",
+   "ts": "2026-11-13T04:02:21Z",
+   "offset_ms": 5690,
+   "method": "GET",
+   "path": "/img/p/sky-blue-linen-casual-shirt-1.svg",
+   "status": 200,
+   "duration_ms": 13,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "d5a1762a-a720-46ba-8fe6-c21aae2c8710",
+   "ts": "2026-11-13T04:02:21Z",
+   "offset_ms": 5778,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 8,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-13T04:02:15Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-13T04:02:20Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B07",
+   "name": "Interstitial / popup overlay",
+   "stage": "S2",
+   "confidence": 0.6,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "34af9106-daf3-49e1-8fbf-937030646e10",
+     "summary": "GET /p/sling-crossbody-bag-in-white -> 200"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

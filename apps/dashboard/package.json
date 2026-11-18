@@ -10,6 +10,9 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:e2e": "playwright test",
+    "build:demo": "node scripts/build-demo.mjs",
+    "serve:demo": "node scripts/serve-static.mjs out 3101",
+    "test:e2e:demo": "playwright test -c playwright.demo.config.ts",
     "generate:demo": "tsx scripts/generate-demo.ts"
   },
   "dependencies": {

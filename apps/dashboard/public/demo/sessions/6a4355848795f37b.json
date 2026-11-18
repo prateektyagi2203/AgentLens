@@ -1,0 +1,277 @@
+{
+ "session": {
+  "session_id": "6a4355848795f37b",
+  "start_ts": "2026-11-03T04:19:58Z",
+  "duration_s": 9.408,
+  "request_count": 16,
+  "page_count": 5,
+  "identity_tier": "verified",
+  "operator": "AgentLens Test Operator",
+  "agent_name": "TestSignedAgent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 1.0,
+  "entry_page": "/p/grey-textured-dobby-shirt",
+  "exit_page": "/api/cart",
+  "max_stage": "S3",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B05",
+  "terminal_blocker_name": "Pincode / serviceability wall",
+  "blocker_confidence": 0.95,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "valid",
+  "signature_agent": "https://agents.desithreads.test",
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 TestSignedAgent/1.0",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "3d79288a-5cb8-41a2-8e4a-e0aa84c93dfb",
+   "ts": "2026-11-03T04:19:58Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/p/grey-textured-dobby-shirt",
+   "status": 200,
+   "duration_ms": 97,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "c7185819-b15f-4ba6-8cdc-d10439453eb0",
+   "ts": "2026-11-03T04:19:58Z",
+   "offset_ms": 199,
+   "method": "GET",
+   "path": "/img/p/black-classic-canvas-low-3.svg",
+   "status": 200,
+   "duration_ms": 9,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "4823b20b-239d-446a-8d3c-1afaaa2f3642",
+   "ts": "2026-11-03T04:19:58Z",
+   "offset_ms": 202,
+   "method": "GET",
+   "path": "/img/p/tan-striped-cotton-shirt-3.svg",
+   "status": 200,
+   "duration_ms": 15,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "f5b75307-2167-4036-8a6d-fe50b7c45226",
+   "ts": "2026-11-03T04:19:58Z",
+   "offset_ms": 278,
+   "method": "GET",
+   "path": "/img/p/tan-oxford-button-down-shirt-1.svg",
+   "status": 200,
+   "duration_ms": 11,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "0b9684c4-dccd-4c2c-8a24-54f4c528e3dd",
+   "ts": "2026-11-03T04:19:58Z",
+   "offset_ms": 285,
+   "method": "GET",
+   "path": "/_next/static/chunks/app.js",
+   "status": 200,
+   "duration_ms": 8,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "2a8b6aa3-07e0-4243-8ff5-dd57e9c4b6ea",
+   "ts": "2026-11-03T04:19:58Z",
+   "offset_ms": 385,
+   "method": "GET",
+   "path": "/_next/static/chunks/main.js",
+   "status": 200,
+   "duration_ms": 13,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "f8c611a1-ab9a-4966-8a8f-a00334c04ab9",
+   "ts": "2026-11-03T04:19:59Z",
+   "offset_ms": 485,
+   "method": "GET",
+   "path": "/img/p/linen-mandarin-kurta-in-white-3.svg",
+   "status": 200,
+   "duration_ms": 8,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "b08f1da5-897e-4fae-8f45-711fa7940051",
+   "ts": "2026-11-03T04:19:59Z",
+   "offset_ms": 521,
+   "method": "GET",
+   "path": "/img/p/sky-blue-studio-court-low-2.svg",
+   "status": 200,
+   "duration_ms": 8,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "3fe76be7-37f5-4fce-87e3-625b9cc5cbbd",
+   "ts": "2026-11-03T04:19:59Z",
+   "offset_ms": 546,
+   "method": "GET",
+   "path": "/img/p/white-sprint-knit-runner-2.svg",
+   "status": 200,
+   "duration_ms": 11,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "5d09d27a-6746-492c-8ae2-99cd02740437",
+   "ts": "2026-11-03T04:19:59Z",
+   "offset_ms": 547,
+   "method": "GET",
+   "path": "/favicon.ico",
+   "status": 200,
+   "duration_ms": 12,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "39833112-0c25-4ae3-8a4a-aeaedf3e08c7",
+   "ts": "2026-11-03T04:19:59Z",
+   "offset_ms": 662,
+   "method": "GET",
+   "path": "/_next/static/css/app.css",
+   "status": 200,
+   "duration_ms": 18,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "35daa237-7fd3-410f-8f31-6ff4ac00f8bf",
+   "ts": "2026-11-03T04:19:59Z",
+   "offset_ms": 786,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 7,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "60698464-1a36-425a-8392-0e0cb929b979",
+   "ts": "2026-11-03T04:20:00Z",
+   "offset_ms": 1844,
+   "method": "GET",
+   "path": "/api/products/SHT010/variants",
+   "status": 200,
+   "duration_ms": 32,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "447a5933-1528-42b5-8dfb-b6d0eb25a839",
+   "ts": "2026-11-03T04:20:01Z",
+   "offset_ms": 3293,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 7,
+   "page_type": "cart_api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "0eb3da4c-9b5e-4041-849a-8f9191286feb",
+   "ts": "2026-11-03T04:20:05Z",
+   "offset_ms": 7346,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 21,
+   "page_type": "cart_api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "aec09b31-2fc9-4de6-8533-f402c6309dd7",
+   "ts": "2026-11-03T04:20:08Z",
+   "offset_ms": 9408,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 14,
+   "page_type": "cart_api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-03T04:19:58Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-03T04:20:00Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B05",
+   "name": "Pincode / serviceability wall",
+   "stage": "S5",
+   "confidence": 0.95,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "aec09b31-2fc9-4de6-8533-f402c6309dd7",
+     "summary": "POST /api/cart -> 409 PINCODE_REQUIRED"
+    },
+    {
+     "type": "request",
+     "request_id": "0eb3da4c-9b5e-4041-849a-8f9191286feb",
+     "summary": "POST /api/cart -> 409 PINCODE_REQUIRED"
+    },
+    {
+     "type": "request",
+     "request_id": "447a5933-1528-42b5-8dfb-b6d0eb25a839",
+     "summary": "POST /api/cart -> 409 PINCODE_REQUIRED"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

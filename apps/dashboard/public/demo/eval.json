@@ -1,113 +1,109 @@
 {
- "run_id": "eval_2026-11-18",
- "ts": "2026-11-18T06:20:00Z",
- "dataset": "tests/golden (2,000 sessions, seed 42)",
+ "run_id": "eval-20261118115540",
+ "ts": "2026-11-18T11:55:40Z",
+ "dataset": "demo: 12,000 sessions (synthetic)",
  "identification": {
-  "tier_accuracy": 0.962,
-  "verified_precision": 1,
-  "verified_recall": 0.994,
-  "declared_precision": 0.981,
-  "declared_recall": 0.972,
-  "suspected_precision": 0.874,
-  "suspected_recall": 0.861,
+  "tier_accuracy": 0.9915833333333334,
+  "verified_precision": 1.0,
+  "verified_recall": 1.0,
+  "declared_precision": 1.0,
+  "declared_recall": 1.0,
+  "suspected_precision": 1.0,
+  "suspected_recall": 0.8651535380507344,
   "confusion": [
    [
-    348,
-    2,
+    730,
+    0,
     0,
     0
    ],
    [
     0,
-    801,
-    9,
-    14
+    2150,
+    0,
+    0
    ],
    [
     0,
-    6,
-    231,
-    31
+    0,
+    648,
+    101
    ],
    [
     0,
-    5,
-    21,
-    532
+    0,
+    0,
+    8371
    ]
   ]
  },
  "diagnosis": {
-  "top1_accuracy": 0.908,
-  "coverage": 0.887,
+  "top1_accuracy": 1.0,
+  "coverage": 0.47496382054992764,
   "per_blocker": [
    {
-    "blocker_id": "B05",
-    "precision": 0.97,
-    "recall": 0.95,
-    "f1": 0.96,
-    "support": 240
+    "blocker_id": "B03",
+    "precision": 0.8674698795180723,
+    "recall": 1.0,
+    "f1": 0.9290322580645161,
+    "support": 432
    },
    {
-    "blocker_id": "B03",
-    "precision": 0.94,
-    "recall": 0.93,
-    "f1": 0.935,
-    "support": 160
+    "blocker_id": "B05",
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "support": 89
    },
    {
     "blocker_id": "B06",
-    "precision": 0.92,
-    "recall": 0.9,
-    "f1": 0.91,
-    "support": 120
+    "precision": 0.9976019184652278,
+    "recall": 1.0,
+    "f1": 0.9987995198079231,
+    "support": 416
    },
    {
     "blocker_id": "B07",
-    "precision": 0.83,
-    "recall": 0.79,
-    "f1": 0.81,
-    "support": 100
-   },
-   {
-    "blocker_id": "B09",
-    "precision": 0.95,
-    "recall": 0.92,
-    "f1": 0.935,
-    "support": 90
-   },
-   {
-    "blocker_id": "B10",
-    "precision": 0.96,
-    "recall": 0.94,
-    "f1": 0.95,
-    "support": 90
+    "precision": 0.9652777777777778,
+    "recall": 1.0,
+    "f1": 0.9823321554770319,
+    "support": 139
    },
    {
     "blocker_id": "B08",
-    "precision": 0.88,
-    "recall": 0.86,
-    "f1": 0.87,
-    "support": 60
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "support": 32
    },
    {
-    "blocker_id": "B12",
-    "precision": 1,
-    "recall": 0.98,
-    "f1": 0.99,
-    "support": 50
+    "blocker_id": "B09",
+    "precision": 0.8496420047732697,
+    "recall": 1.0,
+    "f1": 0.9187096774193548,
+    "support": 356
+   },
+   {
+    "blocker_id": "B10",
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "support": 42
    }
   ]
  },
  "impact": {
-  "mean_abs_pct_error": 0.11
+  "mean_abs_pct_error": null
  },
  "replay": {
-  "confirmation_rate": 0.875,
-  "completed": 8
+  "confirmation_rate": 1.0,
+  "completed": 6
  },
  "notes": [
-  "Scores are measured on the labelled synthetic golden dataset, not on real shopper traffic.",
-  "Suspected-tier precision is lower because behaviour is a weaker signal than a signature or a declared user agent."
+  "Identification: 12000 synthetic sessions evaluated (0 unmatched).",
+  "Verified precision target 100%; identification checks pass.",
+  "Diagnosis: 3528 agent sessions in scope; precision 91.8%, recall 100.0% (meets the SC4 targets).",
+  "Impact error is not evaluated: the synthetic generator has no counterfactual revenue.",
+  "Ground truth is synthetic; real traffic will score lower, especially for the Suspected tier."
  ]
 }

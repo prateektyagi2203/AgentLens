@@ -1,0 +1,146 @@
+{
+ "session": {
+  "session_id": "110052d06a6f9806",
+  "start_ts": "2026-11-11T14:54:11Z",
+  "duration_s": 6.906,
+  "request_count": 6,
+  "page_count": 6,
+  "identity_tier": "suspected",
+  "operator": "unknown",
+  "agent_name": "unknown",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.9,
+  "entry_page": "/",
+  "exit_page": "/api/cart",
+  "max_stage": "S3",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B08",
+  "terminal_blocker_name": "Out-of-stock dead end",
+  "blocker_confidence": 0.9,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 90.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "db5fe87a-2524-4fb0-8d37-96357a0088c6",
+   "ts": "2026-11-11T14:54:11Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 92,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "eb6f3f27-bf8a-40bd-847d-1e66444fafad",
+   "ts": "2026-11-11T14:54:12Z",
+   "offset_ms": 1666,
+   "method": "GET",
+   "path": "/c/mens-sneakers",
+   "status": 200,
+   "duration_ms": 91,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "c9ed066f-29d8-46d6-8399-79c3e43c8545",
+   "ts": "2026-11-11T14:54:14Z",
+   "offset_ms": 3580,
+   "method": "GET",
+   "path": "/p/sky-blue-studio-court-low",
+   "status": 200,
+   "duration_ms": 65,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "03c56474-76f9-4eea-80c7-b4627bc3bac8",
+   "ts": "2026-11-11T14:54:16Z",
+   "offset_ms": 5174,
+   "method": "GET",
+   "path": "/size-guide/mens-sneakers",
+   "status": 200,
+   "duration_ms": 178,
+   "page_type": "size_guide",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "1f00c37b-bff5-464f-80c9-5fb97c911f7d",
+   "ts": "2026-11-11T14:54:17Z",
+   "offset_ms": 6190,
+   "method": "GET",
+   "path": "/api/products/SNK012/variants",
+   "status": 200,
+   "duration_ms": 24,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "00d64dd6-35c7-4680-8502-a6a24612422a",
+   "ts": "2026-11-11T14:54:18Z",
+   "offset_ms": 6906,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 40,
+   "page_type": "cart_api",
+   "error_code": "OUT_OF_STOCK",
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-11T14:54:11Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-11T14:54:14Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-11T14:54:17Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B08",
+   "name": "Out-of-stock dead end",
+   "stage": "S3",
+   "confidence": 0.9,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "00d64dd6-35c7-4680-8502-a6a24612422a",
+     "summary": "POST /api/cart -> 409 OUT_OF_STOCK (catalog shows 0 in stock for this size and colour)"
+    },
+    {
+     "type": "request",
+     "request_id": "1f00c37b-bff5-464f-80c9-5fb97c911f7d",
+     "summary": "GET /api/products/SNK012/variants -> 200"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

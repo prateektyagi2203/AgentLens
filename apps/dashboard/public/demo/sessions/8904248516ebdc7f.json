@@ -1,0 +1,122 @@
+{
+ "session": {
+  "session_id": "8904248516ebdc7f",
+  "start_ts": "2026-11-03T15:22:25Z",
+  "duration_s": 1.384,
+  "request_count": 3,
+  "page_count": 3,
+  "identity_tier": "declared",
+  "operator": "Perplexity",
+  "agent_name": "Perplexity-User",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.7,
+  "entry_page": "/search",
+  "exit_page": "/p/maroon-street-runner",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B03",
+  "terminal_blocker_name": "JS-only product content",
+  "blocker_confidence": 0.85,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Perplexity-User/1.0; +https://perplexity.ai/perplexity-user)",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "d6ef7fab-09ac-4f31-8ec5-fd54b5a83696",
+   "ts": "2026-11-03T15:22:25Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/search",
+   "status": 200,
+   "duration_ms": 101,
+   "page_type": "search",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "f3930f0d-7fc0-4521-827e-eabd3f6d66f5",
+   "ts": "2026-11-03T15:22:25Z",
+   "offset_ms": 512,
+   "method": "GET",
+   "path": "/c/mens-sneakers",
+   "status": 200,
+   "duration_ms": 148,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "68e64b9e-65fb-4052-8b99-719df6b8f9b2",
+   "ts": "2026-11-03T15:22:26Z",
+   "offset_ms": 1384,
+   "method": "GET",
+   "path": "/p/maroon-street-runner",
+   "status": 200,
+   "duration_ms": 39,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-03T15:22:25Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-03T15:22:26Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B03",
+   "name": "JS-only product content",
+   "stage": "S2",
+   "confidence": 0.85,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "68e64b9e-65fb-4052-8b99-719df6b8f9b2",
+     "summary": "GET /p/maroon-street-runner -> 200"
+    },
+    {
+     "type": "site_check",
+     "check": "pdp_ssr_price",
+     "result": "fail"
+    }
+   ]
+  },
+  {
+   "blocker_id": "B04",
+   "name": "Missing structured data",
+   "stage": "S2",
+   "confidence": 0.6,
+   "is_terminal": false,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "68e64b9e-65fb-4052-8b99-719df6b8f9b2",
+     "summary": "GET /p/maroon-street-runner -> 200"
+    },
+    {
+     "type": "site_check",
+     "check": "pdp_jsonld_product",
+     "result": "warn"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

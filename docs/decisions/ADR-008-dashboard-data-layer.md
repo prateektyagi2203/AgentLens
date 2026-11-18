@@ -1,4 +1,4 @@
-# ADR-005: Dashboard data layer (typed contract, mocks, demo snapshots)
+# ADR-008: Dashboard data layer (typed contract, mocks, demo snapshots)
 
 Status: accepted (M4)
 

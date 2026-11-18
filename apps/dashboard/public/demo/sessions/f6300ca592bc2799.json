@@ -1,0 +1,189 @@
+{
+ "session": {
+  "session_id": "f6300ca592bc2799",
+  "start_ts": "2026-11-07T10:23:25Z",
+  "duration_s": 1.718,
+  "request_count": 10,
+  "page_count": 2,
+  "identity_tier": "verified",
+  "operator": "AgentLens Test Operator",
+  "agent_name": "TestSignedAgent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 1.0,
+  "entry_page": "/p/card-holder-in-pink",
+  "exit_page": "/api/products/ACC010/variants",
+  "max_stage": "S3",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B08",
+  "terminal_blocker_name": "Out-of-stock dead end",
+  "blocker_confidence": 0.8,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "valid",
+  "signature_agent": "https://agents.desithreads.test",
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 TestSignedAgent/1.0",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "a57e44ab-dbd3-432c-89a4-a22f52f66afa",
+   "ts": "2026-11-07T10:23:25Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/p/card-holder-in-pink",
+   "status": 200,
+   "duration_ms": 175,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "43168905-f359-4a0e-83f9-f01b27e72e22",
+   "ts": "2026-11-07T10:23:25Z",
+   "offset_ms": 387,
+   "method": "GET",
+   "path": "/img/p/indigo-urban-high-top-1.svg",
+   "status": 200,
+   "duration_ms": 16,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "f23252b5-99ce-46ec-8a75-bbdc3cd72e58",
+   "ts": "2026-11-07T10:23:25Z",
+   "offset_ms": 479,
+   "method": "GET",
+   "path": "/img/p/sky-blue-linen-casual-shirt-2.svg",
+   "status": 200,
+   "duration_ms": 14,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "085f64fc-c90c-48ae-8ebb-1c4379e6a595",
+   "ts": "2026-11-07T10:23:25Z",
+   "offset_ms": 517,
+   "method": "GET",
+   "path": "/favicon.ico",
+   "status": 200,
+   "duration_ms": 39,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "5fc0a49e-441e-4370-83bd-3e9d5ef2532e",
+   "ts": "2026-11-07T10:23:26Z",
+   "offset_ms": 540,
+   "method": "GET",
+   "path": "/_next/static/css/app.css",
+   "status": 200,
+   "duration_ms": 9,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "063ad83b-95fa-409e-8e2f-f3ab552d4564",
+   "ts": "2026-11-07T10:23:26Z",
+   "offset_ms": 621,
+   "method": "GET",
+   "path": "/_next/static/chunks/main.js",
+   "status": 200,
+   "duration_ms": 21,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "d4605925-2e23-4adf-8c79-a791f6e20e92",
+   "ts": "2026-11-07T10:23:26Z",
+   "offset_ms": 720,
+   "method": "GET",
+   "path": "/img/p/block-print-straight-kurta-in-white-2.svg",
+   "status": 200,
+   "duration_ms": 19,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "613fa498-a075-4489-899f-2e20a9a94757",
+   "ts": "2026-11-07T10:23:26Z",
+   "offset_ms": 765,
+   "method": "GET",
+   "path": "/_next/static/chunks/app.js",
+   "status": 200,
+   "duration_ms": 7,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "6041287b-a577-4f6b-80fe-0c2062a8eec4",
+   "ts": "2026-11-07T10:23:26Z",
+   "offset_ms": 1314,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 10,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "f232e283-5982-4fcb-82bf-d37a56ae4b1b",
+   "ts": "2026-11-07T10:23:27Z",
+   "offset_ms": 1718,
+   "method": "GET",
+   "path": "/api/products/ACC010/variants",
+   "status": 200,
+   "duration_ms": 36,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-07T10:23:25Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-07T10:23:27Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B08",
+   "name": "Out-of-stock dead end",
+   "stage": "S3",
+   "confidence": 0.8,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "f232e283-5982-4fcb-82bf-d37a56ae4b1b",
+     "summary": "GET /api/products/ACC010/variants -> 200 (catalog shows 0 in stock for this size and colour)"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

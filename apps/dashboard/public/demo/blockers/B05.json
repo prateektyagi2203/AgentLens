@@ -1,258 +1,240 @@
 {
  "window": {
-  "from": "2026-11-05",
-  "to": "2026-11-11",
+  "from": "2026-11-01",
+  "to": "2026-11-07",
   "days": 7
  },
  "blocker": {
   "blocker_id": "B05",
-  "name": "Pincode wall",
+  "name": "Pincode / serviceability wall",
   "stage": "S5",
-  "sessions_blocked": 1240,
-  "share_of_failed": 0.31,
+  "sessions_blocked": 89,
+  "share_of_failed": 0.05977165883143049,
   "risk_inr": {
-   "low": 673426,
-   "base": 1262674,
-   "high": 2020279
+   "low": 138717,
+   "base": 260095,
+   "high": 416151
   },
   "replay_status": "confirmed",
   "effort": "S",
-  "priority_score": 1262674,
+  "priority_score": 260095,
   "low_confidence": false
  },
- "description": "Add-to-cart is rejected with 409 PINCODE_REQUIRED until a delivery pincode is entered in a modal. Agents cannot find or fill it and leave.",
- "detection": "Add-to-cart returned 409 PINCODE_REQUIRED, or repeated serviceability calls failed, or the session ended within 2 requests after the PDP with serviceability required.",
+ "description": "Add to cart is rejected until a pincode is entered through a modal that agents cannot use.",
+ "detection": "Rule B05 (Pincode / serviceability wall) on the request log; evidence below.",
  "evidence": {
   "top_error_codes": [
    {
     "code": "PINCODE_REQUIRED",
-    "count": 1141,
-    "share": 0.92
-   },
-   {
-    "code": "PINCODE_UNSERVICEABLE",
-    "count": 99,
-    "share": 0.08
+    "count": 89,
+    "share": 1.0
    }
   ],
   "example_requests": [
    {
-    "request_id": "req_B05_1",
-    "summary": "POST /api/cart → 409 PINCODE_REQUIRED (×2) · session ended 4 s later",
-    "count": 1240
+    "request_id": "0199308d-a408-4a2b-807e-6f73ac1f2001",
+    "summary": "POST /api/cart -> 409 PINCODE_REQUIRED",
+    "count": 89
    }
   ],
   "site_checks": []
  },
  "risk_breakdown": {
-  "sessions_blocked": 1240,
+  "sessions_blocked": 89,
   "recoverable_rate": 0.6,
-  "p_stage": 0.17999995927012055,
-  "aov_inr": 2200,
+  "p_stage": 0.5165876777251185,
+  "aov_inr": 2200.0,
   "k": 4.285714285714286
  },
  "trend": [
   {
+   "date": "2026-11-01",
+   "sessions_blocked": 14
+  },
+  {
+   "date": "2026-11-02",
+   "sessions_blocked": 11
+  },
+  {
+   "date": "2026-11-03",
+   "sessions_blocked": 5
+  },
+  {
+   "date": "2026-11-04",
+   "sessions_blocked": 20
+  },
+  {
    "date": "2026-11-05",
-   "sessions_blocked": 184
+   "sessions_blocked": 11
   },
   {
    "date": "2026-11-06",
-   "sessions_blocked": 191
+   "sessions_blocked": 15
   },
   {
    "date": "2026-11-07",
-   "sessions_blocked": 160
-  },
-  {
-   "date": "2026-11-08",
-   "sessions_blocked": 145
-  },
-  {
-   "date": "2026-11-09",
-   "sessions_blocked": 188
-  },
-  {
-   "date": "2026-11-10",
-   "sessions_blocked": 198
-  },
-  {
-   "date": "2026-11-11",
-   "sessions_blocked": 174
+   "sessions_blocked": 13
   }
  ],
  "sample_sessions": [
   {
-   "session_id": "ses_3n9ek3c19c",
-   "start_ts": "2026-11-11T15:15:20.000Z",
-   "duration_s": 15,
-   "request_count": 8,
-   "page_count": 2,
+   "session_id": "224d2596846fc967",
+   "start_ts": "2026-11-07T20:17:12Z",
+   "duration_s": 14.802,
+   "request_count": 23,
+   "page_count": 7,
    "identity_tier": "verified",
-   "operator": "TestOperator",
-   "agent_name": "AgentLens Test Agent",
+   "operator": "AgentLens Test Operator",
+   "agent_name": "TestSignedAgent",
    "agent_class": "browsing_agent",
-   "identity_confidence": 1,
-   "entry_page": "/c/sneakers",
-   "exit_page": "/api/cart",
-   "max_stage": "S4",
-   "converted": false,
-   "order_value_inr": null,
-   "terminal_blocker_id": "B05",
-   "terminal_blocker_name": "Pincode wall",
-   "blocker_confidence": 0.71,
-   "diagnosis_method": "rule"
-  },
-  {
-   "session_id": "ses_chw1p0nggm",
-   "start_ts": "2026-11-11T13:26:30.000Z",
-   "duration_s": 14,
-   "request_count": 10,
-   "page_count": 3,
-   "identity_tier": "suspected",
-   "operator": "unknown",
-   "agent_name": "Unidentified browsing agent",
-   "agent_class": "browsing_agent",
-   "identity_confidence": 0.89,
+   "identity_confidence": 1.0,
    "entry_page": "/",
    "exit_page": "/api/cart",
-   "max_stage": "S4",
+   "max_stage": "S3",
    "converted": false,
    "order_value_inr": null,
    "terminal_blocker_id": "B05",
-   "terminal_blocker_name": "Pincode wall",
-   "blocker_confidence": 0.68,
+   "terminal_blocker_name": "Pincode / serviceability wall",
+   "blocker_confidence": 0.95,
    "diagnosis_method": "rule"
   },
   {
-   "session_id": "ses_pg328s0z8m",
-   "start_ts": "2026-11-11T11:10:45.000Z",
-   "duration_s": 17,
-   "request_count": 9,
-   "page_count": 2,
-   "identity_tier": "declared",
-   "operator": "Google",
-   "agent_name": "Gemini agent",
-   "agent_class": "browsing_agent",
-   "identity_confidence": 0.7,
-   "entry_page": "/c/sneakers",
-   "exit_page": "/api/cart",
-   "max_stage": "S4",
-   "converted": false,
-   "order_value_inr": null,
-   "terminal_blocker_id": "B05",
-   "terminal_blocker_name": "Pincode wall",
-   "blocker_confidence": 0.74,
-   "diagnosis_method": "rule"
-  },
-  {
-   "session_id": "ses_w0swj06vxz",
-   "start_ts": "2026-11-11T03:38:24.000Z",
-   "duration_s": 20,
-   "request_count": 9,
-   "page_count": 3,
+   "session_id": "7a9b879ee72c7797",
+   "start_ts": "2026-11-07T18:55:06Z",
+   "duration_s": 6.231,
+   "request_count": 14,
+   "page_count": 5,
    "identity_tier": "verified",
-   "operator": "OpenAI",
-   "agent_name": "ChatGPT agent",
+   "operator": "AgentLens Test Operator",
+   "agent_name": "TestSignedAgent",
    "agent_class": "browsing_agent",
-   "identity_confidence": 1,
+   "identity_confidence": 1.0,
+   "entry_page": "/p/grey-textured-dobby-shirt",
+   "exit_page": "/api/cart",
+   "max_stage": "S3",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B05",
+   "terminal_blocker_name": "Pincode / serviceability wall",
+   "blocker_confidence": 0.95,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "a7e606069d27a812",
+   "start_ts": "2026-11-07T18:29:39Z",
+   "duration_s": 23.493,
+   "request_count": 24,
+   "page_count": 7,
+   "identity_tier": "verified",
+   "operator": "AgentLens Test Operator",
+   "agent_name": "TestSignedAgent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 1.0,
    "entry_page": "/",
    "exit_page": "/api/cart",
-   "max_stage": "S4",
+   "max_stage": "S3",
    "converted": false,
    "order_value_inr": null,
    "terminal_blocker_id": "B05",
-   "terminal_blocker_name": "Pincode wall",
-   "blocker_confidence": 0.66,
+   "terminal_blocker_name": "Pincode / serviceability wall",
+   "blocker_confidence": 0.95,
    "diagnosis_method": "rule"
   },
   {
-   "session_id": "ses_1zfkvxtd3z",
-   "start_ts": "2026-11-10T05:47:37.000Z",
-   "duration_s": 19,
-   "request_count": 8,
-   "page_count": 2,
+   "session_id": "ac4e203ea382f215",
+   "start_ts": "2026-11-07T18:02:50Z",
+   "duration_s": 20.573,
+   "request_count": 28,
+   "page_count": 8,
+   "identity_tier": "verified",
+   "operator": "AgentLens Test Operator",
+   "agent_name": "TestSignedAgent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 1.0,
+   "entry_page": "/",
+   "exit_page": "/api/cart",
+   "max_stage": "S3",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B05",
+   "terminal_blocker_name": "Pincode / serviceability wall",
+   "blocker_confidence": 0.95,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "f1ea1141051a241e",
+   "start_ts": "2026-11-07T16:00:22Z",
+   "duration_s": 6.62,
+   "request_count": 10,
+   "page_count": 7,
    "identity_tier": "suspected",
    "operator": "unknown",
-   "agent_name": "Unidentified browsing agent",
-   "agent_class": "browsing_agent",
-   "identity_confidence": 0.85,
-   "entry_page": "/c/sneakers",
-   "exit_page": "/api/cart",
-   "max_stage": "S4",
-   "converted": false,
-   "order_value_inr": null,
-   "terminal_blocker_id": "B05",
-   "terminal_blocker_name": "Pincode wall",
-   "blocker_confidence": 0.72,
-   "diagnosis_method": "rule"
-  },
-  {
-   "session_id": "ses_hw2azn38ds",
-   "start_ts": "2026-11-10T05:21:30.000Z",
-   "duration_s": 18,
-   "request_count": 10,
-   "page_count": 3,
-   "identity_tier": "declared",
-   "operator": "Google",
-   "agent_name": "Gemini agent",
+   "agent_name": "unknown",
    "agent_class": "browsing_agent",
    "identity_confidence": 0.7,
    "entry_page": "/",
    "exit_page": "/api/cart",
-   "max_stage": "S4",
+   "max_stage": "S3",
    "converted": false,
    "order_value_inr": null,
    "terminal_blocker_id": "B05",
-   "terminal_blocker_name": "Pincode wall",
-   "blocker_confidence": 0.69,
+   "terminal_blocker_name": "Pincode / serviceability wall",
+   "blocker_confidence": 0.95,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "1da71904101e51a6",
+   "start_ts": "2026-11-07T14:09:22Z",
+   "duration_s": 6.715,
+   "request_count": 10,
+   "page_count": 7,
+   "identity_tier": "suspected",
+   "operator": "unknown",
+   "agent_name": "unknown",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 0.7,
+   "entry_page": "/",
+   "exit_page": "/api/cart",
+   "max_stage": "S3",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B05",
+   "terminal_blocker_name": "Pincode / serviceability wall",
+   "blocker_confidence": 0.95,
    "diagnosis_method": "rule"
   }
  ],
  "replays": [
   {
-   "replay_id": "rpl_b05_a",
+   "replay_id": "rp_e8ebb5ae2d",
    "blocker_id": "B05",
-   "blocker_name": "Pincode wall",
-   "source_session_id": "ses_3n9ek3c19c",
-   "mode": "browser",
+   "blocker_name": "Pincode / serviceability wall",
+   "source_session_id": "224d2596846fc967",
+   "mode": "fetch",
    "status": "completed",
    "verdict": "confirmed",
-   "started_at": "2026-11-11T17:02:10Z",
-   "finished_at": "2026-11-11T17:02:24.500Z",
-   "steps_count": 5,
-   "verdict_explanation": "Confirmed. The test agent reproduced the journey: add-to-cart returned 409 PINCODE_REQUIRED and a blocking 'Enter delivery pincode' modal appeared. The agent had no way to continue without opening and filling the modal."
-  },
-  {
-   "replay_id": "rpl_b05_b",
-   "blocker_id": "B05",
-   "blocker_name": "Pincode wall",
-   "source_session_id": "ses_chw1p0nggm",
-   "mode": "browser",
-   "status": "completed",
-   "verdict": "confirmed",
-   "started_at": "2026-11-11T17:09:42Z",
-   "finished_at": "2026-11-11T17:09:51.300Z",
-   "steps_count": 3,
-   "verdict_explanation": "Confirmed a second time with a different product and a different pincode. Same 409 PINCODE_REQUIRED on add-to-cart, same modal."
+   "started_at": "2026-11-18T11:52:36Z",
+   "finished_at": "2026-11-18T11:52:40Z",
+   "steps_count": 4,
+   "verdict_explanation": "Reproduced B05 (Add to cart is gated by a pincode check): a pincode modal is server-rendered on the product page and blocks interaction (step 4)."
   }
  ],
  "recommendation": {
   "rec_id": "rec_B05",
-  "run_id": "run_20261118_0610",
+  "run_id": "b953b1002c33",
   "blocker_id": "B05",
-  "blocker_name": "Pincode wall",
-  "title": "Make the pincode optional before cart",
-  "body": "Accept the pincode via URL or API, default to a metro pincode, and show the delivery promise inline instead of a blocking modal.",
-  "why_it_helps": "92% of the failures are a 409 on add-to-cart. Agents cannot operate a modal they were never told about.",
-  "how_to_verify": "Delivery check → Added to cart step conversion for agents should rise, and B05 should drop out of the blocker list.",
-  "verify_metric": "Step conversion S4 → S5 for agents",
+  "blocker_name": "Pincode / serviceability wall",
+  "title": "Pincode / serviceability wall: Make pincode optional before cart, accept it by URL or API, and show the delivery promise without a modal.",
+  "body": "Make pincode optional before cart, accept it by URL or API, and show the delivery promise without a modal.",
+  "why_it_helps": "Add to cart is rejected until a pincode is entered through a modal that agents cannot use.",
+  "how_to_verify": "Add-to-cart 409 PINCODE_REQUIRED count falls to near zero; PDP to cart step conversion for agents rises.",
+  "verify_metric": "Agent sessions ending with B05 per day",
   "effort": "S",
   "owner": "Product",
-  "priority_score": 1262674,
-  "risk_inr_base": 1262674,
+  "priority_score": 260095,
+  "risk_inr_base": 260095,
   "status": "open",
   "fixed_annotation_id": null,
-  "llm_explanation": null
+  "llm_explanation": "5% of failed agent sessions (89) ended on pincode / serviceability wall. Typical failing call: POST /api/cart -> 409 PINCODE_REQUIRED. Fixing it could recover about ₹36,440 a month."
  }
 }

@@ -1,0 +1,48 @@
+{
+ "session": {
+  "session_id": "c7c09fd103441a6e",
+  "start_ts": "2026-11-13T21:22:56Z",
+  "duration_s": 0.0,
+  "request_count": 1,
+  "page_count": 1,
+  "identity_tier": "declared",
+  "operator": "Perplexity",
+  "agent_name": "Perplexity-User",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.7,
+  "entry_page": "/policies/returns",
+  "exit_page": "/policies/returns",
+  "max_stage": null,
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": null,
+  "terminal_blocker_name": null,
+  "blocker_confidence": null,
+  "diagnosis_method": "none"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Perplexity-User/1.0; +https://perplexity.ai/perplexity-user)",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "e5f98a06-9232-4b21-8ab1-3968d01288c3",
+   "ts": "2026-11-13T21:22:56Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/policies/returns",
+   "status": 200,
+   "duration_ms": 32,
+   "page_type": "policy",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [],
+ "fired_rules": [],
+ "replay_ids": []
+}

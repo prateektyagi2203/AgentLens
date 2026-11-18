@@ -1,0 +1,96 @@
+{
+ "session": {
+  "session_id": "54c4491ac34b12a0",
+  "start_ts": "2026-11-14T07:16:23Z",
+  "duration_s": 2.154,
+  "request_count": 4,
+  "page_count": 4,
+  "identity_tier": "declared",
+  "operator": "Perplexity",
+  "agent_name": "Perplexity-User",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.7,
+  "entry_page": "/search",
+  "exit_page": "/p/pink-metro-mesh-sneaker",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": null,
+  "terminal_blocker_name": null,
+  "blocker_confidence": null,
+  "diagnosis_method": "none"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Perplexity-User/1.0; +https://perplexity.ai/perplexity-user)",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "07346393-3520-46ce-8ace-51f23ba84f51",
+   "ts": "2026-11-14T07:16:23Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/search",
+   "status": 200,
+   "duration_ms": 89,
+   "page_type": "search",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "2fca5c20-a051-49c0-865c-1e02a9e4159e",
+   "ts": "2026-11-14T07:16:23Z",
+   "offset_ms": 362,
+   "method": "GET",
+   "path": "/c/mens-sneakers",
+   "status": 200,
+   "duration_ms": 142,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "d7681077-8144-46f4-8fc1-70077cb54776",
+   "ts": "2026-11-14T07:16:25Z",
+   "offset_ms": 1687,
+   "method": "GET",
+   "path": "/p/indigo-urban-high-top",
+   "status": 200,
+   "duration_ms": 54,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "b0928505-c05d-44f6-8b4f-065a966b7a26",
+   "ts": "2026-11-14T07:16:25Z",
+   "offset_ms": 2154,
+   "method": "GET",
+   "path": "/p/pink-metro-mesh-sneaker",
+   "status": 200,
+   "duration_ms": 200,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-14T07:16:23Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-14T07:16:25Z"
+  }
+ ],
+ "fired_rules": [],
+ "replay_ids": []
+}

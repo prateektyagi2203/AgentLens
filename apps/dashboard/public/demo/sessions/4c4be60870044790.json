@@ -1,0 +1,392 @@
+{
+ "session": {
+  "session_id": "4c4be60870044790",
+  "start_ts": "2026-11-10T20:39:05Z",
+  "duration_s": 6.418,
+  "request_count": 25,
+  "page_count": 6,
+  "identity_tier": "verified",
+  "operator": "AgentLens Test Operator",
+  "agent_name": "TestSignedAgent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 1.0,
+  "entry_page": "/",
+  "exit_page": "/cart",
+  "max_stage": "S5",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B99",
+  "terminal_blocker_name": "Unknown",
+  "blocker_confidence": 0.3,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "valid",
+  "signature_agent": "https://agents.desithreads.test",
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 TestSignedAgent/1.0",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "f529fc26-d9b1-4551-844e-0c726a432ee5",
+   "ts": "2026-11-10T20:39:05Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 42,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "385f4320-381a-4df2-8313-6306a60b8824",
+   "ts": "2026-11-10T20:39:05Z",
+   "offset_ms": 99,
+   "method": "GET",
+   "path": "/_next/static/chunks/main.js",
+   "status": 200,
+   "duration_ms": 15,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "67d26553-7697-41be-8d2f-ca9941566784",
+   "ts": "2026-11-10T20:39:05Z",
+   "offset_ms": 176,
+   "method": "GET",
+   "path": "/favicon.ico",
+   "status": 200,
+   "duration_ms": 16,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "28298020-e7c8-40ff-8a88-56f41cdbdd61",
+   "ts": "2026-11-10T20:39:05Z",
+   "offset_ms": 289,
+   "method": "GET",
+   "path": "/_next/static/css/app.css",
+   "status": 200,
+   "duration_ms": 12,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "fe685712-b9ca-49a5-8f2a-3d8336a6bb04",
+   "ts": "2026-11-10T20:39:06Z",
+   "offset_ms": 474,
+   "method": "GET",
+   "path": "/_next/static/chunks/app.js",
+   "status": 200,
+   "duration_ms": 6,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "b388828f-7580-40fd-8d17-9cf91ec01d2d",
+   "ts": "2026-11-10T20:39:06Z",
+   "offset_ms": 505,
+   "method": "GET",
+   "path": "/img/p/card-holder-in-pink-1.svg",
+   "status": 200,
+   "duration_ms": 9,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "1730c98c-f7f9-48a0-8b8b-e2149d707ae2",
+   "ts": "2026-11-10T20:39:06Z",
+   "offset_ms": 538,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 8,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "9de1c318-5e18-4aa0-864d-314380ce898a",
+   "ts": "2026-11-10T20:39:06Z",
+   "offset_ms": 643,
+   "method": "GET",
+   "path": "/img/p/indigo-terrain-trail-sneaker-3.svg",
+   "status": 200,
+   "duration_ms": 9,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "12cdc005-103f-458f-8d1f-1d0eafd5eb24",
+   "ts": "2026-11-10T20:39:07Z",
+   "offset_ms": 1528,
+   "method": "GET",
+   "path": "/c/womens-kurtas",
+   "status": 200,
+   "duration_ms": 47,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "9f926b6f-4747-476a-8d5f-3fcacf1d3b6a",
+   "ts": "2026-11-10T20:39:07Z",
+   "offset_ms": 1984,
+   "method": "GET",
+   "path": "/img/p/maroon-street-runner-3.svg",
+   "status": 200,
+   "duration_ms": 9,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "2b393b7e-046b-4d87-832b-1caa0456044d",
+   "ts": "2026-11-10T20:39:07Z",
+   "offset_ms": 2028,
+   "method": "GET",
+   "path": "/img/p/sky-blue-chambray-work-shirt-2.svg",
+   "status": 200,
+   "duration_ms": 9,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "8b33bc30-b63b-4bbc-89c0-4cdefeb60602",
+   "ts": "2026-11-10T20:39:07Z",
+   "offset_ms": 2307,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 5,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "bce06d20-b7a0-4c12-8724-f0beb5e03ddc",
+   "ts": "2026-11-10T20:39:08Z",
+   "offset_ms": 3062,
+   "method": "GET",
+   "path": "/p/bandhani-flared-kurta-in-sky-blue",
+   "status": 200,
+   "duration_ms": 187,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "fd942885-6c48-4d05-8fae-89c59020439c",
+   "ts": "2026-11-10T20:39:09Z",
+   "offset_ms": 3463,
+   "method": "GET",
+   "path": "/img/p/black-classic-formal-shirt-2.svg",
+   "status": 200,
+   "duration_ms": 26,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "46680015-454d-44f5-8de1-aab45708bbcf",
+   "ts": "2026-11-10T20:39:09Z",
+   "offset_ms": 3645,
+   "method": "GET",
+   "path": "/img/p/sky-blue-studio-court-low-3.svg",
+   "status": 200,
+   "duration_ms": 15,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "5af86131-aca8-4b2f-825c-dd5e13fbe577",
+   "ts": "2026-11-10T20:39:09Z",
+   "offset_ms": 3870,
+   "method": "GET",
+   "path": "/img/p/mirror-work-short-kurta-in-white-3.svg",
+   "status": 200,
+   "duration_ms": 10,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "1514b8bd-7ca1-4bde-8367-5df42163cc78",
+   "ts": "2026-11-10T20:39:09Z",
+   "offset_ms": 4136,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 10,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "08d256c7-2920-47b5-8c54-0c240075e191",
+   "ts": "2026-11-10T20:39:09Z",
+   "offset_ms": 4257,
+   "method": "GET",
+   "path": "/api/products/KRT004/variants",
+   "status": 200,
+   "duration_ms": 37,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "a15c1fb5-2ec9-4090-8738-901c8f099ac5",
+   "ts": "2026-11-10T20:39:10Z",
+   "offset_ms": 5004,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 201,
+   "duration_ms": 55,
+   "page_type": "cart_api",
+   "error_code": null,
+   "stage_id": "S5",
+   "is_asset": false
+  },
+  {
+   "request_id": "4110cde8-ad4c-4440-88c3-c071aa03a925",
+   "ts": "2026-11-10T20:39:11Z",
+   "offset_ms": 5602,
+   "method": "GET",
+   "path": "/cart",
+   "status": 200,
+   "duration_ms": 80,
+   "page_type": "cart",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "c1cdbfe1-5093-4dda-87cf-5e73e792ffcc",
+   "ts": "2026-11-10T20:39:11Z",
+   "offset_ms": 5992,
+   "method": "GET",
+   "path": "/img/p/navy-court-sneaker-1.svg",
+   "status": 200,
+   "duration_ms": 13,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "3aed3971-1ea2-419f-8f0b-fda27ec7c30f",
+   "ts": "2026-11-10T20:39:11Z",
+   "offset_ms": 6120,
+   "method": "GET",
+   "path": "/img/p/canvas-tote-bag-in-indigo-3.svg",
+   "status": 200,
+   "duration_ms": 13,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "da702245-482a-4a9a-8404-26b3ef2a2e73",
+   "ts": "2026-11-10T20:39:11Z",
+   "offset_ms": 6213,
+   "method": "GET",
+   "path": "/img/p/bifold-wallet-in-black-3.svg",
+   "status": 200,
+   "duration_ms": 10,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "888cf1d4-1221-4ef2-8feb-23b27ce30167",
+   "ts": "2026-11-10T20:39:11Z",
+   "offset_ms": 6297,
+   "method": "GET",
+   "path": "/img/p/beanie-in-indigo-1.svg",
+   "status": 200,
+   "duration_ms": 12,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "dba843f3-f5d6-40d5-81d4-124189c3bebc",
+   "ts": "2026-11-10T20:39:11Z",
+   "offset_ms": 6418,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 16,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-10T20:39:05Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-10T20:39:08Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-10T20:39:09Z"
+  },
+  {
+   "stage_id": "S5",
+   "first_reached_ts": "2026-11-10T20:39:10Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B99",
+   "name": "Unknown",
+   "stage": "S5",
+   "confidence": 0.3,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "4110cde8-ad4c-4440-88c3-c071aa03a925",
+     "summary": "GET /cart -> 200"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

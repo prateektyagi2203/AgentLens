@@ -1,186 +1,118 @@
 {
  "window": {
-  "from": "2026-11-05",
-  "to": "2026-11-11",
+  "from": "2026-11-01",
+  "to": "2026-11-07",
   "days": 7
  },
  "blocker": {
   "blocker_id": "B03",
-  "name": "JS-only price and stock",
+  "name": "JS-only product content",
   "stage": "S2",
-  "sessions_blocked": 600,
-  "share_of_failed": 0.15,
+  "sessions_blocked": 498,
+  "share_of_failed": 0.33445265278710545,
   "risk_inr": {
-   "low": 72411,
-   "base": 135771,
-   "high": 217234
+   "low": 46767,
+   "base": 87687,
+   "high": 140300
   },
   "replay_status": "confirmed",
   "effort": "M",
-  "priority_score": 67886,
+  "priority_score": 43844,
   "low_confidence": false
  },
- "description": "Price and stock are rendered by client-side JavaScript. Agents that fetch HTML see a product with no price or availability and give up.",
- "detection": "A user_fetcher session fetched the product page and ended; the site check shows price/stock missing from server HTML and JSON-LD.",
+ "description": "Price and stock are rendered only by client-side JavaScript, so non-JS fetchers see no price.",
+ "detection": "Rule B03 (JS-only product content) on the request log; evidence below.",
  "evidence": {
   "top_error_codes": [
    {
-    "code": "PRICE_NOT_IN_HTML",
-    "count": 600,
-    "share": 1
+    "code": "HTTP 200",
+    "count": 498,
+    "share": 1.0
    }
   ],
   "example_requests": [
    {
-    "request_id": "req_B03_1",
-    "summary": "Site check: price not found in server HTML or JSON-LD on 5/5 sampled PDPs",
-    "count": 600
+    "request_id": "047562df-6566-4354-80df-04d7a1c3a992",
+    "summary": "GET /p/navy-daily-walk-sneaker -> 200",
+    "count": 36
+   },
+   {
+    "request_id": "01abaf5c-d839-49e4-80d9-d69459b4db31",
+    "summary": "GET /p/grey-everyday-slip-on -> 200",
+    "count": 27
+   },
+   {
+    "request_id": "0e5bf82d-c8a9-4d9a-8367-6482610bc36a",
+    "summary": "GET /p/sky-blue-studio-court-low -> 200",
+    "count": 26
+   },
+   {
+    "request_id": "03698da4-79ae-44ce-8da2-7f99af5e7d2f",
+    "summary": "GET /p/indigo-terrain-trail-sneaker -> 200",
+    "count": 25
+   },
+   {
+    "request_id": "14599f7b-c6f0-4bff-88ce-a47e26613b43",
+    "summary": "GET /p/pink-metro-mesh-sneaker -> 200",
+    "count": 25
    }
   ],
   "site_checks": [
    {
-    "check_id": "chk_pdp_ssr_price",
-    "run_ts": "2026-11-11T16:55:00Z",
+    "check_id": "df2a4e672d2312f6",
+    "run_ts": "2026-11-01T00:00:00Z",
     "check_name": "pdp_ssr_price",
-    "target": "5 random product pages",
+    "target": "/p/*",
     "result": "fail",
     "details": {
      "sampled": 5,
-     "found": 0,
-     "message": "Price not found in server HTML or JSON-LD on 5/5 sampled PDPs"
-    }
-   },
-   {
-    "check_id": "chk_pdp_ssr_stock",
-    "run_ts": "2026-11-11T16:55:00Z",
-    "check_name": "pdp_ssr_stock",
-    "target": "5 random product pages",
-    "result": "fail",
-    "details": {
-     "sampled": 5,
-     "found": 0,
-     "message": "Availability missing from server HTML on 5/5 sampled PDPs"
-    }
-   },
-   {
-    "check_id": "chk_jsonld_product",
-    "run_ts": "2026-11-11T16:55:00Z",
-    "check_name": "jsonld_product",
-    "target": "5 random product pages",
-    "result": "warn",
-    "details": {
-     "sampled": 5,
-     "complete": 3,
-     "message": "JSON-LD Product present but availability missing on 2/5 sampled PDPs"
+     "with_price": 0
     }
    }
   ]
  },
  "risk_breakdown": {
-  "sessions_blocked": 600,
+  "sessions_blocked": 498,
   "recoverable_rate": 0.6,
-  "p_stage": 0.03999987373737374,
-  "aov_inr": 2200,
+  "p_stage": 0.03112507138777841,
+  "aov_inr": 2200.0,
   "k": 4.285714285714286
  },
  "trend": [
   {
+   "date": "2026-11-01",
+   "sessions_blocked": 87
+  },
+  {
+   "date": "2026-11-02",
+   "sessions_blocked": 79
+  },
+  {
+   "date": "2026-11-03",
+   "sessions_blocked": 62
+  },
+  {
+   "date": "2026-11-04",
+   "sessions_blocked": 74
+  },
+  {
    "date": "2026-11-05",
-   "sessions_blocked": 89
+   "sessions_blocked": 55
   },
   {
    "date": "2026-11-06",
-   "sessions_blocked": 93
+   "sessions_blocked": 66
   },
   {
    "date": "2026-11-07",
-   "sessions_blocked": 77
-  },
-  {
-   "date": "2026-11-08",
-   "sessions_blocked": 70
-  },
-  {
-   "date": "2026-11-09",
-   "sessions_blocked": 91
-  },
-  {
-   "date": "2026-11-10",
-   "sessions_blocked": 96
-  },
-  {
-   "date": "2026-11-11",
-   "sessions_blocked": 84
+   "sessions_blocked": 75
   }
  ],
  "sample_sessions": [
   {
-   "session_id": "ses_j97jxy7z2z",
-   "start_ts": "2026-11-11T13:29:55.000Z",
-   "duration_s": 2,
-   "request_count": 2,
-   "page_count": 2,
-   "identity_tier": "declared",
-   "operator": "Anthropic",
-   "agent_name": "Claude-User",
-   "agent_class": "user_fetcher",
-   "identity_confidence": 0.9,
-   "entry_page": "/search?q=white",
-   "exit_page": "/p/white-court-sneaker",
-   "max_stage": "S1",
-   "converted": false,
-   "order_value_inr": null,
-   "terminal_blocker_id": "B03",
-   "terminal_blocker_name": "JS-only price and stock",
-   "blocker_confidence": 0.62,
-   "diagnosis_method": "rule"
-  },
-  {
-   "session_id": "ses_8v0sk20cn2",
-   "start_ts": "2026-11-11T12:46:27.000Z",
-   "duration_s": 3,
-   "request_count": 2,
-   "page_count": 2,
-   "identity_tier": "declared",
-   "operator": "Anthropic",
-   "agent_name": "Claude-User",
-   "agent_class": "user_fetcher",
-   "identity_confidence": 0.9,
-   "entry_page": "/c/sneakers",
-   "exit_page": "/p/block-print-dupatta",
-   "max_stage": "S1",
-   "converted": false,
-   "order_value_inr": null,
-   "terminal_blocker_id": "B03",
-   "terminal_blocker_name": "JS-only price and stock",
-   "blocker_confidence": 0.84,
-   "diagnosis_method": "rule"
-  },
-  {
-   "session_id": "ses_byw5kf59v3",
-   "start_ts": "2026-11-11T11:25:45.000Z",
-   "duration_s": 3,
-   "request_count": 3,
-   "page_count": 3,
-   "identity_tier": "declared",
-   "operator": "Perplexity",
-   "agent_name": "Perplexity-User",
-   "agent_class": "user_fetcher",
-   "identity_confidence": 0.9,
-   "entry_page": "/",
-   "exit_page": "/p/leather-kolhapuri-sandal",
-   "max_stage": "S1",
-   "converted": false,
-   "order_value_inr": null,
-   "terminal_blocker_id": "B03",
-   "terminal_blocker_name": "JS-only price and stock",
-   "blocker_confidence": 0.83,
-   "diagnosis_method": "rule"
-  },
-  {
-   "session_id": "ses_97347aw1da",
-   "start_ts": "2026-11-10T14:21:02.000Z",
-   "duration_s": 5,
+   "session_id": "93da0c60453e3e12",
+   "start_ts": "2026-11-07T23:50:46Z",
+   "duration_s": 2.095,
    "request_count": 3,
    "page_count": 3,
    "identity_tier": "declared",
@@ -188,90 +120,153 @@
    "agent_name": "ChatGPT-User",
    "agent_class": "user_fetcher",
    "identity_confidence": 0.7,
-   "entry_page": "/",
-   "exit_page": "/p/cotton-linen-shirt",
-   "max_stage": "S1",
+   "entry_page": "/search",
+   "exit_page": "/p/white-sprint-knit-runner",
+   "max_stage": "S2",
    "converted": false,
    "order_value_inr": null,
    "terminal_blocker_id": "B03",
-   "terminal_blocker_name": "JS-only price and stock",
-   "blocker_confidence": 0.95,
+   "terminal_blocker_name": "JS-only product content",
+   "blocker_confidence": 0.85,
    "diagnosis_method": "rule"
   },
   {
-   "session_id": "ses_nh7vfaqa7f",
-   "start_ts": "2026-11-10T12:22:59.000Z",
-   "duration_s": 2,
-   "request_count": 2,
-   "page_count": 2,
-   "identity_tier": "declared",
-   "operator": "Perplexity",
-   "agent_name": "Perplexity-User",
-   "agent_class": "user_fetcher",
-   "identity_confidence": 0.9,
-   "entry_page": "/search?q=indigo",
-   "exit_page": "/p/indigo-kurta-set",
-   "max_stage": "S1",
-   "converted": false,
-   "order_value_inr": null,
-   "terminal_blocker_id": "B03",
-   "terminal_blocker_name": "JS-only price and stock",
-   "blocker_confidence": 0.86,
-   "diagnosis_method": "rule"
-  },
-  {
-   "session_id": "ses_5aasj3qeh7",
-   "start_ts": "2026-11-10T09:07:35.000Z",
-   "duration_s": 5,
-   "request_count": 3,
-   "page_count": 3,
+   "session_id": "c6cc77f5352c1f06",
+   "start_ts": "2026-11-07T23:46:27Z",
+   "duration_s": 0.0,
+   "request_count": 1,
+   "page_count": 1,
    "identity_tier": "declared",
    "operator": "Perplexity",
    "agent_name": "Perplexity-User",
    "agent_class": "user_fetcher",
    "identity_confidence": 0.7,
-   "entry_page": "/",
-   "exit_page": "/p/leather-kolhapuri-sandal",
-   "max_stage": "S1",
+   "entry_page": "/p/jaipur-print-long-kurta-in-teal",
+   "exit_page": "/p/jaipur-print-long-kurta-in-teal",
+   "max_stage": "S2",
    "converted": false,
    "order_value_inr": null,
    "terminal_blocker_id": "B03",
-   "terminal_blocker_name": "JS-only price and stock",
-   "blocker_confidence": 0.97,
+   "terminal_blocker_name": "JS-only product content",
+   "blocker_confidence": 0.85,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "d35460bd3279c0bd",
+   "start_ts": "2026-11-07T23:37:32Z",
+   "duration_s": 3.574,
+   "request_count": 4,
+   "page_count": 4,
+   "identity_tier": "declared",
+   "operator": "OpenAI",
+   "agent_name": "ChatGPT-User",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.7,
+   "entry_page": "/search",
+   "exit_page": "/p/navy-daily-walk-sneaker",
+   "max_stage": "S2",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B03",
+   "terminal_blocker_name": "JS-only product content",
+   "blocker_confidence": 0.85,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "a5100909397a23f3",
+   "start_ts": "2026-11-07T23:30:47Z",
+   "duration_s": 2.4,
+   "request_count": 2,
+   "page_count": 2,
+   "identity_tier": "declared",
+   "operator": "OpenAI",
+   "agent_name": "ChatGPT-User",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.7,
+   "entry_page": "/p/sky-blue-linen-casual-shirt",
+   "exit_page": "/p/tan-pace-lite-trainer",
+   "max_stage": "S2",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B03",
+   "terminal_blocker_name": "JS-only product content",
+   "blocker_confidence": 0.85,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "7acfcfae911e2c53",
+   "start_ts": "2026-11-07T23:25:21Z",
+   "duration_s": 2.156,
+   "request_count": 3,
+   "page_count": 3,
+   "identity_tier": "declared",
+   "operator": "OpenAI",
+   "agent_name": "ChatGPT-User",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.7,
+   "entry_page": "/search",
+   "exit_page": "/p/grey-everyday-slip-on",
+   "max_stage": "S2",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B03",
+   "terminal_blocker_name": "JS-only product content",
+   "blocker_confidence": 0.85,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "d79c8e5dc503f8aa",
+   "start_ts": "2026-11-07T23:11:49Z",
+   "duration_s": 4.681,
+   "request_count": 5,
+   "page_count": 5,
+   "identity_tier": "declared",
+   "operator": "Perplexity",
+   "agent_name": "Perplexity-User",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.7,
+   "entry_page": "/search",
+   "exit_page": "/p/indigo-terrain-trail-sneaker",
+   "max_stage": "S2",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B03",
+   "terminal_blocker_name": "JS-only product content",
+   "blocker_confidence": 0.85,
    "diagnosis_method": "rule"
   }
  ],
  "replays": [
   {
-   "replay_id": "rpl_b03",
+   "replay_id": "rp_e74f965e5a",
    "blocker_id": "B03",
-   "blocker_name": "JS-only price and stock",
-   "source_session_id": "ses_j97jxy7z2z",
+   "blocker_name": "JS-only product content",
+   "source_session_id": "93da0c60453e3e12",
    "mode": "fetch",
    "status": "completed",
    "verdict": "confirmed",
-   "started_at": "2026-11-11T17:14:03Z",
-   "finished_at": "2026-11-11T17:14:07.100Z",
-   "steps_count": 1,
-   "verdict_explanation": "Confirmed. A plain HTTP fetch of the product page returned 200 but neither the server HTML nor the JSON-LD contains a price or stock status; both are filled in by JavaScript after load. Fetch-mode replays take no screenshots."
+   "started_at": "2026-11-18T11:52:32Z",
+   "finished_at": "2026-11-18T11:52:36Z",
+   "steps_count": 4,
+   "verdict_explanation": "Reproduced B03 (Price/stock exist only after client-side JS): no price in server-rendered HTML or JSON-LD (client-side only) (step 4)."
   }
  ],
  "recommendation": {
   "rec_id": "rec_B03",
-  "run_id": "run_20261118_0610",
+  "run_id": "b953b1002c33",
   "blocker_id": "B03",
-  "blocker_name": "JS-only price and stock",
-  "title": "Server-render price and stock, and include them in JSON-LD",
-  "body": "Render price, currency and availability in the initial HTML and add a complete schema.org Offer to each product page.",
-  "why_it_helps": "Fetch-based agents never run your JavaScript, so anything rendered client-side is invisible to them.",
-  "how_to_verify": "Step conversion S2 → S3 for user_fetcher sessions should rise.",
-  "verify_metric": "PDP → variant step conversion (fetchers)",
+  "blocker_name": "JS-only product content",
+  "title": "JS-only product content: Server-render price and stock and include them in JSON-LD.",
+  "body": "Server-render price and stock and include them in JSON-LD.",
+  "why_it_helps": "Price and stock are rendered only by client-side JavaScript, so non-JS fetchers see no price.",
+  "how_to_verify": "Site check \"PDP price in server HTML\" passes; fetcher sessions go past the PDP.",
+  "verify_metric": "Agent sessions ending with B03 per day",
   "effort": "M",
   "owner": "Eng",
-  "priority_score": 67886,
-  "risk_inr_base": 135771,
+  "priority_score": 43844,
+  "risk_inr_base": 87687,
   "status": "open",
   "fixed_annotation_id": null,
-  "llm_explanation": null
+  "llm_explanation": "27% of failed agent sessions (498) ended on js-only product content. Typical failing call: GET /p/navy-daily-walk-sneaker -> 200. Fixing it could recover about ₹43,798 a month."
  }
 }

@@ -1,0 +1,298 @@
+{
+ "session": {
+  "session_id": "df378a793c230f9c",
+  "start_ts": "2026-11-09T19:08:46Z",
+  "duration_s": 11.297,
+  "request_count": 18,
+  "page_count": 11,
+  "identity_tier": "suspected",
+  "operator": "unknown",
+  "agent_name": "unknown",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 0.6,
+  "entry_page": "/",
+  "exit_page": "/order/confirmed/DT-D80B940A",
+  "max_stage": "S8",
+  "converted": true,
+  "order_value_inr": 3949.0,
+  "terminal_blocker_id": null,
+  "terminal_blocker_name": null,
+  "blocker_confidence": null,
+  "diagnosis_method": "none"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 60.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "4d5c54a7-cedd-441e-8aaf-9901b37c4fee",
+   "ts": "2026-11-09T19:08:46Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 61,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "1f57ac6c-4e6b-4793-8347-31746410f1b8",
+   "ts": "2026-11-09T19:08:47Z",
+   "offset_ms": 782,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 8,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "aee6bf23-1b2b-43b3-869f-8ee4753b8660",
+   "ts": "2026-11-09T19:08:48Z",
+   "offset_ms": 1498,
+   "method": "GET",
+   "path": "/search",
+   "status": 200,
+   "duration_ms": 18,
+   "page_type": "search",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "f5740c20-629a-4ee8-8557-c8f6ab89f6d3",
+   "ts": "2026-11-09T19:08:49Z",
+   "offset_ms": 2538,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 9,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "254d3632-0d35-472e-861c-8dec6091d57d",
+   "ts": "2026-11-09T19:08:50Z",
+   "offset_ms": 3191,
+   "method": "GET",
+   "path": "/c/mens-sneakers",
+   "status": 200,
+   "duration_ms": 38,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "071668af-b715-4a46-8f68-b7a89fd43844",
+   "ts": "2026-11-09T19:08:51Z",
+   "offset_ms": 4666,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 8,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "2b1c8fdb-472a-4d34-823c-bcea495a2dae",
+   "ts": "2026-11-09T19:08:51Z",
+   "offset_ms": 4750,
+   "method": "GET",
+   "path": "/p/navy-daily-walk-sneaker",
+   "status": 200,
+   "duration_ms": 107,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "ede4917b-1e1e-404f-89f9-8730151dcd91",
+   "ts": "2026-11-09T19:08:52Z",
+   "offset_ms": 5261,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 13,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "c81ce5ed-8a2f-4b5d-8c05-65e0da53e165",
+   "ts": "2026-11-09T19:08:52Z",
+   "offset_ms": 5507,
+   "method": "GET",
+   "path": "/api/products/SNK013/variants",
+   "status": 200,
+   "duration_ms": 53,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "f70460d9-caa3-470d-821a-09fa1fbf8e5f",
+   "ts": "2026-11-09T19:08:53Z",
+   "offset_ms": 6319,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 201,
+   "duration_ms": 14,
+   "page_type": "cart_api",
+   "error_code": null,
+   "stage_id": "S5",
+   "is_asset": false
+  },
+  {
+   "request_id": "93c76ff6-a151-4321-8a96-d262c1bd45a9",
+   "ts": "2026-11-09T19:08:53Z",
+   "offset_ms": 6885,
+   "method": "GET",
+   "path": "/cart",
+   "status": 200,
+   "duration_ms": 194,
+   "page_type": "cart",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "aa1379e4-ead2-4f8e-85fb-b0b969b47565",
+   "ts": "2026-11-09T19:08:54Z",
+   "offset_ms": 7819,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 8,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "e31e9857-d488-4678-803a-16653e4f807a",
+   "ts": "2026-11-09T19:08:55Z",
+   "offset_ms": 8563,
+   "method": "GET",
+   "path": "/checkout",
+   "status": 200,
+   "duration_ms": 76,
+   "page_type": "checkout",
+   "error_code": null,
+   "stage_id": "S6",
+   "is_asset": false
+  },
+  {
+   "request_id": "2ac7f4bc-0fb2-48d3-892f-9684a3513794",
+   "ts": "2026-11-09T19:08:56Z",
+   "offset_ms": 9173,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 9,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "dc271fd0-2e17-45c4-8d37-0424c02ccd53",
+   "ts": "2026-11-09T19:08:56Z",
+   "offset_ms": 9377,
+   "method": "POST",
+   "path": "/api/checkout",
+   "status": 422,
+   "duration_ms": 41,
+   "page_type": "checkout_api",
+   "error_code": "PHONE_FORMAT",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "58620537-6184-45db-83fe-556d41790d82",
+   "ts": "2026-11-09T19:08:57Z",
+   "offset_ms": 10162,
+   "method": "POST",
+   "path": "/api/checkout",
+   "status": 201,
+   "duration_ms": 91,
+   "page_type": "checkout_api",
+   "error_code": null,
+   "stage_id": "S7",
+   "is_asset": false
+  },
+  {
+   "request_id": "84eba163-6adf-46fe-8708-2aa5193e9bee",
+   "ts": "2026-11-09T19:08:57Z",
+   "offset_ms": 10809,
+   "method": "GET",
+   "path": "/order/confirmed/DT-D80B940A",
+   "status": 200,
+   "duration_ms": 164,
+   "page_type": "order_confirm",
+   "error_code": null,
+   "stage_id": "S8",
+   "is_asset": false
+  },
+  {
+   "request_id": "3e6023a4-9c1a-4188-876e-f00bacd9c302",
+   "ts": "2026-11-09T19:08:58Z",
+   "offset_ms": 11297,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 7,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-09T19:08:46Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-09T19:08:51Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-09T19:08:52Z"
+  },
+  {
+   "stage_id": "S5",
+   "first_reached_ts": "2026-11-09T19:08:53Z"
+  },
+  {
+   "stage_id": "S6",
+   "first_reached_ts": "2026-11-09T19:08:55Z"
+  },
+  {
+   "stage_id": "S7",
+   "first_reached_ts": "2026-11-09T19:08:57Z"
+  },
+  {
+   "stage_id": "S8",
+   "first_reached_ts": "2026-11-09T19:08:57Z"
+  }
+ ],
+ "fired_rules": [],
+ "replay_ids": []
+}

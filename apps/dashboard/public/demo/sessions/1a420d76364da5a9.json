@@ -1,0 +1,115 @@
+{
+ "session": {
+  "session_id": "1a420d76364da5a9",
+  "start_ts": "2026-11-14T10:39:25Z",
+  "duration_s": 3.423,
+  "request_count": 4,
+  "page_count": 4,
+  "identity_tier": "suspected",
+  "operator": "unknown",
+  "agent_name": "unknown",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.85,
+  "entry_page": "/",
+  "exit_page": "/api/products/ACC004/variants",
+  "max_stage": "S3",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B08",
+  "terminal_blocker_name": "Out-of-stock dead end",
+  "blocker_confidence": 0.8,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "unknown_key",
+  "signature_agent": "https://agents.desithreads.test",
+  "suspicion_score": 85.0,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "aadc7990-ff05-45e2-8bbd-b5b8c50e42ba",
+   "ts": "2026-11-14T10:39:25Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 178,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "65c6597b-7fb7-42da-8239-67fa52dbcfb2",
+   "ts": "2026-11-14T10:39:27Z",
+   "offset_ms": 1487,
+   "method": "GET",
+   "path": "/c/accessories",
+   "status": 200,
+   "duration_ms": 111,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "8f6acda3-4342-498d-8c03-d17604557398",
+   "ts": "2026-11-14T10:39:28Z",
+   "offset_ms": 2809,
+   "method": "GET",
+   "path": "/p/baseball-cap-in-teal",
+   "status": 200,
+   "duration_ms": 56,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "83cc9c52-044f-4474-83e1-db909c8e8362",
+   "ts": "2026-11-14T10:39:29Z",
+   "offset_ms": 3423,
+   "method": "GET",
+   "path": "/api/products/ACC004/variants",
+   "status": 200,
+   "duration_ms": 57,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-14T10:39:25Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-14T10:39:28Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-14T10:39:29Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B08",
+   "name": "Out-of-stock dead end",
+   "stage": "S3",
+   "confidence": 0.8,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "83cc9c52-044f-4474-83e1-db909c8e8362",
+     "summary": "GET /api/products/ACC004/variants -> 200 (catalog shows 0 in stock for this size and colour)"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

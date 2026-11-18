@@ -1,0 +1,68 @@
+{
+ "session": {
+  "session_id": "97909c0086c088b8",
+  "start_ts": "2026-11-07T16:32:00Z",
+  "duration_s": 0.0,
+  "request_count": 1,
+  "page_count": 1,
+  "identity_tier": "declared",
+  "operator": "OpenAI",
+  "agent_name": "ChatGPT-User",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.7,
+  "entry_page": "/size-guide/mens-sneakers",
+  "exit_page": "/size-guide/mens-sneakers",
+  "max_stage": null,
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B09",
+  "terminal_blocker_name": "Size guide is image-only",
+  "blocker_confidence": 0.85,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "b9cc9733-67ad-4b2a-8cce-117ced443c82",
+   "ts": "2026-11-07T16:32:00Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/size-guide/mens-sneakers",
+   "status": 200,
+   "duration_ms": 92,
+   "page_type": "size_guide",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [],
+ "fired_rules": [
+  {
+   "blocker_id": "B09",
+   "name": "Size guide is image-only",
+   "stage": "S3",
+   "confidence": 0.85,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "b9cc9733-67ad-4b2a-8cce-117ced443c82",
+     "summary": "GET /size-guide/mens-sneakers -> 200"
+    },
+    {
+     "type": "site_check",
+     "check": "size_guide_table",
+     "result": "fail"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

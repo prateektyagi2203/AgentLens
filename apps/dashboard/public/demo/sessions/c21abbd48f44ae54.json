@@ -1,0 +1,135 @@
+{
+ "session": {
+  "session_id": "c21abbd48f44ae54",
+  "start_ts": "2026-11-03T18:04:43Z",
+  "duration_s": 3.766,
+  "request_count": 4,
+  "page_count": 4,
+  "identity_tier": "declared",
+  "operator": "OpenAI",
+  "agent_name": "ChatGPT-User",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.7,
+  "entry_page": "/robots.txt",
+  "exit_page": "/p/pink-metro-mesh-sneaker",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B03",
+  "terminal_blocker_name": "JS-only product content",
+  "blocker_confidence": 0.85,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "e58b8133-2287-481e-8246-48f459b38d1e",
+   "ts": "2026-11-03T18:04:43Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/robots.txt",
+   "status": 200,
+   "duration_ms": 63,
+   "page_type": "robots",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "472c8c2d-1442-4b60-8650-36f2741d781c",
+   "ts": "2026-11-03T18:04:44Z",
+   "offset_ms": 767,
+   "method": "GET",
+   "path": "/search",
+   "status": 200,
+   "duration_ms": 158,
+   "page_type": "search",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "175617db-175d-4553-8159-382bbc7895da",
+   "ts": "2026-11-03T18:04:44Z",
+   "offset_ms": 1316,
+   "method": "GET",
+   "path": "/c/mens-sneakers",
+   "status": 200,
+   "duration_ms": 91,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "6df7352a-c5cd-4e44-8680-5c6809a16951",
+   "ts": "2026-11-03T18:04:47Z",
+   "offset_ms": 3766,
+   "method": "GET",
+   "path": "/p/pink-metro-mesh-sneaker",
+   "status": 200,
+   "duration_ms": 77,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-03T18:04:44Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-03T18:04:47Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B03",
+   "name": "JS-only product content",
+   "stage": "S2",
+   "confidence": 0.85,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "6df7352a-c5cd-4e44-8680-5c6809a16951",
+     "summary": "GET /p/pink-metro-mesh-sneaker -> 200"
+    },
+    {
+     "type": "site_check",
+     "check": "pdp_ssr_price",
+     "result": "fail"
+    }
+   ]
+  },
+  {
+   "blocker_id": "B04",
+   "name": "Missing structured data",
+   "stage": "S2",
+   "confidence": 0.6,
+   "is_terminal": false,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "6df7352a-c5cd-4e44-8680-5c6809a16951",
+     "summary": "GET /p/pink-metro-mesh-sneaker -> 200"
+    },
+    {
+     "type": "site_check",
+     "check": "pdp_jsonld_product",
+     "result": "warn"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

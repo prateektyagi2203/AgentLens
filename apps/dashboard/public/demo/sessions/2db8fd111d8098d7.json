@@ -1,0 +1,212 @@
+{
+ "session": {
+  "session_id": "2db8fd111d8098d7",
+  "start_ts": "2026-11-01T12:15:30Z",
+  "duration_s": 6.112,
+  "request_count": 10,
+  "page_count": 8,
+  "identity_tier": "suspected",
+  "operator": "unknown",
+  "agent_name": "unknown",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 0.7,
+  "entry_page": "/p/cotton-a-line-kurta-in-maroon",
+  "exit_page": "/api/otp/send",
+  "max_stage": "S4",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B06",
+  "terminal_blocker_name": "Login / OTP wall before cart",
+  "blocker_confidence": 0.97,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 70.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "7d620ece-1a94-4c59-8d1c-fbf32467a952",
+   "ts": "2026-11-01T12:15:30Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/p/cotton-a-line-kurta-in-maroon",
+   "status": 200,
+   "duration_ms": 259,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "f27689be-105d-4a33-8e8c-52dde48ad6b2",
+   "ts": "2026-11-01T12:15:31Z",
+   "offset_ms": 1010,
+   "method": "GET",
+   "path": "/api/products/KRT003/variants",
+   "status": 200,
+   "duration_ms": 16,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "4aef5d00-9ce6-4147-83df-a5a6ba5c2d01",
+   "ts": "2026-11-01T12:15:31Z",
+   "offset_ms": 1269,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 5,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "a6668623-be23-4b8d-8c2e-d2d6def41343",
+   "ts": "2026-11-01T12:15:31Z",
+   "offset_ms": 1770,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 52,
+   "page_type": "cart_api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "fc064e0d-cccd-40a2-8f2c-a13863f73656",
+   "ts": "2026-11-01T12:15:32Z",
+   "offset_ms": 2521,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 34,
+   "page_type": "cart_api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "dbb8455a-380b-49da-8e0b-5db6586c8f9d",
+   "ts": "2026-11-01T12:15:33Z",
+   "offset_ms": 3313,
+   "method": "GET",
+   "path": "/api/serviceability",
+   "status": 200,
+   "duration_ms": 32,
+   "page_type": "serviceability_api",
+   "error_code": null,
+   "stage_id": "S4",
+   "is_asset": false
+  },
+  {
+   "request_id": "d12aab67-b775-4fa6-8fbc-6cf8b2123984",
+   "ts": "2026-11-01T12:15:34Z",
+   "offset_ms": 4078,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 401,
+   "duration_ms": 48,
+   "page_type": "cart_api",
+   "error_code": "AUTH_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "6796d42e-eb19-4211-8f6e-f0ea3f363bea",
+   "ts": "2026-11-01T12:15:34Z",
+   "offset_ms": 4739,
+   "method": "GET",
+   "path": "/login",
+   "status": 200,
+   "duration_ms": 178,
+   "page_type": "login",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "e118dbc1-152c-4dca-8935-e29d075545a8",
+   "ts": "2026-11-01T12:15:35Z",
+   "offset_ms": 5640,
+   "method": "POST",
+   "path": "/api/otp/send",
+   "status": 200,
+   "duration_ms": 44,
+   "page_type": "otp_api",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "c083fba4-fbd3-44ba-87c5-0fa8a9d44917",
+   "ts": "2026-11-01T12:15:36Z",
+   "offset_ms": 6112,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 8,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-01T12:15:30Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-01T12:15:31Z"
+  },
+  {
+   "stage_id": "S4",
+   "first_reached_ts": "2026-11-01T12:15:33Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B06",
+   "name": "Login / OTP wall before cart",
+   "stage": "S5",
+   "confidence": 0.97,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "d12aab67-b775-4fa6-8fbc-6cf8b2123984",
+     "summary": "POST /api/cart -> 401 AUTH_REQUIRED"
+    }
+   ]
+  },
+  {
+   "blocker_id": "B05",
+   "name": "Pincode / serviceability wall",
+   "stage": "S5",
+   "confidence": 0.95,
+   "is_terminal": false,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "fc064e0d-cccd-40a2-8f2c-a13863f73656",
+     "summary": "POST /api/cart -> 409 PINCODE_REQUIRED"
+    },
+    {
+     "type": "request",
+     "request_id": "a6668623-be23-4b8d-8c2e-d2d6def41343",
+     "summary": "POST /api/cart -> 409 PINCODE_REQUIRED"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

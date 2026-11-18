@@ -1,0 +1,293 @@
+{
+ "session": {
+  "session_id": "9cbe3adcbafcd833",
+  "start_ts": "2026-11-11T17:01:55Z",
+  "duration_s": 13.525,
+  "request_count": 18,
+  "page_count": 3,
+  "identity_tier": "verified",
+  "operator": "AgentLens Test Operator",
+  "agent_name": "TestSignedAgent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 1.0,
+  "entry_page": "/",
+  "exit_page": "/p/bandhani-flared-kurta-in-sky-blue",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B07",
+  "terminal_blocker_name": "Interstitial / popup overlay",
+  "blocker_confidence": 0.6,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "valid",
+  "signature_agent": "https://agents.desithreads.test",
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 TestSignedAgent/1.0",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "0c969c43-5541-4c11-87bc-72c2c2e19d9b",
+   "ts": "2026-11-11T17:01:55Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 315,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "a1e66d9c-c8f1-43d1-819e-9d2a4280abed",
+   "ts": "2026-11-11T17:01:55Z",
+   "offset_ms": 411,
+   "method": "GET",
+   "path": "/_next/static/chunks/main.js",
+   "status": 200,
+   "duration_ms": 11,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "01d3630a-50ab-4ef8-81b0-310a6beef363",
+   "ts": "2026-11-11T17:01:55Z",
+   "offset_ms": 484,
+   "method": "GET",
+   "path": "/img/p/bandhani-flared-kurta-in-sky-blue-3.svg",
+   "status": 200,
+   "duration_ms": 11,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "d857ed36-fa56-4b95-8afd-71631be80af0",
+   "ts": "2026-11-11T17:01:55Z",
+   "offset_ms": 491,
+   "method": "GET",
+   "path": "/_next/static/css/app.css",
+   "status": 200,
+   "duration_ms": 8,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "c789586a-4eda-4c46-8154-72de451b3034",
+   "ts": "2026-11-11T17:01:55Z",
+   "offset_ms": 533,
+   "method": "GET",
+   "path": "/_next/static/chunks/app.js",
+   "status": 200,
+   "duration_ms": 22,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "02eaa5e6-2641-4dee-8588-9e5f430b3cbb",
+   "ts": "2026-11-11T17:01:55Z",
+   "offset_ms": 546,
+   "method": "GET",
+   "path": "/img/p/printed-pocket-square-in-maroon-3.svg",
+   "status": 200,
+   "duration_ms": 19,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "b3af5ab5-df09-4b8f-8a00-80dee0fa5d83",
+   "ts": "2026-11-11T17:01:55Z",
+   "offset_ms": 576,
+   "method": "GET",
+   "path": "/favicon.ico",
+   "status": 200,
+   "duration_ms": 30,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "b61951c0-b898-45dc-87a4-68528a5cf8a1",
+   "ts": "2026-11-11T17:01:55Z",
+   "offset_ms": 778,
+   "method": "GET",
+   "path": "/img/p/daily-wear-pintuck-kurta-in-teal-3.svg",
+   "status": 200,
+   "duration_ms": 10,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "38ce9187-ded0-48f5-899e-c433166a0cbe",
+   "ts": "2026-11-11T17:01:55Z",
+   "offset_ms": 853,
+   "method": "GET",
+   "path": "/img/p/maroon-street-runner-3.svg",
+   "status": 200,
+   "duration_ms": 11,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "29bdb1f2-a27e-4b4f-88a7-96f9cca474b2",
+   "ts": "2026-11-11T17:01:56Z",
+   "offset_ms": 1196,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 16,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "bb99aa1f-9040-4b38-8e15-fa9b92193083",
+   "ts": "2026-11-11T17:02:01Z",
+   "offset_ms": 6906,
+   "method": "GET",
+   "path": "/c/womens-kurtas",
+   "status": 200,
+   "duration_ms": 251,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "f944ffc4-c492-4b3a-8cb8-2e2eb7b761a3",
+   "ts": "2026-11-11T17:02:02Z",
+   "offset_ms": 7600,
+   "method": "GET",
+   "path": "/img/p/indigo-terrain-trail-sneaker-1.svg",
+   "status": 200,
+   "duration_ms": 8,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "ba38320f-243c-4368-8a1c-d8a9af6a39a5",
+   "ts": "2026-11-11T17:02:02Z",
+   "offset_ms": 7710,
+   "method": "GET",
+   "path": "/img/p/mustard-alley-suede-sneaker-2.svg",
+   "status": 200,
+   "duration_ms": 8,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "ce85feb4-8b15-4059-8c56-7394a06dd2c5",
+   "ts": "2026-11-11T17:02:02Z",
+   "offset_ms": 7838,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 5,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "12f369d4-45d4-4539-8262-0c2d9f7b51f3",
+   "ts": "2026-11-11T17:02:07Z",
+   "offset_ms": 12930,
+   "method": "GET",
+   "path": "/p/bandhani-flared-kurta-in-sky-blue",
+   "status": 200,
+   "duration_ms": 169,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "fb31bd69-ba67-4283-84e7-05948a04a8ab",
+   "ts": "2026-11-11T17:02:08Z",
+   "offset_ms": 13442,
+   "method": "GET",
+   "path": "/img/p/handloom-yoke-kurta-in-olive-3.svg",
+   "status": 200,
+   "duration_ms": 7,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "986a7fa5-e7f5-4346-8812-b0fbe43c7e99",
+   "ts": "2026-11-11T17:02:08Z",
+   "offset_ms": 13479,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 8,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "fbf35d61-059c-44e3-8a36-cf4c29816720",
+   "ts": "2026-11-11T17:02:08Z",
+   "offset_ms": 13525,
+   "method": "GET",
+   "path": "/img/p/cotton-a-line-kurta-in-maroon-2.svg",
+   "status": 200,
+   "duration_ms": 11,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-11T17:01:55Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-11T17:02:07Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B07",
+   "name": "Interstitial / popup overlay",
+   "stage": "S2",
+   "confidence": 0.6,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "12f369d4-45d4-4539-8262-0c2d9f7b51f3",
+     "summary": "GET /p/bandhani-flared-kurta-in-sky-blue -> 200"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

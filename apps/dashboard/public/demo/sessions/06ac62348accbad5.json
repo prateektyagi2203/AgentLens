@@ -1,0 +1,148 @@
+{
+ "session": {
+  "session_id": "06ac62348accbad5",
+  "start_ts": "2026-11-03T23:08:32Z",
+  "duration_s": 41.178,
+  "request_count": 8,
+  "page_count": 4,
+  "identity_tier": "human",
+  "operator": "human",
+  "agent_name": "Browser (human)",
+  "agent_class": "human",
+  "identity_confidence": 0.85,
+  "entry_page": "/",
+  "exit_page": "/p/maroon-street-runner",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": null,
+  "terminal_blocker_name": null,
+  "blocker_confidence": null,
+  "diagnosis_method": "none"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 15.0,
+  "user_agent": "Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "b4b5a0f7-7e2a-4125-8338-a3b74a567afd",
+   "ts": "2026-11-03T23:08:32Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 73,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "6f4300e7-7a97-4c90-8370-223d55311052",
+   "ts": "2026-11-03T23:08:33Z",
+   "offset_ms": 1350,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 8,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "d4ab590c-7d37-4b0d-85aa-dcc52304516f",
+   "ts": "2026-11-03T23:08:43Z",
+   "offset_ms": 11223,
+   "method": "GET",
+   "path": "/c/accessories",
+   "status": 200,
+   "duration_ms": 61,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "225a5c6f-f13f-4f91-82eb-c8d3a3df31a8",
+   "ts": "2026-11-03T23:08:44Z",
+   "offset_ms": 11848,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 8,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "2c6b690d-9a8b-4eae-898a-b4a34b9738b5",
+   "ts": "2026-11-03T23:09:10Z",
+   "offset_ms": 38605,
+   "method": "GET",
+   "path": "/p/linen-mandarin-kurta-in-white",
+   "status": 200,
+   "duration_ms": 129,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "ec129a53-c300-449a-8df4-01894aeb52f5",
+   "ts": "2026-11-03T23:09:11Z",
+   "offset_ms": 38988,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 8,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "0b6ed3b4-3c03-4d94-804f-8f1a50fe7242",
+   "ts": "2026-11-03T23:09:12Z",
+   "offset_ms": 40616,
+   "method": "GET",
+   "path": "/p/maroon-street-runner",
+   "status": 200,
+   "duration_ms": 60,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "4ded5b74-987c-4639-8cb5-c468b6025bf8",
+   "ts": "2026-11-03T23:09:13Z",
+   "offset_ms": 41178,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 10,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-03T23:08:32Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-03T23:09:10Z"
+  }
+ ],
+ "fired_rules": [],
+ "replay_ids": []
+}

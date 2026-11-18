@@ -44,4 +44,5 @@ def test_only_eval_package_reads_ground_truth():
         for f in API.rglob("*.py")
         if "ground_truth" in f.read_text(encoding="utf-8")
     }
-    assert all(r.startswith("eval/") or r == "db.py" for r in readers), readers
+    # snapshot.py only names the key to refuse it in exported files; it never reads the table.
+    assert all(r.startswith("eval/") or r in ("db.py", "snapshot.py") for r in readers), readers

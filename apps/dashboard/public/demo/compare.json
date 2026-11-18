@@ -2,288 +2,225 @@
  "segment": "all_agents",
  "a": {
   "window": {
-   "from": "2026-11-05",
-   "to": "2026-11-11",
+   "from": "2026-11-01",
+   "to": "2026-11-07",
    "days": 7
   },
-  "sessions": 4145,
-  "converted": 145,
-  "conversion": 0.03498190591073583,
-  "agent_revenue_inr": 319000,
+  "sessions": 1489,
+  "converted": 0,
+  "conversion": 0.0,
+  "agent_revenue_inr": 0.0,
   "risk_inr": {
-   "low": 1452752,
-   "base": 2723912,
-   "high": 4358262
+   "low": 1028030,
+   "base": 1927555,
+   "high": 3084088
   },
   "funnel": {
    "segment": "all_agents",
-   "sessions": 4145,
-   "conversion": 0.03498190591073583,
+   "sessions": 1489,
+   "conversion": 0.0,
    "steps": [
     {
      "stage_id": "S1",
      "name": "Landing / Search",
-     "sessions": 4145,
-     "step_conversion": 1,
-     "drop_off": 0,
-     "overall_conversion": 1
+     "sessions": 1489,
+     "step_conversion": 1.0,
+     "drop_off": 0.0,
+     "overall_conversion": 1.0
     },
     {
      "stage_id": "S2",
      "name": "Product page",
-     "sessions": 2935,
-     "step_conversion": 0.7080820265379976,
-     "drop_off": 0.29191797346200243,
-     "overall_conversion": 0.7080820265379976
+     "sessions": 1209,
+     "step_conversion": 0.8119543317662861,
+     "drop_off": 0.18804566823371394,
+     "overall_conversion": 0.8119543317662861
     },
     {
      "stage_id": "S3",
      "name": "Variant selected",
-     "sessions": 2555,
-     "step_conversion": 0.8705281090289608,
-     "drop_off": 0.12947189097103917,
-     "overall_conversion": 0.6164053075995175
+     "sessions": 551,
+     "step_conversion": 0.4557485525227461,
+     "drop_off": 0.544251447477254,
+     "overall_conversion": 0.3700470114170584
     },
     {
      "stage_id": "S4",
      "name": "Delivery check",
-     "sessions": 2115,
-     "step_conversion": 0.8277886497064579,
-     "drop_off": 0.17221135029354206,
-     "overall_conversion": 0.5102533172496985
+     "sessions": 447,
+     "step_conversion": 0.8112522686025408,
+     "drop_off": 0.18874773139745915,
+     "overall_conversion": 0.30020147750167897
     },
     {
      "stage_id": "S5",
      "name": "Added to cart",
-     "sessions": 395,
-     "step_conversion": 0.1867612293144208,
-     "drop_off": 0.8132387706855793,
-     "overall_conversion": 0.09529553679131483
+     "sessions": 0,
+     "step_conversion": 0.0,
+     "drop_off": 1.0,
+     "overall_conversion": 0.0
     },
     {
      "stage_id": "S6",
      "name": "Checkout started",
-     "sessions": 385,
-     "step_conversion": 0.9746835443037974,
-     "drop_off": 0.025316455696202556,
-     "overall_conversion": 0.09288299155609167
+     "sessions": 0,
+     "step_conversion": 0.0,
+     "drop_off": 0.0,
+     "overall_conversion": 0.0
     },
     {
      "stage_id": "S7",
      "name": "Checkout submitted",
-     "sessions": 145,
-     "step_conversion": 0.37662337662337664,
-     "drop_off": 0.6233766233766234,
-     "overall_conversion": 0.03498190591073583
+     "sessions": 0,
+     "step_conversion": 0.0,
+     "drop_off": 0.0,
+     "overall_conversion": 0.0
     },
     {
      "stage_id": "S8",
      "name": "Order placed",
-     "sessions": 145,
-     "step_conversion": 1,
-     "drop_off": 0,
-     "overall_conversion": 0.03498190591073583
+     "sessions": 0,
+     "step_conversion": 0.0,
+     "drop_off": 0.0,
+     "overall_conversion": 0.0
     }
    ]
   },
   "blocker_shares": [
    {
-    "blocker_id": "B05",
-    "name": "Pincode wall",
-    "sessions_blocked": 1240,
-    "share_of_failed": 0.31,
-    "risk_base_inr": 1262674
-   },
-   {
     "blocker_id": "B06",
     "name": "Login / OTP wall before cart",
-    "sessions_blocked": 480,
-    "share_of_failed": 0.12,
-    "risk_base_inr": 488777
-   },
-   {
-    "blocker_id": "B10",
-    "name": "Checkout validation failure",
-    "sessions_blocked": 200,
-    "share_of_failed": 0.05,
-    "risk_base_inr": 452571
-   },
-   {
-    "blocker_id": "B03",
-    "name": "JS-only price and stock",
-    "sessions_blocked": 600,
-    "share_of_failed": 0.15,
-    "risk_base_inr": 135771
+    "sessions_blocked": 417,
+    "share_of_failed": 0.2800537273337811,
+    "risk_base_inr": 1218645
    },
    {
     "blocker_id": "B09",
-    "name": "Size guide image-only",
-    "sessions_blocked": 260,
-    "share_of_failed": 0.065,
-    "risk_base_inr": 102960
+    "name": "Size guide is image-only",
+    "sessions_blocked": 221,
+    "share_of_failed": 0.14842175957018133,
+    "risk_base_inr": 326798
    },
    {
-    "blocker_id": "B11",
-    "name": "Unsupported payment step",
-    "sessions_blocked": 40,
-    "share_of_failed": 0.01,
-    "risk_base_inr": 90514
+    "blocker_id": "B05",
+    "name": "Pincode / serviceability wall",
+    "sessions_blocked": 89,
+    "share_of_failed": 0.05977165883143049,
+    "risk_base_inr": 260095
    },
    {
-    "blocker_id": "B07",
-    "name": "App-download interstitial",
-    "sessions_blocked": 320,
-    "share_of_failed": 0.08,
-    "risk_base_inr": 72411
+    "blocker_id": "B03",
+    "name": "JS-only product content",
+    "sessions_blocked": 498,
+    "share_of_failed": 0.33445265278710545,
+    "risk_base_inr": 87687
    },
    {
     "blocker_id": "B08",
     "name": "Out-of-stock dead end",
-    "sessions_blocked": 120,
-    "share_of_failed": 0.03,
-    "risk_base_inr": 47520
+    "sessions_blocked": 15,
+    "share_of_failed": 0.010073875083948958,
+    "risk_base_inr": 22181
    },
    {
-    "blocker_id": "B15",
-    "name": "Price mismatch PDP vs cart",
-    "sessions_blocked": 10,
-    "share_of_failed": 0.0025,
-    "risk_base_inr": 16971
-   },
-   {
-    "blocker_id": "B01",
-    "name": "Bot wall / WAF block",
-    "sessions_blocked": 80,
-    "share_of_failed": 0.02,
-    "risk_base_inr": 13577
-   },
-   {
-    "blocker_id": "B04",
-    "name": "Missing structured data",
-    "sessions_blocked": 50,
-    "share_of_failed": 0.0125,
-    "risk_base_inr": 11314
-   },
-   {
-    "blocker_id": "B12",
-    "name": "Rate limited",
-    "sessions_blocked": 60,
-    "share_of_failed": 0.015,
-    "risk_base_inr": 10183
-   },
-   {
-    "blocker_id": "B13",
-    "name": "Slow response / timeout",
-    "sessions_blocked": 50,
-    "share_of_failed": 0.0125,
-    "risk_base_inr": 8486
-   },
-   {
-    "blocker_id": "B16",
-    "name": "Broken link / 404",
-    "sessions_blocked": 30,
-    "share_of_failed": 0.0075,
-    "risk_base_inr": 6789
-   },
-   {
-    "blocker_id": "B14",
-    "name": "robots.txt disallow",
-    "sessions_blocked": 20,
-    "share_of_failed": 0.005,
-    "risk_base_inr": 3394
+    "blocker_id": "B07",
+    "name": "Interstitial / popup overlay",
+    "sessions_blocked": 69,
+    "share_of_failed": 0.04633982538616521,
+    "risk_base_inr": 12149
    },
    {
     "blocker_id": "B99",
     "name": "Unknown",
-    "sessions_blocked": 440,
-    "share_of_failed": 0.11,
+    "sessions_blocked": 2,
+    "share_of_failed": 0.001343183344526528,
     "risk_base_inr": 0
    }
   ]
  },
  "b": {
   "window": {
-   "from": "2026-11-12",
-   "to": "2026-11-18",
+   "from": "2026-11-08",
+   "to": "2026-11-14",
    "days": 7
   },
-  "sessions": 4315,
-  "converted": 325,
-  "conversion": 0.07531865585168018,
-  "agent_revenue_inr": 746036,
+  "sessions": 1420,
+  "converted": 73,
+  "conversion": 0.05140845070422535,
+  "agent_revenue_inr": 160817.0,
   "risk_inr": {
-   "low": 1283325,
-   "base": 2406236,
-   "high": 3849978
+   "low": 217122,
+   "base": 407106,
+   "high": 587924
   },
   "funnel": {
    "segment": "all_agents",
-   "sessions": 4315,
-   "conversion": 0.07531865585168018,
+   "sessions": 1420,
+   "conversion": 0.05140845070422535,
    "steps": [
     {
      "stage_id": "S1",
      "name": "Landing / Search",
-     "sessions": 4315,
-     "step_conversion": 1,
-     "drop_off": 0,
-     "overall_conversion": 1
+     "sessions": 1420,
+     "step_conversion": 1.0,
+     "drop_off": 0.0,
+     "overall_conversion": 1.0
     },
     {
      "stage_id": "S2",
      "name": "Product page",
-     "sessions": 2855,
-     "step_conversion": 0.6616454229432214,
-     "drop_off": 0.3383545770567786,
-     "overall_conversion": 0.6616454229432214
+     "sessions": 1142,
+     "step_conversion": 0.8042253521126761,
+     "drop_off": 0.1957746478873239,
+     "overall_conversion": 0.8042253521126761
     },
     {
      "stage_id": "S3",
      "name": "Variant selected",
-     "sessions": 1525,
-     "step_conversion": 0.5341506129597198,
-     "drop_off": 0.4658493870402802,
-     "overall_conversion": 0.35341830822711473
+     "sessions": 626,
+     "step_conversion": 0.5481611208406305,
+     "drop_off": 0.4518388791593695,
+     "overall_conversion": 0.44084507042253523
     },
     {
      "stage_id": "S4",
      "name": "Delivery check",
-     "sessions": 1005,
-     "step_conversion": 0.659016393442623,
-     "drop_off": 0.34098360655737703,
-     "overall_conversion": 0.23290845886442643
+     "sessions": 608,
+     "step_conversion": 0.9712460063897763,
+     "drop_off": 0.028753993610223683,
+     "overall_conversion": 0.428169014084507
     },
     {
      "stage_id": "S5",
      "name": "Added to cart",
-     "sessions": 1005,
-     "step_conversion": 1,
-     "drop_off": 0,
-     "overall_conversion": 0.23290845886442643
+     "sessions": 505,
+     "step_conversion": 0.8305921052631579,
+     "drop_off": 0.16940789473684215,
+     "overall_conversion": 0.35563380281690143
     },
     {
      "stage_id": "S6",
      "name": "Checkout started",
-     "sessions": 875,
-     "step_conversion": 0.8706467661691543,
-     "drop_off": 0.12935323383084574,
-     "overall_conversion": 0.20278099652375434
+     "sessions": 330,
+     "step_conversion": 0.6534653465346535,
+     "drop_off": 0.3465346534653465,
+     "overall_conversion": 0.2323943661971831
     },
     {
      "stage_id": "S7",
      "name": "Checkout submitted",
-     "sessions": 325,
-     "step_conversion": 0.37142857142857144,
-     "drop_off": 0.6285714285714286,
-     "overall_conversion": 0.07531865585168018
+     "sessions": 73,
+     "step_conversion": 0.22121212121212122,
+     "drop_off": 0.7787878787878788,
+     "overall_conversion": 0.05140845070422535
     },
     {
      "stage_id": "S8",
      "name": "Order placed",
-     "sessions": 325,
-     "step_conversion": 1,
-     "drop_off": 0,
-     "overall_conversion": 0.07531865585168018
+     "sessions": 73,
+     "step_conversion": 1.0,
+     "drop_off": 0.0,
+     "overall_conversion": 0.05140845070422535
     }
    ]
   },
@@ -291,130 +228,67 @@
    {
     "blocker_id": "B10",
     "name": "Checkout validation failure",
-    "sessions_blocked": 380,
-    "share_of_failed": 0.09523809523809523,
-    "risk_base_inr": 897211
+    "sessions_blocked": 42,
+    "share_of_failed": 0.031180400890868598,
+    "risk_base_inr": 237921
    },
    {
     "blocker_id": "B09",
-    "name": "Size guide image-only",
-    "sessions_blocked": 1000,
-    "share_of_failed": 0.2506265664160401,
-    "risk_base_inr": 413189
-   },
-   {
-    "blocker_id": "B11",
-    "name": "Unsupported payment step",
-    "sessions_blocked": 170,
-    "share_of_failed": 0.042606516290726815,
-    "risk_base_inr": 401384
+    "name": "Size guide is image-only",
+    "sessions_blocked": 198,
+    "share_of_failed": 0.14699331848552338,
+    "risk_base_inr": 130797
    },
    {
     "blocker_id": "B07",
-    "name": "App-download interstitial",
-    "sessions_blocked": 1075,
-    "share_of_failed": 0.2694235588972431,
-    "risk_base_inr": 253816
+    "name": "Interstitial / popup overlay",
+    "sessions_blocked": 75,
+    "share_of_failed": 0.0556792873051225,
+    "risk_base_inr": 27158
    },
    {
     "blocker_id": "B08",
     "name": "Out-of-stock dead end",
-    "sessions_blocked": 330,
-    "share_of_failed": 0.08270676691729323,
-    "risk_base_inr": 136352
-   },
-   {
-    "blocker_id": "B02",
-    "name": "Captcha",
-    "sessions_blocked": 70,
-    "share_of_failed": 0.017543859649122806,
-    "risk_base_inr": 123957
-   },
-   {
-    "blocker_id": "B15",
-    "name": "Price mismatch PDP vs cart",
-    "sessions_blocked": 60,
-    "share_of_failed": 0.015037593984962405,
-    "risk_base_inr": 106249
-   },
-   {
-    "blocker_id": "B01",
-    "name": "Bot wall / WAF block",
-    "sessions_blocked": 110,
-    "share_of_failed": 0.02756892230576441,
-    "risk_base_inr": 19479
-   },
-   {
-    "blocker_id": "B12",
-    "name": "Rate limited",
-    "sessions_blocked": 80,
-    "share_of_failed": 0.020050125313283207,
-    "risk_base_inr": 14166
-   },
-   {
-    "blocker_id": "B04",
-    "name": "Missing structured data",
-    "sessions_blocked": 60,
-    "share_of_failed": 0.015037593984962405,
-    "risk_base_inr": 14166
-   },
-   {
-    "blocker_id": "B13",
-    "name": "Slow response / timeout",
-    "sessions_blocked": 70,
-    "share_of_failed": 0.017543859649122806,
-    "risk_base_inr": 12396
-   },
-   {
-    "blocker_id": "B16",
-    "name": "Broken link / 404",
-    "sessions_blocked": 40,
-    "share_of_failed": 0.010025062656641603,
-    "risk_base_inr": 9444
-   },
-   {
-    "blocker_id": "B14",
-    "name": "robots.txt disallow",
-    "sessions_blocked": 25,
-    "share_of_failed": 0.006265664160401002,
-    "risk_base_inr": 4427
+    "sessions_blocked": 17,
+    "share_of_failed": 0.012620638455827766,
+    "risk_base_inr": 11230
    },
    {
     "blocker_id": "B99",
     "name": "Unknown",
-    "sessions_blocked": 520,
-    "share_of_failed": 0.13032581453634084,
+    "sessions_blocked": 236,
+    "share_of_failed": 0.17520415738678544,
     "risk_base_inr": 0
    }
   ]
  },
  "delta": {
-  "sessions": 170,
-  "conversion_pp": 4.033674994094436,
-  "conversion_relative": 1.153074679346306,
-  "agent_revenue_inr": 427036,
-  "risk_base_inr": -317676
+  "sessions": -69,
+  "conversion_pp": 5.140845070422535,
+  "conversion_relative": null,
+  "agent_revenue_inr": 160817.0,
+  "risk_base_inr": -1520449
  },
  "significance": {
   "test": "two_proportion_z",
-  "enough_data": true,
   "min_sessions": 100,
-  "z": 8.097,
-  "p_value": 4.44e-16,
+  "enough_data": true,
+  "z": 8.861,
+  "p_value": 0.0,
   "significant": true,
   "note": "The change in conversion is statistically significant (two-proportion z-test, p < 0.001)."
  },
  "suggested_windows": [
   {
-   "label": "Around \"Switched off pincode wall, OTP-before-cart and JS-only price\"",
-   "annotation_id": "ann_0002",
+   "label": "Around \"F03 off; F05 off; F06 off\"",
+   "annotation_id": "ann-8e6b1c5c0056d46a",
    "a": {
-    "from": "2026-11-05",
-    "to": "2026-11-11"
+    "from": "2026-11-01",
+    "to": "2026-11-07"
    },
    "b": {
-    "from": "2026-11-12",
-    "to": "2026-11-18"
+    "from": "2026-11-08",
+    "to": "2026-11-14"
    }
   }
  ]

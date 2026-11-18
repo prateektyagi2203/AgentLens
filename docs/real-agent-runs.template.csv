@@ -1,0 +1,2 @@
+date,agent,task_id,task_prompt,store_url,toggles_state,outcome,blocker_observed,notes,recording_file,window_start,window_end
+2026-01-01,ChatGPT agent,T1,"On <URL>, find white sneakers under INR 4000 in UK size 9.",https://example.trycloudflare.com,"F05=on;F06=on;others=off",partial,B05,"Stopped at the pincode modal",recordings/2026-01-01-chatgpt-T1.mp4,2026-01-01T10:00:00Z,2026-01-01T10:06:00Z

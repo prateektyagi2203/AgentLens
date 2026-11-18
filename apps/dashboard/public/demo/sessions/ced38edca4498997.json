@@ -1,0 +1,481 @@
+{
+ "session": {
+  "session_id": "ced38edca4498997",
+  "start_ts": "2026-11-07T10:09:05Z",
+  "duration_s": 15.511,
+  "request_count": 30,
+  "page_count": 11,
+  "identity_tier": "verified",
+  "operator": "AgentLens Test Operator",
+  "agent_name": "TestSignedAgent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 1.0,
+  "entry_page": "/",
+  "exit_page": "/api/otp/send",
+  "max_stage": "S4",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B06",
+  "terminal_blocker_name": "Login / OTP wall before cart",
+  "blocker_confidence": 0.97,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "valid",
+  "signature_agent": "https://agents.desithreads.test",
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 TestSignedAgent/1.0",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "6ab4d77b-96ef-4a13-84fe-0c5fc1e5b9d8",
+   "ts": "2026-11-07T10:09:05Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 138,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "041ef001-6084-446c-8e7e-6dba01a2eb95",
+   "ts": "2026-11-07T10:09:05Z",
+   "offset_ms": 189,
+   "method": "GET",
+   "path": "/favicon.ico",
+   "status": 200,
+   "duration_ms": 13,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "dea949f6-7e7a-44c8-8497-b342389fdbab",
+   "ts": "2026-11-07T10:09:05Z",
+   "offset_ms": 211,
+   "method": "GET",
+   "path": "/_next/static/chunks/app.js",
+   "status": 200,
+   "duration_ms": 22,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "9b9d3336-93fe-4b3a-8cd2-068b558e1cd3",
+   "ts": "2026-11-07T10:09:05Z",
+   "offset_ms": 217,
+   "method": "GET",
+   "path": "/img/p/black-classic-canvas-low-2.svg",
+   "status": 200,
+   "duration_ms": 6,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "916b6115-e4c2-4b04-863d-a2bda0f71f7f",
+   "ts": "2026-11-07T10:09:06Z",
+   "offset_ms": 620,
+   "method": "GET",
+   "path": "/_next/static/css/app.css",
+   "status": 200,
+   "duration_ms": 16,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "82a05d26-e5ee-40e4-8e87-3b2e77b19459",
+   "ts": "2026-11-07T10:09:06Z",
+   "offset_ms": 632,
+   "method": "GET",
+   "path": "/_next/static/chunks/main.js",
+   "status": 200,
+   "duration_ms": 9,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "fe42abb7-4912-48d9-8959-8f462fd71ad1",
+   "ts": "2026-11-07T10:09:06Z",
+   "offset_ms": 764,
+   "method": "GET",
+   "path": "/img/p/sky-blue-chambray-work-shirt-1.svg",
+   "status": 200,
+   "duration_ms": 6,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "918fcf9b-196d-49af-89d8-b41a58ca0245",
+   "ts": "2026-11-07T10:09:06Z",
+   "offset_ms": 1552,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 5,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "5ead3a37-9cb3-4769-811d-3ce99f8af91e",
+   "ts": "2026-11-07T10:09:08Z",
+   "offset_ms": 3297,
+   "method": "GET",
+   "path": "/c/mens-shirts",
+   "status": 200,
+   "duration_ms": 88,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "014fcf08-975c-45fb-8607-c865c75c8867",
+   "ts": "2026-11-07T10:09:08Z",
+   "offset_ms": 3419,
+   "method": "GET",
+   "path": "/img/p/bifold-wallet-in-black-3.svg",
+   "status": 200,
+   "duration_ms": 13,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "7b464147-562f-49ca-81e2-ad2f25549d89",
+   "ts": "2026-11-07T10:09:09Z",
+   "offset_ms": 3644,
+   "method": "GET",
+   "path": "/img/p/black-checked-flannel-shirt-2.svg",
+   "status": 200,
+   "duration_ms": 13,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "685c36b9-3e9b-420e-82ef-57fbfdbf035f",
+   "ts": "2026-11-07T10:09:09Z",
+   "offset_ms": 4350,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 9,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "4074f899-9f2e-4e10-8315-71bf5a3be677",
+   "ts": "2026-11-07T10:09:11Z",
+   "offset_ms": 5803,
+   "method": "GET",
+   "path": "/p/sky-blue-cuban-collar-shirt",
+   "status": 200,
+   "duration_ms": 74,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "3c16dc04-f446-4000-8c99-1af2c96acbae",
+   "ts": "2026-11-07T10:09:11Z",
+   "offset_ms": 5971,
+   "method": "GET",
+   "path": "/img/p/grey-everyday-slip-on-2.svg",
+   "status": 200,
+   "duration_ms": 6,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "839ae2e6-7e23-4e06-8421-56c96b5156d1",
+   "ts": "2026-11-07T10:09:11Z",
+   "offset_ms": 6097,
+   "method": "GET",
+   "path": "/img/p/black-checked-flannel-shirt-3.svg",
+   "status": 200,
+   "duration_ms": 26,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "6ba617bc-a1e4-4f8e-8824-4678c763e5fb",
+   "ts": "2026-11-07T10:09:11Z",
+   "offset_ms": 6115,
+   "method": "GET",
+   "path": "/img/p/sky-blue-studio-court-low-3.svg",
+   "status": 200,
+   "duration_ms": 8,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "1bd8dac5-64fb-41c4-89b3-a2b4c7472aec",
+   "ts": "2026-11-07T10:09:11Z",
+   "offset_ms": 6476,
+   "method": "GET",
+   "path": "/img/p/pink-metro-mesh-sneaker-2.svg",
+   "status": 200,
+   "duration_ms": 12,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "492a5e62-ef7a-44e7-8cf8-321d3378283a",
+   "ts": "2026-11-07T10:09:11Z",
+   "offset_ms": 6513,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 13,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "2364a8a5-cd85-4364-830a-ca6cd836eba4",
+   "ts": "2026-11-07T10:09:11Z",
+   "offset_ms": 6527,
+   "method": "GET",
+   "path": "/api/products/SHT013/variants",
+   "status": 200,
+   "duration_ms": 31,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "a5ac43f1-da10-4afa-816a-fc23755daacb",
+   "ts": "2026-11-07T10:09:12Z",
+   "offset_ms": 7179,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 21,
+   "page_type": "cart_api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "1d7fbe62-31a0-4a74-85e8-02709d78f1f7",
+   "ts": "2026-11-07T10:09:13Z",
+   "offset_ms": 8058,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 63,
+   "page_type": "cart_api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "41bbe3e9-84f0-49d1-8f4b-06aecd72dafa",
+   "ts": "2026-11-07T10:09:14Z",
+   "offset_ms": 9342,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 27,
+   "page_type": "cart_api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "1683590c-f680-49bb-8a22-09137f13aa0b",
+   "ts": "2026-11-07T10:09:16Z",
+   "offset_ms": 11367,
+   "method": "GET",
+   "path": "/api/serviceability",
+   "status": 200,
+   "duration_ms": 30,
+   "page_type": "serviceability_api",
+   "error_code": null,
+   "stage_id": "S4",
+   "is_asset": false
+  },
+  {
+   "request_id": "04ca4501-5576-4e22-8dc7-a0b918906957",
+   "ts": "2026-11-07T10:09:18Z",
+   "offset_ms": 12883,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 401,
+   "duration_ms": 83,
+   "page_type": "cart_api",
+   "error_code": "AUTH_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "e30dc36d-56ae-4b7d-8660-22a197c4ad4f",
+   "ts": "2026-11-07T10:09:19Z",
+   "offset_ms": 13934,
+   "method": "GET",
+   "path": "/login",
+   "status": 200,
+   "duration_ms": 35,
+   "page_type": "login",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "659f48d3-81db-4644-8382-43cf52f26d0d",
+   "ts": "2026-11-07T10:09:19Z",
+   "offset_ms": 14155,
+   "method": "GET",
+   "path": "/img/p/baseball-cap-in-teal-3.svg",
+   "status": 200,
+   "duration_ms": 18,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "c40a6d48-11b5-4c46-8f52-e80f657f9b52",
+   "ts": "2026-11-07T10:09:19Z",
+   "offset_ms": 14246,
+   "method": "GET",
+   "path": "/img/p/leather-watch-strap-in-navy-3.svg",
+   "status": 200,
+   "duration_ms": 11,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "bdcd67fe-f5fb-4569-8278-e1e54dba21b9",
+   "ts": "2026-11-07T10:09:19Z",
+   "offset_ms": 14354,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 8,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "b2786dd6-0062-4754-8b95-6aeb56443913",
+   "ts": "2026-11-07T10:09:19Z",
+   "offset_ms": 14562,
+   "method": "GET",
+   "path": "/img/p/leather-belt-in-teal-2.svg",
+   "status": 200,
+   "duration_ms": 12,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "c30eaeb0-5eab-413e-8c1d-add74f08254e",
+   "ts": "2026-11-07T10:09:20Z",
+   "offset_ms": 15511,
+   "method": "POST",
+   "path": "/api/otp/send",
+   "status": 200,
+   "duration_ms": 32,
+   "page_type": "otp_api",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-07T10:09:05Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-07T10:09:11Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-07T10:09:11Z"
+  },
+  {
+   "stage_id": "S4",
+   "first_reached_ts": "2026-11-07T10:09:16Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B06",
+   "name": "Login / OTP wall before cart",
+   "stage": "S5",
+   "confidence": 0.97,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "04ca4501-5576-4e22-8dc7-a0b918906957",
+     "summary": "POST /api/cart -> 401 AUTH_REQUIRED"
+    }
+   ]
+  },
+  {
+   "blocker_id": "B05",
+   "name": "Pincode / serviceability wall",
+   "stage": "S5",
+   "confidence": 0.95,
+   "is_terminal": false,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "41bbe3e9-84f0-49d1-8f4b-06aecd72dafa",
+     "summary": "POST /api/cart -> 409 PINCODE_REQUIRED"
+    },
+    {
+     "type": "request",
+     "request_id": "1d7fbe62-31a0-4a74-85e8-02709d78f1f7",
+     "summary": "POST /api/cart -> 409 PINCODE_REQUIRED"
+    },
+    {
+     "type": "request",
+     "request_id": "a5ac43f1-da10-4afa-816a-fc23755daacb",
+     "summary": "POST /api/cart -> 409 PINCODE_REQUIRED"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

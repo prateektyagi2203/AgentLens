@@ -1,0 +1,148 @@
+{
+ "session": {
+  "session_id": "665fbd4ff248b723",
+  "start_ts": "2026-11-11T05:59:16Z",
+  "duration_s": 32.464,
+  "request_count": 8,
+  "page_count": 4,
+  "identity_tier": "human",
+  "operator": "human",
+  "agent_name": "Browser (human)",
+  "agent_class": "human",
+  "identity_confidence": 0.85,
+  "entry_page": "/",
+  "exit_page": "/p/bandhani-flared-kurta-in-sky-blue",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": null,
+  "terminal_blocker_name": null,
+  "blocker_confidence": null,
+  "diagnosis_method": "none"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 15.0,
+  "user_agent": "Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "ab1f023e-e146-41a1-8f7d-70a5773ccb75",
+   "ts": "2026-11-11T05:59:16Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 247,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "37f19d9f-fcb9-4899-8d11-6b0638835428",
+   "ts": "2026-11-11T05:59:16Z",
+   "offset_ms": 646,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 10,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "379377f1-2924-4388-801c-96a8f22cd6bb",
+   "ts": "2026-11-11T05:59:32Z",
+   "offset_ms": 16526,
+   "method": "GET",
+   "path": "/c/accessories",
+   "status": 200,
+   "duration_ms": 98,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "28ec1e63-5741-4cb3-8d2b-12b12203e780",
+   "ts": "2026-11-11T05:59:33Z",
+   "offset_ms": 17443,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 16,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "7aae5ab5-9549-4d2f-8213-195acd0f7509",
+   "ts": "2026-11-11T05:59:37Z",
+   "offset_ms": 21574,
+   "method": "GET",
+   "path": "/p/mirror-work-short-kurta-in-white",
+   "status": 200,
+   "duration_ms": 204,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "841f9ce7-e1c0-41dc-8f5b-5c559ccbc69e",
+   "ts": "2026-11-11T05:59:38Z",
+   "offset_ms": 22416,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 4,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "0534559f-6849-4bf6-89f2-711cd53e4d1a",
+   "ts": "2026-11-11T05:59:47Z",
+   "offset_ms": 31728,
+   "method": "GET",
+   "path": "/p/bandhani-flared-kurta-in-sky-blue",
+   "status": 200,
+   "duration_ms": 70,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "30d84d41-0236-48c5-8a0c-4177f2ebc2cd",
+   "ts": "2026-11-11T05:59:48Z",
+   "offset_ms": 32464,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 9,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-11T05:59:16Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-11T05:59:37Z"
+  }
+ ],
+ "fired_rules": [],
+ "replay_ids": []
+}

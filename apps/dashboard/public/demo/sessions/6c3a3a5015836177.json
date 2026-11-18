@@ -1,0 +1,144 @@
+{
+ "session": {
+  "session_id": "6c3a3a5015836177",
+  "start_ts": "2026-11-11T11:34:14Z",
+  "duration_s": 1.438,
+  "request_count": 8,
+  "page_count": 1,
+  "identity_tier": "human",
+  "operator": "human",
+  "agent_name": "Browser (human)",
+  "agent_class": "human",
+  "identity_confidence": 1.0,
+  "entry_page": "/",
+  "exit_page": "/",
+  "max_stage": "S1",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": null,
+  "terminal_blocker_name": null,
+  "blocker_confidence": null,
+  "diagnosis_method": "none"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "dd82bd44-13c3-4e85-8e67-9103aa35549e",
+   "ts": "2026-11-11T11:34:14Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 42,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "5168917a-548b-4d4c-83f4-b6cbc912ca1b",
+   "ts": "2026-11-11T11:34:15Z",
+   "offset_ms": 106,
+   "method": "GET",
+   "path": "/img/p/reversible-belt-in-maroon-1.svg",
+   "status": 200,
+   "duration_ms": 7,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "b431fab8-e6cc-49d9-8816-7aa2826a91ec",
+   "ts": "2026-11-11T11:34:15Z",
+   "offset_ms": 256,
+   "method": "GET",
+   "path": "/img/p/tan-printed-resort-shirt-3.svg",
+   "status": 200,
+   "duration_ms": 15,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "782141d1-e73b-4c31-8b8a-d6842115c4ee",
+   "ts": "2026-11-11T11:34:15Z",
+   "offset_ms": 312,
+   "method": "GET",
+   "path": "/_next/static/chunks/main.js",
+   "status": 200,
+   "duration_ms": 18,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "5b148c6f-f6ff-41da-857d-9ae26309aa9c",
+   "ts": "2026-11-11T11:34:15Z",
+   "offset_ms": 420,
+   "method": "GET",
+   "path": "/_next/static/chunks/app.js",
+   "status": 200,
+   "duration_ms": 9,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "b083f1d8-7c93-4e7d-8934-23b366d87526",
+   "ts": "2026-11-11T11:34:15Z",
+   "offset_ms": 434,
+   "method": "GET",
+   "path": "/_next/static/css/app.css",
+   "status": 200,
+   "duration_ms": 11,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "3ca99a54-10a7-4ae4-82d0-3f5f09eb601b",
+   "ts": "2026-11-11T11:34:15Z",
+   "offset_ms": 467,
+   "method": "GET",
+   "path": "/favicon.ico",
+   "status": 200,
+   "duration_ms": 5,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "08614514-c055-4b2a-8c45-95f287d4d7e2",
+   "ts": "2026-11-11T11:34:16Z",
+   "offset_ms": 1438,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 8,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-11T11:34:14Z"
+  }
+ ],
+ "fired_rules": [],
+ "replay_ids": []
+}

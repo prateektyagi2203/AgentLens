@@ -1,0 +1,164 @@
+{
+ "session": {
+  "session_id": "9790abbb86ada72f",
+  "start_ts": "2026-11-10T11:18:43Z",
+  "duration_s": 7.003,
+  "request_count": 8,
+  "page_count": 8,
+  "identity_tier": "suspected",
+  "operator": "unknown",
+  "agent_name": "unknown",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.95,
+  "entry_page": "/p/sky-blue-linen-casual-shirt",
+  "exit_page": "/order/confirmed/DT-18FCC9AE",
+  "max_stage": "S8",
+  "converted": true,
+  "order_value_inr": 1129.0,
+  "terminal_blocker_id": null,
+  "terminal_blocker_name": null,
+  "blocker_confidence": null,
+  "diagnosis_method": "none"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 95.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "c79603db-1916-4b4c-883d-51b914b3ada9",
+   "ts": "2026-11-10T11:18:43Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/p/sky-blue-linen-casual-shirt",
+   "status": 200,
+   "duration_ms": 42,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "468e3c9c-963d-48e2-8f86-a0ecc4ede511",
+   "ts": "2026-11-10T11:18:44Z",
+   "offset_ms": 1736,
+   "method": "GET",
+   "path": "/size-guide/mens-shirts",
+   "status": 200,
+   "duration_ms": 69,
+   "page_type": "size_guide",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "5baada0c-4fbe-4478-876d-d192ba9e9738",
+   "ts": "2026-11-10T11:18:45Z",
+   "offset_ms": 2606,
+   "method": "GET",
+   "path": "/api/products/SHT002/variants",
+   "status": 200,
+   "duration_ms": 36,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "1a063852-eaf1-46c8-89eb-5d3d457746ca",
+   "ts": "2026-11-10T11:18:46Z",
+   "offset_ms": 3464,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 201,
+   "duration_ms": 33,
+   "page_type": "cart_api",
+   "error_code": null,
+   "stage_id": "S5",
+   "is_asset": false
+  },
+  {
+   "request_id": "09c8d8f4-e696-478f-8ddb-dc340b8dc322",
+   "ts": "2026-11-10T11:18:47Z",
+   "offset_ms": 4075,
+   "method": "GET",
+   "path": "/cart",
+   "status": 200,
+   "duration_ms": 40,
+   "page_type": "cart",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "b1d611f2-d6cf-41ca-8993-fb39f4ea7b32",
+   "ts": "2026-11-10T11:18:48Z",
+   "offset_ms": 5689,
+   "method": "GET",
+   "path": "/checkout",
+   "status": 200,
+   "duration_ms": 45,
+   "page_type": "checkout",
+   "error_code": null,
+   "stage_id": "S6",
+   "is_asset": false
+  },
+  {
+   "request_id": "06d8a8fc-15d1-4bc7-8e2b-26e723812453",
+   "ts": "2026-11-10T11:18:49Z",
+   "offset_ms": 6422,
+   "method": "POST",
+   "path": "/api/checkout",
+   "status": 201,
+   "duration_ms": 73,
+   "page_type": "checkout_api",
+   "error_code": null,
+   "stage_id": "S7",
+   "is_asset": false
+  },
+  {
+   "request_id": "07a2f416-4fe6-45aa-821f-f9e31f715251",
+   "ts": "2026-11-10T11:18:50Z",
+   "offset_ms": 7003,
+   "method": "GET",
+   "path": "/order/confirmed/DT-18FCC9AE",
+   "status": 200,
+   "duration_ms": 160,
+   "page_type": "order_confirm",
+   "error_code": null,
+   "stage_id": "S8",
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-10T11:18:43Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-10T11:18:45Z"
+  },
+  {
+   "stage_id": "S5",
+   "first_reached_ts": "2026-11-10T11:18:46Z"
+  },
+  {
+   "stage_id": "S6",
+   "first_reached_ts": "2026-11-10T11:18:48Z"
+  },
+  {
+   "stage_id": "S7",
+   "first_reached_ts": "2026-11-10T11:18:49Z"
+  },
+  {
+   "stage_id": "S8",
+   "first_reached_ts": "2026-11-10T11:18:50Z"
+  }
+ ],
+ "fired_rules": [],
+ "replay_ids": []
+}

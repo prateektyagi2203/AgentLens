@@ -1,0 +1,194 @@
+{
+ "session": {
+  "session_id": "141c518eacd79a57",
+  "start_ts": "2026-11-13T17:42:08Z",
+  "duration_s": 10.438,
+  "request_count": 10,
+  "page_count": 10,
+  "identity_tier": "suspected",
+  "operator": "unknown",
+  "agent_name": "unknown",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.9,
+  "entry_page": "/",
+  "exit_page": "/order/confirmed/DT-B5A7B24B",
+  "max_stage": "S8",
+  "converted": true,
+  "order_value_inr": 2139.0,
+  "terminal_blocker_id": null,
+  "terminal_blocker_name": null,
+  "blocker_confidence": null,
+  "diagnosis_method": "none"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 90.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "a323f866-a3f9-41df-8e73-23e63bd25bb8",
+   "ts": "2026-11-13T17:42:08Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 52,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "71e1b539-169e-4856-85c0-529c9c5228d5",
+   "ts": "2026-11-13T17:42:10Z",
+   "offset_ms": 1703,
+   "method": "GET",
+   "path": "/search",
+   "status": 200,
+   "duration_ms": 138,
+   "page_type": "search",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "f997f828-c989-4c0d-8222-9c735538a28c",
+   "ts": "2026-11-13T17:42:12Z",
+   "offset_ms": 3478,
+   "method": "GET",
+   "path": "/c/mens-sneakers",
+   "status": 200,
+   "duration_ms": 130,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "b9e400c1-f94e-4c33-82f9-b9578675d423",
+   "ts": "2026-11-13T17:42:13Z",
+   "offset_ms": 5276,
+   "method": "GET",
+   "path": "/p/grey-retro-trainer",
+   "status": 200,
+   "duration_ms": 70,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "72de2548-72bd-4367-84f1-7f7e00f5987b",
+   "ts": "2026-11-13T17:42:14Z",
+   "offset_ms": 6067,
+   "method": "GET",
+   "path": "/api/products/SNK004/variants",
+   "status": 200,
+   "duration_ms": 34,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "c9abac8d-0984-49e3-80f8-acc4a3ca0aa2",
+   "ts": "2026-11-13T17:42:15Z",
+   "offset_ms": 6814,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 201,
+   "duration_ms": 25,
+   "page_type": "cart_api",
+   "error_code": null,
+   "stage_id": "S5",
+   "is_asset": false
+  },
+  {
+   "request_id": "7876a45e-005c-4a5f-8061-55c2555ffcd8",
+   "ts": "2026-11-13T17:42:16Z",
+   "offset_ms": 7351,
+   "method": "GET",
+   "path": "/cart",
+   "status": 200,
+   "duration_ms": 58,
+   "page_type": "cart",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "76840b2e-a259-4e35-8b24-2e36e5387e39",
+   "ts": "2026-11-13T17:42:17Z",
+   "offset_ms": 8956,
+   "method": "GET",
+   "path": "/checkout",
+   "status": 200,
+   "duration_ms": 137,
+   "page_type": "checkout",
+   "error_code": null,
+   "stage_id": "S6",
+   "is_asset": false
+  },
+  {
+   "request_id": "d567c1c4-bbee-41f5-8466-f11f4b035bf1",
+   "ts": "2026-11-13T17:42:18Z",
+   "offset_ms": 9799,
+   "method": "POST",
+   "path": "/api/checkout",
+   "status": 201,
+   "duration_ms": 96,
+   "page_type": "checkout_api",
+   "error_code": null,
+   "stage_id": "S7",
+   "is_asset": false
+  },
+  {
+   "request_id": "1fa367b2-e0fc-443c-8055-cd2b48a51869",
+   "ts": "2026-11-13T17:42:19Z",
+   "offset_ms": 10438,
+   "method": "GET",
+   "path": "/order/confirmed/DT-B5A7B24B",
+   "status": 200,
+   "duration_ms": 62,
+   "page_type": "order_confirm",
+   "error_code": null,
+   "stage_id": "S8",
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-13T17:42:08Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-13T17:42:13Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-13T17:42:14Z"
+  },
+  {
+   "stage_id": "S5",
+   "first_reached_ts": "2026-11-13T17:42:15Z"
+  },
+  {
+   "stage_id": "S6",
+   "first_reached_ts": "2026-11-13T17:42:17Z"
+  },
+  {
+   "stage_id": "S7",
+   "first_reached_ts": "2026-11-13T17:42:18Z"
+  },
+  {
+   "stage_id": "S8",
+   "first_reached_ts": "2026-11-13T17:42:19Z"
+  }
+ ],
+ "fired_rules": [],
+ "replay_ids": []
+}

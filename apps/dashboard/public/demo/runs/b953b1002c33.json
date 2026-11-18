@@ -1,0 +1,107 @@
+{
+ "run_id": "b953b1002c33",
+ "kind": "pipeline",
+ "status": "succeeded",
+ "started_at": "2026-11-18T11:51:28Z",
+ "finished_at": "2026-11-18T11:51:47Z",
+ "steps": [
+  {
+   "name": "ingest",
+   "status": "succeeded",
+   "started_at": "2026-11-18T11:51:28Z",
+   "finished_at": "2026-11-18T11:51:28Z",
+   "message": "files=14, lines=0, requests_inserted=0, duplicates=0, errors=0, annotations=0, orders=0"
+  },
+  {
+   "name": "identify",
+   "status": "succeeded",
+   "started_at": "2026-11-18T11:51:28Z",
+   "finished_at": "2026-11-18T11:51:35Z",
+   "message": "ua_tokens_matched=10, runs_scored=9120, signed_requests=5700, sig_invalid_sig=579, sig_valid=4695, sig_unknown_key=426, requests_human=185330, requests_suspected=4978, requests_declared=32605, request"
+  },
+  {
+   "name": "sessionize",
+   "status": "succeeded",
+   "started_at": "2026-11-18T11:51:35Z",
+   "finished_at": "2026-11-18T11:51:37Z",
+   "message": "sessions=12000, orders_linked=376, orders_total=376"
+  },
+  {
+   "name": "funnel",
+   "status": "succeeded",
+   "started_at": "2026-11-18T11:51:37Z",
+   "finished_at": "2026-11-18T11:51:38Z",
+   "message": "session_stages=25880, sessions_with_stage=11448, funnel_stats=3600"
+  },
+  {
+   "name": "diagnose",
+   "status": "succeeded",
+   "started_at": "2026-11-18T11:51:38Z",
+   "finished_at": "2026-11-18T11:51:46Z",
+   "message": "sessions_in_scope=3455, hits=2568, b99_candidates=238, terminal_sessions=1879, site_probe=ok, catalog_products=60, llm_provider=mock, llm_candidates=200, llm_classified=0, llm_cached=0, llm_est_tokens"
+  },
+  {
+   "name": "impact",
+   "status": "succeeded",
+   "started_at": "2026-11-18T11:51:46Z",
+   "finished_at": "2026-11-18T11:51:46Z",
+   "message": "blockers_priced=7, window_days=14.0, k=2.1429, aov=2202.97, aov_source=agent_orders, total_risk_base=461825, assumptions={\"fallback\": 0}"
+  },
+  {
+   "name": "recommend",
+   "status": "succeeded",
+   "started_at": "2026-11-18T11:51:46Z",
+   "finished_at": "2026-11-18T11:51:46Z",
+   "message": "recommendations=7, llm=mock"
+  }
+ ],
+ "counts": {
+  "ingest.files": 14,
+  "ingest.lines": 0,
+  "ingest.requests_inserted": 0,
+  "ingest.duplicates": 0,
+  "ingest.errors": 0,
+  "ingest.annotations": 0,
+  "ingest.orders": 0,
+  "identify.ua_tokens_matched": 10,
+  "identify.runs_scored": 9120,
+  "identify.signed_requests": 5700,
+  "identify.sig_invalid_sig": 579,
+  "identify.sig_valid": 4695,
+  "identify.sig_unknown_key": 426,
+  "identify.requests_human": 185330,
+  "identify.requests_suspected": 4978,
+  "identify.requests_declared": 32605,
+  "identify.requests_verified": 4695,
+  "sessionize.sessions": 12000,
+  "sessionize.orders_linked": 376,
+  "sessionize.orders_total": 376,
+  "funnel.session_stages": 25880,
+  "funnel.sessions_with_stage": 11448,
+  "funnel.funnel_stats": 3600,
+  "diagnose.sessions_in_scope": 3455,
+  "diagnose.hits": 2568,
+  "diagnose.b99_candidates": 238,
+  "diagnose.terminal_sessions": 1879,
+  "diagnose.catalog_products": 60,
+  "diagnose.llm_candidates": 200,
+  "diagnose.llm_classified": 0,
+  "diagnose.llm_cached": 0,
+  "diagnose.llm_est_tokens": 0,
+  "diagnose.terminal_B03": 498,
+  "diagnose.terminal_B05": 89,
+  "diagnose.terminal_B06": 417,
+  "diagnose.terminal_B07": 144,
+  "diagnose.terminal_B08": 32,
+  "diagnose.terminal_B09": 419,
+  "diagnose.terminal_B10": 42,
+  "diagnose.terminal_B99": 238,
+  "impact.blockers_priced": 7,
+  "impact.window_days": 14.0,
+  "impact.k": 2.1429,
+  "impact.aov": 2202.97,
+  "impact.total_risk_base": 461825,
+  "recommend.recommendations": 7
+ },
+ "error": null
+}

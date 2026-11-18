@@ -1,0 +1,130 @@
+{
+ "replay": {
+  "replay_id": "rp_597a935177",
+  "blocker_id": "B09",
+  "blocker_name": "Size guide is image-only",
+  "source_session_id": "994603cee7c6e49e",
+  "mode": "fetch",
+  "status": "completed",
+  "verdict": "confirmed",
+  "started_at": "2026-11-18T11:52:26Z",
+  "finished_at": "2026-11-18T11:52:32Z",
+  "steps_count": 6,
+  "verdict_explanation": "Reproduced B09 (The size guide is an image with no HTML table): size guide is an image only; no HTML table to read (step 6)."
+ },
+ "user_agent": "AgentLens-Replay/1.0 (+https://github.com/prateektyagi2203/AgentLens; run=rp_597a935177)",
+ "signed_requests": false,
+ "steps": [
+  {
+   "n": 1,
+   "action": "robots",
+   "method": "GET",
+   "url": "http://localhost:3100/robots.txt",
+   "status": 200,
+   "duration_ms": 2169,
+   "note": "read robots.txt",
+   "screenshot_url": null
+  },
+  {
+   "n": 2,
+   "action": "open_home",
+   "method": "GET",
+   "url": "http://localhost:3100/",
+   "status": 200,
+   "duration_ms": 680,
+   "note": "open home page",
+   "screenshot_url": null
+  },
+  {
+   "n": 3,
+   "action": "search",
+   "method": "GET",
+   "url": "http://localhost:3100/search?q=blue%20shirt",
+   "status": 200,
+   "duration_ms": 371,
+   "note": "search 'blue shirt'; 3 candidate products",
+   "screenshot_url": null
+  },
+  {
+   "n": 4,
+   "action": "open_product",
+   "method": "GET",
+   "url": "http://localhost:3100/p/sky-blue-linen-casual-shirt",
+   "status": 200,
+   "duration_ms": 460,
+   "note": "open product page /p/sky-blue-linen-casual-shirt",
+   "screenshot_url": null
+  },
+  {
+   "n": 5,
+   "action": "check_delivery",
+   "method": "GET",
+   "url": "http://localhost:3100/api/serviceability?pincode=560001",
+   "status": 200,
+   "duration_ms": 91,
+   "note": "check delivery to test pincode 560001",
+   "screenshot_url": null
+  },
+  {
+   "n": 6,
+   "action": "read_size_guide",
+   "method": "GET",
+   "url": "http://localhost:3100/size-guide/mens-shirts",
+   "status": 200,
+   "duration_ms": 429,
+   "note": "read size guide /size-guide/mens-shirts",
+   "screenshot_url": null
+  }
+ ],
+ "network_log": [
+  {
+   "ts": "2026-11-18T11:52:26.610Z",
+   "method": "GET",
+   "url": "http://localhost:3100/robots.txt",
+   "status": 200,
+   "duration_ms": 2169,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-18T11:52:29.085Z",
+   "method": "GET",
+   "url": "http://localhost:3100/",
+   "status": 200,
+   "duration_ms": 680,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-18T11:52:30.068Z",
+   "method": "GET",
+   "url": "http://localhost:3100/search?q=blue%20shirt",
+   "status": 200,
+   "duration_ms": 371,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-18T11:52:30.725Z",
+   "method": "GET",
+   "url": "http://localhost:3100/p/sky-blue-linen-casual-shirt",
+   "status": 200,
+   "duration_ms": 460,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-18T11:52:31.489Z",
+   "method": "GET",
+   "url": "http://localhost:3100/api/serviceability?pincode=560001",
+   "status": 200,
+   "duration_ms": 91,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-18T11:52:31.867Z",
+   "method": "GET",
+   "url": "http://localhost:3100/size-guide/mens-shirts",
+   "status": 200,
+   "duration_ms": 429,
+   "error_code": null
+  }
+ ],
+ "explanation": "Reproduced B09 (The size guide is an image with no HTML table): size guide is an image only; no HTML table to read (step 6)."
+}

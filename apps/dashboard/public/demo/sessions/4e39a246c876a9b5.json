@@ -1,0 +1,203 @@
+{
+ "session": {
+  "session_id": "4e39a246c876a9b5",
+  "start_ts": "2026-11-10T11:44:15Z",
+  "duration_s": 6.337,
+  "request_count": 11,
+  "page_count": 7,
+  "identity_tier": "suspected",
+  "operator": "unknown",
+  "agent_name": "unknown",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 0.65,
+  "entry_page": "/p/maroon-street-runner",
+  "exit_page": "/order/confirmed/DT-EBE9BF19",
+  "max_stage": "S8",
+  "converted": true,
+  "order_value_inr": 3709.0,
+  "terminal_blocker_id": null,
+  "terminal_blocker_name": null,
+  "blocker_confidence": null,
+  "diagnosis_method": "none"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 65.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "88fa8640-3ca5-4258-8056-5f57f86505a9",
+   "ts": "2026-11-10T11:44:15Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/p/maroon-street-runner",
+   "status": 200,
+   "duration_ms": 49,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "72442d6d-bc3f-4a62-81e1-e9be00022c7b",
+   "ts": "2026-11-10T11:44:16Z",
+   "offset_ms": 650,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 7,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "628266e1-a75b-4c2e-82b4-5e759001a7d2",
+   "ts": "2026-11-10T11:44:16Z",
+   "offset_ms": 808,
+   "method": "GET",
+   "path": "/api/products/SNK002/variants",
+   "status": 200,
+   "duration_ms": 24,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "ca87e0bf-f0ac-4122-8d05-769d74b77860",
+   "ts": "2026-11-10T11:44:17Z",
+   "offset_ms": 1565,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 201,
+   "duration_ms": 68,
+   "page_type": "cart_api",
+   "error_code": null,
+   "stage_id": "S5",
+   "is_asset": false
+  },
+  {
+   "request_id": "311d1399-667b-4ab7-8cf9-7cf713ab5b4b",
+   "ts": "2026-11-10T11:44:18Z",
+   "offset_ms": 2171,
+   "method": "GET",
+   "path": "/cart",
+   "status": 200,
+   "duration_ms": 102,
+   "page_type": "cart",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "20b996eb-abdd-46a8-8153-121dbc8e9a57",
+   "ts": "2026-11-10T11:44:19Z",
+   "offset_ms": 3194,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 17,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "9b031896-9412-477b-80b9-24ba1952433f",
+   "ts": "2026-11-10T11:44:19Z",
+   "offset_ms": 3798,
+   "method": "GET",
+   "path": "/checkout",
+   "status": 200,
+   "duration_ms": 68,
+   "page_type": "checkout",
+   "error_code": null,
+   "stage_id": "S6",
+   "is_asset": false
+  },
+  {
+   "request_id": "54d4ca3f-ed16-4e09-8f15-7dec9321bd2d",
+   "ts": "2026-11-10T11:44:20Z",
+   "offset_ms": 4354,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 8,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "8b208c95-1df2-4e2c-805e-93153c62cf92",
+   "ts": "2026-11-10T11:44:20Z",
+   "offset_ms": 4521,
+   "method": "POST",
+   "path": "/api/checkout",
+   "status": 201,
+   "duration_ms": 55,
+   "page_type": "checkout_api",
+   "error_code": null,
+   "stage_id": "S7",
+   "is_asset": false
+  },
+  {
+   "request_id": "f8877133-0823-4003-8fef-9b45024c22f5",
+   "ts": "2026-11-10T11:44:21Z",
+   "offset_ms": 5119,
+   "method": "GET",
+   "path": "/order/confirmed/DT-EBE9BF19",
+   "status": 200,
+   "duration_ms": 86,
+   "page_type": "order_confirm",
+   "error_code": null,
+   "stage_id": "S8",
+   "is_asset": false
+  },
+  {
+   "request_id": "f0b99e79-82aa-4e3f-8bca-8e9d2de84c62",
+   "ts": "2026-11-10T11:44:22Z",
+   "offset_ms": 6337,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 6,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-10T11:44:15Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-10T11:44:16Z"
+  },
+  {
+   "stage_id": "S5",
+   "first_reached_ts": "2026-11-10T11:44:17Z"
+  },
+  {
+   "stage_id": "S6",
+   "first_reached_ts": "2026-11-10T11:44:19Z"
+  },
+  {
+   "stage_id": "S7",
+   "first_reached_ts": "2026-11-10T11:44:20Z"
+  },
+  {
+   "stage_id": "S8",
+   "first_reached_ts": "2026-11-10T11:44:21Z"
+  }
+ ],
+ "fired_rules": [],
+ "replay_ids": []
+}

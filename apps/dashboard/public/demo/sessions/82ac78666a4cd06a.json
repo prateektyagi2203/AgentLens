@@ -1,0 +1,164 @@
+{
+ "session": {
+  "session_id": "82ac78666a4cd06a",
+  "start_ts": "2026-11-05T10:01:47Z",
+  "duration_s": 4.973,
+  "request_count": 7,
+  "page_count": 7,
+  "identity_tier": "suspected",
+  "operator": "unknown",
+  "agent_name": "unknown",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.95,
+  "entry_page": "/",
+  "exit_page": "/api/cart",
+  "max_stage": "S3",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B05",
+  "terminal_blocker_name": "Pincode / serviceability wall",
+  "blocker_confidence": 0.95,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "invalid_sig",
+  "signature_agent": "https://agents.desithreads.test",
+  "suspicion_score": 95.0,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "804ddcaf-4dde-4695-882b-80a89129ce20",
+   "ts": "2026-11-05T10:01:47Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 56,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "ae0b2fb5-7782-4443-84b3-b7cf6cc07b4e",
+   "ts": "2026-11-05T10:01:48Z",
+   "offset_ms": 1124,
+   "method": "GET",
+   "path": "/c/womens-kurtas",
+   "status": 200,
+   "duration_ms": 181,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "1ba827de-9568-4e72-8381-cb95179012ff",
+   "ts": "2026-11-05T10:01:50Z",
+   "offset_ms": 2410,
+   "method": "GET",
+   "path": "/p/bandhani-flared-kurta-in-sky-blue",
+   "status": 200,
+   "duration_ms": 286,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "0812c643-639a-4d03-8f34-c6831996b491",
+   "ts": "2026-11-05T10:01:50Z",
+   "offset_ms": 3199,
+   "method": "GET",
+   "path": "/api/products/KRT004/variants",
+   "status": 200,
+   "duration_ms": 11,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "9dc81eef-7233-4bc4-832f-e475520935ea",
+   "ts": "2026-11-05T10:01:51Z",
+   "offset_ms": 3848,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 21,
+   "page_type": "cart_api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "d0d3ba0f-94cb-48e9-83a4-a5856736aea4",
+   "ts": "2026-11-05T10:01:52Z",
+   "offset_ms": 4432,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 55,
+   "page_type": "cart_api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "5d94aac8-9985-4dcc-8d72-cec79b0f37d9",
+   "ts": "2026-11-05T10:01:52Z",
+   "offset_ms": 4973,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 20,
+   "page_type": "cart_api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-05T10:01:47Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-05T10:01:50Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-05T10:01:50Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B05",
+   "name": "Pincode / serviceability wall",
+   "stage": "S5",
+   "confidence": 0.95,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "5d94aac8-9985-4dcc-8d72-cec79b0f37d9",
+     "summary": "POST /api/cart -> 409 PINCODE_REQUIRED"
+    },
+    {
+     "type": "request",
+     "request_id": "d0d3ba0f-94cb-48e9-83a4-a5856736aea4",
+     "summary": "POST /api/cart -> 409 PINCODE_REQUIRED"
+    },
+    {
+     "type": "request",
+     "request_id": "9dc81eef-7233-4bc4-832f-e475520935ea",
+     "summary": "POST /api/cart -> 409 PINCODE_REQUIRED"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

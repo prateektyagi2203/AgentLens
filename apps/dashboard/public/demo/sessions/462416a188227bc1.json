@@ -1,0 +1,164 @@
+{
+ "session": {
+  "session_id": "462416a188227bc1",
+  "start_ts": "2026-11-06T03:21:17Z",
+  "duration_s": 6.835,
+  "request_count": 7,
+  "page_count": 7,
+  "identity_tier": "suspected",
+  "operator": "unknown",
+  "agent_name": "unknown",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.95,
+  "entry_page": "/",
+  "exit_page": "/api/cart",
+  "max_stage": "S3",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B05",
+  "terminal_blocker_name": "Pincode / serviceability wall",
+  "blocker_confidence": 0.95,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 95.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "3d54f286-2ccb-46f3-897a-c49a594b55e4",
+   "ts": "2026-11-06T03:21:17Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 182,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "09d813c4-99c8-4cd4-8762-65f26f731a2a",
+   "ts": "2026-11-06T03:21:18Z",
+   "offset_ms": 1945,
+   "method": "GET",
+   "path": "/c/womens-kurtas",
+   "status": 200,
+   "duration_ms": 158,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "684e5c35-b090-471d-8533-0078ef9342c5",
+   "ts": "2026-11-06T03:21:20Z",
+   "offset_ms": 3670,
+   "method": "GET",
+   "path": "/p/bandhani-flared-kurta-in-sky-blue",
+   "status": 200,
+   "duration_ms": 89,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "a9abaf40-b69d-4178-8ecc-5f9eed699bea",
+   "ts": "2026-11-06T03:21:21Z",
+   "offset_ms": 4480,
+   "method": "GET",
+   "path": "/api/products/KRT004/variants",
+   "status": 200,
+   "duration_ms": 25,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "f8d17073-80dd-4d41-8087-d1a544b09b78",
+   "ts": "2026-11-06T03:21:22Z",
+   "offset_ms": 5225,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 26,
+   "page_type": "cart_api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "5d51120b-8521-407a-87ad-734132f24c3d",
+   "ts": "2026-11-06T03:21:22Z",
+   "offset_ms": 5982,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 27,
+   "page_type": "cart_api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "47104ae5-3796-47dc-8451-c6a42025bbf5",
+   "ts": "2026-11-06T03:21:23Z",
+   "offset_ms": 6835,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 75,
+   "page_type": "cart_api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-06T03:21:17Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-06T03:21:20Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-06T03:21:21Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B05",
+   "name": "Pincode / serviceability wall",
+   "stage": "S5",
+   "confidence": 0.95,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "47104ae5-3796-47dc-8451-c6a42025bbf5",
+     "summary": "POST /api/cart -> 409 PINCODE_REQUIRED"
+    },
+    {
+     "type": "request",
+     "request_id": "5d51120b-8521-407a-87ad-734132f24c3d",
+     "summary": "POST /api/cart -> 409 PINCODE_REQUIRED"
+    },
+    {
+     "type": "request",
+     "request_id": "f8d17073-80dd-4d41-8087-d1a544b09b78",
+     "summary": "POST /api/cart -> 409 PINCODE_REQUIRED"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

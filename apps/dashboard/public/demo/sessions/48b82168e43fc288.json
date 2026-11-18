@@ -1,0 +1,135 @@
+{
+ "session": {
+  "session_id": "48b82168e43fc288",
+  "start_ts": "2026-11-04T18:04:34Z",
+  "duration_s": 5.267,
+  "request_count": 4,
+  "page_count": 4,
+  "identity_tier": "declared",
+  "operator": "Anthropic",
+  "agent_name": "Claude-User",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.7,
+  "entry_page": "/search",
+  "exit_page": "/p/grey-everyday-slip-on",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B03",
+  "terminal_blocker_name": "JS-only product content",
+  "blocker_confidence": 0.85,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Claude-User/1.0; +Claude-User@anthropic.com)",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "efab2776-fd08-448e-861c-f2e72ae8623b",
+   "ts": "2026-11-04T18:04:34Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/search",
+   "status": 200,
+   "duration_ms": 53,
+   "page_type": "search",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "39734e01-cf86-4958-885c-57cc403774dd",
+   "ts": "2026-11-04T18:04:35Z",
+   "offset_ms": 1087,
+   "method": "GET",
+   "path": "/c/mens-sneakers",
+   "status": 200,
+   "duration_ms": 61,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "f887c522-3c97-4072-806c-efc984596ddc",
+   "ts": "2026-11-04T18:04:37Z",
+   "offset_ms": 3146,
+   "method": "GET",
+   "path": "/p/navy-daily-walk-sneaker",
+   "status": 200,
+   "duration_ms": 56,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "de022f90-777d-4161-86b9-908acdeefcad",
+   "ts": "2026-11-04T18:04:39Z",
+   "offset_ms": 5267,
+   "method": "GET",
+   "path": "/p/grey-everyday-slip-on",
+   "status": 200,
+   "duration_ms": 57,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-04T18:04:34Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-04T18:04:37Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B03",
+   "name": "JS-only product content",
+   "stage": "S2",
+   "confidence": 0.85,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "de022f90-777d-4161-86b9-908acdeefcad",
+     "summary": "GET /p/grey-everyday-slip-on -> 200"
+    },
+    {
+     "type": "site_check",
+     "check": "pdp_ssr_price",
+     "result": "fail"
+    }
+   ]
+  },
+  {
+   "blocker_id": "B04",
+   "name": "Missing structured data",
+   "stage": "S2",
+   "confidence": 0.6,
+   "is_terminal": false,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "de022f90-777d-4161-86b9-908acdeefcad",
+     "summary": "GET /p/grey-everyday-slip-on -> 200"
+    },
+    {
+     "type": "site_check",
+     "check": "pdp_jsonld_product",
+     "result": "warn"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

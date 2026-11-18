@@ -1,0 +1,216 @@
+{
+ "session": {
+  "session_id": "c3cbab7dcec9a6d8",
+  "start_ts": "2026-11-01T15:33:43Z",
+  "duration_s": 8.513,
+  "request_count": 10,
+  "page_count": 10,
+  "identity_tier": "suspected",
+  "operator": "unknown",
+  "agent_name": "unknown",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.95,
+  "entry_page": "/",
+  "exit_page": "/api/otp/send",
+  "max_stage": "S4",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B06",
+  "terminal_blocker_name": "Login / OTP wall before cart",
+  "blocker_confidence": 0.97,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 95.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "a8c47ff1-4448-4a29-8241-0dd18741224c",
+   "ts": "2026-11-01T15:33:43Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 68,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "e4bb7af3-a1c1-47cb-8863-c6845e29b6bf",
+   "ts": "2026-11-01T15:33:44Z",
+   "offset_ms": 1589,
+   "method": "GET",
+   "path": "/c/mens-sneakers",
+   "status": 200,
+   "duration_ms": 163,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "7ea9e826-bf6c-4a21-8f3c-49aaa869eaf5",
+   "ts": "2026-11-01T15:33:46Z",
+   "offset_ms": 3378,
+   "method": "GET",
+   "path": "/p/tan-pace-lite-trainer",
+   "status": 200,
+   "duration_ms": 87,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "a7d07777-c763-4f1d-8bb7-4cdf4e719155",
+   "ts": "2026-11-01T15:33:47Z",
+   "offset_ms": 4105,
+   "method": "GET",
+   "path": "/api/products/SNK009/variants",
+   "status": 200,
+   "duration_ms": 16,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "5c6241bf-14d6-4de2-84fd-ae4180fdc85a",
+   "ts": "2026-11-01T15:33:48Z",
+   "offset_ms": 4903,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 18,
+   "page_type": "cart_api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "ef0dda04-4d59-4d63-8f2e-24ef28d1eae7",
+   "ts": "2026-11-01T15:33:49Z",
+   "offset_ms": 5667,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 29,
+   "page_type": "cart_api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "ebe607bb-1277-4d9f-87cd-2fcf07741c18",
+   "ts": "2026-11-01T15:33:49Z",
+   "offset_ms": 6385,
+   "method": "GET",
+   "path": "/api/serviceability",
+   "status": 200,
+   "duration_ms": 12,
+   "page_type": "serviceability_api",
+   "error_code": null,
+   "stage_id": "S4",
+   "is_asset": false
+  },
+  {
+   "request_id": "1a8c1b21-ef74-4b66-8d98-914dc65806f1",
+   "ts": "2026-11-01T15:33:50Z",
+   "offset_ms": 7122,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 401,
+   "duration_ms": 41,
+   "page_type": "cart_api",
+   "error_code": "AUTH_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "52e09417-1f3b-4f4f-82f0-1d323690eac4",
+   "ts": "2026-11-01T15:33:51Z",
+   "offset_ms": 7700,
+   "method": "GET",
+   "path": "/login",
+   "status": 200,
+   "duration_ms": 33,
+   "page_type": "login",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "1d992100-c09a-4c7b-871d-46e5e7954b0b",
+   "ts": "2026-11-01T15:33:51Z",
+   "offset_ms": 8513,
+   "method": "POST",
+   "path": "/api/otp/send",
+   "status": 200,
+   "duration_ms": 42,
+   "page_type": "otp_api",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-01T15:33:43Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-01T15:33:46Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-01T15:33:47Z"
+  },
+  {
+   "stage_id": "S4",
+   "first_reached_ts": "2026-11-01T15:33:49Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B06",
+   "name": "Login / OTP wall before cart",
+   "stage": "S5",
+   "confidence": 0.97,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "1a8c1b21-ef74-4b66-8d98-914dc65806f1",
+     "summary": "POST /api/cart -> 401 AUTH_REQUIRED"
+    }
+   ]
+  },
+  {
+   "blocker_id": "B05",
+   "name": "Pincode / serviceability wall",
+   "stage": "S5",
+   "confidence": 0.95,
+   "is_terminal": false,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "ef0dda04-4d59-4d63-8f2e-24ef28d1eae7",
+     "summary": "POST /api/cart -> 409 PINCODE_REQUIRED"
+    },
+    {
+     "type": "request",
+     "request_id": "5c6241bf-14d6-4de2-84fd-ae4180fdc85a",
+     "summary": "POST /api/cart -> 409 PINCODE_REQUIRED"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

@@ -1,0 +1,319 @@
+{
+ "session": {
+  "session_id": "c88df36960281473",
+  "start_ts": "2026-11-04T04:35:01Z",
+  "duration_s": 8.913,
+  "request_count": 20,
+  "page_count": 3,
+  "identity_tier": "verified",
+  "operator": "AgentLens Test Operator",
+  "agent_name": "TestSignedAgent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 1.0,
+  "entry_page": "/",
+  "exit_page": "/p/minimal-analog-watch-in-sky-blue",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B07",
+  "terminal_blocker_name": "Interstitial / popup overlay",
+  "blocker_confidence": 0.6,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "valid",
+  "signature_agent": "https://agents.desithreads.test",
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 TestSignedAgent/1.0",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "0597fed5-559c-4d5a-8fa0-3f5fdc5c3d98",
+   "ts": "2026-11-04T04:35:01Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 249,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "0aba783b-7234-488a-85c8-75c3af881f4b",
+   "ts": "2026-11-04T04:35:02Z",
+   "offset_ms": 300,
+   "method": "GET",
+   "path": "/img/p/tan-oxford-button-down-shirt-3.svg",
+   "status": 200,
+   "duration_ms": 13,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "a89e9c13-290d-4ea7-83dc-8ef4b511a12e",
+   "ts": "2026-11-04T04:35:02Z",
+   "offset_ms": 344,
+   "method": "GET",
+   "path": "/img/p/mustard-alley-suede-sneaker-1.svg",
+   "status": 200,
+   "duration_ms": 8,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "8d738859-3f68-43c5-8220-59be376bf67d",
+   "ts": "2026-11-04T04:35:02Z",
+   "offset_ms": 359,
+   "method": "GET",
+   "path": "/_next/static/css/app.css",
+   "status": 200,
+   "duration_ms": 11,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "8a6bddd4-bd9a-48c6-85e6-ba78314bf896",
+   "ts": "2026-11-04T04:35:02Z",
+   "offset_ms": 398,
+   "method": "GET",
+   "path": "/_next/static/chunks/main.js",
+   "status": 200,
+   "duration_ms": 19,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "c3ed1317-1761-403b-830f-a4005994bd82",
+   "ts": "2026-11-04T04:35:02Z",
+   "offset_ms": 510,
+   "method": "GET",
+   "path": "/img/p/indigo-urban-high-top-3.svg",
+   "status": 200,
+   "duration_ms": 15,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "6cd78e42-50f9-47a1-88a9-bc25cd45c91f",
+   "ts": "2026-11-04T04:35:02Z",
+   "offset_ms": 512,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 9,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "f3434981-8165-497f-805a-b3fde9683209",
+   "ts": "2026-11-04T04:35:02Z",
+   "offset_ms": 535,
+   "method": "GET",
+   "path": "/favicon.ico",
+   "status": 200,
+   "duration_ms": 12,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "8ecd22a6-6b79-456b-8940-fd4be9b65a85",
+   "ts": "2026-11-04T04:35:02Z",
+   "offset_ms": 611,
+   "method": "GET",
+   "path": "/_next/static/chunks/app.js",
+   "status": 200,
+   "duration_ms": 10,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "38b18022-8148-4bdb-8d34-8089e16a976e",
+   "ts": "2026-11-04T04:35:05Z",
+   "offset_ms": 3326,
+   "method": "GET",
+   "path": "/c/accessories",
+   "status": 200,
+   "duration_ms": 103,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "6f79d696-0e5d-4507-8f12-2ea67d430c60",
+   "ts": "2026-11-04T04:35:05Z",
+   "offset_ms": 3794,
+   "method": "GET",
+   "path": "/img/p/ikat-print-kurta-in-olive-1.svg",
+   "status": 200,
+   "duration_ms": 14,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "7d2632f6-d0cf-4ee0-8d34-f64d0c541b8a",
+   "ts": "2026-11-04T04:35:05Z",
+   "offset_ms": 3794,
+   "method": "GET",
+   "path": "/img/p/black-classic-formal-shirt-1.svg",
+   "status": 200,
+   "duration_ms": 10,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "95053998-84f5-43e0-801a-588547b77f4e",
+   "ts": "2026-11-04T04:35:05Z",
+   "offset_ms": 3944,
+   "method": "GET",
+   "path": "/img/p/woven-cotton-scarf-in-mustard-2.svg",
+   "status": 200,
+   "duration_ms": 10,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "4daf6a6d-b62b-4ad5-8243-68c54f50c8db",
+   "ts": "2026-11-04T04:35:06Z",
+   "offset_ms": 4500,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 10,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "e93118e4-a14d-4b5b-8b0b-263acf285662",
+   "ts": "2026-11-04T04:35:09Z",
+   "offset_ms": 7629,
+   "method": "GET",
+   "path": "/p/minimal-analog-watch-in-sky-blue",
+   "status": 200,
+   "duration_ms": 120,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "92068503-e108-4f01-809b-211723b03c5c",
+   "ts": "2026-11-04T04:35:09Z",
+   "offset_ms": 7836,
+   "method": "GET",
+   "path": "/img/p/indigo-urban-high-top-1.svg",
+   "status": 200,
+   "duration_ms": 15,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "d3e351fe-952b-48ae-8d6c-7f446f4d8673",
+   "ts": "2026-11-04T04:35:09Z",
+   "offset_ms": 8045,
+   "method": "GET",
+   "path": "/img/p/sky-blue-studio-court-low-1.svg",
+   "status": 200,
+   "duration_ms": 11,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "875852c3-86c2-441f-8e93-6e9c01c7fd8f",
+   "ts": "2026-11-04T04:35:10Z",
+   "offset_ms": 8243,
+   "method": "GET",
+   "path": "/img/p/black-classic-formal-shirt-3.svg",
+   "status": 200,
+   "duration_ms": 7,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "565f50a1-1989-46f0-8ce7-9737d60ace89",
+   "ts": "2026-11-04T04:35:10Z",
+   "offset_ms": 8365,
+   "method": "GET",
+   "path": "/img/p/block-print-straight-kurta-in-white-3.svg",
+   "status": 200,
+   "duration_ms": 15,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "795afe1e-97ec-4f0e-8314-95b1a6b05112",
+   "ts": "2026-11-04T04:35:10Z",
+   "offset_ms": 8913,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 6,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-04T04:35:01Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-04T04:35:09Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B07",
+   "name": "Interstitial / popup overlay",
+   "stage": "S2",
+   "confidence": 0.6,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "e93118e4-a14d-4b5b-8b0b-263acf285662",
+     "summary": "GET /p/minimal-analog-watch-in-sky-blue -> 200"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

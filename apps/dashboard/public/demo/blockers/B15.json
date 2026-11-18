@@ -1,119 +1,85 @@
 {
  "window": {
-  "from": "2026-11-05",
-  "to": "2026-11-11",
+  "from": "2026-11-01",
+  "to": "2026-11-07",
   "days": 7
  },
  "blocker": {
   "blocker_id": "B15",
-  "name": "Price mismatch PDP vs cart",
-  "stage": "S6",
-  "sessions_blocked": 10,
-  "share_of_failed": 0.0025,
+  "name": "Price mismatch (PDP vs cart)",
+  "stage": "S5",
+  "sessions_blocked": 0,
+  "share_of_failed": 0.0,
   "risk_inr": {
-   "low": 9051,
-   "base": 16971,
-   "high": 27154
+   "low": 0,
+   "base": 0,
+   "high": 0
   },
   "replay_status": "not_run",
   "effort": "M",
-  "priority_score": 8486,
+  "priority_score": 0,
   "low_confidence": true
  },
- "description": "The cart total differs from the product page price and the agent stops.",
- "detection": "Cart value differs from the sum of PDP prices seen in the session and the session ends.",
+ "description": "The cart price differs from the price shown on the product page, so agents distrust and stop.",
+ "detection": "Rule B15 (Price mismatch (PDP vs cart)) on the request log; evidence below.",
  "evidence": {
-  "top_error_codes": [
-   {
-    "code": "PRICE_MISMATCH",
-    "count": 10,
-    "share": 1
-   }
-  ],
-  "example_requests": [
-   {
-    "request_id": "req_B15_1",
-    "summary": "PDP ₹2,199 · cart ₹2,499 · session ended",
-    "count": 10
-   }
-  ],
+  "top_error_codes": [],
+  "example_requests": [],
   "site_checks": []
  },
  "risk_breakdown": {
-  "sessions_blocked": 10,
+  "sessions_blocked": 0,
   "recoverable_rate": 0.6,
-  "p_stage": 0.2999924242424242,
-  "aov_inr": 2200,
+  "p_stage": 0.0,
+  "aov_inr": 2200.0,
   "k": 4.285714285714286
  },
  "trend": [
   {
+   "date": "2026-11-01",
+   "sessions_blocked": 0
+  },
+  {
+   "date": "2026-11-02",
+   "sessions_blocked": 0
+  },
+  {
+   "date": "2026-11-03",
+   "sessions_blocked": 0
+  },
+  {
+   "date": "2026-11-04",
+   "sessions_blocked": 0
+  },
+  {
    "date": "2026-11-05",
-   "sessions_blocked": 1
+   "sessions_blocked": 0
   },
   {
    "date": "2026-11-06",
-   "sessions_blocked": 2
+   "sessions_blocked": 0
   },
   {
    "date": "2026-11-07",
-   "sessions_blocked": 1
-  },
-  {
-   "date": "2026-11-08",
-   "sessions_blocked": 1
-  },
-  {
-   "date": "2026-11-09",
-   "sessions_blocked": 2
-  },
-  {
-   "date": "2026-11-10",
-   "sessions_blocked": 2
-  },
-  {
-   "date": "2026-11-11",
-   "sessions_blocked": 1
+   "sessions_blocked": 0
   }
  ],
- "sample_sessions": [
-  {
-   "session_id": "ses_1wxsm3cshf",
-   "start_ts": "2026-11-06T08:23:53.000Z",
-   "duration_s": 17,
-   "request_count": 9,
-   "page_count": 4,
-   "identity_tier": "declared",
-   "operator": "OpenAI",
-   "agent_name": "ChatGPT agent",
-   "agent_class": "browsing_agent",
-   "identity_confidence": 0.7,
-   "entry_page": "/",
-   "exit_page": "/cart",
-   "max_stage": "S5",
-   "converted": false,
-   "order_value_inr": null,
-   "terminal_blocker_id": "B15",
-   "terminal_blocker_name": "Price mismatch PDP vs cart",
-   "blocker_confidence": 0.81,
-   "diagnosis_method": "rule"
-  }
- ],
+ "sample_sessions": [],
  "replays": [],
  "recommendation": {
   "rec_id": "rec_B15",
-  "run_id": "run_20261118_0610",
+  "run_id": "",
   "blocker_id": "B15",
-  "blocker_name": "Price mismatch PDP vs cart",
-  "title": "Show the same price everywhere",
-  "body": "Fix pricing consistency between product page, cart and checkout.",
-  "why_it_helps": "Agents verify the price against the one they were asked to stay under.",
-  "how_to_verify": "Mismatch rate between PDP and cart should be zero.",
-  "verify_metric": "Cart/PDP price mismatch rate",
+  "blocker_name": "Price mismatch (PDP vs cart)",
+  "title": "Price mismatch (PDP vs cart): Fix pricing consistency and show the same price everywhere.",
+  "body": "Fix pricing consistency and show the same price everywhere.",
+  "why_it_helps": "The cart price differs from the price shown on the product page, so agents distrust and stop.",
+  "how_to_verify": "Cart value matches the catalogue price for all products; fewer sessions end at cart.",
+  "verify_metric": "Agent sessions ending with B15 per day",
   "effort": "M",
   "owner": "Eng",
-  "priority_score": 8486,
-  "risk_inr_base": 16971,
+  "priority_score": 0,
+  "risk_inr_base": 0,
   "status": "open",
   "fixed_annotation_id": null,
   "llm_explanation": null

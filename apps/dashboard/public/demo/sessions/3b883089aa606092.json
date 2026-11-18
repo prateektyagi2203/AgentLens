@@ -1,0 +1,100 @@
+{
+ "session": {
+  "session_id": "3b883089aa606092",
+  "start_ts": "2026-11-08T11:18:23Z",
+  "duration_s": 2.246,
+  "request_count": 4,
+  "page_count": 4,
+  "identity_tier": "suspected",
+  "operator": "unknown",
+  "agent_name": "unknown",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.9,
+  "entry_page": "/p/bandhani-flared-kurta-in-sky-blue",
+  "exit_page": "/cart",
+  "max_stage": "S5",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": null,
+  "terminal_blocker_name": null,
+  "blocker_confidence": null,
+  "diagnosis_method": "none"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 90.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "eb7dc950-bc07-4d39-8f74-ca732c16d162",
+   "ts": "2026-11-08T11:18:23Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/p/bandhani-flared-kurta-in-sky-blue",
+   "status": 200,
+   "duration_ms": 115,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "36960088-f5df-4fe2-809a-28f8991675e5",
+   "ts": "2026-11-08T11:18:24Z",
+   "offset_ms": 847,
+   "method": "GET",
+   "path": "/api/products/KRT004/variants",
+   "status": 200,
+   "duration_ms": 33,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "5752881a-9302-45c7-8f43-226e1cd79e4d",
+   "ts": "2026-11-08T11:18:24Z",
+   "offset_ms": 1646,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 201,
+   "duration_ms": 45,
+   "page_type": "cart_api",
+   "error_code": null,
+   "stage_id": "S5",
+   "is_asset": false
+  },
+  {
+   "request_id": "955db4ac-29c8-4f20-8351-08e46e394717",
+   "ts": "2026-11-08T11:18:25Z",
+   "offset_ms": 2246,
+   "method": "GET",
+   "path": "/cart",
+   "status": 200,
+   "duration_ms": 62,
+   "page_type": "cart",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-08T11:18:23Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-08T11:18:24Z"
+  },
+  {
+   "stage_id": "S5",
+   "first_reached_ts": "2026-11-08T11:18:24Z"
+  }
+ ],
+ "fired_rules": [],
+ "replay_ids": []
+}

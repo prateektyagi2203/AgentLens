@@ -1,0 +1,148 @@
+{
+ "session": {
+  "session_id": "e3015aef8afe5697",
+  "start_ts": "2026-11-03T07:18:23Z",
+  "duration_s": 5.835,
+  "request_count": 8,
+  "page_count": 4,
+  "identity_tier": "human",
+  "operator": "human",
+  "agent_name": "Browser (human)",
+  "agent_class": "human",
+  "identity_confidence": 0.5,
+  "entry_page": "/",
+  "exit_page": "/size-guide/mens-shirts",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": null,
+  "terminal_blocker_name": null,
+  "blocker_confidence": null,
+  "diagnosis_method": "none"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 50.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "657f2896-6957-47b0-83b7-639834e51658",
+   "ts": "2026-11-03T07:18:23Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 74,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "aa85a637-18d3-44eb-84f8-305778334dc0",
+   "ts": "2026-11-03T07:18:24Z",
+   "offset_ms": 649,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 9,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "d8079972-d00f-4ca2-885e-9aef4a198ad7",
+   "ts": "2026-11-03T07:18:25Z",
+   "offset_ms": 1727,
+   "method": "GET",
+   "path": "/c/mens-shirts",
+   "status": 200,
+   "duration_ms": 51,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "d8a0640d-d442-47de-8ea3-32e8984c9b21",
+   "ts": "2026-11-03T07:18:26Z",
+   "offset_ms": 3056,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 6,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "db503567-9365-4f93-8a9b-12f4f7e77e99",
+   "ts": "2026-11-03T07:18:27Z",
+   "offset_ms": 3513,
+   "method": "GET",
+   "path": "/p/olive-denim-overshirt",
+   "status": 200,
+   "duration_ms": 104,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "8285d83f-c8c2-41cd-885e-e922b82bce9f",
+   "ts": "2026-11-03T07:18:28Z",
+   "offset_ms": 4861,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 6,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "239888e7-d87a-4897-858c-4e35117c2f8e",
+   "ts": "2026-11-03T07:18:28Z",
+   "offset_ms": 5220,
+   "method": "GET",
+   "path": "/size-guide/mens-shirts",
+   "status": 200,
+   "duration_ms": 49,
+   "page_type": "size_guide",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "ecc542ae-8308-4336-8acb-6c1cf0750a30",
+   "ts": "2026-11-03T07:18:29Z",
+   "offset_ms": 5835,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 8,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-03T07:18:23Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-03T07:18:27Z"
+  }
+ ],
+ "fired_rules": [],
+ "replay_ids": []
+}

@@ -1,0 +1,198 @@
+{
+ "session": {
+  "session_id": "081bc096b7c19da7",
+  "start_ts": "2026-11-01T09:53:04Z",
+  "duration_s": 1.184,
+  "request_count": 11,
+  "page_count": 1,
+  "identity_tier": "verified",
+  "operator": "AgentLens Test Operator",
+  "agent_name": "TestSignedAgent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 1.0,
+  "entry_page": "/p/maroon-fleet-foam-runner",
+  "exit_page": "/p/maroon-fleet-foam-runner",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B07",
+  "terminal_blocker_name": "Interstitial / popup overlay",
+  "blocker_confidence": 0.6,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "valid",
+  "signature_agent": "https://agents.desithreads.test",
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 TestSignedAgent/1.0",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "975548f7-2282-4233-8ead-1bbfaa345637",
+   "ts": "2026-11-01T09:53:04Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/p/maroon-fleet-foam-runner",
+   "status": 200,
+   "duration_ms": 125,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "221b8cb1-ee73-488f-8b20-8b59084cd4f4",
+   "ts": "2026-11-01T09:53:04Z",
+   "offset_ms": 176,
+   "method": "GET",
+   "path": "/img/p/pink-metro-mesh-sneaker-1.svg",
+   "status": 200,
+   "duration_ms": 8,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "ff54b40e-1b5c-42e9-859e-e7a85f829c72",
+   "ts": "2026-11-01T09:53:04Z",
+   "offset_ms": 240,
+   "method": "GET",
+   "path": "/img/p/daily-wear-pintuck-kurta-in-teal-2.svg",
+   "status": 200,
+   "duration_ms": 12,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "29de5b05-89fe-4d21-8294-fd183769a99c",
+   "ts": "2026-11-01T09:53:04Z",
+   "offset_ms": 274,
+   "method": "GET",
+   "path": "/_next/static/chunks/app.js",
+   "status": 200,
+   "duration_ms": 14,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "c336ee2e-fabe-47d6-8ce3-16260c64e0e1",
+   "ts": "2026-11-01T09:53:04Z",
+   "offset_ms": 371,
+   "method": "GET",
+   "path": "/img/p/cotton-a-line-kurta-in-maroon-2.svg",
+   "status": 200,
+   "duration_ms": 12,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "3638ab6a-2e06-42b3-8ade-107c6b6b573a",
+   "ts": "2026-11-01T09:53:04Z",
+   "offset_ms": 415,
+   "method": "GET",
+   "path": "/_next/static/chunks/main.js",
+   "status": 200,
+   "duration_ms": 9,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "549a39ae-5698-4f7b-8b08-0fb7a7952b99",
+   "ts": "2026-11-01T09:53:04Z",
+   "offset_ms": 481,
+   "method": "GET",
+   "path": "/favicon.ico",
+   "status": 200,
+   "duration_ms": 8,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "d275ff57-8195-49ea-8389-447fe9126e0f",
+   "ts": "2026-11-01T09:53:04Z",
+   "offset_ms": 521,
+   "method": "GET",
+   "path": "/img/p/tan-oxford-button-down-shirt-3.svg",
+   "status": 200,
+   "duration_ms": 10,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "b728a5a7-d410-44c0-82f6-eef7b1a2caa9",
+   "ts": "2026-11-01T09:53:04Z",
+   "offset_ms": 620,
+   "method": "GET",
+   "path": "/_next/static/css/app.css",
+   "status": 200,
+   "duration_ms": 22,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "27d7da58-3392-4b29-8dd6-6496e0e36c87",
+   "ts": "2026-11-01T09:53:04Z",
+   "offset_ms": 738,
+   "method": "GET",
+   "path": "/img/p/black-checked-flannel-shirt-2.svg",
+   "status": 200,
+   "duration_ms": 11,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "d1755b33-b61a-411f-8ef8-fe644f178957",
+   "ts": "2026-11-01T09:53:05Z",
+   "offset_ms": 1184,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 6,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-01T09:53:04Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B07",
+   "name": "Interstitial / popup overlay",
+   "stage": "S2",
+   "confidence": 0.6,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "975548f7-2282-4233-8ead-1bbfaa345637",
+     "summary": "GET /p/maroon-fleet-foam-runner -> 200"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

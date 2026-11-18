@@ -1,0 +1,207 @@
+{
+ "session": {
+  "session_id": "7b87eaad2785a640",
+  "start_ts": "2026-11-11T10:11:37Z",
+  "duration_s": 7.927,
+  "request_count": 11,
+  "page_count": 11,
+  "identity_tier": "suspected",
+  "operator": "unknown",
+  "agent_name": "unknown",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.95,
+  "entry_page": "/",
+  "exit_page": "/order/confirmed/DT-84AB16EA",
+  "max_stage": "S8",
+  "converted": true,
+  "order_value_inr": 1419.0,
+  "terminal_blocker_id": null,
+  "terminal_blocker_name": null,
+  "blocker_confidence": null,
+  "diagnosis_method": "none"
+ },
+ "identity": {
+  "signature_status": "unknown_key",
+  "signature_agent": "https://agents.desithreads.test",
+  "suspicion_score": 95.0,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "45105f22-9492-4cb6-8778-fd2e3ef74332",
+   "ts": "2026-11-11T10:11:37Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 99,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "3afa8ada-10d0-4d3c-8bdf-ff3a5fcaf9d1",
+   "ts": "2026-11-11T10:11:39Z",
+   "offset_ms": 1382,
+   "method": "GET",
+   "path": "/c/mens-shirts",
+   "status": 200,
+   "duration_ms": 68,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "dc7f3311-dc71-4a85-8672-66782ecf5c1f",
+   "ts": "2026-11-11T10:11:40Z",
+   "offset_ms": 2700,
+   "method": "GET",
+   "path": "/p/grey-textured-dobby-shirt",
+   "status": 200,
+   "duration_ms": 27,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "1028cc14-8097-41ee-8268-2c82be7653e4",
+   "ts": "2026-11-11T10:11:41Z",
+   "offset_ms": 3205,
+   "method": "GET",
+   "path": "/api/products/SHT010/variants",
+   "status": 200,
+   "duration_ms": 21,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "8cf24d4b-7896-4cb1-84c3-53f5aa3f1700",
+   "ts": "2026-11-11T10:11:41Z",
+   "offset_ms": 3808,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 201,
+   "duration_ms": 41,
+   "page_type": "cart_api",
+   "error_code": null,
+   "stage_id": "S5",
+   "is_asset": false
+  },
+  {
+   "request_id": "e0893a9f-be62-415a-8325-d085f0ea0d1e",
+   "ts": "2026-11-11T10:11:42Z",
+   "offset_ms": 4294,
+   "method": "GET",
+   "path": "/cart",
+   "status": 200,
+   "duration_ms": 171,
+   "page_type": "cart",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "f5040e3a-86b1-4891-8285-b8221c7a8d3f",
+   "ts": "2026-11-11T10:11:43Z",
+   "offset_ms": 5680,
+   "method": "GET",
+   "path": "/checkout",
+   "status": 200,
+   "duration_ms": 60,
+   "page_type": "checkout",
+   "error_code": null,
+   "stage_id": "S6",
+   "is_asset": false
+  },
+  {
+   "request_id": "05d2259d-d346-49aa-8b57-dd172b983d2a",
+   "ts": "2026-11-11T10:11:44Z",
+   "offset_ms": 6277,
+   "method": "POST",
+   "path": "/api/checkout",
+   "status": 422,
+   "duration_ms": 19,
+   "page_type": "checkout_api",
+   "error_code": "PHONE_FORMAT",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "7ddd43b3-c628-4b41-8165-d76281e35458",
+   "ts": "2026-11-11T10:11:44Z",
+   "offset_ms": 6849,
+   "method": "POST",
+   "path": "/api/checkout",
+   "status": 422,
+   "duration_ms": 42,
+   "page_type": "checkout_api",
+   "error_code": "PHONE_FORMAT",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "aab8ec30-9636-42fb-8666-d3b378272bce",
+   "ts": "2026-11-11T10:11:45Z",
+   "offset_ms": 7419,
+   "method": "POST",
+   "path": "/api/checkout",
+   "status": 201,
+   "duration_ms": 55,
+   "page_type": "checkout_api",
+   "error_code": null,
+   "stage_id": "S7",
+   "is_asset": false
+  },
+  {
+   "request_id": "7feefe27-c0d1-4474-8872-e244530dd185",
+   "ts": "2026-11-11T10:11:45Z",
+   "offset_ms": 7927,
+   "method": "GET",
+   "path": "/order/confirmed/DT-84AB16EA",
+   "status": 200,
+   "duration_ms": 122,
+   "page_type": "order_confirm",
+   "error_code": null,
+   "stage_id": "S8",
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-11T10:11:37Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-11T10:11:40Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-11T10:11:41Z"
+  },
+  {
+   "stage_id": "S5",
+   "first_reached_ts": "2026-11-11T10:11:41Z"
+  },
+  {
+   "stage_id": "S6",
+   "first_reached_ts": "2026-11-11T10:11:43Z"
+  },
+  {
+   "stage_id": "S7",
+   "first_reached_ts": "2026-11-11T10:11:45Z"
+  },
+  {
+   "stage_id": "S8",
+   "first_reached_ts": "2026-11-11T10:11:45Z"
+  }
+ ],
+ "fired_rules": [],
+ "replay_ids": []
+}

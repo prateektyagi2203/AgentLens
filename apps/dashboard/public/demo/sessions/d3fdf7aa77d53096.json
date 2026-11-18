@@ -1,0 +1,336 @@
+{
+ "session": {
+  "session_id": "d3fdf7aa77d53096",
+  "start_ts": "2026-11-13T20:01:37Z",
+  "duration_s": 11.978,
+  "request_count": 21,
+  "page_count": 5,
+  "identity_tier": "verified",
+  "operator": "AgentLens Test Operator",
+  "agent_name": "TestSignedAgent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 1.0,
+  "entry_page": "/",
+  "exit_page": "/api/products/SNK011/variants",
+  "max_stage": "S3",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B08",
+  "terminal_blocker_name": "Out-of-stock dead end",
+  "blocker_confidence": 0.8,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "valid",
+  "signature_agent": "https://agents.desithreads.test",
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 TestSignedAgent/1.0",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "f36c8ace-b0fc-42bb-8f7c-ddb3ac56e377",
+   "ts": "2026-11-13T20:01:37Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 58,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "da055a20-6254-4f11-885e-aaf3cbe09677",
+   "ts": "2026-11-13T20:01:37Z",
+   "offset_ms": 111,
+   "method": "GET",
+   "path": "/img/p/block-print-straight-kurta-in-white-3.svg",
+   "status": 200,
+   "duration_ms": 9,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "21548b36-edd1-49b9-8809-803d0e698e8f",
+   "ts": "2026-11-13T20:01:37Z",
+   "offset_ms": 138,
+   "method": "GET",
+   "path": "/img/p/gotta-patti-kurta-in-pink-2.svg",
+   "status": 200,
+   "duration_ms": 7,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "10e8a798-c6bf-424b-8aa1-d335ec7a3e28",
+   "ts": "2026-11-13T20:01:38Z",
+   "offset_ms": 220,
+   "method": "GET",
+   "path": "/_next/static/chunks/app.js",
+   "status": 200,
+   "duration_ms": 17,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "31baa704-7b80-462c-840e-90bf08737db7",
+   "ts": "2026-11-13T20:01:38Z",
+   "offset_ms": 294,
+   "method": "GET",
+   "path": "/_next/static/css/app.css",
+   "status": 200,
+   "duration_ms": 5,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "9e0d6a00-8041-4ef8-82fe-46fa60e5fd79",
+   "ts": "2026-11-13T20:01:38Z",
+   "offset_ms": 356,
+   "method": "GET",
+   "path": "/favicon.ico",
+   "status": 200,
+   "duration_ms": 10,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "5effcd46-a843-4222-848f-0724f2fd743b",
+   "ts": "2026-11-13T20:01:38Z",
+   "offset_ms": 398,
+   "method": "GET",
+   "path": "/_next/static/chunks/main.js",
+   "status": 200,
+   "duration_ms": 17,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "056742f2-e6c7-46f8-8bf2-984f0ba866af",
+   "ts": "2026-11-13T20:01:38Z",
+   "offset_ms": 464,
+   "method": "GET",
+   "path": "/img/p/pleated-asymmetric-kurta-in-pink-2.svg",
+   "status": 200,
+   "duration_ms": 10,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "c8ba5bb1-8447-451b-8833-ad298a6db3cd",
+   "ts": "2026-11-13T20:01:38Z",
+   "offset_ms": 539,
+   "method": "GET",
+   "path": "/img/p/maroon-street-runner-1.svg",
+   "status": 200,
+   "duration_ms": 10,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "80aa6494-ba36-49ce-80ee-d72c5246b35b",
+   "ts": "2026-11-13T20:01:38Z",
+   "offset_ms": 680,
+   "method": "GET",
+   "path": "/img/p/teal-half-sleeve-linen-shirt-2.svg",
+   "status": 200,
+   "duration_ms": 17,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "c90f2cd9-7be8-4b0b-8a80-37b36ad8232c",
+   "ts": "2026-11-13T20:01:39Z",
+   "offset_ms": 1165,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 10,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "2fac33bb-1bad-4fa0-8983-7b2004182c13",
+   "ts": "2026-11-13T20:01:40Z",
+   "offset_ms": 3019,
+   "method": "GET",
+   "path": "/c/mens-sneakers",
+   "status": 500,
+   "duration_ms": 161,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "9c1b3c48-f4d6-4413-8e16-9db27952c1a6",
+   "ts": "2026-11-13T20:01:43Z",
+   "offset_ms": 5741,
+   "method": "GET",
+   "path": "/c/mens-sneakers",
+   "status": 200,
+   "duration_ms": 57,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "10488e57-9251-43a8-8ea4-f145c1d1677f",
+   "ts": "2026-11-13T20:01:43Z",
+   "offset_ms": 5845,
+   "method": "GET",
+   "path": "/img/p/handloom-yoke-kurta-in-olive-1.svg",
+   "status": 200,
+   "duration_ms": 9,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "0c85651e-e81d-4b32-8e12-6233e5ebc76f",
+   "ts": "2026-11-13T20:01:43Z",
+   "offset_ms": 5920,
+   "method": "GET",
+   "path": "/img/p/everyday-backpack-in-olive-2.svg",
+   "status": 200,
+   "duration_ms": 6,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "36ae7e0e-afe0-474e-8d6e-7035c900bff5",
+   "ts": "2026-11-13T20:01:45Z",
+   "offset_ms": 7175,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 4,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "a74b4e55-f64e-42e7-82dd-243e26330efa",
+   "ts": "2026-11-13T20:01:48Z",
+   "offset_ms": 10552,
+   "method": "GET",
+   "path": "/p/pink-metro-mesh-sneaker",
+   "status": 200,
+   "duration_ms": 220,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "41db5950-23ed-48e2-810c-455362a581ef",
+   "ts": "2026-11-13T20:01:48Z",
+   "offset_ms": 10854,
+   "method": "GET",
+   "path": "/img/p/baseball-cap-in-teal-1.svg",
+   "status": 200,
+   "duration_ms": 26,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "30e3402d-65af-45b7-8160-12fedaf95aa3",
+   "ts": "2026-11-13T20:01:48Z",
+   "offset_ms": 10877,
+   "method": "GET",
+   "path": "/img/p/everyday-backpack-in-olive-1.svg",
+   "status": 200,
+   "duration_ms": 13,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "90c3999c-00b8-46a9-8039-ef63444f4933",
+   "ts": "2026-11-13T20:01:49Z",
+   "offset_ms": 11479,
+   "method": "GET",
+   "path": "/api/products/SNK011/variants",
+   "status": 200,
+   "duration_ms": 54,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "84b0c202-3258-43fe-82d8-d4fcf252ff5c",
+   "ts": "2026-11-13T20:01:49Z",
+   "offset_ms": 11978,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 6,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-13T20:01:37Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-13T20:01:48Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-13T20:01:49Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B08",
+   "name": "Out-of-stock dead end",
+   "stage": "S3",
+   "confidence": 0.8,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "90c3999c-00b8-46a9-8039-ef63444f4933",
+     "summary": "GET /api/products/SNK011/variants -> 200 (catalog shows 0 in stock for this size and colour)"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

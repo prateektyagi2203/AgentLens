@@ -1,0 +1,105 @@
+{
+ "session": {
+  "session_id": "adc3d2ced0fe0e8f",
+  "start_ts": "2026-11-05T06:20:04Z",
+  "duration_s": 1.366,
+  "request_count": 2,
+  "page_count": 2,
+  "identity_tier": "declared",
+  "operator": "OpenAI",
+  "agent_name": "ChatGPT-User",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.7,
+  "entry_page": "/robots.txt",
+  "exit_page": "/p/grey-everyday-slip-on",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B03",
+  "terminal_blocker_name": "JS-only product content",
+  "blocker_confidence": 0.85,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "67b30ce8-85f6-4371-8d38-4fafb475f86e",
+   "ts": "2026-11-05T06:20:04Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/robots.txt",
+   "status": 200,
+   "duration_ms": 23,
+   "page_type": "robots",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "a868755a-4021-4b6a-8366-e502a8e30f78",
+   "ts": "2026-11-05T06:20:05Z",
+   "offset_ms": 1366,
+   "method": "GET",
+   "path": "/p/grey-everyday-slip-on",
+   "status": 200,
+   "duration_ms": 58,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-05T06:20:05Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B03",
+   "name": "JS-only product content",
+   "stage": "S2",
+   "confidence": 0.85,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "a868755a-4021-4b6a-8366-e502a8e30f78",
+     "summary": "GET /p/grey-everyday-slip-on -> 200"
+    },
+    {
+     "type": "site_check",
+     "check": "pdp_ssr_price",
+     "result": "fail"
+    }
+   ]
+  },
+  {
+   "blocker_id": "B04",
+   "name": "Missing structured data",
+   "stage": "S2",
+   "confidence": 0.6,
+   "is_terminal": false,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "a868755a-4021-4b6a-8366-e502a8e30f78",
+     "summary": "GET /p/grey-everyday-slip-on -> 200"
+    },
+    {
+     "type": "site_check",
+     "check": "pdp_jsonld_product",
+     "result": "warn"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

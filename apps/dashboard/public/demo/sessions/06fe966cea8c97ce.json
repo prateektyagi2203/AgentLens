@@ -1,0 +1,128 @@
+{
+ "session": {
+  "session_id": "06fe966cea8c97ce",
+  "start_ts": "2026-11-13T05:32:03Z",
+  "duration_s": 5.894,
+  "request_count": 5,
+  "page_count": 5,
+  "identity_tier": "suspected",
+  "operator": "unknown",
+  "agent_name": "unknown",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.95,
+  "entry_page": "/",
+  "exit_page": "/api/products/SNK006/variants",
+  "max_stage": "S3",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B08",
+  "terminal_blocker_name": "Out-of-stock dead end",
+  "blocker_confidence": 0.8,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 95.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "ae9b9bb3-1c10-4211-846e-48a16b7a47a1",
+   "ts": "2026-11-13T05:32:03Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 142,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "9f256922-eb76-47cb-87f2-eb28e32df498",
+   "ts": "2026-11-13T05:32:04Z",
+   "offset_ms": 1838,
+   "method": "GET",
+   "path": "/search",
+   "status": 200,
+   "duration_ms": 104,
+   "page_type": "search",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "6a46790c-0a3c-40d3-8136-435a6a4c1a8d",
+   "ts": "2026-11-13T05:32:06Z",
+   "offset_ms": 3550,
+   "method": "GET",
+   "path": "/c/mens-sneakers",
+   "status": 200,
+   "duration_ms": 93,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "ca21bb30-ee78-43c5-8bb5-77c127ed229e",
+   "ts": "2026-11-13T05:32:08Z",
+   "offset_ms": 5098,
+   "method": "GET",
+   "path": "/p/indigo-urban-high-top",
+   "status": 200,
+   "duration_ms": 47,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "4d74bce1-609a-4d6c-83fb-2e7ae900aa0b",
+   "ts": "2026-11-13T05:32:08Z",
+   "offset_ms": 5894,
+   "method": "GET",
+   "path": "/api/products/SNK006/variants",
+   "status": 200,
+   "duration_ms": 38,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-13T05:32:03Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-13T05:32:08Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-13T05:32:08Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B08",
+   "name": "Out-of-stock dead end",
+   "stage": "S3",
+   "confidence": 0.8,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "4d74bce1-609a-4d6c-83fb-2e7ae900aa0b",
+     "summary": "GET /api/products/SNK006/variants -> 200 (catalog shows 0 in stock for this size and colour)"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

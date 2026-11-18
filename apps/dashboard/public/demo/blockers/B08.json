@@ -1,198 +1,246 @@
 {
  "window": {
-  "from": "2026-11-05",
-  "to": "2026-11-11",
+  "from": "2026-11-01",
+  "to": "2026-11-07",
   "days": 7
  },
  "blocker": {
   "blocker_id": "B08",
   "name": "Out-of-stock dead end",
   "stage": "S3",
-  "sessions_blocked": 120,
-  "share_of_failed": 0.03,
+  "sessions_blocked": 15,
+  "share_of_failed": 0.010073875083948958,
   "risk_inr": {
-   "low": 25344,
-   "base": 47520,
-   "high": 76032
+   "low": 11830,
+   "base": 22181,
+   "high": 35489
   },
-  "replay_status": "inconclusive",
+  "replay_status": "not_run",
   "effort": "S",
-  "priority_score": 47520,
-  "low_confidence": false
+  "priority_score": 22181,
+  "low_confidence": true
  },
- "description": "The chosen variant is out of stock and the page offers no alternative the agent can pick up.",
- "detection": "Variant API returned 409 out of stock as the last meaningful request with no alternative variant requested.",
+ "description": "Choosing an out-of-stock variant returns an error with no alternatives suggested.",
+ "detection": "Rule B08 (Out-of-stock dead end) on the request log; evidence below.",
  "evidence": {
   "top_error_codes": [
    {
-    "code": "VARIANT_OUT_OF_STOCK",
-    "count": 120,
-    "share": 1
+    "code": "HTTP 200",
+    "count": 15,
+    "share": 1.0
    }
   ],
   "example_requests": [
    {
-    "request_id": "req_B08_1",
-    "summary": "GET /api/products/white-court-sneaker/variants?size=9 → 409 VARIANT_OUT_OF_STOCK · ended",
-    "count": 120
+    "request_id": "8f819079-2e26-431a-826f-f3ba4c7ec325",
+    "summary": "GET /api/products/SHT015/variants -> 200",
+    "count": 2
+   },
+   {
+    "request_id": "791d30fc-2e9f-4471-83a7-c640f656f77a",
+    "summary": "GET /api/products/SNK008/variants -> 200",
+    "count": 2
+   },
+   {
+    "request_id": "158448ea-42b8-4b9c-8df2-966916579721",
+    "summary": "GET /api/products/SNK012/variants -> 200",
+    "count": 2
+   },
+   {
+    "request_id": "9b0153f7-bbb4-4602-8b69-983086bdd0b1",
+    "summary": "GET /api/products/ACC001/variants -> 200",
+    "count": 1
+   },
+   {
+    "request_id": "6dc1a002-9e53-4619-82b4-986aea411a1e",
+    "summary": "GET /api/products/ACC005/variants -> 200",
+    "count": 1
    }
   ],
   "site_checks": []
  },
  "risk_breakdown": {
-  "sessions_blocked": 120,
+  "sessions_blocked": 15,
   "recoverable_rate": 0.6,
-  "p_stage": 0.07,
-  "aov_inr": 2200,
+  "p_stage": 0.26139088729016785,
+  "aov_inr": 2200.0,
   "k": 4.285714285714286
  },
  "trend": [
   {
+   "date": "2026-11-01",
+   "sessions_blocked": 1
+  },
+  {
+   "date": "2026-11-02",
+   "sessions_blocked": 0
+  },
+  {
+   "date": "2026-11-03",
+   "sessions_blocked": 3
+  },
+  {
+   "date": "2026-11-04",
+   "sessions_blocked": 3
+  },
+  {
    "date": "2026-11-05",
-   "sessions_blocked": 18
+   "sessions_blocked": 3
   },
   {
    "date": "2026-11-06",
-   "sessions_blocked": 19
+   "sessions_blocked": 2
   },
   {
    "date": "2026-11-07",
-   "sessions_blocked": 15
-  },
-  {
-   "date": "2026-11-08",
-   "sessions_blocked": 14
-  },
-  {
-   "date": "2026-11-09",
-   "sessions_blocked": 18
-  },
-  {
-   "date": "2026-11-10",
-   "sessions_blocked": 19
-  },
-  {
-   "date": "2026-11-11",
-   "sessions_blocked": 17
+   "sessions_blocked": 3
   }
  ],
  "sample_sessions": [
   {
-   "session_id": "ses_qgg6enpjqj",
-   "start_ts": "2026-11-11T13:46:58.000Z",
-   "duration_s": 8,
-   "request_count": 5,
-   "page_count": 2,
+   "session_id": "ba72c06312bf4533",
+   "start_ts": "2026-11-07T21:54:32Z",
+   "duration_s": 10.307,
+   "request_count": 24,
+   "page_count": 5,
+   "identity_tier": "verified",
+   "operator": "AgentLens Test Operator",
+   "agent_name": "TestSignedAgent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 1.0,
+   "entry_page": "/",
+   "exit_page": "/api/products/SHT015/variants",
+   "max_stage": "S3",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B08",
+   "terminal_blocker_name": "Out-of-stock dead end",
+   "blocker_confidence": 0.8,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "945b5ead47744a29",
+   "start_ts": "2026-11-07T14:37:27Z",
+   "duration_s": 4.308,
+   "request_count": 4,
+   "page_count": 4,
    "identity_tier": "suspected",
    "operator": "unknown",
-   "agent_name": "Unidentified browsing agent",
-   "agent_class": "browsing_agent",
-   "identity_confidence": 0.79,
-   "entry_page": "/c/sneakers",
-   "exit_page": "/api/products/indigo-kurta-set/variants?size=9",
-   "max_stage": "S2",
-   "converted": false,
-   "order_value_inr": null,
-   "terminal_blocker_id": "B08",
-   "terminal_blocker_name": "Out-of-stock dead end",
-   "blocker_confidence": 0.85,
-   "diagnosis_method": "rule"
-  },
-  {
-   "session_id": "ses_7kj8jbxvnm",
-   "start_ts": "2026-11-11T04:32:49.000Z",
-   "duration_s": 7,
-   "request_count": 5,
-   "page_count": 2,
-   "identity_tier": "verified",
-   "operator": "TestOperator",
-   "agent_name": "AgentLens Test Agent",
-   "agent_class": "browsing_agent",
-   "identity_confidence": 1,
-   "entry_page": "/c/sneakers",
-   "exit_page": "/api/products/cotton-linen-shirt/variants?size=9",
-   "max_stage": "S2",
-   "converted": false,
-   "order_value_inr": null,
-   "terminal_blocker_id": "B08",
-   "terminal_blocker_name": "Out-of-stock dead end",
-   "blocker_confidence": 0.72,
-   "diagnosis_method": "rule"
-  },
-  {
-   "session_id": "ses_gexbb9ghqb",
-   "start_ts": "2026-11-09T06:55:36.000Z",
-   "duration_s": 3,
-   "request_count": 3,
-   "page_count": 2,
-   "identity_tier": "declared",
-   "operator": "Perplexity",
-   "agent_name": "Perplexity-User",
+   "agent_name": "unknown",
    "agent_class": "user_fetcher",
    "identity_confidence": 0.7,
-   "entry_page": "/c/sneakers",
-   "exit_page": "/api/products/white-court-sneaker/variants?size=9",
-   "max_stage": "S2",
+   "entry_page": "/",
+   "exit_page": "/api/products/ACC001/variants",
+   "max_stage": "S3",
    "converted": false,
    "order_value_inr": null,
    "terminal_blocker_id": "B08",
    "terminal_blocker_name": "Out-of-stock dead end",
-   "blocker_confidence": 0.71,
+   "blocker_confidence": 0.8,
    "diagnosis_method": "rule"
   },
   {
-   "session_id": "ses_fw4b77pskh",
-   "start_ts": "2026-11-06T11:38:43.000Z",
-   "duration_s": 14,
-   "request_count": 6,
-   "page_count": 3,
-   "identity_tier": "suspected",
-   "operator": "unknown",
-   "agent_name": "Unidentified browsing agent",
+   "session_id": "f6300ca592bc2799",
+   "start_ts": "2026-11-07T10:23:25Z",
+   "duration_s": 1.718,
+   "request_count": 10,
+   "page_count": 2,
+   "identity_tier": "verified",
+   "operator": "AgentLens Test Operator",
+   "agent_name": "TestSignedAgent",
    "agent_class": "browsing_agent",
-   "identity_confidence": 0.68,
-   "entry_page": "/",
-   "exit_page": "/api/products/cotton-linen-shirt/variants?size=9",
-   "max_stage": "S2",
+   "identity_confidence": 1.0,
+   "entry_page": "/p/card-holder-in-pink",
+   "exit_page": "/api/products/ACC010/variants",
+   "max_stage": "S3",
    "converted": false,
    "order_value_inr": null,
    "terminal_blocker_id": "B08",
    "terminal_blocker_name": "Out-of-stock dead end",
-   "blocker_confidence": 0.85,
+   "blocker_confidence": 0.8,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "afb314af2ad4ef2d",
+   "start_ts": "2026-11-06T08:37:20Z",
+   "duration_s": 6.613,
+   "request_count": 20,
+   "page_count": 4,
+   "identity_tier": "verified",
+   "operator": "AgentLens Test Operator",
+   "agent_name": "TestSignedAgent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 1.0,
+   "entry_page": "/",
+   "exit_page": "/api/products/KRT015/variants",
+   "max_stage": "S3",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B08",
+   "terminal_blocker_name": "Out-of-stock dead end",
+   "blocker_confidence": 0.8,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "6d1d92c46067ee0c",
+   "start_ts": "2026-11-06T03:04:05Z",
+   "duration_s": 1.101,
+   "request_count": 9,
+   "page_count": 2,
+   "identity_tier": "verified",
+   "operator": "AgentLens Test Operator",
+   "agent_name": "TestSignedAgent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 1.0,
+   "entry_page": "/p/sky-blue-studio-court-low",
+   "exit_page": "/api/products/SNK012/variants",
+   "max_stage": "S3",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B08",
+   "terminal_blocker_name": "Out-of-stock dead end",
+   "blocker_confidence": 0.8,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "c479c443db258279",
+   "start_ts": "2026-11-05T21:44:28Z",
+   "duration_s": 3.037,
+   "request_count": 4,
+   "page_count": 4,
+   "identity_tier": "suspected",
+   "operator": "unknown",
+   "agent_name": "unknown",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.8,
+   "entry_page": "/",
+   "exit_page": "/api/products/SNK011/variants",
+   "max_stage": "S3",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B08",
+   "terminal_blocker_name": "Out-of-stock dead end",
+   "blocker_confidence": 0.8,
    "diagnosis_method": "rule"
   }
  ],
- "replays": [
-  {
-   "replay_id": "rpl_b08",
-   "blocker_id": "B08",
-   "blocker_name": "Out-of-stock dead end",
-   "source_session_id": "ses_qgg6enpjqj",
-   "mode": "browser",
-   "status": "completed",
-   "verdict": "inconclusive",
-   "started_at": "2026-11-11T17:48:00Z",
-   "finished_at": "2026-11-11T17:48:06.700Z",
-   "steps_count": 2,
-   "verdict_explanation": "Inconclusive. The variant was in stock when replayed, so the out-of-stock dead end could not be reproduced. The source session may have hit a transient stock state."
-  }
- ],
+ "replays": [],
  "recommendation": {
   "rec_id": "rec_B08",
-  "run_id": "run_20261118_0610",
+  "run_id": "b953b1002c33",
   "blocker_id": "B08",
   "blocker_name": "Out-of-stock dead end",
-  "title": "Suggest in-stock alternatives",
-  "body": "Expose availability per variant in HTML and JSON-LD and link to the nearest in-stock size or colour.",
-  "why_it_helps": "A dead end gives an agent no next action, so it reports failure to the shopper.",
-  "how_to_verify": "Sessions ending on a 409 variant response should fall.",
-  "verify_metric": "Variant API 409 share",
+  "title": "Out-of-stock dead end: Suggest in-stock alternatives and expose availability per variant in HTML and JSON-LD.",
+  "body": "Suggest in-stock alternatives and expose availability per variant in HTML and JSON-LD.",
+  "why_it_helps": "Choosing an out-of-stock variant returns an error with no alternatives suggested.",
+  "how_to_verify": "Sessions ending on variant 409 OUT_OF_STOCK fall; variant to cart conversion rises.",
+  "verify_metric": "Agent sessions ending with B08 per day",
   "effort": "S",
-  "owner": "Product",
-  "priority_score": 47520,
-  "risk_inr_base": 47520,
+  "owner": "Eng",
+  "priority_score": 22181,
+  "risk_inr_base": 22181,
   "status": "open",
   "fixed_annotation_id": null,
-  "llm_explanation": null
+  "llm_explanation": "2% of failed agent sessions (32) ended on out-of-stock dead end. Typical failing call: POST /api/cart -> 409 OUT_OF_STOCK. Fixing it could recover about ₹5,621 a month."
  }
 }

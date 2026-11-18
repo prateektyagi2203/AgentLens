@@ -1,0 +1,332 @@
+{
+ "session": {
+  "session_id": "0b3633de21c8c143",
+  "start_ts": "2026-11-02T14:24:52Z",
+  "duration_s": 5.066,
+  "request_count": 21,
+  "page_count": 3,
+  "identity_tier": "verified",
+  "operator": "AgentLens Test Operator",
+  "agent_name": "TestSignedAgent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 1.0,
+  "entry_page": "/",
+  "exit_page": "/p/mustard-alley-suede-sneaker",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B07",
+  "terminal_blocker_name": "Interstitial / popup overlay",
+  "blocker_confidence": 0.6,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "valid",
+  "signature_agent": "https://agents.desithreads.test",
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 TestSignedAgent/1.0",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "c56797e6-1c57-498f-8ea8-d105250f35e3",
+   "ts": "2026-11-02T14:24:52Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 104,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "d04902bb-2271-4917-81d3-4543ca562595",
+   "ts": "2026-11-02T14:24:52Z",
+   "offset_ms": 170,
+   "method": "GET",
+   "path": "/favicon.ico",
+   "status": 200,
+   "duration_ms": 16,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "266b206c-18dc-460b-8a87-c67079b349d6",
+   "ts": "2026-11-02T14:24:52Z",
+   "offset_ms": 306,
+   "method": "GET",
+   "path": "/img/p/teal-poplin-slim-shirt-3.svg",
+   "status": 200,
+   "duration_ms": 5,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "1f6af7db-1037-4e51-8f19-a56a5176c6d8",
+   "ts": "2026-11-02T14:24:52Z",
+   "offset_ms": 351,
+   "method": "GET",
+   "path": "/_next/static/chunks/main.js",
+   "status": 200,
+   "duration_ms": 6,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "3227570b-fba9-45d6-8293-e8596f4a84d5",
+   "ts": "2026-11-02T14:24:52Z",
+   "offset_ms": 368,
+   "method": "GET",
+   "path": "/img/p/olive-denim-overshirt-1.svg",
+   "status": 200,
+   "duration_ms": 8,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "389e46fc-2c8f-406c-8407-bf6152bebfb8",
+   "ts": "2026-11-02T14:24:52Z",
+   "offset_ms": 446,
+   "method": "GET",
+   "path": "/_next/static/css/app.css",
+   "status": 200,
+   "duration_ms": 17,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "d4b90bea-b35b-495e-8994-78d5594c5d76",
+   "ts": "2026-11-02T14:24:52Z",
+   "offset_ms": 623,
+   "method": "GET",
+   "path": "/img/p/mirror-work-short-kurta-in-white-1.svg",
+   "status": 200,
+   "duration_ms": 15,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "8f9ae93f-6aac-44cd-819d-8beba4e29425",
+   "ts": "2026-11-02T14:24:52Z",
+   "offset_ms": 627,
+   "method": "GET",
+   "path": "/_next/static/chunks/app.js",
+   "status": 200,
+   "duration_ms": 11,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "70be6a98-703b-4e20-8558-468d0b128b83",
+   "ts": "2026-11-02T14:24:52Z",
+   "offset_ms": 652,
+   "method": "GET",
+   "path": "/img/p/maroon-street-runner-1.svg",
+   "status": 200,
+   "duration_ms": 10,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "ef81462a-5a4f-4c5a-8fb0-638fbf485326",
+   "ts": "2026-11-02T14:24:52Z",
+   "offset_ms": 684,
+   "method": "GET",
+   "path": "/img/p/ankle-socks-pack-in-white-1.svg",
+   "status": 200,
+   "duration_ms": 7,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "5229e32c-9241-4b90-8954-ac1ee1bec05c",
+   "ts": "2026-11-02T14:24:53Z",
+   "offset_ms": 884,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 8,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "d72970b2-a1e7-4d5d-89a7-23334f37cdeb",
+   "ts": "2026-11-02T14:24:53Z",
+   "offset_ms": 1303,
+   "method": "GET",
+   "path": "/c/mens-sneakers",
+   "status": 200,
+   "duration_ms": 68,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "f9c46810-b95b-476a-8758-9890d0168902",
+   "ts": "2026-11-02T14:24:53Z",
+   "offset_ms": 1751,
+   "method": "GET",
+   "path": "/img/p/sling-crossbody-bag-in-white-2.svg",
+   "status": 200,
+   "duration_ms": 21,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "acb8a5e4-c761-4181-8d76-96f4858e603e",
+   "ts": "2026-11-02T14:24:53Z",
+   "offset_ms": 1803,
+   "method": "GET",
+   "path": "/img/p/tan-printed-resort-shirt-1.svg",
+   "status": 200,
+   "duration_ms": 7,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "9a0cce13-2abf-4c87-85f0-4601597c37aa",
+   "ts": "2026-11-02T14:24:54Z",
+   "offset_ms": 2387,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 8,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "e0fb645d-1fa7-4b60-8ef8-3b8be323b230",
+   "ts": "2026-11-02T14:24:56Z",
+   "offset_ms": 4432,
+   "method": "GET",
+   "path": "/p/mustard-alley-suede-sneaker",
+   "status": 200,
+   "duration_ms": 81,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "21945eb9-6eb7-4e4a-8c4f-98d8d047c8e1",
+   "ts": "2026-11-02T14:24:56Z",
+   "offset_ms": 4776,
+   "method": "GET",
+   "path": "/img/p/navy-court-sneaker-1.svg",
+   "status": 200,
+   "duration_ms": 35,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "fbd087ea-a45f-4cae-8c68-0b357f2b59ef",
+   "ts": "2026-11-02T14:24:56Z",
+   "offset_ms": 4781,
+   "method": "GET",
+   "path": "/img/p/mustard-alley-suede-sneaker-2.svg",
+   "status": 200,
+   "duration_ms": 6,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "a1225865-48b5-4856-82d8-330305bcd0e2",
+   "ts": "2026-11-02T14:24:57Z",
+   "offset_ms": 5053,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 8,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "4b029446-1bb3-4911-8984-f1082aed162d",
+   "ts": "2026-11-02T14:24:57Z",
+   "offset_ms": 5059,
+   "method": "GET",
+   "path": "/img/p/beanie-in-indigo-2.svg",
+   "status": 200,
+   "duration_ms": 14,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "13b23f5e-712a-4c58-8b78-55c9fd36670c",
+   "ts": "2026-11-02T14:24:57Z",
+   "offset_ms": 5066,
+   "method": "GET",
+   "path": "/img/p/baseball-cap-in-teal-3.svg",
+   "status": 200,
+   "duration_ms": 14,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-02T14:24:52Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-02T14:24:56Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B07",
+   "name": "Interstitial / popup overlay",
+   "stage": "S2",
+   "confidence": 0.6,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "e0fb645d-1fa7-4b60-8ef8-3b8be323b230",
+     "summary": "GET /p/mustard-alley-suede-sneaker -> 200"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

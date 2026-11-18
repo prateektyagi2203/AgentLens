@@ -76,6 +76,8 @@ export interface RunAccepted {
 export interface Meta {
   version: string;
   demo_mode: boolean;
+  /** Set by `agentlens export-snapshot`: the data is synthetic (always true for the public demo). */
+  synthetic?: boolean;
   store_name: string;
   currency: "INR";
   operators: string[];

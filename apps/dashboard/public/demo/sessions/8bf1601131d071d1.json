@@ -1,0 +1,366 @@
+{
+ "session": {
+  "session_id": "8bf1601131d071d1",
+  "start_ts": "2026-11-10T02:13:07Z",
+  "duration_s": 10.93,
+  "request_count": 23,
+  "page_count": 6,
+  "identity_tier": "verified",
+  "operator": "AgentLens Test Operator",
+  "agent_name": "TestSignedAgent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 1.0,
+  "entry_page": "/",
+  "exit_page": "/cart",
+  "max_stage": "S5",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B99",
+  "terminal_blocker_name": "Unknown",
+  "blocker_confidence": 0.3,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "valid",
+  "signature_agent": "https://agents.desithreads.test",
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 TestSignedAgent/1.0",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "73414680-1809-409c-84f8-42033df503d1",
+   "ts": "2026-11-10T02:13:07Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 74,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "16c102c7-8f79-436b-8414-218c3cd0d26a",
+   "ts": "2026-11-10T02:13:07Z",
+   "offset_ms": 158,
+   "method": "GET",
+   "path": "/_next/static/css/app.css",
+   "status": 200,
+   "duration_ms": 12,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "8a1e7c17-ef4b-4792-8d16-5bd7029c1b08",
+   "ts": "2026-11-10T02:13:07Z",
+   "offset_ms": 231,
+   "method": "GET",
+   "path": "/img/p/mustard-alley-suede-sneaker-1.svg",
+   "status": 200,
+   "duration_ms": 11,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "bf5f4de3-39c8-4d44-8617-cb1976eabcb8",
+   "ts": "2026-11-10T02:13:07Z",
+   "offset_ms": 348,
+   "method": "GET",
+   "path": "/_next/static/chunks/app.js",
+   "status": 200,
+   "duration_ms": 7,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "e5d7e486-d9ef-4c4c-88c3-2f34747e7938",
+   "ts": "2026-11-10T02:13:08Z",
+   "offset_ms": 433,
+   "method": "GET",
+   "path": "/favicon.ico",
+   "status": 200,
+   "duration_ms": 9,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "b03c17d7-5780-4010-86af-eb80945a9bab",
+   "ts": "2026-11-10T02:13:08Z",
+   "offset_ms": 476,
+   "method": "GET",
+   "path": "/_next/static/chunks/main.js",
+   "status": 200,
+   "duration_ms": 12,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "f6e67207-c499-45f5-8989-8f5130cefe8d",
+   "ts": "2026-11-10T02:13:08Z",
+   "offset_ms": 539,
+   "method": "GET",
+   "path": "/img/p/sky-blue-chambray-work-shirt-3.svg",
+   "status": 200,
+   "duration_ms": 17,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "e3505a2f-cd68-4c1e-81e7-72fe4375eba5",
+   "ts": "2026-11-10T02:13:08Z",
+   "offset_ms": 688,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 10,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "484112a3-7b82-4825-88b5-1950f2369d40",
+   "ts": "2026-11-10T02:13:09Z",
+   "offset_ms": 1669,
+   "method": "GET",
+   "path": "/c/womens-kurtas",
+   "status": 200,
+   "duration_ms": 54,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "d9e8bd78-df8d-440f-8c7e-d2495fabdc0a",
+   "ts": "2026-11-10T02:13:09Z",
+   "offset_ms": 1850,
+   "method": "GET",
+   "path": "/img/p/ankle-socks-pack-in-white-3.svg",
+   "status": 200,
+   "duration_ms": 15,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "890d8939-1932-4415-8fea-148de4e4cc0d",
+   "ts": "2026-11-10T02:13:09Z",
+   "offset_ms": 1854,
+   "method": "GET",
+   "path": "/img/p/black-checked-flannel-shirt-2.svg",
+   "status": 200,
+   "duration_ms": 25,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "0c5dd279-5918-4a2e-821f-f3b807851b52",
+   "ts": "2026-11-10T02:13:10Z",
+   "offset_ms": 2713,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 10,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "fa7395cf-b165-4c2b-81b2-62eb202289f2",
+   "ts": "2026-11-10T02:13:12Z",
+   "offset_ms": 4560,
+   "method": "GET",
+   "path": "/p/bandhani-flared-kurta-in-sky-blue",
+   "status": 200,
+   "duration_ms": 82,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "a5511e95-4e31-42a1-8503-a704707cab27",
+   "ts": "2026-11-10T02:13:12Z",
+   "offset_ms": 5023,
+   "method": "GET",
+   "path": "/img/p/teal-half-sleeve-linen-shirt-3.svg",
+   "status": 200,
+   "duration_ms": 14,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "36414f34-8b0e-4e73-8372-6a4fbbc121a7",
+   "ts": "2026-11-10T02:13:12Z",
+   "offset_ms": 5155,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 7,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "5a3ad58f-55f2-4fd6-8bb3-0d0262bcae4a",
+   "ts": "2026-11-10T02:13:12Z",
+   "offset_ms": 5159,
+   "method": "GET",
+   "path": "/img/p/grey-retro-trainer-3.svg",
+   "status": 200,
+   "duration_ms": 23,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "43ad80b1-f852-4466-8617-0f705c7154b8",
+   "ts": "2026-11-10T02:13:13Z",
+   "offset_ms": 5875,
+   "method": "GET",
+   "path": "/api/products/KRT004/variants",
+   "status": 200,
+   "duration_ms": 26,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "f53f8155-9c98-42cd-8c9a-6266275a7abc",
+   "ts": "2026-11-10T02:13:16Z",
+   "offset_ms": 8623,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 201,
+   "duration_ms": 108,
+   "page_type": "cart_api",
+   "error_code": null,
+   "stage_id": "S5",
+   "is_asset": false
+  },
+  {
+   "request_id": "d14a889c-8501-4d34-8b1e-66fa075b1eaf",
+   "ts": "2026-11-10T02:13:17Z",
+   "offset_ms": 9560,
+   "method": "GET",
+   "path": "/cart",
+   "status": 200,
+   "duration_ms": 94,
+   "page_type": "cart",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "a13074fc-6649-43a4-8670-9db2218f1dcb",
+   "ts": "2026-11-10T02:13:17Z",
+   "offset_ms": 9695,
+   "method": "GET",
+   "path": "/img/p/everyday-backpack-in-olive-3.svg",
+   "status": 200,
+   "duration_ms": 9,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "e5e31d46-7966-4364-87e0-3b813c6e1ca0",
+   "ts": "2026-11-10T02:13:17Z",
+   "offset_ms": 9873,
+   "method": "GET",
+   "path": "/img/p/baseball-cap-in-teal-1.svg",
+   "status": 200,
+   "duration_ms": 6,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "7a9429a2-8cd5-4d19-8e03-4cc539ef4f73",
+   "ts": "2026-11-10T02:13:17Z",
+   "offset_ms": 10190,
+   "method": "GET",
+   "path": "/img/p/bifold-wallet-in-black-1.svg",
+   "status": 200,
+   "duration_ms": 10,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "24b7cab4-e666-4b04-81fe-12d91bff57cb",
+   "ts": "2026-11-10T02:13:18Z",
+   "offset_ms": 10930,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 8,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-10T02:13:07Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-10T02:13:12Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-10T02:13:13Z"
+  },
+  {
+   "stage_id": "S5",
+   "first_reached_ts": "2026-11-10T02:13:16Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B99",
+   "name": "Unknown",
+   "stage": "S5",
+   "confidence": 0.3,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "d14a889c-8501-4d34-8b1e-66fa075b1eaf",
+     "summary": "GET /cart -> 200"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

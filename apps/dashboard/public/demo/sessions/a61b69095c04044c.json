@@ -1,0 +1,154 @@
+{
+ "session": {
+  "session_id": "a61b69095c04044c",
+  "start_ts": "2026-11-08T04:23:43Z",
+  "duration_s": 4.742,
+  "request_count": 7,
+  "page_count": 4,
+  "identity_tier": "suspected",
+  "operator": "unknown",
+  "agent_name": "unknown",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 0.6,
+  "entry_page": "/",
+  "exit_page": "/api/products/ACC009/variants",
+  "max_stage": "S3",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B08",
+  "terminal_blocker_name": "Out-of-stock dead end",
+  "blocker_confidence": 0.8,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 60.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "9a891a13-9e35-4d9b-8c81-8902d64e316c",
+   "ts": "2026-11-08T04:23:43Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 303,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "3f11dbfc-b3f6-4230-841a-098060263c46",
+   "ts": "2026-11-08T04:23:45Z",
+   "offset_ms": 1657,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 6,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "fe07eeb8-3ce2-47c5-828b-e3145ed3446f",
+   "ts": "2026-11-08T04:23:45Z",
+   "offset_ms": 1897,
+   "method": "GET",
+   "path": "/c/accessories",
+   "status": 200,
+   "duration_ms": 66,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "01d144c0-e79a-4ac4-8a85-4084308a8aab",
+   "ts": "2026-11-08T04:23:46Z",
+   "offset_ms": 2698,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 12,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "5df4658f-1e53-4b87-8673-ff27f4619332",
+   "ts": "2026-11-08T04:23:47Z",
+   "offset_ms": 3628,
+   "method": "GET",
+   "path": "/p/beanie-in-indigo",
+   "status": 200,
+   "duration_ms": 60,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "26cecba4-d293-488b-8362-ceb181e4c880",
+   "ts": "2026-11-08T04:23:48Z",
+   "offset_ms": 4425,
+   "method": "GET",
+   "path": "/api/products/ACC009/variants",
+   "status": 200,
+   "duration_ms": 39,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "b0ef58e3-1f7e-4acc-8a03-d8722954f585",
+   "ts": "2026-11-08T04:23:48Z",
+   "offset_ms": 4742,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 15,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-08T04:23:43Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-08T04:23:47Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-08T04:23:48Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B08",
+   "name": "Out-of-stock dead end",
+   "stage": "S3",
+   "confidence": 0.8,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "26cecba4-d293-488b-8362-ceb181e4c880",
+     "summary": "GET /api/products/ACC009/variants -> 200 (catalog shows 0 in stock for this size and colour)"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

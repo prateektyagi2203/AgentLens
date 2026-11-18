@@ -226,6 +226,8 @@ def ingest_file(con: duckdb.DuckDBPyConnection, path: str | Path, fmt: str = "js
     if fmt not in FORMATS:
         raise ValueError(f"unknown format {fmt!r}; expected one of {FORMATS}")
     host = default_host or os.getenv("AGENTLENS_DEFAULT_HOST") or "desithreads.local"
+    # Per-block COMMITs otherwise trigger a full checkpoint every ~16 MB of WAL (about a third of ingest time at 1M lines).
+    con.execute("SET checkpoint_threshold = '1GB'")
     return _ingest_blocks(con, Path(path), kind, fmt, host)
 
 

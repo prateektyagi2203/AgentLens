@@ -1,0 +1,96 @@
+{
+ "session": {
+  "session_id": "ff452a135e9171c2",
+  "start_ts": "2026-11-14T05:48:07Z",
+  "duration_s": 2.995,
+  "request_count": 4,
+  "page_count": 4,
+  "identity_tier": "declared",
+  "operator": "OpenAI",
+  "agent_name": "ChatGPT-User",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.7,
+  "entry_page": "/search",
+  "exit_page": "/p/maroon-street-runner",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": null,
+  "terminal_blocker_name": null,
+  "blocker_confidence": null,
+  "diagnosis_method": "none"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "beb82428-78c4-4c3b-8648-b14d4653d907",
+   "ts": "2026-11-14T05:48:07Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/search",
+   "status": 200,
+   "duration_ms": 147,
+   "page_type": "search",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "b06aa650-670c-4376-8831-200756732540",
+   "ts": "2026-11-14T05:48:08Z",
+   "offset_ms": 867,
+   "method": "GET",
+   "path": "/c/mens-sneakers",
+   "status": 200,
+   "duration_ms": 128,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "3570c35a-f734-4660-8257-80e6577be0be",
+   "ts": "2026-11-14T05:48:09Z",
+   "offset_ms": 2313,
+   "method": "GET",
+   "path": "/p/maroon-heritage-leather-sneaker",
+   "status": 200,
+   "duration_ms": 147,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "7551efb5-65fc-4b92-8ee3-155fb53567b9",
+   "ts": "2026-11-14T05:48:10Z",
+   "offset_ms": 2995,
+   "method": "GET",
+   "path": "/p/maroon-street-runner",
+   "status": 200,
+   "duration_ms": 138,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-14T05:48:07Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-14T05:48:09Z"
+  }
+ ],
+ "fired_rules": [],
+ "replay_ids": []
+}

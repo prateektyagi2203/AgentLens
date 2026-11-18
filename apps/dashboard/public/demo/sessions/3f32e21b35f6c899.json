@@ -1,0 +1,332 @@
+{
+ "session": {
+  "session_id": "3f32e21b35f6c899",
+  "start_ts": "2026-11-10T16:37:39Z",
+  "duration_s": 5.537,
+  "request_count": 21,
+  "page_count": 3,
+  "identity_tier": "verified",
+  "operator": "AgentLens Test Operator",
+  "agent_name": "TestSignedAgent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 1.0,
+  "entry_page": "/",
+  "exit_page": "/p/bandhani-flared-kurta-in-sky-blue",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B07",
+  "terminal_blocker_name": "Interstitial / popup overlay",
+  "blocker_confidence": 0.6,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "valid",
+  "signature_agent": "https://agents.desithreads.test",
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 TestSignedAgent/1.0",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "54e52dce-9dd3-4d52-8ff6-276b19121314",
+   "ts": "2026-11-10T16:37:39Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 162,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "d83ee3da-980a-4551-8839-4f9a1b7d4b67",
+   "ts": "2026-11-10T16:37:39Z",
+   "offset_ms": 210,
+   "method": "GET",
+   "path": "/img/p/white-sprint-knit-runner-3.svg",
+   "status": 200,
+   "duration_ms": 7,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "ff714802-5c9b-4221-8493-c604d0441854",
+   "ts": "2026-11-10T16:37:39Z",
+   "offset_ms": 243,
+   "method": "GET",
+   "path": "/img/p/pink-metro-mesh-sneaker-1.svg",
+   "status": 200,
+   "duration_ms": 11,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "f7be1782-0a9a-4cb2-8130-748fc1f76ae2",
+   "ts": "2026-11-10T16:37:39Z",
+   "offset_ms": 394,
+   "method": "GET",
+   "path": "/favicon.ico",
+   "status": 200,
+   "duration_ms": 10,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "0b93f57b-bf89-4742-8d23-eae1df1bf796",
+   "ts": "2026-11-10T16:37:39Z",
+   "offset_ms": 469,
+   "method": "GET",
+   "path": "/img/p/black-classic-canvas-low-1.svg",
+   "status": 200,
+   "duration_ms": 6,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "1595fa53-98e1-4cda-80df-3bfb0fc21345",
+   "ts": "2026-11-10T16:37:39Z",
+   "offset_ms": 475,
+   "method": "GET",
+   "path": "/img/p/indigo-urban-high-top-3.svg",
+   "status": 200,
+   "duration_ms": 16,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "04cfffc6-bc9f-4e66-8114-add7a9bb236d",
+   "ts": "2026-11-10T16:37:39Z",
+   "offset_ms": 560,
+   "method": "GET",
+   "path": "/_next/static/chunks/app.js",
+   "status": 200,
+   "duration_ms": 10,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "9530a3e4-a2b8-42a1-81dc-2c4d88ccadcb",
+   "ts": "2026-11-10T16:37:39Z",
+   "offset_ms": 615,
+   "method": "GET",
+   "path": "/_next/static/css/app.css",
+   "status": 200,
+   "duration_ms": 10,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "6a58031f-c085-4bbb-87ce-c4fdf819d94d",
+   "ts": "2026-11-10T16:37:39Z",
+   "offset_ms": 619,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 10,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "c7e6712d-fd56-4c33-881c-7f22bcd9eeee",
+   "ts": "2026-11-10T16:37:40Z",
+   "offset_ms": 765,
+   "method": "GET",
+   "path": "/_next/static/chunks/main.js",
+   "status": 200,
+   "duration_ms": 10,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "516e52ae-30ca-4073-80f2-30dd6401889c",
+   "ts": "2026-11-10T16:37:41Z",
+   "offset_ms": 1754,
+   "method": "GET",
+   "path": "/c/womens-kurtas",
+   "status": 200,
+   "duration_ms": 43,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "bf4a3b9d-acc5-4bee-86f2-c4f907400608",
+   "ts": "2026-11-10T16:37:41Z",
+   "offset_ms": 2055,
+   "method": "GET",
+   "path": "/img/p/pink-metro-mesh-sneaker-3.svg",
+   "status": 200,
+   "duration_ms": 9,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "6aee3ee5-b7af-4f85-8f91-ca189d7845a5",
+   "ts": "2026-11-10T16:37:41Z",
+   "offset_ms": 2241,
+   "method": "GET",
+   "path": "/img/p/printed-pocket-square-in-maroon-1.svg",
+   "status": 200,
+   "duration_ms": 7,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "f1c69164-6098-4f8b-8884-401983b2301a",
+   "ts": "2026-11-10T16:37:41Z",
+   "offset_ms": 2345,
+   "method": "GET",
+   "path": "/img/p/ikat-print-kurta-in-olive-3.svg",
+   "status": 200,
+   "duration_ms": 7,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "653d2914-6933-4cbf-834b-882cb5447412",
+   "ts": "2026-11-10T16:37:41Z",
+   "offset_ms": 2389,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 8,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "e9e9db42-18f8-4323-8e20-8a5f62d63c2c",
+   "ts": "2026-11-10T16:37:43Z",
+   "offset_ms": 4145,
+   "method": "GET",
+   "path": "/p/bandhani-flared-kurta-in-sky-blue",
+   "status": 200,
+   "duration_ms": 45,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "64d683d0-7494-4181-88df-de4f868c8ba4",
+   "ts": "2026-11-10T16:37:43Z",
+   "offset_ms": 4414,
+   "method": "GET",
+   "path": "/img/p/black-checked-flannel-shirt-1.svg",
+   "status": 200,
+   "duration_ms": 13,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "08fd58c2-acd3-4cbe-8646-0984b87d031f",
+   "ts": "2026-11-10T16:37:43Z",
+   "offset_ms": 4493,
+   "method": "GET",
+   "path": "/img/p/tan-striped-cotton-shirt-2.svg",
+   "status": 200,
+   "duration_ms": 9,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "da3cedaa-4710-4784-8891-5dd1a8c2a16b",
+   "ts": "2026-11-10T16:37:44Z",
+   "offset_ms": 4670,
+   "method": "GET",
+   "path": "/img/p/grey-retro-trainer-1.svg",
+   "status": 200,
+   "duration_ms": 11,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "53b8326d-1c40-43c4-8c8b-d82f3ba5f1ab",
+   "ts": "2026-11-10T16:37:44Z",
+   "offset_ms": 4683,
+   "method": "GET",
+   "path": "/img/p/everyday-backpack-in-olive-1.svg",
+   "status": 200,
+   "duration_ms": 11,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "86cbb9de-1517-4ff6-8046-69d630c962a5",
+   "ts": "2026-11-10T16:37:44Z",
+   "offset_ms": 5537,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 9,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-10T16:37:39Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-10T16:37:43Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B07",
+   "name": "Interstitial / popup overlay",
+   "stage": "S2",
+   "confidence": 0.6,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "e9e9db42-18f8-4323-8e20-8a5f62d63c2c",
+     "summary": "GET /p/bandhani-flared-kurta-in-sky-blue -> 200"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

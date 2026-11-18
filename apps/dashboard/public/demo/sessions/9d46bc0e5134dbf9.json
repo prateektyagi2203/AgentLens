@@ -1,0 +1,168 @@
+{
+ "session": {
+  "session_id": "9d46bc0e5134dbf9",
+  "start_ts": "2026-11-11T01:29:39Z",
+  "duration_s": 6.117,
+  "request_count": 8,
+  "page_count": 4,
+  "identity_tier": "suspected",
+  "operator": "unknown",
+  "agent_name": "unknown",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 0.6,
+  "entry_page": "/",
+  "exit_page": "/size-guide/womens-kurtas",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B09",
+  "terminal_blocker_name": "Size guide is image-only",
+  "blocker_confidence": 0.85,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 60.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "6ce55e92-110d-4452-863d-b027b5a9f2ec",
+   "ts": "2026-11-11T01:29:39Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 117,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "c810872d-56ea-480b-8737-19d9ff81cf1d",
+   "ts": "2026-11-11T01:29:40Z",
+   "offset_ms": 776,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 6,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "5ddfbb3d-d36b-4a36-87d9-67a242034756",
+   "ts": "2026-11-11T01:29:41Z",
+   "offset_ms": 1675,
+   "method": "GET",
+   "path": "/c/womens-kurtas",
+   "status": 200,
+   "duration_ms": 99,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "72e08612-41e0-40e2-8a06-53b041808fd0",
+   "ts": "2026-11-11T01:29:42Z",
+   "offset_ms": 2699,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 7,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "f68b77e2-50e7-4873-8383-f2b7190e8084",
+   "ts": "2026-11-11T01:29:43Z",
+   "offset_ms": 3387,
+   "method": "GET",
+   "path": "/p/bandhani-flared-kurta-in-sky-blue",
+   "status": 200,
+   "duration_ms": 162,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "ea20cc29-cb99-4ee9-8c24-0c6332f952a7",
+   "ts": "2026-11-11T01:29:44Z",
+   "offset_ms": 4635,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 7,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "ea3bcd93-f0d1-42ab-8501-ace681413722",
+   "ts": "2026-11-11T01:29:45Z",
+   "offset_ms": 5152,
+   "method": "GET",
+   "path": "/size-guide/womens-kurtas",
+   "status": 200,
+   "duration_ms": 83,
+   "page_type": "size_guide",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "d7e322b7-254f-4631-8120-bb56644ed747",
+   "ts": "2026-11-11T01:29:45Z",
+   "offset_ms": 6117,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 14,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-11T01:29:39Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-11T01:29:43Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B09",
+   "name": "Size guide is image-only",
+   "stage": "S3",
+   "confidence": 0.85,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "ea3bcd93-f0d1-42ab-8501-ace681413722",
+     "summary": "GET /size-guide/womens-kurtas -> 200"
+    },
+    {
+     "type": "site_check",
+     "check": "size_guide_table",
+     "result": "fail"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

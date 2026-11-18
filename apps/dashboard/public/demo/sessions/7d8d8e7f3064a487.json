@@ -1,0 +1,109 @@
+{
+ "session": {
+  "session_id": "7d8d8e7f3064a487",
+  "start_ts": "2026-11-10T03:32:40Z",
+  "duration_s": 5.122,
+  "request_count": 5,
+  "page_count": 5,
+  "identity_tier": "declared",
+  "operator": "Anthropic",
+  "agent_name": "Claude-User",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.7,
+  "entry_page": "/robots.txt",
+  "exit_page": "/p/maroon-fleet-foam-runner",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": null,
+  "terminal_blocker_name": null,
+  "blocker_confidence": null,
+  "diagnosis_method": "none"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Claude-User/1.0; +Claude-User@anthropic.com)",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "568800d0-24ff-48b6-8abe-e5f849f27764",
+   "ts": "2026-11-10T03:32:40Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/robots.txt",
+   "status": 200,
+   "duration_ms": 74,
+   "page_type": "robots",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "11426119-0c6a-47bf-82cf-80a925135952",
+   "ts": "2026-11-10T03:32:41Z",
+   "offset_ms": 999,
+   "method": "GET",
+   "path": "/search",
+   "status": 200,
+   "duration_ms": 156,
+   "page_type": "search",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "e8634c61-e581-4e00-82ad-8b46702d971c",
+   "ts": "2026-11-10T03:32:42Z",
+   "offset_ms": 1900,
+   "method": "GET",
+   "path": "/c/mens-sneakers",
+   "status": 200,
+   "duration_ms": 174,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "ad0d80ca-e895-4e16-85ef-1d5dd19904fa",
+   "ts": "2026-11-10T03:32:43Z",
+   "offset_ms": 3443,
+   "method": "GET",
+   "path": "/p/mustard-alley-suede-sneaker",
+   "status": 200,
+   "duration_ms": 57,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "f3653883-5a4d-41fa-8cc4-2cdaa410dc35",
+   "ts": "2026-11-10T03:32:45Z",
+   "offset_ms": 5122,
+   "method": "GET",
+   "path": "/p/maroon-fleet-foam-runner",
+   "status": 200,
+   "duration_ms": 88,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-10T03:32:41Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-10T03:32:43Z"
+  }
+ ],
+ "fired_rules": [],
+ "replay_ids": []
+}

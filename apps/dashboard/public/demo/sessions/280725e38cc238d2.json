@@ -1,0 +1,135 @@
+{
+ "session": {
+  "session_id": "280725e38cc238d2",
+  "start_ts": "2026-11-01T20:37:09Z",
+  "duration_s": 3.346,
+  "request_count": 4,
+  "page_count": 4,
+  "identity_tier": "declared",
+  "operator": "Anthropic",
+  "agent_name": "Claude-User",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.7,
+  "entry_page": "/search",
+  "exit_page": "/p/mustard-alley-suede-sneaker",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B03",
+  "terminal_blocker_name": "JS-only product content",
+  "blocker_confidence": 0.85,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Claude-User/1.0; +Claude-User@anthropic.com)",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "3b92a370-562a-4cc5-8244-5188762ce0da",
+   "ts": "2026-11-01T20:37:09Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/search",
+   "status": 200,
+   "duration_ms": 82,
+   "page_type": "search",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "a5d38d0e-cfbf-4a1a-8024-36a4c5937381",
+   "ts": "2026-11-01T20:37:10Z",
+   "offset_ms": 747,
+   "method": "GET",
+   "path": "/c/mens-sneakers",
+   "status": 200,
+   "duration_ms": 68,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "928c6dc0-cea3-4ab3-8459-01ff9a2fc028",
+   "ts": "2026-11-01T20:37:11Z",
+   "offset_ms": 1894,
+   "method": "GET",
+   "path": "/p/grey-retro-trainer",
+   "status": 200,
+   "duration_ms": 83,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "f7ce039b-cc5a-4be2-80ac-9adccde92764",
+   "ts": "2026-11-01T20:37:12Z",
+   "offset_ms": 3346,
+   "method": "GET",
+   "path": "/p/mustard-alley-suede-sneaker",
+   "status": 200,
+   "duration_ms": 91,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-01T20:37:09Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-01T20:37:11Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B03",
+   "name": "JS-only product content",
+   "stage": "S2",
+   "confidence": 0.85,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "f7ce039b-cc5a-4be2-80ac-9adccde92764",
+     "summary": "GET /p/mustard-alley-suede-sneaker -> 200"
+    },
+    {
+     "type": "site_check",
+     "check": "pdp_ssr_price",
+     "result": "fail"
+    }
+   ]
+  },
+  {
+   "blocker_id": "B04",
+   "name": "Missing structured data",
+   "stage": "S2",
+   "confidence": 0.6,
+   "is_terminal": false,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "f7ce039b-cc5a-4be2-80ac-9adccde92764",
+     "summary": "GET /p/mustard-alley-suede-sneaker -> 200"
+    },
+    {
+     "type": "site_check",
+     "check": "pdp_jsonld_product",
+     "result": "warn"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

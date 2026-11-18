@@ -1,0 +1,322 @@
+{
+ "window": {
+  "from": "2026-11-01",
+  "to": "2026-11-07",
+  "days": 7
+ },
+ "agent": {
+  "operator": "AgentLens Test Operator",
+  "agent_name": "TestSignedAgent",
+  "agent_class": "browsing_agent",
+  "sessions": 354,
+  "share_of_agent_sessions": 1.0,
+  "pages_per_session": 6.977401129943503,
+  "conversion": 0.0,
+  "tier_mix": {
+   "verified": 1.0,
+   "declared": 0.0,
+   "suspected": 0.0
+  },
+  "top_blocker": {
+   "blocker_id": "B06",
+   "name": "Login / OTP wall before cart",
+   "share_of_failed": 0.559322033898305
+  },
+  "signature_status_counts": {
+   "valid": 354,
+   "invalid_sig": 0,
+   "expired": 0,
+   "unknown_key": 0,
+   "fetch_failed": 0,
+   "none": 0
+  },
+  "last_seen": "2026-11-07T23:58:10Z"
+ },
+ "identity": {
+  "user_agent_example": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 TestSignedAgent/1.0",
+  "signature_agent": "https://agents.desithreads.test",
+  "ip_match_rate": null,
+  "avg_identity_confidence": 1.0
+ },
+ "trend": [
+  {
+   "date": "2026-11-01",
+   "sessions": 47,
+   "conversion": 0.0
+  },
+  {
+   "date": "2026-11-02",
+   "sessions": 49,
+   "conversion": 0.0
+  },
+  {
+   "date": "2026-11-03",
+   "sessions": 45,
+   "conversion": 0.0
+  },
+  {
+   "date": "2026-11-04",
+   "sessions": 55,
+   "conversion": 0.0
+  },
+  {
+   "date": "2026-11-05",
+   "sessions": 50,
+   "conversion": 0.0
+  },
+  {
+   "date": "2026-11-06",
+   "sessions": 49,
+   "conversion": 0.0
+  },
+  {
+   "date": "2026-11-07",
+   "sessions": 59,
+   "conversion": 0.0
+  }
+ ],
+ "blockers": [
+  {
+   "blocker_id": "B06",
+   "name": "Login / OTP wall before cart",
+   "sessions": 198,
+   "share_of_failed": 0.5609065155807366
+  },
+  {
+   "blocker_id": "B07",
+   "name": "Interstitial / popup overlay",
+   "sessions": 69,
+   "share_of_failed": 0.1954674220963173
+  },
+  {
+   "blocker_id": "B05",
+   "name": "Pincode / serviceability wall",
+   "sessions": 40,
+   "share_of_failed": 0.11331444759206799
+  },
+  {
+   "blocker_id": "B09",
+   "name": "Size guide is image-only",
+   "sessions": 36,
+   "share_of_failed": 0.10198300283286119
+  },
+  {
+   "blocker_id": "B08",
+   "name": "Out-of-stock dead end",
+   "sessions": 10,
+   "share_of_failed": 0.028328611898016998
+  }
+ ],
+ "recent_sessions": [
+  {
+   "session_id": "4e3b153b8743578a",
+   "start_ts": "2026-11-07T23:58:10Z",
+   "duration_s": 0.954,
+   "request_count": 11,
+   "page_count": 1,
+   "identity_tier": "verified",
+   "operator": "AgentLens Test Operator",
+   "agent_name": "TestSignedAgent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 1.0,
+   "entry_page": "/p/daily-wear-pintuck-kurta-in-teal",
+   "exit_page": "/p/daily-wear-pintuck-kurta-in-teal",
+   "max_stage": "S2",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B07",
+   "terminal_blocker_name": "Interstitial / popup overlay",
+   "blocker_confidence": 0.6,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "e71b72933565934f",
+   "start_ts": "2026-11-07T23:57:46Z",
+   "duration_s": 13.262,
+   "request_count": 19,
+   "page_count": 8,
+   "identity_tier": "verified",
+   "operator": "AgentLens Test Operator",
+   "agent_name": "TestSignedAgent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 1.0,
+   "entry_page": "/p/bandhani-flared-kurta-in-sky-blue",
+   "exit_page": "/api/otp/send",
+   "max_stage": "S4",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B06",
+   "terminal_blocker_name": "Login / OTP wall before cart",
+   "blocker_confidence": 0.97,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "3c24522aab8b4682",
+   "start_ts": "2026-11-07T23:41:47Z",
+   "duration_s": 7.054,
+   "request_count": 19,
+   "page_count": 3,
+   "identity_tier": "verified",
+   "operator": "AgentLens Test Operator",
+   "agent_name": "TestSignedAgent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 1.0,
+   "entry_page": "/",
+   "exit_page": "/p/bandhani-flared-kurta-in-sky-blue",
+   "max_stage": "S2",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B07",
+   "terminal_blocker_name": "Interstitial / popup overlay",
+   "blocker_confidence": 0.6,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "6ecaf5014cb6cb59",
+   "start_ts": "2026-11-07T23:27:05Z",
+   "duration_s": 20.052,
+   "request_count": 34,
+   "page_count": 11,
+   "identity_tier": "verified",
+   "operator": "AgentLens Test Operator",
+   "agent_name": "TestSignedAgent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 1.0,
+   "entry_page": "/",
+   "exit_page": "/api/otp/send",
+   "max_stage": "S4",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B06",
+   "terminal_blocker_name": "Login / OTP wall before cart",
+   "blocker_confidence": 0.97,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "f1d233d855c753be",
+   "start_ts": "2026-11-07T23:12:07Z",
+   "duration_s": 21.568,
+   "request_count": 39,
+   "page_count": 10,
+   "identity_tier": "verified",
+   "operator": "AgentLens Test Operator",
+   "agent_name": "TestSignedAgent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 1.0,
+   "entry_page": "/",
+   "exit_page": "/api/otp/send",
+   "max_stage": "S4",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B06",
+   "terminal_blocker_name": "Login / OTP wall before cart",
+   "blocker_confidence": 0.97,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "9fbb54d988c1cada",
+   "start_ts": "2026-11-07T22:53:37Z",
+   "duration_s": 2.846,
+   "request_count": 14,
+   "page_count": 2,
+   "identity_tier": "verified",
+   "operator": "AgentLens Test Operator",
+   "agent_name": "TestSignedAgent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 1.0,
+   "entry_page": "/",
+   "exit_page": "/c/womens-kurtas",
+   "max_stage": "S1",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": null,
+   "terminal_blocker_name": null,
+   "blocker_confidence": null,
+   "diagnosis_method": "none"
+  },
+  {
+   "session_id": "ba72c06312bf4533",
+   "start_ts": "2026-11-07T21:54:32Z",
+   "duration_s": 10.307,
+   "request_count": 24,
+   "page_count": 5,
+   "identity_tier": "verified",
+   "operator": "AgentLens Test Operator",
+   "agent_name": "TestSignedAgent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 1.0,
+   "entry_page": "/",
+   "exit_page": "/api/products/SHT015/variants",
+   "max_stage": "S3",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B08",
+   "terminal_blocker_name": "Out-of-stock dead end",
+   "blocker_confidence": 0.8,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "224d2596846fc967",
+   "start_ts": "2026-11-07T20:17:12Z",
+   "duration_s": 14.802,
+   "request_count": 23,
+   "page_count": 7,
+   "identity_tier": "verified",
+   "operator": "AgentLens Test Operator",
+   "agent_name": "TestSignedAgent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 1.0,
+   "entry_page": "/",
+   "exit_page": "/api/cart",
+   "max_stage": "S3",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B05",
+   "terminal_blocker_name": "Pincode / serviceability wall",
+   "blocker_confidence": 0.95,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "1891c5a5f9ebf58f",
+   "start_ts": "2026-11-07T20:13:40Z",
+   "duration_s": 12.226,
+   "request_count": 27,
+   "page_count": 4,
+   "identity_tier": "verified",
+   "operator": "AgentLens Test Operator",
+   "agent_name": "TestSignedAgent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 1.0,
+   "entry_page": "/",
+   "exit_page": "/size-guide/mens-sneakers",
+   "max_stage": "S2",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B09",
+   "terminal_blocker_name": "Size guide is image-only",
+   "blocker_confidence": 0.85,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "b7a32b14be83c6e6",
+   "start_ts": "2026-11-07T20:06:54Z",
+   "duration_s": 10.489,
+   "request_count": 25,
+   "page_count": 4,
+   "identity_tier": "verified",
+   "operator": "AgentLens Test Operator",
+   "agent_name": "TestSignedAgent",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 1.0,
+   "entry_page": "/",
+   "exit_page": "/size-guide/mens-sneakers",
+   "max_stage": "S2",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B09",
+   "terminal_blocker_name": "Size guide is image-only",
+   "blocker_confidence": 0.85,
+   "diagnosis_method": "rule"
+  }
+ ]
+}

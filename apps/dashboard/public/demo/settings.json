@@ -7,7 +7,7 @@
   },
   "p_stage_band": 0.2,
   "default_aov_inr": 2200,
-  "agent_vs_human_factor": 1,
+  "agent_vs_human_factor": 1.0,
   "min_sample": 30,
   "effort_weights": {
    "S": 1,

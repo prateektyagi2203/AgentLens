@@ -1,0 +1,151 @@
+{
+ "session": {
+  "session_id": "fb4a9534df497952",
+  "start_ts": "2026-11-12T09:31:25Z",
+  "duration_s": 5.313,
+  "request_count": 7,
+  "page_count": 7,
+  "identity_tier": "suspected",
+  "operator": "unknown",
+  "agent_name": "unknown",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.95,
+  "entry_page": "/p/navy-court-sneaker",
+  "exit_page": "/order/confirmed/DT-7130EF6F",
+  "max_stage": "S8",
+  "converted": true,
+  "order_value_inr": 3549.0,
+  "terminal_blocker_id": null,
+  "terminal_blocker_name": null,
+  "blocker_confidence": null,
+  "diagnosis_method": "none"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 95.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "71764ca5-f3a7-4b78-8c55-d2cdfd44fce1",
+   "ts": "2026-11-12T09:31:25Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/p/navy-court-sneaker",
+   "status": 200,
+   "duration_ms": 141,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "18f508af-a873-490c-81c4-87c0bc34b44c",
+   "ts": "2026-11-12T09:31:26Z",
+   "offset_ms": 786,
+   "method": "GET",
+   "path": "/api/products/SNK001/variants",
+   "status": 200,
+   "duration_ms": 26,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "bc4725c8-dae6-4c1b-8e60-60bc382b5145",
+   "ts": "2026-11-12T09:31:26Z",
+   "offset_ms": 1467,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 201,
+   "duration_ms": 31,
+   "page_type": "cart_api",
+   "error_code": null,
+   "stage_id": "S5",
+   "is_asset": false
+  },
+  {
+   "request_id": "ecf4c742-5232-4102-861f-41f54eff3140",
+   "ts": "2026-11-12T09:31:27Z",
+   "offset_ms": 2059,
+   "method": "GET",
+   "path": "/cart",
+   "status": 200,
+   "duration_ms": 141,
+   "page_type": "cart",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "e9351df9-c26b-44e5-8927-dec954330de7",
+   "ts": "2026-11-12T09:31:29Z",
+   "offset_ms": 3848,
+   "method": "GET",
+   "path": "/checkout",
+   "status": 200,
+   "duration_ms": 45,
+   "page_type": "checkout",
+   "error_code": null,
+   "stage_id": "S6",
+   "is_asset": false
+  },
+  {
+   "request_id": "e36c7df2-da15-4dbb-88c5-fd00729b8ea3",
+   "ts": "2026-11-12T09:31:30Z",
+   "offset_ms": 4677,
+   "method": "POST",
+   "path": "/api/checkout",
+   "status": 201,
+   "duration_ms": 103,
+   "page_type": "checkout_api",
+   "error_code": null,
+   "stage_id": "S7",
+   "is_asset": false
+  },
+  {
+   "request_id": "a0a0e1ee-f395-4842-829a-193cb9af030d",
+   "ts": "2026-11-12T09:31:30Z",
+   "offset_ms": 5313,
+   "method": "GET",
+   "path": "/order/confirmed/DT-7130EF6F",
+   "status": 200,
+   "duration_ms": 191,
+   "page_type": "order_confirm",
+   "error_code": null,
+   "stage_id": "S8",
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-12T09:31:25Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-12T09:31:26Z"
+  },
+  {
+   "stage_id": "S5",
+   "first_reached_ts": "2026-11-12T09:31:26Z"
+  },
+  {
+   "stage_id": "S6",
+   "first_reached_ts": "2026-11-12T09:31:29Z"
+  },
+  {
+   "stage_id": "S7",
+   "first_reached_ts": "2026-11-12T09:31:30Z"
+  },
+  {
+   "stage_id": "S8",
+   "first_reached_ts": "2026-11-12T09:31:30Z"
+  }
+ ],
+ "fired_rules": [],
+ "replay_ids": []
+}

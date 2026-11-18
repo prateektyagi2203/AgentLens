@@ -1,0 +1,66 @@
+{
+ "session": {
+  "session_id": "3c2c0d186bdbd7e0",
+  "start_ts": "2026-11-04T07:28:21Z",
+  "duration_s": 1.117,
+  "request_count": 2,
+  "page_count": 1,
+  "identity_tier": "human",
+  "operator": "human",
+  "agent_name": "Browser (human)",
+  "agent_class": "human",
+  "identity_confidence": 0.85,
+  "entry_page": "/p/leather-watch-strap-in-navy",
+  "exit_page": "/p/leather-watch-strap-in-navy",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": null,
+  "terminal_blocker_name": null,
+  "blocker_confidence": null,
+  "diagnosis_method": "none"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 15.0,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "24a50a29-39e5-488a-82d8-cebfaeaf030c",
+   "ts": "2026-11-04T07:28:21Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/p/leather-watch-strap-in-navy",
+   "status": 200,
+   "duration_ms": 34,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "7486c4d8-17b6-44c5-8e85-d1775949bd6a",
+   "ts": "2026-11-04T07:28:22Z",
+   "offset_ms": 1117,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 6,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-04T07:28:21Z"
+  }
+ ],
+ "fired_rules": [],
+ "replay_ids": []
+}

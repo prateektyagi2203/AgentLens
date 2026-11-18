@@ -1,9 +1,13 @@
+# NOT TESTED: Docker is not installed on the author's machine. Ports and commands mirror the native setup.
+# Needs a .env file (cp .env.example .env). Generate data with:
+#   docker compose run --rm api agentlens synth scenario before-after && docker compose run --rm api agentlens run-all
 services:
   store:
     build: { context: ., dockerfile: docker/store.Dockerfile }
     ports: ["3100:3100"]
     env_file: [.env]
-    volumes: ["./data:/app/data", "./config:/app/config"]
+    environment: { AGENTLENS_DATA_DIR: /app/data }
+    volumes: ["./data:/app/data"]
   api:
     build: { context: ., dockerfile: docker/api.Dockerfile }
     ports: ["8100:8100"]
@@ -11,7 +15,9 @@ services:
     environment: { AGENTLENS_DATA_DIR: /app/data }
     volumes: ["./data:/app/data", "./config:/app/config"]
   dashboard:
-    build: { context: ., dockerfile: docker/dashboard.Dockerfile }
+    build:
+      context: .
+      dockerfile: docker/dashboard.Dockerfile
+      args: { NEXT_PUBLIC_API_URL: "http://localhost:8100/api" }
     ports: ["3101:3101"]
-    environment: { NEXT_PUBLIC_API_URL: "http://localhost:8100" }
     depends_on: [api]

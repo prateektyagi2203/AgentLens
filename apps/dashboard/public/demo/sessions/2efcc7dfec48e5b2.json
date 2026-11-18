@@ -1,0 +1,168 @@
+{
+ "session": {
+  "session_id": "2efcc7dfec48e5b2",
+  "start_ts": "2026-11-01T09:36:13Z",
+  "duration_s": 3.307,
+  "request_count": 7,
+  "page_count": 7,
+  "identity_tier": "suspected",
+  "operator": "unknown",
+  "agent_name": "unknown",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 1.0,
+  "entry_page": "/p/bandhani-flared-kurta-in-sky-blue",
+  "exit_page": "/api/otp/send",
+  "max_stage": "S4",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B06",
+  "terminal_blocker_name": "Login / OTP wall before cart",
+  "blocker_confidence": 0.97,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "invalid_sig",
+  "signature_agent": "https://agents.desithreads.test",
+  "suspicion_score": 100.0,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "7aa3228b-6830-474c-8430-c8ac536f3a13",
+   "ts": "2026-11-01T09:36:13Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/p/bandhani-flared-kurta-in-sky-blue",
+   "status": 200,
+   "duration_ms": 114,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "7b4cc05b-f04c-4d42-80ec-4eb87d1dc02b",
+   "ts": "2026-11-01T09:36:14Z",
+   "offset_ms": 634,
+   "method": "GET",
+   "path": "/api/products/KRT004/variants",
+   "status": 200,
+   "duration_ms": 49,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "c2452a6c-1ae8-4857-8e5a-ced668f5df99",
+   "ts": "2026-11-01T09:36:14Z",
+   "offset_ms": 1132,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 13,
+   "page_type": "cart_api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "e704c360-e706-45ac-85ff-fbb04ba3aa0f",
+   "ts": "2026-11-01T09:36:15Z",
+   "offset_ms": 1694,
+   "method": "GET",
+   "path": "/api/serviceability",
+   "status": 200,
+   "duration_ms": 34,
+   "page_type": "serviceability_api",
+   "error_code": null,
+   "stage_id": "S4",
+   "is_asset": false
+  },
+  {
+   "request_id": "20b64cc1-7249-4839-8f97-efe261d5a5cf",
+   "ts": "2026-11-01T09:36:15Z",
+   "offset_ms": 2211,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 401,
+   "duration_ms": 28,
+   "page_type": "cart_api",
+   "error_code": "AUTH_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "4cd7b374-912e-4962-82fd-d67ece446e8e",
+   "ts": "2026-11-01T09:36:16Z",
+   "offset_ms": 2704,
+   "method": "GET",
+   "path": "/login",
+   "status": 200,
+   "duration_ms": 37,
+   "page_type": "login",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "654db63a-d849-41b5-8e1e-568909813f82",
+   "ts": "2026-11-01T09:36:17Z",
+   "offset_ms": 3307,
+   "method": "POST",
+   "path": "/api/otp/send",
+   "status": 200,
+   "duration_ms": 16,
+   "page_type": "otp_api",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-01T09:36:13Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-01T09:36:14Z"
+  },
+  {
+   "stage_id": "S4",
+   "first_reached_ts": "2026-11-01T09:36:15Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B06",
+   "name": "Login / OTP wall before cart",
+   "stage": "S5",
+   "confidence": 0.97,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "20b64cc1-7249-4839-8f97-efe261d5a5cf",
+     "summary": "POST /api/cart -> 401 AUTH_REQUIRED"
+    }
+   ]
+  },
+  {
+   "blocker_id": "B05",
+   "name": "Pincode / serviceability wall",
+   "stage": "S5",
+   "confidence": 0.95,
+   "is_terminal": false,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "c2452a6c-1ae8-4857-8e5a-ced668f5df99",
+     "summary": "POST /api/cart -> 409 PINCODE_REQUIRED"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

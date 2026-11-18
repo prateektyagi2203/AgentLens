@@ -1,0 +1,122 @@
+{
+ "session": {
+  "session_id": "be993c0124868cd7",
+  "start_ts": "2026-11-04T14:09:19Z",
+  "duration_s": 2.407,
+  "request_count": 3,
+  "page_count": 3,
+  "identity_tier": "declared",
+  "operator": "Anthropic",
+  "agent_name": "Claude-User",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.7,
+  "entry_page": "/search",
+  "exit_page": "/p/black-classic-canvas-low",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B03",
+  "terminal_blocker_name": "JS-only product content",
+  "blocker_confidence": 0.85,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Claude-User/1.0; +Claude-User@anthropic.com)",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "986427f8-7335-47f6-8e7d-edd8d58c493b",
+   "ts": "2026-11-04T14:09:19Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/search",
+   "status": 200,
+   "duration_ms": 113,
+   "page_type": "search",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "d31003d8-a40d-4a61-81a0-51f3af61c0bc",
+   "ts": "2026-11-04T14:09:20Z",
+   "offset_ms": 769,
+   "method": "GET",
+   "path": "/c/mens-sneakers",
+   "status": 200,
+   "duration_ms": 168,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "f935d184-fc54-45df-81ca-4685ba7a4ed6",
+   "ts": "2026-11-04T14:09:22Z",
+   "offset_ms": 2407,
+   "method": "GET",
+   "path": "/p/black-classic-canvas-low",
+   "status": 200,
+   "duration_ms": 99,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-04T14:09:19Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-04T14:09:22Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B03",
+   "name": "JS-only product content",
+   "stage": "S2",
+   "confidence": 0.85,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "f935d184-fc54-45df-81ca-4685ba7a4ed6",
+     "summary": "GET /p/black-classic-canvas-low -> 200"
+    },
+    {
+     "type": "site_check",
+     "check": "pdp_ssr_price",
+     "result": "fail"
+    }
+   ]
+  },
+  {
+   "blocker_id": "B04",
+   "name": "Missing structured data",
+   "stage": "S2",
+   "confidence": 0.6,
+   "is_terminal": false,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "f935d184-fc54-45df-81ca-4685ba7a4ed6",
+     "summary": "GET /p/black-classic-canvas-low -> 200"
+    },
+    {
+     "type": "site_check",
+     "check": "pdp_jsonld_product",
+     "result": "warn"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

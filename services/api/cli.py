@@ -88,18 +88,25 @@ def diagnose(
 @app.command("site-checks")
 def site_checks(
     site_url: str = typer.Option(None, "--site-url", help="Store base URL (default: AGENTLENS_SITE_URL)."),
+    as_of: str = typer.Option(
+        None, "--as-of", help="Record the probe as of this UTC time (ISO 8601). For replaying a store's history, e.g. the demo."
+    ),
 ) -> None:
     """Probe the live store (robots.txt, llms.txt, JSON-LD, SSR price, size guide, captcha). Skips when offline."""
     import os
+    from datetime import UTC, datetime
 
     from .diagnosis.engine import load_config
     from .diagnosis.sitechecks import run_site_checks
 
     cfg = load_config()["site_checks"]
     url = site_url or os.getenv("AGENTLENS_SITE_URL") or cfg.get("base_url") or ""
+    now = datetime.fromisoformat(as_of.replace("Z", "+00:00")).astimezone(UTC) if as_of else None
     con = db.connect()
     try:
-        res = run_site_checks(con, url, timeout_s=float(cfg.get("timeout_s", 5)), pdp_sample=int(cfg.get("pdp_sample", 5)))
+        res = run_site_checks(
+            con, url, timeout_s=float(cfg.get("timeout_s", 5)), pdp_sample=int(cfg.get("pdp_sample", 5)), now=now
+        )
     finally:
         con.close()
     typer.echo(res)
@@ -183,6 +190,27 @@ def eval_all(
     finally:
         con.close()
     typer.echo(f"wrote {write_latest(doc)}")
+
+
+@app.command("export-snapshot")
+def export_snapshot_cmd(
+    out: Path | None = typer.Option(None, "--out", help="Output directory (default: apps/dashboard/public/demo, which the dashboard serves as /demo)."),
+    force: bool = typer.Option(False, "--force", help="Replace --out even if it is not an earlier snapshot."),
+) -> None:
+    """Write the static public-demo snapshot (docs/api-contract.md section 4) from the current database."""
+    from .snapshot import SnapshotError, export_snapshot
+
+    out = (settings.REPO_ROOT / "apps" / "dashboard" / "public" / "demo") if out is None else out.resolve()
+    try:
+        res = export_snapshot(out, force=force)
+    except SnapshotError as exc:
+        typer.echo(f"export-snapshot failed: {exc}", err=True)
+        raise typer.Exit(1) from exc
+    typer.echo(
+        f"snapshot: {res['files']} files, {res['bytes'] / 1e6:.1f} MB, {res['sessions']} sessions, {res['agents']} agents, "
+        f"{res['replays']} replays ({res['screenshots']} screenshots), eval={'yes' if res['eval'] else 'no'}"
+    )
+    typer.echo(f"before window {res['before']['from']}..{res['before']['to']}; written to {res['out']}")
 
 
 @app.command()

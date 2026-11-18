@@ -1,0 +1,349 @@
+{
+ "session": {
+  "session_id": "4cfa6caff25b15ba",
+  "start_ts": "2026-11-12T05:43:05Z",
+  "duration_s": 11.902,
+  "request_count": 22,
+  "page_count": 4,
+  "identity_tier": "verified",
+  "operator": "AgentLens Test Operator",
+  "agent_name": "TestSignedAgent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 1.0,
+  "entry_page": "/",
+  "exit_page": "/api/products/KRT006/variants",
+  "max_stage": "S3",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B08",
+  "terminal_blocker_name": "Out-of-stock dead end",
+  "blocker_confidence": 0.8,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "valid",
+  "signature_agent": "https://agents.desithreads.test",
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 TestSignedAgent/1.0",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "9bde75b6-3023-4788-88a6-3996ca29f728",
+   "ts": "2026-11-12T05:43:05Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 51,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "9387fd2b-cf7a-4d21-8dc0-c4e4e5f9b4c7",
+   "ts": "2026-11-12T05:43:05Z",
+   "offset_ms": 160,
+   "method": "GET",
+   "path": "/img/p/maroon-heritage-leather-sneaker-3.svg",
+   "status": 200,
+   "duration_ms": 7,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "a0f068fb-5a0a-4d80-8a65-15bf3dab1f92",
+   "ts": "2026-11-12T05:43:05Z",
+   "offset_ms": 175,
+   "method": "GET",
+   "path": "/img/p/pink-metro-mesh-sneaker-3.svg",
+   "status": 200,
+   "duration_ms": 12,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "8023a1fa-cec8-4e71-834e-8ec09e9c1921",
+   "ts": "2026-11-12T05:43:05Z",
+   "offset_ms": 192,
+   "method": "GET",
+   "path": "/img/p/festive-embroidered-kurta-in-teal-3.svg",
+   "status": 200,
+   "duration_ms": 8,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "c423605b-2c3f-4f7d-8acd-b23bcf899bec",
+   "ts": "2026-11-12T05:43:05Z",
+   "offset_ms": 330,
+   "method": "GET",
+   "path": "/_next/static/css/app.css",
+   "status": 200,
+   "duration_ms": 6,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "eb62a5df-df0c-4a40-82d2-da4c3f70d4f7",
+   "ts": "2026-11-12T05:43:05Z",
+   "offset_ms": 455,
+   "method": "GET",
+   "path": "/img/p/sky-blue-linen-casual-shirt-2.svg",
+   "status": 200,
+   "duration_ms": 16,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "8c35e1e8-27eb-4e38-8927-213484d678b7",
+   "ts": "2026-11-12T05:43:05Z",
+   "offset_ms": 459,
+   "method": "GET",
+   "path": "/_next/static/chunks/main.js",
+   "status": 200,
+   "duration_ms": 9,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "f9492fd1-cf48-476d-8762-5f3e4f808175",
+   "ts": "2026-11-12T05:43:05Z",
+   "offset_ms": 511,
+   "method": "GET",
+   "path": "/_next/static/chunks/app.js",
+   "status": 200,
+   "duration_ms": 4,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "06fe785e-77ab-44a5-8ae3-57af6fcb0a5b",
+   "ts": "2026-11-12T05:43:05Z",
+   "offset_ms": 659,
+   "method": "GET",
+   "path": "/favicon.ico",
+   "status": 200,
+   "duration_ms": 14,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "932bcbe6-4c77-41cc-830c-8f8290c3e0f0",
+   "ts": "2026-11-12T05:43:06Z",
+   "offset_ms": 1321,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 9,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "f0a85957-3ffb-4786-87c5-0efa20095e7b",
+   "ts": "2026-11-12T05:43:07Z",
+   "offset_ms": 1801,
+   "method": "GET",
+   "path": "/c/womens-kurtas",
+   "status": 200,
+   "duration_ms": 76,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "b0c27ff6-ed33-481c-85c9-227e1d2bd8c7",
+   "ts": "2026-11-12T05:43:07Z",
+   "offset_ms": 2017,
+   "method": "GET",
+   "path": "/img/p/bifold-wallet-in-black-2.svg",
+   "status": 200,
+   "duration_ms": 13,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "c0c18604-641c-4bc0-8429-983a5aa071d3",
+   "ts": "2026-11-12T05:43:07Z",
+   "offset_ms": 2097,
+   "method": "GET",
+   "path": "/img/p/pink-metro-mesh-sneaker-3.svg",
+   "status": 200,
+   "duration_ms": 21,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "b57d7de1-53ec-4d90-8610-ca633113f3be",
+   "ts": "2026-11-12T05:43:07Z",
+   "offset_ms": 2234,
+   "method": "GET",
+   "path": "/img/p/bifold-wallet-in-black-3.svg",
+   "status": 200,
+   "duration_ms": 10,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "a4cda8f2-de0e-4a08-8aba-fbacb1d1ed84",
+   "ts": "2026-11-12T05:43:07Z",
+   "offset_ms": 2288,
+   "method": "GET",
+   "path": "/img/p/daily-wear-pintuck-kurta-in-teal-3.svg",
+   "status": 200,
+   "duration_ms": 10,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "5229c237-8920-4868-84d4-fffad1e82e6f",
+   "ts": "2026-11-12T05:43:07Z",
+   "offset_ms": 2752,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 9,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "1740cd65-edfc-417a-87e6-13b2a51c19f6",
+   "ts": "2026-11-12T05:43:14Z",
+   "offset_ms": 9647,
+   "method": "GET",
+   "path": "/p/daily-wear-pintuck-kurta-in-teal",
+   "status": 200,
+   "duration_ms": 55,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "857e77e8-27a1-4b48-8b53-15d609cf3956",
+   "ts": "2026-11-12T05:43:15Z",
+   "offset_ms": 9781,
+   "method": "GET",
+   "path": "/img/p/sky-blue-chambray-work-shirt-2.svg",
+   "status": 200,
+   "duration_ms": 11,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "76c308b5-d455-41e9-82fd-7635e9dec54a",
+   "ts": "2026-11-12T05:43:15Z",
+   "offset_ms": 9795,
+   "method": "GET",
+   "path": "/img/p/sky-blue-linen-casual-shirt-2.svg",
+   "status": 200,
+   "duration_ms": 15,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "07ac654d-ad58-4dbb-83d6-75ae8a3fc2df",
+   "ts": "2026-11-12T05:43:15Z",
+   "offset_ms": 10233,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 5,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "f902513b-4146-4eb0-80ab-2b9db8117ec3",
+   "ts": "2026-11-12T05:43:15Z",
+   "offset_ms": 10288,
+   "method": "GET",
+   "path": "/img/p/everyday-backpack-in-olive-3.svg",
+   "status": 200,
+   "duration_ms": 12,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "c9de08a0-076f-4949-8a2f-803622b85cfc",
+   "ts": "2026-11-12T05:43:17Z",
+   "offset_ms": 11902,
+   "method": "GET",
+   "path": "/api/products/KRT006/variants",
+   "status": 200,
+   "duration_ms": 69,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-12T05:43:05Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-12T05:43:14Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-12T05:43:17Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B08",
+   "name": "Out-of-stock dead end",
+   "stage": "S3",
+   "confidence": 0.8,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "c9de08a0-076f-4949-8a2f-803622b85cfc",
+     "summary": "GET /api/products/KRT006/variants -> 200 (catalog shows 0 in stock for this size and colour)"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

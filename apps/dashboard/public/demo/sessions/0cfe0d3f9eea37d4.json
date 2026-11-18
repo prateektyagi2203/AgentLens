@@ -1,0 +1,79 @@
+{
+ "session": {
+  "session_id": "0cfe0d3f9eea37d4",
+  "start_ts": "2026-11-09T15:02:43Z",
+  "duration_s": 1.549,
+  "request_count": 3,
+  "page_count": 3,
+  "identity_tier": "declared",
+  "operator": "OpenAI",
+  "agent_name": "ChatGPT-User",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.7,
+  "entry_page": "/p/canvas-tote-bag-in-indigo",
+  "exit_page": "/p/navy-court-sneaker",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": null,
+  "terminal_blocker_name": null,
+  "blocker_confidence": null,
+  "diagnosis_method": "none"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "076e0d7b-ea12-48df-8e0b-a6897c2eb333",
+   "ts": "2026-11-09T15:02:43Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/p/canvas-tote-bag-in-indigo",
+   "status": 200,
+   "duration_ms": 59,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "48e47853-51a8-40f6-8f0a-5c88b3cfd161",
+   "ts": "2026-11-09T15:02:44Z",
+   "offset_ms": 1034,
+   "method": "GET",
+   "path": "/p/handloom-yoke-kurta-in-olive",
+   "status": 200,
+   "duration_ms": 41,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "51f5f792-df5d-4f98-8086-6c1eabb884c7",
+   "ts": "2026-11-09T15:02:44Z",
+   "offset_ms": 1549,
+   "method": "GET",
+   "path": "/p/navy-court-sneaker",
+   "status": 200,
+   "duration_ms": 118,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-09T15:02:43Z"
+  }
+ ],
+ "fired_rules": [],
+ "replay_ids": []
+}

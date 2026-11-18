@@ -1,0 +1,306 @@
+{
+ "session": {
+  "session_id": "fa289f049fabf554",
+  "start_ts": "2026-11-06T19:02:46Z",
+  "duration_s": 8.322,
+  "request_count": 19,
+  "page_count": 3,
+  "identity_tier": "verified",
+  "operator": "AgentLens Test Operator",
+  "agent_name": "TestSignedAgent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 1.0,
+  "entry_page": "/",
+  "exit_page": "/p/maroon-fleet-foam-runner",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B07",
+  "terminal_blocker_name": "Interstitial / popup overlay",
+  "blocker_confidence": 0.6,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "valid",
+  "signature_agent": "https://agents.desithreads.test",
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 TestSignedAgent/1.0",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "9a3158e5-c2bf-4f17-8cb0-fe10951a1cfc",
+   "ts": "2026-11-06T19:02:46Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 120,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "6cbcfd49-e5c8-430b-8d72-e5c67b622a5d",
+   "ts": "2026-11-06T19:02:47Z",
+   "offset_ms": 197,
+   "method": "GET",
+   "path": "/_next/static/chunks/app.js",
+   "status": 200,
+   "duration_ms": 12,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "7eb6224e-af82-41d3-8f23-9ccffa8f23f7",
+   "ts": "2026-11-06T19:02:47Z",
+   "offset_ms": 254,
+   "method": "GET",
+   "path": "/img/p/grey-retro-trainer-1.svg",
+   "status": 200,
+   "duration_ms": 18,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "531a1c10-a0ff-4850-84e9-854c847caeed",
+   "ts": "2026-11-06T19:02:47Z",
+   "offset_ms": 329,
+   "method": "GET",
+   "path": "/_next/static/css/app.css",
+   "status": 200,
+   "duration_ms": 7,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "35bc6c9f-b894-4839-882b-6451629be24f",
+   "ts": "2026-11-06T19:02:47Z",
+   "offset_ms": 338,
+   "method": "GET",
+   "path": "/img/p/pleated-asymmetric-kurta-in-pink-1.svg",
+   "status": 200,
+   "duration_ms": 35,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "6d59e768-a244-4572-8c6e-bf25bad72c1f",
+   "ts": "2026-11-06T19:02:47Z",
+   "offset_ms": 561,
+   "method": "GET",
+   "path": "/favicon.ico",
+   "status": 200,
+   "duration_ms": 9,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "046e13a3-ff28-4ad6-8f6f-f2dadb445804",
+   "ts": "2026-11-06T19:02:47Z",
+   "offset_ms": 708,
+   "method": "GET",
+   "path": "/img/p/festive-embroidered-kurta-in-teal-1.svg",
+   "status": 200,
+   "duration_ms": 17,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "156b784b-dde6-46fd-846a-15fe39adfc5c",
+   "ts": "2026-11-06T19:02:47Z",
+   "offset_ms": 747,
+   "method": "GET",
+   "path": "/_next/static/chunks/main.js",
+   "status": 200,
+   "duration_ms": 6,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "1294cb96-87e4-4744-8cb8-85245d128835",
+   "ts": "2026-11-06T19:02:48Z",
+   "offset_ms": 1537,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 8,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "842cb150-0e8e-46a1-814e-f0c1af3f4485",
+   "ts": "2026-11-06T19:02:51Z",
+   "offset_ms": 4944,
+   "method": "GET",
+   "path": "/c/mens-sneakers",
+   "status": 200,
+   "duration_ms": 174,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "6d6cb8c9-e352-4fa9-85d8-d90e7e964404",
+   "ts": "2026-11-06T19:02:52Z",
+   "offset_ms": 5495,
+   "method": "GET",
+   "path": "/img/p/bifold-wallet-in-black-2.svg",
+   "status": 200,
+   "duration_ms": 15,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "9421dad6-9625-48f7-8b77-717ad7107cfd",
+   "ts": "2026-11-06T19:02:52Z",
+   "offset_ms": 5689,
+   "method": "GET",
+   "path": "/img/p/jaipur-print-long-kurta-in-teal-3.svg",
+   "status": 200,
+   "duration_ms": 12,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "2b248cfb-6355-49b0-8547-6f9261d8f343",
+   "ts": "2026-11-06T19:02:52Z",
+   "offset_ms": 5965,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 4,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "47468722-01b9-4df6-8d75-6ff86e34b1bc",
+   "ts": "2026-11-06T19:02:54Z",
+   "offset_ms": 7772,
+   "method": "GET",
+   "path": "/p/maroon-fleet-foam-runner",
+   "status": 200,
+   "duration_ms": 65,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "0dc0ef42-90a7-4fd9-8bb4-ca3600a2e136",
+   "ts": "2026-11-06T19:02:54Z",
+   "offset_ms": 7913,
+   "method": "GET",
+   "path": "/img/p/navy-daily-walk-sneaker-1.svg",
+   "status": 200,
+   "duration_ms": 10,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "2c6af829-839e-4774-81bc-6e41c4fc3f17",
+   "ts": "2026-11-06T19:02:55Z",
+   "offset_ms": 8090,
+   "method": "GET",
+   "path": "/img/p/grey-everyday-slip-on-1.svg",
+   "status": 200,
+   "duration_ms": 10,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "9d789464-2370-4a0f-8cbc-a962dde366cd",
+   "ts": "2026-11-06T19:02:55Z",
+   "offset_ms": 8178,
+   "method": "GET",
+   "path": "/img/p/minimal-analog-watch-in-sky-blue-2.svg",
+   "status": 200,
+   "duration_ms": 19,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "e6a44ee3-e1bf-455e-864e-c2932d630818",
+   "ts": "2026-11-06T19:02:55Z",
+   "offset_ms": 8232,
+   "method": "GET",
+   "path": "/img/p/black-classic-canvas-low-2.svg",
+   "status": 200,
+   "duration_ms": 8,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "f8352e73-8c09-4e5a-8530-07fe1a8cc036",
+   "ts": "2026-11-06T19:02:55Z",
+   "offset_ms": 8322,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 10,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-06T19:02:46Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-06T19:02:54Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B07",
+   "name": "Interstitial / popup overlay",
+   "stage": "S2",
+   "confidence": 0.6,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "47468722-01b9-4df6-8d75-6ff86e34b1bc",
+     "summary": "GET /p/maroon-fleet-foam-runner -> 200"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

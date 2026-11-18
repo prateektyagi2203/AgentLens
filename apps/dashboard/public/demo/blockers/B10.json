@@ -1,245 +1,101 @@
 {
  "window": {
-  "from": "2026-11-05",
-  "to": "2026-11-11",
+  "from": "2026-11-01",
+  "to": "2026-11-07",
   "days": 7
  },
  "blocker": {
   "blocker_id": "B10",
   "name": "Checkout validation failure",
   "stage": "S7",
-  "sessions_blocked": 200,
-  "share_of_failed": 0.05,
+  "sessions_blocked": 0,
+  "share_of_failed": 0.0,
   "risk_inr": {
-   "low": 241371,
-   "base": 452571,
-   "high": 724114
+   "low": 0,
+   "base": 0,
+   "high": 0
   },
   "replay_status": "confirmed",
   "effort": "S",
-  "priority_score": 452571,
-  "low_confidence": false
+  "priority_score": 0,
+  "low_confidence": true
  },
- "description": "Checkout rejects phone numbers that are not in the exact +91 format the form expects, so agents loop on 422 errors.",
- "detection": "Repeated 400/422 on checkout submit with field error codes such as PHONE_FORMAT.",
+ "description": "Checkout rejects reasonable input (for example a phone number without the exact +91 format).",
+ "detection": "Rule B10 (Checkout validation failure) on the request log; evidence below.",
  "evidence": {
-  "top_error_codes": [
-   {
-    "code": "PHONE_FORMAT",
-    "count": 172,
-    "share": 0.86
-   },
-   {
-    "code": "PINCODE_FORMAT",
-    "count": 28,
-    "share": 0.14
-   }
-  ],
-  "example_requests": [
-   {
-    "request_id": "req_B10_1",
-    "summary": "POST /api/checkout → 422 PHONE_FORMAT (×3)",
-    "count": 200
-   }
-  ],
+  "top_error_codes": [],
+  "example_requests": [],
   "site_checks": []
  },
  "risk_breakdown": {
-  "sessions_blocked": 200,
+  "sessions_blocked": 0,
   "recoverable_rate": 0.6,
-  "p_stage": 0.39999962121212124,
-  "aov_inr": 2200,
+  "p_stage": 0.0,
+  "aov_inr": 2200.0,
   "k": 4.285714285714286
  },
  "trend": [
   {
+   "date": "2026-11-01",
+   "sessions_blocked": 0
+  },
+  {
+   "date": "2026-11-02",
+   "sessions_blocked": 0
+  },
+  {
+   "date": "2026-11-03",
+   "sessions_blocked": 0
+  },
+  {
+   "date": "2026-11-04",
+   "sessions_blocked": 0
+  },
+  {
    "date": "2026-11-05",
-   "sessions_blocked": 30
+   "sessions_blocked": 0
   },
   {
    "date": "2026-11-06",
-   "sessions_blocked": 31
+   "sessions_blocked": 0
   },
   {
    "date": "2026-11-07",
-   "sessions_blocked": 26
-  },
-  {
-   "date": "2026-11-08",
-   "sessions_blocked": 23
-  },
-  {
-   "date": "2026-11-09",
-   "sessions_blocked": 30
-  },
-  {
-   "date": "2026-11-10",
-   "sessions_blocked": 32
-  },
-  {
-   "date": "2026-11-11",
-   "sessions_blocked": 28
+   "sessions_blocked": 0
   }
  ],
- "sample_sessions": [
-  {
-   "session_id": "ses_1hc4dfmn5y",
-   "start_ts": "2026-11-11T04:36:06.000Z",
-   "duration_s": 28,
-   "request_count": 12,
-   "page_count": 4,
-   "identity_tier": "verified",
-   "operator": "OpenAI",
-   "agent_name": "ChatGPT agent",
-   "agent_class": "browsing_agent",
-   "identity_confidence": 1,
-   "entry_page": "/",
-   "exit_page": "/api/checkout",
-   "max_stage": "S6",
-   "converted": false,
-   "order_value_inr": null,
-   "terminal_blocker_id": "B10",
-   "terminal_blocker_name": "Checkout validation failure",
-   "blocker_confidence": 0.83,
-   "diagnosis_method": "rule"
-  },
-  {
-   "session_id": "ses_w1k4yjknhq",
-   "start_ts": "2026-11-11T03:02:51.000Z",
-   "duration_s": 25,
-   "request_count": 12,
-   "page_count": 4,
-   "identity_tier": "suspected",
-   "operator": "unknown",
-   "agent_name": "Unidentified browsing agent",
-   "agent_class": "browsing_agent",
-   "identity_confidence": 0.83,
-   "entry_page": "/",
-   "exit_page": "/api/checkout",
-   "max_stage": "S6",
-   "converted": false,
-   "order_value_inr": null,
-   "terminal_blocker_id": "B10",
-   "terminal_blocker_name": "Checkout validation failure",
-   "blocker_confidence": 0.89,
-   "diagnosis_method": "rule"
-  },
-  {
-   "session_id": "ses_f5e5gaphrr",
-   "start_ts": "2026-11-10T12:30:28.000Z",
-   "duration_s": 21,
-   "request_count": 12,
-   "page_count": 4,
-   "identity_tier": "suspected",
-   "operator": "unknown",
-   "agent_name": "Unidentified browsing agent",
-   "agent_class": "browsing_agent",
-   "identity_confidence": 0.7,
-   "entry_page": "/",
-   "exit_page": "/api/checkout",
-   "max_stage": "S6",
-   "converted": false,
-   "order_value_inr": null,
-   "terminal_blocker_id": "B10",
-   "terminal_blocker_name": "Checkout validation failure",
-   "blocker_confidence": 0.64,
-   "diagnosis_method": "rule"
-  },
-  {
-   "session_id": "ses_hh9fwvngpc",
-   "start_ts": "2026-11-10T10:36:00.000Z",
-   "duration_s": 20,
-   "request_count": 12,
-   "page_count": 4,
-   "identity_tier": "declared",
-   "operator": "OpenAI",
-   "agent_name": "ChatGPT agent",
-   "agent_class": "browsing_agent",
-   "identity_confidence": 0.7,
-   "entry_page": "/",
-   "exit_page": "/api/checkout",
-   "max_stage": "S6",
-   "converted": false,
-   "order_value_inr": null,
-   "terminal_blocker_id": "B10",
-   "terminal_blocker_name": "Checkout validation failure",
-   "blocker_confidence": 0.64,
-   "diagnosis_method": "rule"
-  },
-  {
-   "session_id": "ses_2w8zqa9g13",
-   "start_ts": "2026-11-09T06:57:30.000Z",
-   "duration_s": 17,
-   "request_count": 11,
-   "page_count": 3,
-   "identity_tier": "verified",
-   "operator": "OpenAI",
-   "agent_name": "ChatGPT agent",
-   "agent_class": "browsing_agent",
-   "identity_confidence": 1,
-   "entry_page": "/c/sneakers",
-   "exit_page": "/api/checkout",
-   "max_stage": "S6",
-   "converted": false,
-   "order_value_inr": null,
-   "terminal_blocker_id": "B10",
-   "terminal_blocker_name": "Checkout validation failure",
-   "blocker_confidence": 0.8,
-   "diagnosis_method": "rule"
-  },
-  {
-   "session_id": "ses_z1s4cd4pyx",
-   "start_ts": "2026-11-08T04:37:00.000Z",
-   "duration_s": 19,
-   "request_count": 11,
-   "page_count": 3,
-   "identity_tier": "verified",
-   "operator": "OpenAI",
-   "agent_name": "ChatGPT agent",
-   "agent_class": "browsing_agent",
-   "identity_confidence": 1,
-   "entry_page": "/c/sneakers",
-   "exit_page": "/api/checkout",
-   "max_stage": "S6",
-   "converted": false,
-   "order_value_inr": null,
-   "terminal_blocker_id": "B10",
-   "terminal_blocker_name": "Checkout validation failure",
-   "blocker_confidence": 0.91,
-   "diagnosis_method": "rule"
-  }
- ],
+ "sample_sessions": [],
  "replays": [
   {
-   "replay_id": "rpl_b10",
+   "replay_id": "rp_c530adca8b",
    "blocker_id": "B10",
    "blocker_name": "Checkout validation failure",
-   "source_session_id": "ses_1hc4dfmn5y",
-   "mode": "browser",
+   "source_session_id": "d06a62e9c8fcb5b5",
+   "mode": "fetch",
    "status": "completed",
    "verdict": "confirmed",
-   "started_at": "2026-11-11T17:41:25Z",
-   "finished_at": "2026-11-11T17:41:34.300Z",
-   "steps_count": 3,
-   "verdict_explanation": "Confirmed. Submitting checkout with the phone number +91 98765 43210 returned 422 PHONE_FORMAT three times; the form only accepts a bare 10-digit number."
+   "started_at": "2026-11-18T11:52:10Z",
+   "finished_at": "2026-11-18T11:52:26Z",
+   "steps_count": 16,
+   "verdict_explanation": "Reproduced B10 (Checkout rejects a plain 10-digit phone number): checkout rejected a plain 10-digit phone (422 PHONE_FORMAT); only '+91 XXXXX XXXXX' passes (step 16)."
   }
  ],
  "recommendation": {
   "rec_id": "rec_B10",
-  "run_id": "run_20261118_0610",
+  "run_id": "b953b1002c33",
   "blocker_id": "B10",
   "blocker_name": "Checkout validation failure",
-  "title": "Normalise phone numbers and relax validation",
-  "body": "Accept +91, 91, 0 and bare 10-digit variants, normalise server-side and return a human-readable error.",
-  "why_it_helps": "Agents type numbers in the format the shopper gave them and rarely retry with a different one.",
-  "how_to_verify": "POST /api/checkout 422 PHONE_FORMAT responses should fall and S6 → S7 step conversion should rise.",
-  "verify_metric": "Checkout submit 422 rate",
+  "title": "Checkout validation failure: Relax and normalise validation (accept +91 variants) and return clear error messages.",
+  "body": "Relax and normalise validation (accept +91 variants) and return clear error messages.",
+  "why_it_helps": "Checkout rejects reasonable input (for example a phone number without the exact +91 format).",
+  "how_to_verify": "Checkout 422 PHONE_FORMAT count falls; checkout submit conversion rises.",
+  "verify_metric": "Agent sessions ending with B10 per day",
   "effort": "S",
   "owner": "Eng",
-  "priority_score": 452571,
-  "risk_inr_base": 452571,
+  "priority_score": 0,
+  "risk_inr_base": 0,
   "status": "open",
   "fixed_annotation_id": null,
-  "llm_explanation": null
+  "llm_explanation": "2% of failed agent sessions (42) ended on checkout validation failure. Typical failing call: POST /api/checkout -> 422 PHONE_FORMAT. Fixing it could recover about ₹118,961 a month."
  }
 }

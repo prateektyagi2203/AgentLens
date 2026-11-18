@@ -1,0 +1,322 @@
+{
+ "window": {
+  "from": "2026-11-01",
+  "to": "2026-11-07",
+  "days": 7
+ },
+ "agent": {
+  "operator": "unknown",
+  "agent_name": "unknown",
+  "agent_class": "user_fetcher",
+  "sessions": 266,
+  "share_of_agent_sessions": 0.806060606060606,
+  "pages_per_session": 7.860902255639098,
+  "conversion": 0.0,
+  "tier_mix": {
+   "verified": 0.0,
+   "declared": 0.0,
+   "suspected": 1.0
+  },
+  "top_blocker": {
+   "blocker_id": "B06",
+   "name": "Login / OTP wall before cart",
+   "share_of_failed": 0.8233082706766918
+  },
+  "signature_status_counts": {
+   "valid": 0,
+   "invalid_sig": 49,
+   "expired": 0,
+   "unknown_key": 32,
+   "fetch_failed": 0,
+   "none": 249
+  },
+  "last_seen": "2026-11-07T22:51:49Z"
+ },
+ "identity": {
+  "user_agent_example": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+  "signature_agent": "https://agents.desithreads.test",
+  "ip_match_rate": null,
+  "avg_identity_confidence": 0.8259259259259265
+ },
+ "trend": [
+  {
+   "date": "2026-11-01",
+   "sessions": 49,
+   "conversion": 0.0
+  },
+  {
+   "date": "2026-11-02",
+   "sessions": 48,
+   "conversion": 0.0
+  },
+  {
+   "date": "2026-11-03",
+   "sessions": 47,
+   "conversion": 0.0
+  },
+  {
+   "date": "2026-11-04",
+   "sessions": 61,
+   "conversion": 0.0
+  },
+  {
+   "date": "2026-11-05",
+   "sessions": 44,
+   "conversion": 0.0
+  },
+  {
+   "date": "2026-11-06",
+   "sessions": 43,
+   "conversion": 0.0
+  },
+  {
+   "date": "2026-11-07",
+   "sessions": 38,
+   "conversion": 0.0
+  }
+ ],
+ "blockers": [
+  {
+   "blocker_id": "B06",
+   "name": "Login / OTP wall before cart",
+   "sessions": 219,
+   "share_of_failed": 0.6656534954407295
+  },
+  {
+   "blocker_id": "B09",
+   "name": "Size guide is image-only",
+   "sessions": 55,
+   "share_of_failed": 0.16717325227963525
+  },
+  {
+   "blocker_id": "B05",
+   "name": "Pincode / serviceability wall",
+   "sessions": 49,
+   "share_of_failed": 0.14893617021276595
+  },
+  {
+   "blocker_id": "B08",
+   "name": "Out-of-stock dead end",
+   "sessions": 5,
+   "share_of_failed": 0.015197568389057751
+  },
+  {
+   "blocker_id": "B03",
+   "name": "JS-only product content",
+   "sessions": 1,
+   "share_of_failed": 0.00303951367781155
+  }
+ ],
+ "recent_sessions": [
+  {
+   "session_id": "d353e6db3a4b17a1",
+   "start_ts": "2026-11-07T22:51:49Z",
+   "duration_s": 9.521,
+   "request_count": 11,
+   "page_count": 11,
+   "identity_tier": "suspected",
+   "operator": "unknown",
+   "agent_name": "unknown",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.8,
+   "entry_page": "/",
+   "exit_page": "/api/otp/send",
+   "max_stage": "S4",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B06",
+   "terminal_blocker_name": "Login / OTP wall before cart",
+   "blocker_confidence": 0.97,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "116b8fd601702ff0",
+   "start_ts": "2026-11-07T22:45:27Z",
+   "duration_s": 7.878,
+   "request_count": 13,
+   "page_count": 9,
+   "identity_tier": "suspected",
+   "operator": "unknown",
+   "agent_name": "unknown",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 0.6,
+   "entry_page": "/",
+   "exit_page": "/api/otp/send",
+   "max_stage": "S4",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B06",
+   "terminal_blocker_name": "Login / OTP wall before cart",
+   "blocker_confidence": 0.97,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "3fdc27a27d9fdd5d",
+   "start_ts": "2026-11-07T22:42:27Z",
+   "duration_s": 7.858,
+   "request_count": 9,
+   "page_count": 9,
+   "identity_tier": "suspected",
+   "operator": "unknown",
+   "agent_name": "unknown",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.85,
+   "entry_page": "/",
+   "exit_page": "/api/otp/send",
+   "max_stage": "S4",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B06",
+   "terminal_blocker_name": "Login / OTP wall before cart",
+   "blocker_confidence": 0.97,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "eb7875e037436044",
+   "start_ts": "2026-11-07T22:21:24Z",
+   "duration_s": 6.994,
+   "request_count": 11,
+   "page_count": 11,
+   "identity_tier": "suspected",
+   "operator": "unknown",
+   "agent_name": "unknown",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.9,
+   "entry_page": "/",
+   "exit_page": "/api/otp/send",
+   "max_stage": "S4",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B06",
+   "terminal_blocker_name": "Login / OTP wall before cart",
+   "blocker_confidence": 0.97,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "f8ada18ba1c056da",
+   "start_ts": "2026-11-07T21:32:28Z",
+   "duration_s": 8.131,
+   "request_count": 9,
+   "page_count": 9,
+   "identity_tier": "suspected",
+   "operator": "unknown",
+   "agent_name": "unknown",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.85,
+   "entry_page": "/",
+   "exit_page": "/api/otp/send",
+   "max_stage": "S4",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B06",
+   "terminal_blocker_name": "Login / OTP wall before cart",
+   "blocker_confidence": 0.97,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "74a89438f8374393",
+   "start_ts": "2026-11-07T20:28:59Z",
+   "duration_s": 10.289,
+   "request_count": 16,
+   "page_count": 11,
+   "identity_tier": "suspected",
+   "operator": "unknown",
+   "agent_name": "unknown",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 0.7,
+   "entry_page": "/",
+   "exit_page": "/api/otp/send",
+   "max_stage": "S4",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B06",
+   "terminal_blocker_name": "Login / OTP wall before cart",
+   "blocker_confidence": 0.97,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "cbd9dde347266ee7",
+   "start_ts": "2026-11-07T19:20:38Z",
+   "duration_s": 8.608,
+   "request_count": 13,
+   "page_count": 9,
+   "identity_tier": "suspected",
+   "operator": "unknown",
+   "agent_name": "unknown",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 0.65,
+   "entry_page": "/",
+   "exit_page": "/api/otp/send",
+   "max_stage": "S4",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B06",
+   "terminal_blocker_name": "Login / OTP wall before cart",
+   "blocker_confidence": 0.97,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "3ad1aa512068cdce",
+   "start_ts": "2026-11-07T17:32:08Z",
+   "duration_s": 1.232,
+   "request_count": 2,
+   "page_count": 2,
+   "identity_tier": "suspected",
+   "operator": "unknown",
+   "agent_name": "unknown",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.85,
+   "entry_page": "/p/jaipur-print-long-kurta-in-teal",
+   "exit_page": "/size-guide/womens-kurtas",
+   "max_stage": "S2",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B09",
+   "terminal_blocker_name": "Size guide is image-only",
+   "blocker_confidence": 0.85,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "f1ea1141051a241e",
+   "start_ts": "2026-11-07T16:00:22Z",
+   "duration_s": 6.62,
+   "request_count": 10,
+   "page_count": 7,
+   "identity_tier": "suspected",
+   "operator": "unknown",
+   "agent_name": "unknown",
+   "agent_class": "browsing_agent",
+   "identity_confidence": 0.7,
+   "entry_page": "/",
+   "exit_page": "/api/cart",
+   "max_stage": "S3",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B05",
+   "terminal_blocker_name": "Pincode / serviceability wall",
+   "blocker_confidence": 0.95,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "0365c3906b46db04",
+   "start_ts": "2026-11-07T15:44:44Z",
+   "duration_s": 0.0,
+   "request_count": 1,
+   "page_count": 1,
+   "identity_tier": "suspected",
+   "operator": "unknown",
+   "agent_name": "unknown",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.8,
+   "entry_page": "/",
+   "exit_page": "/",
+   "max_stage": "S1",
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": null,
+   "terminal_blocker_name": null,
+   "blocker_confidence": null,
+   "diagnosis_method": "none"
+  }
+ ]
+}

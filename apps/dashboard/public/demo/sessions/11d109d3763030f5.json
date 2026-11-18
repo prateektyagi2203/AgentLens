@@ -1,0 +1,66 @@
+{
+ "session": {
+  "session_id": "11d109d3763030f5",
+  "start_ts": "2026-11-13T06:06:12Z",
+  "duration_s": 0.926,
+  "request_count": 2,
+  "page_count": 1,
+  "identity_tier": "human",
+  "operator": "human",
+  "agent_name": "Browser (human)",
+  "agent_class": "human",
+  "identity_confidence": 0.85,
+  "entry_page": "/",
+  "exit_page": "/",
+  "max_stage": "S1",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": null,
+  "terminal_blocker_name": null,
+  "blocker_confidence": null,
+  "diagnosis_method": "none"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 15.0,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "d3602c65-4b2a-4fc1-8dc0-079954ed2359",
+   "ts": "2026-11-13T06:06:12Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 177,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "6c8f3e93-b033-48c3-8d09-a50b3133cf2f",
+   "ts": "2026-11-13T06:06:13Z",
+   "offset_ms": 926,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 7,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-13T06:06:12Z"
+  }
+ ],
+ "fired_rules": [],
+ "replay_ids": []
+}

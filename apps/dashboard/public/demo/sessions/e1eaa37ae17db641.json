@@ -1,0 +1,207 @@
+{
+ "session": {
+  "session_id": "e1eaa37ae17db641",
+  "start_ts": "2026-11-08T04:34:34Z",
+  "duration_s": 10.93,
+  "request_count": 11,
+  "page_count": 11,
+  "identity_tier": "suspected",
+  "operator": "unknown",
+  "agent_name": "unknown",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.95,
+  "entry_page": "/",
+  "exit_page": "/order/confirmed/DT-4F298932",
+  "max_stage": "S8",
+  "converted": true,
+  "order_value_inr": 2949.0,
+  "terminal_blocker_id": null,
+  "terminal_blocker_name": null,
+  "blocker_confidence": null,
+  "diagnosis_method": "none"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 95.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "8de24f01-721f-4c96-8b90-ba9335a16ad8",
+   "ts": "2026-11-08T04:34:34Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 125,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "5bee1412-2c02-4898-8921-9309aa9cdc68",
+   "ts": "2026-11-08T04:34:36Z",
+   "offset_ms": 1693,
+   "method": "GET",
+   "path": "/search",
+   "status": 200,
+   "duration_ms": 66,
+   "page_type": "search",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "1c3ebead-12be-4d7d-8abf-2106d411a7d1",
+   "ts": "2026-11-08T04:34:38Z",
+   "offset_ms": 3377,
+   "method": "GET",
+   "path": "/c/mens-sneakers",
+   "status": 200,
+   "duration_ms": 56,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "7c875602-c667-4421-8ba0-2a0074a615ff",
+   "ts": "2026-11-08T04:34:39Z",
+   "offset_ms": 4914,
+   "method": "GET",
+   "path": "/p/grey-everyday-slip-on",
+   "status": 200,
+   "duration_ms": 31,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "5d99fd5d-224e-46cc-858b-b593f27d725c",
+   "ts": "2026-11-08T04:34:40Z",
+   "offset_ms": 5648,
+   "method": "GET",
+   "path": "/api/products/SNK005/variants",
+   "status": 200,
+   "duration_ms": 101,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "abeb398c-b7cd-4dab-80a2-15f83b60aa49",
+   "ts": "2026-11-08T04:34:41Z",
+   "offset_ms": 6463,
+   "method": "GET",
+   "path": "/api/products/SNK005/variants",
+   "status": 200,
+   "duration_ms": 49,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "9e3c3a85-eaa4-402f-856f-9a2e117555fb",
+   "ts": "2026-11-08T04:34:42Z",
+   "offset_ms": 7223,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 201,
+   "duration_ms": 25,
+   "page_type": "cart_api",
+   "error_code": null,
+   "stage_id": "S5",
+   "is_asset": false
+  },
+  {
+   "request_id": "46a442e7-7045-46ed-8524-044daa9e40ee",
+   "ts": "2026-11-08T04:34:42Z",
+   "offset_ms": 7751,
+   "method": "GET",
+   "path": "/cart",
+   "status": 200,
+   "duration_ms": 69,
+   "page_type": "cart",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "efb7ffe0-f446-4b62-890a-9419d2a9cf52",
+   "ts": "2026-11-08T04:34:44Z",
+   "offset_ms": 9501,
+   "method": "GET",
+   "path": "/checkout",
+   "status": 200,
+   "duration_ms": 58,
+   "page_type": "checkout",
+   "error_code": null,
+   "stage_id": "S6",
+   "is_asset": false
+  },
+  {
+   "request_id": "b4c75786-58ee-476f-87b6-6a3d3594f411",
+   "ts": "2026-11-08T04:34:45Z",
+   "offset_ms": 10306,
+   "method": "POST",
+   "path": "/api/checkout",
+   "status": 201,
+   "duration_ms": 59,
+   "page_type": "checkout_api",
+   "error_code": null,
+   "stage_id": "S7",
+   "is_asset": false
+  },
+  {
+   "request_id": "afdbbebe-2840-4dd8-8178-6a66aed728cc",
+   "ts": "2026-11-08T04:34:45Z",
+   "offset_ms": 10930,
+   "method": "GET",
+   "path": "/order/confirmed/DT-4F298932",
+   "status": 200,
+   "duration_ms": 47,
+   "page_type": "order_confirm",
+   "error_code": null,
+   "stage_id": "S8",
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-08T04:34:34Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-08T04:34:39Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-08T04:34:40Z"
+  },
+  {
+   "stage_id": "S5",
+   "first_reached_ts": "2026-11-08T04:34:42Z"
+  },
+  {
+   "stage_id": "S6",
+   "first_reached_ts": "2026-11-08T04:34:44Z"
+  },
+  {
+   "stage_id": "S7",
+   "first_reached_ts": "2026-11-08T04:34:45Z"
+  },
+  {
+   "stage_id": "S8",
+   "first_reached_ts": "2026-11-08T04:34:45Z"
+  }
+ ],
+ "fired_rules": [],
+ "replay_ids": []
+}

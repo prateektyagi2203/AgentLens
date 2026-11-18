@@ -1,0 +1,297 @@
+{
+ "session": {
+  "session_id": "b71bb430cf37fea9",
+  "start_ts": "2026-11-13T18:15:12Z",
+  "duration_s": 10.913,
+  "request_count": 18,
+  "page_count": 4,
+  "identity_tier": "verified",
+  "operator": "AgentLens Test Operator",
+  "agent_name": "TestSignedAgent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 1.0,
+  "entry_page": "/",
+  "exit_page": "/api/products/SHT006/variants",
+  "max_stage": "S3",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B08",
+  "terminal_blocker_name": "Out-of-stock dead end",
+  "blocker_confidence": 0.8,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "valid",
+  "signature_agent": "https://agents.desithreads.test",
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 TestSignedAgent/1.0",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "d35f26ee-c385-4435-8ba6-261175ab2df3",
+   "ts": "2026-11-13T18:15:12Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 340,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "4693cb98-5bdd-4943-87fa-1ac4547ecbdf",
+   "ts": "2026-11-13T18:15:12Z",
+   "offset_ms": 473,
+   "method": "GET",
+   "path": "/img/p/baseball-cap-in-teal-1.svg",
+   "status": 200,
+   "duration_ms": 5,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "ace03d28-78c4-403f-8a8d-6481d3950475",
+   "ts": "2026-11-13T18:15:13Z",
+   "offset_ms": 569,
+   "method": "GET",
+   "path": "/_next/static/chunks/main.js",
+   "status": 200,
+   "duration_ms": 12,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "7c8ef48c-3b75-4623-8f36-0fa15c127ac5",
+   "ts": "2026-11-13T18:15:13Z",
+   "offset_ms": 722,
+   "method": "GET",
+   "path": "/favicon.ico",
+   "status": 200,
+   "duration_ms": 9,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "8a685000-ce25-406f-8ffc-1c19017cbd8a",
+   "ts": "2026-11-13T18:15:13Z",
+   "offset_ms": 728,
+   "method": "GET",
+   "path": "/_next/static/css/app.css",
+   "status": 200,
+   "duration_ms": 23,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "b9575acd-6326-4d61-865f-5306c30d0e53",
+   "ts": "2026-11-13T18:15:13Z",
+   "offset_ms": 758,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 5,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "63130540-83c4-4191-8398-01a3479a465a",
+   "ts": "2026-11-13T18:15:13Z",
+   "offset_ms": 834,
+   "method": "GET",
+   "path": "/_next/static/chunks/app.js",
+   "status": 200,
+   "duration_ms": 14,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "fd60a465-9e18-4893-83cd-ef7c28e959f4",
+   "ts": "2026-11-13T18:15:13Z",
+   "offset_ms": 848,
+   "method": "GET",
+   "path": "/img/p/grey-retro-trainer-1.svg",
+   "status": 200,
+   "duration_ms": 7,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "70674795-b496-4415-87ad-18e06e3ccbce",
+   "ts": "2026-11-13T18:15:18Z",
+   "offset_ms": 6110,
+   "method": "GET",
+   "path": "/c/mens-shirts",
+   "status": 200,
+   "duration_ms": 57,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "7ca25cc1-4df0-4af8-8971-37bcbcd690dd",
+   "ts": "2026-11-13T18:15:18Z",
+   "offset_ms": 6220,
+   "method": "GET",
+   "path": "/img/p/printed-pocket-square-in-maroon-1.svg",
+   "status": 200,
+   "duration_ms": 12,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "fa3abe6a-a254-48a1-8988-1b6b68cfe79c",
+   "ts": "2026-11-13T18:15:19Z",
+   "offset_ms": 6729,
+   "method": "GET",
+   "path": "/img/p/gotta-patti-kurta-in-pink-3.svg",
+   "status": 200,
+   "duration_ms": 10,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "7eb0641d-d00f-4160-8cc9-f3def5a7d384",
+   "ts": "2026-11-13T18:15:19Z",
+   "offset_ms": 7075,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 7,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "4f5603b1-97a6-4561-807c-67e894d8f9cb",
+   "ts": "2026-11-13T18:15:22Z",
+   "offset_ms": 9882,
+   "method": "GET",
+   "path": "/p/black-classic-formal-shirt",
+   "status": 200,
+   "duration_ms": 52,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "7640338c-52a6-4163-8544-6c227ee94b42",
+   "ts": "2026-11-13T18:15:22Z",
+   "offset_ms": 10067,
+   "method": "GET",
+   "path": "/img/p/pink-seersucker-weekend-shirt-1.svg",
+   "status": 200,
+   "duration_ms": 15,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "1edcf4bf-f9ce-44b2-855e-13ef4c045077",
+   "ts": "2026-11-13T18:15:22Z",
+   "offset_ms": 10495,
+   "method": "GET",
+   "path": "/img/p/baseball-cap-in-teal-2.svg",
+   "status": 200,
+   "duration_ms": 12,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "ae3d443b-bdc0-4322-8292-443146df3ebb",
+   "ts": "2026-11-13T18:15:22Z",
+   "offset_ms": 10534,
+   "method": "GET",
+   "path": "/img/p/sky-blue-cuban-collar-shirt-3.svg",
+   "status": 200,
+   "duration_ms": 14,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "1b2e3a4d-6f17-4344-8011-e54ef83277f5",
+   "ts": "2026-11-13T18:15:23Z",
+   "offset_ms": 10863,
+   "method": "GET",
+   "path": "/api/products/SHT006/variants",
+   "status": 200,
+   "duration_ms": 39,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "bb542e6c-d854-42a1-8309-032572f6590c",
+   "ts": "2026-11-13T18:15:23Z",
+   "offset_ms": 10913,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 6,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-13T18:15:12Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-13T18:15:22Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-13T18:15:23Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B08",
+   "name": "Out-of-stock dead end",
+   "stage": "S3",
+   "confidence": 0.8,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "1b2e3a4d-6f17-4344-8011-e54ef83277f5",
+     "summary": "GET /api/products/SHT006/variants -> 200 (catalog shows 0 in stock for this size and colour)"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

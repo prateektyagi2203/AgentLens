@@ -1,0 +1,376 @@
+{
+ "session": {
+  "session_id": "95ab3c26a4b90316",
+  "start_ts": "2026-11-03T21:18:58Z",
+  "duration_s": 11.994,
+  "request_count": 23,
+  "page_count": 8,
+  "identity_tier": "verified",
+  "operator": "AgentLens Test Operator",
+  "agent_name": "TestSignedAgent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 1.0,
+  "entry_page": "/p/tan-oxford-button-down-shirt",
+  "exit_page": "/api/otp/send",
+  "max_stage": "S4",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B06",
+  "terminal_blocker_name": "Login / OTP wall before cart",
+  "blocker_confidence": 0.97,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "valid",
+  "signature_agent": "https://agents.desithreads.test",
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 TestSignedAgent/1.0",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "77d9e44c-3638-441f-8746-2323290d17ce",
+   "ts": "2026-11-03T21:18:58Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/p/tan-oxford-button-down-shirt",
+   "status": 200,
+   "duration_ms": 118,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "02f9e91c-c546-4c3c-88b5-e2ca712191c7",
+   "ts": "2026-11-03T21:18:58Z",
+   "offset_ms": 154,
+   "method": "GET",
+   "path": "/img/p/rayon-kaftan-kurta-in-tan-3.svg",
+   "status": 200,
+   "duration_ms": 9,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "3c960162-f0d6-4f51-82b1-0c93f3df05c0",
+   "ts": "2026-11-03T21:18:58Z",
+   "offset_ms": 165,
+   "method": "GET",
+   "path": "/img/p/chikankari-anarkali-kurta-in-grey-2.svg",
+   "status": 200,
+   "duration_ms": 10,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "c444f3fa-0a14-437f-82f4-f80083f2152d",
+   "ts": "2026-11-03T21:18:58Z",
+   "offset_ms": 180,
+   "method": "GET",
+   "path": "/img/p/teal-poplin-slim-shirt-3.svg",
+   "status": 200,
+   "duration_ms": 15,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "fd2bb010-26d9-47a7-8bb0-7610955cab76",
+   "ts": "2026-11-03T21:18:58Z",
+   "offset_ms": 283,
+   "method": "GET",
+   "path": "/_next/static/css/app.css",
+   "status": 200,
+   "duration_ms": 13,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "06d3f5a2-f751-41bb-8524-32ad946b77db",
+   "ts": "2026-11-03T21:18:58Z",
+   "offset_ms": 357,
+   "method": "GET",
+   "path": "/favicon.ico",
+   "status": 200,
+   "duration_ms": 20,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "8884e275-43b1-4e8c-8a6d-782dee7a0eab",
+   "ts": "2026-11-03T21:18:58Z",
+   "offset_ms": 359,
+   "method": "GET",
+   "path": "/_next/static/chunks/app.js",
+   "status": 200,
+   "duration_ms": 12,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "8e57dee4-0269-41c4-82e5-8ff5cd590408",
+   "ts": "2026-11-03T21:18:58Z",
+   "offset_ms": 404,
+   "method": "GET",
+   "path": "/_next/static/chunks/main.js",
+   "status": 200,
+   "duration_ms": 11,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "65ca55ee-cb3d-4d7f-8b99-bb832878e51d",
+   "ts": "2026-11-03T21:18:58Z",
+   "offset_ms": 409,
+   "method": "GET",
+   "path": "/img/p/sling-crossbody-bag-in-white-3.svg",
+   "status": 200,
+   "duration_ms": 18,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "8b6ed092-b64c-480c-855e-acae024bc2ba",
+   "ts": "2026-11-03T21:18:58Z",
+   "offset_ms": 553,
+   "method": "GET",
+   "path": "/img/p/teal-poplin-slim-shirt-3.svg",
+   "status": 200,
+   "duration_ms": 27,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "83b8059b-77fb-4d73-87b3-a053d79e66e6",
+   "ts": "2026-11-03T21:18:58Z",
+   "offset_ms": 698,
+   "method": "GET",
+   "path": "/img/p/canvas-tote-bag-in-indigo-1.svg",
+   "status": 200,
+   "duration_ms": 14,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "05ed97cd-c4f8-498e-8335-714f40825c47",
+   "ts": "2026-11-03T21:18:59Z",
+   "offset_ms": 1135,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 14,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "68655c13-2384-4a82-8dd2-0e39a47aca06",
+   "ts": "2026-11-03T21:19:00Z",
+   "offset_ms": 1965,
+   "method": "GET",
+   "path": "/api/products/SHT001/variants",
+   "status": 200,
+   "duration_ms": 12,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "860ed09a-b3cd-42ba-8050-638debac147c",
+   "ts": "2026-11-03T21:19:01Z",
+   "offset_ms": 3316,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 55,
+   "page_type": "cart_api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "e9a067b0-cbf2-4cf9-8b22-e1cb0b945332",
+   "ts": "2026-11-03T21:19:03Z",
+   "offset_ms": 5348,
+   "method": "GET",
+   "path": "/api/serviceability",
+   "status": 200,
+   "duration_ms": 21,
+   "page_type": "serviceability_api",
+   "error_code": null,
+   "stage_id": "S4",
+   "is_asset": false
+  },
+  {
+   "request_id": "419f0e37-7f07-41a5-8f05-360a9feed8b2",
+   "ts": "2026-11-03T21:19:04Z",
+   "offset_ms": 5960,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 401,
+   "duration_ms": 11,
+   "page_type": "cart_api",
+   "error_code": "AUTH_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "64832c1a-ffe9-46dc-8513-155689953076",
+   "ts": "2026-11-03T21:19:06Z",
+   "offset_ms": 8506,
+   "method": "GET",
+   "path": "/login",
+   "status": 500,
+   "duration_ms": 115,
+   "page_type": "login",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "1546ff34-a5bf-452f-85c2-6bac7225c809",
+   "ts": "2026-11-03T21:19:08Z",
+   "offset_ms": 10798,
+   "method": "GET",
+   "path": "/login",
+   "status": 200,
+   "duration_ms": 133,
+   "page_type": "login",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "a6f09fa0-d7a4-49e3-8eab-c7b64d86bcd2",
+   "ts": "2026-11-03T21:19:09Z",
+   "offset_ms": 11304,
+   "method": "GET",
+   "path": "/img/p/sky-blue-studio-court-low-2.svg",
+   "status": 200,
+   "duration_ms": 16,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "e561e79c-a33c-4a51-8f5c-673bd02beb4f",
+   "ts": "2026-11-03T21:19:09Z",
+   "offset_ms": 11331,
+   "method": "GET",
+   "path": "/img/p/baseball-cap-in-teal-2.svg",
+   "status": 200,
+   "duration_ms": 7,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "4e782863-78fc-43d7-8159-443e3d74450f",
+   "ts": "2026-11-03T21:19:09Z",
+   "offset_ms": 11399,
+   "method": "GET",
+   "path": "/img/p/maroon-street-runner-2.svg",
+   "status": 200,
+   "duration_ms": 11,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "13bdde1d-ab02-401b-886c-a87d669a6e85",
+   "ts": "2026-11-03T21:19:09Z",
+   "offset_ms": 11771,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 8,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "7ecc9d37-ee31-47c7-8af3-5aa565b54666",
+   "ts": "2026-11-03T21:19:10Z",
+   "offset_ms": 11994,
+   "method": "POST",
+   "path": "/api/otp/send",
+   "status": 200,
+   "duration_ms": 29,
+   "page_type": "otp_api",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-03T21:18:58Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-03T21:19:00Z"
+  },
+  {
+   "stage_id": "S4",
+   "first_reached_ts": "2026-11-03T21:19:03Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B06",
+   "name": "Login / OTP wall before cart",
+   "stage": "S5",
+   "confidence": 0.97,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "419f0e37-7f07-41a5-8f05-360a9feed8b2",
+     "summary": "POST /api/cart -> 401 AUTH_REQUIRED"
+    }
+   ]
+  },
+  {
+   "blocker_id": "B05",
+   "name": "Pincode / serviceability wall",
+   "stage": "S5",
+   "confidence": 0.95,
+   "is_terminal": false,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "860ed09a-b3cd-42ba-8050-638debac147c",
+     "summary": "POST /api/cart -> 409 PINCODE_REQUIRED"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

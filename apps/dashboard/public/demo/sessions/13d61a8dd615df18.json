@@ -1,0 +1,178 @@
+{
+ "session": {
+  "session_id": "13d61a8dd615df18",
+  "start_ts": "2026-11-06T18:06:06Z",
+  "duration_s": 4.903,
+  "request_count": 7,
+  "page_count": 7,
+  "identity_tier": "suspected",
+  "operator": "unknown",
+  "agent_name": "unknown",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.95,
+  "entry_page": "/",
+  "exit_page": "/api/cart",
+  "max_stage": "S3",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B05",
+  "terminal_blocker_name": "Pincode / serviceability wall",
+  "blocker_confidence": 0.95,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "unknown_key",
+  "signature_agent": "https://agents.desithreads.test",
+  "suspicion_score": 95.0,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "80594299-3b78-4f3d-8d35-5d20ef7f8ce3",
+   "ts": "2026-11-06T18:06:06Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 121,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "b2da3c54-f3a4-4681-8203-4bd2c5d88ce7",
+   "ts": "2026-11-06T18:06:07Z",
+   "offset_ms": 1402,
+   "method": "GET",
+   "path": "/c/accessories",
+   "status": 200,
+   "duration_ms": 65,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "24dcfda7-67dc-4688-8671-188f25cba9ae",
+   "ts": "2026-11-06T18:06:09Z",
+   "offset_ms": 2674,
+   "method": "GET",
+   "path": "/p/ankle-socks-pack-in-white",
+   "status": 200,
+   "duration_ms": 41,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "d45aadf6-aea8-4ed5-8c82-e7e4001fb2f7",
+   "ts": "2026-11-06T18:06:09Z",
+   "offset_ms": 3224,
+   "method": "GET",
+   "path": "/api/products/ACC014/variants",
+   "status": 200,
+   "duration_ms": 21,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "eb4ce9ee-aa9c-4c9c-87b9-cff890974460",
+   "ts": "2026-11-06T18:06:10Z",
+   "offset_ms": 3742,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 27,
+   "page_type": "cart_api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "b5a753b6-b2f3-4929-8d8c-d77c8908e780",
+   "ts": "2026-11-06T18:06:10Z",
+   "offset_ms": 4357,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 27,
+   "page_type": "cart_api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "9aed1d6f-3838-4c5c-842c-a7ade655c578",
+   "ts": "2026-11-06T18:06:11Z",
+   "offset_ms": 4903,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 29,
+   "page_type": "cart_api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-06T18:06:06Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-06T18:06:09Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-06T18:06:09Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B05",
+   "name": "Pincode / serviceability wall",
+   "stage": "S5",
+   "confidence": 0.95,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "9aed1d6f-3838-4c5c-842c-a7ade655c578",
+     "summary": "POST /api/cart -> 409 PINCODE_REQUIRED"
+    },
+    {
+     "type": "request",
+     "request_id": "b5a753b6-b2f3-4929-8d8c-d77c8908e780",
+     "summary": "POST /api/cart -> 409 PINCODE_REQUIRED"
+    },
+    {
+     "type": "request",
+     "request_id": "eb4ce9ee-aa9c-4c9c-87b9-cff890974460",
+     "summary": "POST /api/cart -> 409 PINCODE_REQUIRED"
+    }
+   ]
+  },
+  {
+   "blocker_id": "B08",
+   "name": "Out-of-stock dead end",
+   "stage": "S3",
+   "confidence": 0.8,
+   "is_terminal": false,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "d45aadf6-aea8-4ed5-8c82-e7e4001fb2f7",
+     "summary": "GET /api/products/ACC014/variants -> 200 (catalog shows 0 in stock for this size and colour)"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

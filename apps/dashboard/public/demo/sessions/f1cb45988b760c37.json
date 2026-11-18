@@ -1,0 +1,116 @@
+{
+ "session": {
+  "session_id": "f1cb45988b760c37",
+  "start_ts": "2026-11-11T09:52:46Z",
+  "duration_s": 5.02,
+  "request_count": 4,
+  "page_count": 4,
+  "identity_tier": "suspected",
+  "operator": "unknown",
+  "agent_name": "unknown",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.75,
+  "entry_page": "/",
+  "exit_page": "/size-guide/mens-sneakers",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B09",
+  "terminal_blocker_name": "Size guide is image-only",
+  "blocker_confidence": 0.85,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 75.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "7fc1ccca-6804-4842-8a6d-1bc74b6407a4",
+   "ts": "2026-11-11T09:52:46Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 68,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "f122fbb0-8a7e-4800-8fa7-1e7bbf4f8d21",
+   "ts": "2026-11-11T09:52:48Z",
+   "offset_ms": 1688,
+   "method": "GET",
+   "path": "/c/mens-sneakers",
+   "status": 200,
+   "duration_ms": 63,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "76c50e3f-04af-451b-82f0-4e1cfaa09b43",
+   "ts": "2026-11-11T09:52:49Z",
+   "offset_ms": 3480,
+   "method": "GET",
+   "path": "/p/sky-blue-studio-court-low",
+   "status": 200,
+   "duration_ms": 78,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "89ec7fac-4190-4205-8e14-c6ddcef21f93",
+   "ts": "2026-11-11T09:52:51Z",
+   "offset_ms": 5020,
+   "method": "GET",
+   "path": "/size-guide/mens-sneakers",
+   "status": 200,
+   "duration_ms": 72,
+   "page_type": "size_guide",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-11T09:52:46Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-11T09:52:49Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B09",
+   "name": "Size guide is image-only",
+   "stage": "S3",
+   "confidence": 0.85,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "89ec7fac-4190-4205-8e14-c6ddcef21f93",
+     "summary": "GET /size-guide/mens-sneakers -> 200"
+    },
+    {
+     "type": "site_check",
+     "check": "size_guide_table",
+     "result": "fail"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

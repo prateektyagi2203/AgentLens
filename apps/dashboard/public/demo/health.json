@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "version": "0.1.0",
- "time": "2026-11-18T08:58:00.188Z",
+ "version": "1.0.0",
+ "time": "2026-11-18T11:55:44Z",
  "db": "ok",
- "demo_mode": false
+ "demo_mode": true
 }

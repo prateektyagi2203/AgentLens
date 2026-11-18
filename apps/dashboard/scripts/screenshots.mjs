@@ -1,4 +1,10 @@
-/** Captures P1/P3/P4 in light and dark into docs/screenshots (needs the dev server on :3101 with NEXT_PUBLIC_USE_MOCKS=1). */
+/**
+ * Captures P1/P3/P4 in light and dark into docs/screenshots.
+ * Needs the dashboard on :3101 reading the REAL API (API on :8100 serving data/demo), e.g.
+ *   $env:AGENTLENS_DATA_DIR="data/demo"; python -m agentlens.cli serve   (repo root)
+ *   pnpm dev:dashboard
+ * Windows default to the demo scenario (before: 2026-11-01..07, full: 2026-11-01..14); override with ALL_WINDOW / BEFORE_WINDOW / BLOCKER_ID.
+ */
 import { chromium } from "@playwright/test";
 import { mkdirSync } from "node:fs";
 import { join } from "node:path";
@@ -6,12 +12,14 @@ import { join } from "node:path";
 const base = process.env.BASE_URL ?? "http://localhost:3101";
 const out = join(process.cwd(), "..", "..", "docs", "screenshots");
 mkdirSync(out, { recursive: true });
-const win = "from=2026-11-05&to=2026-11-11";
+const all = process.env.ALL_WINDOW ?? "from=2026-11-01&to=2026-11-14";
+const before = process.env.BEFORE_WINDOW ?? "from=2026-11-01&to=2026-11-07";
+const blocker = process.env.BLOCKER_ID ?? "B06";
 const shots = [
-  ["overview", `/?${win}`, "kpi-risk"],
-  ["funnel", `/funnel?${win}`, "funnel-bars"],
-  ["blockers", `/blockers?${win}`, "blockers-table"],
-  ["blocker-detail", `/blockers?id=B05&${win}`, "blocker-detail"],
+  ["overview", `/?${all}`, "kpi-risk"],
+  ["funnel", `/funnel?${before}`, "funnel-bars"],
+  ["blockers", `/blockers?${before}`, "blockers-table"],
+  ["blocker-detail", `/blockers?id=${blocker}&${before}`, "blocker-detail"],
 ];
 
 const browser = await chromium.launch();

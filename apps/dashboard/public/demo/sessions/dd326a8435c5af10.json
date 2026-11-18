@@ -1,0 +1,81 @@
+{
+ "session": {
+  "session_id": "dd326a8435c5af10",
+  "start_ts": "2026-11-08T13:35:57Z",
+  "duration_s": 1.176,
+  "request_count": 2,
+  "page_count": 2,
+  "identity_tier": "declared",
+  "operator": "Anthropic",
+  "agent_name": "Claude-User",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.7,
+  "entry_page": "/robots.txt",
+  "exit_page": "/size-guide/mens-sneakers",
+  "max_stage": null,
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B09",
+  "terminal_blocker_name": "Size guide is image-only",
+  "blocker_confidence": 0.85,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Claude-User/1.0; +Claude-User@anthropic.com)",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "425f3b9f-3d26-4f49-829b-ea1de2020b3c",
+   "ts": "2026-11-08T13:35:57Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/robots.txt",
+   "status": 200,
+   "duration_ms": 40,
+   "page_type": "robots",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "77afb569-7224-4b20-80d2-172a0522bf0f",
+   "ts": "2026-11-08T13:35:58Z",
+   "offset_ms": 1176,
+   "method": "GET",
+   "path": "/size-guide/mens-sneakers",
+   "status": 200,
+   "duration_ms": 164,
+   "page_type": "size_guide",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [],
+ "fired_rules": [
+  {
+   "blocker_id": "B09",
+   "name": "Size guide is image-only",
+   "stage": "S3",
+   "confidence": 0.85,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "77afb569-7224-4b20-80d2-172a0522bf0f",
+     "summary": "GET /size-guide/mens-sneakers -> 200"
+    },
+    {
+     "type": "site_check",
+     "check": "size_guide_table",
+     "result": "fail"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

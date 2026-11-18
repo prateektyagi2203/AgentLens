@@ -1,145 +1,85 @@
 {
  "window": {
-  "from": "2026-11-05",
-  "to": "2026-11-11",
+  "from": "2026-11-01",
+  "to": "2026-11-07",
   "days": 7
  },
  "blocker": {
   "blocker_id": "B01",
   "name": "Bot wall / WAF block",
   "stage": "S1",
-  "sessions_blocked": 80,
-  "share_of_failed": 0.02,
+  "sessions_blocked": 0,
+  "share_of_failed": 0.0,
   "risk_inr": {
-   "low": 7241,
-   "base": 13577,
-   "high": 21723
+   "low": 0,
+   "base": 0,
+   "high": 0
   },
   "replay_status": "not_run",
   "effort": "M",
-  "priority_score": 6789,
-  "low_confidence": false
+  "priority_score": 0,
+  "low_confidence": true
  },
- "description": "A WAF or bot-management rule answers identified agents with a 403/503 challenge page, so they never see the catalogue.",
- "detection": "Status 403/503 with challenge markers, or a 403 as the last request, while agent identity is present.",
+ "description": "A WAF or bot challenge blocks identified agents before they can read or buy.",
+ "detection": "Rule B01 (Bot wall / WAF block) on the request log; evidence below.",
  "evidence": {
-  "top_error_codes": [
-   {
-    "code": "WAF_CHALLENGE",
-    "count": 66,
-    "share": 0.82
-   },
-   {
-    "code": "FORBIDDEN",
-    "count": 14,
-    "share": 0.18
-   }
-  ],
-  "example_requests": [
-   {
-    "request_id": "req_B01_1",
-    "summary": "GET /p/white-court-sneaker → 403 (challenge page) · agent: ChatGPT-User (Declared)",
-    "count": 80
-   }
-  ],
+  "top_error_codes": [],
+  "example_requests": [],
   "site_checks": []
  },
  "risk_breakdown": {
-  "sessions_blocked": 80,
+  "sessions_blocked": 0,
   "recoverable_rate": 0.6,
-  "p_stage": 0.029999684343434342,
-  "aov_inr": 2200,
+  "p_stage": 0.0,
+  "aov_inr": 2200.0,
   "k": 4.285714285714286
  },
  "trend": [
   {
+   "date": "2026-11-01",
+   "sessions_blocked": 0
+  },
+  {
+   "date": "2026-11-02",
+   "sessions_blocked": 0
+  },
+  {
+   "date": "2026-11-03",
+   "sessions_blocked": 0
+  },
+  {
+   "date": "2026-11-04",
+   "sessions_blocked": 0
+  },
+  {
    "date": "2026-11-05",
-   "sessions_blocked": 12
+   "sessions_blocked": 0
   },
   {
    "date": "2026-11-06",
-   "sessions_blocked": 12
+   "sessions_blocked": 0
   },
   {
    "date": "2026-11-07",
-   "sessions_blocked": 10
-  },
-  {
-   "date": "2026-11-08",
-   "sessions_blocked": 10
-  },
-  {
-   "date": "2026-11-09",
-   "sessions_blocked": 12
-  },
-  {
-   "date": "2026-11-10",
-   "sessions_blocked": 13
-  },
-  {
-   "date": "2026-11-11",
-   "sessions_blocked": 11
+   "sessions_blocked": 0
   }
  ],
- "sample_sessions": [
-  {
-   "session_id": "ses_xekgekdg0p",
-   "start_ts": "2026-11-09T14:47:54.000Z",
-   "duration_s": 5,
-   "request_count": 3,
-   "page_count": 2,
-   "identity_tier": "declared",
-   "operator": "Perplexity",
-   "agent_name": "Perplexity-User",
-   "agent_class": "user_fetcher",
-   "identity_confidence": 0.7,
-   "entry_page": "/",
-   "exit_page": "/p/leather-kolhapuri-sandal",
-   "max_stage": "S1",
-   "converted": false,
-   "order_value_inr": null,
-   "terminal_blocker_id": "B01",
-   "terminal_blocker_name": "Bot wall / WAF block",
-   "blocker_confidence": 0.63,
-   "diagnosis_method": "rule"
-  },
-  {
-   "session_id": "ses_4wmdgjtvjr",
-   "start_ts": "2026-11-05T04:04:43.000Z",
-   "duration_s": 5,
-   "request_count": 3,
-   "page_count": 2,
-   "identity_tier": "declared",
-   "operator": "Anthropic",
-   "agent_name": "Claude-User",
-   "agent_class": "user_fetcher",
-   "identity_confidence": 0.9,
-   "entry_page": "/",
-   "exit_page": "/p/block-print-dupatta",
-   "max_stage": "S1",
-   "converted": false,
-   "order_value_inr": null,
-   "terminal_blocker_id": "B01",
-   "terminal_blocker_name": "Bot wall / WAF block",
-   "blocker_confidence": 0.94,
-   "diagnosis_method": "rule"
-  }
- ],
+ "sample_sessions": [],
  "replays": [],
  "recommendation": {
   "rec_id": "rec_B01",
-  "run_id": "run_20261118_0610",
+  "run_id": "",
   "blocker_id": "B01",
   "blocker_name": "Bot wall / WAF block",
-  "title": "Allow-list verified agents, challenge only suspicious traffic",
-  "body": "Add Web Bot Auth verified operators to the WAF allow-list and switch Declared agents to a risk-based challenge instead of a hard block.",
-  "why_it_helps": "Agents cannot solve interactive challenges, so every block ends the journey immediately.",
-  "how_to_verify": "403/503 responses to Verified and Declared agents should fall to near zero.",
-  "verify_metric": "403 share of agent requests",
+  "title": "Bot wall / WAF block: Allow-list verified agents (Web Bot Auth) and challenge only suspicious traffic.",
+  "body": "Allow-list verified agents (Web Bot Auth) and challenge only suspicious traffic.",
+  "why_it_helps": "A WAF or bot challenge blocks identified agents before they can read or buy.",
+  "how_to_verify": "Share of agent requests with 403/503 drops; agent sessions per day rises.",
+  "verify_metric": "Agent sessions ending with B01 per day",
   "effort": "M",
   "owner": "Security",
-  "priority_score": 6789,
-  "risk_inr_base": 13577,
+  "priority_score": 0,
+  "risk_inr_base": 0,
   "status": "open",
   "fixed_annotation_id": null,
   "llm_explanation": null

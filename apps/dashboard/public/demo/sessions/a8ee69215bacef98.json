@@ -1,0 +1,185 @@
+{
+ "session": {
+  "session_id": "a8ee69215bacef98",
+  "start_ts": "2026-11-13T18:51:55Z",
+  "duration_s": 0.767,
+  "request_count": 10,
+  "page_count": 1,
+  "identity_tier": "verified",
+  "operator": "AgentLens Test Operator",
+  "agent_name": "TestSignedAgent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 1.0,
+  "entry_page": "/p/block-print-straight-kurta-in-white",
+  "exit_page": "/p/block-print-straight-kurta-in-white",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B07",
+  "terminal_blocker_name": "Interstitial / popup overlay",
+  "blocker_confidence": 0.6,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "valid",
+  "signature_agent": "https://agents.desithreads.test",
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 TestSignedAgent/1.0",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "0d0702b8-e99b-4e52-88c0-681ae6d90ca1",
+   "ts": "2026-11-13T18:51:55Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/p/block-print-straight-kurta-in-white",
+   "status": 200,
+   "duration_ms": 169,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "2740a151-a993-4df8-8a87-58789d58d5e9",
+   "ts": "2026-11-13T18:51:56Z",
+   "offset_ms": 202,
+   "method": "GET",
+   "path": "/img/p/grey-retro-trainer-1.svg",
+   "status": 200,
+   "duration_ms": 10,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "c405a8c2-0a7b-4add-826f-d33e35a037a1",
+   "ts": "2026-11-13T18:51:56Z",
+   "offset_ms": 388,
+   "method": "GET",
+   "path": "/favicon.ico",
+   "status": 200,
+   "duration_ms": 30,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "daecfabc-329c-49e5-8f4a-0ed3255ae5a7",
+   "ts": "2026-11-13T18:51:56Z",
+   "offset_ms": 404,
+   "method": "GET",
+   "path": "/img/p/navy-daily-walk-sneaker-1.svg",
+   "status": 200,
+   "duration_ms": 12,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "f435b779-8af2-4e7a-870c-e476ffebea8d",
+   "ts": "2026-11-13T18:51:56Z",
+   "offset_ms": 461,
+   "method": "GET",
+   "path": "/img/p/cotton-a-line-kurta-in-maroon-3.svg",
+   "status": 200,
+   "duration_ms": 10,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "c846e919-9a43-4967-8d44-1af1509d37db",
+   "ts": "2026-11-13T18:51:56Z",
+   "offset_ms": 468,
+   "method": "GET",
+   "path": "/_next/static/chunks/app.js",
+   "status": 200,
+   "duration_ms": 5,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "77516ede-3664-4140-8a22-2a3591d56bf6",
+   "ts": "2026-11-13T18:51:56Z",
+   "offset_ms": 562,
+   "method": "GET",
+   "path": "/_next/static/css/app.css",
+   "status": 200,
+   "duration_ms": 25,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "018a3837-3712-46ed-826b-359bfafa6402",
+   "ts": "2026-11-13T18:51:56Z",
+   "offset_ms": 603,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 4,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "804abb5e-ca8f-47de-8f91-d073e146d778",
+   "ts": "2026-11-13T18:51:56Z",
+   "offset_ms": 624,
+   "method": "GET",
+   "path": "/img/p/sling-crossbody-bag-in-white-2.svg",
+   "status": 200,
+   "duration_ms": 7,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "e87b4f9a-3240-4a83-8135-a860f76cc8f4",
+   "ts": "2026-11-13T18:51:56Z",
+   "offset_ms": 767,
+   "method": "GET",
+   "path": "/_next/static/chunks/main.js",
+   "status": 200,
+   "duration_ms": 13,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-13T18:51:55Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B07",
+   "name": "Interstitial / popup overlay",
+   "stage": "S2",
+   "confidence": 0.6,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "0d0702b8-e99b-4e52-88c0-681ae6d90ca1",
+     "summary": "GET /p/block-print-straight-kurta-in-white -> 200"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

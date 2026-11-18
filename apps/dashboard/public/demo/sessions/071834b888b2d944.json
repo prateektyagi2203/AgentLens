@@ -1,0 +1,194 @@
+{
+ "session": {
+  "session_id": "071834b888b2d944",
+  "start_ts": "2026-11-12T23:41:44Z",
+  "duration_s": 10.55,
+  "request_count": 10,
+  "page_count": 10,
+  "identity_tier": "suspected",
+  "operator": "unknown",
+  "agent_name": "unknown",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.95,
+  "entry_page": "/",
+  "exit_page": "/order/confirmed/DT-41AF779C",
+  "max_stage": "S8",
+  "converted": true,
+  "order_value_inr": 2109.0,
+  "terminal_blocker_id": null,
+  "terminal_blocker_name": null,
+  "blocker_confidence": null,
+  "diagnosis_method": "none"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 95.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "a32f2dcf-6570-4563-8f67-05dec7aae41c",
+   "ts": "2026-11-12T23:41:44Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 56,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "8271d323-d049-447a-8e85-8ef0115fd191",
+   "ts": "2026-11-12T23:41:46Z",
+   "offset_ms": 1722,
+   "method": "GET",
+   "path": "/c/mens-shirts",
+   "status": 200,
+   "duration_ms": 133,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "7d40bd5a-ac7e-4591-89ef-1020bcb52bf9",
+   "ts": "2026-11-12T23:41:48Z",
+   "offset_ms": 3527,
+   "method": "GET",
+   "path": "/p/teal-poplin-slim-shirt",
+   "status": 200,
+   "duration_ms": 100,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "b428c21a-c273-4fe5-8b34-e91c1be86b1c",
+   "ts": "2026-11-12T23:41:50Z",
+   "offset_ms": 5295,
+   "method": "GET",
+   "path": "/size-guide/mens-shirts",
+   "status": 200,
+   "duration_ms": 39,
+   "page_type": "size_guide",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "716cb2ce-a4d2-4889-8666-3152682e675b",
+   "ts": "2026-11-12T23:41:50Z",
+   "offset_ms": 6034,
+   "method": "GET",
+   "path": "/api/products/SHT014/variants",
+   "status": 200,
+   "duration_ms": 44,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "86e8731e-d9d8-471f-8415-8c4743553d7b",
+   "ts": "2026-11-12T23:41:51Z",
+   "offset_ms": 6819,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 201,
+   "duration_ms": 33,
+   "page_type": "cart_api",
+   "error_code": null,
+   "stage_id": "S5",
+   "is_asset": false
+  },
+  {
+   "request_id": "dabab285-5771-4702-87a0-89ab64469a76",
+   "ts": "2026-11-12T23:41:52Z",
+   "offset_ms": 7327,
+   "method": "GET",
+   "path": "/cart",
+   "status": 200,
+   "duration_ms": 116,
+   "page_type": "cart",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "966ad766-043a-4e07-85aa-5ef6cea9e824",
+   "ts": "2026-11-12T23:41:53Z",
+   "offset_ms": 9095,
+   "method": "GET",
+   "path": "/checkout",
+   "status": 200,
+   "duration_ms": 70,
+   "page_type": "checkout",
+   "error_code": null,
+   "stage_id": "S6",
+   "is_asset": false
+  },
+  {
+   "request_id": "63030e92-95c3-4bad-8396-510c9d8cf2fa",
+   "ts": "2026-11-12T23:41:54Z",
+   "offset_ms": 9897,
+   "method": "POST",
+   "path": "/api/checkout",
+   "status": 201,
+   "duration_ms": 79,
+   "page_type": "checkout_api",
+   "error_code": null,
+   "stage_id": "S7",
+   "is_asset": false
+  },
+  {
+   "request_id": "ad1f948d-7405-4767-8a57-f868370426cc",
+   "ts": "2026-11-12T23:41:55Z",
+   "offset_ms": 10550,
+   "method": "GET",
+   "path": "/order/confirmed/DT-41AF779C",
+   "status": 200,
+   "duration_ms": 87,
+   "page_type": "order_confirm",
+   "error_code": null,
+   "stage_id": "S8",
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-12T23:41:44Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-12T23:41:48Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-12T23:41:50Z"
+  },
+  {
+   "stage_id": "S5",
+   "first_reached_ts": "2026-11-12T23:41:51Z"
+  },
+  {
+   "stage_id": "S6",
+   "first_reached_ts": "2026-11-12T23:41:53Z"
+  },
+  {
+   "stage_id": "S7",
+   "first_reached_ts": "2026-11-12T23:41:54Z"
+  },
+  {
+   "stage_id": "S8",
+   "first_reached_ts": "2026-11-12T23:41:55Z"
+  }
+ ],
+ "fired_rules": [],
+ "replay_ids": []
+}

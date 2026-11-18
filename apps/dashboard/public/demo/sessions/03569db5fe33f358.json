@@ -1,0 +1,92 @@
+{
+ "session": {
+  "session_id": "03569db5fe33f358",
+  "start_ts": "2026-11-05T17:53:39Z",
+  "duration_s": 19.264,
+  "request_count": 4,
+  "page_count": 2,
+  "identity_tier": "human",
+  "operator": "human",
+  "agent_name": "Browser (human)",
+  "agent_class": "human",
+  "identity_confidence": 0.85,
+  "entry_page": "/",
+  "exit_page": "/policies/returns",
+  "max_stage": "S1",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": null,
+  "terminal_blocker_name": null,
+  "blocker_confidence": null,
+  "diagnosis_method": "none"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 15.0,
+  "user_agent": "Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "dd061c4b-8ec7-4066-8665-397ae418187a",
+   "ts": "2026-11-05T17:53:39Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 110,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "4b574870-7acd-40d7-8094-a4bc2330ad21",
+   "ts": "2026-11-05T17:53:40Z",
+   "offset_ms": 878,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 12,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "753435c7-2d0a-4016-8972-fedb3ea627e5",
+   "ts": "2026-11-05T17:53:58Z",
+   "offset_ms": 18930,
+   "method": "GET",
+   "path": "/policies/returns",
+   "status": 200,
+   "duration_ms": 59,
+   "page_type": "policy",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "5a10bbf6-781e-4aeb-86c3-29119f245d23",
+   "ts": "2026-11-05T17:53:58Z",
+   "offset_ms": 19264,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 6,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-05T17:53:39Z"
+  }
+ ],
+ "fired_rules": [],
+ "replay_ids": []
+}

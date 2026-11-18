@@ -1,0 +1,159 @@
+{
+ "session": {
+  "session_id": "a91ca9b79b6a3de3",
+  "start_ts": "2026-11-07T16:10:19Z",
+  "duration_s": 0.68,
+  "request_count": 8,
+  "page_count": 1,
+  "identity_tier": "verified",
+  "operator": "AgentLens Test Operator",
+  "agent_name": "TestSignedAgent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 1.0,
+  "entry_page": "/p/bandhani-flared-kurta-in-sky-blue",
+  "exit_page": "/p/bandhani-flared-kurta-in-sky-blue",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B07",
+  "terminal_blocker_name": "Interstitial / popup overlay",
+  "blocker_confidence": 0.6,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "valid",
+  "signature_agent": "https://agents.desithreads.test",
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 TestSignedAgent/1.0",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "3a14212a-21ae-4142-8f1d-ace9f9a1be89",
+   "ts": "2026-11-07T16:10:19Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/p/bandhani-flared-kurta-in-sky-blue",
+   "status": 200,
+   "duration_ms": 93,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "1a73cd37-f0ad-403b-8b22-e8d82866951e",
+   "ts": "2026-11-07T16:10:20Z",
+   "offset_ms": 233,
+   "method": "GET",
+   "path": "/img/p/sky-blue-studio-court-low-1.svg",
+   "status": 200,
+   "duration_ms": 13,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "54b1a257-2597-41d9-8cb4-130b5fd23352",
+   "ts": "2026-11-07T16:10:20Z",
+   "offset_ms": 273,
+   "method": "GET",
+   "path": "/_next/static/chunks/app.js",
+   "status": 200,
+   "duration_ms": 10,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "27c9a007-e91c-443d-8451-e61c2e503a5b",
+   "ts": "2026-11-07T16:10:20Z",
+   "offset_ms": 307,
+   "method": "GET",
+   "path": "/_next/static/chunks/main.js",
+   "status": 200,
+   "duration_ms": 8,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "8ae07dbd-dd44-45ea-8fe8-c4da7df127b1",
+   "ts": "2026-11-07T16:10:20Z",
+   "offset_ms": 312,
+   "method": "GET",
+   "path": "/img/p/mustard-alley-suede-sneaker-3.svg",
+   "status": 200,
+   "duration_ms": 10,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "a13ec184-bf1b-41ae-82c0-8134fe77066d",
+   "ts": "2026-11-07T16:10:20Z",
+   "offset_ms": 547,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 8,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "30e6f94e-50ff-4fbd-8a0b-1c2904217869",
+   "ts": "2026-11-07T16:10:20Z",
+   "offset_ms": 615,
+   "method": "GET",
+   "path": "/_next/static/css/app.css",
+   "status": 200,
+   "duration_ms": 10,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "8a2a8b25-852f-4ea4-8dd9-a973e963fe47",
+   "ts": "2026-11-07T16:10:20Z",
+   "offset_ms": 680,
+   "method": "GET",
+   "path": "/favicon.ico",
+   "status": 200,
+   "duration_ms": 10,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-07T16:10:19Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B07",
+   "name": "Interstitial / popup overlay",
+   "stage": "S2",
+   "confidence": 0.6,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "3a14212a-21ae-4142-8f1d-ace9f9a1be89",
+     "summary": "GET /p/bandhani-flared-kurta-in-sky-blue -> 200"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

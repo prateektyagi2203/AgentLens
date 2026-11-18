@@ -1,0 +1,411 @@
+{
+ "session": {
+  "session_id": "4db7c5d0a6120f1f",
+  "start_ts": "2026-11-02T07:35:11Z",
+  "duration_s": 12.921,
+  "request_count": 26,
+  "page_count": 7,
+  "identity_tier": "verified",
+  "operator": "AgentLens Test Operator",
+  "agent_name": "TestSignedAgent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 1.0,
+  "entry_page": "/",
+  "exit_page": "/api/cart",
+  "max_stage": "S3",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B05",
+  "terminal_blocker_name": "Pincode / serviceability wall",
+  "blocker_confidence": 0.95,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "valid",
+  "signature_agent": "https://agents.desithreads.test",
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 TestSignedAgent/1.0",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "5715195d-8039-4ab3-81f4-95367dec483c",
+   "ts": "2026-11-02T07:35:11Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 60,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "35f41ebd-bac2-467c-83ae-0a0a7636cf73",
+   "ts": "2026-11-02T07:35:11Z",
+   "offset_ms": 120,
+   "method": "GET",
+   "path": "/img/p/mustard-mandarin-collar-shirt-2.svg",
+   "status": 200,
+   "duration_ms": 9,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "36997ea7-64b7-4a53-89b7-cc16dc6bba00",
+   "ts": "2026-11-02T07:35:11Z",
+   "offset_ms": 152,
+   "method": "GET",
+   "path": "/img/p/handloom-yoke-kurta-in-olive-2.svg",
+   "status": 200,
+   "duration_ms": 13,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "2e438eaf-5c1c-4fbd-8fc5-59808c35f137",
+   "ts": "2026-11-02T07:35:11Z",
+   "offset_ms": 184,
+   "method": "GET",
+   "path": "/img/p/ikat-print-kurta-in-olive-3.svg",
+   "status": 200,
+   "duration_ms": 19,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "8c5d01bb-86dc-4080-895f-d5220b89e02f",
+   "ts": "2026-11-02T07:35:11Z",
+   "offset_ms": 329,
+   "method": "GET",
+   "path": "/img/p/teal-half-sleeve-linen-shirt-1.svg",
+   "status": 200,
+   "duration_ms": 9,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "cdd0f059-387e-4d7a-8279-4db11ddb5734",
+   "ts": "2026-11-02T07:35:11Z",
+   "offset_ms": 480,
+   "method": "GET",
+   "path": "/img/p/leather-watch-strap-in-navy-3.svg",
+   "status": 200,
+   "duration_ms": 14,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "369f20bf-7b57-4793-8495-525489c5a929",
+   "ts": "2026-11-02T07:35:11Z",
+   "offset_ms": 505,
+   "method": "GET",
+   "path": "/favicon.ico",
+   "status": 200,
+   "duration_ms": 27,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "fb268c7a-7977-4439-88f1-13785adf627a",
+   "ts": "2026-11-02T07:35:11Z",
+   "offset_ms": 545,
+   "method": "GET",
+   "path": "/_next/static/chunks/main.js",
+   "status": 200,
+   "duration_ms": 8,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "33add5e1-4080-485b-8060-6fdd5dbed3dd",
+   "ts": "2026-11-02T07:35:11Z",
+   "offset_ms": 629,
+   "method": "GET",
+   "path": "/_next/static/chunks/app.js",
+   "status": 200,
+   "duration_ms": 7,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "9d564d05-32c0-4d46-8caa-61c8721effbe",
+   "ts": "2026-11-02T07:35:11Z",
+   "offset_ms": 638,
+   "method": "GET",
+   "path": "/_next/static/css/app.css",
+   "status": 200,
+   "duration_ms": 7,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "84ce18c3-129f-40c4-80c3-bae3d42b36ac",
+   "ts": "2026-11-02T07:35:11Z",
+   "offset_ms": 650,
+   "method": "GET",
+   "path": "/img/p/tan-pace-lite-trainer-3.svg",
+   "status": 200,
+   "duration_ms": 15,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "78d3e597-ff53-446a-86e8-d5f29e580f05",
+   "ts": "2026-11-02T07:35:12Z",
+   "offset_ms": 742,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 8,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "2b49bfad-0b13-4f65-89bf-a6178a5f5066",
+   "ts": "2026-11-02T07:35:14Z",
+   "offset_ms": 2892,
+   "method": "GET",
+   "path": "/c/womens-kurtas",
+   "status": 200,
+   "duration_ms": 101,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "a3d13ad1-ad39-428b-8557-1774e136d690",
+   "ts": "2026-11-02T07:35:14Z",
+   "offset_ms": 3036,
+   "method": "GET",
+   "path": "/img/p/navy-court-sneaker-3.svg",
+   "status": 200,
+   "duration_ms": 15,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "a0c99491-1612-4cb2-8e04-22a047f213e7",
+   "ts": "2026-11-02T07:35:14Z",
+   "offset_ms": 3137,
+   "method": "GET",
+   "path": "/img/p/chikankari-anarkali-kurta-in-grey-2.svg",
+   "status": 200,
+   "duration_ms": 11,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "d625d443-f748-4246-8fa5-8bc3175cb737",
+   "ts": "2026-11-02T07:35:14Z",
+   "offset_ms": 3529,
+   "method": "GET",
+   "path": "/img/p/maroon-fleet-foam-runner-2.svg",
+   "status": 200,
+   "duration_ms": 8,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "bc6c4432-c32b-457e-8694-4db7e9781f8c",
+   "ts": "2026-11-02T07:35:15Z",
+   "offset_ms": 3740,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 7,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "1a406158-fab3-4fd5-8573-c29fe6ca3eb8",
+   "ts": "2026-11-02T07:35:17Z",
+   "offset_ms": 6114,
+   "method": "GET",
+   "path": "/p/bandhani-flared-kurta-in-sky-blue",
+   "status": 200,
+   "duration_ms": 127,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "b3b4cbbd-4564-4796-8ad3-af0e0c72c498",
+   "ts": "2026-11-02T07:35:17Z",
+   "offset_ms": 6310,
+   "method": "GET",
+   "path": "/img/p/handloom-yoke-kurta-in-olive-3.svg",
+   "status": 200,
+   "duration_ms": 9,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "e11b6e51-3f29-4459-8079-ee069645abc1",
+   "ts": "2026-11-02T07:35:17Z",
+   "offset_ms": 6492,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 6,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "edb1b98f-5ed4-4644-8c99-64d0565e126b",
+   "ts": "2026-11-02T07:35:17Z",
+   "offset_ms": 6538,
+   "method": "GET",
+   "path": "/img/p/maroon-fleet-foam-runner-3.svg",
+   "status": 200,
+   "duration_ms": 10,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "de0b48ee-a9fb-4490-87d7-4ac31fcfe064",
+   "ts": "2026-11-02T07:35:18Z",
+   "offset_ms": 6844,
+   "method": "GET",
+   "path": "/img/p/mirror-work-short-kurta-in-white-2.svg",
+   "status": 200,
+   "duration_ms": 8,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "dcdb30cb-b5be-4e5a-8fb9-563f644b98d8",
+   "ts": "2026-11-02T07:35:18Z",
+   "offset_ms": 7448,
+   "method": "GET",
+   "path": "/api/products/KRT004/variants",
+   "status": 200,
+   "duration_ms": 70,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "8c7c406e-adcb-4a03-8de8-091364209740",
+   "ts": "2026-11-02T07:35:21Z",
+   "offset_ms": 10318,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 26,
+   "page_type": "cart_api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "1b2aa1a9-0a5d-4d63-877f-58f9ebf3afdb",
+   "ts": "2026-11-02T07:35:23Z",
+   "offset_ms": 12132,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 28,
+   "page_type": "cart_api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "65b5c686-c53e-434a-8411-75e6711ec703",
+   "ts": "2026-11-02T07:35:24Z",
+   "offset_ms": 12921,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 65,
+   "page_type": "cart_api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-02T07:35:11Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-02T07:35:17Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-02T07:35:18Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B05",
+   "name": "Pincode / serviceability wall",
+   "stage": "S5",
+   "confidence": 0.95,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "65b5c686-c53e-434a-8411-75e6711ec703",
+     "summary": "POST /api/cart -> 409 PINCODE_REQUIRED"
+    },
+    {
+     "type": "request",
+     "request_id": "1b2aa1a9-0a5d-4d63-877f-58f9ebf3afdb",
+     "summary": "POST /api/cart -> 409 PINCODE_REQUIRED"
+    },
+    {
+     "type": "request",
+     "request_id": "8c7c406e-adcb-4a03-8de8-091364209740",
+     "summary": "POST /api/cart -> 409 PINCODE_REQUIRED"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

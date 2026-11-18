@@ -1,0 +1,96 @@
+{
+ "session": {
+  "session_id": "22290717927af43c",
+  "start_ts": "2026-11-14T17:49:54Z",
+  "duration_s": 3.938,
+  "request_count": 4,
+  "page_count": 4,
+  "identity_tier": "declared",
+  "operator": "OpenAI",
+  "agent_name": "ChatGPT-User",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.7,
+  "entry_page": "/search",
+  "exit_page": "/p/navy-daily-walk-sneaker",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": null,
+  "terminal_blocker_name": null,
+  "blocker_confidence": null,
+  "diagnosis_method": "none"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "6078aea3-a8c4-40d4-8a27-9c11bb0e3e50",
+   "ts": "2026-11-14T17:49:54Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/search",
+   "status": 200,
+   "duration_ms": 54,
+   "page_type": "search",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "f5db85f0-0b88-449b-8786-451ae9065773",
+   "ts": "2026-11-14T17:49:55Z",
+   "offset_ms": 1316,
+   "method": "GET",
+   "path": "/c/mens-sneakers",
+   "status": 200,
+   "duration_ms": 116,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "e470e94e-a263-4a7f-8e2b-a39182ddad2e",
+   "ts": "2026-11-14T17:49:56Z",
+   "offset_ms": 2203,
+   "method": "GET",
+   "path": "/p/tan-pace-lite-trainer",
+   "status": 200,
+   "duration_ms": 98,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "a4346218-a124-4f74-8b1d-2f14d8e3f051",
+   "ts": "2026-11-14T17:49:57Z",
+   "offset_ms": 3938,
+   "method": "GET",
+   "path": "/p/navy-daily-walk-sneaker",
+   "status": 200,
+   "duration_ms": 113,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-14T17:49:54Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-14T17:49:56Z"
+  }
+ ],
+ "fired_rules": [],
+ "replay_ids": []
+}

@@ -1,12 +1,12 @@
 {
  "window": {
-  "from": "2026-11-05",
-  "to": "2026-11-11",
+  "from": "2026-11-01",
+  "to": "2026-11-07",
   "days": 7
  },
- "total_risk_base_inr": 2723912,
- "total_failed_agent_sessions": 4000,
- "diagnosis_coverage": 0.89,
+ "total_risk_base_inr": 1927555,
+ "total_failed_agent_sessions": 1489,
+ "diagnosis_coverage": 0.8791134989926125,
  "assumptions": {
   "recoverable_rate": {
    "low": 0.4,
@@ -21,260 +21,116 @@
  },
  "items": [
   {
-   "blocker_id": "B05",
-   "name": "Pincode wall",
-   "stage": "S5",
-   "sessions_blocked": 1240,
-   "share_of_failed": 0.31,
-   "risk_inr": {
-    "low": 673426,
-    "base": 1262674,
-    "high": 2020279
-   },
-   "replay_status": "confirmed",
-   "effort": "S",
-   "priority_score": 1262674,
-   "low_confidence": false
-  },
-  {
    "blocker_id": "B06",
    "name": "Login / OTP wall before cart",
    "stage": "S5",
-   "sessions_blocked": 480,
-   "share_of_failed": 0.12,
+   "sessions_blocked": 417,
+   "share_of_failed": 0.2800537273337811,
    "risk_inr": {
-    "low": 260681,
-    "base": 488777,
-    "high": 782043
+    "low": 649944,
+    "base": 1218645,
+    "high": 1949832
    },
    "replay_status": "confirmed",
    "effort": "M",
-   "priority_score": 244389,
-   "low_confidence": false
-  },
-  {
-   "blocker_id": "B10",
-   "name": "Checkout validation failure",
-   "stage": "S7",
-   "sessions_blocked": 200,
-   "share_of_failed": 0.05,
-   "risk_inr": {
-    "low": 241371,
-    "base": 452571,
-    "high": 724114
-   },
-   "replay_status": "confirmed",
-   "effort": "S",
-   "priority_score": 452571,
-   "low_confidence": false
-  },
-  {
-   "blocker_id": "B03",
-   "name": "JS-only price and stock",
-   "stage": "S2",
-   "sessions_blocked": 600,
-   "share_of_failed": 0.15,
-   "risk_inr": {
-    "low": 72411,
-    "base": 135771,
-    "high": 217234
-   },
-   "replay_status": "confirmed",
-   "effort": "M",
-   "priority_score": 67886,
+   "priority_score": 609322,
    "low_confidence": false
   },
   {
    "blocker_id": "B09",
-   "name": "Size guide image-only",
+   "name": "Size guide is image-only",
    "stage": "S3",
-   "sessions_blocked": 260,
-   "share_of_failed": 0.065,
+   "sessions_blocked": 221,
+   "share_of_failed": 0.14842175957018133,
    "risk_inr": {
-    "low": 54912,
-    "base": 102960,
-    "high": 164736
+    "low": 174292,
+    "base": 326798,
+    "high": 522877
    },
    "replay_status": "confirmed",
    "effort": "S",
-   "priority_score": 102960,
+   "priority_score": 326798,
    "low_confidence": false
   },
   {
-   "blocker_id": "B11",
-   "name": "Unsupported payment step",
-   "stage": "S7",
-   "sessions_blocked": 40,
-   "share_of_failed": 0.01,
+   "blocker_id": "B05",
+   "name": "Pincode / serviceability wall",
+   "stage": "S5",
+   "sessions_blocked": 89,
+   "share_of_failed": 0.05977165883143049,
    "risk_inr": {
-    "low": 48274,
-    "base": 90514,
-    "high": 144823
+    "low": 138717,
+    "base": 260095,
+    "high": 416151
    },
-   "replay_status": "not_run",
-   "effort": "L",
-   "priority_score": 22629,
+   "replay_status": "confirmed",
+   "effort": "S",
+   "priority_score": 260095,
    "low_confidence": false
   },
   {
-   "blocker_id": "B07",
-   "name": "App-download interstitial",
+   "blocker_id": "B03",
+   "name": "JS-only product content",
    "stage": "S2",
-   "sessions_blocked": 320,
-   "share_of_failed": 0.08,
+   "sessions_blocked": 498,
+   "share_of_failed": 0.33445265278710545,
    "risk_inr": {
-    "low": 38619,
-    "base": 72411,
-    "high": 115858
+    "low": 46767,
+    "base": 87687,
+    "high": 140300
    },
    "replay_status": "confirmed",
-   "effort": "S",
-   "priority_score": 72411,
+   "effort": "M",
+   "priority_score": 43844,
    "low_confidence": false
   },
   {
    "blocker_id": "B08",
    "name": "Out-of-stock dead end",
    "stage": "S3",
-   "sessions_blocked": 120,
-   "share_of_failed": 0.03,
+   "sessions_blocked": 15,
+   "share_of_failed": 0.010073875083948958,
    "risk_inr": {
-    "low": 25344,
-    "base": 47520,
-    "high": 76032
-   },
-   "replay_status": "inconclusive",
-   "effort": "S",
-   "priority_score": 47520,
-   "low_confidence": false
-  },
-  {
-   "blocker_id": "B15",
-   "name": "Price mismatch PDP vs cart",
-   "stage": "S6",
-   "sessions_blocked": 10,
-   "share_of_failed": 0.0025,
-   "risk_inr": {
-    "low": 9051,
-    "base": 16971,
-    "high": 27154
+    "low": 11830,
+    "base": 22181,
+    "high": 35489
    },
    "replay_status": "not_run",
-   "effort": "M",
-   "priority_score": 8486,
+   "effort": "S",
+   "priority_score": 22181,
    "low_confidence": true
   },
   {
-   "blocker_id": "B01",
-   "name": "Bot wall / WAF block",
-   "stage": "S1",
-   "sessions_blocked": 80,
-   "share_of_failed": 0.02,
-   "risk_inr": {
-    "low": 7241,
-    "base": 13577,
-    "high": 21723
-   },
-   "replay_status": "not_run",
-   "effort": "M",
-   "priority_score": 6789,
-   "low_confidence": false
-  },
-  {
-   "blocker_id": "B04",
-   "name": "Missing structured data",
+   "blocker_id": "B07",
+   "name": "Interstitial / popup overlay",
    "stage": "S2",
-   "sessions_blocked": 50,
-   "share_of_failed": 0.0125,
+   "sessions_blocked": 69,
+   "share_of_failed": 0.04633982538616521,
    "risk_inr": {
-    "low": 6034,
-    "base": 11314,
-    "high": 18103
+    "low": 6480,
+    "base": 12149,
+    "high": 19439
    },
-   "replay_status": "not_run",
+   "replay_status": "confirmed",
    "effort": "S",
-   "priority_score": 11314,
+   "priority_score": 12149,
    "low_confidence": false
-  },
-  {
-   "blocker_id": "B12",
-   "name": "Rate limited",
-   "stage": "S1",
-   "sessions_blocked": 60,
-   "share_of_failed": 0.015,
-   "risk_inr": {
-    "low": 5431,
-    "base": 10183,
-    "high": 16293
-   },
-   "replay_status": "not_run",
-   "effort": "S",
-   "priority_score": 10183,
-   "low_confidence": false
-  },
-  {
-   "blocker_id": "B13",
-   "name": "Slow response / timeout",
-   "stage": "S1",
-   "sessions_blocked": 50,
-   "share_of_failed": 0.0125,
-   "risk_inr": {
-    "low": 4526,
-    "base": 8486,
-    "high": 13577
-   },
-   "replay_status": "not_run",
-   "effort": "M",
-   "priority_score": 4243,
-   "low_confidence": false
-  },
-  {
-   "blocker_id": "B16",
-   "name": "Broken link / 404",
-   "stage": "S2",
-   "sessions_blocked": 30,
-   "share_of_failed": 0.0075,
-   "risk_inr": {
-    "low": 3621,
-    "base": 6789,
-    "high": 10862
-   },
-   "replay_status": "not_run",
-   "effort": "S",
-   "priority_score": 6789,
-   "low_confidence": false
-  },
-  {
-   "blocker_id": "B14",
-   "name": "robots.txt disallow",
-   "stage": "S1",
-   "sessions_blocked": 20,
-   "share_of_failed": 0.005,
-   "risk_inr": {
-    "low": 1810,
-    "base": 3394,
-    "high": 5431
-   },
-   "replay_status": "not_run",
-   "effort": "S",
-   "priority_score": 3394,
-   "low_confidence": true
   },
   {
    "blocker_id": "B99",
    "name": "Unknown",
-   "stage": "S4",
-   "sessions_blocked": 440,
-   "share_of_failed": 0.11,
+   "stage": "S1",
+   "sessions_blocked": 2,
+   "share_of_failed": 0.001343183344526528,
    "risk_inr": {
     "low": 0,
     "base": 0,
     "high": 0
    },
    "replay_status": "not_run",
-   "effort": "M",
+   "effort": "S",
    "priority_score": 0,
-   "low_confidence": false
+   "low_confidence": true
   }
  ]
 }

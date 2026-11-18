@@ -1,207 +1,128 @@
 {
  "window": {
-  "from": "2026-11-05",
-  "to": "2026-11-11",
+  "from": "2026-11-01",
+  "to": "2026-11-07",
   "days": 7
  },
  "blocker": {
   "blocker_id": "B99",
   "name": "Unknown",
-  "stage": "S4",
-  "sessions_blocked": 440,
-  "share_of_failed": 0.11,
+  "stage": "S1",
+  "sessions_blocked": 2,
+  "share_of_failed": 0.001343183344526528,
   "risk_inr": {
    "low": 0,
    "base": 0,
    "high": 0
   },
   "replay_status": "not_run",
-  "effort": "M",
+  "effort": "S",
   "priority_score": 0,
-  "low_confidence": false
+  "low_confidence": true
  },
- "description": "No rule fired. The session needs the LLM classifier or manual review.",
- "detection": "Nothing fired.",
+ "description": "No rule fired for this failed session.",
+ "detection": "No rule fired for this failed session.",
  "evidence": {
   "top_error_codes": [
    {
-    "code": "NONE",
-    "count": 440,
-    "share": 1
+    "code": "HTTP 500",
+    "count": 2,
+    "share": 1.0
    }
   ],
   "example_requests": [
    {
-    "request_id": "req_B99_1",
-    "summary": "GET /c/sneakers → 200 · GET /p/white-court-sneaker → 200 · ended",
-    "count": 440
+    "request_id": "299b6ce4-51a6-4593-855d-89c9b8a0b50f",
+    "summary": "GET /policies/returns -> 500",
+    "count": 1
+   },
+   {
+    "request_id": "3137b5f2-aa5d-461d-8a75-8c4e98dd4829",
+    "summary": "GET /search -> 500",
+    "count": 1
    }
   ],
   "site_checks": []
  },
  "risk_breakdown": {
-  "sessions_blocked": 440,
+  "sessions_blocked": 2,
   "recoverable_rate": 0.6,
-  "p_stage": 0,
-  "aov_inr": 2200,
+  "p_stage": 0.025149976926626672,
+  "aov_inr": 2200.0,
   "k": 4.285714285714286
  },
  "trend": [
   {
+   "date": "2026-11-01",
+   "sessions_blocked": 0
+  },
+  {
+   "date": "2026-11-02",
+   "sessions_blocked": 1
+  },
+  {
+   "date": "2026-11-03",
+   "sessions_blocked": 0
+  },
+  {
+   "date": "2026-11-04",
+   "sessions_blocked": 0
+  },
+  {
    "date": "2026-11-05",
-   "sessions_blocked": 65
+   "sessions_blocked": 0
   },
   {
    "date": "2026-11-06",
-   "sessions_blocked": 68
+   "sessions_blocked": 0
   },
   {
    "date": "2026-11-07",
-   "sessions_blocked": 57
-  },
-  {
-   "date": "2026-11-08",
-   "sessions_blocked": 51
-  },
-  {
-   "date": "2026-11-09",
-   "sessions_blocked": 67
-  },
-  {
-   "date": "2026-11-10",
-   "sessions_blocked": 70
-  },
-  {
-   "date": "2026-11-11",
-   "sessions_blocked": 62
+   "sessions_blocked": 1
   }
  ],
  "sample_sessions": [
   {
-   "session_id": "ses_s16pb77fbh",
-   "start_ts": "2026-11-11T13:40:49.000Z",
-   "duration_s": 5,
-   "request_count": 3,
+   "session_id": "38748308769a473e",
+   "start_ts": "2026-11-07T05:00:52Z",
+   "duration_s": 0.0,
+   "request_count": 1,
+   "page_count": 1,
+   "identity_tier": "declared",
+   "operator": "OpenAI",
+   "agent_name": "ChatGPT-User",
+   "agent_class": "user_fetcher",
+   "identity_confidence": 0.7,
+   "entry_page": "/search",
+   "exit_page": "/search",
+   "max_stage": null,
+   "converted": false,
+   "order_value_inr": null,
+   "terminal_blocker_id": "B99",
+   "terminal_blocker_name": "Unknown",
+   "blocker_confidence": 0.3,
+   "diagnosis_method": "rule"
+  },
+  {
+   "session_id": "a809307f221dc3f0",
+   "start_ts": "2026-11-02T20:52:12Z",
+   "duration_s": 1.252,
+   "request_count": 2,
    "page_count": 2,
    "identity_tier": "declared",
    "operator": "Anthropic",
    "agent_name": "Claude-User",
    "agent_class": "user_fetcher",
-   "identity_confidence": 0.9,
-   "entry_page": "/search?q=leather",
-   "exit_page": "/api/products/leather-kolhapuri-sandal/variants?size=9",
-   "max_stage": "S3",
+   "identity_confidence": 0.7,
+   "entry_page": "/robots.txt",
+   "exit_page": "/policies/returns",
+   "max_stage": null,
    "converted": false,
    "order_value_inr": null,
    "terminal_blocker_id": "B99",
    "terminal_blocker_name": "Unknown",
-   "blocker_confidence": null,
-   "diagnosis_method": "none"
-  },
-  {
-   "session_id": "ses_q45sg2jye7",
-   "start_ts": "2026-11-11T08:00:04.000Z",
-   "duration_s": 9,
-   "request_count": 6,
-   "page_count": 3,
-   "identity_tier": "suspected",
-   "operator": "unknown",
-   "agent_name": "Unidentified browsing agent",
-   "agent_class": "browsing_agent",
-   "identity_confidence": 0.86,
-   "entry_page": "/",
-   "exit_page": "/api/products/white-court-sneaker/variants?size=9",
-   "max_stage": "S3",
-   "converted": false,
-   "order_value_inr": null,
-   "terminal_blocker_id": "B99",
-   "terminal_blocker_name": "Unknown",
-   "blocker_confidence": null,
-   "diagnosis_method": "llm"
-  },
-  {
-   "session_id": "ses_2vg371ep9t",
-   "start_ts": "2026-11-10T04:48:18.000Z",
-   "duration_s": 6,
-   "request_count": 4,
-   "page_count": 3,
-   "identity_tier": "suspected",
-   "operator": "unknown",
-   "agent_name": "Unidentified fetcher",
-   "agent_class": "user_fetcher",
-   "identity_confidence": 0.77,
-   "entry_page": "/",
-   "exit_page": "/api/products/cotton-linen-shirt/variants?size=9",
-   "max_stage": "S3",
-   "converted": false,
-   "order_value_inr": null,
-   "terminal_blocker_id": "B99",
-   "terminal_blocker_name": "Unknown",
-   "blocker_confidence": null,
-   "diagnosis_method": "none"
-  },
-  {
-   "session_id": "ses_wxhkzbc62x",
-   "start_ts": "2026-11-09T10:06:48.000Z",
-   "duration_s": 9,
-   "request_count": 5,
-   "page_count": 2,
-   "identity_tier": "suspected",
-   "operator": "unknown",
-   "agent_name": "Unidentified browsing agent",
-   "agent_class": "browsing_agent",
-   "identity_confidence": 0.81,
-   "entry_page": "/c/sneakers",
-   "exit_page": "/api/products/cotton-linen-shirt/variants?size=9",
-   "max_stage": "S3",
-   "converted": false,
-   "order_value_inr": null,
-   "terminal_blocker_id": "B99",
-   "terminal_blocker_name": "Unknown",
-   "blocker_confidence": null,
-   "diagnosis_method": "none"
-  },
-  {
-   "session_id": "ses_3pa805y6f9",
-   "start_ts": "2026-11-09T08:28:59.000Z",
-   "duration_s": 5,
-   "request_count": 4,
-   "page_count": 3,
-   "identity_tier": "declared",
-   "operator": "Perplexity",
-   "agent_name": "Perplexity-User",
-   "agent_class": "user_fetcher",
-   "identity_confidence": 0.9,
-   "entry_page": "/",
-   "exit_page": "/api/products/leather-kolhapuri-sandal/variants?size=9",
-   "max_stage": "S3",
-   "converted": false,
-   "order_value_inr": null,
-   "terminal_blocker_id": "B99",
-   "terminal_blocker_name": "Unknown",
-   "blocker_confidence": null,
-   "diagnosis_method": "llm"
-  },
-  {
-   "session_id": "ses_74x8z9a62n",
-   "start_ts": "2026-11-08T14:02:56.000Z",
-   "duration_s": 9,
-   "request_count": 4,
-   "page_count": 3,
-   "identity_tier": "declared",
-   "operator": "Anthropic",
-   "agent_name": "Claude-User",
-   "agent_class": "user_fetcher",
-   "identity_confidence": 0.9,
-   "entry_page": "/",
-   "exit_page": "/api/products/white-court-sneaker/variants?size=9",
-   "max_stage": "S3",
-   "converted": false,
-   "order_value_inr": null,
-   "terminal_blocker_id": "B99",
-   "terminal_blocker_name": "Unknown",
-   "blocker_confidence": null,
-   "diagnosis_method": "none"
+   "blocker_confidence": 0.3,
+   "diagnosis_method": "rule"
   }
  ],
  "replays": [],

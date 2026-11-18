@@ -1,0 +1,118 @@
+{
+ "session": {
+  "session_id": "4b801f0996a71b27",
+  "start_ts": "2026-11-10T07:30:16Z",
+  "duration_s": 19.099,
+  "request_count": 6,
+  "page_count": 3,
+  "identity_tier": "human",
+  "operator": "human",
+  "agent_name": "Browser (human)",
+  "agent_class": "human",
+  "identity_confidence": 0.85,
+  "entry_page": "/",
+  "exit_page": "/policies/returns",
+  "max_stage": "S1",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": null,
+  "terminal_blocker_name": null,
+  "blocker_confidence": null,
+  "diagnosis_method": "none"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 15.0,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "88ba218a-6665-449d-83f4-28483cc2feea",
+   "ts": "2026-11-10T07:30:16Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 168,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "0a8f57ad-434c-4d27-8b58-ab517c37006e",
+   "ts": "2026-11-10T07:30:17Z",
+   "offset_ms": 648,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 9,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "7dc7f5ac-ce30-4031-8e01-80b0060a2725",
+   "ts": "2026-11-10T07:30:24Z",
+   "offset_ms": 7875,
+   "method": "GET",
+   "path": "/c/accessories",
+   "status": 200,
+   "duration_ms": 178,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "8edc7132-5f25-4d99-8ee4-5f027e3cd6ac",
+   "ts": "2026-11-10T07:30:25Z",
+   "offset_ms": 8799,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 7,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "ebdf6c46-676b-49bf-8d35-51047d38ef16",
+   "ts": "2026-11-10T07:30:35Z",
+   "offset_ms": 18225,
+   "method": "GET",
+   "path": "/policies/returns",
+   "status": 200,
+   "duration_ms": 103,
+   "page_type": "policy",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "5fd1c0c5-ea81-4609-8b44-bf7798c0c4cc",
+   "ts": "2026-11-10T07:30:35Z",
+   "offset_ms": 19099,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 9,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-10T07:30:16Z"
+  }
+ ],
+ "fired_rules": [],
+ "replay_ids": []
+}

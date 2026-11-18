@@ -1,0 +1,122 @@
+{
+ "session": {
+  "session_id": "5588ba605aaa6611",
+  "start_ts": "2026-11-02T04:31:32Z",
+  "duration_s": 1.568,
+  "request_count": 3,
+  "page_count": 3,
+  "identity_tier": "declared",
+  "operator": "OpenAI",
+  "agent_name": "ChatGPT-User",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.7,
+  "entry_page": "/search",
+  "exit_page": "/p/white-sprint-knit-runner",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B03",
+  "terminal_blocker_name": "JS-only product content",
+  "blocker_confidence": 0.85,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "4dc8198d-4886-4dd5-82e8-615ddc65937e",
+   "ts": "2026-11-02T04:31:32Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/search",
+   "status": 200,
+   "duration_ms": 115,
+   "page_type": "search",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "018cc16a-7663-49d0-8a57-6cbf806744e8",
+   "ts": "2026-11-02T04:31:32Z",
+   "offset_ms": 601,
+   "method": "GET",
+   "path": "/c/mens-sneakers",
+   "status": 200,
+   "duration_ms": 104,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "e63fd50d-1d77-4a3d-85d6-ec8d25f62671",
+   "ts": "2026-11-02T04:31:33Z",
+   "offset_ms": 1568,
+   "method": "GET",
+   "path": "/p/white-sprint-knit-runner",
+   "status": 200,
+   "duration_ms": 184,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-02T04:31:32Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-02T04:31:33Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B03",
+   "name": "JS-only product content",
+   "stage": "S2",
+   "confidence": 0.85,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "e63fd50d-1d77-4a3d-85d6-ec8d25f62671",
+     "summary": "GET /p/white-sprint-knit-runner -> 200"
+    },
+    {
+     "type": "site_check",
+     "check": "pdp_ssr_price",
+     "result": "fail"
+    }
+   ]
+  },
+  {
+   "blocker_id": "B04",
+   "name": "Missing structured data",
+   "stage": "S2",
+   "confidence": 0.6,
+   "is_terminal": false,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "e63fd50d-1d77-4a3d-85d6-ec8d25f62671",
+     "summary": "GET /p/white-sprint-knit-runner -> 200"
+    },
+    {
+     "type": "site_check",
+     "check": "pdp_jsonld_product",
+     "result": "warn"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

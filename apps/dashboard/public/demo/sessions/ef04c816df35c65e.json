@@ -1,0 +1,197 @@
+{
+ "session": {
+  "session_id": "ef04c816df35c65e",
+  "start_ts": "2026-11-14T04:06:23Z",
+  "duration_s": 7.52,
+  "request_count": 10,
+  "page_count": 6,
+  "identity_tier": "suspected",
+  "operator": "unknown",
+  "agent_name": "unknown",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 0.6,
+  "entry_page": "/",
+  "exit_page": "/cart",
+  "max_stage": "S5",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B99",
+  "terminal_blocker_name": "Unknown",
+  "blocker_confidence": 0.3,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 60.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "45f1625f-08c7-44f5-84fd-3d7f183345b3",
+   "ts": "2026-11-14T04:06:23Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 103,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "70278ee9-6614-4300-8603-2548c70664e5",
+   "ts": "2026-11-14T04:06:24Z",
+   "offset_ms": 542,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 8,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "f5a43b85-616b-4844-82b5-eab50925e5c4",
+   "ts": "2026-11-14T04:06:25Z",
+   "offset_ms": 1807,
+   "method": "GET",
+   "path": "/c/womens-kurtas",
+   "status": 200,
+   "duration_ms": 190,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "28c6bc43-9e96-4fb6-87e0-0232daadc2c9",
+   "ts": "2026-11-14T04:06:27Z",
+   "offset_ms": 3393,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 7,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "25fd2137-9acb-4ad2-850d-6dbf5c5d4cee",
+   "ts": "2026-11-14T04:06:27Z",
+   "offset_ms": 3798,
+   "method": "GET",
+   "path": "/p/bandhani-flared-kurta-in-sky-blue",
+   "status": 200,
+   "duration_ms": 70,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "a53a5fbc-6b81-4683-8003-07381c602c7b",
+   "ts": "2026-11-14T04:06:28Z",
+   "offset_ms": 4460,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 6,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "6c047e1b-8125-4d6c-8131-76a0495e84ee",
+   "ts": "2026-11-14T04:06:28Z",
+   "offset_ms": 4634,
+   "method": "GET",
+   "path": "/api/products/KRT004/variants",
+   "status": 200,
+   "duration_ms": 29,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "2587801c-7891-44cc-8059-78aa5565255f",
+   "ts": "2026-11-14T04:06:28Z",
+   "offset_ms": 5344,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 201,
+   "duration_ms": 39,
+   "page_type": "cart_api",
+   "error_code": null,
+   "stage_id": "S5",
+   "is_asset": false
+  },
+  {
+   "request_id": "67cc8c63-a5b5-43b8-8eff-8cb4cd103236",
+   "ts": "2026-11-14T04:06:29Z",
+   "offset_ms": 5959,
+   "method": "GET",
+   "path": "/cart",
+   "status": 200,
+   "duration_ms": 147,
+   "page_type": "cart",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "31381b3a-1f88-4a57-8531-a8463d00f6a9",
+   "ts": "2026-11-14T04:06:31Z",
+   "offset_ms": 7520,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 6,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-14T04:06:23Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-14T04:06:27Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-14T04:06:28Z"
+  },
+  {
+   "stage_id": "S5",
+   "first_reached_ts": "2026-11-14T04:06:28Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B99",
+   "name": "Unknown",
+   "stage": "S5",
+   "confidence": 0.3,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "67cc8c63-a5b5-43b8-8eff-8cb4cd103236",
+     "summary": "GET /cart -> 200"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

@@ -1,0 +1,213 @@
+{
+ "session": {
+  "session_id": "e5f81b9e07eec614",
+  "start_ts": "2026-11-01T19:21:36Z",
+  "duration_s": 14.948,
+  "request_count": 13,
+  "page_count": 2,
+  "identity_tier": "human",
+  "operator": "human",
+  "agent_name": "Browser (human)",
+  "agent_class": "human",
+  "identity_confidence": 1.0,
+  "entry_page": "/",
+  "exit_page": "/p/mustard-alley-suede-sneaker",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": null,
+  "terminal_blocker_name": null,
+  "blocker_confidence": null,
+  "diagnosis_method": "none"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "57d24536-898d-47de-8607-08a18351f6dc",
+   "ts": "2026-11-01T19:21:36Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 68,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "e6fa8175-9de0-4341-8424-787f928a189c",
+   "ts": "2026-11-01T19:21:36Z",
+   "offset_ms": 130,
+   "method": "GET",
+   "path": "/img/p/indigo-urban-high-top-1.svg",
+   "status": 200,
+   "duration_ms": 11,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "320ea8ef-56f3-4e89-87bd-a87f6ce6b381",
+   "ts": "2026-11-01T19:21:36Z",
+   "offset_ms": 131,
+   "method": "GET",
+   "path": "/favicon.ico",
+   "status": 200,
+   "duration_ms": 6,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "1b3a315b-28d0-4d9d-8a48-0735337c2845",
+   "ts": "2026-11-01T19:21:36Z",
+   "offset_ms": 402,
+   "method": "GET",
+   "path": "/_next/static/chunks/main.js",
+   "status": 200,
+   "duration_ms": 12,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "199d51ac-70c1-4d61-8962-1c58b8fc60e5",
+   "ts": "2026-11-01T19:21:36Z",
+   "offset_ms": 426,
+   "method": "GET",
+   "path": "/_next/static/css/app.css",
+   "status": 200,
+   "duration_ms": 9,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "9ffcc7af-774d-493c-8727-fd3de9fbf0a2",
+   "ts": "2026-11-01T19:21:36Z",
+   "offset_ms": 471,
+   "method": "GET",
+   "path": "/img/p/ikat-print-kurta-in-olive-2.svg",
+   "status": 200,
+   "duration_ms": 8,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "272b442f-0941-4586-8073-2f401b0fdebe",
+   "ts": "2026-11-01T19:21:36Z",
+   "offset_ms": 603,
+   "method": "GET",
+   "path": "/_next/static/chunks/app.js",
+   "status": 200,
+   "duration_ms": 8,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "3136a1ec-1a65-4674-8682-da4b7009971c",
+   "ts": "2026-11-01T19:21:36Z",
+   "offset_ms": 721,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 10,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "1a16a9e4-b013-4d47-843d-dd7d4fb25dba",
+   "ts": "2026-11-01T19:21:50Z",
+   "offset_ms": 14066,
+   "method": "GET",
+   "path": "/p/mustard-alley-suede-sneaker",
+   "status": 200,
+   "duration_ms": 61,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "1c002391-3092-4618-8e87-45f3e22bef32",
+   "ts": "2026-11-01T19:21:50Z",
+   "offset_ms": 14183,
+   "method": "GET",
+   "path": "/img/p/bifold-wallet-in-black-2.svg",
+   "status": 200,
+   "duration_ms": 9,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "75eaab0f-a976-491d-8b72-969427c9a8ef",
+   "ts": "2026-11-01T19:21:50Z",
+   "offset_ms": 14276,
+   "method": "GET",
+   "path": "/img/p/sky-blue-cuban-collar-shirt-3.svg",
+   "status": 200,
+   "duration_ms": 6,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "a634b38f-8c7b-4aa8-8599-58a319667f29",
+   "ts": "2026-11-01T19:21:50Z",
+   "offset_ms": 14305,
+   "method": "GET",
+   "path": "/img/p/grey-retro-trainer-2.svg",
+   "status": 200,
+   "duration_ms": 10,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "4b77a45e-8d83-4d1d-834f-bff776c5d377",
+   "ts": "2026-11-01T19:21:51Z",
+   "offset_ms": 14948,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 4,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-01T19:21:36Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-01T19:21:50Z"
+  }
+ ],
+ "fired_rules": [],
+ "replay_ids": []
+}

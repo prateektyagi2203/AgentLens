@@ -1,0 +1,306 @@
+{
+ "session": {
+  "session_id": "50513e4f28169ae4",
+  "start_ts": "2026-11-02T21:27:32Z",
+  "duration_s": 13.55,
+  "request_count": 19,
+  "page_count": 3,
+  "identity_tier": "verified",
+  "operator": "AgentLens Test Operator",
+  "agent_name": "TestSignedAgent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 1.0,
+  "entry_page": "/",
+  "exit_page": "/p/tan-striped-cotton-shirt",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B07",
+  "terminal_blocker_name": "Interstitial / popup overlay",
+  "blocker_confidence": 0.6,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "valid",
+  "signature_agent": "https://agents.desithreads.test",
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 TestSignedAgent/1.0",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "a19e1fbc-32b2-4e8f-8456-08fa533edc30",
+   "ts": "2026-11-02T21:27:32Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 231,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "81fbc60d-e7f2-4ccc-8959-485114527934",
+   "ts": "2026-11-02T21:27:32Z",
+   "offset_ms": 321,
+   "method": "GET",
+   "path": "/_next/static/chunks/app.js",
+   "status": 200,
+   "duration_ms": 10,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "f7d112bf-a743-4cb8-8e2c-47caec0ff43a",
+   "ts": "2026-11-02T21:27:32Z",
+   "offset_ms": 484,
+   "method": "GET",
+   "path": "/img/p/navy-kurta-style-shirt-1.svg",
+   "status": 200,
+   "duration_ms": 7,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "0494ce56-fa3d-44d4-8145-c77ec7355a23",
+   "ts": "2026-11-02T21:27:32Z",
+   "offset_ms": 536,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 5,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "5e947f00-43ab-4259-89df-b32025334005",
+   "ts": "2026-11-02T21:27:32Z",
+   "offset_ms": 553,
+   "method": "GET",
+   "path": "/img/p/ikat-print-kurta-in-olive-2.svg",
+   "status": 200,
+   "duration_ms": 14,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "f607296a-43cb-43ef-8462-50d54201ee6f",
+   "ts": "2026-11-02T21:27:32Z",
+   "offset_ms": 722,
+   "method": "GET",
+   "path": "/_next/static/css/app.css",
+   "status": 200,
+   "duration_ms": 27,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "813ec276-bdfd-426f-82b8-a90d23fee987",
+   "ts": "2026-11-02T21:27:32Z",
+   "offset_ms": 723,
+   "method": "GET",
+   "path": "/_next/static/chunks/main.js",
+   "status": 200,
+   "duration_ms": 9,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "01a0f04d-27aa-495d-8193-f06af4e1ddcb",
+   "ts": "2026-11-02T21:27:32Z",
+   "offset_ms": 751,
+   "method": "GET",
+   "path": "/favicon.ico",
+   "status": 200,
+   "duration_ms": 17,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "749d8925-cb26-4ff8-837d-bd66756f7d7a",
+   "ts": "2026-11-02T21:27:32Z",
+   "offset_ms": 832,
+   "method": "GET",
+   "path": "/img/p/block-print-straight-kurta-in-white-2.svg",
+   "status": 200,
+   "duration_ms": 18,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "3054e2b0-273b-4c76-828c-504a297944e9",
+   "ts": "2026-11-02T21:27:39Z",
+   "offset_ms": 7414,
+   "method": "GET",
+   "path": "/c/mens-shirts",
+   "status": 200,
+   "duration_ms": 36,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "59deea52-af76-491b-80c1-c676098ae8f6",
+   "ts": "2026-11-02T21:27:39Z",
+   "offset_ms": 7793,
+   "method": "GET",
+   "path": "/img/p/baseball-cap-in-teal-1.svg",
+   "status": 200,
+   "duration_ms": 13,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "d0e6cb72-f4e1-432a-8ac3-456cfff215fe",
+   "ts": "2026-11-02T21:27:40Z",
+   "offset_ms": 7999,
+   "method": "GET",
+   "path": "/img/p/handloom-yoke-kurta-in-olive-3.svg",
+   "status": 200,
+   "duration_ms": 11,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "b67d7e39-487e-49d1-8525-0301b67a0d4f",
+   "ts": "2026-11-02T21:27:40Z",
+   "offset_ms": 8362,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 4,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "a116f101-c8e8-4396-822b-86685a78b3fc",
+   "ts": "2026-11-02T21:27:45Z",
+   "offset_ms": 12869,
+   "method": "GET",
+   "path": "/p/tan-striped-cotton-shirt",
+   "status": 200,
+   "duration_ms": 104,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "a1b4be27-9495-4538-89c0-e65c337363a1",
+   "ts": "2026-11-02T21:27:45Z",
+   "offset_ms": 13140,
+   "method": "GET",
+   "path": "/img/p/bandhani-flared-kurta-in-sky-blue-3.svg",
+   "status": 200,
+   "duration_ms": 14,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "7ea98cab-b449-4031-8d70-aa0f54d8b907",
+   "ts": "2026-11-02T21:27:45Z",
+   "offset_ms": 13171,
+   "method": "GET",
+   "path": "/img/p/mirror-work-short-kurta-in-white-1.svg",
+   "status": 200,
+   "duration_ms": 16,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "af877877-f40b-44ec-815b-c95fd040e302",
+   "ts": "2026-11-02T21:27:45Z",
+   "offset_ms": 13310,
+   "method": "GET",
+   "path": "/img/p/indigo-terrain-trail-sneaker-3.svg",
+   "status": 200,
+   "duration_ms": 5,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "2470ad7b-8d35-4cb6-880a-cd2b54dc29d6",
+   "ts": "2026-11-02T21:27:45Z",
+   "offset_ms": 13336,
+   "method": "GET",
+   "path": "/img/p/everyday-backpack-in-olive-1.svg",
+   "status": 200,
+   "duration_ms": 20,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "4b92e138-f9f4-4e6e-86d3-261357093740",
+   "ts": "2026-11-02T21:27:45Z",
+   "offset_ms": 13550,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 8,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-02T21:27:32Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-02T21:27:45Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B07",
+   "name": "Interstitial / popup overlay",
+   "stage": "S2",
+   "confidence": 0.6,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "a116f101-c8e8-4396-822b-86685a78b3fc",
+     "summary": "GET /p/tan-striped-cotton-shirt -> 200"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

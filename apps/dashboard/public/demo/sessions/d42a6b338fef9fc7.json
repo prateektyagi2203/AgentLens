@@ -1,0 +1,177 @@
+{
+ "session": {
+  "session_id": "d42a6b338fef9fc7",
+  "start_ts": "2026-11-14T04:30:45Z",
+  "duration_s": 6.884,
+  "request_count": 9,
+  "page_count": 9,
+  "identity_tier": "suspected",
+  "operator": "unknown",
+  "agent_name": "unknown",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.85,
+  "entry_page": "/p/chikankari-anarkali-kurta-in-grey",
+  "exit_page": "/order/confirmed/DT-CFE2E4CB",
+  "max_stage": "S8",
+  "converted": true,
+  "order_value_inr": 1089.0,
+  "terminal_blocker_id": null,
+  "terminal_blocker_name": null,
+  "blocker_confidence": null,
+  "diagnosis_method": "none"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 85.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "7fd33bee-73f2-43f7-8d8a-d49d34bfe7c2",
+   "ts": "2026-11-14T04:30:45Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/p/chikankari-anarkali-kurta-in-grey",
+   "status": 200,
+   "duration_ms": 99,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "bd53b1d1-ec20-445f-8953-ea34c98c888c",
+   "ts": "2026-11-14T04:30:46Z",
+   "offset_ms": 754,
+   "method": "GET",
+   "path": "/api/products/KRT002/variants",
+   "status": 200,
+   "duration_ms": 22,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "4e670a52-a3b8-45ab-88c8-0b9ba195089b",
+   "ts": "2026-11-14T04:30:47Z",
+   "offset_ms": 1589,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 201,
+   "duration_ms": 28,
+   "page_type": "cart_api",
+   "error_code": null,
+   "stage_id": "S5",
+   "is_asset": false
+  },
+  {
+   "request_id": "b0923338-b945-45ee-8882-4d7f0d8105f9",
+   "ts": "2026-11-14T04:30:47Z",
+   "offset_ms": 2156,
+   "method": "GET",
+   "path": "/cart",
+   "status": 200,
+   "duration_ms": 124,
+   "page_type": "cart",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "3c4140a7-b9eb-4cd2-812b-fe6b0362293b",
+   "ts": "2026-11-14T04:30:49Z",
+   "offset_ms": 3931,
+   "method": "GET",
+   "path": "/checkout",
+   "status": 200,
+   "duration_ms": 180,
+   "page_type": "checkout",
+   "error_code": null,
+   "stage_id": "S6",
+   "is_asset": false
+  },
+  {
+   "request_id": "8b3106e3-a92d-4c52-84c8-94b7f6ed5382",
+   "ts": "2026-11-14T04:30:50Z",
+   "offset_ms": 4829,
+   "method": "POST",
+   "path": "/api/checkout",
+   "status": 422,
+   "duration_ms": 39,
+   "page_type": "checkout_api",
+   "error_code": "PHONE_FORMAT",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "c54818ad-072b-4900-8b89-7e4448832c4c",
+   "ts": "2026-11-14T04:30:51Z",
+   "offset_ms": 5602,
+   "method": "POST",
+   "path": "/api/checkout",
+   "status": 422,
+   "duration_ms": 12,
+   "page_type": "checkout_api",
+   "error_code": "PHONE_FORMAT",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "bb6aac1f-63ca-43cc-8dfc-d7238d7fe031",
+   "ts": "2026-11-14T04:30:51Z",
+   "offset_ms": 6245,
+   "method": "POST",
+   "path": "/api/checkout",
+   "status": 201,
+   "duration_ms": 88,
+   "page_type": "checkout_api",
+   "error_code": null,
+   "stage_id": "S7",
+   "is_asset": false
+  },
+  {
+   "request_id": "e9bb9c8e-dd1a-4348-8425-a6a30b661d03",
+   "ts": "2026-11-14T04:30:52Z",
+   "offset_ms": 6884,
+   "method": "GET",
+   "path": "/order/confirmed/DT-CFE2E4CB",
+   "status": 200,
+   "duration_ms": 184,
+   "page_type": "order_confirm",
+   "error_code": null,
+   "stage_id": "S8",
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-14T04:30:45Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-14T04:30:46Z"
+  },
+  {
+   "stage_id": "S5",
+   "first_reached_ts": "2026-11-14T04:30:47Z"
+  },
+  {
+   "stage_id": "S6",
+   "first_reached_ts": "2026-11-14T04:30:49Z"
+  },
+  {
+   "stage_id": "S7",
+   "first_reached_ts": "2026-11-14T04:30:51Z"
+  },
+  {
+   "stage_id": "S8",
+   "first_reached_ts": "2026-11-14T04:30:52Z"
+  }
+ ],
+ "fired_rules": [],
+ "replay_ids": []
+}

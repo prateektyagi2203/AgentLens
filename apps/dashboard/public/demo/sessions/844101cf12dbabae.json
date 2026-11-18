@@ -1,0 +1,83 @@
+{
+ "session": {
+  "session_id": "844101cf12dbabae",
+  "start_ts": "2026-11-09T03:09:22Z",
+  "duration_s": 2.82,
+  "request_count": 3,
+  "page_count": 3,
+  "identity_tier": "declared",
+  "operator": "Anthropic",
+  "agent_name": "Claude-User",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.7,
+  "entry_page": "/robots.txt",
+  "exit_page": "/api/serviceability",
+  "max_stage": "S4",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": null,
+  "terminal_blocker_name": null,
+  "blocker_confidence": null,
+  "diagnosis_method": "none"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Claude-User/1.0; +Claude-User@anthropic.com)",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "33b4ffa8-42b5-45b0-8c6e-62d49e071b64",
+   "ts": "2026-11-09T03:09:22Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/robots.txt",
+   "status": 200,
+   "duration_ms": 20,
+   "page_type": "robots",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "9391056d-d209-4c07-82cf-3a565601f353",
+   "ts": "2026-11-09T03:09:24Z",
+   "offset_ms": 1442,
+   "method": "GET",
+   "path": "/p/chikankari-anarkali-kurta-in-grey",
+   "status": 200,
+   "duration_ms": 90,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "8095065d-4577-4dc2-867c-69f851441900",
+   "ts": "2026-11-09T03:09:25Z",
+   "offset_ms": 2820,
+   "method": "GET",
+   "path": "/api/serviceability",
+   "status": 200,
+   "duration_ms": 41,
+   "page_type": "serviceability_api",
+   "error_code": null,
+   "stage_id": "S4",
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-09T03:09:24Z"
+  },
+  {
+   "stage_id": "S4",
+   "first_reached_ts": "2026-11-09T03:09:25Z"
+  }
+ ],
+ "fired_rules": [],
+ "replay_ids": []
+}

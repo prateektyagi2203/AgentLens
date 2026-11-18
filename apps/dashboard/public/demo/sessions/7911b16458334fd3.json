@@ -1,0 +1,154 @@
+{
+ "session": {
+  "session_id": "7911b16458334fd3",
+  "start_ts": "2026-11-04T10:18:51Z",
+  "duration_s": 4.469,
+  "request_count": 7,
+  "page_count": 4,
+  "identity_tier": "suspected",
+  "operator": "unknown",
+  "agent_name": "unknown",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 0.6,
+  "entry_page": "/",
+  "exit_page": "/api/products/SHT015/variants",
+  "max_stage": "S3",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B08",
+  "terminal_blocker_name": "Out-of-stock dead end",
+  "blocker_confidence": 0.8,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 60.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "8f7c9f48-24c8-4b41-8675-bd08c1357746",
+   "ts": "2026-11-04T10:18:51Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 180,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "3a2e5c89-a7f0-4813-8482-e3b4c627fa3e",
+   "ts": "2026-11-04T10:18:52Z",
+   "offset_ms": 1558,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 8,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "46697d50-b05e-40db-8c60-c58c0fb601aa",
+   "ts": "2026-11-04T10:18:53Z",
+   "offset_ms": 1818,
+   "method": "GET",
+   "path": "/c/mens-shirts",
+   "status": 200,
+   "duration_ms": 53,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "70e7ad17-aafc-408c-8545-7d6d48809bd6",
+   "ts": "2026-11-04T10:18:53Z",
+   "offset_ms": 2629,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 6,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "06e85c3c-1431-4701-8ed7-02ea98365a37",
+   "ts": "2026-11-04T10:18:54Z",
+   "offset_ms": 3568,
+   "method": "GET",
+   "path": "/p/pink-seersucker-weekend-shirt",
+   "status": 200,
+   "duration_ms": 149,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "b8114ed6-514b-4bee-8ae1-9121dd5cf634",
+   "ts": "2026-11-04T10:18:55Z",
+   "offset_ms": 4059,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 12,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "8f819079-2e26-431a-826f-f3ba4c7ec325",
+   "ts": "2026-11-04T10:18:55Z",
+   "offset_ms": 4469,
+   "method": "GET",
+   "path": "/api/products/SHT015/variants",
+   "status": 200,
+   "duration_ms": 68,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-04T10:18:51Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-04T10:18:54Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-04T10:18:55Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B08",
+   "name": "Out-of-stock dead end",
+   "stage": "S3",
+   "confidence": 0.8,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "8f819079-2e26-431a-826f-f3ba4c7ec325",
+     "summary": "GET /api/products/SHT015/variants -> 200 (catalog shows 0 in stock for this size and colour)"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

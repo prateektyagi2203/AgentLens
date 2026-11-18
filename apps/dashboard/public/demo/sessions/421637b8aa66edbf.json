@@ -1,0 +1,122 @@
+{
+ "session": {
+  "session_id": "421637b8aa66edbf",
+  "start_ts": "2026-11-07T19:25:59Z",
+  "duration_s": 2.766,
+  "request_count": 3,
+  "page_count": 3,
+  "identity_tier": "declared",
+  "operator": "Anthropic",
+  "agent_name": "Claude-User",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.7,
+  "entry_page": "/search",
+  "exit_page": "/p/navy-daily-walk-sneaker",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B03",
+  "terminal_blocker_name": "JS-only product content",
+  "blocker_confidence": 0.85,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Claude-User/1.0; +Claude-User@anthropic.com)",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "b046384d-7c88-4993-8206-641d2767c097",
+   "ts": "2026-11-07T19:25:59Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/search",
+   "status": 200,
+   "duration_ms": 147,
+   "page_type": "search",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "80081018-f1e0-45ec-8ba2-d7fa9c93262a",
+   "ts": "2026-11-07T19:26:00Z",
+   "offset_ms": 728,
+   "method": "GET",
+   "path": "/c/mens-sneakers",
+   "status": 200,
+   "duration_ms": 31,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "e6cf8f6c-8e65-49fb-8775-f8f54a806f0d",
+   "ts": "2026-11-07T19:26:02Z",
+   "offset_ms": 2766,
+   "method": "GET",
+   "path": "/p/navy-daily-walk-sneaker",
+   "status": 200,
+   "duration_ms": 55,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-07T19:25:59Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-07T19:26:02Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B03",
+   "name": "JS-only product content",
+   "stage": "S2",
+   "confidence": 0.85,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "e6cf8f6c-8e65-49fb-8775-f8f54a806f0d",
+     "summary": "GET /p/navy-daily-walk-sneaker -> 200"
+    },
+    {
+     "type": "site_check",
+     "check": "pdp_ssr_price",
+     "result": "fail"
+    }
+   ]
+  },
+  {
+   "blocker_id": "B04",
+   "name": "Missing structured data",
+   "stage": "S2",
+   "confidence": 0.6,
+   "is_terminal": false,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "e6cf8f6c-8e65-49fb-8775-f8f54a806f0d",
+     "summary": "GET /p/navy-daily-walk-sneaker -> 200"
+    },
+    {
+     "type": "site_check",
+     "check": "pdp_jsonld_product",
+     "result": "warn"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

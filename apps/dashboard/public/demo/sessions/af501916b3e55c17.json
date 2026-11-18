@@ -1,0 +1,251 @@
+{
+ "session": {
+  "session_id": "af501916b3e55c17",
+  "start_ts": "2026-11-01T19:09:54Z",
+  "duration_s": 4.468,
+  "request_count": 14,
+  "page_count": 5,
+  "identity_tier": "verified",
+  "operator": "AgentLens Test Operator",
+  "agent_name": "TestSignedAgent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 1.0,
+  "entry_page": "/p/pink-metro-mesh-sneaker",
+  "exit_page": "/api/cart",
+  "max_stage": "S3",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B05",
+  "terminal_blocker_name": "Pincode / serviceability wall",
+  "blocker_confidence": 0.95,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "valid",
+  "signature_agent": "https://agents.desithreads.test",
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 TestSignedAgent/1.0",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "71ad87c6-8146-4c29-802d-32d6a5950a3b",
+   "ts": "2026-11-01T19:09:54Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/p/pink-metro-mesh-sneaker",
+   "status": 200,
+   "duration_ms": 144,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "74be3265-fb56-4daa-8c8b-e3fa772657e2",
+   "ts": "2026-11-01T19:09:54Z",
+   "offset_ms": 193,
+   "method": "GET",
+   "path": "/_next/static/chunks/app.js",
+   "status": 200,
+   "duration_ms": 11,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "01b59370-8722-48b9-8c33-b837d9eba096",
+   "ts": "2026-11-01T19:09:54Z",
+   "offset_ms": 213,
+   "method": "GET",
+   "path": "/_next/static/chunks/main.js",
+   "status": 200,
+   "duration_ms": 13,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "dc94f8db-bda7-41a4-8a78-320a69e7852d",
+   "ts": "2026-11-01T19:09:54Z",
+   "offset_ms": 254,
+   "method": "GET",
+   "path": "/_next/static/css/app.css",
+   "status": 200,
+   "duration_ms": 9,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "cc6dc3ea-4a41-48a7-8d9c-0472dff000c2",
+   "ts": "2026-11-01T19:09:54Z",
+   "offset_ms": 366,
+   "method": "GET",
+   "path": "/img/p/olive-denim-overshirt-3.svg",
+   "status": 200,
+   "duration_ms": 6,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "655438bc-da4c-4881-8404-58d4c285363f",
+   "ts": "2026-11-01T19:09:54Z",
+   "offset_ms": 391,
+   "method": "GET",
+   "path": "/img/p/grey-retro-trainer-2.svg",
+   "status": 200,
+   "duration_ms": 10,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "192014a4-7e2a-471e-82b1-c0191435a305",
+   "ts": "2026-11-01T19:09:55Z",
+   "offset_ms": 428,
+   "method": "GET",
+   "path": "/favicon.ico",
+   "status": 200,
+   "duration_ms": 8,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "598f0855-eb38-4c9a-81a0-35bb8690791e",
+   "ts": "2026-11-01T19:09:55Z",
+   "offset_ms": 531,
+   "method": "GET",
+   "path": "/img/p/leather-belt-in-teal-1.svg",
+   "status": 200,
+   "duration_ms": 6,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "e6d2a061-a7ae-419a-8c9a-eacfc07b8300",
+   "ts": "2026-11-01T19:09:55Z",
+   "offset_ms": 724,
+   "method": "GET",
+   "path": "/img/p/teal-poplin-slim-shirt-1.svg",
+   "status": 200,
+   "duration_ms": 7,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "8e09c741-9d9d-4c81-8b95-1764e25da679",
+   "ts": "2026-11-01T19:09:55Z",
+   "offset_ms": 1031,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 7,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "1de1fd40-46fe-49b2-81cb-d37f38ffc2de",
+   "ts": "2026-11-01T19:09:55Z",
+   "offset_ms": 1308,
+   "method": "GET",
+   "path": "/api/products/SNK011/variants",
+   "status": 200,
+   "duration_ms": 111,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "fe5d61e0-65a8-48e7-86af-4d99d2fe5a31",
+   "ts": "2026-11-01T19:09:56Z",
+   "offset_ms": 1925,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 50,
+   "page_type": "cart_api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "00462a4e-6be2-405f-8b27-c14996f903b5",
+   "ts": "2026-11-01T19:09:58Z",
+   "offset_ms": 3722,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 17,
+   "page_type": "cart_api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "da8b4142-0676-4427-823d-93659b4b5070",
+   "ts": "2026-11-01T19:09:59Z",
+   "offset_ms": 4468,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 78,
+   "page_type": "cart_api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-01T19:09:54Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-01T19:09:55Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B05",
+   "name": "Pincode / serviceability wall",
+   "stage": "S5",
+   "confidence": 0.95,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "da8b4142-0676-4427-823d-93659b4b5070",
+     "summary": "POST /api/cart -> 409 PINCODE_REQUIRED"
+    },
+    {
+     "type": "request",
+     "request_id": "00462a4e-6be2-405f-8b27-c14996f903b5",
+     "summary": "POST /api/cart -> 409 PINCODE_REQUIRED"
+    },
+    {
+     "type": "request",
+     "request_id": "fe5d61e0-65a8-48e7-86af-4d99d2fe5a31",
+     "summary": "POST /api/cart -> 409 PINCODE_REQUIRED"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

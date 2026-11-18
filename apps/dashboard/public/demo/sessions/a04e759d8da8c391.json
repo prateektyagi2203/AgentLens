@@ -1,0 +1,135 @@
+{
+ "session": {
+  "session_id": "a04e759d8da8c391",
+  "start_ts": "2026-11-01T13:00:51Z",
+  "duration_s": 3.401,
+  "request_count": 4,
+  "page_count": 4,
+  "identity_tier": "declared",
+  "operator": "Perplexity",
+  "agent_name": "Perplexity-User",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.7,
+  "entry_page": "/search",
+  "exit_page": "/p/tan-pace-lite-trainer",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B03",
+  "terminal_blocker_name": "JS-only product content",
+  "blocker_confidence": 0.85,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Perplexity-User/1.0; +https://perplexity.ai/perplexity-user)",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "22ec65a8-d4da-4d20-8c4c-9d98af0e7e99",
+   "ts": "2026-11-01T13:00:51Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/search",
+   "status": 200,
+   "duration_ms": 116,
+   "page_type": "search",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "b3ddf21d-e9c3-44ee-8cb3-c1e5120de468",
+   "ts": "2026-11-01T13:00:51Z",
+   "offset_ms": 405,
+   "method": "GET",
+   "path": "/c/mens-sneakers",
+   "status": 200,
+   "duration_ms": 92,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "8d72edc0-e1ef-4ea4-8a37-838cf856f6bb",
+   "ts": "2026-11-01T13:00:53Z",
+   "offset_ms": 1471,
+   "method": "GET",
+   "path": "/p/navy-daily-walk-sneaker",
+   "status": 200,
+   "duration_ms": 77,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "2b83872d-7f8c-4455-8332-65b829531a42",
+   "ts": "2026-11-01T13:00:54Z",
+   "offset_ms": 3401,
+   "method": "GET",
+   "path": "/p/tan-pace-lite-trainer",
+   "status": 200,
+   "duration_ms": 61,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-01T13:00:51Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-01T13:00:53Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B03",
+   "name": "JS-only product content",
+   "stage": "S2",
+   "confidence": 0.85,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "2b83872d-7f8c-4455-8332-65b829531a42",
+     "summary": "GET /p/tan-pace-lite-trainer -> 200"
+    },
+    {
+     "type": "site_check",
+     "check": "pdp_ssr_price",
+     "result": "fail"
+    }
+   ]
+  },
+  {
+   "blocker_id": "B04",
+   "name": "Missing structured data",
+   "stage": "S2",
+   "confidence": 0.6,
+   "is_terminal": false,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "2b83872d-7f8c-4455-8332-65b829531a42",
+     "summary": "GET /p/tan-pace-lite-trainer -> 200"
+    },
+    {
+     "type": "site_check",
+     "check": "pdp_jsonld_product",
+     "result": "warn"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

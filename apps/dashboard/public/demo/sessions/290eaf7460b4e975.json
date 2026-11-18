@@ -1,0 +1,323 @@
+{
+ "session": {
+  "session_id": "290eaf7460b4e975",
+  "start_ts": "2026-11-12T21:43:00Z",
+  "duration_s": 4.537,
+  "request_count": 20,
+  "page_count": 4,
+  "identity_tier": "verified",
+  "operator": "AgentLens Test Operator",
+  "agent_name": "TestSignedAgent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 1.0,
+  "entry_page": "/",
+  "exit_page": "/api/products/SNK005/variants",
+  "max_stage": "S3",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B08",
+  "terminal_blocker_name": "Out-of-stock dead end",
+  "blocker_confidence": 0.8,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "valid",
+  "signature_agent": "https://agents.desithreads.test",
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 TestSignedAgent/1.0",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "05add3d9-ef4e-4f6c-8403-a6fc689a9a51",
+   "ts": "2026-11-12T21:43:00Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 169,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "8fa0c15b-1c7e-4db4-873b-e805e57e0b22",
+   "ts": "2026-11-12T21:43:01Z",
+   "offset_ms": 214,
+   "method": "GET",
+   "path": "/_next/static/chunks/main.js",
+   "status": 200,
+   "duration_ms": 18,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "11f7be5f-d337-4ef1-84b7-b05a64b05a3a",
+   "ts": "2026-11-12T21:43:01Z",
+   "offset_ms": 376,
+   "method": "GET",
+   "path": "/img/p/linen-mandarin-kurta-in-white-3.svg",
+   "status": 200,
+   "duration_ms": 8,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "ef7f4452-04ff-4c83-83ed-23b7f95cefa8",
+   "ts": "2026-11-12T21:43:01Z",
+   "offset_ms": 537,
+   "method": "GET",
+   "path": "/favicon.ico",
+   "status": 200,
+   "duration_ms": 12,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "e58b74e5-fb84-47c3-8296-810e552b0a9a",
+   "ts": "2026-11-12T21:43:01Z",
+   "offset_ms": 608,
+   "method": "GET",
+   "path": "/img/p/indigo-terrain-trail-sneaker-2.svg",
+   "status": 200,
+   "duration_ms": 10,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "63aa1432-bd19-4626-8f5c-c8471d8ccbfe",
+   "ts": "2026-11-12T21:43:01Z",
+   "offset_ms": 635,
+   "method": "GET",
+   "path": "/_next/static/chunks/app.js",
+   "status": 200,
+   "duration_ms": 8,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "4436891e-3848-4050-8db0-32733040632b",
+   "ts": "2026-11-12T21:43:01Z",
+   "offset_ms": 641,
+   "method": "GET",
+   "path": "/img/p/black-classic-formal-shirt-2.svg",
+   "status": 200,
+   "duration_ms": 11,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "a5ce4815-056f-4465-8e4e-94ffa74dbf0c",
+   "ts": "2026-11-12T21:43:01Z",
+   "offset_ms": 677,
+   "method": "GET",
+   "path": "/_next/static/css/app.css",
+   "status": 200,
+   "duration_ms": 6,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "40f23a85-659d-4065-8498-75ebf26e8efb",
+   "ts": "2026-11-12T21:43:01Z",
+   "offset_ms": 1071,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 6,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "ddc040c9-9665-4090-8b75-a4d4e2544494",
+   "ts": "2026-11-12T21:43:02Z",
+   "offset_ms": 1482,
+   "method": "GET",
+   "path": "/c/mens-sneakers",
+   "status": 200,
+   "duration_ms": 147,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "6171c537-5cc9-49b0-811c-6f946f572bf3",
+   "ts": "2026-11-12T21:43:02Z",
+   "offset_ms": 1687,
+   "method": "GET",
+   "path": "/img/p/gotta-patti-kurta-in-pink-2.svg",
+   "status": 200,
+   "duration_ms": 10,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "66b7fd26-ce0c-45e9-8028-4ee0503332ec",
+   "ts": "2026-11-12T21:43:02Z",
+   "offset_ms": 1932,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 11,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "82c71e36-5aca-42d6-81b7-eef3341e7193",
+   "ts": "2026-11-12T21:43:02Z",
+   "offset_ms": 1997,
+   "method": "GET",
+   "path": "/img/p/tan-printed-resort-shirt-3.svg",
+   "status": 200,
+   "duration_ms": 11,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "3c4f2517-a8f4-44af-842a-7e5222d0e3a6",
+   "ts": "2026-11-12T21:43:04Z",
+   "offset_ms": 3630,
+   "method": "GET",
+   "path": "/p/grey-everyday-slip-on",
+   "status": 200,
+   "duration_ms": 93,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "3b12239d-d9ea-4525-843b-1fa403a38095",
+   "ts": "2026-11-12T21:43:04Z",
+   "offset_ms": 3829,
+   "method": "GET",
+   "path": "/img/p/gotta-patti-kurta-in-pink-1.svg",
+   "status": 200,
+   "duration_ms": 7,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "a977dd92-6ef2-49d3-8463-081bd3a88770",
+   "ts": "2026-11-12T21:43:04Z",
+   "offset_ms": 4124,
+   "method": "GET",
+   "path": "/img/p/white-sprint-knit-runner-2.svg",
+   "status": 200,
+   "duration_ms": 9,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "21a36725-4239-4c86-84e6-e4a6da541b34",
+   "ts": "2026-11-12T21:43:04Z",
+   "offset_ms": 4193,
+   "method": "GET",
+   "path": "/img/p/card-holder-in-pink-2.svg",
+   "status": 200,
+   "duration_ms": 12,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "f095aa7b-3d63-487f-81dc-2930e65b8557",
+   "ts": "2026-11-12T21:43:05Z",
+   "offset_ms": 4234,
+   "method": "GET",
+   "path": "/img/p/festive-embroidered-kurta-in-teal-2.svg",
+   "status": 200,
+   "duration_ms": 15,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "d6510169-16e3-400a-8e91-09497730edca",
+   "ts": "2026-11-12T21:43:05Z",
+   "offset_ms": 4293,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 5,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "db0f2f13-4c10-417d-8583-00b5e0319ab3",
+   "ts": "2026-11-12T21:43:05Z",
+   "offset_ms": 4537,
+   "method": "GET",
+   "path": "/api/products/SNK005/variants",
+   "status": 200,
+   "duration_ms": 42,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-12T21:43:00Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-12T21:43:04Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-12T21:43:05Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B08",
+   "name": "Out-of-stock dead end",
+   "stage": "S3",
+   "confidence": 0.8,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "db0f2f13-4c10-417d-8583-00b5e0319ab3",
+     "summary": "GET /api/products/SNK005/variants -> 200 (catalog shows 0 in stock for this size and colour)"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

@@ -1,9 +1,19 @@
 name: ci
-on: [push, pull_request]
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   python:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -11,12 +21,15 @@ jobs:
       - run: pip install uv && uv sync
       - run: uv run ruff check .
       - run: uv run mypy services
+      # Default markers (pyproject addopts): perf and integration tests are excluded.
+      - run: uv run playwright install --with-deps chromium
       - run: uv run pytest -q
       - run: uv run pip-audit
         continue-on-error: true
 
   node:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
@@ -26,8 +39,37 @@ jobs:
       - run: pnpm -r lint
       - run: pnpm -r typecheck
       - run: pnpm -r test
+      - run: pnpm -r build
       - run: pnpm audit --prod
         continue-on-error: true
+
+  # Static public demo: next build with DEMO_MODE=1 on the committed snapshot, then every page is rendered in Chromium.
+  demo-static:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: pnpm }
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm --filter @agentlens/dashboard exec playwright install --with-deps chromium
+      - run: pnpm --filter @agentlens/dashboard build:demo
+      - run: pnpm --filter @agentlens/dashboard test:e2e:demo
+
+  # Dashboard against in-browser fixtures (NEXT_PUBLIC_USE_MOCKS=1) and the demo store end to end.
+  e2e:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: pnpm }
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm --filter @agentlens/store exec playwright install --with-deps chromium
+      - run: pnpm --filter @agentlens/dashboard test:e2e
+      - run: pnpm --filter @agentlens/store test:e2e
 
   secrets:
     runs-on: ubuntu-latest
@@ -37,3 +79,7 @@ jobs:
         run: |
           if grep -rEn --exclude-dir={.git,node_modules,.venv} "sk-[A-Za-z0-9_-]{20,}|AIza[0-9A-Za-z_-]{35}" . ; then
             echo "Possible API key committed"; exit 1; fi
+      - name: Only the documented test key may be a private key
+        run: |
+          bad=$(git ls-files | grep -Ei '\.(pem|key|p12|pfx)$|(^|/)\.env$' | grep -v '^apps/store/config/test-operator.private.pem$' || true)
+          if [ -n "$bad" ]; then echo "Unexpected key or env file committed:"; echo "$bad"; exit 1; fi

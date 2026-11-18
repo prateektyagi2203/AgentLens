@@ -1,15 +1,15 @@
 {
  "window": {
-  "from": "2026-11-05",
-  "to": "2026-11-11",
+  "from": "2026-11-01",
+  "to": "2026-11-07",
   "days": 7
  },
  "blocker": {
   "blocker_id": "B02",
-  "name": "Captcha",
+  "name": "Captcha at checkout",
   "stage": "S6",
   "sessions_blocked": 0,
-  "share_of_failed": 0,
+  "share_of_failed": 0.0,
   "risk_inr": {
    "low": 0,
    "base": 0,
@@ -20,33 +20,37 @@
   "priority_score": 0,
   "low_confidence": true
  },
- "description": "A captcha appears at checkout and the agent never submits a solution.",
- "detection": "Session reaches checkout, a captcha endpoint or page is requested, and no successful submit follows.",
+ "description": "Agents reach checkout but cannot solve a captcha, so the order is never submitted.",
+ "detection": "Rule B02 (Captcha at checkout) on the request log; evidence below.",
  "evidence": {
-  "top_error_codes": [
-   {
-    "code": "CAPTCHA_REQUIRED",
-    "count": 0,
-    "share": 1
-   }
-  ],
-  "example_requests": [
-   {
-    "request_id": "req_B02_1",
-    "summary": "GET /checkout → 200 · GET /captcha/challenge → 200 · session ended",
-    "count": 0
-   }
-  ],
+  "top_error_codes": [],
+  "example_requests": [],
   "site_checks": []
  },
  "risk_breakdown": {
   "sessions_blocked": 0,
   "recoverable_rate": 0.6,
-  "p_stage": 0,
-  "aov_inr": 2200,
+  "p_stage": 0.0,
+  "aov_inr": 2200.0,
   "k": 4.285714285714286
  },
  "trend": [
+  {
+   "date": "2026-11-01",
+   "sessions_blocked": 0
+  },
+  {
+   "date": "2026-11-02",
+   "sessions_blocked": 0
+  },
+  {
+   "date": "2026-11-03",
+   "sessions_blocked": 0
+  },
+  {
+   "date": "2026-11-04",
+   "sessions_blocked": 0
+  },
   {
    "date": "2026-11-05",
    "sessions_blocked": 0
@@ -58,36 +62,20 @@
   {
    "date": "2026-11-07",
    "sessions_blocked": 0
-  },
-  {
-   "date": "2026-11-08",
-   "sessions_blocked": 0
-  },
-  {
-   "date": "2026-11-09",
-   "sessions_blocked": 0
-  },
-  {
-   "date": "2026-11-10",
-   "sessions_blocked": 0
-  },
-  {
-   "date": "2026-11-11",
-   "sessions_blocked": 0
   }
  ],
  "sample_sessions": [],
  "replays": [],
  "recommendation": {
   "rec_id": "rec_B02",
-  "run_id": "run_20261118_0610",
+  "run_id": "",
   "blocker_id": "B02",
-  "blocker_name": "Captcha",
-  "title": "Use risk-based challenges, skip captcha for verified agents",
-  "body": "Remove the unconditional checkout captcha and challenge only sessions with a high risk score.",
-  "why_it_helps": "Captchas are built to stop automation, including agents acting for a paying shopper.",
-  "how_to_verify": "Step conversion from S6 to S7 should rise for agents.",
-  "verify_metric": "Checkout started → submitted conversion",
+  "blocker_name": "Captcha at checkout",
+  "title": "Captcha at checkout: Remove the captcha for verified agents and use risk-based challenges.",
+  "body": "Remove the captcha for verified agents and use risk-based challenges.",
+  "why_it_helps": "Agents reach checkout but cannot solve a captcha, so the order is never submitted.",
+  "how_to_verify": "Checkout-start to checkout-submit step conversion for agents rises.",
+  "verify_metric": "Agent sessions ending with B02 per day",
   "effort": "M",
   "owner": "Security",
   "priority_score": 0,

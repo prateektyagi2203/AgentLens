@@ -1,0 +1,520 @@
+{
+ "session": {
+  "session_id": "2b5475b20436a2f0",
+  "start_ts": "2026-11-07T06:48:42Z",
+  "duration_s": 23.546,
+  "request_count": 33,
+  "page_count": 11,
+  "identity_tier": "verified",
+  "operator": "AgentLens Test Operator",
+  "agent_name": "TestSignedAgent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 1.0,
+  "entry_page": "/",
+  "exit_page": "/api/otp/send",
+  "max_stage": "S4",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B06",
+  "terminal_blocker_name": "Login / OTP wall before cart",
+  "blocker_confidence": 0.97,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "valid",
+  "signature_agent": "https://agents.desithreads.test",
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 TestSignedAgent/1.0",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "a29472ac-0211-443c-8b01-b75fb34d79d2",
+   "ts": "2026-11-07T06:48:42Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 114,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "1cbed4c3-0c46-4003-8131-f57d5a21d052",
+   "ts": "2026-11-07T06:48:43Z",
+   "offset_ms": 344,
+   "method": "GET",
+   "path": "/_next/static/chunks/app.js",
+   "status": 200,
+   "duration_ms": 12,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "40be694f-660b-4bf7-8336-cd74795ec655",
+   "ts": "2026-11-07T06:48:43Z",
+   "offset_ms": 365,
+   "method": "GET",
+   "path": "/_next/static/chunks/main.js",
+   "status": 200,
+   "duration_ms": 10,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "e5303bd7-2e0b-477b-87ba-2dee52944488",
+   "ts": "2026-11-07T06:48:43Z",
+   "offset_ms": 365,
+   "method": "GET",
+   "path": "/img/p/indigo-terrain-trail-sneaker-2.svg",
+   "status": 200,
+   "duration_ms": 14,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "8058e7c6-508c-47d8-8c72-999dd9acff23",
+   "ts": "2026-11-07T06:48:43Z",
+   "offset_ms": 391,
+   "method": "GET",
+   "path": "/img/p/beanie-in-indigo-2.svg",
+   "status": 200,
+   "duration_ms": 10,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "9f5e8fe7-0c08-49d2-8d02-bf3ef62e6632",
+   "ts": "2026-11-07T06:48:43Z",
+   "offset_ms": 570,
+   "method": "GET",
+   "path": "/favicon.ico",
+   "status": 200,
+   "duration_ms": 15,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "0c04217d-55d6-4add-8fb6-f8e83d86291b",
+   "ts": "2026-11-07T06:48:43Z",
+   "offset_ms": 629,
+   "method": "GET",
+   "path": "/img/p/sky-blue-linen-casual-shirt-3.svg",
+   "status": 200,
+   "duration_ms": 20,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "a6f17d6f-773a-460e-8cfd-77a3e0cab715",
+   "ts": "2026-11-07T06:48:43Z",
+   "offset_ms": 659,
+   "method": "GET",
+   "path": "/img/p/indigo-urban-high-top-3.svg",
+   "status": 200,
+   "duration_ms": 16,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "f6b814b0-b4a5-4e48-893d-3e7fd8bc4793",
+   "ts": "2026-11-07T06:48:43Z",
+   "offset_ms": 684,
+   "method": "GET",
+   "path": "/_next/static/css/app.css",
+   "status": 200,
+   "duration_ms": 26,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "e5bb7313-76ca-44ca-8d19-6e3bb801e0f1",
+   "ts": "2026-11-07T06:48:43Z",
+   "offset_ms": 1012,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 6,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "d1f5848e-5a42-4378-839d-96cb53e05b58",
+   "ts": "2026-11-07T06:48:46Z",
+   "offset_ms": 3568,
+   "method": "GET",
+   "path": "/c/accessories",
+   "status": 200,
+   "duration_ms": 81,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "c7f34392-17fc-4b3f-8097-20fccf9166ff",
+   "ts": "2026-11-07T06:48:46Z",
+   "offset_ms": 3701,
+   "method": "GET",
+   "path": "/img/p/indigo-urban-high-top-2.svg",
+   "status": 200,
+   "duration_ms": 7,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "ca92153b-52da-49c2-82a9-fce355ca5253",
+   "ts": "2026-11-07T06:48:46Z",
+   "offset_ms": 3937,
+   "method": "GET",
+   "path": "/img/p/sky-blue-studio-court-low-1.svg",
+   "status": 200,
+   "duration_ms": 13,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "507b5fcd-f7c8-41e4-80e6-03fa50d49979",
+   "ts": "2026-11-07T06:48:46Z",
+   "offset_ms": 3986,
+   "method": "GET",
+   "path": "/img/p/navy-kurta-style-shirt-1.svg",
+   "status": 200,
+   "duration_ms": 6,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "26756eab-0a93-49a4-8d7d-00974abf85a8",
+   "ts": "2026-11-07T06:48:46Z",
+   "offset_ms": 3988,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 14,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "06f3fc61-9d1b-4517-8a88-7a0ec1291347",
+   "ts": "2026-11-07T06:48:47Z",
+   "offset_ms": 4269,
+   "method": "GET",
+   "path": "/img/p/navy-kurta-style-shirt-3.svg",
+   "status": 200,
+   "duration_ms": 12,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "28f3baa0-b19e-4d85-8984-93b52458a652",
+   "ts": "2026-11-07T06:48:49Z",
+   "offset_ms": 6865,
+   "method": "GET",
+   "path": "/p/reversible-belt-in-maroon",
+   "status": 200,
+   "duration_ms": 59,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "df9b2d26-45f3-4767-8492-711f7427e9df",
+   "ts": "2026-11-07T06:48:49Z",
+   "offset_ms": 7031,
+   "method": "GET",
+   "path": "/img/p/minimal-analog-watch-in-sky-blue-3.svg",
+   "status": 200,
+   "duration_ms": 8,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "202b5b92-3351-4f17-8b40-641ab3f672c6",
+   "ts": "2026-11-07T06:48:50Z",
+   "offset_ms": 7202,
+   "method": "GET",
+   "path": "/img/p/gotta-patti-kurta-in-pink-2.svg",
+   "status": 200,
+   "duration_ms": 15,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "4292f8e2-1839-49ab-8fc1-a97d2b619d11",
+   "ts": "2026-11-07T06:48:50Z",
+   "offset_ms": 7394,
+   "method": "GET",
+   "path": "/img/p/sky-blue-chambray-work-shirt-2.svg",
+   "status": 200,
+   "duration_ms": 13,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "e5a75607-ecbf-42d2-8f83-d5e94ddbb10f",
+   "ts": "2026-11-07T06:48:50Z",
+   "offset_ms": 7631,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 3,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "0a61b242-e576-4bfc-827e-e607a77d2ab1",
+   "ts": "2026-11-07T06:48:52Z",
+   "offset_ms": 9935,
+   "method": "GET",
+   "path": "/api/products/ACC015/variants",
+   "status": 200,
+   "duration_ms": 26,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "4ad082a2-cdc4-4e1d-875d-ae4d4aa3120c",
+   "ts": "2026-11-07T06:48:54Z",
+   "offset_ms": 11467,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 23,
+   "page_type": "cart_api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "0aeeb54f-c076-4277-8ccd-fc87c6e14045",
+   "ts": "2026-11-07T06:48:56Z",
+   "offset_ms": 13358,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 23,
+   "page_type": "cart_api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "aa73226c-d07d-4318-8040-332cd7a8d937",
+   "ts": "2026-11-07T06:48:57Z",
+   "offset_ms": 14984,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 21,
+   "page_type": "cart_api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "1941ae0e-63c5-46cc-8d69-1125fce65740",
+   "ts": "2026-11-07T06:49:01Z",
+   "offset_ms": 18374,
+   "method": "GET",
+   "path": "/api/serviceability",
+   "status": 200,
+   "duration_ms": 21,
+   "page_type": "serviceability_api",
+   "error_code": null,
+   "stage_id": "S4",
+   "is_asset": false
+  },
+  {
+   "request_id": "79a7b0dd-c08f-4d11-8099-67b66f5220b8",
+   "ts": "2026-11-07T06:49:03Z",
+   "offset_ms": 20627,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 401,
+   "duration_ms": 49,
+   "page_type": "cart_api",
+   "error_code": "AUTH_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "1b4099e5-b57f-48c0-898d-b94009ad2729",
+   "ts": "2026-11-07T06:49:04Z",
+   "offset_ms": 21411,
+   "method": "GET",
+   "path": "/login",
+   "status": 200,
+   "duration_ms": 268,
+   "page_type": "login",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "7ca908e4-48e1-466f-83df-71c9c0409d00",
+   "ts": "2026-11-07T06:49:04Z",
+   "offset_ms": 22064,
+   "method": "GET",
+   "path": "/img/p/cotton-a-line-kurta-in-maroon-3.svg",
+   "status": 200,
+   "duration_ms": 8,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "03452ac6-1d54-4d80-8c16-f65e57a62adc",
+   "ts": "2026-11-07T06:49:05Z",
+   "offset_ms": 22177,
+   "method": "GET",
+   "path": "/img/p/ankle-socks-pack-in-white-2.svg",
+   "status": 200,
+   "duration_ms": 11,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "b5e577b1-e8d4-4a81-82c3-19b18f50f9c9",
+   "ts": "2026-11-07T06:49:05Z",
+   "offset_ms": 22235,
+   "method": "GET",
+   "path": "/img/p/teal-half-sleeve-linen-shirt-1.svg",
+   "status": 200,
+   "duration_ms": 10,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "c4983a85-08d2-43b8-8c2f-b6bdf93dd24b",
+   "ts": "2026-11-07T06:49:05Z",
+   "offset_ms": 22551,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 5,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "e734031e-7c17-4fe4-85f2-26788436a488",
+   "ts": "2026-11-07T06:49:06Z",
+   "offset_ms": 23546,
+   "method": "POST",
+   "path": "/api/otp/send",
+   "status": 200,
+   "duration_ms": 30,
+   "page_type": "otp_api",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-07T06:48:42Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-07T06:48:49Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-07T06:48:52Z"
+  },
+  {
+   "stage_id": "S4",
+   "first_reached_ts": "2026-11-07T06:49:01Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B06",
+   "name": "Login / OTP wall before cart",
+   "stage": "S5",
+   "confidence": 0.97,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "79a7b0dd-c08f-4d11-8099-67b66f5220b8",
+     "summary": "POST /api/cart -> 401 AUTH_REQUIRED"
+    }
+   ]
+  },
+  {
+   "blocker_id": "B05",
+   "name": "Pincode / serviceability wall",
+   "stage": "S5",
+   "confidence": 0.95,
+   "is_terminal": false,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "aa73226c-d07d-4318-8040-332cd7a8d937",
+     "summary": "POST /api/cart -> 409 PINCODE_REQUIRED"
+    },
+    {
+     "type": "request",
+     "request_id": "0aeeb54f-c076-4277-8ccd-fc87c6e14045",
+     "summary": "POST /api/cart -> 409 PINCODE_REQUIRED"
+    },
+    {
+     "type": "request",
+     "request_id": "4ad082a2-cdc4-4e1d-875d-ae4d4aa3120c",
+     "summary": "POST /api/cart -> 409 PINCODE_REQUIRED"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

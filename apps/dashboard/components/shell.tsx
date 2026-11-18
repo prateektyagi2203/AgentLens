@@ -175,7 +175,7 @@ function TopBar() {
       <div className="flex flex-wrap items-center justify-between gap-3 px-6 py-3">
         <FilterBar />
         <div className="flex items-center gap-2">
-          {(IS_DEMO || IS_MOCK) && <Badge tone="warning" className="h-9 px-3" data-testid="demo-badge">{IS_DEMO ? "Demo data" : "Mock data"}</Badge>}
+          {(IS_DEMO || IS_MOCK) && <Badge tone="warning" className="h-9 px-3" data-testid="demo-badge">{IS_DEMO ? "Demo data (synthetic)" : "Mock data"}</Badge>}
           <RunChip />
           <StoryToggle />
           <ThemeToggle />

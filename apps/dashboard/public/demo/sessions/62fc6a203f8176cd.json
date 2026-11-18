@@ -1,0 +1,332 @@
+{
+ "session": {
+  "session_id": "62fc6a203f8176cd",
+  "start_ts": "2026-11-14T05:44:29Z",
+  "duration_s": 7.343,
+  "request_count": 21,
+  "page_count": 3,
+  "identity_tier": "verified",
+  "operator": "AgentLens Test Operator",
+  "agent_name": "TestSignedAgent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 1.0,
+  "entry_page": "/",
+  "exit_page": "/p/grey-retro-trainer",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B07",
+  "terminal_blocker_name": "Interstitial / popup overlay",
+  "blocker_confidence": 0.6,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "valid",
+  "signature_agent": "https://agents.desithreads.test",
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 TestSignedAgent/1.0",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "338002cf-adb2-43d4-8fd7-bf23c04588c0",
+   "ts": "2026-11-14T05:44:29Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 133,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "c551405c-f1d5-43f9-8f60-ff8d9be557af",
+   "ts": "2026-11-14T05:44:29Z",
+   "offset_ms": 177,
+   "method": "GET",
+   "path": "/img/p/chikankari-anarkali-kurta-in-grey-3.svg",
+   "status": 200,
+   "duration_ms": 10,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "42f90b03-c32d-4c32-873e-e751a34562f3",
+   "ts": "2026-11-14T05:44:29Z",
+   "offset_ms": 194,
+   "method": "GET",
+   "path": "/img/p/cotton-a-line-kurta-in-maroon-2.svg",
+   "status": 200,
+   "duration_ms": 12,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "d8af25b9-0c50-4bf6-8f6c-a9b9e65f6ddb",
+   "ts": "2026-11-14T05:44:30Z",
+   "offset_ms": 292,
+   "method": "GET",
+   "path": "/_next/static/chunks/app.js",
+   "status": 200,
+   "duration_ms": 21,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "66c43942-b329-4460-8a0f-c5b0b610ceaa",
+   "ts": "2026-11-14T05:44:30Z",
+   "offset_ms": 382,
+   "method": "GET",
+   "path": "/img/p/black-classic-canvas-low-1.svg",
+   "status": 200,
+   "duration_ms": 7,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "916c65d8-9e5f-4431-8b57-e3b417420148",
+   "ts": "2026-11-14T05:44:30Z",
+   "offset_ms": 389,
+   "method": "GET",
+   "path": "/_next/static/css/app.css",
+   "status": 200,
+   "duration_ms": 24,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "73556348-3bfc-4686-828e-bf8f9b801a15",
+   "ts": "2026-11-14T05:44:30Z",
+   "offset_ms": 406,
+   "method": "GET",
+   "path": "/img/p/sky-blue-linen-casual-shirt-1.svg",
+   "status": 200,
+   "duration_ms": 14,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "3f62e608-9af3-4f93-83a0-2e4d9bcfd449",
+   "ts": "2026-11-14T05:44:30Z",
+   "offset_ms": 542,
+   "method": "GET",
+   "path": "/favicon.ico",
+   "status": 200,
+   "duration_ms": 5,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "a1b95326-f673-407a-87aa-5bfcf3b95d72",
+   "ts": "2026-11-14T05:44:30Z",
+   "offset_ms": 545,
+   "method": "GET",
+   "path": "/img/p/maroon-heritage-leather-sneaker-1.svg",
+   "status": 200,
+   "duration_ms": 12,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "eae313ab-d405-4179-8861-a7ca666786f4",
+   "ts": "2026-11-14T05:44:30Z",
+   "offset_ms": 657,
+   "method": "GET",
+   "path": "/img/p/white-sprint-knit-runner-2.svg",
+   "status": 200,
+   "duration_ms": 13,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "059f3973-955d-4c45-86ac-2dd6e5a9da12",
+   "ts": "2026-11-14T05:44:30Z",
+   "offset_ms": 684,
+   "method": "GET",
+   "path": "/_next/static/chunks/main.js",
+   "status": 200,
+   "duration_ms": 13,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "11ada1ec-961d-4d8b-8417-35288c5d73a4",
+   "ts": "2026-11-14T05:44:30Z",
+   "offset_ms": 1097,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 5,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "2d6eb3e5-ef1e-467c-83c5-8b4eb2643e05",
+   "ts": "2026-11-14T05:44:32Z",
+   "offset_ms": 2816,
+   "method": "GET",
+   "path": "/c/mens-sneakers",
+   "status": 200,
+   "duration_ms": 35,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "f5b18a45-39ad-42df-8e79-daae7670dd1b",
+   "ts": "2026-11-14T05:44:32Z",
+   "offset_ms": 2994,
+   "method": "GET",
+   "path": "/img/p/cotton-a-line-kurta-in-maroon-3.svg",
+   "status": 200,
+   "duration_ms": 6,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "fd508a04-7eb5-43cd-83c2-f88a60f2ab13",
+   "ts": "2026-11-14T05:44:33Z",
+   "offset_ms": 3464,
+   "method": "GET",
+   "path": "/img/p/navy-kurta-style-shirt-2.svg",
+   "status": 200,
+   "duration_ms": 9,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "56144b48-43c5-43a1-8383-4c7724cbade6",
+   "ts": "2026-11-14T05:44:33Z",
+   "offset_ms": 4172,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 4,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "d3e430a3-df0e-40fc-82a7-878d3e192a9b",
+   "ts": "2026-11-14T05:44:36Z",
+   "offset_ms": 6536,
+   "method": "GET",
+   "path": "/p/grey-retro-trainer",
+   "status": 200,
+   "duration_ms": 195,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "bdfdd7e1-63a3-4f36-8f64-ecc4646d90ca",
+   "ts": "2026-11-14T05:44:36Z",
+   "offset_ms": 6788,
+   "method": "GET",
+   "path": "/img/p/pleated-asymmetric-kurta-in-pink-2.svg",
+   "status": 200,
+   "duration_ms": 11,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "51eb2225-cea4-49de-88be-5c157b322015",
+   "ts": "2026-11-14T05:44:36Z",
+   "offset_ms": 6840,
+   "method": "GET",
+   "path": "/img/p/sling-crossbody-bag-in-white-3.svg",
+   "status": 200,
+   "duration_ms": 11,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "b72f5018-bdb4-4d77-816e-8c974dc1d154",
+   "ts": "2026-11-14T05:44:36Z",
+   "offset_ms": 7118,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 8,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "10d4f332-dce4-4001-87ca-6fdf4d74b92e",
+   "ts": "2026-11-14T05:44:37Z",
+   "offset_ms": 7343,
+   "method": "GET",
+   "path": "/img/p/sky-blue-cuban-collar-shirt-2.svg",
+   "status": 200,
+   "duration_ms": 17,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-14T05:44:29Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-14T05:44:36Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B07",
+   "name": "Interstitial / popup overlay",
+   "stage": "S2",
+   "confidence": 0.6,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "d3e430a3-df0e-40fc-82a7-878d3e192a9b",
+     "summary": "GET /p/grey-retro-trainer -> 200"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

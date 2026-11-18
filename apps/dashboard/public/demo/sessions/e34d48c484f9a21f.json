@@ -1,0 +1,175 @@
+{
+ "session": {
+  "session_id": "e34d48c484f9a21f",
+  "start_ts": "2026-11-09T03:42:39Z",
+  "duration_s": 8.338,
+  "request_count": 8,
+  "page_count": 8,
+  "identity_tier": "suspected",
+  "operator": "unknown",
+  "agent_name": "unknown",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.85,
+  "entry_page": "/",
+  "exit_page": "/api/checkout",
+  "max_stage": "S6",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B10",
+  "terminal_blocker_name": "Checkout validation failure",
+  "blocker_confidence": 0.95,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 85.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "4920da48-5500-4b12-8d4b-8e7b048d839c",
+   "ts": "2026-11-09T03:42:39Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 87,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "2bdeb8bb-75a5-458a-814c-149a3af3e1cc",
+   "ts": "2026-11-09T03:42:41Z",
+   "offset_ms": 1696,
+   "method": "GET",
+   "path": "/c/accessories",
+   "status": 200,
+   "duration_ms": 91,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "8249ddc3-c760-4c24-875f-7920f0a7d39d",
+   "ts": "2026-11-09T03:42:43Z",
+   "offset_ms": 3527,
+   "method": "GET",
+   "path": "/p/sling-crossbody-bag-in-white",
+   "status": 200,
+   "duration_ms": 67,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "41ba7bc8-d153-49ce-8dae-d190bee4fb4e",
+   "ts": "2026-11-09T03:42:43Z",
+   "offset_ms": 4268,
+   "method": "GET",
+   "path": "/api/products/ACC008/variants",
+   "status": 200,
+   "duration_ms": 33,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "c2784cfd-6726-4dfb-86a6-9362ed5d0c08",
+   "ts": "2026-11-09T03:42:44Z",
+   "offset_ms": 5029,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 201,
+   "duration_ms": 32,
+   "page_type": "cart_api",
+   "error_code": null,
+   "stage_id": "S5",
+   "is_asset": false
+  },
+  {
+   "request_id": "50d6f79b-e1ae-4936-88b4-e9a89a1a4cec",
+   "ts": "2026-11-09T03:42:45Z",
+   "offset_ms": 5595,
+   "method": "GET",
+   "path": "/cart",
+   "status": 200,
+   "duration_ms": 289,
+   "page_type": "cart",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "bbb6d551-6979-4f3a-8db1-6cadb162603d",
+   "ts": "2026-11-09T03:42:47Z",
+   "offset_ms": 7546,
+   "method": "GET",
+   "path": "/checkout",
+   "status": 200,
+   "duration_ms": 37,
+   "page_type": "checkout",
+   "error_code": null,
+   "stage_id": "S6",
+   "is_asset": false
+  },
+  {
+   "request_id": "0e096339-3d71-4aa3-84fd-538945054eed",
+   "ts": "2026-11-09T03:42:47Z",
+   "offset_ms": 8338,
+   "method": "POST",
+   "path": "/api/checkout",
+   "status": 422,
+   "duration_ms": 32,
+   "page_type": "checkout_api",
+   "error_code": "PHONE_FORMAT",
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-09T03:42:39Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-09T03:42:43Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-09T03:42:43Z"
+  },
+  {
+   "stage_id": "S5",
+   "first_reached_ts": "2026-11-09T03:42:44Z"
+  },
+  {
+   "stage_id": "S6",
+   "first_reached_ts": "2026-11-09T03:42:47Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B10",
+   "name": "Checkout validation failure",
+   "stage": "S7",
+   "confidence": 0.95,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "0e096339-3d71-4aa3-84fd-538945054eed",
+     "summary": "POST /api/checkout -> 422 PHONE_FORMAT"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

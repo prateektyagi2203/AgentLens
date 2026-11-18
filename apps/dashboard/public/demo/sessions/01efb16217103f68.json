@@ -1,0 +1,310 @@
+{
+ "session": {
+  "session_id": "01efb16217103f68",
+  "start_ts": "2026-11-03T14:50:11Z",
+  "duration_s": 7.346,
+  "request_count": 19,
+  "page_count": 4,
+  "identity_tier": "verified",
+  "operator": "AgentLens Test Operator",
+  "agent_name": "TestSignedAgent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 1.0,
+  "entry_page": "/",
+  "exit_page": "/api/products/SHT006/variants",
+  "max_stage": "S3",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B08",
+  "terminal_blocker_name": "Out-of-stock dead end",
+  "blocker_confidence": 0.8,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "valid",
+  "signature_agent": "https://agents.desithreads.test",
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 TestSignedAgent/1.0",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "4ec705f6-bb7c-4793-8532-94964aa077d5",
+   "ts": "2026-11-03T14:50:11Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 91,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "d2e7b8ef-88e0-41c7-85ca-b378a56d3026",
+   "ts": "2026-11-03T14:50:12Z",
+   "offset_ms": 292,
+   "method": "GET",
+   "path": "/img/p/pleated-asymmetric-kurta-in-pink-3.svg",
+   "status": 200,
+   "duration_ms": 9,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "94e00604-0c92-4346-847b-b12d46350240",
+   "ts": "2026-11-03T14:50:12Z",
+   "offset_ms": 466,
+   "method": "GET",
+   "path": "/_next/static/chunks/app.js",
+   "status": 200,
+   "duration_ms": 13,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "bd45e5f9-fff0-43f8-8bfb-d406101f43c5",
+   "ts": "2026-11-03T14:50:12Z",
+   "offset_ms": 500,
+   "method": "GET",
+   "path": "/img/p/daily-wear-pintuck-kurta-in-teal-3.svg",
+   "status": 200,
+   "duration_ms": 21,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "1a9a092f-356d-489e-8e64-41be13501b54",
+   "ts": "2026-11-03T14:50:12Z",
+   "offset_ms": 545,
+   "method": "GET",
+   "path": "/favicon.ico",
+   "status": 200,
+   "duration_ms": 9,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "14b937b4-0677-4052-828c-53ff30d4edf7",
+   "ts": "2026-11-03T14:50:12Z",
+   "offset_ms": 581,
+   "method": "GET",
+   "path": "/_next/static/chunks/main.js",
+   "status": 200,
+   "duration_ms": 8,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "bdcc65a7-9057-4ad8-8215-2c7930f30eb2",
+   "ts": "2026-11-03T14:50:12Z",
+   "offset_ms": 678,
+   "method": "GET",
+   "path": "/_next/static/css/app.css",
+   "status": 200,
+   "duration_ms": 22,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "670e31c1-1d38-4e55-8451-2a45b92a0dc0",
+   "ts": "2026-11-03T14:50:12Z",
+   "offset_ms": 1211,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 8,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "b9421fe7-bf98-4c88-82fc-6a8990c25abc",
+   "ts": "2026-11-03T14:50:15Z",
+   "offset_ms": 3479,
+   "method": "GET",
+   "path": "/c/mens-shirts",
+   "status": 200,
+   "duration_ms": 57,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "40c08098-c82e-461c-82ce-f213c26f4a2e",
+   "ts": "2026-11-03T14:50:15Z",
+   "offset_ms": 3630,
+   "method": "GET",
+   "path": "/img/p/pink-metro-mesh-sneaker-1.svg",
+   "status": 200,
+   "duration_ms": 15,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "869ca7d7-7dcf-41f6-8613-50f4e85887fa",
+   "ts": "2026-11-03T14:50:15Z",
+   "offset_ms": 3908,
+   "method": "GET",
+   "path": "/img/p/navy-court-sneaker-1.svg",
+   "status": 200,
+   "duration_ms": 16,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "836442fd-2160-488e-8d89-f98356e6bbc6",
+   "ts": "2026-11-03T14:50:15Z",
+   "offset_ms": 4064,
+   "method": "GET",
+   "path": "/img/p/indigo-terrain-trail-sneaker-1.svg",
+   "status": 200,
+   "duration_ms": 12,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "c871b434-c2ee-4aa5-8c1c-6ce9a96d53ed",
+   "ts": "2026-11-03T14:50:16Z",
+   "offset_ms": 4723,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 4,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "e0f1453e-f724-4359-81a6-79420666c01c",
+   "ts": "2026-11-03T14:50:18Z",
+   "offset_ms": 6475,
+   "method": "GET",
+   "path": "/p/black-classic-formal-shirt",
+   "status": 200,
+   "duration_ms": 55,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "997dadca-229a-4bdc-8d3d-6a41e01940b7",
+   "ts": "2026-11-03T14:50:18Z",
+   "offset_ms": 6634,
+   "method": "GET",
+   "path": "/img/p/pleated-asymmetric-kurta-in-pink-3.svg",
+   "status": 200,
+   "duration_ms": 11,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "44bc028b-350e-4e0e-879a-7bb944a0c9ee",
+   "ts": "2026-11-03T14:50:18Z",
+   "offset_ms": 6724,
+   "method": "GET",
+   "path": "/img/p/grey-textured-dobby-shirt-1.svg",
+   "status": 200,
+   "duration_ms": 10,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "a456b4fb-14ee-4d88-83af-3c22fec2c5c1",
+   "ts": "2026-11-03T14:50:18Z",
+   "offset_ms": 6827,
+   "method": "GET",
+   "path": "/img/p/leather-watch-strap-in-navy-3.svg",
+   "status": 200,
+   "duration_ms": 17,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "ee176c78-fee9-473e-8439-30c9cb2f0626",
+   "ts": "2026-11-03T14:50:18Z",
+   "offset_ms": 7210,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 12,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "4dbf2f3f-d3c6-436f-8a0d-f55184160f94",
+   "ts": "2026-11-03T14:50:19Z",
+   "offset_ms": 7346,
+   "method": "GET",
+   "path": "/api/products/SHT006/variants",
+   "status": 200,
+   "duration_ms": 25,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-03T14:50:11Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-03T14:50:18Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-03T14:50:19Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B08",
+   "name": "Out-of-stock dead end",
+   "stage": "S3",
+   "confidence": 0.8,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "4dbf2f3f-d3c6-436f-8a0d-f55184160f94",
+     "summary": "GET /api/products/SHT006/variants -> 200 (catalog shows 0 in stock for this size and colour)"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

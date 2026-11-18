@@ -1,0 +1,128 @@
+{
+ "replay": {
+  "replay_id": "rp_168f26eb80",
+  "blocker_id": "B07",
+  "blocker_name": "Interstitial / popup overlay",
+  "source_session_id": "",
+  "mode": "browser",
+  "status": "completed",
+  "verdict": "confirmed",
+  "started_at": "2026-11-18T11:52:43Z",
+  "finished_at": "2026-11-18T11:53:04Z",
+  "steps_count": 5,
+  "verdict_explanation": "Reproduced B07 (A full-screen overlay covers the page): a full-screen app-download interstitial covers the product page (close button appeared after 3061 ms) (step 5)."
+ },
+ "user_agent": "AgentLens-Replay/1.0 (+https://github.com/prateektyagi2203/AgentLens; run=rp_168f26eb80)",
+ "signed_requests": false,
+ "steps": [
+  {
+   "n": 1,
+   "action": "robots",
+   "method": "GET",
+   "url": "http://localhost:3100/robots.txt",
+   "status": 200,
+   "duration_ms": 2178,
+   "note": "read robots.txt",
+   "screenshot_url": null
+  },
+  {
+   "n": 2,
+   "action": "open_home",
+   "method": "BROWSER",
+   "url": "http://localhost:3100/",
+   "status": 200,
+   "duration_ms": 0,
+   "note": "open home page in the browser",
+   "screenshot_url": "/demo/replays/rp_168f26eb80/step_2.png"
+  },
+  {
+   "n": 3,
+   "action": "search",
+   "method": "GET",
+   "url": "http://localhost:3100/search?q=blue%20shirt",
+   "status": 200,
+   "duration_ms": 2730,
+   "note": "search 'blue shirt'; 3 candidate products",
+   "screenshot_url": null
+  },
+  {
+   "n": 4,
+   "action": "open_product",
+   "method": "GET",
+   "url": "http://localhost:3100/p/sky-blue-linen-casual-shirt",
+   "status": 200,
+   "duration_ms": 599,
+   "note": "open product page /p/sky-blue-linen-casual-shirt",
+   "screenshot_url": null
+  },
+  {
+   "n": 5,
+   "action": "render_product",
+   "method": "BROWSER",
+   "url": "http://localhost:3100/p/sky-blue-linen-casual-shirt",
+   "status": 200,
+   "duration_ms": 0,
+   "note": "render /p/sky-blue-linen-casual-shirt in the browser",
+   "screenshot_url": "/demo/replays/rp_168f26eb80/step_5_modal.png"
+  }
+ ],
+ "network_log": [
+  {
+   "ts": "2026-11-18T11:52:48.430Z",
+   "method": "GET",
+   "url": "http://localhost:3100/robots.txt",
+   "status": 200,
+   "duration_ms": 2178,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-18T11:52:51.014Z",
+   "method": "GET",
+   "url": "http://localhost:3100/",
+   "status": 200,
+   "duration_ms": 0,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-18T11:52:55.619Z",
+   "method": "GET",
+   "url": "http://localhost:3100/search?q=blue%20shirt",
+   "status": 200,
+   "duration_ms": 2730,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-18T11:52:58.653Z",
+   "method": "GET",
+   "url": "http://localhost:3100/p/sky-blue-linen-casual-shirt",
+   "status": 200,
+   "duration_ms": 599,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-18T11:52:59.338Z",
+   "method": "GET",
+   "url": "http://localhost:3100/_next/static/webpack/93275bb595b096fc.webpack.hot-update.json",
+   "status": 200,
+   "duration_ms": 0,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-18T11:52:59.539Z",
+   "method": "GET",
+   "url": "http://localhost:3100/p/sky-blue-linen-casual-shirt",
+   "status": 200,
+   "duration_ms": 0,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-18T11:53:01.099Z",
+   "method": "GET",
+   "url": "http://localhost:3100/api/products/SHT002/variants",
+   "status": 200,
+   "duration_ms": 0,
+   "error_code": null
+  }
+ ],
+ "explanation": "Reproduced B07 (A full-screen overlay covers the page): a full-screen app-download interstitial covers the product page (close button appeared after 3061 ms) (step 5)."
+}

@@ -1,0 +1,285 @@
+{
+ "session": {
+  "session_id": "c38a3025582ba802",
+  "start_ts": "2026-11-12T17:30:27Z",
+  "duration_s": 11.922,
+  "request_count": 17,
+  "page_count": 10,
+  "identity_tier": "suspected",
+  "operator": "unknown",
+  "agent_name": "unknown",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 0.65,
+  "entry_page": "/",
+  "exit_page": "/order/confirmed/DT-3F723A6F",
+  "max_stage": "S8",
+  "converted": true,
+  "order_value_inr": 1679.0,
+  "terminal_blocker_id": null,
+  "terminal_blocker_name": null,
+  "blocker_confidence": null,
+  "diagnosis_method": "none"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 65.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "885da406-9da2-40ca-8f8e-99326b71e8e1",
+   "ts": "2026-11-12T17:30:27Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 108,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "cf7371cc-1824-4027-86cb-c0bfc3efbe84",
+   "ts": "2026-11-12T17:30:29Z",
+   "offset_ms": 1393,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 15,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "a176869d-79a9-4754-8f1e-0c9465c30d7f",
+   "ts": "2026-11-12T17:30:29Z",
+   "offset_ms": 1671,
+   "method": "GET",
+   "path": "/search",
+   "status": 200,
+   "duration_ms": 99,
+   "page_type": "search",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "c1781739-e83a-4408-8012-75cb1c141740",
+   "ts": "2026-11-12T17:30:30Z",
+   "offset_ms": 2354,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 6,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "9252d572-6d37-4c99-889e-baec1238a72f",
+   "ts": "2026-11-12T17:30:31Z",
+   "offset_ms": 3434,
+   "method": "GET",
+   "path": "/c/mens-sneakers",
+   "status": 200,
+   "duration_ms": 95,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "8e43c40d-f8ec-4a5d-88ee-d46dfe82afad",
+   "ts": "2026-11-12T17:30:31Z",
+   "offset_ms": 3815,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 6,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "31f49515-b8a4-4ab0-8f3b-f882d00bf2b0",
+   "ts": "2026-11-12T17:30:33Z",
+   "offset_ms": 5063,
+   "method": "GET",
+   "path": "/p/black-classic-canvas-low",
+   "status": 200,
+   "duration_ms": 51,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "a4f6d423-b594-46bb-8565-27d4d6b2df5f",
+   "ts": "2026-11-12T17:30:33Z",
+   "offset_ms": 5775,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 7,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "28f8b966-6f76-479d-8859-ac336bc64ab8",
+   "ts": "2026-11-12T17:30:33Z",
+   "offset_ms": 5855,
+   "method": "GET",
+   "path": "/api/products/SNK003/variants",
+   "status": 200,
+   "duration_ms": 39,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "731f9c16-91af-4a13-8917-0d275ac5a40f",
+   "ts": "2026-11-12T17:30:34Z",
+   "offset_ms": 6610,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 201,
+   "duration_ms": 30,
+   "page_type": "cart_api",
+   "error_code": null,
+   "stage_id": "S5",
+   "is_asset": false
+  },
+  {
+   "request_id": "a18085f2-be4e-4d42-8ce1-c911323f3c76",
+   "ts": "2026-11-12T17:30:35Z",
+   "offset_ms": 7208,
+   "method": "GET",
+   "path": "/cart",
+   "status": 200,
+   "duration_ms": 168,
+   "page_type": "cart",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "88c086c2-249a-426e-8d8e-a6054ce267f2",
+   "ts": "2026-11-12T17:30:36Z",
+   "offset_ms": 8796,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 10,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "46342ab2-4fed-4c0f-8f3a-02aa5ab1c56b",
+   "ts": "2026-11-12T17:30:37Z",
+   "offset_ms": 9023,
+   "method": "GET",
+   "path": "/checkout",
+   "status": 200,
+   "duration_ms": 66,
+   "page_type": "checkout",
+   "error_code": null,
+   "stage_id": "S6",
+   "is_asset": false
+  },
+  {
+   "request_id": "e86e16d6-ee54-4bbf-8510-c05accbc77f2",
+   "ts": "2026-11-12T17:30:37Z",
+   "offset_ms": 9384,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 5,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "7415ae0f-7b3f-4f9b-81c7-d818111b2243",
+   "ts": "2026-11-12T17:30:37Z",
+   "offset_ms": 9839,
+   "method": "POST",
+   "path": "/api/checkout",
+   "status": 201,
+   "duration_ms": 132,
+   "page_type": "checkout_api",
+   "error_code": null,
+   "stage_id": "S7",
+   "is_asset": false
+  },
+  {
+   "request_id": "47606156-35cf-4580-8de6-8717690e3039",
+   "ts": "2026-11-12T17:30:38Z",
+   "offset_ms": 10547,
+   "method": "GET",
+   "path": "/order/confirmed/DT-3F723A6F",
+   "status": 200,
+   "duration_ms": 251,
+   "page_type": "order_confirm",
+   "error_code": null,
+   "stage_id": "S8",
+   "is_asset": false
+  },
+  {
+   "request_id": "e894fbad-df2d-4725-8a26-8e726608782e",
+   "ts": "2026-11-12T17:30:39Z",
+   "offset_ms": 11922,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 9,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-12T17:30:27Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-12T17:30:33Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-12T17:30:33Z"
+  },
+  {
+   "stage_id": "S5",
+   "first_reached_ts": "2026-11-12T17:30:34Z"
+  },
+  {
+   "stage_id": "S6",
+   "first_reached_ts": "2026-11-12T17:30:37Z"
+  },
+  {
+   "stage_id": "S7",
+   "first_reached_ts": "2026-11-12T17:30:37Z"
+  },
+  {
+   "stage_id": "S8",
+   "first_reached_ts": "2026-11-12T17:30:38Z"
+  }
+ ],
+ "fired_rules": [],
+ "replay_ids": []
+}

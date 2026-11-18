@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
+import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, useSyncExternalStore, type ReactNode } from "react";
 import { api } from "./api";
 import { filtersToQuery, parseFilters, toSearch } from "./filters";
 import { STORY_KEY, THEME_KEY } from "./theme-script";
@@ -94,7 +94,13 @@ export function MetaProvider({ children }: { children: ReactNode }) {
   const value = useMemo(() => ({ meta: s.data, loading: s.loading, error: s.error, reload: s.reload }), [s.data, s.loading, s.error, s.reload]);
   return <MetaContext.Provider value={value}>{children}</MetaContext.Provider>;
 }
-export const useMeta = () => useContext(MetaContext);
+const noopSubscribe = () => () => {};
+/** Hydrate with the server markup (no meta) even when the fetch has already finished: Suspense boundaries can hydrate late. */
+export function useMeta() {
+  const ctx = useContext(MetaContext);
+  const hydrated = useSyncExternalStore(noopSubscribe, () => true, () => false);
+  return useMemo(() => (hydrated ? ctx : { ...ctx, meta: undefined, loading: true, error: null }), [hydrated, ctx]);
+}
 
 // ------------------------------------------------------------ theme + story mode
 

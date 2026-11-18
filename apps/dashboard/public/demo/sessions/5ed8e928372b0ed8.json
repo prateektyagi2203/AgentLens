@@ -1,0 +1,194 @@
+{
+ "session": {
+  "session_id": "5ed8e928372b0ed8",
+  "start_ts": "2026-11-03T20:28:22Z",
+  "duration_s": 4.601,
+  "request_count": 9,
+  "page_count": 7,
+  "identity_tier": "suspected",
+  "operator": "unknown",
+  "agent_name": "unknown",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 0.85,
+  "entry_page": "/p/festive-embroidered-kurta-in-teal",
+  "exit_page": "/api/otp/send",
+  "max_stage": "S4",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B06",
+  "terminal_blocker_name": "Login / OTP wall before cart",
+  "blocker_confidence": 0.97,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 85.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "c8afbfd6-028e-48a1-850d-92cb310b0549",
+   "ts": "2026-11-03T20:28:22Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/p/festive-embroidered-kurta-in-teal",
+   "status": 200,
+   "duration_ms": 187,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "ce5b89e9-83c6-41d3-8e03-4d7ea439785b",
+   "ts": "2026-11-03T20:28:23Z",
+   "offset_ms": 439,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 6,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "562e10fb-0789-48f6-8f4f-b62fd3736dde",
+   "ts": "2026-11-03T20:28:23Z",
+   "offset_ms": 816,
+   "method": "GET",
+   "path": "/api/products/KRT005/variants",
+   "status": 200,
+   "duration_ms": 29,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "5b40b95b-d378-4968-89cf-09e83fff944e",
+   "ts": "2026-11-03T20:28:24Z",
+   "offset_ms": 1622,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 42,
+   "page_type": "cart_api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "62894c07-be17-4a4f-868a-a30fe684aa45",
+   "ts": "2026-11-03T20:28:25Z",
+   "offset_ms": 2376,
+   "method": "GET",
+   "path": "/api/serviceability",
+   "status": 200,
+   "duration_ms": 34,
+   "page_type": "serviceability_api",
+   "error_code": null,
+   "stage_id": "S4",
+   "is_asset": false
+  },
+  {
+   "request_id": "2ed4a996-ef0d-4d24-8f12-b1fb237f4cef",
+   "ts": "2026-11-03T20:28:25Z",
+   "offset_ms": 3103,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 401,
+   "duration_ms": 38,
+   "page_type": "cart_api",
+   "error_code": "AUTH_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "60d363e0-91b7-4196-83ff-76948ff471b6",
+   "ts": "2026-11-03T20:28:26Z",
+   "offset_ms": 3672,
+   "method": "GET",
+   "path": "/login",
+   "status": 200,
+   "duration_ms": 215,
+   "page_type": "login",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "0d6b214e-e591-4402-8594-fe538f542746",
+   "ts": "2026-11-03T20:28:27Z",
+   "offset_ms": 4511,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 6,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "1349088f-820a-4808-8f69-9ec8f4428028",
+   "ts": "2026-11-03T20:28:27Z",
+   "offset_ms": 4601,
+   "method": "POST",
+   "path": "/api/otp/send",
+   "status": 200,
+   "duration_ms": 64,
+   "page_type": "otp_api",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-03T20:28:22Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-03T20:28:23Z"
+  },
+  {
+   "stage_id": "S4",
+   "first_reached_ts": "2026-11-03T20:28:25Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B06",
+   "name": "Login / OTP wall before cart",
+   "stage": "S5",
+   "confidence": 0.97,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "2ed4a996-ef0d-4d24-8f12-b1fb237f4cef",
+     "summary": "POST /api/cart -> 401 AUTH_REQUIRED"
+    }
+   ]
+  },
+  {
+   "blocker_id": "B05",
+   "name": "Pincode / serviceability wall",
+   "stage": "S5",
+   "confidence": 0.95,
+   "is_terminal": false,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "5b40b95b-d378-4968-89cf-09e83fff944e",
+     "summary": "POST /api/cart -> 409 PINCODE_REQUIRED"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

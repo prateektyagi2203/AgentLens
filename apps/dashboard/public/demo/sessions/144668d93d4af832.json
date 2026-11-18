@@ -1,0 +1,272 @@
+{
+ "session": {
+  "session_id": "144668d93d4af832",
+  "start_ts": "2026-11-10T11:25:51Z",
+  "duration_s": 10.368,
+  "request_count": 16,
+  "page_count": 10,
+  "identity_tier": "suspected",
+  "operator": "unknown",
+  "agent_name": "unknown",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 0.7,
+  "entry_page": "/",
+  "exit_page": "/order/confirmed/DT-4034F542",
+  "max_stage": "S8",
+  "converted": true,
+  "order_value_inr": 1129.0,
+  "terminal_blocker_id": null,
+  "terminal_blocker_name": null,
+  "blocker_confidence": null,
+  "diagnosis_method": "none"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 70.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "63dbbc50-4c93-419e-87bc-1c472075540b",
+   "ts": "2026-11-10T11:25:51Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 53,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "02e99568-1dab-4bf1-8c11-80134df48434",
+   "ts": "2026-11-10T11:25:52Z",
+   "offset_ms": 1220,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 5,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "fefde424-0fae-4b8c-892c-e38eb5be8fe9",
+   "ts": "2026-11-10T11:25:52Z",
+   "offset_ms": 1604,
+   "method": "GET",
+   "path": "/c/mens-shirts",
+   "status": 200,
+   "duration_ms": 101,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "17752467-e3f9-4fbd-86d8-c53262963ff7",
+   "ts": "2026-11-10T11:25:53Z",
+   "offset_ms": 2033,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 6,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "b0db0b29-dde2-4fb7-826c-80a649d98c81",
+   "ts": "2026-11-10T11:25:54Z",
+   "offset_ms": 3391,
+   "method": "GET",
+   "path": "/p/sky-blue-linen-casual-shirt",
+   "status": 200,
+   "duration_ms": 49,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "9becaa8d-0753-4887-88ca-78542071e4f7",
+   "ts": "2026-11-10T11:25:55Z",
+   "offset_ms": 3848,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 9,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "2a41cdc4-7228-4c81-8572-8883996081bd",
+   "ts": "2026-11-10T11:25:55Z",
+   "offset_ms": 4130,
+   "method": "GET",
+   "path": "/api/products/SHT002/variants",
+   "status": 200,
+   "duration_ms": 34,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "0b333a4e-4674-4282-8863-9c314963e3a1",
+   "ts": "2026-11-10T11:25:56Z",
+   "offset_ms": 4882,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 201,
+   "duration_ms": 42,
+   "page_type": "cart_api",
+   "error_code": null,
+   "stage_id": "S5",
+   "is_asset": false
+  },
+  {
+   "request_id": "d059eb5a-afe2-4d1c-8090-7990058a6641",
+   "ts": "2026-11-10T11:25:56Z",
+   "offset_ms": 5520,
+   "method": "GET",
+   "path": "/cart",
+   "status": 200,
+   "duration_ms": 57,
+   "page_type": "cart",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "83c84a79-ab9c-4b8a-8a69-d9a221ae40ee",
+   "ts": "2026-11-10T11:25:57Z",
+   "offset_ms": 6122,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 5,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "df4fa42d-c9ab-4f43-8abd-c9f6b15f7127",
+   "ts": "2026-11-10T11:25:58Z",
+   "offset_ms": 7227,
+   "method": "GET",
+   "path": "/checkout",
+   "status": 200,
+   "duration_ms": 148,
+   "page_type": "checkout",
+   "error_code": null,
+   "stage_id": "S6",
+   "is_asset": false
+  },
+  {
+   "request_id": "7e042115-11a6-423c-8d2e-d1af73940cf8",
+   "ts": "2026-11-10T11:25:59Z",
+   "offset_ms": 8141,
+   "method": "POST",
+   "path": "/api/checkout",
+   "status": 422,
+   "duration_ms": 23,
+   "page_type": "checkout_api",
+   "error_code": "PHONE_FORMAT",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "c3621474-ad5e-4389-8d2e-e9aff1958dad",
+   "ts": "2026-11-10T11:25:59Z",
+   "offset_ms": 8328,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 8,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "d25dbf63-211d-4da5-838c-9c69ba61bc0d",
+   "ts": "2026-11-10T11:26:00Z",
+   "offset_ms": 8860,
+   "method": "POST",
+   "path": "/api/checkout",
+   "status": 201,
+   "duration_ms": 57,
+   "page_type": "checkout_api",
+   "error_code": null,
+   "stage_id": "S7",
+   "is_asset": false
+  },
+  {
+   "request_id": "ac613edc-cebc-4aae-8f0b-3a5eaaa1dd49",
+   "ts": "2026-11-10T11:26:00Z",
+   "offset_ms": 9483,
+   "method": "GET",
+   "path": "/order/confirmed/DT-4034F542",
+   "status": 200,
+   "duration_ms": 71,
+   "page_type": "order_confirm",
+   "error_code": null,
+   "stage_id": "S8",
+   "is_asset": false
+  },
+  {
+   "request_id": "ce1bd5d7-6f5c-4d37-8d6c-b3fb26d8101f",
+   "ts": "2026-11-10T11:26:01Z",
+   "offset_ms": 10368,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 8,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-10T11:25:51Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-10T11:25:54Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-10T11:25:55Z"
+  },
+  {
+   "stage_id": "S5",
+   "first_reached_ts": "2026-11-10T11:25:56Z"
+  },
+  {
+   "stage_id": "S6",
+   "first_reached_ts": "2026-11-10T11:25:58Z"
+  },
+  {
+   "stage_id": "S7",
+   "first_reached_ts": "2026-11-10T11:26:00Z"
+  },
+  {
+   "stage_id": "S8",
+   "first_reached_ts": "2026-11-10T11:26:00Z"
+  }
+ ],
+ "fired_rules": [],
+ "replay_ids": []
+}

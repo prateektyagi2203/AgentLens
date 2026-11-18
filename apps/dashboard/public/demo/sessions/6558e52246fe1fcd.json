@@ -1,0 +1,200 @@
+{
+ "session": {
+  "session_id": "6558e52246fe1fcd",
+  "start_ts": "2026-11-01T03:09:17Z",
+  "duration_s": 85.247,
+  "request_count": 12,
+  "page_count": 6,
+  "identity_tier": "human",
+  "operator": "human",
+  "agent_name": "Browser (human)",
+  "agent_class": "human",
+  "identity_confidence": 0.85,
+  "entry_page": "/",
+  "exit_page": "/size-guide/womens-kurtas",
+  "max_stage": "S2",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": null,
+  "terminal_blocker_name": null,
+  "blocker_confidence": null,
+  "diagnosis_method": "none"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 15.0,
+  "user_agent": "Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "388ba56e-3234-44b0-8aec-246c63c1f745",
+   "ts": "2026-11-01T03:09:17Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 132,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "911967d0-17de-4791-8190-592eedf6e576",
+   "ts": "2026-11-01T03:09:18Z",
+   "offset_ms": 810,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 11,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "ee20b200-ddba-408a-8cc5-a61ff5f07880",
+   "ts": "2026-11-01T03:09:33Z",
+   "offset_ms": 16530,
+   "method": "GET",
+   "path": "/c/mens-shirts",
+   "status": 200,
+   "duration_ms": 77,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "215f10c2-7965-435f-82f3-fcce1be41ca1",
+   "ts": "2026-11-01T03:09:34Z",
+   "offset_ms": 17573,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 12,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "9d1ce217-529c-41a9-828e-61471917e098",
+   "ts": "2026-11-01T03:09:38Z",
+   "offset_ms": 21276,
+   "method": "GET",
+   "path": "/p/grey-retro-trainer",
+   "status": 200,
+   "duration_ms": 79,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "659fed29-e02d-40fd-87fd-7691d5eaa6e2",
+   "ts": "2026-11-01T03:09:39Z",
+   "offset_ms": 22466,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 11,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "68637e13-db53-4e7a-87f9-8b3ce55e7548",
+   "ts": "2026-11-01T03:10:08Z",
+   "offset_ms": 50958,
+   "method": "GET",
+   "path": "/p/teal-half-sleeve-linen-shirt",
+   "status": 200,
+   "duration_ms": 147,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "f2f50f57-edfb-4f52-88b3-7be1b36498eb",
+   "ts": "2026-11-01T03:10:08Z",
+   "offset_ms": 51493,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 6,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "233c3807-1189-4681-8bf1-1ea1779f85b4",
+   "ts": "2026-11-01T03:10:11Z",
+   "offset_ms": 54625,
+   "method": "GET",
+   "path": "/p/linen-mandarin-kurta-in-white",
+   "status": 200,
+   "duration_ms": 64,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "a22daf37-2afd-4622-81c7-698b84c98269",
+   "ts": "2026-11-01T03:10:12Z",
+   "offset_ms": 55507,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 7,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "7472cc01-d5fb-40ab-86cb-ca5197749205",
+   "ts": "2026-11-01T03:10:41Z",
+   "offset_ms": 84056,
+   "method": "GET",
+   "path": "/size-guide/womens-kurtas",
+   "status": 200,
+   "duration_ms": 98,
+   "page_type": "size_guide",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "b6792c91-a191-4b37-8331-af11692bf0ef",
+   "ts": "2026-11-01T03:10:42Z",
+   "offset_ms": 85247,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 10,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-01T03:09:17Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-01T03:09:38Z"
+  }
+ ],
+ "fired_rules": [],
+ "replay_ids": []
+}

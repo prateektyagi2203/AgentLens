@@ -1,0 +1,294 @@
+{
+ "session": {
+  "session_id": "74a89438f8374393",
+  "start_ts": "2026-11-07T20:28:59Z",
+  "duration_s": 10.289,
+  "request_count": 16,
+  "page_count": 11,
+  "identity_tier": "suspected",
+  "operator": "unknown",
+  "agent_name": "unknown",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 0.7,
+  "entry_page": "/",
+  "exit_page": "/api/otp/send",
+  "max_stage": "S4",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B06",
+  "terminal_blocker_name": "Login / OTP wall before cart",
+  "blocker_confidence": 0.97,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 70.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "6172bf91-c671-4640-8c58-ed44b43d6ca7",
+   "ts": "2026-11-07T20:28:59Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 96,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "31795e55-bad1-4916-866d-16a74943d227",
+   "ts": "2026-11-07T20:29:00Z",
+   "offset_ms": 888,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 6,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "dada3569-188e-478a-8c22-25d18ea394bc",
+   "ts": "2026-11-07T20:29:00Z",
+   "offset_ms": 1765,
+   "method": "GET",
+   "path": "/c/womens-kurtas",
+   "status": 200,
+   "duration_ms": 109,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "5834d25b-65fe-47e8-83f9-0212da16856b",
+   "ts": "2026-11-07T20:29:01Z",
+   "offset_ms": 2222,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 8,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "f7a84e57-e992-48f7-83ff-70695eeff744",
+   "ts": "2026-11-07T20:29:02Z",
+   "offset_ms": 3445,
+   "method": "GET",
+   "path": "/p/bandhani-flared-kurta-in-sky-blue",
+   "status": 200,
+   "duration_ms": 118,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "ced1923e-96fc-40d7-8b7b-5681528900b8",
+   "ts": "2026-11-07T20:29:03Z",
+   "offset_ms": 4251,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 7,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "08cce725-7d89-439d-8007-2c28797b2136",
+   "ts": "2026-11-07T20:29:04Z",
+   "offset_ms": 5061,
+   "method": "GET",
+   "path": "/size-guide/womens-kurtas",
+   "status": 200,
+   "duration_ms": 93,
+   "page_type": "size_guide",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "281ec6ca-f79c-4fed-89ef-184baca314fd",
+   "ts": "2026-11-07T20:29:04Z",
+   "offset_ms": 5404,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 7,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "e036018c-0306-4aab-883d-029ff51efd5f",
+   "ts": "2026-11-07T20:29:04Z",
+   "offset_ms": 5849,
+   "method": "GET",
+   "path": "/api/products/KRT004/variants",
+   "status": 200,
+   "duration_ms": 61,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "cc8a89d8-a918-4202-8be1-138d5ee73053",
+   "ts": "2026-11-07T20:29:05Z",
+   "offset_ms": 6623,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 45,
+   "page_type": "cart_api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "0fa8bba5-7ed9-4b16-8581-13d25ddea045",
+   "ts": "2026-11-07T20:29:06Z",
+   "offset_ms": 7336,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 409,
+   "duration_ms": 24,
+   "page_type": "cart_api",
+   "error_code": "PINCODE_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "82593954-823d-4f08-8600-9bec49102032",
+   "ts": "2026-11-07T20:29:07Z",
+   "offset_ms": 8119,
+   "method": "GET",
+   "path": "/api/serviceability",
+   "status": 200,
+   "duration_ms": 52,
+   "page_type": "serviceability_api",
+   "error_code": null,
+   "stage_id": "S4",
+   "is_asset": false
+  },
+  {
+   "request_id": "46c7d49a-dc53-47fe-8c8f-427e0af0a0f6",
+   "ts": "2026-11-07T20:29:08Z",
+   "offset_ms": 8877,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 401,
+   "duration_ms": 34,
+   "page_type": "cart_api",
+   "error_code": "AUTH_REQUIRED",
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "139d0b45-0f3f-4858-80fd-58289c993dc5",
+   "ts": "2026-11-07T20:29:08Z",
+   "offset_ms": 9490,
+   "method": "GET",
+   "path": "/login",
+   "status": 200,
+   "duration_ms": 80,
+   "page_type": "login",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "09af4403-5795-47f5-8069-d60a72181d69",
+   "ts": "2026-11-07T20:29:09Z",
+   "offset_ms": 10193,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 9,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "299bf885-c270-433a-8c9b-bb0d664e4c6e",
+   "ts": "2026-11-07T20:29:09Z",
+   "offset_ms": 10289,
+   "method": "POST",
+   "path": "/api/otp/send",
+   "status": 200,
+   "duration_ms": 37,
+   "page_type": "otp_api",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-07T20:28:59Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-07T20:29:02Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-07T20:29:04Z"
+  },
+  {
+   "stage_id": "S4",
+   "first_reached_ts": "2026-11-07T20:29:07Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B06",
+   "name": "Login / OTP wall before cart",
+   "stage": "S5",
+   "confidence": 0.97,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "46c7d49a-dc53-47fe-8c8f-427e0af0a0f6",
+     "summary": "POST /api/cart -> 401 AUTH_REQUIRED"
+    }
+   ]
+  },
+  {
+   "blocker_id": "B05",
+   "name": "Pincode / serviceability wall",
+   "stage": "S5",
+   "confidence": 0.95,
+   "is_terminal": false,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "0fa8bba5-7ed9-4b16-8581-13d25ddea045",
+     "summary": "POST /api/cart -> 409 PINCODE_REQUIRED"
+    },
+    {
+     "type": "request",
+     "request_id": "cc8a89d8-a918-4202-8be1-138d5ee73053",
+     "summary": "POST /api/cart -> 409 PINCODE_REQUIRED"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

@@ -1,0 +1,181 @@
+{
+ "session": {
+  "session_id": "fcdb69de707d6563",
+  "start_ts": "2026-11-11T15:03:24Z",
+  "duration_s": 8.938,
+  "request_count": 9,
+  "page_count": 9,
+  "identity_tier": "suspected",
+  "operator": "unknown",
+  "agent_name": "unknown",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.8,
+  "entry_page": "/",
+  "exit_page": "/order/confirmed/DT-6E64836B",
+  "max_stage": "S8",
+  "converted": true,
+  "order_value_inr": 2099.0,
+  "terminal_blocker_id": null,
+  "terminal_blocker_name": null,
+  "blocker_confidence": null,
+  "diagnosis_method": "none"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 80.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "6a1b7581-2ad4-495c-8505-4f81f5015f8e",
+   "ts": "2026-11-11T15:03:24Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 221,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "51727d97-a5a6-4f34-876f-31365a34e2a8",
+   "ts": "2026-11-11T15:03:26Z",
+   "offset_ms": 1762,
+   "method": "GET",
+   "path": "/c/mens-shirts",
+   "status": 200,
+   "duration_ms": 132,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "9de303e0-3dfd-4e8a-8837-df04384682f7",
+   "ts": "2026-11-11T15:03:28Z",
+   "offset_ms": 3457,
+   "method": "GET",
+   "path": "/p/pink-seersucker-weekend-shirt",
+   "status": 200,
+   "duration_ms": 167,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "667a25dd-6c65-4bd8-8288-3917eba07880",
+   "ts": "2026-11-11T15:03:29Z",
+   "offset_ms": 4326,
+   "method": "GET",
+   "path": "/api/products/SHT015/variants",
+   "status": 200,
+   "duration_ms": 70,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "198eeedf-28b3-48ea-829d-e156ac2a7b71",
+   "ts": "2026-11-11T15:03:30Z",
+   "offset_ms": 5080,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 201,
+   "duration_ms": 40,
+   "page_type": "cart_api",
+   "error_code": null,
+   "stage_id": "S5",
+   "is_asset": false
+  },
+  {
+   "request_id": "5aedfcf9-8a92-412c-8c79-c058037b1c22",
+   "ts": "2026-11-11T15:03:30Z",
+   "offset_ms": 5722,
+   "method": "GET",
+   "path": "/cart",
+   "status": 200,
+   "duration_ms": 107,
+   "page_type": "cart",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "ebe896a7-f3e3-44f6-8619-95b69845c5a1",
+   "ts": "2026-11-11T15:03:32Z",
+   "offset_ms": 7433,
+   "method": "GET",
+   "path": "/checkout",
+   "status": 200,
+   "duration_ms": 125,
+   "page_type": "checkout",
+   "error_code": null,
+   "stage_id": "S6",
+   "is_asset": false
+  },
+  {
+   "request_id": "e67d8b2b-0a66-4ee3-87aa-953ef14d2d5b",
+   "ts": "2026-11-11T15:03:33Z",
+   "offset_ms": 8267,
+   "method": "POST",
+   "path": "/api/checkout",
+   "status": 201,
+   "duration_ms": 89,
+   "page_type": "checkout_api",
+   "error_code": null,
+   "stage_id": "S7",
+   "is_asset": false
+  },
+  {
+   "request_id": "3f039f67-d074-4421-8e84-c905a187b494",
+   "ts": "2026-11-11T15:03:33Z",
+   "offset_ms": 8938,
+   "method": "GET",
+   "path": "/order/confirmed/DT-6E64836B",
+   "status": 200,
+   "duration_ms": 144,
+   "page_type": "order_confirm",
+   "error_code": null,
+   "stage_id": "S8",
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-11T15:03:24Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-11T15:03:28Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-11T15:03:29Z"
+  },
+  {
+   "stage_id": "S5",
+   "first_reached_ts": "2026-11-11T15:03:30Z"
+  },
+  {
+   "stage_id": "S6",
+   "first_reached_ts": "2026-11-11T15:03:32Z"
+  },
+  {
+   "stage_id": "S7",
+   "first_reached_ts": "2026-11-11T15:03:33Z"
+  },
+  {
+   "stage_id": "S8",
+   "first_reached_ts": "2026-11-11T15:03:33Z"
+  }
+ ],
+ "fired_rules": [],
+ "replay_ids": []
+}

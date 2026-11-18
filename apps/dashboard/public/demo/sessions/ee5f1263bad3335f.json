@@ -1,0 +1,366 @@
+{
+ "session": {
+  "session_id": "ee5f1263bad3335f",
+  "start_ts": "2026-11-11T05:49:03Z",
+  "duration_s": 8.506,
+  "request_count": 23,
+  "page_count": 5,
+  "identity_tier": "verified",
+  "operator": "AgentLens Test Operator",
+  "agent_name": "TestSignedAgent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 1.0,
+  "entry_page": "/p/teal-poplin-slim-shirt",
+  "exit_page": "/checkout",
+  "max_stage": "S6",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B99",
+  "terminal_blocker_name": "Unknown",
+  "blocker_confidence": 0.3,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "valid",
+  "signature_agent": "https://agents.desithreads.test",
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 TestSignedAgent/1.0",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "4de4b4b2-876a-46fa-8c7a-56e6811d7623",
+   "ts": "2026-11-11T05:49:03Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/p/teal-poplin-slim-shirt",
+   "status": 200,
+   "duration_ms": 168,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "f9abf6fd-b8b9-400e-8781-d0d863ea6bdf",
+   "ts": "2026-11-11T05:49:03Z",
+   "offset_ms": 215,
+   "method": "GET",
+   "path": "/_next/static/css/app.css",
+   "status": 200,
+   "duration_ms": 9,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "c3dbdbbe-e163-4bf6-8647-2c20044d2c67",
+   "ts": "2026-11-11T05:49:03Z",
+   "offset_ms": 233,
+   "method": "GET",
+   "path": "/img/p/indigo-urban-high-top-1.svg",
+   "status": 200,
+   "duration_ms": 9,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "78ef261c-4a9a-454d-8915-9ae84de5deb1",
+   "ts": "2026-11-11T05:49:04Z",
+   "offset_ms": 262,
+   "method": "GET",
+   "path": "/_next/static/chunks/main.js",
+   "status": 200,
+   "duration_ms": 12,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "11998bed-c4c1-4f53-834d-b740860a7c11",
+   "ts": "2026-11-11T05:49:04Z",
+   "offset_ms": 270,
+   "method": "GET",
+   "path": "/img/p/baseball-cap-in-teal-1.svg",
+   "status": 200,
+   "duration_ms": 13,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "ed05d627-c7ae-4dc3-8946-e8826ac4b047",
+   "ts": "2026-11-11T05:49:04Z",
+   "offset_ms": 295,
+   "method": "GET",
+   "path": "/img/p/daily-wear-pintuck-kurta-in-teal-1.svg",
+   "status": 200,
+   "duration_ms": 12,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "eab61021-180e-48b0-8ed9-4c1e935390d5",
+   "ts": "2026-11-11T05:49:04Z",
+   "offset_ms": 392,
+   "method": "GET",
+   "path": "/favicon.ico",
+   "status": 200,
+   "duration_ms": 13,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "c3e80298-38e4-49ef-8723-0bfb7cfb44d0",
+   "ts": "2026-11-11T05:49:04Z",
+   "offset_ms": 497,
+   "method": "GET",
+   "path": "/img/p/ikat-print-kurta-in-olive-1.svg",
+   "status": 200,
+   "duration_ms": 9,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "a96abc63-abd9-4808-8da3-bdfd8846dc30",
+   "ts": "2026-11-11T05:49:04Z",
+   "offset_ms": 685,
+   "method": "GET",
+   "path": "/img/p/black-classic-formal-shirt-2.svg",
+   "status": 200,
+   "duration_ms": 12,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "4c291809-98d2-4998-8789-2e4e6b2d6ea6",
+   "ts": "2026-11-11T05:49:04Z",
+   "offset_ms": 793,
+   "method": "GET",
+   "path": "/_next/static/chunks/app.js",
+   "status": 200,
+   "duration_ms": 11,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "660a3024-1671-47b2-8598-cb46b4b449cd",
+   "ts": "2026-11-11T05:49:04Z",
+   "offset_ms": 1102,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 9,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "8def7f29-a2d9-4838-817f-31a4dda17f51",
+   "ts": "2026-11-11T05:49:05Z",
+   "offset_ms": 1589,
+   "method": "GET",
+   "path": "/api/products/SHT014/variants",
+   "status": 200,
+   "duration_ms": 50,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "dfcb93a7-a0d3-40bf-81ef-041efacd3f12",
+   "ts": "2026-11-11T05:49:06Z",
+   "offset_ms": 3084,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 201,
+   "duration_ms": 23,
+   "page_type": "cart_api",
+   "error_code": null,
+   "stage_id": "S5",
+   "is_asset": false
+  },
+  {
+   "request_id": "a6b21fbd-cf29-4502-8b43-55f428b59b6d",
+   "ts": "2026-11-11T05:49:07Z",
+   "offset_ms": 3903,
+   "method": "GET",
+   "path": "/cart",
+   "status": 200,
+   "duration_ms": 148,
+   "page_type": "cart",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "6ea8af65-441a-40e5-82ad-8ad0133d87b3",
+   "ts": "2026-11-11T05:49:07Z",
+   "offset_ms": 4223,
+   "method": "GET",
+   "path": "/img/p/grey-everyday-slip-on-2.svg",
+   "status": 200,
+   "duration_ms": 10,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "7539ed0b-eb01-47ed-8d0c-c3dc556a9691",
+   "ts": "2026-11-11T05:49:08Z",
+   "offset_ms": 4314,
+   "method": "GET",
+   "path": "/img/p/ankle-socks-pack-in-white-2.svg",
+   "status": 200,
+   "duration_ms": 18,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "aabff71e-2af7-46a0-8caa-18a246a03194",
+   "ts": "2026-11-11T05:49:08Z",
+   "offset_ms": 4642,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 7,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "9b590420-760f-4845-8954-25515484a8d2",
+   "ts": "2026-11-11T05:49:11Z",
+   "offset_ms": 8138,
+   "method": "GET",
+   "path": "/checkout",
+   "status": 200,
+   "duration_ms": 58,
+   "page_type": "checkout",
+   "error_code": null,
+   "stage_id": "S6",
+   "is_asset": false
+  },
+  {
+   "request_id": "6afc5638-ebdf-4e39-82df-d5a9c18a2b3f",
+   "ts": "2026-11-11T05:49:12Z",
+   "offset_ms": 8297,
+   "method": "GET",
+   "path": "/img/p/grey-everyday-slip-on-2.svg",
+   "status": 200,
+   "duration_ms": 9,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "51630cc4-3158-4bbe-8fe4-949f8bd2be25",
+   "ts": "2026-11-11T05:49:12Z",
+   "offset_ms": 8415,
+   "method": "GET",
+   "path": "/img/p/sling-crossbody-bag-in-white-1.svg",
+   "status": 200,
+   "duration_ms": 6,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "1dd4f361-2d32-4dba-8bcb-e86fef2888bd",
+   "ts": "2026-11-11T05:49:12Z",
+   "offset_ms": 8426,
+   "method": "GET",
+   "path": "/img/p/linen-mandarin-kurta-in-white-1.svg",
+   "status": 200,
+   "duration_ms": 10,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "9998797f-4732-4183-8a66-be703eda65db",
+   "ts": "2026-11-11T05:49:12Z",
+   "offset_ms": 8467,
+   "method": "GET",
+   "path": "/img/p/mirror-work-short-kurta-in-white-3.svg",
+   "status": 200,
+   "duration_ms": 14,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "466fb7ca-3a98-4f4f-8e31-11a82c974def",
+   "ts": "2026-11-11T05:49:12Z",
+   "offset_ms": 8506,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 9,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-11T05:49:03Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-11T05:49:05Z"
+  },
+  {
+   "stage_id": "S5",
+   "first_reached_ts": "2026-11-11T05:49:06Z"
+  },
+  {
+   "stage_id": "S6",
+   "first_reached_ts": "2026-11-11T05:49:11Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B99",
+   "name": "Unknown",
+   "stage": "S6",
+   "confidence": 0.3,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "9b590420-760f-4845-8954-25515484a8d2",
+     "summary": "GET /checkout -> 200"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

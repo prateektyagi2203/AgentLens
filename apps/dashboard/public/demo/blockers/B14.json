@@ -1,117 +1,85 @@
 {
  "window": {
-  "from": "2026-11-05",
-  "to": "2026-11-11",
+  "from": "2026-11-01",
+  "to": "2026-11-07",
   "days": 7
  },
  "blocker": {
   "blocker_id": "B14",
   "name": "robots.txt disallow",
   "stage": "S1",
-  "sessions_blocked": 20,
-  "share_of_failed": 0.005,
+  "sessions_blocked": 0,
+  "share_of_failed": 0.0,
   "risk_inr": {
-   "low": 1810,
-   "base": 3394,
-   "high": 5431
+   "low": 0,
+   "base": 0,
+   "high": 0
   },
   "replay_status": "not_run",
   "effort": "S",
-  "priority_score": 3394,
+  "priority_score": 0,
   "low_confidence": true
  },
- "description": "The agent fetched robots.txt, found its token disallowed, and left.",
- "detection": "Agent fetched robots.txt, the path is disallowed for its token, the agent left.",
+ "description": "robots.txt disallows the agent token from product or checkout paths and the agent leaves.",
+ "detection": "Rule B14 (robots.txt disallow) on the request log; evidence below.",
  "evidence": {
-  "top_error_codes": [
-   {
-    "code": "ROBOTS_DISALLOW",
-    "count": 20,
-    "share": 1
-   }
-  ],
-  "example_requests": [
-   {
-    "request_id": "req_B14_1",
-    "summary": "GET /robots.txt → 200 · User-agent: ChatGPT-User Disallow: /",
-    "count": 20
-   }
-  ],
-  "site_checks": [
-   {
-    "check_id": "chk_robots_txt",
-    "run_ts": "2026-11-11T16:55:00Z",
-    "check_name": "robots_txt",
-    "target": "/robots.txt",
-    "result": "warn",
-    "details": {
-     "allowed": [
-      "ChatGPT-User",
-      "Claude-User",
-      "Perplexity-User",
-      "Googlebot"
-     ],
-     "disallowed": [
-      "PerplexityBot"
-     ],
-     "message": "User-triggered agents allowed. PerplexityBot (search crawler) is disallowed."
-    }
-   }
-  ]
+  "top_error_codes": [],
+  "example_requests": [],
+  "site_checks": []
  },
  "risk_breakdown": {
-  "sessions_blocked": 20,
+  "sessions_blocked": 0,
   "recoverable_rate": 0.6,
-  "p_stage": 0.02999747474747475,
-  "aov_inr": 2200,
+  "p_stage": 0.0,
+  "aov_inr": 2200.0,
   "k": 4.285714285714286
  },
  "trend": [
   {
+   "date": "2026-11-01",
+   "sessions_blocked": 0
+  },
+  {
+   "date": "2026-11-02",
+   "sessions_blocked": 0
+  },
+  {
+   "date": "2026-11-03",
+   "sessions_blocked": 0
+  },
+  {
+   "date": "2026-11-04",
+   "sessions_blocked": 0
+  },
+  {
    "date": "2026-11-05",
-   "sessions_blocked": 3
+   "sessions_blocked": 0
   },
   {
    "date": "2026-11-06",
-   "sessions_blocked": 3
+   "sessions_blocked": 0
   },
   {
    "date": "2026-11-07",
-   "sessions_blocked": 3
-  },
-  {
-   "date": "2026-11-08",
-   "sessions_blocked": 2
-  },
-  {
-   "date": "2026-11-09",
-   "sessions_blocked": 3
-  },
-  {
-   "date": "2026-11-10",
-   "sessions_blocked": 3
-  },
-  {
-   "date": "2026-11-11",
-   "sessions_blocked": 3
+   "sessions_blocked": 0
   }
  ],
  "sample_sessions": [],
  "replays": [],
  "recommendation": {
   "rec_id": "rec_B14",
-  "run_id": "run_20261118_0610",
+  "run_id": "",
   "blocker_id": "B14",
   "blocker_name": "robots.txt disallow",
-  "title": "Review the robots policy for user-triggered agents",
-  "body": "Allow user-triggered fetchers that act for a shopper while keeping training crawlers blocked if desired.",
-  "why_it_helps": "A user-triggered agent honouring robots.txt cannot complete a purchase the shopper asked for.",
-  "how_to_verify": "The robots site check should pass for user-triggered agents.",
-  "verify_metric": "Site check: robots_txt",
+  "title": "robots.txt disallow: Review the robots policy for user-triggered agents.",
+  "body": "Review the robots policy for user-triggered agents.",
+  "why_it_helps": "robots.txt disallows the agent token from product or checkout paths and the agent leaves.",
+  "how_to_verify": "Agents stop leaving after fetching robots.txt.",
+  "verify_metric": "Agent sessions ending with B14 per day",
   "effort": "S",
-  "owner": "Content",
-  "priority_score": 3394,
-  "risk_inr_base": 3394,
+  "owner": "Security",
+  "priority_score": 0,
+  "risk_inr_base": 0,
   "status": "open",
   "fixed_annotation_id": null,
   "llm_explanation": null
