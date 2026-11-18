@@ -1,0 +1,6421 @@
+{
+  "generated_by": "apps/store/scripts/seed-catalog.ts",
+  "seed": 20261118,
+  "currency": "INR",
+  "categories": [
+    {
+      "slug": "mens-sneakers",
+      "name": "Men's sneakers"
+    },
+    {
+      "slug": "womens-kurtas",
+      "name": "Women's kurtas"
+    },
+    {
+      "slug": "mens-shirts",
+      "name": "Men's shirts"
+    },
+    {
+      "slug": "accessories",
+      "name": "Accessories"
+    }
+  ],
+  "products": [
+    {
+      "id": "SNK001",
+      "slug": "navy-court-sneaker",
+      "name": "Navy Court Sneaker",
+      "brand": "Desi Threads",
+      "category": "mens-sneakers",
+      "price": 3549,
+      "mrp": 4799,
+      "discount_pct": 26,
+      "images": [
+        "/img/p/navy-court-sneaker-1.svg",
+        "/img/p/navy-court-sneaker-2.svg",
+        "/img/p/navy-court-sneaker-3.svg"
+      ],
+      "description": "Navy Court Sneaker from Desi Threads. Made with full-grain leather. Cushioned insole, durable rubber outsole and a clean silhouette that pairs with everything from chinos to shorts.",
+      "attributes": {
+        "material": "Full-grain leather",
+        "fit": "Regular",
+        "colour": "Navy"
+      },
+      "variants": [
+        {
+          "sku": "SNK001-UK-6-NAVY",
+          "size": "UK 6",
+          "colour": "Navy",
+          "stock": 0
+        },
+        {
+          "sku": "SNK001-UK-7-NAVY",
+          "size": "UK 7",
+          "colour": "Navy",
+          "stock": 30
+        },
+        {
+          "sku": "SNK001-UK-8-NAVY",
+          "size": "UK 8",
+          "colour": "Navy",
+          "stock": 16
+        },
+        {
+          "sku": "SNK001-UK-9-NAVY",
+          "size": "UK 9",
+          "colour": "Navy",
+          "stock": 17
+        },
+        {
+          "sku": "SNK001-UK-10-NAVY",
+          "size": "UK 10",
+          "colour": "Navy",
+          "stock": 25
+        },
+        {
+          "sku": "SNK001-UK-11-NAVY",
+          "size": "UK 11",
+          "colour": "Navy",
+          "stock": 5
+        },
+        {
+          "sku": "SNK001-UK-6-MAROON",
+          "size": "UK 6",
+          "colour": "Maroon",
+          "stock": 16
+        },
+        {
+          "sku": "SNK001-UK-7-MAROON",
+          "size": "UK 7",
+          "colour": "Maroon",
+          "stock": 0
+        },
+        {
+          "sku": "SNK001-UK-8-MAROON",
+          "size": "UK 8",
+          "colour": "Maroon",
+          "stock": 17
+        },
+        {
+          "sku": "SNK001-UK-9-MAROON",
+          "size": "UK 9",
+          "colour": "Maroon",
+          "stock": 20
+        },
+        {
+          "sku": "SNK001-UK-10-MAROON",
+          "size": "UK 10",
+          "colour": "Maroon",
+          "stock": 16
+        },
+        {
+          "sku": "SNK001-UK-11-MAROON",
+          "size": "UK 11",
+          "colour": "Maroon",
+          "stock": 12
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>UK size</th><th>EU size</th><th>Foot length (cm)</th></tr></thead><tbody><tr><td>UK 6</td><td>40</td><td>24.5</td></tr><tr><td>UK 7</td><td>41</td><td>25.4</td></tr><tr><td>UK 8</td><td>42</td><td>26.2</td></tr><tr><td>UK 9</td><td>43</td><td>27.1</td></tr><tr><td>UK 10</td><td>44</td><td>27.9</td></tr><tr><td>UK 11</td><td>45</td><td>28.8</td></tr></tbody></table>",
+        "image": "/img/size/mens-sneakers.svg"
+      },
+      "return_policy": {
+        "window_days": 15,
+        "text": "15-day easy returns for unworn items with tags intact. Free pickup on prepaid orders."
+      },
+      "rating": {
+        "value": 4.4,
+        "count": 431
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "SNK002",
+      "slug": "maroon-street-runner",
+      "name": "Maroon Street Runner",
+      "brand": "Desi Threads",
+      "category": "mens-sneakers",
+      "price": 3709,
+      "mrp": 5299,
+      "discount_pct": 30,
+      "images": [
+        "/img/p/maroon-street-runner-1.svg",
+        "/img/p/maroon-street-runner-2.svg",
+        "/img/p/maroon-street-runner-3.svg"
+      ],
+      "description": "Maroon Street Runner from Desi Threads. Made with recycled mesh. Cushioned insole, durable rubber outsole and a clean silhouette that pairs with everything from chinos to shorts.",
+      "attributes": {
+        "material": "Recycled mesh",
+        "fit": "Regular",
+        "colour": "Maroon"
+      },
+      "variants": [
+        {
+          "sku": "SNK002-UK-6-MAROON",
+          "size": "UK 6",
+          "colour": "Maroon",
+          "stock": 32
+        },
+        {
+          "sku": "SNK002-UK-7-MAROON",
+          "size": "UK 7",
+          "colour": "Maroon",
+          "stock": 29
+        },
+        {
+          "sku": "SNK002-UK-8-MAROON",
+          "size": "UK 8",
+          "colour": "Maroon",
+          "stock": 31
+        },
+        {
+          "sku": "SNK002-UK-9-MAROON",
+          "size": "UK 9",
+          "colour": "Maroon",
+          "stock": 34
+        },
+        {
+          "sku": "SNK002-UK-10-MAROON",
+          "size": "UK 10",
+          "colour": "Maroon",
+          "stock": 11
+        },
+        {
+          "sku": "SNK002-UK-11-MAROON",
+          "size": "UK 11",
+          "colour": "Maroon",
+          "stock": 18
+        },
+        {
+          "sku": "SNK002-UK-6-PINK",
+          "size": "UK 6",
+          "colour": "Pink",
+          "stock": 38
+        },
+        {
+          "sku": "SNK002-UK-7-PINK",
+          "size": "UK 7",
+          "colour": "Pink",
+          "stock": 22
+        },
+        {
+          "sku": "SNK002-UK-8-PINK",
+          "size": "UK 8",
+          "colour": "Pink",
+          "stock": 36
+        },
+        {
+          "sku": "SNK002-UK-9-PINK",
+          "size": "UK 9",
+          "colour": "Pink",
+          "stock": 23
+        },
+        {
+          "sku": "SNK002-UK-10-PINK",
+          "size": "UK 10",
+          "colour": "Pink",
+          "stock": 28
+        },
+        {
+          "sku": "SNK002-UK-11-PINK",
+          "size": "UK 11",
+          "colour": "Pink",
+          "stock": 17
+        },
+        {
+          "sku": "SNK002-UK-6-MUSTARD",
+          "size": "UK 6",
+          "colour": "Mustard",
+          "stock": 15
+        },
+        {
+          "sku": "SNK002-UK-7-MUSTARD",
+          "size": "UK 7",
+          "colour": "Mustard",
+          "stock": 0
+        },
+        {
+          "sku": "SNK002-UK-8-MUSTARD",
+          "size": "UK 8",
+          "colour": "Mustard",
+          "stock": 32
+        },
+        {
+          "sku": "SNK002-UK-9-MUSTARD",
+          "size": "UK 9",
+          "colour": "Mustard",
+          "stock": 16
+        },
+        {
+          "sku": "SNK002-UK-10-MUSTARD",
+          "size": "UK 10",
+          "colour": "Mustard",
+          "stock": 33
+        },
+        {
+          "sku": "SNK002-UK-11-MUSTARD",
+          "size": "UK 11",
+          "colour": "Mustard",
+          "stock": 36
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>UK size</th><th>EU size</th><th>Foot length (cm)</th></tr></thead><tbody><tr><td>UK 6</td><td>40</td><td>24.5</td></tr><tr><td>UK 7</td><td>41</td><td>25.4</td></tr><tr><td>UK 8</td><td>42</td><td>26.2</td></tr><tr><td>UK 9</td><td>43</td><td>27.1</td></tr><tr><td>UK 10</td><td>44</td><td>27.9</td></tr><tr><td>UK 11</td><td>45</td><td>28.8</td></tr></tbody></table>",
+        "image": "/img/size/mens-sneakers.svg"
+      },
+      "return_policy": {
+        "window_days": 15,
+        "text": "15-day easy returns for unworn items with tags intact. Free pickup on prepaid orders."
+      },
+      "rating": {
+        "value": 3.9,
+        "count": 320
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "SNK003",
+      "slug": "black-classic-canvas-low",
+      "name": "Black Classic Canvas Low",
+      "brand": "Desi Threads",
+      "category": "mens-sneakers",
+      "price": 1679,
+      "mrp": 2899,
+      "discount_pct": 42,
+      "images": [
+        "/img/p/black-classic-canvas-low-1.svg",
+        "/img/p/black-classic-canvas-low-2.svg",
+        "/img/p/black-classic-canvas-low-3.svg"
+      ],
+      "description": "Black Classic Canvas Low from Desi Threads. Made with cotton canvas. Cushioned insole, durable rubber outsole and a clean silhouette that pairs with everything from chinos to shorts.",
+      "attributes": {
+        "material": "Cotton canvas",
+        "fit": "Wide",
+        "colour": "Black"
+      },
+      "variants": [
+        {
+          "sku": "SNK003-UK-6-BLACK",
+          "size": "UK 6",
+          "colour": "Black",
+          "stock": 25
+        },
+        {
+          "sku": "SNK003-UK-7-BLACK",
+          "size": "UK 7",
+          "colour": "Black",
+          "stock": 21
+        },
+        {
+          "sku": "SNK003-UK-8-BLACK",
+          "size": "UK 8",
+          "colour": "Black",
+          "stock": 0
+        },
+        {
+          "sku": "SNK003-UK-9-BLACK",
+          "size": "UK 9",
+          "colour": "Black",
+          "stock": 4
+        },
+        {
+          "sku": "SNK003-UK-10-BLACK",
+          "size": "UK 10",
+          "colour": "Black",
+          "stock": 27
+        },
+        {
+          "sku": "SNK003-UK-11-BLACK",
+          "size": "UK 11",
+          "colour": "Black",
+          "stock": 14
+        },
+        {
+          "sku": "SNK003-UK-6-NAVY",
+          "size": "UK 6",
+          "colour": "Navy",
+          "stock": 23
+        },
+        {
+          "sku": "SNK003-UK-7-NAVY",
+          "size": "UK 7",
+          "colour": "Navy",
+          "stock": 19
+        },
+        {
+          "sku": "SNK003-UK-8-NAVY",
+          "size": "UK 8",
+          "colour": "Navy",
+          "stock": 7
+        },
+        {
+          "sku": "SNK003-UK-9-NAVY",
+          "size": "UK 9",
+          "colour": "Navy",
+          "stock": 17
+        },
+        {
+          "sku": "SNK003-UK-10-NAVY",
+          "size": "UK 10",
+          "colour": "Navy",
+          "stock": 4
+        },
+        {
+          "sku": "SNK003-UK-11-NAVY",
+          "size": "UK 11",
+          "colour": "Navy",
+          "stock": 35
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>UK size</th><th>EU size</th><th>Foot length (cm)</th></tr></thead><tbody><tr><td>UK 6</td><td>40</td><td>24.5</td></tr><tr><td>UK 7</td><td>41</td><td>25.4</td></tr><tr><td>UK 8</td><td>42</td><td>26.2</td></tr><tr><td>UK 9</td><td>43</td><td>27.1</td></tr><tr><td>UK 10</td><td>44</td><td>27.9</td></tr><tr><td>UK 11</td><td>45</td><td>28.8</td></tr></tbody></table>",
+        "image": "/img/size/mens-sneakers.svg"
+      },
+      "return_policy": {
+        "window_days": 15,
+        "text": "15-day easy returns for unworn items with tags intact. Free pickup on prepaid orders."
+      },
+      "rating": {
+        "value": 3.6,
+        "count": 259
+      },
+      "price_mismatch": true,
+      "cart_price": 1879
+    },
+    {
+      "id": "SNK004",
+      "slug": "grey-retro-trainer",
+      "name": "Grey Retro Trainer",
+      "brand": "Desi Threads",
+      "category": "mens-sneakers",
+      "price": 2139,
+      "mrp": 3899,
+      "discount_pct": 45,
+      "images": [
+        "/img/p/grey-retro-trainer-1.svg",
+        "/img/p/grey-retro-trainer-2.svg",
+        "/img/p/grey-retro-trainer-3.svg"
+      ],
+      "description": "Grey Retro Trainer from Desi Threads. Made with recycled mesh. Cushioned insole, durable rubber outsole and a clean silhouette that pairs with everything from chinos to shorts.",
+      "attributes": {
+        "material": "Recycled mesh",
+        "fit": "Wide",
+        "colour": "Grey"
+      },
+      "variants": [
+        {
+          "sku": "SNK004-UK-6-GREY",
+          "size": "UK 6",
+          "colour": "Grey",
+          "stock": 9
+        },
+        {
+          "sku": "SNK004-UK-7-GREY",
+          "size": "UK 7",
+          "colour": "Grey",
+          "stock": 3
+        },
+        {
+          "sku": "SNK004-UK-8-GREY",
+          "size": "UK 8",
+          "colour": "Grey",
+          "stock": 36
+        },
+        {
+          "sku": "SNK004-UK-9-GREY",
+          "size": "UK 9",
+          "colour": "Grey",
+          "stock": 30
+        },
+        {
+          "sku": "SNK004-UK-10-GREY",
+          "size": "UK 10",
+          "colour": "Grey",
+          "stock": 27
+        },
+        {
+          "sku": "SNK004-UK-11-GREY",
+          "size": "UK 11",
+          "colour": "Grey",
+          "stock": 26
+        },
+        {
+          "sku": "SNK004-UK-6-INDIGO",
+          "size": "UK 6",
+          "colour": "Indigo",
+          "stock": 5
+        },
+        {
+          "sku": "SNK004-UK-7-INDIGO",
+          "size": "UK 7",
+          "colour": "Indigo",
+          "stock": 9
+        },
+        {
+          "sku": "SNK004-UK-8-INDIGO",
+          "size": "UK 8",
+          "colour": "Indigo",
+          "stock": 20
+        },
+        {
+          "sku": "SNK004-UK-9-INDIGO",
+          "size": "UK 9",
+          "colour": "Indigo",
+          "stock": 36
+        },
+        {
+          "sku": "SNK004-UK-10-INDIGO",
+          "size": "UK 10",
+          "colour": "Indigo",
+          "stock": 35
+        },
+        {
+          "sku": "SNK004-UK-11-INDIGO",
+          "size": "UK 11",
+          "colour": "Indigo",
+          "stock": 13
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>UK size</th><th>EU size</th><th>Foot length (cm)</th></tr></thead><tbody><tr><td>UK 6</td><td>40</td><td>24.5</td></tr><tr><td>UK 7</td><td>41</td><td>25.4</td></tr><tr><td>UK 8</td><td>42</td><td>26.2</td></tr><tr><td>UK 9</td><td>43</td><td>27.1</td></tr><tr><td>UK 10</td><td>44</td><td>27.9</td></tr><tr><td>UK 11</td><td>45</td><td>28.8</td></tr></tbody></table>",
+        "image": "/img/size/mens-sneakers.svg"
+      },
+      "return_policy": {
+        "window_days": 15,
+        "text": "15-day easy returns for unworn items with tags intact. Free pickup on prepaid orders."
+      },
+      "rating": {
+        "value": 3.7,
+        "count": 748
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "SNK005",
+      "slug": "grey-everyday-slip-on",
+      "name": "Grey Everyday Slip-On",
+      "brand": "Desi Threads",
+      "category": "mens-sneakers",
+      "price": 2949,
+      "mrp": 4099,
+      "discount_pct": 28,
+      "images": [
+        "/img/p/grey-everyday-slip-on-1.svg",
+        "/img/p/grey-everyday-slip-on-2.svg",
+        "/img/p/grey-everyday-slip-on-3.svg"
+      ],
+      "description": "Grey Everyday Slip-On from Desi Threads. Made with full-grain leather. Cushioned insole, durable rubber outsole and a clean silhouette that pairs with everything from chinos to shorts.",
+      "attributes": {
+        "material": "Full-grain leather",
+        "fit": "Regular",
+        "colour": "Grey"
+      },
+      "variants": [
+        {
+          "sku": "SNK005-UK-6-GREY",
+          "size": "UK 6",
+          "colour": "Grey",
+          "stock": 24
+        },
+        {
+          "sku": "SNK005-UK-7-GREY",
+          "size": "UK 7",
+          "colour": "Grey",
+          "stock": 0
+        },
+        {
+          "sku": "SNK005-UK-8-GREY",
+          "size": "UK 8",
+          "colour": "Grey",
+          "stock": 21
+        },
+        {
+          "sku": "SNK005-UK-9-GREY",
+          "size": "UK 9",
+          "colour": "Grey",
+          "stock": 21
+        },
+        {
+          "sku": "SNK005-UK-10-GREY",
+          "size": "UK 10",
+          "colour": "Grey",
+          "stock": 29
+        },
+        {
+          "sku": "SNK005-UK-11-GREY",
+          "size": "UK 11",
+          "colour": "Grey",
+          "stock": 20
+        },
+        {
+          "sku": "SNK005-UK-6-PINK",
+          "size": "UK 6",
+          "colour": "Pink",
+          "stock": 40
+        },
+        {
+          "sku": "SNK005-UK-7-PINK",
+          "size": "UK 7",
+          "colour": "Pink",
+          "stock": 6
+        },
+        {
+          "sku": "SNK005-UK-8-PINK",
+          "size": "UK 8",
+          "colour": "Pink",
+          "stock": 31
+        },
+        {
+          "sku": "SNK005-UK-9-PINK",
+          "size": "UK 9",
+          "colour": "Pink",
+          "stock": 32
+        },
+        {
+          "sku": "SNK005-UK-10-PINK",
+          "size": "UK 10",
+          "colour": "Pink",
+          "stock": 30
+        },
+        {
+          "sku": "SNK005-UK-11-PINK",
+          "size": "UK 11",
+          "colour": "Pink",
+          "stock": 35
+        },
+        {
+          "sku": "SNK005-UK-6-NAVY",
+          "size": "UK 6",
+          "colour": "Navy",
+          "stock": 17
+        },
+        {
+          "sku": "SNK005-UK-7-NAVY",
+          "size": "UK 7",
+          "colour": "Navy",
+          "stock": 9
+        },
+        {
+          "sku": "SNK005-UK-8-NAVY",
+          "size": "UK 8",
+          "colour": "Navy",
+          "stock": 28
+        },
+        {
+          "sku": "SNK005-UK-9-NAVY",
+          "size": "UK 9",
+          "colour": "Navy",
+          "stock": 0
+        },
+        {
+          "sku": "SNK005-UK-10-NAVY",
+          "size": "UK 10",
+          "colour": "Navy",
+          "stock": 0
+        },
+        {
+          "sku": "SNK005-UK-11-NAVY",
+          "size": "UK 11",
+          "colour": "Navy",
+          "stock": 6
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>UK size</th><th>EU size</th><th>Foot length (cm)</th></tr></thead><tbody><tr><td>UK 6</td><td>40</td><td>24.5</td></tr><tr><td>UK 7</td><td>41</td><td>25.4</td></tr><tr><td>UK 8</td><td>42</td><td>26.2</td></tr><tr><td>UK 9</td><td>43</td><td>27.1</td></tr><tr><td>UK 10</td><td>44</td><td>27.9</td></tr><tr><td>UK 11</td><td>45</td><td>28.8</td></tr></tbody></table>",
+        "image": "/img/size/mens-sneakers.svg"
+      },
+      "return_policy": {
+        "window_days": 15,
+        "text": "15-day easy returns for unworn items with tags intact. Free pickup on prepaid orders."
+      },
+      "rating": {
+        "value": 4.8,
+        "count": 584
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "SNK006",
+      "slug": "indigo-urban-high-top",
+      "name": "Indigo Urban High-Top",
+      "brand": "Desi Threads",
+      "category": "mens-sneakers",
+      "price": 2459,
+      "mrp": 3899,
+      "discount_pct": 37,
+      "images": [
+        "/img/p/indigo-urban-high-top-1.svg",
+        "/img/p/indigo-urban-high-top-2.svg",
+        "/img/p/indigo-urban-high-top-3.svg"
+      ],
+      "description": "Indigo Urban High-Top from Desi Threads. Made with cotton canvas. Cushioned insole, durable rubber outsole and a clean silhouette that pairs with everything from chinos to shorts.",
+      "attributes": {
+        "material": "Cotton canvas",
+        "fit": "Regular",
+        "colour": "Indigo"
+      },
+      "variants": [
+        {
+          "sku": "SNK006-UK-6-INDIGO",
+          "size": "UK 6",
+          "colour": "Indigo",
+          "stock": 0
+        },
+        {
+          "sku": "SNK006-UK-7-INDIGO",
+          "size": "UK 7",
+          "colour": "Indigo",
+          "stock": 7
+        },
+        {
+          "sku": "SNK006-UK-8-INDIGO",
+          "size": "UK 8",
+          "colour": "Indigo",
+          "stock": 13
+        },
+        {
+          "sku": "SNK006-UK-9-INDIGO",
+          "size": "UK 9",
+          "colour": "Indigo",
+          "stock": 0
+        },
+        {
+          "sku": "SNK006-UK-10-INDIGO",
+          "size": "UK 10",
+          "colour": "Indigo",
+          "stock": 25
+        },
+        {
+          "sku": "SNK006-UK-11-INDIGO",
+          "size": "UK 11",
+          "colour": "Indigo",
+          "stock": 3
+        },
+        {
+          "sku": "SNK006-UK-6-SKY-BLUE",
+          "size": "UK 6",
+          "colour": "Sky Blue",
+          "stock": 39
+        },
+        {
+          "sku": "SNK006-UK-7-SKY-BLUE",
+          "size": "UK 7",
+          "colour": "Sky Blue",
+          "stock": 0
+        },
+        {
+          "sku": "SNK006-UK-8-SKY-BLUE",
+          "size": "UK 8",
+          "colour": "Sky Blue",
+          "stock": 37
+        },
+        {
+          "sku": "SNK006-UK-9-SKY-BLUE",
+          "size": "UK 9",
+          "colour": "Sky Blue",
+          "stock": 0
+        },
+        {
+          "sku": "SNK006-UK-10-SKY-BLUE",
+          "size": "UK 10",
+          "colour": "Sky Blue",
+          "stock": 0
+        },
+        {
+          "sku": "SNK006-UK-11-SKY-BLUE",
+          "size": "UK 11",
+          "colour": "Sky Blue",
+          "stock": 34
+        },
+        {
+          "sku": "SNK006-UK-6-PINK",
+          "size": "UK 6",
+          "colour": "Pink",
+          "stock": 7
+        },
+        {
+          "sku": "SNK006-UK-7-PINK",
+          "size": "UK 7",
+          "colour": "Pink",
+          "stock": 29
+        },
+        {
+          "sku": "SNK006-UK-8-PINK",
+          "size": "UK 8",
+          "colour": "Pink",
+          "stock": 27
+        },
+        {
+          "sku": "SNK006-UK-9-PINK",
+          "size": "UK 9",
+          "colour": "Pink",
+          "stock": 24
+        },
+        {
+          "sku": "SNK006-UK-10-PINK",
+          "size": "UK 10",
+          "colour": "Pink",
+          "stock": 13
+        },
+        {
+          "sku": "SNK006-UK-11-PINK",
+          "size": "UK 11",
+          "colour": "Pink",
+          "stock": 25
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>UK size</th><th>EU size</th><th>Foot length (cm)</th></tr></thead><tbody><tr><td>UK 6</td><td>40</td><td>24.5</td></tr><tr><td>UK 7</td><td>41</td><td>25.4</td></tr><tr><td>UK 8</td><td>42</td><td>26.2</td></tr><tr><td>UK 9</td><td>43</td><td>27.1</td></tr><tr><td>UK 10</td><td>44</td><td>27.9</td></tr><tr><td>UK 11</td><td>45</td><td>28.8</td></tr></tbody></table>",
+        "image": "/img/size/mens-sneakers.svg"
+      },
+      "return_policy": {
+        "window_days": 15,
+        "text": "15-day easy returns for unworn items with tags intact. Free pickup on prepaid orders."
+      },
+      "rating": {
+        "value": 3.7,
+        "count": 679
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "SNK007",
+      "slug": "white-sprint-knit-runner",
+      "name": "White Sprint Knit Runner",
+      "brand": "Desi Threads",
+      "category": "mens-sneakers",
+      "price": 3819,
+      "mrp": 5099,
+      "discount_pct": 25,
+      "images": [
+        "/img/p/white-sprint-knit-runner-1.svg",
+        "/img/p/white-sprint-knit-runner-2.svg",
+        "/img/p/white-sprint-knit-runner-3.svg"
+      ],
+      "description": "White Sprint Knit Runner from Desi Threads. Made with suede. Cushioned insole, durable rubber outsole and a clean silhouette that pairs with everything from chinos to shorts.",
+      "attributes": {
+        "material": "Suede",
+        "fit": "Regular",
+        "colour": "White"
+      },
+      "variants": [
+        {
+          "sku": "SNK007-UK-6-WHITE",
+          "size": "UK 6",
+          "colour": "White",
+          "stock": 3
+        },
+        {
+          "sku": "SNK007-UK-7-WHITE",
+          "size": "UK 7",
+          "colour": "White",
+          "stock": 36
+        },
+        {
+          "sku": "SNK007-UK-8-WHITE",
+          "size": "UK 8",
+          "colour": "White",
+          "stock": 33
+        },
+        {
+          "sku": "SNK007-UK-9-WHITE",
+          "size": "UK 9",
+          "colour": "White",
+          "stock": 25
+        },
+        {
+          "sku": "SNK007-UK-10-WHITE",
+          "size": "UK 10",
+          "colour": "White",
+          "stock": 8
+        },
+        {
+          "sku": "SNK007-UK-11-WHITE",
+          "size": "UK 11",
+          "colour": "White",
+          "stock": 36
+        },
+        {
+          "sku": "SNK007-UK-6-MAROON",
+          "size": "UK 6",
+          "colour": "Maroon",
+          "stock": 27
+        },
+        {
+          "sku": "SNK007-UK-7-MAROON",
+          "size": "UK 7",
+          "colour": "Maroon",
+          "stock": 18
+        },
+        {
+          "sku": "SNK007-UK-8-MAROON",
+          "size": "UK 8",
+          "colour": "Maroon",
+          "stock": 22
+        },
+        {
+          "sku": "SNK007-UK-9-MAROON",
+          "size": "UK 9",
+          "colour": "Maroon",
+          "stock": 25
+        },
+        {
+          "sku": "SNK007-UK-10-MAROON",
+          "size": "UK 10",
+          "colour": "Maroon",
+          "stock": 34
+        },
+        {
+          "sku": "SNK007-UK-11-MAROON",
+          "size": "UK 11",
+          "colour": "Maroon",
+          "stock": 35
+        },
+        {
+          "sku": "SNK007-UK-6-TAN",
+          "size": "UK 6",
+          "colour": "Tan",
+          "stock": 25
+        },
+        {
+          "sku": "SNK007-UK-7-TAN",
+          "size": "UK 7",
+          "colour": "Tan",
+          "stock": 32
+        },
+        {
+          "sku": "SNK007-UK-8-TAN",
+          "size": "UK 8",
+          "colour": "Tan",
+          "stock": 33
+        },
+        {
+          "sku": "SNK007-UK-9-TAN",
+          "size": "UK 9",
+          "colour": "Tan",
+          "stock": 0
+        },
+        {
+          "sku": "SNK007-UK-10-TAN",
+          "size": "UK 10",
+          "colour": "Tan",
+          "stock": 8
+        },
+        {
+          "sku": "SNK007-UK-11-TAN",
+          "size": "UK 11",
+          "colour": "Tan",
+          "stock": 39
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>UK size</th><th>EU size</th><th>Foot length (cm)</th></tr></thead><tbody><tr><td>UK 6</td><td>40</td><td>24.5</td></tr><tr><td>UK 7</td><td>41</td><td>25.4</td></tr><tr><td>UK 8</td><td>42</td><td>26.2</td></tr><tr><td>UK 9</td><td>43</td><td>27.1</td></tr><tr><td>UK 10</td><td>44</td><td>27.9</td></tr><tr><td>UK 11</td><td>45</td><td>28.8</td></tr></tbody></table>",
+        "image": "/img/size/mens-sneakers.svg"
+      },
+      "return_policy": {
+        "window_days": 15,
+        "text": "15-day easy returns for unworn items with tags intact. Free pickup on prepaid orders."
+      },
+      "rating": {
+        "value": 4.6,
+        "count": 329
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "SNK008",
+      "slug": "maroon-heritage-leather-sneaker",
+      "name": "Maroon Heritage Leather Sneaker",
+      "brand": "Desi Threads",
+      "category": "mens-sneakers",
+      "price": 2169,
+      "mrp": 3799,
+      "discount_pct": 43,
+      "images": [
+        "/img/p/maroon-heritage-leather-sneaker-1.svg",
+        "/img/p/maroon-heritage-leather-sneaker-2.svg",
+        "/img/p/maroon-heritage-leather-sneaker-3.svg"
+      ],
+      "description": "Maroon Heritage Leather Sneaker from Desi Threads. Made with knit upper. Cushioned insole, durable rubber outsole and a clean silhouette that pairs with everything from chinos to shorts.",
+      "attributes": {
+        "material": "Knit upper",
+        "fit": "Wide",
+        "colour": "Maroon"
+      },
+      "variants": [
+        {
+          "sku": "SNK008-UK-6-MAROON",
+          "size": "UK 6",
+          "colour": "Maroon",
+          "stock": 33
+        },
+        {
+          "sku": "SNK008-UK-7-MAROON",
+          "size": "UK 7",
+          "colour": "Maroon",
+          "stock": 9
+        },
+        {
+          "sku": "SNK008-UK-8-MAROON",
+          "size": "UK 8",
+          "colour": "Maroon",
+          "stock": 14
+        },
+        {
+          "sku": "SNK008-UK-9-MAROON",
+          "size": "UK 9",
+          "colour": "Maroon",
+          "stock": 16
+        },
+        {
+          "sku": "SNK008-UK-10-MAROON",
+          "size": "UK 10",
+          "colour": "Maroon",
+          "stock": 33
+        },
+        {
+          "sku": "SNK008-UK-11-MAROON",
+          "size": "UK 11",
+          "colour": "Maroon",
+          "stock": 27
+        },
+        {
+          "sku": "SNK008-UK-6-TEAL",
+          "size": "UK 6",
+          "colour": "Teal",
+          "stock": 11
+        },
+        {
+          "sku": "SNK008-UK-7-TEAL",
+          "size": "UK 7",
+          "colour": "Teal",
+          "stock": 14
+        },
+        {
+          "sku": "SNK008-UK-8-TEAL",
+          "size": "UK 8",
+          "colour": "Teal",
+          "stock": 22
+        },
+        {
+          "sku": "SNK008-UK-9-TEAL",
+          "size": "UK 9",
+          "colour": "Teal",
+          "stock": 39
+        },
+        {
+          "sku": "SNK008-UK-10-TEAL",
+          "size": "UK 10",
+          "colour": "Teal",
+          "stock": 14
+        },
+        {
+          "sku": "SNK008-UK-11-TEAL",
+          "size": "UK 11",
+          "colour": "Teal",
+          "stock": 32
+        },
+        {
+          "sku": "SNK008-UK-6-MUSTARD",
+          "size": "UK 6",
+          "colour": "Mustard",
+          "stock": 4
+        },
+        {
+          "sku": "SNK008-UK-7-MUSTARD",
+          "size": "UK 7",
+          "colour": "Mustard",
+          "stock": 0
+        },
+        {
+          "sku": "SNK008-UK-8-MUSTARD",
+          "size": "UK 8",
+          "colour": "Mustard",
+          "stock": 11
+        },
+        {
+          "sku": "SNK008-UK-9-MUSTARD",
+          "size": "UK 9",
+          "colour": "Mustard",
+          "stock": 0
+        },
+        {
+          "sku": "SNK008-UK-10-MUSTARD",
+          "size": "UK 10",
+          "colour": "Mustard",
+          "stock": 11
+        },
+        {
+          "sku": "SNK008-UK-11-MUSTARD",
+          "size": "UK 11",
+          "colour": "Mustard",
+          "stock": 23
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>UK size</th><th>EU size</th><th>Foot length (cm)</th></tr></thead><tbody><tr><td>UK 6</td><td>40</td><td>24.5</td></tr><tr><td>UK 7</td><td>41</td><td>25.4</td></tr><tr><td>UK 8</td><td>42</td><td>26.2</td></tr><tr><td>UK 9</td><td>43</td><td>27.1</td></tr><tr><td>UK 10</td><td>44</td><td>27.9</td></tr><tr><td>UK 11</td><td>45</td><td>28.8</td></tr></tbody></table>",
+        "image": "/img/size/mens-sneakers.svg"
+      },
+      "return_policy": {
+        "window_days": 15,
+        "text": "15-day easy returns for unworn items with tags intact. Free pickup on prepaid orders."
+      },
+      "rating": {
+        "value": 4.8,
+        "count": 581
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "SNK009",
+      "slug": "tan-pace-lite-trainer",
+      "name": "Tan Pace Lite Trainer",
+      "brand": "Desi Threads",
+      "category": "mens-sneakers",
+      "price": 4329,
+      "mrp": 5099,
+      "discount_pct": 15,
+      "images": [
+        "/img/p/tan-pace-lite-trainer-1.svg",
+        "/img/p/tan-pace-lite-trainer-2.svg",
+        "/img/p/tan-pace-lite-trainer-3.svg"
+      ],
+      "description": "Tan Pace Lite Trainer from Desi Threads. Made with suede. Cushioned insole, durable rubber outsole and a clean silhouette that pairs with everything from chinos to shorts.",
+      "attributes": {
+        "material": "Suede",
+        "fit": "Snug",
+        "colour": "Tan"
+      },
+      "variants": [
+        {
+          "sku": "SNK009-UK-6-TAN",
+          "size": "UK 6",
+          "colour": "Tan",
+          "stock": 20
+        },
+        {
+          "sku": "SNK009-UK-7-TAN",
+          "size": "UK 7",
+          "colour": "Tan",
+          "stock": 24
+        },
+        {
+          "sku": "SNK009-UK-8-TAN",
+          "size": "UK 8",
+          "colour": "Tan",
+          "stock": 37
+        },
+        {
+          "sku": "SNK009-UK-9-TAN",
+          "size": "UK 9",
+          "colour": "Tan",
+          "stock": 20
+        },
+        {
+          "sku": "SNK009-UK-10-TAN",
+          "size": "UK 10",
+          "colour": "Tan",
+          "stock": 36
+        },
+        {
+          "sku": "SNK009-UK-11-TAN",
+          "size": "UK 11",
+          "colour": "Tan",
+          "stock": 20
+        },
+        {
+          "sku": "SNK009-UK-6-BLACK",
+          "size": "UK 6",
+          "colour": "Black",
+          "stock": 20
+        },
+        {
+          "sku": "SNK009-UK-7-BLACK",
+          "size": "UK 7",
+          "colour": "Black",
+          "stock": 8
+        },
+        {
+          "sku": "SNK009-UK-8-BLACK",
+          "size": "UK 8",
+          "colour": "Black",
+          "stock": 12
+        },
+        {
+          "sku": "SNK009-UK-9-BLACK",
+          "size": "UK 9",
+          "colour": "Black",
+          "stock": 10
+        },
+        {
+          "sku": "SNK009-UK-10-BLACK",
+          "size": "UK 10",
+          "colour": "Black",
+          "stock": 19
+        },
+        {
+          "sku": "SNK009-UK-11-BLACK",
+          "size": "UK 11",
+          "colour": "Black",
+          "stock": 32
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>UK size</th><th>EU size</th><th>Foot length (cm)</th></tr></thead><tbody><tr><td>UK 6</td><td>40</td><td>24.5</td></tr><tr><td>UK 7</td><td>41</td><td>25.4</td></tr><tr><td>UK 8</td><td>42</td><td>26.2</td></tr><tr><td>UK 9</td><td>43</td><td>27.1</td></tr><tr><td>UK 10</td><td>44</td><td>27.9</td></tr><tr><td>UK 11</td><td>45</td><td>28.8</td></tr></tbody></table>",
+        "image": "/img/size/mens-sneakers.svg"
+      },
+      "return_policy": {
+        "window_days": 15,
+        "text": "15-day easy returns for unworn items with tags intact. Free pickup on prepaid orders."
+      },
+      "rating": {
+        "value": 4.2,
+        "count": 319
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "SNK010",
+      "slug": "indigo-terrain-trail-sneaker",
+      "name": "Indigo Terrain Trail Sneaker",
+      "brand": "Desi Threads",
+      "category": "mens-sneakers",
+      "price": 3519,
+      "mrp": 5499,
+      "discount_pct": 36,
+      "images": [
+        "/img/p/indigo-terrain-trail-sneaker-1.svg",
+        "/img/p/indigo-terrain-trail-sneaker-2.svg",
+        "/img/p/indigo-terrain-trail-sneaker-3.svg"
+      ],
+      "description": "Indigo Terrain Trail Sneaker from Desi Threads. Made with full-grain leather. Cushioned insole, durable rubber outsole and a clean silhouette that pairs with everything from chinos to shorts.",
+      "attributes": {
+        "material": "Full-grain leather",
+        "fit": "Snug",
+        "colour": "Indigo"
+      },
+      "variants": [
+        {
+          "sku": "SNK010-UK-6-INDIGO",
+          "size": "UK 6",
+          "colour": "Indigo",
+          "stock": 38
+        },
+        {
+          "sku": "SNK010-UK-7-INDIGO",
+          "size": "UK 7",
+          "colour": "Indigo",
+          "stock": 9
+        },
+        {
+          "sku": "SNK010-UK-8-INDIGO",
+          "size": "UK 8",
+          "colour": "Indigo",
+          "stock": 35
+        },
+        {
+          "sku": "SNK010-UK-9-INDIGO",
+          "size": "UK 9",
+          "colour": "Indigo",
+          "stock": 9
+        },
+        {
+          "sku": "SNK010-UK-10-INDIGO",
+          "size": "UK 10",
+          "colour": "Indigo",
+          "stock": 5
+        },
+        {
+          "sku": "SNK010-UK-11-INDIGO",
+          "size": "UK 11",
+          "colour": "Indigo",
+          "stock": 37
+        },
+        {
+          "sku": "SNK010-UK-6-SKY-BLUE",
+          "size": "UK 6",
+          "colour": "Sky Blue",
+          "stock": 12
+        },
+        {
+          "sku": "SNK010-UK-7-SKY-BLUE",
+          "size": "UK 7",
+          "colour": "Sky Blue",
+          "stock": 12
+        },
+        {
+          "sku": "SNK010-UK-8-SKY-BLUE",
+          "size": "UK 8",
+          "colour": "Sky Blue",
+          "stock": 12
+        },
+        {
+          "sku": "SNK010-UK-9-SKY-BLUE",
+          "size": "UK 9",
+          "colour": "Sky Blue",
+          "stock": 19
+        },
+        {
+          "sku": "SNK010-UK-10-SKY-BLUE",
+          "size": "UK 10",
+          "colour": "Sky Blue",
+          "stock": 24
+        },
+        {
+          "sku": "SNK010-UK-11-SKY-BLUE",
+          "size": "UK 11",
+          "colour": "Sky Blue",
+          "stock": 25
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>UK size</th><th>EU size</th><th>Foot length (cm)</th></tr></thead><tbody><tr><td>UK 6</td><td>40</td><td>24.5</td></tr><tr><td>UK 7</td><td>41</td><td>25.4</td></tr><tr><td>UK 8</td><td>42</td><td>26.2</td></tr><tr><td>UK 9</td><td>43</td><td>27.1</td></tr><tr><td>UK 10</td><td>44</td><td>27.9</td></tr><tr><td>UK 11</td><td>45</td><td>28.8</td></tr></tbody></table>",
+        "image": "/img/size/mens-sneakers.svg"
+      },
+      "return_policy": {
+        "window_days": 15,
+        "text": "15-day easy returns for unworn items with tags intact. Free pickup on prepaid orders."
+      },
+      "rating": {
+        "value": 3.7,
+        "count": 21
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "SNK011",
+      "slug": "pink-metro-mesh-sneaker",
+      "name": "Pink Metro Mesh Sneaker",
+      "brand": "Desi Threads",
+      "category": "mens-sneakers",
+      "price": 4269,
+      "mrp": 5399,
+      "discount_pct": 21,
+      "images": [
+        "/img/p/pink-metro-mesh-sneaker-1.svg",
+        "/img/p/pink-metro-mesh-sneaker-2.svg",
+        "/img/p/pink-metro-mesh-sneaker-3.svg"
+      ],
+      "description": "Pink Metro Mesh Sneaker from Desi Threads. Made with knit upper. Cushioned insole, durable rubber outsole and a clean silhouette that pairs with everything from chinos to shorts.",
+      "attributes": {
+        "material": "Knit upper",
+        "fit": "Wide",
+        "colour": "Pink"
+      },
+      "variants": [
+        {
+          "sku": "SNK011-UK-6-PINK",
+          "size": "UK 6",
+          "colour": "Pink",
+          "stock": 0
+        },
+        {
+          "sku": "SNK011-UK-7-PINK",
+          "size": "UK 7",
+          "colour": "Pink",
+          "stock": 14
+        },
+        {
+          "sku": "SNK011-UK-8-PINK",
+          "size": "UK 8",
+          "colour": "Pink",
+          "stock": 10
+        },
+        {
+          "sku": "SNK011-UK-9-PINK",
+          "size": "UK 9",
+          "colour": "Pink",
+          "stock": 21
+        },
+        {
+          "sku": "SNK011-UK-10-PINK",
+          "size": "UK 10",
+          "colour": "Pink",
+          "stock": 10
+        },
+        {
+          "sku": "SNK011-UK-11-PINK",
+          "size": "UK 11",
+          "colour": "Pink",
+          "stock": 0
+        },
+        {
+          "sku": "SNK011-UK-6-TEAL",
+          "size": "UK 6",
+          "colour": "Teal",
+          "stock": 31
+        },
+        {
+          "sku": "SNK011-UK-7-TEAL",
+          "size": "UK 7",
+          "colour": "Teal",
+          "stock": 19
+        },
+        {
+          "sku": "SNK011-UK-8-TEAL",
+          "size": "UK 8",
+          "colour": "Teal",
+          "stock": 0
+        },
+        {
+          "sku": "SNK011-UK-9-TEAL",
+          "size": "UK 9",
+          "colour": "Teal",
+          "stock": 15
+        },
+        {
+          "sku": "SNK011-UK-10-TEAL",
+          "size": "UK 10",
+          "colour": "Teal",
+          "stock": 25
+        },
+        {
+          "sku": "SNK011-UK-11-TEAL",
+          "size": "UK 11",
+          "colour": "Teal",
+          "stock": 0
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>UK size</th><th>EU size</th><th>Foot length (cm)</th></tr></thead><tbody><tr><td>UK 6</td><td>40</td><td>24.5</td></tr><tr><td>UK 7</td><td>41</td><td>25.4</td></tr><tr><td>UK 8</td><td>42</td><td>26.2</td></tr><tr><td>UK 9</td><td>43</td><td>27.1</td></tr><tr><td>UK 10</td><td>44</td><td>27.9</td></tr><tr><td>UK 11</td><td>45</td><td>28.8</td></tr></tbody></table>",
+        "image": "/img/size/mens-sneakers.svg"
+      },
+      "return_policy": {
+        "window_days": 15,
+        "text": "15-day easy returns for unworn items with tags intact. Free pickup on prepaid orders."
+      },
+      "rating": {
+        "value": 4.1,
+        "count": 776
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "SNK012",
+      "slug": "sky-blue-studio-court-low",
+      "name": "Sky Blue Studio Court Low",
+      "brand": "Desi Threads",
+      "category": "mens-sneakers",
+      "price": 1569,
+      "mrp": 2099,
+      "discount_pct": 25,
+      "images": [
+        "/img/p/sky-blue-studio-court-low-1.svg",
+        "/img/p/sky-blue-studio-court-low-2.svg",
+        "/img/p/sky-blue-studio-court-low-3.svg"
+      ],
+      "description": "Sky Blue Studio Court Low from Desi Threads. Made with suede. Cushioned insole, durable rubber outsole and a clean silhouette that pairs with everything from chinos to shorts.",
+      "attributes": {
+        "material": "Suede",
+        "fit": "Wide",
+        "colour": "Sky Blue"
+      },
+      "variants": [
+        {
+          "sku": "SNK012-UK-6-SKY-BLUE",
+          "size": "UK 6",
+          "colour": "Sky Blue",
+          "stock": 0
+        },
+        {
+          "sku": "SNK012-UK-7-SKY-BLUE",
+          "size": "UK 7",
+          "colour": "Sky Blue",
+          "stock": 24
+        },
+        {
+          "sku": "SNK012-UK-8-SKY-BLUE",
+          "size": "UK 8",
+          "colour": "Sky Blue",
+          "stock": 0
+        },
+        {
+          "sku": "SNK012-UK-9-SKY-BLUE",
+          "size": "UK 9",
+          "colour": "Sky Blue",
+          "stock": 26
+        },
+        {
+          "sku": "SNK012-UK-10-SKY-BLUE",
+          "size": "UK 10",
+          "colour": "Sky Blue",
+          "stock": 37
+        },
+        {
+          "sku": "SNK012-UK-11-SKY-BLUE",
+          "size": "UK 11",
+          "colour": "Sky Blue",
+          "stock": 3
+        },
+        {
+          "sku": "SNK012-UK-6-PINK",
+          "size": "UK 6",
+          "colour": "Pink",
+          "stock": 24
+        },
+        {
+          "sku": "SNK012-UK-7-PINK",
+          "size": "UK 7",
+          "colour": "Pink",
+          "stock": 32
+        },
+        {
+          "sku": "SNK012-UK-8-PINK",
+          "size": "UK 8",
+          "colour": "Pink",
+          "stock": 11
+        },
+        {
+          "sku": "SNK012-UK-9-PINK",
+          "size": "UK 9",
+          "colour": "Pink",
+          "stock": 40
+        },
+        {
+          "sku": "SNK012-UK-10-PINK",
+          "size": "UK 10",
+          "colour": "Pink",
+          "stock": 22
+        },
+        {
+          "sku": "SNK012-UK-11-PINK",
+          "size": "UK 11",
+          "colour": "Pink",
+          "stock": 23
+        },
+        {
+          "sku": "SNK012-UK-6-TAN",
+          "size": "UK 6",
+          "colour": "Tan",
+          "stock": 29
+        },
+        {
+          "sku": "SNK012-UK-7-TAN",
+          "size": "UK 7",
+          "colour": "Tan",
+          "stock": 23
+        },
+        {
+          "sku": "SNK012-UK-8-TAN",
+          "size": "UK 8",
+          "colour": "Tan",
+          "stock": 15
+        },
+        {
+          "sku": "SNK012-UK-9-TAN",
+          "size": "UK 9",
+          "colour": "Tan",
+          "stock": 4
+        },
+        {
+          "sku": "SNK012-UK-10-TAN",
+          "size": "UK 10",
+          "colour": "Tan",
+          "stock": 10
+        },
+        {
+          "sku": "SNK012-UK-11-TAN",
+          "size": "UK 11",
+          "colour": "Tan",
+          "stock": 0
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>UK size</th><th>EU size</th><th>Foot length (cm)</th></tr></thead><tbody><tr><td>UK 6</td><td>40</td><td>24.5</td></tr><tr><td>UK 7</td><td>41</td><td>25.4</td></tr><tr><td>UK 8</td><td>42</td><td>26.2</td></tr><tr><td>UK 9</td><td>43</td><td>27.1</td></tr><tr><td>UK 10</td><td>44</td><td>27.9</td></tr><tr><td>UK 11</td><td>45</td><td>28.8</td></tr></tbody></table>",
+        "image": "/img/size/mens-sneakers.svg"
+      },
+      "return_policy": {
+        "window_days": 15,
+        "text": "15-day easy returns for unworn items with tags intact. Free pickup on prepaid orders."
+      },
+      "rating": {
+        "value": 4.8,
+        "count": 373
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "SNK013",
+      "slug": "navy-daily-walk-sneaker",
+      "name": "Navy Daily Walk Sneaker",
+      "brand": "Desi Threads",
+      "category": "mens-sneakers",
+      "price": 3949,
+      "mrp": 4999,
+      "discount_pct": 21,
+      "images": [
+        "/img/p/navy-daily-walk-sneaker-1.svg",
+        "/img/p/navy-daily-walk-sneaker-2.svg",
+        "/img/p/navy-daily-walk-sneaker-3.svg"
+      ],
+      "description": "Navy Daily Walk Sneaker from Desi Threads. Made with cotton canvas. Cushioned insole, durable rubber outsole and a clean silhouette that pairs with everything from chinos to shorts.",
+      "attributes": {
+        "material": "Cotton canvas",
+        "fit": "Snug",
+        "colour": "Navy"
+      },
+      "variants": [
+        {
+          "sku": "SNK013-UK-6-NAVY",
+          "size": "UK 6",
+          "colour": "Navy",
+          "stock": 24
+        },
+        {
+          "sku": "SNK013-UK-7-NAVY",
+          "size": "UK 7",
+          "colour": "Navy",
+          "stock": 14
+        },
+        {
+          "sku": "SNK013-UK-8-NAVY",
+          "size": "UK 8",
+          "colour": "Navy",
+          "stock": 15
+        },
+        {
+          "sku": "SNK013-UK-9-NAVY",
+          "size": "UK 9",
+          "colour": "Navy",
+          "stock": 33
+        },
+        {
+          "sku": "SNK013-UK-10-NAVY",
+          "size": "UK 10",
+          "colour": "Navy",
+          "stock": 3
+        },
+        {
+          "sku": "SNK013-UK-11-NAVY",
+          "size": "UK 11",
+          "colour": "Navy",
+          "stock": 40
+        },
+        {
+          "sku": "SNK013-UK-6-BLACK",
+          "size": "UK 6",
+          "colour": "Black",
+          "stock": 12
+        },
+        {
+          "sku": "SNK013-UK-7-BLACK",
+          "size": "UK 7",
+          "colour": "Black",
+          "stock": 14
+        },
+        {
+          "sku": "SNK013-UK-8-BLACK",
+          "size": "UK 8",
+          "colour": "Black",
+          "stock": 7
+        },
+        {
+          "sku": "SNK013-UK-9-BLACK",
+          "size": "UK 9",
+          "colour": "Black",
+          "stock": 31
+        },
+        {
+          "sku": "SNK013-UK-10-BLACK",
+          "size": "UK 10",
+          "colour": "Black",
+          "stock": 29
+        },
+        {
+          "sku": "SNK013-UK-11-BLACK",
+          "size": "UK 11",
+          "colour": "Black",
+          "stock": 24
+        },
+        {
+          "sku": "SNK013-UK-6-SKY-BLUE",
+          "size": "UK 6",
+          "colour": "Sky Blue",
+          "stock": 13
+        },
+        {
+          "sku": "SNK013-UK-7-SKY-BLUE",
+          "size": "UK 7",
+          "colour": "Sky Blue",
+          "stock": 6
+        },
+        {
+          "sku": "SNK013-UK-8-SKY-BLUE",
+          "size": "UK 8",
+          "colour": "Sky Blue",
+          "stock": 35
+        },
+        {
+          "sku": "SNK013-UK-9-SKY-BLUE",
+          "size": "UK 9",
+          "colour": "Sky Blue",
+          "stock": 29
+        },
+        {
+          "sku": "SNK013-UK-10-SKY-BLUE",
+          "size": "UK 10",
+          "colour": "Sky Blue",
+          "stock": 29
+        },
+        {
+          "sku": "SNK013-UK-11-SKY-BLUE",
+          "size": "UK 11",
+          "colour": "Sky Blue",
+          "stock": 16
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>UK size</th><th>EU size</th><th>Foot length (cm)</th></tr></thead><tbody><tr><td>UK 6</td><td>40</td><td>24.5</td></tr><tr><td>UK 7</td><td>41</td><td>25.4</td></tr><tr><td>UK 8</td><td>42</td><td>26.2</td></tr><tr><td>UK 9</td><td>43</td><td>27.1</td></tr><tr><td>UK 10</td><td>44</td><td>27.9</td></tr><tr><td>UK 11</td><td>45</td><td>28.8</td></tr></tbody></table>",
+        "image": "/img/size/mens-sneakers.svg"
+      },
+      "return_policy": {
+        "window_days": 15,
+        "text": "15-day easy returns for unworn items with tags intact. Free pickup on prepaid orders."
+      },
+      "rating": {
+        "value": 3.8,
+        "count": 257
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "SNK014",
+      "slug": "maroon-fleet-foam-runner",
+      "name": "Maroon Fleet Foam Runner",
+      "brand": "Desi Threads",
+      "category": "mens-sneakers",
+      "price": 1369,
+      "mrp": 2399,
+      "discount_pct": 43,
+      "images": [
+        "/img/p/maroon-fleet-foam-runner-1.svg",
+        "/img/p/maroon-fleet-foam-runner-2.svg",
+        "/img/p/maroon-fleet-foam-runner-3.svg"
+      ],
+      "description": "Maroon Fleet Foam Runner from Desi Threads. Made with knit upper. Cushioned insole, durable rubber outsole and a clean silhouette that pairs with everything from chinos to shorts.",
+      "attributes": {
+        "material": "Knit upper",
+        "fit": "Regular",
+        "colour": "Maroon"
+      },
+      "variants": [
+        {
+          "sku": "SNK014-UK-6-MAROON",
+          "size": "UK 6",
+          "colour": "Maroon",
+          "stock": 18
+        },
+        {
+          "sku": "SNK014-UK-7-MAROON",
+          "size": "UK 7",
+          "colour": "Maroon",
+          "stock": 39
+        },
+        {
+          "sku": "SNK014-UK-8-MAROON",
+          "size": "UK 8",
+          "colour": "Maroon",
+          "stock": 23
+        },
+        {
+          "sku": "SNK014-UK-9-MAROON",
+          "size": "UK 9",
+          "colour": "Maroon",
+          "stock": 31
+        },
+        {
+          "sku": "SNK014-UK-10-MAROON",
+          "size": "UK 10",
+          "colour": "Maroon",
+          "stock": 7
+        },
+        {
+          "sku": "SNK014-UK-11-MAROON",
+          "size": "UK 11",
+          "colour": "Maroon",
+          "stock": 14
+        },
+        {
+          "sku": "SNK014-UK-6-WHITE",
+          "size": "UK 6",
+          "colour": "White",
+          "stock": 6
+        },
+        {
+          "sku": "SNK014-UK-7-WHITE",
+          "size": "UK 7",
+          "colour": "White",
+          "stock": 17
+        },
+        {
+          "sku": "SNK014-UK-8-WHITE",
+          "size": "UK 8",
+          "colour": "White",
+          "stock": 30
+        },
+        {
+          "sku": "SNK014-UK-9-WHITE",
+          "size": "UK 9",
+          "colour": "White",
+          "stock": 11
+        },
+        {
+          "sku": "SNK014-UK-10-WHITE",
+          "size": "UK 10",
+          "colour": "White",
+          "stock": 7
+        },
+        {
+          "sku": "SNK014-UK-11-WHITE",
+          "size": "UK 11",
+          "colour": "White",
+          "stock": 18
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>UK size</th><th>EU size</th><th>Foot length (cm)</th></tr></thead><tbody><tr><td>UK 6</td><td>40</td><td>24.5</td></tr><tr><td>UK 7</td><td>41</td><td>25.4</td></tr><tr><td>UK 8</td><td>42</td><td>26.2</td></tr><tr><td>UK 9</td><td>43</td><td>27.1</td></tr><tr><td>UK 10</td><td>44</td><td>27.9</td></tr><tr><td>UK 11</td><td>45</td><td>28.8</td></tr></tbody></table>",
+        "image": "/img/size/mens-sneakers.svg"
+      },
+      "return_policy": {
+        "window_days": 15,
+        "text": "15-day easy returns for unworn items with tags intact. Free pickup on prepaid orders."
+      },
+      "rating": {
+        "value": 4.6,
+        "count": 45
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "SNK015",
+      "slug": "mustard-alley-suede-sneaker",
+      "name": "Mustard Alley Suede Sneaker",
+      "brand": "Desi Threads",
+      "category": "mens-sneakers",
+      "price": 4059,
+      "mrp": 5199,
+      "discount_pct": 22,
+      "images": [
+        "/img/p/mustard-alley-suede-sneaker-1.svg",
+        "/img/p/mustard-alley-suede-sneaker-2.svg",
+        "/img/p/mustard-alley-suede-sneaker-3.svg"
+      ],
+      "description": "Mustard Alley Suede Sneaker from Desi Threads. Made with full-grain leather. Cushioned insole, durable rubber outsole and a clean silhouette that pairs with everything from chinos to shorts.",
+      "attributes": {
+        "material": "Full-grain leather",
+        "fit": "Snug",
+        "colour": "Mustard"
+      },
+      "variants": [
+        {
+          "sku": "SNK015-UK-6-MUSTARD",
+          "size": "UK 6",
+          "colour": "Mustard",
+          "stock": 29
+        },
+        {
+          "sku": "SNK015-UK-7-MUSTARD",
+          "size": "UK 7",
+          "colour": "Mustard",
+          "stock": 27
+        },
+        {
+          "sku": "SNK015-UK-8-MUSTARD",
+          "size": "UK 8",
+          "colour": "Mustard",
+          "stock": 3
+        },
+        {
+          "sku": "SNK015-UK-9-MUSTARD",
+          "size": "UK 9",
+          "colour": "Mustard",
+          "stock": 12
+        },
+        {
+          "sku": "SNK015-UK-10-MUSTARD",
+          "size": "UK 10",
+          "colour": "Mustard",
+          "stock": 11
+        },
+        {
+          "sku": "SNK015-UK-11-MUSTARD",
+          "size": "UK 11",
+          "colour": "Mustard",
+          "stock": 5
+        },
+        {
+          "sku": "SNK015-UK-6-MAROON",
+          "size": "UK 6",
+          "colour": "Maroon",
+          "stock": 37
+        },
+        {
+          "sku": "SNK015-UK-7-MAROON",
+          "size": "UK 7",
+          "colour": "Maroon",
+          "stock": 27
+        },
+        {
+          "sku": "SNK015-UK-8-MAROON",
+          "size": "UK 8",
+          "colour": "Maroon",
+          "stock": 35
+        },
+        {
+          "sku": "SNK015-UK-9-MAROON",
+          "size": "UK 9",
+          "colour": "Maroon",
+          "stock": 40
+        },
+        {
+          "sku": "SNK015-UK-10-MAROON",
+          "size": "UK 10",
+          "colour": "Maroon",
+          "stock": 12
+        },
+        {
+          "sku": "SNK015-UK-11-MAROON",
+          "size": "UK 11",
+          "colour": "Maroon",
+          "stock": 3
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>UK size</th><th>EU size</th><th>Foot length (cm)</th></tr></thead><tbody><tr><td>UK 6</td><td>40</td><td>24.5</td></tr><tr><td>UK 7</td><td>41</td><td>25.4</td></tr><tr><td>UK 8</td><td>42</td><td>26.2</td></tr><tr><td>UK 9</td><td>43</td><td>27.1</td></tr><tr><td>UK 10</td><td>44</td><td>27.9</td></tr><tr><td>UK 11</td><td>45</td><td>28.8</td></tr></tbody></table>",
+        "image": "/img/size/mens-sneakers.svg"
+      },
+      "return_policy": {
+        "window_days": 15,
+        "text": "15-day easy returns for unworn items with tags intact. Free pickup on prepaid orders."
+      },
+      "rating": {
+        "value": 3.7,
+        "count": 764
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "KRT001",
+      "slug": "block-print-straight-kurta-in-white",
+      "name": "Block Print Straight Kurta in White",
+      "brand": "Desi Threads",
+      "category": "womens-kurtas",
+      "price": 1389,
+      "mrp": 2399,
+      "discount_pct": 42,
+      "images": [
+        "/img/p/block-print-straight-kurta-in-white-1.svg",
+        "/img/p/block-print-straight-kurta-in-white-2.svg",
+        "/img/p/block-print-straight-kurta-in-white-3.svg"
+      ],
+      "description": "Block Print Straight Kurta in White from Desi Threads. Made with rayon. Breathable fabric with fine detailing, cut for an easy drape that works from office to festive evenings.",
+      "attributes": {
+        "material": "Rayon",
+        "fit": "Relaxed",
+        "colour": "White"
+      },
+      "variants": [
+        {
+          "sku": "KRT001-XS-WHITE",
+          "size": "XS",
+          "colour": "White",
+          "stock": 31
+        },
+        {
+          "sku": "KRT001-S-WHITE",
+          "size": "S",
+          "colour": "White",
+          "stock": 0
+        },
+        {
+          "sku": "KRT001-M-WHITE",
+          "size": "M",
+          "colour": "White",
+          "stock": 21
+        },
+        {
+          "sku": "KRT001-L-WHITE",
+          "size": "L",
+          "colour": "White",
+          "stock": 0
+        },
+        {
+          "sku": "KRT001-XL-WHITE",
+          "size": "XL",
+          "colour": "White",
+          "stock": 33
+        },
+        {
+          "sku": "KRT001-XXL-WHITE",
+          "size": "XXL",
+          "colour": "White",
+          "stock": 39
+        },
+        {
+          "sku": "KRT001-XS-OLIVE",
+          "size": "XS",
+          "colour": "Olive",
+          "stock": 7
+        },
+        {
+          "sku": "KRT001-S-OLIVE",
+          "size": "S",
+          "colour": "Olive",
+          "stock": 12
+        },
+        {
+          "sku": "KRT001-M-OLIVE",
+          "size": "M",
+          "colour": "Olive",
+          "stock": 7
+        },
+        {
+          "sku": "KRT001-L-OLIVE",
+          "size": "L",
+          "colour": "Olive",
+          "stock": 16
+        },
+        {
+          "sku": "KRT001-XL-OLIVE",
+          "size": "XL",
+          "colour": "Olive",
+          "stock": 0
+        },
+        {
+          "sku": "KRT001-XXL-OLIVE",
+          "size": "XXL",
+          "colour": "Olive",
+          "stock": 36
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>Size</th><th>Bust (in)</th><th>Waist (in)</th><th>Length (in)</th></tr></thead><tbody><tr><td>XS</td><td>32</td><td>28</td><td>44</td></tr><tr><td>S</td><td>34</td><td>30</td><td>44</td></tr><tr><td>M</td><td>36</td><td>32</td><td>45</td></tr><tr><td>L</td><td>38</td><td>34</td><td>45</td></tr><tr><td>XL</td><td>40</td><td>36</td><td>46</td></tr><tr><td>XXL</td><td>42</td><td>38</td><td>46</td></tr></tbody></table>",
+        "image": "/img/size/womens-kurtas.svg"
+      },
+      "return_policy": {
+        "window_days": 15,
+        "text": "15-day easy returns for unworn items with tags intact. Free pickup on prepaid orders."
+      },
+      "rating": {
+        "value": 3.7,
+        "count": 82
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "KRT002",
+      "slug": "chikankari-anarkali-kurta-in-grey",
+      "name": "Chikankari Anarkali Kurta in Grey",
+      "brand": "Desi Threads",
+      "category": "womens-kurtas",
+      "price": 1089,
+      "mrp": 1299,
+      "discount_pct": 16,
+      "images": [
+        "/img/p/chikankari-anarkali-kurta-in-grey-1.svg",
+        "/img/p/chikankari-anarkali-kurta-in-grey-2.svg",
+        "/img/p/chikankari-anarkali-kurta-in-grey-3.svg"
+      ],
+      "description": "Chikankari Anarkali Kurta in Grey from Desi Threads. Made with mulmul cotton. Breathable fabric with fine detailing, cut for an easy drape that works from office to festive evenings.",
+      "attributes": {
+        "material": "Mulmul cotton",
+        "fit": "Straight",
+        "colour": "Grey"
+      },
+      "variants": [
+        {
+          "sku": "KRT002-XS-GREY",
+          "size": "XS",
+          "colour": "Grey",
+          "stock": 0
+        },
+        {
+          "sku": "KRT002-S-GREY",
+          "size": "S",
+          "colour": "Grey",
+          "stock": 5
+        },
+        {
+          "sku": "KRT002-M-GREY",
+          "size": "M",
+          "colour": "Grey",
+          "stock": 23
+        },
+        {
+          "sku": "KRT002-L-GREY",
+          "size": "L",
+          "colour": "Grey",
+          "stock": 32
+        },
+        {
+          "sku": "KRT002-XL-GREY",
+          "size": "XL",
+          "colour": "Grey",
+          "stock": 20
+        },
+        {
+          "sku": "KRT002-XXL-GREY",
+          "size": "XXL",
+          "colour": "Grey",
+          "stock": 23
+        },
+        {
+          "sku": "KRT002-XS-SKY-BLUE",
+          "size": "XS",
+          "colour": "Sky Blue",
+          "stock": 23
+        },
+        {
+          "sku": "KRT002-S-SKY-BLUE",
+          "size": "S",
+          "colour": "Sky Blue",
+          "stock": 38
+        },
+        {
+          "sku": "KRT002-M-SKY-BLUE",
+          "size": "M",
+          "colour": "Sky Blue",
+          "stock": 31
+        },
+        {
+          "sku": "KRT002-L-SKY-BLUE",
+          "size": "L",
+          "colour": "Sky Blue",
+          "stock": 30
+        },
+        {
+          "sku": "KRT002-XL-SKY-BLUE",
+          "size": "XL",
+          "colour": "Sky Blue",
+          "stock": 7
+        },
+        {
+          "sku": "KRT002-XXL-SKY-BLUE",
+          "size": "XXL",
+          "colour": "Sky Blue",
+          "stock": 38
+        },
+        {
+          "sku": "KRT002-XS-TEAL",
+          "size": "XS",
+          "colour": "Teal",
+          "stock": 20
+        },
+        {
+          "sku": "KRT002-S-TEAL",
+          "size": "S",
+          "colour": "Teal",
+          "stock": 24
+        },
+        {
+          "sku": "KRT002-M-TEAL",
+          "size": "M",
+          "colour": "Teal",
+          "stock": 39
+        },
+        {
+          "sku": "KRT002-L-TEAL",
+          "size": "L",
+          "colour": "Teal",
+          "stock": 35
+        },
+        {
+          "sku": "KRT002-XL-TEAL",
+          "size": "XL",
+          "colour": "Teal",
+          "stock": 21
+        },
+        {
+          "sku": "KRT002-XXL-TEAL",
+          "size": "XXL",
+          "colour": "Teal",
+          "stock": 39
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>Size</th><th>Bust (in)</th><th>Waist (in)</th><th>Length (in)</th></tr></thead><tbody><tr><td>XS</td><td>32</td><td>28</td><td>44</td></tr><tr><td>S</td><td>34</td><td>30</td><td>44</td></tr><tr><td>M</td><td>36</td><td>32</td><td>45</td></tr><tr><td>L</td><td>38</td><td>34</td><td>45</td></tr><tr><td>XL</td><td>40</td><td>36</td><td>46</td></tr><tr><td>XXL</td><td>42</td><td>38</td><td>46</td></tr></tbody></table>",
+        "image": "/img/size/womens-kurtas.svg"
+      },
+      "return_policy": {
+        "window_days": 15,
+        "text": "15-day easy returns for unworn items with tags intact. Free pickup on prepaid orders."
+      },
+      "rating": {
+        "value": 3.6,
+        "count": 501
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "KRT003",
+      "slug": "cotton-a-line-kurta-in-maroon",
+      "name": "Cotton A-Line Kurta in Maroon",
+      "brand": "Desi Threads",
+      "category": "womens-kurtas",
+      "price": 1549,
+      "mrp": 2099,
+      "discount_pct": 26,
+      "images": [
+        "/img/p/cotton-a-line-kurta-in-maroon-1.svg",
+        "/img/p/cotton-a-line-kurta-in-maroon-2.svg",
+        "/img/p/cotton-a-line-kurta-in-maroon-3.svg"
+      ],
+      "description": "Cotton A-Line Kurta in Maroon from Desi Threads. Made with mulmul cotton. Breathable fabric with fine detailing, cut for an easy drape that works from office to festive evenings.",
+      "attributes": {
+        "material": "Mulmul cotton",
+        "fit": "Relaxed",
+        "colour": "Maroon"
+      },
+      "variants": [
+        {
+          "sku": "KRT003-XS-MAROON",
+          "size": "XS",
+          "colour": "Maroon",
+          "stock": 14
+        },
+        {
+          "sku": "KRT003-S-MAROON",
+          "size": "S",
+          "colour": "Maroon",
+          "stock": 21
+        },
+        {
+          "sku": "KRT003-M-MAROON",
+          "size": "M",
+          "colour": "Maroon",
+          "stock": 32
+        },
+        {
+          "sku": "KRT003-L-MAROON",
+          "size": "L",
+          "colour": "Maroon",
+          "stock": 40
+        },
+        {
+          "sku": "KRT003-XL-MAROON",
+          "size": "XL",
+          "colour": "Maroon",
+          "stock": 7
+        },
+        {
+          "sku": "KRT003-XXL-MAROON",
+          "size": "XXL",
+          "colour": "Maroon",
+          "stock": 27
+        },
+        {
+          "sku": "KRT003-XS-NAVY",
+          "size": "XS",
+          "colour": "Navy",
+          "stock": 36
+        },
+        {
+          "sku": "KRT003-S-NAVY",
+          "size": "S",
+          "colour": "Navy",
+          "stock": 21
+        },
+        {
+          "sku": "KRT003-M-NAVY",
+          "size": "M",
+          "colour": "Navy",
+          "stock": 33
+        },
+        {
+          "sku": "KRT003-L-NAVY",
+          "size": "L",
+          "colour": "Navy",
+          "stock": 40
+        },
+        {
+          "sku": "KRT003-XL-NAVY",
+          "size": "XL",
+          "colour": "Navy",
+          "stock": 18
+        },
+        {
+          "sku": "KRT003-XXL-NAVY",
+          "size": "XXL",
+          "colour": "Navy",
+          "stock": 22
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>Size</th><th>Bust (in)</th><th>Waist (in)</th><th>Length (in)</th></tr></thead><tbody><tr><td>XS</td><td>32</td><td>28</td><td>44</td></tr><tr><td>S</td><td>34</td><td>30</td><td>44</td></tr><tr><td>M</td><td>36</td><td>32</td><td>45</td></tr><tr><td>L</td><td>38</td><td>34</td><td>45</td></tr><tr><td>XL</td><td>40</td><td>36</td><td>46</td></tr><tr><td>XXL</td><td>42</td><td>38</td><td>46</td></tr></tbody></table>",
+        "image": "/img/size/womens-kurtas.svg"
+      },
+      "return_policy": {
+        "window_days": 15,
+        "text": "15-day easy returns for unworn items with tags intact. Free pickup on prepaid orders."
+      },
+      "rating": {
+        "value": 4.8,
+        "count": 92
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "KRT004",
+      "slug": "bandhani-flared-kurta-in-sky-blue",
+      "name": "Bandhani Flared Kurta in Sky Blue",
+      "brand": "Desi Threads",
+      "category": "womens-kurtas",
+      "price": 939,
+      "mrp": 1399,
+      "discount_pct": 33,
+      "images": [
+        "/img/p/bandhani-flared-kurta-in-sky-blue-1.svg",
+        "/img/p/bandhani-flared-kurta-in-sky-blue-2.svg",
+        "/img/p/bandhani-flared-kurta-in-sky-blue-3.svg"
+      ],
+      "description": "Bandhani Flared Kurta in Sky Blue from Desi Threads. Made with linen blend. Breathable fabric with fine detailing, cut for an easy drape that works from office to festive evenings.",
+      "attributes": {
+        "material": "Linen blend",
+        "fit": "A-line",
+        "colour": "Sky Blue"
+      },
+      "variants": [
+        {
+          "sku": "KRT004-XS-SKY-BLUE",
+          "size": "XS",
+          "colour": "Sky Blue",
+          "stock": 32
+        },
+        {
+          "sku": "KRT004-S-SKY-BLUE",
+          "size": "S",
+          "colour": "Sky Blue",
+          "stock": 23
+        },
+        {
+          "sku": "KRT004-M-SKY-BLUE",
+          "size": "M",
+          "colour": "Sky Blue",
+          "stock": 39
+        },
+        {
+          "sku": "KRT004-L-SKY-BLUE",
+          "size": "L",
+          "colour": "Sky Blue",
+          "stock": 15
+        },
+        {
+          "sku": "KRT004-XL-SKY-BLUE",
+          "size": "XL",
+          "colour": "Sky Blue",
+          "stock": 20
+        },
+        {
+          "sku": "KRT004-XXL-SKY-BLUE",
+          "size": "XXL",
+          "colour": "Sky Blue",
+          "stock": 12
+        },
+        {
+          "sku": "KRT004-XS-WHITE",
+          "size": "XS",
+          "colour": "White",
+          "stock": 28
+        },
+        {
+          "sku": "KRT004-S-WHITE",
+          "size": "S",
+          "colour": "White",
+          "stock": 15
+        },
+        {
+          "sku": "KRT004-M-WHITE",
+          "size": "M",
+          "colour": "White",
+          "stock": 23
+        },
+        {
+          "sku": "KRT004-L-WHITE",
+          "size": "L",
+          "colour": "White",
+          "stock": 36
+        },
+        {
+          "sku": "KRT004-XL-WHITE",
+          "size": "XL",
+          "colour": "White",
+          "stock": 32
+        },
+        {
+          "sku": "KRT004-XXL-WHITE",
+          "size": "XXL",
+          "colour": "White",
+          "stock": 7
+        },
+        {
+          "sku": "KRT004-XS-TEAL",
+          "size": "XS",
+          "colour": "Teal",
+          "stock": 19
+        },
+        {
+          "sku": "KRT004-S-TEAL",
+          "size": "S",
+          "colour": "Teal",
+          "stock": 37
+        },
+        {
+          "sku": "KRT004-M-TEAL",
+          "size": "M",
+          "colour": "Teal",
+          "stock": 17
+        },
+        {
+          "sku": "KRT004-L-TEAL",
+          "size": "L",
+          "colour": "Teal",
+          "stock": 15
+        },
+        {
+          "sku": "KRT004-XL-TEAL",
+          "size": "XL",
+          "colour": "Teal",
+          "stock": 30
+        },
+        {
+          "sku": "KRT004-XXL-TEAL",
+          "size": "XXL",
+          "colour": "Teal",
+          "stock": 32
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>Size</th><th>Bust (in)</th><th>Waist (in)</th><th>Length (in)</th></tr></thead><tbody><tr><td>XS</td><td>32</td><td>28</td><td>44</td></tr><tr><td>S</td><td>34</td><td>30</td><td>44</td></tr><tr><td>M</td><td>36</td><td>32</td><td>45</td></tr><tr><td>L</td><td>38</td><td>34</td><td>45</td></tr><tr><td>XL</td><td>40</td><td>36</td><td>46</td></tr><tr><td>XXL</td><td>42</td><td>38</td><td>46</td></tr></tbody></table>",
+        "image": "/img/size/womens-kurtas.svg"
+      },
+      "return_policy": {
+        "window_days": 15,
+        "text": "15-day easy returns for unworn items with tags intact. Free pickup on prepaid orders."
+      },
+      "rating": {
+        "value": 3.9,
+        "count": 94
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "KRT005",
+      "slug": "festive-embroidered-kurta-in-teal",
+      "name": "Festive Embroidered Kurta in Teal",
+      "brand": "Desi Threads",
+      "category": "womens-kurtas",
+      "price": 2949,
+      "mrp": 3599,
+      "discount_pct": 18,
+      "images": [
+        "/img/p/festive-embroidered-kurta-in-teal-1.svg",
+        "/img/p/festive-embroidered-kurta-in-teal-2.svg",
+        "/img/p/festive-embroidered-kurta-in-teal-3.svg"
+      ],
+      "description": "Festive Embroidered Kurta in Teal from Desi Threads. Made with chanderi silk blend. Breathable fabric with fine detailing, cut for an easy drape that works from office to festive evenings.",
+      "attributes": {
+        "material": "Chanderi silk blend",
+        "fit": "Straight",
+        "colour": "Teal"
+      },
+      "variants": [
+        {
+          "sku": "KRT005-XS-TEAL",
+          "size": "XS",
+          "colour": "Teal",
+          "stock": 11
+        },
+        {
+          "sku": "KRT005-S-TEAL",
+          "size": "S",
+          "colour": "Teal",
+          "stock": 36
+        },
+        {
+          "sku": "KRT005-M-TEAL",
+          "size": "M",
+          "colour": "Teal",
+          "stock": 14
+        },
+        {
+          "sku": "KRT005-L-TEAL",
+          "size": "L",
+          "colour": "Teal",
+          "stock": 5
+        },
+        {
+          "sku": "KRT005-XL-TEAL",
+          "size": "XL",
+          "colour": "Teal",
+          "stock": 37
+        },
+        {
+          "sku": "KRT005-XXL-TEAL",
+          "size": "XXL",
+          "colour": "Teal",
+          "stock": 34
+        },
+        {
+          "sku": "KRT005-XS-NAVY",
+          "size": "XS",
+          "colour": "Navy",
+          "stock": 39
+        },
+        {
+          "sku": "KRT005-S-NAVY",
+          "size": "S",
+          "colour": "Navy",
+          "stock": 3
+        },
+        {
+          "sku": "KRT005-M-NAVY",
+          "size": "M",
+          "colour": "Navy",
+          "stock": 38
+        },
+        {
+          "sku": "KRT005-L-NAVY",
+          "size": "L",
+          "colour": "Navy",
+          "stock": 10
+        },
+        {
+          "sku": "KRT005-XL-NAVY",
+          "size": "XL",
+          "colour": "Navy",
+          "stock": 10
+        },
+        {
+          "sku": "KRT005-XXL-NAVY",
+          "size": "XXL",
+          "colour": "Navy",
+          "stock": 40
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>Size</th><th>Bust (in)</th><th>Waist (in)</th><th>Length (in)</th></tr></thead><tbody><tr><td>XS</td><td>32</td><td>28</td><td>44</td></tr><tr><td>S</td><td>34</td><td>30</td><td>44</td></tr><tr><td>M</td><td>36</td><td>32</td><td>45</td></tr><tr><td>L</td><td>38</td><td>34</td><td>45</td></tr><tr><td>XL</td><td>40</td><td>36</td><td>46</td></tr><tr><td>XXL</td><td>42</td><td>38</td><td>46</td></tr></tbody></table>",
+        "image": "/img/size/womens-kurtas.svg"
+      },
+      "return_policy": {
+        "window_days": 15,
+        "text": "15-day easy returns for unworn items with tags intact. Free pickup on prepaid orders."
+      },
+      "rating": {
+        "value": 4.8,
+        "count": 322
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "KRT006",
+      "slug": "daily-wear-pintuck-kurta-in-teal",
+      "name": "Daily Wear Pintuck Kurta in Teal",
+      "brand": "Desi Threads",
+      "category": "womens-kurtas",
+      "price": 1869,
+      "mrp": 2199,
+      "discount_pct": 15,
+      "images": [
+        "/img/p/daily-wear-pintuck-kurta-in-teal-1.svg",
+        "/img/p/daily-wear-pintuck-kurta-in-teal-2.svg",
+        "/img/p/daily-wear-pintuck-kurta-in-teal-3.svg"
+      ],
+      "description": "Daily Wear Pintuck Kurta in Teal from Desi Threads. Made with chanderi silk blend. Breathable fabric with fine detailing, cut for an easy drape that works from office to festive evenings.",
+      "attributes": {
+        "material": "Chanderi silk blend",
+        "fit": "Straight",
+        "colour": "Teal"
+      },
+      "variants": [
+        {
+          "sku": "KRT006-XS-TEAL",
+          "size": "XS",
+          "colour": "Teal",
+          "stock": 36
+        },
+        {
+          "sku": "KRT006-S-TEAL",
+          "size": "S",
+          "colour": "Teal",
+          "stock": 33
+        },
+        {
+          "sku": "KRT006-M-TEAL",
+          "size": "M",
+          "colour": "Teal",
+          "stock": 28
+        },
+        {
+          "sku": "KRT006-L-TEAL",
+          "size": "L",
+          "colour": "Teal",
+          "stock": 25
+        },
+        {
+          "sku": "KRT006-XL-TEAL",
+          "size": "XL",
+          "colour": "Teal",
+          "stock": 16
+        },
+        {
+          "sku": "KRT006-XXL-TEAL",
+          "size": "XXL",
+          "colour": "Teal",
+          "stock": 9
+        },
+        {
+          "sku": "KRT006-XS-TAN",
+          "size": "XS",
+          "colour": "Tan",
+          "stock": 0
+        },
+        {
+          "sku": "KRT006-S-TAN",
+          "size": "S",
+          "colour": "Tan",
+          "stock": 38
+        },
+        {
+          "sku": "KRT006-M-TAN",
+          "size": "M",
+          "colour": "Tan",
+          "stock": 3
+        },
+        {
+          "sku": "KRT006-L-TAN",
+          "size": "L",
+          "colour": "Tan",
+          "stock": 38
+        },
+        {
+          "sku": "KRT006-XL-TAN",
+          "size": "XL",
+          "colour": "Tan",
+          "stock": 24
+        },
+        {
+          "sku": "KRT006-XXL-TAN",
+          "size": "XXL",
+          "colour": "Tan",
+          "stock": 29
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>Size</th><th>Bust (in)</th><th>Waist (in)</th><th>Length (in)</th></tr></thead><tbody><tr><td>XS</td><td>32</td><td>28</td><td>44</td></tr><tr><td>S</td><td>34</td><td>30</td><td>44</td></tr><tr><td>M</td><td>36</td><td>32</td><td>45</td></tr><tr><td>L</td><td>38</td><td>34</td><td>45</td></tr><tr><td>XL</td><td>40</td><td>36</td><td>46</td></tr><tr><td>XXL</td><td>42</td><td>38</td><td>46</td></tr></tbody></table>",
+        "image": "/img/size/womens-kurtas.svg"
+      },
+      "return_policy": {
+        "window_days": 15,
+        "text": "15-day easy returns for unworn items with tags intact. Free pickup on prepaid orders."
+      },
+      "rating": {
+        "value": 4.5,
+        "count": 188
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "KRT007",
+      "slug": "jaipur-print-long-kurta-in-teal",
+      "name": "Jaipur Print Long Kurta in Teal",
+      "brand": "Desi Threads",
+      "category": "womens-kurtas",
+      "price": 1999,
+      "mrp": 2699,
+      "discount_pct": 26,
+      "images": [
+        "/img/p/jaipur-print-long-kurta-in-teal-1.svg",
+        "/img/p/jaipur-print-long-kurta-in-teal-2.svg",
+        "/img/p/jaipur-print-long-kurta-in-teal-3.svg"
+      ],
+      "description": "Jaipur Print Long Kurta in Teal from Desi Threads. Made with chanderi silk blend. Breathable fabric with fine detailing, cut for an easy drape that works from office to festive evenings.",
+      "attributes": {
+        "material": "Chanderi silk blend",
+        "fit": "Straight",
+        "colour": "Teal"
+      },
+      "variants": [
+        {
+          "sku": "KRT007-XS-TEAL",
+          "size": "XS",
+          "colour": "Teal",
+          "stock": 25
+        },
+        {
+          "sku": "KRT007-S-TEAL",
+          "size": "S",
+          "colour": "Teal",
+          "stock": 36
+        },
+        {
+          "sku": "KRT007-M-TEAL",
+          "size": "M",
+          "colour": "Teal",
+          "stock": 9
+        },
+        {
+          "sku": "KRT007-L-TEAL",
+          "size": "L",
+          "colour": "Teal",
+          "stock": 20
+        },
+        {
+          "sku": "KRT007-XL-TEAL",
+          "size": "XL",
+          "colour": "Teal",
+          "stock": 33
+        },
+        {
+          "sku": "KRT007-XXL-TEAL",
+          "size": "XXL",
+          "colour": "Teal",
+          "stock": 24
+        },
+        {
+          "sku": "KRT007-XS-MAROON",
+          "size": "XS",
+          "colour": "Maroon",
+          "stock": 11
+        },
+        {
+          "sku": "KRT007-S-MAROON",
+          "size": "S",
+          "colour": "Maroon",
+          "stock": 25
+        },
+        {
+          "sku": "KRT007-M-MAROON",
+          "size": "M",
+          "colour": "Maroon",
+          "stock": 18
+        },
+        {
+          "sku": "KRT007-L-MAROON",
+          "size": "L",
+          "colour": "Maroon",
+          "stock": 27
+        },
+        {
+          "sku": "KRT007-XL-MAROON",
+          "size": "XL",
+          "colour": "Maroon",
+          "stock": 0
+        },
+        {
+          "sku": "KRT007-XXL-MAROON",
+          "size": "XXL",
+          "colour": "Maroon",
+          "stock": 8
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>Size</th><th>Bust (in)</th><th>Waist (in)</th><th>Length (in)</th></tr></thead><tbody><tr><td>XS</td><td>32</td><td>28</td><td>44</td></tr><tr><td>S</td><td>34</td><td>30</td><td>44</td></tr><tr><td>M</td><td>36</td><td>32</td><td>45</td></tr><tr><td>L</td><td>38</td><td>34</td><td>45</td></tr><tr><td>XL</td><td>40</td><td>36</td><td>46</td></tr><tr><td>XXL</td><td>42</td><td>38</td><td>46</td></tr></tbody></table>",
+        "image": "/img/size/womens-kurtas.svg"
+      },
+      "return_policy": {
+        "window_days": 15,
+        "text": "15-day easy returns for unworn items with tags intact. Free pickup on prepaid orders."
+      },
+      "rating": {
+        "value": 4.1,
+        "count": 384
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "KRT008",
+      "slug": "rayon-kaftan-kurta-in-tan",
+      "name": "Rayon Kaftan Kurta in Tan",
+      "brand": "Desi Threads",
+      "category": "womens-kurtas",
+      "price": 2159,
+      "mrp": 3599,
+      "discount_pct": 40,
+      "images": [
+        "/img/p/rayon-kaftan-kurta-in-tan-1.svg",
+        "/img/p/rayon-kaftan-kurta-in-tan-2.svg",
+        "/img/p/rayon-kaftan-kurta-in-tan-3.svg"
+      ],
+      "description": "Rayon Kaftan Kurta in Tan from Desi Threads. Made with chanderi silk blend. Breathable fabric with fine detailing, cut for an easy drape that works from office to festive evenings.",
+      "attributes": {
+        "material": "Chanderi silk blend",
+        "fit": "Straight",
+        "colour": "Tan"
+      },
+      "variants": [
+        {
+          "sku": "KRT008-XS-TAN",
+          "size": "XS",
+          "colour": "Tan",
+          "stock": 15
+        },
+        {
+          "sku": "KRT008-S-TAN",
+          "size": "S",
+          "colour": "Tan",
+          "stock": 16
+        },
+        {
+          "sku": "KRT008-M-TAN",
+          "size": "M",
+          "colour": "Tan",
+          "stock": 33
+        },
+        {
+          "sku": "KRT008-L-TAN",
+          "size": "L",
+          "colour": "Tan",
+          "stock": 26
+        },
+        {
+          "sku": "KRT008-XL-TAN",
+          "size": "XL",
+          "colour": "Tan",
+          "stock": 34
+        },
+        {
+          "sku": "KRT008-XXL-TAN",
+          "size": "XXL",
+          "colour": "Tan",
+          "stock": 38
+        },
+        {
+          "sku": "KRT008-XS-OLIVE",
+          "size": "XS",
+          "colour": "Olive",
+          "stock": 27
+        },
+        {
+          "sku": "KRT008-S-OLIVE",
+          "size": "S",
+          "colour": "Olive",
+          "stock": 29
+        },
+        {
+          "sku": "KRT008-M-OLIVE",
+          "size": "M",
+          "colour": "Olive",
+          "stock": 20
+        },
+        {
+          "sku": "KRT008-L-OLIVE",
+          "size": "L",
+          "colour": "Olive",
+          "stock": 15
+        },
+        {
+          "sku": "KRT008-XL-OLIVE",
+          "size": "XL",
+          "colour": "Olive",
+          "stock": 8
+        },
+        {
+          "sku": "KRT008-XXL-OLIVE",
+          "size": "XXL",
+          "colour": "Olive",
+          "stock": 8
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>Size</th><th>Bust (in)</th><th>Waist (in)</th><th>Length (in)</th></tr></thead><tbody><tr><td>XS</td><td>32</td><td>28</td><td>44</td></tr><tr><td>S</td><td>34</td><td>30</td><td>44</td></tr><tr><td>M</td><td>36</td><td>32</td><td>45</td></tr><tr><td>L</td><td>38</td><td>34</td><td>45</td></tr><tr><td>XL</td><td>40</td><td>36</td><td>46</td></tr><tr><td>XXL</td><td>42</td><td>38</td><td>46</td></tr></tbody></table>",
+        "image": "/img/size/womens-kurtas.svg"
+      },
+      "return_policy": {
+        "window_days": 15,
+        "text": "15-day easy returns for unworn items with tags intact. Free pickup on prepaid orders."
+      },
+      "rating": {
+        "value": 4.2,
+        "count": 406
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "KRT009",
+      "slug": "handloom-yoke-kurta-in-olive",
+      "name": "Handloom Yoke Kurta in Olive",
+      "brand": "Desi Threads",
+      "category": "womens-kurtas",
+      "price": 1769,
+      "mrp": 2499,
+      "discount_pct": 29,
+      "images": [
+        "/img/p/handloom-yoke-kurta-in-olive-1.svg",
+        "/img/p/handloom-yoke-kurta-in-olive-2.svg",
+        "/img/p/handloom-yoke-kurta-in-olive-3.svg"
+      ],
+      "description": "Handloom Yoke Kurta in Olive from Desi Threads. Made with rayon. Breathable fabric with fine detailing, cut for an easy drape that works from office to festive evenings.",
+      "attributes": {
+        "material": "Rayon",
+        "fit": "Relaxed",
+        "colour": "Olive"
+      },
+      "variants": [
+        {
+          "sku": "KRT009-XS-OLIVE",
+          "size": "XS",
+          "colour": "Olive",
+          "stock": 20
+        },
+        {
+          "sku": "KRT009-S-OLIVE",
+          "size": "S",
+          "colour": "Olive",
+          "stock": 22
+        },
+        {
+          "sku": "KRT009-M-OLIVE",
+          "size": "M",
+          "colour": "Olive",
+          "stock": 10
+        },
+        {
+          "sku": "KRT009-L-OLIVE",
+          "size": "L",
+          "colour": "Olive",
+          "stock": 24
+        },
+        {
+          "sku": "KRT009-XL-OLIVE",
+          "size": "XL",
+          "colour": "Olive",
+          "stock": 0
+        },
+        {
+          "sku": "KRT009-XXL-OLIVE",
+          "size": "XXL",
+          "colour": "Olive",
+          "stock": 28
+        },
+        {
+          "sku": "KRT009-XS-TEAL",
+          "size": "XS",
+          "colour": "Teal",
+          "stock": 40
+        },
+        {
+          "sku": "KRT009-S-TEAL",
+          "size": "S",
+          "colour": "Teal",
+          "stock": 23
+        },
+        {
+          "sku": "KRT009-M-TEAL",
+          "size": "M",
+          "colour": "Teal",
+          "stock": 18
+        },
+        {
+          "sku": "KRT009-L-TEAL",
+          "size": "L",
+          "colour": "Teal",
+          "stock": 13
+        },
+        {
+          "sku": "KRT009-XL-TEAL",
+          "size": "XL",
+          "colour": "Teal",
+          "stock": 33
+        },
+        {
+          "sku": "KRT009-XXL-TEAL",
+          "size": "XXL",
+          "colour": "Teal",
+          "stock": 27
+        },
+        {
+          "sku": "KRT009-XS-INDIGO",
+          "size": "XS",
+          "colour": "Indigo",
+          "stock": 14
+        },
+        {
+          "sku": "KRT009-S-INDIGO",
+          "size": "S",
+          "colour": "Indigo",
+          "stock": 19
+        },
+        {
+          "sku": "KRT009-M-INDIGO",
+          "size": "M",
+          "colour": "Indigo",
+          "stock": 7
+        },
+        {
+          "sku": "KRT009-L-INDIGO",
+          "size": "L",
+          "colour": "Indigo",
+          "stock": 32
+        },
+        {
+          "sku": "KRT009-XL-INDIGO",
+          "size": "XL",
+          "colour": "Indigo",
+          "stock": 34
+        },
+        {
+          "sku": "KRT009-XXL-INDIGO",
+          "size": "XXL",
+          "colour": "Indigo",
+          "stock": 16
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>Size</th><th>Bust (in)</th><th>Waist (in)</th><th>Length (in)</th></tr></thead><tbody><tr><td>XS</td><td>32</td><td>28</td><td>44</td></tr><tr><td>S</td><td>34</td><td>30</td><td>44</td></tr><tr><td>M</td><td>36</td><td>32</td><td>45</td></tr><tr><td>L</td><td>38</td><td>34</td><td>45</td></tr><tr><td>XL</td><td>40</td><td>36</td><td>46</td></tr><tr><td>XXL</td><td>42</td><td>38</td><td>46</td></tr></tbody></table>",
+        "image": "/img/size/womens-kurtas.svg"
+      },
+      "return_policy": {
+        "window_days": 15,
+        "text": "15-day easy returns for unworn items with tags intact. Free pickup on prepaid orders."
+      },
+      "rating": {
+        "value": 4.7,
+        "count": 874
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "KRT010",
+      "slug": "ikat-print-kurta-in-olive",
+      "name": "Ikat Print Kurta in Olive",
+      "brand": "Desi Threads",
+      "category": "womens-kurtas",
+      "price": 1979,
+      "mrp": 2999,
+      "discount_pct": 34,
+      "images": [
+        "/img/p/ikat-print-kurta-in-olive-1.svg",
+        "/img/p/ikat-print-kurta-in-olive-2.svg",
+        "/img/p/ikat-print-kurta-in-olive-3.svg"
+      ],
+      "description": "Ikat Print Kurta in Olive from Desi Threads. Made with cotton. Breathable fabric with fine detailing, cut for an easy drape that works from office to festive evenings.",
+      "attributes": {
+        "material": "Cotton",
+        "fit": "A-line",
+        "colour": "Olive"
+      },
+      "variants": [
+        {
+          "sku": "KRT010-XS-OLIVE",
+          "size": "XS",
+          "colour": "Olive",
+          "stock": 39
+        },
+        {
+          "sku": "KRT010-S-OLIVE",
+          "size": "S",
+          "colour": "Olive",
+          "stock": 38
+        },
+        {
+          "sku": "KRT010-M-OLIVE",
+          "size": "M",
+          "colour": "Olive",
+          "stock": 15
+        },
+        {
+          "sku": "KRT010-L-OLIVE",
+          "size": "L",
+          "colour": "Olive",
+          "stock": 19
+        },
+        {
+          "sku": "KRT010-XL-OLIVE",
+          "size": "XL",
+          "colour": "Olive",
+          "stock": 10
+        },
+        {
+          "sku": "KRT010-XXL-OLIVE",
+          "size": "XXL",
+          "colour": "Olive",
+          "stock": 0
+        },
+        {
+          "sku": "KRT010-XS-SKY-BLUE",
+          "size": "XS",
+          "colour": "Sky Blue",
+          "stock": 37
+        },
+        {
+          "sku": "KRT010-S-SKY-BLUE",
+          "size": "S",
+          "colour": "Sky Blue",
+          "stock": 27
+        },
+        {
+          "sku": "KRT010-M-SKY-BLUE",
+          "size": "M",
+          "colour": "Sky Blue",
+          "stock": 0
+        },
+        {
+          "sku": "KRT010-L-SKY-BLUE",
+          "size": "L",
+          "colour": "Sky Blue",
+          "stock": 37
+        },
+        {
+          "sku": "KRT010-XL-SKY-BLUE",
+          "size": "XL",
+          "colour": "Sky Blue",
+          "stock": 27
+        },
+        {
+          "sku": "KRT010-XXL-SKY-BLUE",
+          "size": "XXL",
+          "colour": "Sky Blue",
+          "stock": 27
+        },
+        {
+          "sku": "KRT010-XS-PINK",
+          "size": "XS",
+          "colour": "Pink",
+          "stock": 23
+        },
+        {
+          "sku": "KRT010-S-PINK",
+          "size": "S",
+          "colour": "Pink",
+          "stock": 32
+        },
+        {
+          "sku": "KRT010-M-PINK",
+          "size": "M",
+          "colour": "Pink",
+          "stock": 15
+        },
+        {
+          "sku": "KRT010-L-PINK",
+          "size": "L",
+          "colour": "Pink",
+          "stock": 20
+        },
+        {
+          "sku": "KRT010-XL-PINK",
+          "size": "XL",
+          "colour": "Pink",
+          "stock": 29
+        },
+        {
+          "sku": "KRT010-XXL-PINK",
+          "size": "XXL",
+          "colour": "Pink",
+          "stock": 3
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>Size</th><th>Bust (in)</th><th>Waist (in)</th><th>Length (in)</th></tr></thead><tbody><tr><td>XS</td><td>32</td><td>28</td><td>44</td></tr><tr><td>S</td><td>34</td><td>30</td><td>44</td></tr><tr><td>M</td><td>36</td><td>32</td><td>45</td></tr><tr><td>L</td><td>38</td><td>34</td><td>45</td></tr><tr><td>XL</td><td>40</td><td>36</td><td>46</td></tr><tr><td>XXL</td><td>42</td><td>38</td><td>46</td></tr></tbody></table>",
+        "image": "/img/size/womens-kurtas.svg"
+      },
+      "return_policy": {
+        "window_days": 15,
+        "text": "15-day easy returns for unworn items with tags intact. Free pickup on prepaid orders."
+      },
+      "rating": {
+        "value": 4.2,
+        "count": 204
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "KRT011",
+      "slug": "mirror-work-short-kurta-in-white",
+      "name": "Mirror Work Short Kurta in White",
+      "brand": "Desi Threads",
+      "category": "womens-kurtas",
+      "price": 1559,
+      "mrp": 2299,
+      "discount_pct": 32,
+      "images": [
+        "/img/p/mirror-work-short-kurta-in-white-1.svg",
+        "/img/p/mirror-work-short-kurta-in-white-2.svg",
+        "/img/p/mirror-work-short-kurta-in-white-3.svg"
+      ],
+      "description": "Mirror Work Short Kurta in White from Desi Threads. Made with cotton. Breathable fabric with fine detailing, cut for an easy drape that works from office to festive evenings.",
+      "attributes": {
+        "material": "Cotton",
+        "fit": "Straight",
+        "colour": "White"
+      },
+      "variants": [
+        {
+          "sku": "KRT011-XS-WHITE",
+          "size": "XS",
+          "colour": "White",
+          "stock": 27
+        },
+        {
+          "sku": "KRT011-S-WHITE",
+          "size": "S",
+          "colour": "White",
+          "stock": 18
+        },
+        {
+          "sku": "KRT011-M-WHITE",
+          "size": "M",
+          "colour": "White",
+          "stock": 33
+        },
+        {
+          "sku": "KRT011-L-WHITE",
+          "size": "L",
+          "colour": "White",
+          "stock": 10
+        },
+        {
+          "sku": "KRT011-XL-WHITE",
+          "size": "XL",
+          "colour": "White",
+          "stock": 10
+        },
+        {
+          "sku": "KRT011-XXL-WHITE",
+          "size": "XXL",
+          "colour": "White",
+          "stock": 34
+        },
+        {
+          "sku": "KRT011-XS-SKY-BLUE",
+          "size": "XS",
+          "colour": "Sky Blue",
+          "stock": 0
+        },
+        {
+          "sku": "KRT011-S-SKY-BLUE",
+          "size": "S",
+          "colour": "Sky Blue",
+          "stock": 40
+        },
+        {
+          "sku": "KRT011-M-SKY-BLUE",
+          "size": "M",
+          "colour": "Sky Blue",
+          "stock": 17
+        },
+        {
+          "sku": "KRT011-L-SKY-BLUE",
+          "size": "L",
+          "colour": "Sky Blue",
+          "stock": 9
+        },
+        {
+          "sku": "KRT011-XL-SKY-BLUE",
+          "size": "XL",
+          "colour": "Sky Blue",
+          "stock": 23
+        },
+        {
+          "sku": "KRT011-XXL-SKY-BLUE",
+          "size": "XXL",
+          "colour": "Sky Blue",
+          "stock": 20
+        },
+        {
+          "sku": "KRT011-XS-OLIVE",
+          "size": "XS",
+          "colour": "Olive",
+          "stock": 22
+        },
+        {
+          "sku": "KRT011-S-OLIVE",
+          "size": "S",
+          "colour": "Olive",
+          "stock": 7
+        },
+        {
+          "sku": "KRT011-M-OLIVE",
+          "size": "M",
+          "colour": "Olive",
+          "stock": 31
+        },
+        {
+          "sku": "KRT011-L-OLIVE",
+          "size": "L",
+          "colour": "Olive",
+          "stock": 21
+        },
+        {
+          "sku": "KRT011-XL-OLIVE",
+          "size": "XL",
+          "colour": "Olive",
+          "stock": 8
+        },
+        {
+          "sku": "KRT011-XXL-OLIVE",
+          "size": "XXL",
+          "colour": "Olive",
+          "stock": 30
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>Size</th><th>Bust (in)</th><th>Waist (in)</th><th>Length (in)</th></tr></thead><tbody><tr><td>XS</td><td>32</td><td>28</td><td>44</td></tr><tr><td>S</td><td>34</td><td>30</td><td>44</td></tr><tr><td>M</td><td>36</td><td>32</td><td>45</td></tr><tr><td>L</td><td>38</td><td>34</td><td>45</td></tr><tr><td>XL</td><td>40</td><td>36</td><td>46</td></tr><tr><td>XXL</td><td>42</td><td>38</td><td>46</td></tr></tbody></table>",
+        "image": "/img/size/womens-kurtas.svg"
+      },
+      "return_policy": {
+        "window_days": 15,
+        "text": "15-day easy returns for unworn items with tags intact. Free pickup on prepaid orders."
+      },
+      "rating": {
+        "value": 4.5,
+        "count": 51
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "KRT012",
+      "slug": "linen-mandarin-kurta-in-white",
+      "name": "Linen Mandarin Kurta in White",
+      "brand": "Desi Threads",
+      "category": "womens-kurtas",
+      "price": 1619,
+      "mrp": 2099,
+      "discount_pct": 23,
+      "images": [
+        "/img/p/linen-mandarin-kurta-in-white-1.svg",
+        "/img/p/linen-mandarin-kurta-in-white-2.svg",
+        "/img/p/linen-mandarin-kurta-in-white-3.svg"
+      ],
+      "description": "Linen Mandarin Kurta in White from Desi Threads. Made with linen blend. Breathable fabric with fine detailing, cut for an easy drape that works from office to festive evenings.",
+      "attributes": {
+        "material": "Linen blend",
+        "fit": "Straight",
+        "colour": "White"
+      },
+      "variants": [
+        {
+          "sku": "KRT012-XS-WHITE",
+          "size": "XS",
+          "colour": "White",
+          "stock": 7
+        },
+        {
+          "sku": "KRT012-S-WHITE",
+          "size": "S",
+          "colour": "White",
+          "stock": 24
+        },
+        {
+          "sku": "KRT012-M-WHITE",
+          "size": "M",
+          "colour": "White",
+          "stock": 0
+        },
+        {
+          "sku": "KRT012-L-WHITE",
+          "size": "L",
+          "colour": "White",
+          "stock": 9
+        },
+        {
+          "sku": "KRT012-XL-WHITE",
+          "size": "XL",
+          "colour": "White",
+          "stock": 6
+        },
+        {
+          "sku": "KRT012-XXL-WHITE",
+          "size": "XXL",
+          "colour": "White",
+          "stock": 25
+        },
+        {
+          "sku": "KRT012-XS-TEAL",
+          "size": "XS",
+          "colour": "Teal",
+          "stock": 5
+        },
+        {
+          "sku": "KRT012-S-TEAL",
+          "size": "S",
+          "colour": "Teal",
+          "stock": 0
+        },
+        {
+          "sku": "KRT012-M-TEAL",
+          "size": "M",
+          "colour": "Teal",
+          "stock": 9
+        },
+        {
+          "sku": "KRT012-L-TEAL",
+          "size": "L",
+          "colour": "Teal",
+          "stock": 15
+        },
+        {
+          "sku": "KRT012-XL-TEAL",
+          "size": "XL",
+          "colour": "Teal",
+          "stock": 9
+        },
+        {
+          "sku": "KRT012-XXL-TEAL",
+          "size": "XXL",
+          "colour": "Teal",
+          "stock": 14
+        },
+        {
+          "sku": "KRT012-XS-GREY",
+          "size": "XS",
+          "colour": "Grey",
+          "stock": 7
+        },
+        {
+          "sku": "KRT012-S-GREY",
+          "size": "S",
+          "colour": "Grey",
+          "stock": 20
+        },
+        {
+          "sku": "KRT012-M-GREY",
+          "size": "M",
+          "colour": "Grey",
+          "stock": 5
+        },
+        {
+          "sku": "KRT012-L-GREY",
+          "size": "L",
+          "colour": "Grey",
+          "stock": 0
+        },
+        {
+          "sku": "KRT012-XL-GREY",
+          "size": "XL",
+          "colour": "Grey",
+          "stock": 9
+        },
+        {
+          "sku": "KRT012-XXL-GREY",
+          "size": "XXL",
+          "colour": "Grey",
+          "stock": 24
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>Size</th><th>Bust (in)</th><th>Waist (in)</th><th>Length (in)</th></tr></thead><tbody><tr><td>XS</td><td>32</td><td>28</td><td>44</td></tr><tr><td>S</td><td>34</td><td>30</td><td>44</td></tr><tr><td>M</td><td>36</td><td>32</td><td>45</td></tr><tr><td>L</td><td>38</td><td>34</td><td>45</td></tr><tr><td>XL</td><td>40</td><td>36</td><td>46</td></tr><tr><td>XXL</td><td>42</td><td>38</td><td>46</td></tr></tbody></table>",
+        "image": "/img/size/womens-kurtas.svg"
+      },
+      "return_policy": {
+        "window_days": 15,
+        "text": "15-day easy returns for unworn items with tags intact. Free pickup on prepaid orders."
+      },
+      "rating": {
+        "value": 4.7,
+        "count": 909
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "KRT013",
+      "slug": "gotta-patti-kurta-in-pink",
+      "name": "Gotta Patti Kurta in Pink",
+      "brand": "Desi Threads",
+      "category": "womens-kurtas",
+      "price": 2059,
+      "mrp": 2899,
+      "discount_pct": 29,
+      "images": [
+        "/img/p/gotta-patti-kurta-in-pink-1.svg",
+        "/img/p/gotta-patti-kurta-in-pink-2.svg",
+        "/img/p/gotta-patti-kurta-in-pink-3.svg"
+      ],
+      "description": "Gotta Patti Kurta in Pink from Desi Threads. Made with mulmul cotton. Breathable fabric with fine detailing, cut for an easy drape that works from office to festive evenings.",
+      "attributes": {
+        "material": "Mulmul cotton",
+        "fit": "Relaxed",
+        "colour": "Pink"
+      },
+      "variants": [
+        {
+          "sku": "KRT013-XS-PINK",
+          "size": "XS",
+          "colour": "Pink",
+          "stock": 35
+        },
+        {
+          "sku": "KRT013-S-PINK",
+          "size": "S",
+          "colour": "Pink",
+          "stock": 24
+        },
+        {
+          "sku": "KRT013-M-PINK",
+          "size": "M",
+          "colour": "Pink",
+          "stock": 21
+        },
+        {
+          "sku": "KRT013-L-PINK",
+          "size": "L",
+          "colour": "Pink",
+          "stock": 15
+        },
+        {
+          "sku": "KRT013-XL-PINK",
+          "size": "XL",
+          "colour": "Pink",
+          "stock": 35
+        },
+        {
+          "sku": "KRT013-XXL-PINK",
+          "size": "XXL",
+          "colour": "Pink",
+          "stock": 35
+        },
+        {
+          "sku": "KRT013-XS-WHITE",
+          "size": "XS",
+          "colour": "White",
+          "stock": 22
+        },
+        {
+          "sku": "KRT013-S-WHITE",
+          "size": "S",
+          "colour": "White",
+          "stock": 16
+        },
+        {
+          "sku": "KRT013-M-WHITE",
+          "size": "M",
+          "colour": "White",
+          "stock": 18
+        },
+        {
+          "sku": "KRT013-L-WHITE",
+          "size": "L",
+          "colour": "White",
+          "stock": 40
+        },
+        {
+          "sku": "KRT013-XL-WHITE",
+          "size": "XL",
+          "colour": "White",
+          "stock": 32
+        },
+        {
+          "sku": "KRT013-XXL-WHITE",
+          "size": "XXL",
+          "colour": "White",
+          "stock": 8
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>Size</th><th>Bust (in)</th><th>Waist (in)</th><th>Length (in)</th></tr></thead><tbody><tr><td>XS</td><td>32</td><td>28</td><td>44</td></tr><tr><td>S</td><td>34</td><td>30</td><td>44</td></tr><tr><td>M</td><td>36</td><td>32</td><td>45</td></tr><tr><td>L</td><td>38</td><td>34</td><td>45</td></tr><tr><td>XL</td><td>40</td><td>36</td><td>46</td></tr><tr><td>XXL</td><td>42</td><td>38</td><td>46</td></tr></tbody></table>",
+        "image": "/img/size/womens-kurtas.svg"
+      },
+      "return_policy": {
+        "window_days": 15,
+        "text": "15-day easy returns for unworn items with tags intact. Free pickup on prepaid orders."
+      },
+      "rating": {
+        "value": 3.7,
+        "count": 611
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "KRT014",
+      "slug": "floral-dobby-kurta-in-white",
+      "name": "Floral Dobby Kurta in White",
+      "brand": "Desi Threads",
+      "category": "womens-kurtas",
+      "price": 1389,
+      "mrp": 2099,
+      "discount_pct": 34,
+      "images": [
+        "/img/p/floral-dobby-kurta-in-white-1.svg",
+        "/img/p/floral-dobby-kurta-in-white-2.svg",
+        "/img/p/floral-dobby-kurta-in-white-3.svg"
+      ],
+      "description": "Floral Dobby Kurta in White from Desi Threads. Made with cotton. Breathable fabric with fine detailing, cut for an easy drape that works from office to festive evenings.",
+      "attributes": {
+        "material": "Cotton",
+        "fit": "Relaxed",
+        "colour": "White"
+      },
+      "variants": [
+        {
+          "sku": "KRT014-XS-WHITE",
+          "size": "XS",
+          "colour": "White",
+          "stock": 28
+        },
+        {
+          "sku": "KRT014-S-WHITE",
+          "size": "S",
+          "colour": "White",
+          "stock": 0
+        },
+        {
+          "sku": "KRT014-M-WHITE",
+          "size": "M",
+          "colour": "White",
+          "stock": 39
+        },
+        {
+          "sku": "KRT014-L-WHITE",
+          "size": "L",
+          "colour": "White",
+          "stock": 24
+        },
+        {
+          "sku": "KRT014-XL-WHITE",
+          "size": "XL",
+          "colour": "White",
+          "stock": 24
+        },
+        {
+          "sku": "KRT014-XXL-WHITE",
+          "size": "XXL",
+          "colour": "White",
+          "stock": 0
+        },
+        {
+          "sku": "KRT014-XS-MAROON",
+          "size": "XS",
+          "colour": "Maroon",
+          "stock": 7
+        },
+        {
+          "sku": "KRT014-S-MAROON",
+          "size": "S",
+          "colour": "Maroon",
+          "stock": 39
+        },
+        {
+          "sku": "KRT014-M-MAROON",
+          "size": "M",
+          "colour": "Maroon",
+          "stock": 17
+        },
+        {
+          "sku": "KRT014-L-MAROON",
+          "size": "L",
+          "colour": "Maroon",
+          "stock": 27
+        },
+        {
+          "sku": "KRT014-XL-MAROON",
+          "size": "XL",
+          "colour": "Maroon",
+          "stock": 26
+        },
+        {
+          "sku": "KRT014-XXL-MAROON",
+          "size": "XXL",
+          "colour": "Maroon",
+          "stock": 34
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>Size</th><th>Bust (in)</th><th>Waist (in)</th><th>Length (in)</th></tr></thead><tbody><tr><td>XS</td><td>32</td><td>28</td><td>44</td></tr><tr><td>S</td><td>34</td><td>30</td><td>44</td></tr><tr><td>M</td><td>36</td><td>32</td><td>45</td></tr><tr><td>L</td><td>38</td><td>34</td><td>45</td></tr><tr><td>XL</td><td>40</td><td>36</td><td>46</td></tr><tr><td>XXL</td><td>42</td><td>38</td><td>46</td></tr></tbody></table>",
+        "image": "/img/size/womens-kurtas.svg"
+      },
+      "return_policy": {
+        "window_days": 15,
+        "text": "15-day easy returns for unworn items with tags intact. Free pickup on prepaid orders."
+      },
+      "rating": {
+        "value": 4.3,
+        "count": 114
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "KRT015",
+      "slug": "pleated-asymmetric-kurta-in-pink",
+      "name": "Pleated Asymmetric Kurta in Pink",
+      "brand": "Desi Threads",
+      "category": "womens-kurtas",
+      "price": 2479,
+      "mrp": 3099,
+      "discount_pct": 20,
+      "images": [
+        "/img/p/pleated-asymmetric-kurta-in-pink-1.svg",
+        "/img/p/pleated-asymmetric-kurta-in-pink-2.svg",
+        "/img/p/pleated-asymmetric-kurta-in-pink-3.svg"
+      ],
+      "description": "Pleated Asymmetric Kurta in Pink from Desi Threads. Made with chanderi silk blend. Breathable fabric with fine detailing, cut for an easy drape that works from office to festive evenings.",
+      "attributes": {
+        "material": "Chanderi silk blend",
+        "fit": "Straight",
+        "colour": "Pink"
+      },
+      "variants": [
+        {
+          "sku": "KRT015-XS-PINK",
+          "size": "XS",
+          "colour": "Pink",
+          "stock": 11
+        },
+        {
+          "sku": "KRT015-S-PINK",
+          "size": "S",
+          "colour": "Pink",
+          "stock": 26
+        },
+        {
+          "sku": "KRT015-M-PINK",
+          "size": "M",
+          "colour": "Pink",
+          "stock": 34
+        },
+        {
+          "sku": "KRT015-L-PINK",
+          "size": "L",
+          "colour": "Pink",
+          "stock": 31
+        },
+        {
+          "sku": "KRT015-XL-PINK",
+          "size": "XL",
+          "colour": "Pink",
+          "stock": 33
+        },
+        {
+          "sku": "KRT015-XXL-PINK",
+          "size": "XXL",
+          "colour": "Pink",
+          "stock": 0
+        },
+        {
+          "sku": "KRT015-XS-TEAL",
+          "size": "XS",
+          "colour": "Teal",
+          "stock": 24
+        },
+        {
+          "sku": "KRT015-S-TEAL",
+          "size": "S",
+          "colour": "Teal",
+          "stock": 20
+        },
+        {
+          "sku": "KRT015-M-TEAL",
+          "size": "M",
+          "colour": "Teal",
+          "stock": 32
+        },
+        {
+          "sku": "KRT015-L-TEAL",
+          "size": "L",
+          "colour": "Teal",
+          "stock": 13
+        },
+        {
+          "sku": "KRT015-XL-TEAL",
+          "size": "XL",
+          "colour": "Teal",
+          "stock": 24
+        },
+        {
+          "sku": "KRT015-XXL-TEAL",
+          "size": "XXL",
+          "colour": "Teal",
+          "stock": 40
+        },
+        {
+          "sku": "KRT015-XS-MAROON",
+          "size": "XS",
+          "colour": "Maroon",
+          "stock": 4
+        },
+        {
+          "sku": "KRT015-S-MAROON",
+          "size": "S",
+          "colour": "Maroon",
+          "stock": 10
+        },
+        {
+          "sku": "KRT015-M-MAROON",
+          "size": "M",
+          "colour": "Maroon",
+          "stock": 36
+        },
+        {
+          "sku": "KRT015-L-MAROON",
+          "size": "L",
+          "colour": "Maroon",
+          "stock": 27
+        },
+        {
+          "sku": "KRT015-XL-MAROON",
+          "size": "XL",
+          "colour": "Maroon",
+          "stock": 35
+        },
+        {
+          "sku": "KRT015-XXL-MAROON",
+          "size": "XXL",
+          "colour": "Maroon",
+          "stock": 5
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>Size</th><th>Bust (in)</th><th>Waist (in)</th><th>Length (in)</th></tr></thead><tbody><tr><td>XS</td><td>32</td><td>28</td><td>44</td></tr><tr><td>S</td><td>34</td><td>30</td><td>44</td></tr><tr><td>M</td><td>36</td><td>32</td><td>45</td></tr><tr><td>L</td><td>38</td><td>34</td><td>45</td></tr><tr><td>XL</td><td>40</td><td>36</td><td>46</td></tr><tr><td>XXL</td><td>42</td><td>38</td><td>46</td></tr></tbody></table>",
+        "image": "/img/size/womens-kurtas.svg"
+      },
+      "return_policy": {
+        "window_days": 15,
+        "text": "15-day easy returns for unworn items with tags intact. Free pickup on prepaid orders."
+      },
+      "rating": {
+        "value": 4.4,
+        "count": 61
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "SHT001",
+      "slug": "tan-oxford-button-down-shirt",
+      "name": "Tan Oxford Button-Down Shirt",
+      "brand": "Desi Threads",
+      "category": "mens-shirts",
+      "price": 1659,
+      "mrp": 2299,
+      "discount_pct": 28,
+      "images": [
+        "/img/p/tan-oxford-button-down-shirt-1.svg",
+        "/img/p/tan-oxford-button-down-shirt-2.svg",
+        "/img/p/tan-oxford-button-down-shirt-3.svg"
+      ],
+      "description": "Tan Oxford Button-Down Shirt from Desi Threads. Made with linen. Easy-care fabric with a structured collar and a tailored cut; machine washable.",
+      "attributes": {
+        "material": "Linen",
+        "fit": "Slim",
+        "colour": "Tan"
+      },
+      "variants": [
+        {
+          "sku": "SHT001-S-TAN",
+          "size": "S",
+          "colour": "Tan",
+          "stock": 32
+        },
+        {
+          "sku": "SHT001-M-TAN",
+          "size": "M",
+          "colour": "Tan",
+          "stock": 14
+        },
+        {
+          "sku": "SHT001-L-TAN",
+          "size": "L",
+          "colour": "Tan",
+          "stock": 40
+        },
+        {
+          "sku": "SHT001-XL-TAN",
+          "size": "XL",
+          "colour": "Tan",
+          "stock": 6
+        },
+        {
+          "sku": "SHT001-XXL-TAN",
+          "size": "XXL",
+          "colour": "Tan",
+          "stock": 18
+        },
+        {
+          "sku": "SHT001-S-TEAL",
+          "size": "S",
+          "colour": "Teal",
+          "stock": 0
+        },
+        {
+          "sku": "SHT001-M-TEAL",
+          "size": "M",
+          "colour": "Teal",
+          "stock": 24
+        },
+        {
+          "sku": "SHT001-L-TEAL",
+          "size": "L",
+          "colour": "Teal",
+          "stock": 16
+        },
+        {
+          "sku": "SHT001-XL-TEAL",
+          "size": "XL",
+          "colour": "Teal",
+          "stock": 9
+        },
+        {
+          "sku": "SHT001-XXL-TEAL",
+          "size": "XXL",
+          "colour": "Teal",
+          "stock": 11
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>Size</th><th>Chest (in)</th><th>Shoulder (in)</th><th>Length (in)</th></tr></thead><tbody><tr><td>S</td><td>38</td><td>17</td><td>27.5</td></tr><tr><td>M</td><td>40</td><td>17.5</td><td>28</td></tr><tr><td>L</td><td>42</td><td>18</td><td>28.5</td></tr><tr><td>XL</td><td>44</td><td>18.5</td><td>29</td></tr><tr><td>XXL</td><td>46</td><td>19</td><td>29.5</td></tr></tbody></table>",
+        "image": "/img/size/mens-shirts.svg"
+      },
+      "return_policy": {
+        "window_days": 15,
+        "text": "15-day easy returns for unworn items with tags intact. Free pickup on prepaid orders."
+      },
+      "rating": {
+        "value": 3.8,
+        "count": 851
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "SHT002",
+      "slug": "sky-blue-linen-casual-shirt",
+      "name": "Sky Blue Linen Casual Shirt",
+      "brand": "Desi Threads",
+      "category": "mens-shirts",
+      "price": 1129,
+      "mrp": 1399,
+      "discount_pct": 19,
+      "images": [
+        "/img/p/sky-blue-linen-casual-shirt-1.svg",
+        "/img/p/sky-blue-linen-casual-shirt-2.svg",
+        "/img/p/sky-blue-linen-casual-shirt-3.svg"
+      ],
+      "description": "Sky Blue Linen Casual Shirt from Desi Threads. Made with chambray. Easy-care fabric with a structured collar and a tailored cut; machine washable.",
+      "attributes": {
+        "material": "Chambray",
+        "fit": "Regular",
+        "colour": "Sky Blue"
+      },
+      "variants": [
+        {
+          "sku": "SHT002-S-SKY-BLUE",
+          "size": "S",
+          "colour": "Sky Blue",
+          "stock": 30
+        },
+        {
+          "sku": "SHT002-M-SKY-BLUE",
+          "size": "M",
+          "colour": "Sky Blue",
+          "stock": 0
+        },
+        {
+          "sku": "SHT002-L-SKY-BLUE",
+          "size": "L",
+          "colour": "Sky Blue",
+          "stock": 30
+        },
+        {
+          "sku": "SHT002-XL-SKY-BLUE",
+          "size": "XL",
+          "colour": "Sky Blue",
+          "stock": 3
+        },
+        {
+          "sku": "SHT002-XXL-SKY-BLUE",
+          "size": "XXL",
+          "colour": "Sky Blue",
+          "stock": 10
+        },
+        {
+          "sku": "SHT002-S-OLIVE",
+          "size": "S",
+          "colour": "Olive",
+          "stock": 23
+        },
+        {
+          "sku": "SHT002-M-OLIVE",
+          "size": "M",
+          "colour": "Olive",
+          "stock": 37
+        },
+        {
+          "sku": "SHT002-L-OLIVE",
+          "size": "L",
+          "colour": "Olive",
+          "stock": 0
+        },
+        {
+          "sku": "SHT002-XL-OLIVE",
+          "size": "XL",
+          "colour": "Olive",
+          "stock": 29
+        },
+        {
+          "sku": "SHT002-XXL-OLIVE",
+          "size": "XXL",
+          "colour": "Olive",
+          "stock": 36
+        },
+        {
+          "sku": "SHT002-S-TEAL",
+          "size": "S",
+          "colour": "Teal",
+          "stock": 20
+        },
+        {
+          "sku": "SHT002-M-TEAL",
+          "size": "M",
+          "colour": "Teal",
+          "stock": 5
+        },
+        {
+          "sku": "SHT002-L-TEAL",
+          "size": "L",
+          "colour": "Teal",
+          "stock": 32
+        },
+        {
+          "sku": "SHT002-XL-TEAL",
+          "size": "XL",
+          "colour": "Teal",
+          "stock": 9
+        },
+        {
+          "sku": "SHT002-XXL-TEAL",
+          "size": "XXL",
+          "colour": "Teal",
+          "stock": 35
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>Size</th><th>Chest (in)</th><th>Shoulder (in)</th><th>Length (in)</th></tr></thead><tbody><tr><td>S</td><td>38</td><td>17</td><td>27.5</td></tr><tr><td>M</td><td>40</td><td>17.5</td><td>28</td></tr><tr><td>L</td><td>42</td><td>18</td><td>28.5</td></tr><tr><td>XL</td><td>44</td><td>18.5</td><td>29</td></tr><tr><td>XXL</td><td>46</td><td>19</td><td>29.5</td></tr></tbody></table>",
+        "image": "/img/size/mens-shirts.svg"
+      },
+      "return_policy": {
+        "window_days": 15,
+        "text": "15-day easy returns for unworn items with tags intact. Free pickup on prepaid orders."
+      },
+      "rating": {
+        "value": 4,
+        "count": 846
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "SHT003",
+      "slug": "black-checked-flannel-shirt",
+      "name": "Black Checked Flannel Shirt",
+      "brand": "Desi Threads",
+      "category": "mens-shirts",
+      "price": 1409,
+      "mrp": 2199,
+      "discount_pct": 36,
+      "images": [
+        "/img/p/black-checked-flannel-shirt-1.svg",
+        "/img/p/black-checked-flannel-shirt-2.svg",
+        "/img/p/black-checked-flannel-shirt-3.svg"
+      ],
+      "description": "Black Checked Flannel Shirt from Desi Threads. Made with chambray. Easy-care fabric with a structured collar and a tailored cut; machine washable.",
+      "attributes": {
+        "material": "Chambray",
+        "fit": "Relaxed",
+        "colour": "Black"
+      },
+      "variants": [
+        {
+          "sku": "SHT003-S-BLACK",
+          "size": "S",
+          "colour": "Black",
+          "stock": 38
+        },
+        {
+          "sku": "SHT003-M-BLACK",
+          "size": "M",
+          "colour": "Black",
+          "stock": 8
+        },
+        {
+          "sku": "SHT003-L-BLACK",
+          "size": "L",
+          "colour": "Black",
+          "stock": 26
+        },
+        {
+          "sku": "SHT003-XL-BLACK",
+          "size": "XL",
+          "colour": "Black",
+          "stock": 17
+        },
+        {
+          "sku": "SHT003-XXL-BLACK",
+          "size": "XXL",
+          "colour": "Black",
+          "stock": 19
+        },
+        {
+          "sku": "SHT003-S-MAROON",
+          "size": "S",
+          "colour": "Maroon",
+          "stock": 13
+        },
+        {
+          "sku": "SHT003-M-MAROON",
+          "size": "M",
+          "colour": "Maroon",
+          "stock": 40
+        },
+        {
+          "sku": "SHT003-L-MAROON",
+          "size": "L",
+          "colour": "Maroon",
+          "stock": 20
+        },
+        {
+          "sku": "SHT003-XL-MAROON",
+          "size": "XL",
+          "colour": "Maroon",
+          "stock": 38
+        },
+        {
+          "sku": "SHT003-XXL-MAROON",
+          "size": "XXL",
+          "colour": "Maroon",
+          "stock": 33
+        },
+        {
+          "sku": "SHT003-S-TEAL",
+          "size": "S",
+          "colour": "Teal",
+          "stock": 33
+        },
+        {
+          "sku": "SHT003-M-TEAL",
+          "size": "M",
+          "colour": "Teal",
+          "stock": 14
+        },
+        {
+          "sku": "SHT003-L-TEAL",
+          "size": "L",
+          "colour": "Teal",
+          "stock": 33
+        },
+        {
+          "sku": "SHT003-XL-TEAL",
+          "size": "XL",
+          "colour": "Teal",
+          "stock": 5
+        },
+        {
+          "sku": "SHT003-XXL-TEAL",
+          "size": "XXL",
+          "colour": "Teal",
+          "stock": 29
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>Size</th><th>Chest (in)</th><th>Shoulder (in)</th><th>Length (in)</th></tr></thead><tbody><tr><td>S</td><td>38</td><td>17</td><td>27.5</td></tr><tr><td>M</td><td>40</td><td>17.5</td><td>28</td></tr><tr><td>L</td><td>42</td><td>18</td><td>28.5</td></tr><tr><td>XL</td><td>44</td><td>18.5</td><td>29</td></tr><tr><td>XXL</td><td>46</td><td>19</td><td>29.5</td></tr></tbody></table>",
+        "image": "/img/size/mens-shirts.svg"
+      },
+      "return_policy": {
+        "window_days": 15,
+        "text": "15-day easy returns for unworn items with tags intact. Free pickup on prepaid orders."
+      },
+      "rating": {
+        "value": 4,
+        "count": 187
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "SHT004",
+      "slug": "mustard-mandarin-collar-shirt",
+      "name": "Mustard Mandarin Collar Shirt",
+      "brand": "Desi Threads",
+      "category": "mens-shirts",
+      "price": 1899,
+      "mrp": 2499,
+      "discount_pct": 24,
+      "images": [
+        "/img/p/mustard-mandarin-collar-shirt-1.svg",
+        "/img/p/mustard-mandarin-collar-shirt-2.svg",
+        "/img/p/mustard-mandarin-collar-shirt-3.svg"
+      ],
+      "description": "Mustard Mandarin Collar Shirt from Desi Threads. Made with chambray. Easy-care fabric with a structured collar and a tailored cut; machine washable.",
+      "attributes": {
+        "material": "Chambray",
+        "fit": "Relaxed",
+        "colour": "Mustard"
+      },
+      "variants": [
+        {
+          "sku": "SHT004-S-MUSTARD",
+          "size": "S",
+          "colour": "Mustard",
+          "stock": 7
+        },
+        {
+          "sku": "SHT004-M-MUSTARD",
+          "size": "M",
+          "colour": "Mustard",
+          "stock": 26
+        },
+        {
+          "sku": "SHT004-L-MUSTARD",
+          "size": "L",
+          "colour": "Mustard",
+          "stock": 35
+        },
+        {
+          "sku": "SHT004-XL-MUSTARD",
+          "size": "XL",
+          "colour": "Mustard",
+          "stock": 7
+        },
+        {
+          "sku": "SHT004-XXL-MUSTARD",
+          "size": "XXL",
+          "colour": "Mustard",
+          "stock": 9
+        },
+        {
+          "sku": "SHT004-S-MAROON",
+          "size": "S",
+          "colour": "Maroon",
+          "stock": 29
+        },
+        {
+          "sku": "SHT004-M-MAROON",
+          "size": "M",
+          "colour": "Maroon",
+          "stock": 0
+        },
+        {
+          "sku": "SHT004-L-MAROON",
+          "size": "L",
+          "colour": "Maroon",
+          "stock": 37
+        },
+        {
+          "sku": "SHT004-XL-MAROON",
+          "size": "XL",
+          "colour": "Maroon",
+          "stock": 22
+        },
+        {
+          "sku": "SHT004-XXL-MAROON",
+          "size": "XXL",
+          "colour": "Maroon",
+          "stock": 22
+        },
+        {
+          "sku": "SHT004-S-INDIGO",
+          "size": "S",
+          "colour": "Indigo",
+          "stock": 20
+        },
+        {
+          "sku": "SHT004-M-INDIGO",
+          "size": "M",
+          "colour": "Indigo",
+          "stock": 34
+        },
+        {
+          "sku": "SHT004-L-INDIGO",
+          "size": "L",
+          "colour": "Indigo",
+          "stock": 36
+        },
+        {
+          "sku": "SHT004-XL-INDIGO",
+          "size": "XL",
+          "colour": "Indigo",
+          "stock": 6
+        },
+        {
+          "sku": "SHT004-XXL-INDIGO",
+          "size": "XXL",
+          "colour": "Indigo",
+          "stock": 26
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>Size</th><th>Chest (in)</th><th>Shoulder (in)</th><th>Length (in)</th></tr></thead><tbody><tr><td>S</td><td>38</td><td>17</td><td>27.5</td></tr><tr><td>M</td><td>40</td><td>17.5</td><td>28</td></tr><tr><td>L</td><td>42</td><td>18</td><td>28.5</td></tr><tr><td>XL</td><td>44</td><td>18.5</td><td>29</td></tr><tr><td>XXL</td><td>46</td><td>19</td><td>29.5</td></tr></tbody></table>",
+        "image": "/img/size/mens-shirts.svg"
+      },
+      "return_policy": {
+        "window_days": 15,
+        "text": "15-day easy returns for unworn items with tags intact. Free pickup on prepaid orders."
+      },
+      "rating": {
+        "value": 3.8,
+        "count": 877
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "SHT005",
+      "slug": "tan-printed-resort-shirt",
+      "name": "Tan Printed Resort Shirt",
+      "brand": "Desi Threads",
+      "category": "mens-shirts",
+      "price": 1189,
+      "mrp": 1399,
+      "discount_pct": 15,
+      "images": [
+        "/img/p/tan-printed-resort-shirt-1.svg",
+        "/img/p/tan-printed-resort-shirt-2.svg",
+        "/img/p/tan-printed-resort-shirt-3.svg"
+      ],
+      "description": "Tan Printed Resort Shirt from Desi Threads. Made with chambray. Easy-care fabric with a structured collar and a tailored cut; machine washable.",
+      "attributes": {
+        "material": "Chambray",
+        "fit": "Regular",
+        "colour": "Tan"
+      },
+      "variants": [
+        {
+          "sku": "SHT005-S-TAN",
+          "size": "S",
+          "colour": "Tan",
+          "stock": 14
+        },
+        {
+          "sku": "SHT005-M-TAN",
+          "size": "M",
+          "colour": "Tan",
+          "stock": 20
+        },
+        {
+          "sku": "SHT005-L-TAN",
+          "size": "L",
+          "colour": "Tan",
+          "stock": 32
+        },
+        {
+          "sku": "SHT005-XL-TAN",
+          "size": "XL",
+          "colour": "Tan",
+          "stock": 29
+        },
+        {
+          "sku": "SHT005-XXL-TAN",
+          "size": "XXL",
+          "colour": "Tan",
+          "stock": 9
+        },
+        {
+          "sku": "SHT005-S-PINK",
+          "size": "S",
+          "colour": "Pink",
+          "stock": 9
+        },
+        {
+          "sku": "SHT005-M-PINK",
+          "size": "M",
+          "colour": "Pink",
+          "stock": 37
+        },
+        {
+          "sku": "SHT005-L-PINK",
+          "size": "L",
+          "colour": "Pink",
+          "stock": 33
+        },
+        {
+          "sku": "SHT005-XL-PINK",
+          "size": "XL",
+          "colour": "Pink",
+          "stock": 5
+        },
+        {
+          "sku": "SHT005-XXL-PINK",
+          "size": "XXL",
+          "colour": "Pink",
+          "stock": 39
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>Size</th><th>Chest (in)</th><th>Shoulder (in)</th><th>Length (in)</th></tr></thead><tbody><tr><td>S</td><td>38</td><td>17</td><td>27.5</td></tr><tr><td>M</td><td>40</td><td>17.5</td><td>28</td></tr><tr><td>L</td><td>42</td><td>18</td><td>28.5</td></tr><tr><td>XL</td><td>44</td><td>18.5</td><td>29</td></tr><tr><td>XXL</td><td>46</td><td>19</td><td>29.5</td></tr></tbody></table>",
+        "image": "/img/size/mens-shirts.svg"
+      },
+      "return_policy": {
+        "window_days": 15,
+        "text": "15-day easy returns for unworn items with tags intact. Free pickup on prepaid orders."
+      },
+      "rating": {
+        "value": 4.5,
+        "count": 769
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "SHT006",
+      "slug": "black-classic-formal-shirt",
+      "name": "Black Classic Formal Shirt",
+      "brand": "Desi Threads",
+      "category": "mens-shirts",
+      "price": 2059,
+      "mrp": 2899,
+      "discount_pct": 29,
+      "images": [
+        "/img/p/black-classic-formal-shirt-1.svg",
+        "/img/p/black-classic-formal-shirt-2.svg",
+        "/img/p/black-classic-formal-shirt-3.svg"
+      ],
+      "description": "Black Classic Formal Shirt from Desi Threads. Made with chambray. Easy-care fabric with a structured collar and a tailored cut; machine washable.",
+      "attributes": {
+        "material": "Chambray",
+        "fit": "Slim",
+        "colour": "Black"
+      },
+      "variants": [
+        {
+          "sku": "SHT006-S-BLACK",
+          "size": "S",
+          "colour": "Black",
+          "stock": 10
+        },
+        {
+          "sku": "SHT006-M-BLACK",
+          "size": "M",
+          "colour": "Black",
+          "stock": 3
+        },
+        {
+          "sku": "SHT006-L-BLACK",
+          "size": "L",
+          "colour": "Black",
+          "stock": 0
+        },
+        {
+          "sku": "SHT006-XL-BLACK",
+          "size": "XL",
+          "colour": "Black",
+          "stock": 4
+        },
+        {
+          "sku": "SHT006-XXL-BLACK",
+          "size": "XXL",
+          "colour": "Black",
+          "stock": 21
+        },
+        {
+          "sku": "SHT006-S-WHITE",
+          "size": "S",
+          "colour": "White",
+          "stock": 36
+        },
+        {
+          "sku": "SHT006-M-WHITE",
+          "size": "M",
+          "colour": "White",
+          "stock": 9
+        },
+        {
+          "sku": "SHT006-L-WHITE",
+          "size": "L",
+          "colour": "White",
+          "stock": 18
+        },
+        {
+          "sku": "SHT006-XL-WHITE",
+          "size": "XL",
+          "colour": "White",
+          "stock": 0
+        },
+        {
+          "sku": "SHT006-XXL-WHITE",
+          "size": "XXL",
+          "colour": "White",
+          "stock": 38
+        },
+        {
+          "sku": "SHT006-S-OLIVE",
+          "size": "S",
+          "colour": "Olive",
+          "stock": 0
+        },
+        {
+          "sku": "SHT006-M-OLIVE",
+          "size": "M",
+          "colour": "Olive",
+          "stock": 8
+        },
+        {
+          "sku": "SHT006-L-OLIVE",
+          "size": "L",
+          "colour": "Olive",
+          "stock": 0
+        },
+        {
+          "sku": "SHT006-XL-OLIVE",
+          "size": "XL",
+          "colour": "Olive",
+          "stock": 38
+        },
+        {
+          "sku": "SHT006-XXL-OLIVE",
+          "size": "XXL",
+          "colour": "Olive",
+          "stock": 31
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>Size</th><th>Chest (in)</th><th>Shoulder (in)</th><th>Length (in)</th></tr></thead><tbody><tr><td>S</td><td>38</td><td>17</td><td>27.5</td></tr><tr><td>M</td><td>40</td><td>17.5</td><td>28</td></tr><tr><td>L</td><td>42</td><td>18</td><td>28.5</td></tr><tr><td>XL</td><td>44</td><td>18.5</td><td>29</td></tr><tr><td>XXL</td><td>46</td><td>19</td><td>29.5</td></tr></tbody></table>",
+        "image": "/img/size/mens-shirts.svg"
+      },
+      "return_policy": {
+        "window_days": 15,
+        "text": "15-day easy returns for unworn items with tags intact. Free pickup on prepaid orders."
+      },
+      "rating": {
+        "value": 4.5,
+        "count": 717
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "SHT007",
+      "slug": "olive-denim-overshirt",
+      "name": "Olive Denim Overshirt",
+      "brand": "Desi Threads",
+      "category": "mens-shirts",
+      "price": 609,
+      "mrp": 999,
+      "discount_pct": 39,
+      "images": [
+        "/img/p/olive-denim-overshirt-1.svg",
+        "/img/p/olive-denim-overshirt-2.svg",
+        "/img/p/olive-denim-overshirt-3.svg"
+      ],
+      "description": "Olive Denim Overshirt from Desi Threads. Made with cotton poplin. Easy-care fabric with a structured collar and a tailored cut; machine washable.",
+      "attributes": {
+        "material": "Cotton poplin",
+        "fit": "Relaxed",
+        "colour": "Olive"
+      },
+      "variants": [
+        {
+          "sku": "SHT007-S-OLIVE",
+          "size": "S",
+          "colour": "Olive",
+          "stock": 33
+        },
+        {
+          "sku": "SHT007-M-OLIVE",
+          "size": "M",
+          "colour": "Olive",
+          "stock": 0
+        },
+        {
+          "sku": "SHT007-L-OLIVE",
+          "size": "L",
+          "colour": "Olive",
+          "stock": 0
+        },
+        {
+          "sku": "SHT007-XL-OLIVE",
+          "size": "XL",
+          "colour": "Olive",
+          "stock": 39
+        },
+        {
+          "sku": "SHT007-XXL-OLIVE",
+          "size": "XXL",
+          "colour": "Olive",
+          "stock": 12
+        },
+        {
+          "sku": "SHT007-S-NAVY",
+          "size": "S",
+          "colour": "Navy",
+          "stock": 34
+        },
+        {
+          "sku": "SHT007-M-NAVY",
+          "size": "M",
+          "colour": "Navy",
+          "stock": 7
+        },
+        {
+          "sku": "SHT007-L-NAVY",
+          "size": "L",
+          "colour": "Navy",
+          "stock": 31
+        },
+        {
+          "sku": "SHT007-XL-NAVY",
+          "size": "XL",
+          "colour": "Navy",
+          "stock": 13
+        },
+        {
+          "sku": "SHT007-XXL-NAVY",
+          "size": "XXL",
+          "colour": "Navy",
+          "stock": 34
+        },
+        {
+          "sku": "SHT007-S-TAN",
+          "size": "S",
+          "colour": "Tan",
+          "stock": 33
+        },
+        {
+          "sku": "SHT007-M-TAN",
+          "size": "M",
+          "colour": "Tan",
+          "stock": 36
+        },
+        {
+          "sku": "SHT007-L-TAN",
+          "size": "L",
+          "colour": "Tan",
+          "stock": 9
+        },
+        {
+          "sku": "SHT007-XL-TAN",
+          "size": "XL",
+          "colour": "Tan",
+          "stock": 14
+        },
+        {
+          "sku": "SHT007-XXL-TAN",
+          "size": "XXL",
+          "colour": "Tan",
+          "stock": 20
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>Size</th><th>Chest (in)</th><th>Shoulder (in)</th><th>Length (in)</th></tr></thead><tbody><tr><td>S</td><td>38</td><td>17</td><td>27.5</td></tr><tr><td>M</td><td>40</td><td>17.5</td><td>28</td></tr><tr><td>L</td><td>42</td><td>18</td><td>28.5</td></tr><tr><td>XL</td><td>44</td><td>18.5</td><td>29</td></tr><tr><td>XXL</td><td>46</td><td>19</td><td>29.5</td></tr></tbody></table>",
+        "image": "/img/size/mens-shirts.svg"
+      },
+      "return_policy": {
+        "window_days": 15,
+        "text": "15-day easy returns for unworn items with tags intact. Free pickup on prepaid orders."
+      },
+      "rating": {
+        "value": 3.7,
+        "count": 759
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "SHT008",
+      "slug": "tan-striped-cotton-shirt",
+      "name": "Tan Striped Cotton Shirt",
+      "brand": "Desi Threads",
+      "category": "mens-shirts",
+      "price": 2059,
+      "mrp": 2899,
+      "discount_pct": 29,
+      "images": [
+        "/img/p/tan-striped-cotton-shirt-1.svg",
+        "/img/p/tan-striped-cotton-shirt-2.svg",
+        "/img/p/tan-striped-cotton-shirt-3.svg"
+      ],
+      "description": "Tan Striped Cotton Shirt from Desi Threads. Made with oxford cotton. Easy-care fabric with a structured collar and a tailored cut; machine washable.",
+      "attributes": {
+        "material": "Oxford cotton",
+        "fit": "Relaxed",
+        "colour": "Tan"
+      },
+      "variants": [
+        {
+          "sku": "SHT008-S-TAN",
+          "size": "S",
+          "colour": "Tan",
+          "stock": 6
+        },
+        {
+          "sku": "SHT008-M-TAN",
+          "size": "M",
+          "colour": "Tan",
+          "stock": 20
+        },
+        {
+          "sku": "SHT008-L-TAN",
+          "size": "L",
+          "colour": "Tan",
+          "stock": 36
+        },
+        {
+          "sku": "SHT008-XL-TAN",
+          "size": "XL",
+          "colour": "Tan",
+          "stock": 7
+        },
+        {
+          "sku": "SHT008-XXL-TAN",
+          "size": "XXL",
+          "colour": "Tan",
+          "stock": 20
+        },
+        {
+          "sku": "SHT008-S-NAVY",
+          "size": "S",
+          "colour": "Navy",
+          "stock": 12
+        },
+        {
+          "sku": "SHT008-M-NAVY",
+          "size": "M",
+          "colour": "Navy",
+          "stock": 38
+        },
+        {
+          "sku": "SHT008-L-NAVY",
+          "size": "L",
+          "colour": "Navy",
+          "stock": 8
+        },
+        {
+          "sku": "SHT008-XL-NAVY",
+          "size": "XL",
+          "colour": "Navy",
+          "stock": 12
+        },
+        {
+          "sku": "SHT008-XXL-NAVY",
+          "size": "XXL",
+          "colour": "Navy",
+          "stock": 20
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>Size</th><th>Chest (in)</th><th>Shoulder (in)</th><th>Length (in)</th></tr></thead><tbody><tr><td>S</td><td>38</td><td>17</td><td>27.5</td></tr><tr><td>M</td><td>40</td><td>17.5</td><td>28</td></tr><tr><td>L</td><td>42</td><td>18</td><td>28.5</td></tr><tr><td>XL</td><td>44</td><td>18.5</td><td>29</td></tr><tr><td>XXL</td><td>46</td><td>19</td><td>29.5</td></tr></tbody></table>",
+        "image": "/img/size/mens-shirts.svg"
+      },
+      "return_policy": {
+        "window_days": 15,
+        "text": "15-day easy returns for unworn items with tags intact. Free pickup on prepaid orders."
+      },
+      "rating": {
+        "value": 3.9,
+        "count": 95
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "SHT009",
+      "slug": "sky-blue-chambray-work-shirt",
+      "name": "Sky Blue Chambray Work Shirt",
+      "brand": "Desi Threads",
+      "category": "mens-shirts",
+      "price": 1189,
+      "mrp": 1399,
+      "discount_pct": 15,
+      "images": [
+        "/img/p/sky-blue-chambray-work-shirt-1.svg",
+        "/img/p/sky-blue-chambray-work-shirt-2.svg",
+        "/img/p/sky-blue-chambray-work-shirt-3.svg"
+      ],
+      "description": "Sky Blue Chambray Work Shirt from Desi Threads. Made with cotton poplin. Easy-care fabric with a structured collar and a tailored cut; machine washable.",
+      "attributes": {
+        "material": "Cotton poplin",
+        "fit": "Slim",
+        "colour": "Sky Blue"
+      },
+      "variants": [
+        {
+          "sku": "SHT009-S-SKY-BLUE",
+          "size": "S",
+          "colour": "Sky Blue",
+          "stock": 17
+        },
+        {
+          "sku": "SHT009-M-SKY-BLUE",
+          "size": "M",
+          "colour": "Sky Blue",
+          "stock": 9
+        },
+        {
+          "sku": "SHT009-L-SKY-BLUE",
+          "size": "L",
+          "colour": "Sky Blue",
+          "stock": 38
+        },
+        {
+          "sku": "SHT009-XL-SKY-BLUE",
+          "size": "XL",
+          "colour": "Sky Blue",
+          "stock": 31
+        },
+        {
+          "sku": "SHT009-XXL-SKY-BLUE",
+          "size": "XXL",
+          "colour": "Sky Blue",
+          "stock": 3
+        },
+        {
+          "sku": "SHT009-S-TAN",
+          "size": "S",
+          "colour": "Tan",
+          "stock": 0
+        },
+        {
+          "sku": "SHT009-M-TAN",
+          "size": "M",
+          "colour": "Tan",
+          "stock": 28
+        },
+        {
+          "sku": "SHT009-L-TAN",
+          "size": "L",
+          "colour": "Tan",
+          "stock": 25
+        },
+        {
+          "sku": "SHT009-XL-TAN",
+          "size": "XL",
+          "colour": "Tan",
+          "stock": 30
+        },
+        {
+          "sku": "SHT009-XXL-TAN",
+          "size": "XXL",
+          "colour": "Tan",
+          "stock": 38
+        },
+        {
+          "sku": "SHT009-S-MUSTARD",
+          "size": "S",
+          "colour": "Mustard",
+          "stock": 35
+        },
+        {
+          "sku": "SHT009-M-MUSTARD",
+          "size": "M",
+          "colour": "Mustard",
+          "stock": 26
+        },
+        {
+          "sku": "SHT009-L-MUSTARD",
+          "size": "L",
+          "colour": "Mustard",
+          "stock": 23
+        },
+        {
+          "sku": "SHT009-XL-MUSTARD",
+          "size": "XL",
+          "colour": "Mustard",
+          "stock": 39
+        },
+        {
+          "sku": "SHT009-XXL-MUSTARD",
+          "size": "XXL",
+          "colour": "Mustard",
+          "stock": 14
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>Size</th><th>Chest (in)</th><th>Shoulder (in)</th><th>Length (in)</th></tr></thead><tbody><tr><td>S</td><td>38</td><td>17</td><td>27.5</td></tr><tr><td>M</td><td>40</td><td>17.5</td><td>28</td></tr><tr><td>L</td><td>42</td><td>18</td><td>28.5</td></tr><tr><td>XL</td><td>44</td><td>18.5</td><td>29</td></tr><tr><td>XXL</td><td>46</td><td>19</td><td>29.5</td></tr></tbody></table>",
+        "image": "/img/size/mens-shirts.svg"
+      },
+      "return_policy": {
+        "window_days": 15,
+        "text": "15-day easy returns for unworn items with tags intact. Free pickup on prepaid orders."
+      },
+      "rating": {
+        "value": 4.5,
+        "count": 86
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "SHT010",
+      "slug": "grey-textured-dobby-shirt",
+      "name": "Grey Textured Dobby Shirt",
+      "brand": "Desi Threads",
+      "category": "mens-shirts",
+      "price": 1419,
+      "mrp": 1999,
+      "discount_pct": 29,
+      "images": [
+        "/img/p/grey-textured-dobby-shirt-1.svg",
+        "/img/p/grey-textured-dobby-shirt-2.svg",
+        "/img/p/grey-textured-dobby-shirt-3.svg"
+      ],
+      "description": "Grey Textured Dobby Shirt from Desi Threads. Made with linen. Easy-care fabric with a structured collar and a tailored cut; machine washable.",
+      "attributes": {
+        "material": "Linen",
+        "fit": "Slim",
+        "colour": "Grey"
+      },
+      "variants": [
+        {
+          "sku": "SHT010-S-GREY",
+          "size": "S",
+          "colour": "Grey",
+          "stock": 21
+        },
+        {
+          "sku": "SHT010-M-GREY",
+          "size": "M",
+          "colour": "Grey",
+          "stock": 39
+        },
+        {
+          "sku": "SHT010-L-GREY",
+          "size": "L",
+          "colour": "Grey",
+          "stock": 40
+        },
+        {
+          "sku": "SHT010-XL-GREY",
+          "size": "XL",
+          "colour": "Grey",
+          "stock": 4
+        },
+        {
+          "sku": "SHT010-XXL-GREY",
+          "size": "XXL",
+          "colour": "Grey",
+          "stock": 30
+        },
+        {
+          "sku": "SHT010-S-NAVY",
+          "size": "S",
+          "colour": "Navy",
+          "stock": 16
+        },
+        {
+          "sku": "SHT010-M-NAVY",
+          "size": "M",
+          "colour": "Navy",
+          "stock": 16
+        },
+        {
+          "sku": "SHT010-L-NAVY",
+          "size": "L",
+          "colour": "Navy",
+          "stock": 30
+        },
+        {
+          "sku": "SHT010-XL-NAVY",
+          "size": "XL",
+          "colour": "Navy",
+          "stock": 12
+        },
+        {
+          "sku": "SHT010-XXL-NAVY",
+          "size": "XXL",
+          "colour": "Navy",
+          "stock": 14
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>Size</th><th>Chest (in)</th><th>Shoulder (in)</th><th>Length (in)</th></tr></thead><tbody><tr><td>S</td><td>38</td><td>17</td><td>27.5</td></tr><tr><td>M</td><td>40</td><td>17.5</td><td>28</td></tr><tr><td>L</td><td>42</td><td>18</td><td>28.5</td></tr><tr><td>XL</td><td>44</td><td>18.5</td><td>29</td></tr><tr><td>XXL</td><td>46</td><td>19</td><td>29.5</td></tr></tbody></table>",
+        "image": "/img/size/mens-shirts.svg"
+      },
+      "return_policy": {
+        "window_days": 15,
+        "text": "15-day easy returns for unworn items with tags intact. Free pickup on prepaid orders."
+      },
+      "rating": {
+        "value": 4.7,
+        "count": 376
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "SHT011",
+      "slug": "navy-kurta-style-shirt",
+      "name": "Navy Kurta-Style Shirt",
+      "brand": "Desi Threads",
+      "category": "mens-shirts",
+      "price": 1429,
+      "mrp": 2099,
+      "discount_pct": 32,
+      "images": [
+        "/img/p/navy-kurta-style-shirt-1.svg",
+        "/img/p/navy-kurta-style-shirt-2.svg",
+        "/img/p/navy-kurta-style-shirt-3.svg"
+      ],
+      "description": "Navy Kurta-Style Shirt from Desi Threads. Made with cotton poplin. Easy-care fabric with a structured collar and a tailored cut; machine washable.",
+      "attributes": {
+        "material": "Cotton poplin",
+        "fit": "Regular",
+        "colour": "Navy"
+      },
+      "variants": [
+        {
+          "sku": "SHT011-S-NAVY",
+          "size": "S",
+          "colour": "Navy",
+          "stock": 7
+        },
+        {
+          "sku": "SHT011-M-NAVY",
+          "size": "M",
+          "colour": "Navy",
+          "stock": 40
+        },
+        {
+          "sku": "SHT011-L-NAVY",
+          "size": "L",
+          "colour": "Navy",
+          "stock": 26
+        },
+        {
+          "sku": "SHT011-XL-NAVY",
+          "size": "XL",
+          "colour": "Navy",
+          "stock": 32
+        },
+        {
+          "sku": "SHT011-XXL-NAVY",
+          "size": "XXL",
+          "colour": "Navy",
+          "stock": 0
+        },
+        {
+          "sku": "SHT011-S-WHITE",
+          "size": "S",
+          "colour": "White",
+          "stock": 23
+        },
+        {
+          "sku": "SHT011-M-WHITE",
+          "size": "M",
+          "colour": "White",
+          "stock": 17
+        },
+        {
+          "sku": "SHT011-L-WHITE",
+          "size": "L",
+          "colour": "White",
+          "stock": 38
+        },
+        {
+          "sku": "SHT011-XL-WHITE",
+          "size": "XL",
+          "colour": "White",
+          "stock": 20
+        },
+        {
+          "sku": "SHT011-XXL-WHITE",
+          "size": "XXL",
+          "colour": "White",
+          "stock": 17
+        },
+        {
+          "sku": "SHT011-S-SKY-BLUE",
+          "size": "S",
+          "colour": "Sky Blue",
+          "stock": 28
+        },
+        {
+          "sku": "SHT011-M-SKY-BLUE",
+          "size": "M",
+          "colour": "Sky Blue",
+          "stock": 39
+        },
+        {
+          "sku": "SHT011-L-SKY-BLUE",
+          "size": "L",
+          "colour": "Sky Blue",
+          "stock": 40
+        },
+        {
+          "sku": "SHT011-XL-SKY-BLUE",
+          "size": "XL",
+          "colour": "Sky Blue",
+          "stock": 28
+        },
+        {
+          "sku": "SHT011-XXL-SKY-BLUE",
+          "size": "XXL",
+          "colour": "Sky Blue",
+          "stock": 32
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>Size</th><th>Chest (in)</th><th>Shoulder (in)</th><th>Length (in)</th></tr></thead><tbody><tr><td>S</td><td>38</td><td>17</td><td>27.5</td></tr><tr><td>M</td><td>40</td><td>17.5</td><td>28</td></tr><tr><td>L</td><td>42</td><td>18</td><td>28.5</td></tr><tr><td>XL</td><td>44</td><td>18.5</td><td>29</td></tr><tr><td>XXL</td><td>46</td><td>19</td><td>29.5</td></tr></tbody></table>",
+        "image": "/img/size/mens-shirts.svg"
+      },
+      "return_policy": {
+        "window_days": 15,
+        "text": "15-day easy returns for unworn items with tags intact. Free pickup on prepaid orders."
+      },
+      "rating": {
+        "value": 3.9,
+        "count": 85
+      },
+      "price_mismatch": true,
+      "cart_price": 1599
+    },
+    {
+      "id": "SHT012",
+      "slug": "teal-half-sleeve-linen-shirt",
+      "name": "Teal Half-Sleeve Linen Shirt",
+      "brand": "Desi Threads",
+      "category": "mens-shirts",
+      "price": 2259,
+      "mrp": 2899,
+      "discount_pct": 22,
+      "images": [
+        "/img/p/teal-half-sleeve-linen-shirt-1.svg",
+        "/img/p/teal-half-sleeve-linen-shirt-2.svg",
+        "/img/p/teal-half-sleeve-linen-shirt-3.svg"
+      ],
+      "description": "Teal Half-Sleeve Linen Shirt from Desi Threads. Made with brushed flannel. Easy-care fabric with a structured collar and a tailored cut; machine washable.",
+      "attributes": {
+        "material": "Brushed flannel",
+        "fit": "Slim",
+        "colour": "Teal"
+      },
+      "variants": [
+        {
+          "sku": "SHT012-S-TEAL",
+          "size": "S",
+          "colour": "Teal",
+          "stock": 17
+        },
+        {
+          "sku": "SHT012-M-TEAL",
+          "size": "M",
+          "colour": "Teal",
+          "stock": 26
+        },
+        {
+          "sku": "SHT012-L-TEAL",
+          "size": "L",
+          "colour": "Teal",
+          "stock": 0
+        },
+        {
+          "sku": "SHT012-XL-TEAL",
+          "size": "XL",
+          "colour": "Teal",
+          "stock": 34
+        },
+        {
+          "sku": "SHT012-XXL-TEAL",
+          "size": "XXL",
+          "colour": "Teal",
+          "stock": 40
+        },
+        {
+          "sku": "SHT012-S-MUSTARD",
+          "size": "S",
+          "colour": "Mustard",
+          "stock": 31
+        },
+        {
+          "sku": "SHT012-M-MUSTARD",
+          "size": "M",
+          "colour": "Mustard",
+          "stock": 28
+        },
+        {
+          "sku": "SHT012-L-MUSTARD",
+          "size": "L",
+          "colour": "Mustard",
+          "stock": 11
+        },
+        {
+          "sku": "SHT012-XL-MUSTARD",
+          "size": "XL",
+          "colour": "Mustard",
+          "stock": 40
+        },
+        {
+          "sku": "SHT012-XXL-MUSTARD",
+          "size": "XXL",
+          "colour": "Mustard",
+          "stock": 30
+        },
+        {
+          "sku": "SHT012-S-INDIGO",
+          "size": "S",
+          "colour": "Indigo",
+          "stock": 10
+        },
+        {
+          "sku": "SHT012-M-INDIGO",
+          "size": "M",
+          "colour": "Indigo",
+          "stock": 17
+        },
+        {
+          "sku": "SHT012-L-INDIGO",
+          "size": "L",
+          "colour": "Indigo",
+          "stock": 17
+        },
+        {
+          "sku": "SHT012-XL-INDIGO",
+          "size": "XL",
+          "colour": "Indigo",
+          "stock": 22
+        },
+        {
+          "sku": "SHT012-XXL-INDIGO",
+          "size": "XXL",
+          "colour": "Indigo",
+          "stock": 27
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>Size</th><th>Chest (in)</th><th>Shoulder (in)</th><th>Length (in)</th></tr></thead><tbody><tr><td>S</td><td>38</td><td>17</td><td>27.5</td></tr><tr><td>M</td><td>40</td><td>17.5</td><td>28</td></tr><tr><td>L</td><td>42</td><td>18</td><td>28.5</td></tr><tr><td>XL</td><td>44</td><td>18.5</td><td>29</td></tr><tr><td>XXL</td><td>46</td><td>19</td><td>29.5</td></tr></tbody></table>",
+        "image": "/img/size/mens-shirts.svg"
+      },
+      "return_policy": {
+        "window_days": 15,
+        "text": "15-day easy returns for unworn items with tags intact. Free pickup on prepaid orders."
+      },
+      "rating": {
+        "value": 4.8,
+        "count": 133
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "SHT013",
+      "slug": "sky-blue-cuban-collar-shirt",
+      "name": "Sky Blue Cuban Collar Shirt",
+      "brand": "Desi Threads",
+      "category": "mens-shirts",
+      "price": 1489,
+      "mrp": 2299,
+      "discount_pct": 35,
+      "images": [
+        "/img/p/sky-blue-cuban-collar-shirt-1.svg",
+        "/img/p/sky-blue-cuban-collar-shirt-2.svg",
+        "/img/p/sky-blue-cuban-collar-shirt-3.svg"
+      ],
+      "description": "Sky Blue Cuban Collar Shirt from Desi Threads. Made with cotton poplin. Easy-care fabric with a structured collar and a tailored cut; machine washable.",
+      "attributes": {
+        "material": "Cotton poplin",
+        "fit": "Slim",
+        "colour": "Sky Blue"
+      },
+      "variants": [
+        {
+          "sku": "SHT013-S-SKY-BLUE",
+          "size": "S",
+          "colour": "Sky Blue",
+          "stock": 19
+        },
+        {
+          "sku": "SHT013-M-SKY-BLUE",
+          "size": "M",
+          "colour": "Sky Blue",
+          "stock": 8
+        },
+        {
+          "sku": "SHT013-L-SKY-BLUE",
+          "size": "L",
+          "colour": "Sky Blue",
+          "stock": 0
+        },
+        {
+          "sku": "SHT013-XL-SKY-BLUE",
+          "size": "XL",
+          "colour": "Sky Blue",
+          "stock": 36
+        },
+        {
+          "sku": "SHT013-XXL-SKY-BLUE",
+          "size": "XXL",
+          "colour": "Sky Blue",
+          "stock": 0
+        },
+        {
+          "sku": "SHT013-S-MUSTARD",
+          "size": "S",
+          "colour": "Mustard",
+          "stock": 0
+        },
+        {
+          "sku": "SHT013-M-MUSTARD",
+          "size": "M",
+          "colour": "Mustard",
+          "stock": 21
+        },
+        {
+          "sku": "SHT013-L-MUSTARD",
+          "size": "L",
+          "colour": "Mustard",
+          "stock": 28
+        },
+        {
+          "sku": "SHT013-XL-MUSTARD",
+          "size": "XL",
+          "colour": "Mustard",
+          "stock": 19
+        },
+        {
+          "sku": "SHT013-XXL-MUSTARD",
+          "size": "XXL",
+          "colour": "Mustard",
+          "stock": 17
+        },
+        {
+          "sku": "SHT013-S-TAN",
+          "size": "S",
+          "colour": "Tan",
+          "stock": 18
+        },
+        {
+          "sku": "SHT013-M-TAN",
+          "size": "M",
+          "colour": "Tan",
+          "stock": 3
+        },
+        {
+          "sku": "SHT013-L-TAN",
+          "size": "L",
+          "colour": "Tan",
+          "stock": 12
+        },
+        {
+          "sku": "SHT013-XL-TAN",
+          "size": "XL",
+          "colour": "Tan",
+          "stock": 27
+        },
+        {
+          "sku": "SHT013-XXL-TAN",
+          "size": "XXL",
+          "colour": "Tan",
+          "stock": 23
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>Size</th><th>Chest (in)</th><th>Shoulder (in)</th><th>Length (in)</th></tr></thead><tbody><tr><td>S</td><td>38</td><td>17</td><td>27.5</td></tr><tr><td>M</td><td>40</td><td>17.5</td><td>28</td></tr><tr><td>L</td><td>42</td><td>18</td><td>28.5</td></tr><tr><td>XL</td><td>44</td><td>18.5</td><td>29</td></tr><tr><td>XXL</td><td>46</td><td>19</td><td>29.5</td></tr></tbody></table>",
+        "image": "/img/size/mens-shirts.svg"
+      },
+      "return_policy": {
+        "window_days": 15,
+        "text": "15-day easy returns for unworn items with tags intact. Free pickup on prepaid orders."
+      },
+      "rating": {
+        "value": 4.1,
+        "count": 583
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "SHT014",
+      "slug": "teal-poplin-slim-shirt",
+      "name": "Teal Poplin Slim Shirt",
+      "brand": "Desi Threads",
+      "category": "mens-shirts",
+      "price": 2109,
+      "mrp": 2699,
+      "discount_pct": 22,
+      "images": [
+        "/img/p/teal-poplin-slim-shirt-1.svg",
+        "/img/p/teal-poplin-slim-shirt-2.svg",
+        "/img/p/teal-poplin-slim-shirt-3.svg"
+      ],
+      "description": "Teal Poplin Slim Shirt from Desi Threads. Made with cotton poplin. Easy-care fabric with a structured collar and a tailored cut; machine washable.",
+      "attributes": {
+        "material": "Cotton poplin",
+        "fit": "Regular",
+        "colour": "Teal"
+      },
+      "variants": [
+        {
+          "sku": "SHT014-S-TEAL",
+          "size": "S",
+          "colour": "Teal",
+          "stock": 24
+        },
+        {
+          "sku": "SHT014-M-TEAL",
+          "size": "M",
+          "colour": "Teal",
+          "stock": 5
+        },
+        {
+          "sku": "SHT014-L-TEAL",
+          "size": "L",
+          "colour": "Teal",
+          "stock": 11
+        },
+        {
+          "sku": "SHT014-XL-TEAL",
+          "size": "XL",
+          "colour": "Teal",
+          "stock": 0
+        },
+        {
+          "sku": "SHT014-XXL-TEAL",
+          "size": "XXL",
+          "colour": "Teal",
+          "stock": 11
+        },
+        {
+          "sku": "SHT014-S-SKY-BLUE",
+          "size": "S",
+          "colour": "Sky Blue",
+          "stock": 12
+        },
+        {
+          "sku": "SHT014-M-SKY-BLUE",
+          "size": "M",
+          "colour": "Sky Blue",
+          "stock": 13
+        },
+        {
+          "sku": "SHT014-L-SKY-BLUE",
+          "size": "L",
+          "colour": "Sky Blue",
+          "stock": 0
+        },
+        {
+          "sku": "SHT014-XL-SKY-BLUE",
+          "size": "XL",
+          "colour": "Sky Blue",
+          "stock": 18
+        },
+        {
+          "sku": "SHT014-XXL-SKY-BLUE",
+          "size": "XXL",
+          "colour": "Sky Blue",
+          "stock": 4
+        },
+        {
+          "sku": "SHT014-S-NAVY",
+          "size": "S",
+          "colour": "Navy",
+          "stock": 0
+        },
+        {
+          "sku": "SHT014-M-NAVY",
+          "size": "M",
+          "colour": "Navy",
+          "stock": 20
+        },
+        {
+          "sku": "SHT014-L-NAVY",
+          "size": "L",
+          "colour": "Navy",
+          "stock": 11
+        },
+        {
+          "sku": "SHT014-XL-NAVY",
+          "size": "XL",
+          "colour": "Navy",
+          "stock": 14
+        },
+        {
+          "sku": "SHT014-XXL-NAVY",
+          "size": "XXL",
+          "colour": "Navy",
+          "stock": 0
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>Size</th><th>Chest (in)</th><th>Shoulder (in)</th><th>Length (in)</th></tr></thead><tbody><tr><td>S</td><td>38</td><td>17</td><td>27.5</td></tr><tr><td>M</td><td>40</td><td>17.5</td><td>28</td></tr><tr><td>L</td><td>42</td><td>18</td><td>28.5</td></tr><tr><td>XL</td><td>44</td><td>18.5</td><td>29</td></tr><tr><td>XXL</td><td>46</td><td>19</td><td>29.5</td></tr></tbody></table>",
+        "image": "/img/size/mens-shirts.svg"
+      },
+      "return_policy": {
+        "window_days": 15,
+        "text": "15-day easy returns for unworn items with tags intact. Free pickup on prepaid orders."
+      },
+      "rating": {
+        "value": 3.7,
+        "count": 184
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "SHT015",
+      "slug": "pink-seersucker-weekend-shirt",
+      "name": "Pink Seersucker Weekend Shirt",
+      "brand": "Desi Threads",
+      "category": "mens-shirts",
+      "price": 2099,
+      "mrp": 2499,
+      "discount_pct": 16,
+      "images": [
+        "/img/p/pink-seersucker-weekend-shirt-1.svg",
+        "/img/p/pink-seersucker-weekend-shirt-2.svg",
+        "/img/p/pink-seersucker-weekend-shirt-3.svg"
+      ],
+      "description": "Pink Seersucker Weekend Shirt from Desi Threads. Made with linen. Easy-care fabric with a structured collar and a tailored cut; machine washable.",
+      "attributes": {
+        "material": "Linen",
+        "fit": "Relaxed",
+        "colour": "Pink"
+      },
+      "variants": [
+        {
+          "sku": "SHT015-S-PINK",
+          "size": "S",
+          "colour": "Pink",
+          "stock": 20
+        },
+        {
+          "sku": "SHT015-M-PINK",
+          "size": "M",
+          "colour": "Pink",
+          "stock": 0
+        },
+        {
+          "sku": "SHT015-L-PINK",
+          "size": "L",
+          "colour": "Pink",
+          "stock": 39
+        },
+        {
+          "sku": "SHT015-XL-PINK",
+          "size": "XL",
+          "colour": "Pink",
+          "stock": 18
+        },
+        {
+          "sku": "SHT015-XXL-PINK",
+          "size": "XXL",
+          "colour": "Pink",
+          "stock": 14
+        },
+        {
+          "sku": "SHT015-S-WHITE",
+          "size": "S",
+          "colour": "White",
+          "stock": 10
+        },
+        {
+          "sku": "SHT015-M-WHITE",
+          "size": "M",
+          "colour": "White",
+          "stock": 28
+        },
+        {
+          "sku": "SHT015-L-WHITE",
+          "size": "L",
+          "colour": "White",
+          "stock": 17
+        },
+        {
+          "sku": "SHT015-XL-WHITE",
+          "size": "XL",
+          "colour": "White",
+          "stock": 0
+        },
+        {
+          "sku": "SHT015-XXL-WHITE",
+          "size": "XXL",
+          "colour": "White",
+          "stock": 12
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>Size</th><th>Chest (in)</th><th>Shoulder (in)</th><th>Length (in)</th></tr></thead><tbody><tr><td>S</td><td>38</td><td>17</td><td>27.5</td></tr><tr><td>M</td><td>40</td><td>17.5</td><td>28</td></tr><tr><td>L</td><td>42</td><td>18</td><td>28.5</td></tr><tr><td>XL</td><td>44</td><td>18.5</td><td>29</td></tr><tr><td>XXL</td><td>46</td><td>19</td><td>29.5</td></tr></tbody></table>",
+        "image": "/img/size/mens-shirts.svg"
+      },
+      "return_policy": {
+        "window_days": 15,
+        "text": "15-day easy returns for unworn items with tags intact. Free pickup on prepaid orders."
+      },
+      "rating": {
+        "value": 3.6,
+        "count": 882
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "ACC001",
+      "slug": "leather-belt-in-teal",
+      "name": "Leather Belt in Teal",
+      "brand": "Desi Threads",
+      "category": "accessories",
+      "price": 1389,
+      "mrp": 1899,
+      "discount_pct": 27,
+      "images": [
+        "/img/p/leather-belt-in-teal-1.svg",
+        "/img/p/leather-belt-in-teal-2.svg",
+        "/img/p/leather-belt-in-teal-3.svg"
+      ],
+      "description": "Leather Belt in Teal from Desi Threads. Made with stainless steel. A small everyday essential, finished with durable hardware and stitching.",
+      "attributes": {
+        "material": "Stainless steel",
+        "fit": "Standard",
+        "colour": "Teal"
+      },
+      "variants": [
+        {
+          "sku": "ACC001-30-TEAL",
+          "size": "30",
+          "colour": "Teal",
+          "stock": 16
+        },
+        {
+          "sku": "ACC001-32-TEAL",
+          "size": "32",
+          "colour": "Teal",
+          "stock": 40
+        },
+        {
+          "sku": "ACC001-34-TEAL",
+          "size": "34",
+          "colour": "Teal",
+          "stock": 30
+        },
+        {
+          "sku": "ACC001-36-TEAL",
+          "size": "36",
+          "colour": "Teal",
+          "stock": 12
+        },
+        {
+          "sku": "ACC001-38-TEAL",
+          "size": "38",
+          "colour": "Teal",
+          "stock": 0
+        },
+        {
+          "sku": "ACC001-30-NAVY",
+          "size": "30",
+          "colour": "Navy",
+          "stock": 0
+        },
+        {
+          "sku": "ACC001-32-NAVY",
+          "size": "32",
+          "colour": "Navy",
+          "stock": 0
+        },
+        {
+          "sku": "ACC001-34-NAVY",
+          "size": "34",
+          "colour": "Navy",
+          "stock": 9
+        },
+        {
+          "sku": "ACC001-36-NAVY",
+          "size": "36",
+          "colour": "Navy",
+          "stock": 22
+        },
+        {
+          "sku": "ACC001-38-NAVY",
+          "size": "38",
+          "colour": "Navy",
+          "stock": 31
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>Waist (in)</th><th>Belt size</th></tr></thead><tbody><tr><td>28-30</td><td>30</td></tr><tr><td>30-32</td><td>32</td></tr><tr><td>32-34</td><td>34</td></tr><tr><td>34-36</td><td>36</td></tr><tr><td>36-38</td><td>38</td></tr></tbody></table>",
+        "image": "/img/size/accessories.svg"
+      },
+      "return_policy": {
+        "window_days": 7,
+        "text": "7-day exchange for unused accessories in original packaging."
+      },
+      "rating": {
+        "value": 4.4,
+        "count": 685
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "ACC002",
+      "slug": "bifold-wallet-in-black",
+      "name": "Bifold Wallet in Black",
+      "brand": "Desi Threads",
+      "category": "accessories",
+      "price": 1209,
+      "mrp": 2199,
+      "discount_pct": 45,
+      "images": [
+        "/img/p/bifold-wallet-in-black-1.svg",
+        "/img/p/bifold-wallet-in-black-2.svg",
+        "/img/p/bifold-wallet-in-black-3.svg"
+      ],
+      "description": "Bifold Wallet in Black from Desi Threads. Made with genuine leather. A small everyday essential, finished with durable hardware and stitching.",
+      "attributes": {
+        "material": "Genuine leather",
+        "fit": "Standard",
+        "colour": "Black"
+      },
+      "variants": [
+        {
+          "sku": "ACC002-FREE-SIZE-BLACK",
+          "size": "Free Size",
+          "colour": "Black",
+          "stock": 33
+        },
+        {
+          "sku": "ACC002-FREE-SIZE-INDIGO",
+          "size": "Free Size",
+          "colour": "Indigo",
+          "stock": 7
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>Waist (in)</th><th>Belt size</th></tr></thead><tbody><tr><td>28-30</td><td>30</td></tr><tr><td>30-32</td><td>32</td></tr><tr><td>32-34</td><td>34</td></tr><tr><td>34-36</td><td>36</td></tr><tr><td>36-38</td><td>38</td></tr></tbody></table>",
+        "image": "/img/size/accessories.svg"
+      },
+      "return_policy": {
+        "window_days": 7,
+        "text": "7-day exchange for unused accessories in original packaging."
+      },
+      "rating": {
+        "value": 3.9,
+        "count": 731
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "ACC003",
+      "slug": "canvas-tote-bag-in-indigo",
+      "name": "Canvas Tote Bag in Indigo",
+      "brand": "Desi Threads",
+      "category": "accessories",
+      "price": 1139,
+      "mrp": 1999,
+      "discount_pct": 43,
+      "images": [
+        "/img/p/canvas-tote-bag-in-indigo-1.svg",
+        "/img/p/canvas-tote-bag-in-indigo-2.svg",
+        "/img/p/canvas-tote-bag-in-indigo-3.svg"
+      ],
+      "description": "Canvas Tote Bag in Indigo from Desi Threads. Made with stainless steel. A small everyday essential, finished with durable hardware and stitching.",
+      "attributes": {
+        "material": "Stainless steel",
+        "fit": "Standard",
+        "colour": "Indigo"
+      },
+      "variants": [
+        {
+          "sku": "ACC003-FREE-SIZE-INDIGO",
+          "size": "Free Size",
+          "colour": "Indigo",
+          "stock": 4
+        },
+        {
+          "sku": "ACC003-FREE-SIZE-NAVY",
+          "size": "Free Size",
+          "colour": "Navy",
+          "stock": 12
+        },
+        {
+          "sku": "ACC003-FREE-SIZE-TEAL",
+          "size": "Free Size",
+          "colour": "Teal",
+          "stock": 37
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>Waist (in)</th><th>Belt size</th></tr></thead><tbody><tr><td>28-30</td><td>30</td></tr><tr><td>30-32</td><td>32</td></tr><tr><td>32-34</td><td>34</td></tr><tr><td>34-36</td><td>36</td></tr><tr><td>36-38</td><td>38</td></tr></tbody></table>",
+        "image": "/img/size/accessories.svg"
+      },
+      "return_policy": {
+        "window_days": 7,
+        "text": "7-day exchange for unused accessories in original packaging."
+      },
+      "rating": {
+        "value": 4.4,
+        "count": 903
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "ACC004",
+      "slug": "baseball-cap-in-teal",
+      "name": "Baseball Cap in Teal",
+      "brand": "Desi Threads",
+      "category": "accessories",
+      "price": 339,
+      "mrp": 599,
+      "discount_pct": 43,
+      "images": [
+        "/img/p/baseball-cap-in-teal-1.svg",
+        "/img/p/baseball-cap-in-teal-2.svg",
+        "/img/p/baseball-cap-in-teal-3.svg"
+      ],
+      "description": "Baseball Cap in Teal from Desi Threads. Made with recycled polyester. A small everyday essential, finished with durable hardware and stitching.",
+      "attributes": {
+        "material": "Recycled polyester",
+        "fit": "Standard",
+        "colour": "Teal"
+      },
+      "variants": [
+        {
+          "sku": "ACC004-FREE-SIZE-TEAL",
+          "size": "Free Size",
+          "colour": "Teal",
+          "stock": 0
+        },
+        {
+          "sku": "ACC004-FREE-SIZE-NAVY",
+          "size": "Free Size",
+          "colour": "Navy",
+          "stock": 40
+        },
+        {
+          "sku": "ACC004-FREE-SIZE-SKY-BLUE",
+          "size": "Free Size",
+          "colour": "Sky Blue",
+          "stock": 27
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>Waist (in)</th><th>Belt size</th></tr></thead><tbody><tr><td>28-30</td><td>30</td></tr><tr><td>30-32</td><td>32</td></tr><tr><td>32-34</td><td>34</td></tr><tr><td>34-36</td><td>36</td></tr><tr><td>36-38</td><td>38</td></tr></tbody></table>",
+        "image": "/img/size/accessories.svg"
+      },
+      "return_policy": {
+        "window_days": 7,
+        "text": "7-day exchange for unused accessories in original packaging."
+      },
+      "rating": {
+        "value": 4.3,
+        "count": 121
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "ACC005",
+      "slug": "aviator-sunglasses-in-pink",
+      "name": "Aviator Sunglasses in Pink",
+      "brand": "Desi Threads",
+      "category": "accessories",
+      "price": 1099,
+      "mrp": 1899,
+      "discount_pct": 42,
+      "images": [
+        "/img/p/aviator-sunglasses-in-pink-1.svg",
+        "/img/p/aviator-sunglasses-in-pink-2.svg",
+        "/img/p/aviator-sunglasses-in-pink-3.svg"
+      ],
+      "description": "Aviator Sunglasses in Pink from Desi Threads. Made with wool blend. A small everyday essential, finished with durable hardware and stitching.",
+      "attributes": {
+        "material": "Wool blend",
+        "fit": "Standard",
+        "colour": "Pink"
+      },
+      "variants": [
+        {
+          "sku": "ACC005-FREE-SIZE-PINK",
+          "size": "Free Size",
+          "colour": "Pink",
+          "stock": 15
+        },
+        {
+          "sku": "ACC005-FREE-SIZE-TEAL",
+          "size": "Free Size",
+          "colour": "Teal",
+          "stock": 0
+        },
+        {
+          "sku": "ACC005-FREE-SIZE-MAROON",
+          "size": "Free Size",
+          "colour": "Maroon",
+          "stock": 8
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>Waist (in)</th><th>Belt size</th></tr></thead><tbody><tr><td>28-30</td><td>30</td></tr><tr><td>30-32</td><td>32</td></tr><tr><td>32-34</td><td>34</td></tr><tr><td>34-36</td><td>36</td></tr><tr><td>36-38</td><td>38</td></tr></tbody></table>",
+        "image": "/img/size/accessories.svg"
+      },
+      "return_policy": {
+        "window_days": 7,
+        "text": "7-day exchange for unused accessories in original packaging."
+      },
+      "rating": {
+        "value": 4.1,
+        "count": 276
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "ACC006",
+      "slug": "woven-cotton-scarf-in-mustard",
+      "name": "Woven Cotton Scarf in Mustard",
+      "brand": "Desi Threads",
+      "category": "accessories",
+      "price": 1219,
+      "mrp": 1699,
+      "discount_pct": 28,
+      "images": [
+        "/img/p/woven-cotton-scarf-in-mustard-1.svg",
+        "/img/p/woven-cotton-scarf-in-mustard-2.svg",
+        "/img/p/woven-cotton-scarf-in-mustard-3.svg"
+      ],
+      "description": "Woven Cotton Scarf in Mustard from Desi Threads. Made with wool blend. A small everyday essential, finished with durable hardware and stitching.",
+      "attributes": {
+        "material": "Wool blend",
+        "fit": "Standard",
+        "colour": "Mustard"
+      },
+      "variants": [
+        {
+          "sku": "ACC006-FREE-SIZE-MUSTARD",
+          "size": "Free Size",
+          "colour": "Mustard",
+          "stock": 22
+        },
+        {
+          "sku": "ACC006-FREE-SIZE-MAROON",
+          "size": "Free Size",
+          "colour": "Maroon",
+          "stock": 36
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>Waist (in)</th><th>Belt size</th></tr></thead><tbody><tr><td>28-30</td><td>30</td></tr><tr><td>30-32</td><td>32</td></tr><tr><td>32-34</td><td>34</td></tr><tr><td>34-36</td><td>36</td></tr><tr><td>36-38</td><td>38</td></tr></tbody></table>",
+        "image": "/img/size/accessories.svg"
+      },
+      "return_policy": {
+        "window_days": 7,
+        "text": "7-day exchange for unused accessories in original packaging."
+      },
+      "rating": {
+        "value": 3.9,
+        "count": 83
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "ACC007",
+      "slug": "minimal-analog-watch-in-sky-blue",
+      "name": "Minimal Analog Watch in Sky Blue",
+      "brand": "Desi Threads",
+      "category": "accessories",
+      "price": 1019,
+      "mrp": 1599,
+      "discount_pct": 36,
+      "images": [
+        "/img/p/minimal-analog-watch-in-sky-blue-1.svg",
+        "/img/p/minimal-analog-watch-in-sky-blue-2.svg",
+        "/img/p/minimal-analog-watch-in-sky-blue-3.svg"
+      ],
+      "description": "Minimal Analog Watch in Sky Blue from Desi Threads. Made with wool blend. A small everyday essential, finished with durable hardware and stitching.",
+      "attributes": {
+        "material": "Wool blend",
+        "fit": "Standard",
+        "colour": "Sky Blue"
+      },
+      "variants": [
+        {
+          "sku": "ACC007-FREE-SIZE-SKY-BLUE",
+          "size": "Free Size",
+          "colour": "Sky Blue",
+          "stock": 15
+        },
+        {
+          "sku": "ACC007-FREE-SIZE-MAROON",
+          "size": "Free Size",
+          "colour": "Maroon",
+          "stock": 29
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>Waist (in)</th><th>Belt size</th></tr></thead><tbody><tr><td>28-30</td><td>30</td></tr><tr><td>30-32</td><td>32</td></tr><tr><td>32-34</td><td>34</td></tr><tr><td>34-36</td><td>36</td></tr><tr><td>36-38</td><td>38</td></tr></tbody></table>",
+        "image": "/img/size/accessories.svg"
+      },
+      "return_policy": {
+        "window_days": 7,
+        "text": "7-day exchange for unused accessories in original packaging."
+      },
+      "rating": {
+        "value": 4.4,
+        "count": 657
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "ACC008",
+      "slug": "sling-crossbody-bag-in-white",
+      "name": "Sling Crossbody Bag in White",
+      "brand": "Desi Threads",
+      "category": "accessories",
+      "price": 959,
+      "mrp": 1599,
+      "discount_pct": 40,
+      "images": [
+        "/img/p/sling-crossbody-bag-in-white-1.svg",
+        "/img/p/sling-crossbody-bag-in-white-2.svg",
+        "/img/p/sling-crossbody-bag-in-white-3.svg"
+      ],
+      "description": "Sling Crossbody Bag in White from Desi Threads. Made with cotton canvas. A small everyday essential, finished with durable hardware and stitching.",
+      "attributes": {
+        "material": "Cotton canvas",
+        "fit": "Standard",
+        "colour": "White"
+      },
+      "variants": [
+        {
+          "sku": "ACC008-FREE-SIZE-WHITE",
+          "size": "Free Size",
+          "colour": "White",
+          "stock": 25
+        },
+        {
+          "sku": "ACC008-FREE-SIZE-NAVY",
+          "size": "Free Size",
+          "colour": "Navy",
+          "stock": 10
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>Waist (in)</th><th>Belt size</th></tr></thead><tbody><tr><td>28-30</td><td>30</td></tr><tr><td>30-32</td><td>32</td></tr><tr><td>32-34</td><td>34</td></tr><tr><td>34-36</td><td>36</td></tr><tr><td>36-38</td><td>38</td></tr></tbody></table>",
+        "image": "/img/size/accessories.svg"
+      },
+      "return_policy": {
+        "window_days": 7,
+        "text": "7-day exchange for unused accessories in original packaging."
+      },
+      "rating": {
+        "value": 4.4,
+        "count": 199
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "ACC009",
+      "slug": "beanie-in-indigo",
+      "name": "Beanie in Indigo",
+      "brand": "Desi Threads",
+      "category": "accessories",
+      "price": 949,
+      "mrp": 1299,
+      "discount_pct": 27,
+      "images": [
+        "/img/p/beanie-in-indigo-1.svg",
+        "/img/p/beanie-in-indigo-2.svg",
+        "/img/p/beanie-in-indigo-3.svg"
+      ],
+      "description": "Beanie in Indigo from Desi Threads. Made with genuine leather. A small everyday essential, finished with durable hardware and stitching.",
+      "attributes": {
+        "material": "Genuine leather",
+        "fit": "Standard",
+        "colour": "Indigo"
+      },
+      "variants": [
+        {
+          "sku": "ACC009-FREE-SIZE-INDIGO",
+          "size": "Free Size",
+          "colour": "Indigo",
+          "stock": 0
+        },
+        {
+          "sku": "ACC009-FREE-SIZE-OLIVE",
+          "size": "Free Size",
+          "colour": "Olive",
+          "stock": 40
+        },
+        {
+          "sku": "ACC009-FREE-SIZE-WHITE",
+          "size": "Free Size",
+          "colour": "White",
+          "stock": 37
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>Waist (in)</th><th>Belt size</th></tr></thead><tbody><tr><td>28-30</td><td>30</td></tr><tr><td>30-32</td><td>32</td></tr><tr><td>32-34</td><td>34</td></tr><tr><td>34-36</td><td>36</td></tr><tr><td>36-38</td><td>38</td></tr></tbody></table>",
+        "image": "/img/size/accessories.svg"
+      },
+      "return_policy": {
+        "window_days": 7,
+        "text": "7-day exchange for unused accessories in original packaging."
+      },
+      "rating": {
+        "value": 4.5,
+        "count": 58
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "ACC010",
+      "slug": "card-holder-in-pink",
+      "name": "Card Holder in Pink",
+      "brand": "Desi Threads",
+      "category": "accessories",
+      "price": 1269,
+      "mrp": 1699,
+      "discount_pct": 25,
+      "images": [
+        "/img/p/card-holder-in-pink-1.svg",
+        "/img/p/card-holder-in-pink-2.svg",
+        "/img/p/card-holder-in-pink-3.svg"
+      ],
+      "description": "Card Holder in Pink from Desi Threads. Made with wool blend. A small everyday essential, finished with durable hardware and stitching.",
+      "attributes": {
+        "material": "Wool blend",
+        "fit": "Standard",
+        "colour": "Pink"
+      },
+      "variants": [
+        {
+          "sku": "ACC010-FREE-SIZE-PINK",
+          "size": "Free Size",
+          "colour": "Pink",
+          "stock": 0
+        },
+        {
+          "sku": "ACC010-FREE-SIZE-MUSTARD",
+          "size": "Free Size",
+          "colour": "Mustard",
+          "stock": 13
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>Waist (in)</th><th>Belt size</th></tr></thead><tbody><tr><td>28-30</td><td>30</td></tr><tr><td>30-32</td><td>32</td></tr><tr><td>32-34</td><td>34</td></tr><tr><td>34-36</td><td>36</td></tr><tr><td>36-38</td><td>38</td></tr></tbody></table>",
+        "image": "/img/size/accessories.svg"
+      },
+      "return_policy": {
+        "window_days": 7,
+        "text": "7-day exchange for unused accessories in original packaging."
+      },
+      "rating": {
+        "value": 4.1,
+        "count": 492
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "ACC011",
+      "slug": "printed-pocket-square-in-maroon",
+      "name": "Printed Pocket Square in Maroon",
+      "brand": "Desi Threads",
+      "category": "accessories",
+      "price": 1739,
+      "mrp": 2099,
+      "discount_pct": 17,
+      "images": [
+        "/img/p/printed-pocket-square-in-maroon-1.svg",
+        "/img/p/printed-pocket-square-in-maroon-2.svg",
+        "/img/p/printed-pocket-square-in-maroon-3.svg"
+      ],
+      "description": "Printed Pocket Square in Maroon from Desi Threads. Made with genuine leather. A small everyday essential, finished with durable hardware and stitching.",
+      "attributes": {
+        "material": "Genuine leather",
+        "fit": "Standard",
+        "colour": "Maroon"
+      },
+      "variants": [
+        {
+          "sku": "ACC011-FREE-SIZE-MAROON",
+          "size": "Free Size",
+          "colour": "Maroon",
+          "stock": 9
+        },
+        {
+          "sku": "ACC011-FREE-SIZE-MUSTARD",
+          "size": "Free Size",
+          "colour": "Mustard",
+          "stock": 27
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>Waist (in)</th><th>Belt size</th></tr></thead><tbody><tr><td>28-30</td><td>30</td></tr><tr><td>30-32</td><td>32</td></tr><tr><td>32-34</td><td>34</td></tr><tr><td>34-36</td><td>36</td></tr><tr><td>36-38</td><td>38</td></tr></tbody></table>",
+        "image": "/img/size/accessories.svg"
+      },
+      "return_policy": {
+        "window_days": 7,
+        "text": "7-day exchange for unused accessories in original packaging."
+      },
+      "rating": {
+        "value": 4.3,
+        "count": 399
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "ACC012",
+      "slug": "leather-watch-strap-in-navy",
+      "name": "Leather Watch Strap in Navy",
+      "brand": "Desi Threads",
+      "category": "accessories",
+      "price": 1429,
+      "mrp": 1699,
+      "discount_pct": 16,
+      "images": [
+        "/img/p/leather-watch-strap-in-navy-1.svg",
+        "/img/p/leather-watch-strap-in-navy-2.svg",
+        "/img/p/leather-watch-strap-in-navy-3.svg"
+      ],
+      "description": "Leather Watch Strap in Navy from Desi Threads. Made with genuine leather. A small everyday essential, finished with durable hardware and stitching.",
+      "attributes": {
+        "material": "Genuine leather",
+        "fit": "Standard",
+        "colour": "Navy"
+      },
+      "variants": [
+        {
+          "sku": "ACC012-FREE-SIZE-NAVY",
+          "size": "Free Size",
+          "colour": "Navy",
+          "stock": 12
+        },
+        {
+          "sku": "ACC012-FREE-SIZE-TAN",
+          "size": "Free Size",
+          "colour": "Tan",
+          "stock": 29
+        },
+        {
+          "sku": "ACC012-FREE-SIZE-TEAL",
+          "size": "Free Size",
+          "colour": "Teal",
+          "stock": 7
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>Waist (in)</th><th>Belt size</th></tr></thead><tbody><tr><td>28-30</td><td>30</td></tr><tr><td>30-32</td><td>32</td></tr><tr><td>32-34</td><td>34</td></tr><tr><td>34-36</td><td>36</td></tr><tr><td>36-38</td><td>38</td></tr></tbody></table>",
+        "image": "/img/size/accessories.svg"
+      },
+      "return_policy": {
+        "window_days": 7,
+        "text": "7-day exchange for unused accessories in original packaging."
+      },
+      "rating": {
+        "value": 4.2,
+        "count": 404
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "ACC013",
+      "slug": "everyday-backpack-in-olive",
+      "name": "Everyday Backpack in Olive",
+      "brand": "Desi Threads",
+      "category": "accessories",
+      "price": 1359,
+      "mrp": 1699,
+      "discount_pct": 20,
+      "images": [
+        "/img/p/everyday-backpack-in-olive-1.svg",
+        "/img/p/everyday-backpack-in-olive-2.svg",
+        "/img/p/everyday-backpack-in-olive-3.svg"
+      ],
+      "description": "Everyday Backpack in Olive from Desi Threads. Made with cotton canvas. A small everyday essential, finished with durable hardware and stitching.",
+      "attributes": {
+        "material": "Cotton canvas",
+        "fit": "Standard",
+        "colour": "Olive"
+      },
+      "variants": [
+        {
+          "sku": "ACC013-FREE-SIZE-OLIVE",
+          "size": "Free Size",
+          "colour": "Olive",
+          "stock": 28
+        },
+        {
+          "sku": "ACC013-FREE-SIZE-TEAL",
+          "size": "Free Size",
+          "colour": "Teal",
+          "stock": 0
+        },
+        {
+          "sku": "ACC013-FREE-SIZE-BLACK",
+          "size": "Free Size",
+          "colour": "Black",
+          "stock": 23
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>Waist (in)</th><th>Belt size</th></tr></thead><tbody><tr><td>28-30</td><td>30</td></tr><tr><td>30-32</td><td>32</td></tr><tr><td>32-34</td><td>34</td></tr><tr><td>34-36</td><td>36</td></tr><tr><td>36-38</td><td>38</td></tr></tbody></table>",
+        "image": "/img/size/accessories.svg"
+      },
+      "return_policy": {
+        "window_days": 7,
+        "text": "7-day exchange for unused accessories in original packaging."
+      },
+      "rating": {
+        "value": 4.8,
+        "count": 835
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "ACC014",
+      "slug": "ankle-socks-pack-in-white",
+      "name": "Ankle Socks Pack in White",
+      "brand": "Desi Threads",
+      "category": "accessories",
+      "price": 1369,
+      "mrp": 1799,
+      "discount_pct": 24,
+      "images": [
+        "/img/p/ankle-socks-pack-in-white-1.svg",
+        "/img/p/ankle-socks-pack-in-white-2.svg",
+        "/img/p/ankle-socks-pack-in-white-3.svg"
+      ],
+      "description": "Ankle Socks Pack in White from Desi Threads. Made with genuine leather. A small everyday essential, finished with durable hardware and stitching.",
+      "attributes": {
+        "material": "Genuine leather",
+        "fit": "Standard",
+        "colour": "White"
+      },
+      "variants": [
+        {
+          "sku": "ACC014-FREE-SIZE-WHITE",
+          "size": "Free Size",
+          "colour": "White",
+          "stock": 40
+        },
+        {
+          "sku": "ACC014-FREE-SIZE-SKY-BLUE",
+          "size": "Free Size",
+          "colour": "Sky Blue",
+          "stock": 0
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>Waist (in)</th><th>Belt size</th></tr></thead><tbody><tr><td>28-30</td><td>30</td></tr><tr><td>30-32</td><td>32</td></tr><tr><td>32-34</td><td>34</td></tr><tr><td>34-36</td><td>36</td></tr><tr><td>36-38</td><td>38</td></tr></tbody></table>",
+        "image": "/img/size/accessories.svg"
+      },
+      "return_policy": {
+        "window_days": 7,
+        "text": "7-day exchange for unused accessories in original packaging."
+      },
+      "rating": {
+        "value": 3.6,
+        "count": 86
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    },
+    {
+      "id": "ACC015",
+      "slug": "reversible-belt-in-maroon",
+      "name": "Reversible Belt in Maroon",
+      "brand": "Desi Threads",
+      "category": "accessories",
+      "price": 549,
+      "mrp": 699,
+      "discount_pct": 21,
+      "images": [
+        "/img/p/reversible-belt-in-maroon-1.svg",
+        "/img/p/reversible-belt-in-maroon-2.svg",
+        "/img/p/reversible-belt-in-maroon-3.svg"
+      ],
+      "description": "Reversible Belt in Maroon from Desi Threads. Made with wool blend. A small everyday essential, finished with durable hardware and stitching.",
+      "attributes": {
+        "material": "Wool blend",
+        "fit": "Standard",
+        "colour": "Maroon"
+      },
+      "variants": [
+        {
+          "sku": "ACC015-30-MAROON",
+          "size": "30",
+          "colour": "Maroon",
+          "stock": 34
+        },
+        {
+          "sku": "ACC015-32-MAROON",
+          "size": "32",
+          "colour": "Maroon",
+          "stock": 14
+        },
+        {
+          "sku": "ACC015-34-MAROON",
+          "size": "34",
+          "colour": "Maroon",
+          "stock": 24
+        },
+        {
+          "sku": "ACC015-36-MAROON",
+          "size": "36",
+          "colour": "Maroon",
+          "stock": 29
+        },
+        {
+          "sku": "ACC015-38-MAROON",
+          "size": "38",
+          "colour": "Maroon",
+          "stock": 35
+        },
+        {
+          "sku": "ACC015-30-INDIGO",
+          "size": "30",
+          "colour": "Indigo",
+          "stock": 0
+        },
+        {
+          "sku": "ACC015-32-INDIGO",
+          "size": "32",
+          "colour": "Indigo",
+          "stock": 38
+        },
+        {
+          "sku": "ACC015-34-INDIGO",
+          "size": "34",
+          "colour": "Indigo",
+          "stock": 35
+        },
+        {
+          "sku": "ACC015-36-INDIGO",
+          "size": "36",
+          "colour": "Indigo",
+          "stock": 15
+        },
+        {
+          "sku": "ACC015-38-INDIGO",
+          "size": "38",
+          "colour": "Indigo",
+          "stock": 28
+        }
+      ],
+      "size_chart": {
+        "html": "<table class=\"size-chart\"><thead><tr><th>Waist (in)</th><th>Belt size</th></tr></thead><tbody><tr><td>28-30</td><td>30</td></tr><tr><td>30-32</td><td>32</td></tr><tr><td>32-34</td><td>34</td></tr><tr><td>34-36</td><td>36</td></tr><tr><td>36-38</td><td>38</td></tr></tbody></table>",
+        "image": "/img/size/accessories.svg"
+      },
+      "return_policy": {
+        "window_days": 7,
+        "text": "7-day exchange for unused accessories in original packaging."
+      },
+      "rating": {
+        "value": 4.4,
+        "count": 223
+      },
+      "price_mismatch": false,
+      "cart_price": null
+    }
+  ]
+}

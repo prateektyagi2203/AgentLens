@@ -1,0 +1,139 @@
+# Blocker catalog (PRD 12.4). Detection logic lives in services/api/diagnosis/rules/*.py; this file holds
+# the human-facing content used by recommendations, the dashboard and the report.
+blockers:
+  B01:
+    name: Bot wall / WAF block
+    stage: ANY
+    description: A WAF or bot challenge blocks identified agents before they can read or buy.
+    fix: Allow-list verified agents (Web Bot Auth) and challenge only suspicious traffic.
+    how_to_verify: Share of agent requests with 403/503 drops; agent sessions per day rises.
+    effort: M
+    owner: Security
+  B02:
+    name: Captcha at checkout
+    stage: S6/S7
+    description: Agents reach checkout but cannot solve a captcha, so the order is never submitted.
+    fix: Remove the captcha for verified agents and use risk-based challenges.
+    how_to_verify: Checkout-start to checkout-submit step conversion for agents rises.
+    effort: M
+    owner: Security
+  B03:
+    name: JS-only product content
+    stage: S2
+    description: Price and stock are rendered only by client-side JavaScript, so non-JS fetchers see no price.
+    fix: Server-render price and stock and include them in JSON-LD.
+    how_to_verify: Site check "PDP price in server HTML" passes; fetcher sessions go past the PDP.
+    effort: M
+    owner: Eng
+  B04:
+    name: Missing structured data
+    stage: S2
+    description: Product pages lack complete schema.org Product markup (price, availability, variants).
+    fix: Add complete schema.org Product JSON-LD with offers and variants.
+    how_to_verify: Site check "JSON-LD Product complete" passes on sampled PDPs.
+    effort: S
+    owner: Content
+  B05:
+    name: Pincode / serviceability wall
+    stage: S4/S5
+    description: Add to cart is rejected until a pincode is entered through a modal that agents cannot use.
+    fix: Make pincode optional before cart, accept it by URL or API, and show the delivery promise without a modal.
+    how_to_verify: Add-to-cart 409 PINCODE_REQUIRED count falls to near zero; PDP to cart step conversion for agents rises.
+    effort: S
+    owner: Product
+  B06:
+    name: Login / OTP wall before cart
+    stage: S5
+    description: Add to cart requires an OTP login that is sent by SMS and cannot be read by an agent.
+    fix: Allow guest cart and defer login to checkout, or offer guest checkout.
+    how_to_verify: Add-to-cart 401 count falls; PDP to cart step conversion for agents rises.
+    effort: M
+    owner: Product
+  B07:
+    name: Interstitial / popup overlay
+    stage: S1/S2
+    description: A full-screen app-download or email-capture overlay covers the page and stalls browsing agents.
+    fix: Delay or remove overlays, never block content, and provide an accessible close button.
+    how_to_verify: Browsing-agent sessions continue past the landing or PDP view; replay shows no overlay.
+    effort: S
+    owner: Product
+  B08:
+    name: Out-of-stock dead end
+    stage: S3
+    description: Choosing an out-of-stock variant returns an error with no alternatives suggested.
+    fix: Suggest in-stock alternatives and expose availability per variant in HTML and JSON-LD.
+    how_to_verify: Sessions ending on variant 409 OUT_OF_STOCK fall; variant to cart conversion rises.
+    effort: S
+    owner: Eng
+  B09:
+    name: Size guide is image-only
+    stage: S3
+    description: The size guide is served only as an image, so text-based agents cannot read sizes.
+    fix: Provide an HTML table size guide.
+    how_to_verify: Site check "size guide has HTML table" passes; size-guide sessions continue to cart.
+    effort: S
+    owner: Content
+  B10:
+    name: Checkout validation failure
+    stage: S7
+    description: Checkout rejects reasonable input (for example a phone number without the exact +91 format).
+    fix: Relax and normalise validation (accept +91 variants) and return clear error messages.
+    how_to_verify: Checkout 422 PHONE_FORMAT count falls; checkout submit conversion rises.
+    effort: S
+    owner: Eng
+  B11:
+    name: Unsupported payment step
+    stage: S7
+    description: A COD OTP or UPI intent step cannot be completed by an agent.
+    fix: Offer agent-compatible payment (card token, prepaid link) and skip the COD OTP for verified agents.
+    how_to_verify: Checkout COD_OTP_REQUIRED count falls; order conversion for agents rises.
+    effort: L
+    owner: Product
+  B12:
+    name: Rate limited
+    stage: ANY
+    description: Agents hit request-rate limits (429) and leave.
+    fix: Raise limits for verified agents and send a Retry-After header.
+    how_to_verify: 429 share of agent requests falls.
+    effort: S
+    owner: Eng
+  B13:
+    name: Slow response / timeout
+    stage: ANY
+    description: Pages respond so slowly that agents give up.
+    fix: Performance fixes and caching, especially on product pages.
+    how_to_verify: p95 PDP duration falls under 2 seconds; fewer sessions end on slow requests.
+    effort: M
+    owner: Eng
+  B14:
+    name: robots.txt disallow
+    stage: S1/S2
+    description: robots.txt disallows the agent token from product or checkout paths and the agent leaves.
+    fix: Review the robots policy for user-triggered agents.
+    how_to_verify: Agents stop leaving after fetching robots.txt.
+    effort: S
+    owner: Security
+  B15:
+    name: Price mismatch (PDP vs cart)
+    stage: S5/S6
+    description: The cart price differs from the price shown on the product page, so agents distrust and stop.
+    fix: Fix pricing consistency and show the same price everywhere.
+    how_to_verify: Cart value matches the catalogue price for all products; fewer sessions end at cart.
+    effort: M
+    owner: Eng
+  B16:
+    name: Broken link / 404
+    stage: ANY
+    description: Product or checkout URLs return 404 as the agent's last request.
+    fix: Fix links and add redirects for old URLs.
+    how_to_verify: 404 count on /p/ and /checkout paths falls to zero.
+    effort: S
+    owner: Eng
+  B99:
+    name: Unknown
+    stage: ANY
+    description: No rule fired for this failed session.
+    fix: Review with the LLM classifier or manually.
+    how_to_verify: Diagnosis coverage rises.
+    effort: S
+    owner: Eng

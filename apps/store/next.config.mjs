@@ -7,6 +7,8 @@ const here = path.dirname(fileURLToPath(import.meta.url));
 const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
+  // Compression is off so bytes_out in the access log is the exact body size sent.
+  compress: false,
   outputFileTracingRoot: path.join(here, "../.."),
 };
 

@@ -6,4 +6,5 @@ COPY apps/store ./apps/store
 RUN pnpm install --frozen-lockfile --filter @agentlens/store...
 RUN pnpm --filter @agentlens/store build
 EXPOSE 3100
+ENV HOST=0.0.0.0
 CMD ["pnpm", "--filter", "@agentlens/store", "start"]

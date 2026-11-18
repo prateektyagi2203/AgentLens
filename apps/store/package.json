@@ -3,18 +3,22 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 3100",
+    "dev": "node server.mjs --dev",
     "build": "next build",
-    "start": "next start -p 3100",
-    "lint": "next lint --max-warnings=0",
+    "start": "node server.mjs",
+    "seed": "tsx scripts/seed-catalog.ts",
+    "gen-test-key": "node scripts/gen-test-key.mjs",
+    "lint": "next lint --max-warnings=0 --dir app --dir components --dir lib --dir tests",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:e2e": "playwright test"
   },
   "dependencies": {
+    "dotenv": "^16.4.7",
     "next": "^15.1.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "tsx": "^4.19.2"
   },
   "devDependencies": {
     "@playwright/test": "^1.49.0",
