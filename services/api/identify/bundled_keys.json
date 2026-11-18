@@ -1,0 +1,12 @@
+{
+  "https://agents.desithreads.test": {
+    "keys": [
+      {
+        "kty": "OKP",
+        "crv": "Ed25519",
+        "x": "1-qdYDP_FpP_S_H12d-cge-JDnpFCB7qqtNRaRXUNGY",
+        "kid": "4us5-o9gEUSPaB28E7eyb86sH37mjWd4aSXuLdHTFYw"
+      }
+    ]
+  }
+}

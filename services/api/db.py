@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from pathlib import Path
+from typing import Any
 
 import duckdb
 
@@ -19,3 +20,9 @@ def connect(path: str | Path | None = None, read_only: bool = False) -> duckdb.D
     if not read_only:
         con.execute(SCHEMA_PATH.read_text(encoding="utf-8"))
     return con
+
+
+def one(con: duckdb.DuckDBPyConnection, sql: str, params: list[Any] | None = None) -> tuple[Any, ...] | None:
+    """First row or None. Fully drains the result so the connection is never left with an open cursor."""
+    rows = con.execute(sql, params or []).fetchall()
+    return rows[0] if rows else None

@@ -2,8 +2,11 @@ signature:
   clock_skew_s: 60
   key_cache_ttl_s: 3600
   offline_mode: false
+  key_directory_overrides: {}   # origin -> directory URL, e.g. for a local test operator
 suspicion:
   threshold: 60
+  regular_timing_min_gaps: 4
+  velocity_min_pages: 5
   page_velocity_per_min: 15
   regular_timing_cv: 0.25     # coefficient of variation below this counts as "very regular"
   weights:
@@ -19,3 +22,4 @@ suspicion:
 sessions:
   timeout_min_human: 30
   timeout_min_agent: 10
+  cookie_attach_s: 120          # attach a cookie-less request to a cookie seen from the same ip+ua within this window

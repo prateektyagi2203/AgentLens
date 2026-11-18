@@ -1,0 +1,247 @@
+# Synthetic traffic (PRD 17). Persona shares, tasks, reactions and the Before/After toggle states.
+# Everything here describes the generator's own behaviour; nothing in this file is read by identification or diagnosis.
+host: desithreads.local
+store_url: http://localhost:3100
+operator_origin: https://agents.desithreads.test
+signature:
+  label: sig1
+  expires_s: 300              # PRD: short-lived; draft recommends <= 24h
+  agent_header: dictionary    # dictionary | legacy (legacy = bare quoted string)
+
+states:                       # PRD Appendix C
+  before: [F03, F05, F06, F07, F09, F10]
+  after: [F07, F09, F10]
+
+reaction:
+  max_retries: 2              # retries of the same failing call before giving up
+  p_alt_path: 0.45            # agents that try an alternative path (e.g. check delivery after PINCODE_REQUIRED)
+  p_abandon_slow: 0.3         # abandon when a page takes > slow_ms
+  slow_ms: 5000
+
+completion:
+  browsing_agent_checkout: 0.35   # browsing agents that reach checkout and submit an order
+  human_checkout: 0.75
+
+diurnal_weight:               # relative traffic by UTC hour (humans); agents are flat
+  human: [1, 1, 1, 1, 1, 2, 3, 4, 5, 6, 6, 6, 6, 6, 6, 6, 7, 8, 9, 10, 10, 9, 5, 2]
+
+tasks:                        # PRD 18.3
+  T1: find white sneakers under 4000 in UK 9
+  T2: size advice from the size guide
+  T3: delivery to pincode 201301 and COD
+  T4: add the cheapest kurta in size M to the cart
+  T5: go to checkout and fill the form
+  T6: return window and free returns
+
+personas:
+  human:
+    share: 0.70
+    behavior: human
+    tier: human
+    agent_class: human
+    ip_pool: residential
+    keeps_cookies: 1.0
+    js: true
+    assets: true
+    beacon: 0.96              # the rest run privacy tooling that blocks the beacon
+    cached_assets: 0.05       # returning visitors with a warm cache load no assets
+    sec_fetch: 1.0
+    accept: html
+    think: { kind: lognormal, median: 9.0, sigma: 0.8 }
+    p_intent: 0.10            # share of visitors who try to buy
+    p_pincode: 0.8            # enter a pincode when the wall appears
+    p_otp: 0.7                # can read the SMS
+    p_phone_strict: 0.15      # types the phone in the exact format first time
+    p_phone_retry: 0.75
+    p_captcha: 0.85
+    p_interstitial_abandon: 0.10
+    p_spin_abandon: 0.05
+    p_mismatch_abandon: 0.3
+    uas:
+      - ua: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+        sec_ch_ua: '"Chromium";v="131", "Not_A Brand";v="24", "Google Chrome";v="131"'
+        weight: 4
+      - ua: "Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36"
+        sec_ch_ua: '"Chromium";v="130", "Not_A Brand";v="24", "Google Chrome";v="130"'
+        weight: 5
+      - ua: "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Mobile/15E148 Safari/604.1"
+        weight: 2
+      - ua: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15"
+        weight: 1
+      - ua: "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0"
+        weight: 1
+
+  signed_agent:
+    share: 0.06
+    behavior: shopper
+    tier: verified
+    operator: AgentLens Test Operator
+    agent_name: TestSignedAgent
+    agent_class: browsing_agent
+    ip_pool: "dc:34.118"
+    keeps_cookies: 0.8
+    js: true
+    assets: true
+    beacon: 1.0
+    cached_assets: 0.0
+    sec_fetch: 1.0
+    accept: html
+    signs: valid
+    vision: true
+    think: { kind: lognormal, median: 3.0, sigma: 0.5 }
+    tasks: { T4: 0.30, T5: 0.50, T1: 0.10, T2: 0.05, T3: 0.05 }
+    p_interstitial_abandon: 0.2
+    p_spin_abandon: 0.15
+    p_mismatch_abandon: 0.5
+    p_phone_strict: 0.4
+    p_phone_retry: 0.5
+    p_cod_switch: 0.6
+    p_image_guide_fail: 0.35
+    uas:
+      - ua: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 TestSignedAgent/1.0"
+        sec_ch_ua: '"Chromium";v="131", "Not_A Brand";v="24"'
+
+  chatgpt_fetcher:
+    share: 0.06
+    behavior: fetcher
+    tier: declared
+    operator: OpenAI
+    agent_name: ChatGPT-User
+    agent_class: user_fetcher
+    ip_pool: "dc:20.171"
+    keeps_cookies: 0.0
+    js: false
+    assets: false
+    beacon: 0.0
+    sec_fetch: 0.0
+    accept: any
+    respects_robots: 0.3
+    think: { kind: lognormal, median: 1.2, sigma: 0.5 }
+    tasks: { T1: 0.35, T2: 0.15, T3: 0.15, T6: 0.2, PDP: 0.15 }
+    uas:
+      - ua: "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot"
+
+  claude_fetcher:
+    share: 0.04
+    behavior: fetcher
+    tier: declared
+    operator: Anthropic
+    agent_name: Claude-User
+    agent_class: user_fetcher
+    ip_pool: "dc:160.79"
+    keeps_cookies: 0.0
+    js: false
+    assets: false
+    beacon: 0.0
+    sec_fetch: 0.0
+    accept: any
+    respects_robots: 0.5
+    think: { kind: lognormal, median: 1.5, sigma: 0.5 }
+    tasks: { T1: 0.3, T2: 0.2, T3: 0.1, T6: 0.25, PDP: 0.15 }
+    uas:
+      - ua: "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Claude-User/1.0; +Claude-User@anthropic.com)"
+
+  perplexity_fetcher:
+    share: 0.03
+    behavior: fetcher
+    tier: declared
+    operator: Perplexity
+    agent_name: Perplexity-User
+    agent_class: user_fetcher
+    ip_pool: "dc:44.208"
+    keeps_cookies: 0.0
+    js: false
+    assets: false
+    beacon: 0.0
+    sec_fetch: 0.0
+    accept: any
+    respects_robots: 0.2
+    think: { kind: lognormal, median: 1.0, sigma: 0.4 }
+    tasks: { T1: 0.4, T2: 0.1, T3: 0.2, T6: 0.15, PDP: 0.15 }
+    uas:
+      - ua: "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Perplexity-User/1.0; +https://perplexity.ai/perplexity-user)"
+
+  headless_agent:
+    share: 0.05
+    behavior: shopper
+    tier: suspected
+    operator: unknown
+    agent_name: unknown
+    agent_class: browsing_agent
+    ip_pool: "dc:52.14"
+    keeps_cookies: 0.7
+    js: true
+    assets: false
+    beacon: 0.3
+    sec_fetch: 0.5
+    accept: mixed
+    vision: false
+    think: { kind: regular, interval: 1.6, jitter: 0.06 }
+    tasks: { T4: 0.35, T5: 0.45, T1: 0.2 }
+    p_interstitial_abandon: 0.0
+    p_spin_abandon: 0.0
+    p_mismatch_abandon: 0.4
+    p_phone_strict: 0.4
+    p_phone_retry: 0.5
+    p_cod_switch: 0.6
+    p_image_guide_fail: 0.7
+    stealth: 0.15             # share that hides the HeadlessChrome hint
+    uas:
+      - ua: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36"
+        sec_ch_ua: '"HeadlessChrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"'
+
+  forged_signature_bot:
+    share: 0.01
+    behavior: shopper
+    tier: suspected
+    operator: unknown
+    agent_name: unknown
+    agent_class: browsing_agent
+    ip_pool: "dc:185.220"
+    keeps_cookies: 0.5
+    js: true
+    assets: false
+    beacon: 0.0
+    sec_fetch: 0.3
+    accept: mixed
+    signs: forged
+    vision: false
+    think: { kind: regular, interval: 1.2, jitter: 0.08 }
+    tasks: { T4: 0.5, T5: 0.5 }
+    p_interstitial_abandon: 0.0
+    p_spin_abandon: 0.0
+    p_mismatch_abandon: 0.4
+    p_phone_strict: 0.4
+    p_phone_retry: 0.5
+    p_cod_switch: 0.6
+    p_image_guide_fail: 0.7
+    uas:
+      - ua: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+        sec_ch_ua: '"Chromium";v="129", "Not_A Brand";v="24"'
+
+  crawler:
+    share: 0.05
+    behavior: crawler
+    tier: declared
+    ip_pool: "dc:66.249"
+    keeps_cookies: 0.0
+    js: false
+    assets: false
+    beacon: 0.0
+    sec_fetch: 0.0
+    accept: any
+    think: { kind: lognormal, median: 2.0, sigma: 0.3 }
+    pages: [8, 40]
+    uas:
+      - { ua: "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)", name: Googlebot, operator: Google, class: search_crawler, weight: 3, robots: Googlebot }
+      - { ua: "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; GPTBot/1.1; +https://openai.com/gptbot)", name: GPTBot, operator: OpenAI, class: training_crawler, weight: 2, robots: GPTBot }
+      - { ua: "CCBot/2.0 (https://commoncrawl.org/faq/)", name: CCBot, operator: Common Crawl, class: training_crawler, weight: 1, robots: CCBot }
+      - { ua: "Mozilla/5.0 (compatible; ClaudeBot/1.0; +claudebot@anthropic.com)", name: ClaudeBot, operator: Anthropic, class: training_crawler, weight: 1, robots: ClaudeBot }
+      - { ua: "Mozilla/5.0 (compatible; Applebot/0.1; +http://www.apple.com/go/applebot)", name: Applebot, operator: Apple, class: search_crawler, weight: 1, robots: Applebot }
+      - { ua: "Mozilla/5.0 (Linux; Android 5.0) AppleWebKit/537.36 (KHTML, like Gecko; compatible; Bytespider; spider-feedback@bytedance.com)", name: Bytespider, operator: ByteDance, class: training_crawler, weight: 1, robots: Bytespider }
+
+noise:
+  p_server_error: 0.004       # random 5xx on pages
+  p_random_abandon: 0.03      # agents/humans that simply stop mid-journey
+  p_flaky_api_retry: 0.01     # transient API failure that clients retry
+  duration_ms: { page_median: 90, page_sigma: 0.5, api_median: 35, api_sigma: 0.5, asset_median: 12, asset_sigma: 0.4 }
