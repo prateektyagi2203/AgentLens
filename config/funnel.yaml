@@ -1,0 +1,51 @@
+# Funnel stages (PRD 22.3) plus page_type classification (PRD 10.2 IN5). First matching page_type wins.
+stages:
+  - id: S1
+    name: Landing / Search
+    rules:
+      - { method: GET, path: "^/$" }
+      - { method: GET, path: "^/search" }
+      - { method: GET, path: "^/c/" }
+  - id: S2
+    name: Product page
+    rules: [{ method: GET, path: "^/p/[^/]+$" }]
+  - id: S3
+    name: Variant selected
+    rules: [{ method: GET, path: "^/api/products/[^/]+/variants" }]
+  - id: S4
+    name: Delivery check
+    rules: [{ method: GET, path: "^/api/serviceability" }]
+  - id: S5
+    name: Added to cart
+    rules: [{ method: POST, path: "^/api/cart$" }]
+  - id: S6
+    name: Checkout started
+    rules: [{ method: GET, path: "^/checkout$" }]
+  - id: S7
+    name: Checkout submitted
+    rules: [{ method: POST, path: "^/api/checkout$" }]
+  - id: S8
+    name: Order placed
+    rules: [{ method: GET, path: "^/order/confirmed/" }]
+success_status: [200, 201, 204, 302]
+
+page_types:
+  - { type: beacon, path: "^/api/beacon" }
+  - { type: variant_api, path: "^/api/products/[^/]+/variants" }
+  - { type: serviceability_api, path: "^/api/serviceability" }
+  - { type: otp_api, path: "^/api/otp/" }
+  - { type: cart_api, path: "^/api/cart" }
+  - { type: checkout_api, path: "^/api/checkout" }
+  - { type: admin, path: "^/(admin|api/admin)" }
+  - { type: robots, path: "^/robots\\.txt$" }
+  - { type: asset, path: "^/(_next/|static/|favicon|images/|.*\\.(js|css|png|jpg|jpeg|svg|webp|ico|woff2?)$)" }
+  - { type: home, path: "^/$" }
+  - { type: search, path: "^/search" }
+  - { type: plp, path: "^/c/" }
+  - { type: pdp, path: "^/p/[^/]+$" }
+  - { type: cart, path: "^/cart$" }
+  - { type: login, path: "^/login$" }
+  - { type: checkout, path: "^/checkout$" }
+  - { type: order_confirm, path: "^/order/confirmed/" }
+  - { type: policy, path: "^/policies/" }
+  - { type: size_guide, path: "^/size-guide/" }

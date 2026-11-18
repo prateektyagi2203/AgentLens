@@ -1,0 +1,17 @@
+services:
+  store:
+    build: { context: ., dockerfile: docker/store.Dockerfile }
+    ports: ["3100:3100"]
+    env_file: [.env]
+    volumes: ["./data:/app/data", "./config:/app/config"]
+  api:
+    build: { context: ., dockerfile: docker/api.Dockerfile }
+    ports: ["8100:8100"]
+    env_file: [.env]
+    environment: { AGENTLENS_DATA_DIR: /app/data }
+    volumes: ["./data:/app/data", "./config:/app/config"]
+  dashboard:
+    build: { context: ., dockerfile: docker/dashboard.Dockerfile }
+    ports: ["3101:3101"]
+    environment: { NEXT_PUBLIC_API_URL: "http://localhost:8100" }
+    depends_on: [api]

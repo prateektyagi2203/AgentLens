@@ -1,0 +1,21 @@
+signature:
+  clock_skew_s: 60
+  key_cache_ttl_s: 3600
+  offline_mode: false
+suspicion:
+  threshold: 60
+  page_velocity_per_min: 15
+  regular_timing_cv: 0.25     # coefficient of variation below this counts as "very regular"
+  weights:
+    no_beacon_with_browser_ua: 25
+    no_assets: 15
+    headless_hint: 30
+    missing_sec_fetch: 10
+    regular_timing: 10
+    high_velocity: 10
+    deep_link_cart_rush: 5
+    atypical_accept: 5
+    invalid_signature: 30
+sessions:
+  timeout_min_human: 30
+  timeout_min_agent: 10

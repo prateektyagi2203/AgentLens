@@ -1,0 +1,91 @@
+# Starter agent registry (PRD Appendix A). Tokens change often: re-verify against each operator's docs.
+# class: user_fetcher | browsing_agent | search_crawler | training_crawler | api_agent | internal | robots_token_only
+operators:
+  openai:
+    display_name: OpenAI
+    signature_agents: ["https://chatgpt.com"]
+    ip_ranges: []            # fill from operator-published ranges to get ip_match=true
+    agents:
+      - { name: ChatGPT-User, ua_tokens: ["ChatGPT-User"], class: user_fetcher }
+      - { name: OAI-SearchBot, ua_tokens: ["OAI-SearchBot"], class: search_crawler }
+      - { name: GPTBot, ua_tokens: ["GPTBot"], class: training_crawler }
+      - { name: ChatGPT-Agent, ua_tokens: ["ChatGPT-Agent", "ChatGPT Agent"], class: browsing_agent }
+  anthropic:
+    display_name: Anthropic
+    signature_agents: []
+    ip_ranges: []
+    agents:
+      - { name: Claude-User, ua_tokens: ["Claude-User"], class: user_fetcher }
+      - { name: Claude-SearchBot, ua_tokens: ["Claude-SearchBot"], class: search_crawler }
+      - { name: ClaudeBot, ua_tokens: ["ClaudeBot"], class: training_crawler }
+  perplexity:
+    display_name: Perplexity
+    signature_agents: []
+    ip_ranges: []
+    agents:
+      - { name: Perplexity-User, ua_tokens: ["Perplexity-User"], class: user_fetcher }
+      - { name: PerplexityBot, ua_tokens: ["PerplexityBot"], class: search_crawler }
+  google:
+    display_name: Google
+    signature_agents: []     # check current Google docs for the Web Bot Auth signature agent domain
+    ip_ranges: []
+    agents:
+      - { name: Googlebot, ua_tokens: ["Googlebot"], class: search_crawler }
+      - { name: Google-Agent, ua_tokens: ["Google-Agent", "GoogleAgent"], class: browsing_agent }
+      - { name: Google-Extended, ua_tokens: [], class: robots_token_only, robots_token: "Google-Extended" }
+  apple:
+    display_name: Apple
+    signature_agents: []
+    ip_ranges: []
+    agents:
+      - { name: Applebot, ua_tokens: ["Applebot"], class: search_crawler }
+      - { name: Applebot-Extended, ua_tokens: [], class: robots_token_only, robots_token: "Applebot-Extended" }
+  amazon:
+    display_name: Amazon
+    signature_agents: []
+    ip_ranges: []
+    agents:
+      - { name: Amazonbot, ua_tokens: ["Amazonbot"], class: search_crawler }
+  meta:
+    display_name: Meta
+    signature_agents: []
+    ip_ranges: []
+    agents:
+      - { name: Meta-ExternalAgent, ua_tokens: ["meta-externalagent"], class: training_crawler }
+      - { name: Meta-ExternalFetcher, ua_tokens: ["meta-externalfetcher"], class: user_fetcher }
+  commoncrawl:
+    display_name: Common Crawl
+    signature_agents: []
+    ip_ranges: []
+    agents:
+      - { name: CCBot, ua_tokens: ["CCBot"], class: training_crawler }
+  bytedance:
+    display_name: ByteDance
+    signature_agents: []
+    ip_ranges: []
+    agents:
+      - { name: Bytespider, ua_tokens: ["Bytespider"], class: training_crawler }
+  duckduckgo:
+    display_name: DuckDuckGo
+    signature_agents: []
+    ip_ranges: []
+    agents:
+      - { name: DuckAssistBot, ua_tokens: ["DuckAssistBot"], class: user_fetcher }
+  mistral:
+    display_name: Mistral
+    signature_agents: []
+    ip_ranges: []
+    agents:
+      - { name: MistralAI-User, ua_tokens: ["MistralAI-User"], class: user_fetcher }
+  agentlens:
+    display_name: AgentLens
+    signature_agents: []
+    ip_ranges: []
+    agents:
+      - { name: AgentLens-Replay, ua_tokens: ["AgentLens-Replay"], class: internal }
+  test_operator:
+    display_name: AgentLens Test Operator
+    signature_agents: ["https://agents.desithreads.test"]
+    ip_ranges: []
+    agents:
+      - { name: TestSignedAgent, ua_tokens: ["TestSignedAgent"], class: browsing_agent }

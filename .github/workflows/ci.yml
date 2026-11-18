@@ -1,0 +1,39 @@
+name: ci
+on: [push, pull_request]
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install uv && uv sync
+      - run: uv run ruff check .
+      - run: uv run mypy services
+      - run: uv run pytest -q
+      - run: uv run pip-audit
+        continue-on-error: true
+
+  node:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: pnpm }
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm -r lint
+      - run: pnpm -r typecheck
+      - run: pnpm -r test
+      - run: pnpm audit --prod
+        continue-on-error: true
+
+  secrets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Block committed API keys
+        run: |
+          if grep -rEn --exclude-dir={.git,node_modules,.venv} "sk-[A-Za-z0-9_-]{20,}|AIza[0-9A-Za-z_-]{35}" . ; then
+            echo "Possible API key committed"; exit 1; fi

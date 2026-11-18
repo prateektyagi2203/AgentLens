@@ -1,0 +1,7 @@
+allowed_hosts: ["localhost:3100", "127.0.0.1:3100", "desithreads.local"]   # PUBLIC_STORE_HOST is appended from env
+top_n_blockers: 5
+sessions_per_blocker: 3
+max_replays_per_run: 50
+step_pause_s: 2
+user_agent: "AgentLens-Replay/1.0 (+https://github.com/prateektyagi2203/AgentLens)"
+sign_requests: false

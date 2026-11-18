@@ -1,0 +1,17 @@
+{
+  "name": "agentlens",
+  "private": true,
+  "version": "1.0.0",
+  "description": "AgentLens - agent analytics for ecommerce",
+  "packageManager": "pnpm@12.21.0",
+  "scripts": {
+    "dev:store": "pnpm --filter @agentlens/store dev",
+    "dev:dashboard": "pnpm --filter @agentlens/dashboard dev",
+    "lint": "pnpm -r lint",
+    "test": "pnpm -r test",
+    "format": "prettier --write \"apps/**/*.{ts,tsx,json,css}\""
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  }
+}
