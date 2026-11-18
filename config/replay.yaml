@@ -1,7 +1,30 @@
 allowed_hosts: ["localhost:3100", "127.0.0.1:3100", "desithreads.local"]   # PUBLIC_STORE_HOST is appended from env
+base_url: "http://localhost:3100"
+default_task: "buy a size-M blue shirt under 1500 INR, deliver to pincode 560001"
+default_mode: fetch              # fetch (HTTP, no browser) | browser (Playwright)
+auto_browser: true               # hypotheses that need a real DOM (B07) upgrade to browser mode when Chromium is installed
 top_n_blockers: 5
 sessions_per_blocker: 3
 max_replays_per_run: 50
-step_pause_s: 2
+step_pause_s: 2                  # rate limit: minimum seconds between requests
 user_agent: "AgentLens-Replay/1.0 (+https://github.com/prateektyagi2203/AgentLens)"
-sign_requests: false
+sign_requests: false             # true: sign with the test-operator Web Bot Auth key (Verified variant)
+respect_robots: true             # robots.txt disallow stops the replay and is recorded as B14 evidence
+request_timeout_s: 20
+# Hard budgets per replay (the OpenAI planner falls back to the deterministic one when tokens run out)
+max_steps: 30
+max_seconds: 180
+max_tokens: 6000
+slow_pdp_ms: 2000                # B13: product page slower than this
+# Safety
+bypass_test_walls: true          # use the store's documented test OTP past a login wall (local hosts only)
+test_otp: "123456"
+load_probes: false               # B12 burst against non-local hosts needs the site owner's consent
+load_probe_requests: 25
+load_probe_pause_s: 0.05
+vision: false                    # browser mode: OpenAI screenshot check (needs OPENAI_API_KEY)
+test_profile:                    # fake test data only; never real PII
+  name: "Test Shopper"
+  phone: "9876543210"
+  address: "12 Test Street, Indiranagar, Bengaluru"
+  pincode: "560001"

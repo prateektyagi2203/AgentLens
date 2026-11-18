@@ -45,9 +45,9 @@ build-backend = "setuptools.build_meta"
 [tool.setuptools]
 packages = [
   "agentlens", "agentlens.ingest", "agentlens.identify", "agentlens.sessions", "agentlens.diagnosis", "agentlens.eval",
-  "agentlens.replay", "agentlens.synth",
+  "agentlens.routers", "agentlens.replay", "agentlens.report", "agentlens.synth",
 ]
-package-dir = { "agentlens" = "services/api", "agentlens.replay" = "services/replay", "agentlens.synth" = "services/synth" }
+package-dir = { "agentlens" = "services/api", "agentlens.replay" = "services/replay", "agentlens.report" = "services/report", "agentlens.synth" = "services/synth" }
 
 [tool.setuptools.package-data]
 "agentlens" = ["schema.sql"]
@@ -63,7 +63,7 @@ select = ["E", "F", "I", "UP", "B"]
 ignore = ["E501"]
 
 [tool.ruff.lint.flake8-bugbear]
-extend-immutable-calls = ["typer.Option", "typer.Argument"]
+extend-immutable-calls = ["typer.Option", "typer.Argument", "fastapi.Depends", "fastapi.Body", "fastapi.Query"]
 
 [tool.mypy]
 python_version = "3.11"
@@ -75,3 +75,8 @@ check_untyped_defs = true
 testpaths = ["tests/python"]
 asyncio_mode = "auto"
 asyncio_default_fixture_loop_scope = "function"
+markers = [
+  "perf: API latency check on a generated 100k-session database (run with `-m perf`)",
+  "integration: starts the real demo store (node) and replays against it; slow (run with `-m integration`)",
+]
+addopts = "-m 'not perf and not integration'"

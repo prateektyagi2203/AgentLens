@@ -1,5 +1,5 @@
 # AgentLens task runner (Windows PowerShell). Usage: ./tasks.ps1 <task>
-# Tasks: setup | dev | test | lint | synth-scenario | pipeline | replay | snapshot | clean-data
+# Tasks: setup | dev | test | lint | synth-scenario | pipeline | replay | report | snapshot | clean-data
 param([Parameter(Position = 0)][string]$Task = "help")
 
 $ErrorActionPreference = "Stop"
@@ -51,10 +51,11 @@ switch ($Task) {
   }
   "synth-scenario" { Invoke-AgentLens synth scenario before-after --before-days 7 --after-days 7 }
   "pipeline" { Invoke-AgentLens run-all }
-  "replay" { Invoke-AgentLens replay run }
+  "replay" { Invoke-AgentLens replay-all }
+  "report" { Invoke-AgentLens report --format all }
   "snapshot" { Invoke-AgentLens export-snapshot }
   "clean-data" { Get-ChildItem data -Exclude ".gitkeep" | Remove-Item -Recurse -Force }
   default {
-    Write-Host "Tasks: setup | dev | test | lint | synth-scenario | pipeline | replay | snapshot | clean-data"
+    Write-Host "Tasks: setup | dev | test | lint | synth-scenario | pipeline | replay | report | snapshot | clean-data"
   }
 }

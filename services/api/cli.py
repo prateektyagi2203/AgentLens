@@ -7,10 +7,14 @@ from pathlib import Path
 import typer
 
 from . import __version__, db, pipeline, settings
+from .replay import cli as replay_cli
+from .report import cli as report_cli
 from .synth.cli import synth_app
 
 app = typer.Typer(help="AgentLens: agent analytics for ecommerce.", no_args_is_help=True)
 app.add_typer(synth_app, name="synth")
+replay_cli.register(app)
+report_cli.register(app)
 
 
 @app.command()
@@ -163,6 +167,34 @@ def eval_diagnosis(
     typer.echo(f"report: {write_report(ev, label='golden' if golden else '')}")
     if not ev.passed:
         raise typer.Exit(1)
+
+
+@app.command("eval")
+def eval_all(
+    logs: Path = typer.Option(None, help="Log directory holding the generator's lines (default: <data>/logs)."),
+    run_id: str = typer.Option(None, help="Ground-truth run id (default: all runs)."),
+) -> None:
+    """Run identification + diagnosis evaluation and write <data>/eval/latest.json for the dashboard."""
+    from .eval.latest import build_latest, write_latest
+
+    con = db.connect()
+    try:
+        doc = build_latest(con, logs, run_id)
+    finally:
+        con.close()
+    typer.echo(f"wrote {write_latest(doc)}")
+
+
+@app.command()
+def serve(
+    host: str = typer.Option("127.0.0.1", help="Bind address."),
+    port: int = typer.Option(8100, help="Port (the dashboard defaults to http://localhost:8100/api)."),
+    reload: bool = typer.Option(False, help="Auto-reload on code changes (development)."),
+) -> None:
+    """Serve the dashboard API. Stop it before running other commands: DuckDB allows a single writer process."""
+    import uvicorn
+
+    uvicorn.run("agentlens.main:app", host=host, port=port, reload=reload)
 
 
 if __name__ == "__main__":

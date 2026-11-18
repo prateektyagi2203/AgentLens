@@ -22,6 +22,7 @@ SC1_PRECISION_MIN = 1.0
 SC2_DECLARED_ACCURACY_MIN = 0.98
 SC3_RECALL_MIN = 0.75
 SC3_FPR_MAX = 0.05
+TIER_ORDER = ("verified", "declared", "suspected", "human")
 
 
 @dataclass
@@ -39,6 +40,7 @@ class IdentificationEval:
     human_sessions: int = 0
     forged_marked_verified: int = 0
     per_persona: dict[str, dict[str, int]] = field(default_factory=dict)
+    confusion: list[list[int]] = field(default_factory=lambda: [[0] * len(TIER_ORDER) for _ in TIER_ORDER])
     sc1: bool = False
     sc2: bool = False
     sc3: bool = False
@@ -125,6 +127,8 @@ def evaluate_identification(con: duckdb.DuckDBPyConnection, logs: Path | None = 
         ev.sessions_evaluated += 1
         bucket = ev.per_persona.setdefault(persona, {})
         bucket[tier] = bucket.get(tier, 0) + 1
+        if expected in TIER_ORDER and tier in TIER_ORDER:
+            ev.confusion[TIER_ORDER.index(expected)][TIER_ORDER.index(tier)] += 1
         if tier == "verified":
             if expected == "verified":
                 ver_tp += 1

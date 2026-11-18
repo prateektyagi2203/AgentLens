@@ -27,3 +27,15 @@ def chain_db(synth_logs: Path, tmp_path_factory: pytest.TempPathFactory):  # typ
     assert res.ok, res.steps
     yield con
     con.close()
+
+
+@pytest.fixture(scope="session")
+def ba_db(tmp_path_factory: pytest.TempPathFactory):  # type: ignore[no-untyped-def]
+    """A before/after scenario (7 + 7 days, fixes applied at the switch) taken through the whole chain."""
+    base = tmp_path_factory.mktemp("ba-synth")
+    run_offline(sessions=4000, days=14, seed=5, out=base / "logs", run_id="ba", force=True, switch_after_days=7)
+    con = db.connect(tmp_path_factory.mktemp("ba-db") / "agentlens.duckdb")
+    res = pipeline.run_steps(con, None, {"source": str(base / "logs"), "fmt": "jsonl", **CHAIN_PARAMS})
+    assert res.ok, res.steps
+    yield con
+    con.close()

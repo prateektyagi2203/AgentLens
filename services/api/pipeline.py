@@ -128,7 +128,7 @@ def run_steps(
         if unknown:
             raise KeyError(f"unknown step(s): {unknown}; registered: {list(_REGISTRY)}")
         steps = [s for s in steps if s.name in names]
-    ctx = RunContext(run_id=uuid.uuid4().hex[:12], params=params or {})
+    ctx = RunContext(run_id=str((params or {}).get("run_id") or uuid.uuid4().hex[:12]), params=params or {})
     started = _now()
     con.execute(
         "INSERT INTO runs (run_id, started_at, steps_json, status, counts_json) VALUES (?, ?, '[]', 'running', '{}')",

@@ -8,7 +8,9 @@ import pytest
 
 API = Path(__file__).resolve().parents[2] / "services" / "api"
 FORBIDDEN = ("ground_truth", "synth_session_id")
-GUARDED = ["ingest", "identify", "sessions", "funnel", "diagnosis", "impact", "recommend", "pipeline.py", "clientkey.py"]
+GUARDED = [
+    "ingest", "identify", "sessions", "funnel", "diagnosis", "impact", "recommend", "routers", "pipeline.py", "clientkey.py",
+]
 
 
 def _files() -> list[Path]:
