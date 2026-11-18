@@ -12,8 +12,12 @@ CREATE TABLE IF NOT EXISTS requests (
   cookie_sid_hash VARCHAR, is_asset BOOLEAN, event_type VARCHAR, page_type VARCHAR, error_code VARCHAR,
   identity_tier VARCHAR, operator VARCHAR, agent_name VARCHAR, agent_class VARCHAR,
   identity_confidence DOUBLE, suspicion_score DOUBLE,
-  session_id VARCHAR, ingested_at TIMESTAMP, source_file VARCHAR
+  session_id VARCHAR, ingested_at TIMESTAMP, source_file VARCHAR,
+  unit_price DOUBLE, product_id VARCHAR
 );
+-- M3: cart unit price / product id (meta.unit_price, meta.product_id) feed the B15 price-mismatch rule.
+ALTER TABLE requests ADD COLUMN IF NOT EXISTS unit_price DOUBLE;
+ALTER TABLE requests ADD COLUMN IF NOT EXISTS product_id VARCHAR;
 
 -- Raw signature headers are needed for verification; kept in a side table so `requests` stays lean.
 CREATE TABLE IF NOT EXISTS request_signatures (
@@ -34,6 +38,13 @@ CREATE TABLE IF NOT EXISTS sessions (
 
 CREATE TABLE IF NOT EXISTS session_stages (
   session_id VARCHAR, stage_id VARCHAR, first_reached_ts TIMESTAMP
+);
+
+-- M3 funnel aggregates. day IS NULL = whole window. sessions_reached counts sessions with max_stage >= stage
+-- (cumulative); step_conv = reached / reached at the previous stage (S1: reached / total); dropped = previous - reached.
+CREATE TABLE IF NOT EXISTS funnel_stats (
+  segment_type VARCHAR, segment VARCHAR, day DATE, stage_id VARCHAR,
+  sessions_reached INTEGER, sessions_total INTEGER, step_conv DOUBLE, overall_conv DOUBLE, dropped INTEGER
 );
 
 CREATE TABLE IF NOT EXISTS blocker_hits (
@@ -57,6 +68,11 @@ CREATE TABLE IF NOT EXISTS impact (
   sessions_blocked INTEGER, p_stage DOUBLE,
   recoverable_low DOUBLE, recoverable_base DOUBLE, recoverable_high DOUBLE,
   aov DOUBLE, risk_low DOUBLE, risk_base DOUBLE, risk_high DOUBLE, low_confidence BOOLEAN
+);
+
+CREATE TABLE IF NOT EXISTS impact_assumptions (
+  run_id VARCHAR, blocker_id VARCHAR, p_source VARCHAR, window_days DOUBLE, k DOUBLE, aov_source VARCHAR,
+  r_low DOUBLE, r_base DOUBLE, r_high DOUBLE
 );
 
 CREATE TABLE IF NOT EXISTS recommendations (

@@ -30,7 +30,7 @@ FORMATS = ("jsonl", "nginx_combined")
 _STR = pa.string()
 _ARROW_TYPES = {
     "ts": pa.timestamp("us"), "status": pa.int32(), "bytes_out": pa.int64(), "duration_ms": pa.int32(),
-    "is_asset": pa.bool_(),
+    "is_asset": pa.bool_(), "unit_price": pa.float64(),
 }  # fmt: skip
 _REQ_SCHEMA = pa.schema([(c, _ARROW_TYPES.get(c, _STR)) for c in REQ_COLS])
 
@@ -90,13 +90,12 @@ def _insert_requests(con: duckdb.DuckDBPyConnection, rows: list[tuple[object, ..
               request_id, ts, method, host, path, query, status, bytes_out, duration_ms, ip_hash, ip_prefix,
               user_agent, ua_hash, referer, accept, accept_language, sec_ch_ua, sec_fetch_site, sec_fetch_mode,
               sec_fetch_dest, has_signature, signature_agent, cookie_sid_hash, is_asset, event_type, page_type,
-              error_code, ingested_at, source_file)
+              error_code, unit_price, product_id, ingested_at, source_file)
             SELECT request_id, ts, method, host, path, query, status, bytes_out, duration_ms, ip_hash, ip_prefix,
               user_agent, sha256(user_agent), referer, accept, accept_language, sec_ch_ua, sec_fetch_site,
               sec_fetch_mode, sec_fetch_dest, (signature IS NOT NULL OR signature_input IS NOT NULL),
               signature_agent_origin, cookie_sid_hash, is_asset OR pt = 'asset', event_type,
-              CASE WHEN event_type = 'beacon' THEN 'beacon' WHEN is_asset THEN 'asset' ELSE pt END, error_code,
-              current_timestamp::TIMESTAMP, ?
+              CASE WHEN event_type = 'beacon' THEN 'beacon' WHEN is_asset THEN 'asset'               ELSE pt END, error_code, unit_price, product_id,              current_timestamp::TIMESTAMP, ?
             FROM (
               SELECT *, {path_type_sql(rules)} AS pt
               FROM (SELECT DISTINCT ON (request_id) * FROM _ingest_stage)

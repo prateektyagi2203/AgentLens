@@ -323,6 +323,13 @@ def _checkout(ctx: Ctx, expect_value: float) -> Generator[Req, Resp, None]:
     fail(ctx, None)
 
 
+def _pdp_path(ctx: Ctx, product: dict[str, Any]) -> str:
+    """PDP URL; with `noise.p_broken_link` the link is stale (renamed slug) and the store answers 404 (B16)."""
+    p = float(ctx.cfg["noise"].get("p_broken_link", 0))
+    stale = p > 0 and ctx.rng.random() < p
+    return f"/p/{product['slug']}" + ("-old" if stale else "")
+
+
 def shopper(ctx: Ctx, task: str) -> Generator[Req, Resp, None]:
     rng = ctx.rng
     product, variant = choose_target(ctx, task)
@@ -332,7 +339,7 @@ def shopper(ctx: Ctx, task: str) -> Generator[Req, Resp, None]:
         if task == "T1":
             yield from page(ctx, "/search", "q=white+sneakers", stage="S1")
         yield from page(ctx, f"/c/{product['category']}", stage="S1")
-    yield from page(ctx, f"/p/{product['slug']}", stage="S2")
+    yield from page(ctx, _pdp_path(ctx, product), stage="S2")
     ctx.seen_prices[product["id"]] = float(product["price"])
     _pdp_friction(ctx)
     if task == "T2" or rng.random() < ctx.p("p_size_guide", 0.25):
@@ -367,7 +374,7 @@ def browse_human(ctx: Ctx) -> Generator[Req, Resp, None]:
 # ---- fetcher flow (user-triggered fetchers: ChatGPT-User, Claude-User, Perplexity-User style) --------------------
 
 def _fetcher_reads_pdp(ctx: Ctx, product: dict[str, Any]) -> Generator[Req, Resp, None]:
-    yield from page(ctx, f"/p/{product['slug']}", stage="S2")
+    yield from page(ctx, _pdp_path(ctx, product), stage="S2")
     tg = ctx.tg()
     if tg["F03"] and ctx.rng.random() < 0.7:
         fail(ctx, "B03", "S2")

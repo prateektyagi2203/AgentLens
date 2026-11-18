@@ -44,7 +44,7 @@ build-backend = "setuptools.build_meta"
 # but they all import as the single `agentlens` package: agentlens.*, agentlens.replay, agentlens.synth.
 [tool.setuptools]
 packages = [
-  "agentlens", "agentlens.ingest", "agentlens.identify", "agentlens.sessions", "agentlens.eval",
+  "agentlens", "agentlens.ingest", "agentlens.identify", "agentlens.sessions", "agentlens.diagnosis", "agentlens.eval",
   "agentlens.replay", "agentlens.synth",
 ]
 package-dir = { "agentlens" = "services/api", "agentlens.replay" = "services/replay", "agentlens.synth" = "services/synth" }

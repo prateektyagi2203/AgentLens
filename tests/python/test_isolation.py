@@ -15,6 +15,8 @@ def _files() -> list[Path]:
     out: list[Path] = []
     for name in GUARDED:
         p = API / name
+        if not p.exists() and (API / f"{name}.py").exists():
+            p = API / f"{name}.py"
         if p.is_file():
             out.append(p)
         elif p.is_dir():

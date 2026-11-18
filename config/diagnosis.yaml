@@ -1,0 +1,18 @@
+# Diagnosis (PRD 12.4-12.6): thresholds for the rules engine, site checks and the optional LLM classifier.
+# Rules read only logs, the catalog snapshot and site_checks; never synthetic ground truth.
+scope:
+  tiers: [verified, declared, suspected]      # identity tiers diagnosed (internal replay agents and humans excluded)
+  infra_only_classes: [search_crawler, training_crawler]   # crawlers: only infrastructure rules B01 B12 B13 B16, never B99/LLM
+  excluded_classes: [robots_token_only]
+thresholds:
+  slow_ms: 5000                  # B13: last request slower than this
+  min_terminal_confidence: 0.5   # a hit below this never becomes the session's terminal blocker
+  llm_min_confidence: 0.6        # an LLM verdict below this leaves the session as B99
+site_checks:
+  base_url: ""                   # empty = no probing (offline); env AGENTLENS_SITE_URL or --site-url override
+  timeout_s: 5
+  pdp_sample: 5
+  catalog_path: ""               # default: apps/store/data/catalog.json (env AGENTLENS_CATALOG)
+llm:
+  max_sessions: 200              # cap per run (env AGENTLENS_LLM_MAX_SESSIONS)
+  max_requests: 40               # requests per session summary sent to the model

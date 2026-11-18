@@ -16,7 +16,7 @@ def env(tmp_path):
     write_jsonl(logs / "access-2026-11-01.jsonl", human_visit(0, "ck1"))
     c = db.connect(":memory:")
     yield c, logs
-    for name in ("funnel", "zz_fail", "zz_extra"):
+    for name in ("zz_fail", "zz_extra", "zz_first"):
         pipeline.unregister_step(name)
     c.close()
 
@@ -25,23 +25,30 @@ def test_registered_steps_run_in_canonical_order(env):
     con, logs = env
     order: list[str] = []
     pipeline.register_step("zz_extra", lambda c, ctx: order.append("zz_extra") or {"n": 1})
-    pipeline.register_step("funnel", lambda c, ctx: order.append("funnel") or {"n": 2})
-    res = pipeline.run_all(con, source=logs)
-    assert res.ok and [s["name"] for s in res.steps] == ["ingest", "identify", "sessionize", "funnel", "zz_extra"]
-    assert order == ["funnel", "zz_extra"]
+    pipeline.register_step("zz_first", lambda c, ctx: order.append("zz_first") or {"n": 2})
+    names = ["zz_first", "zz_extra", "sessionize", "identify", "ingest"]
+    res = pipeline.run_steps(con, names, {"source": str(logs)})
+    assert res.ok and [s["name"] for s in res.steps] == ["ingest", "identify", "sessionize", "zz_extra", "zz_first"]
+    assert order == ["zz_extra", "zz_first"]
     row = con.execute("SELECT status, steps_json, counts_json, finished_at FROM runs").fetchall()[0]
     assert row[0] == "success" and row[3] is not None
-    assert json.loads(row[2])["funnel"] == {"n": 2} and json.loads(row[2])["ingest"]["requests_inserted"] > 0
+    assert json.loads(row[2])["zz_first"] == {"n": 2} and json.loads(row[2])["ingest"]["requests_inserted"] > 0
 
 
 def test_duplicate_registration_needs_replace():
-    pipeline.register_step("funnel", lambda c, ctx: None)
+    pipeline.register_step("zz_extra", lambda c, ctx: None)
     try:
         with pytest.raises(ValueError):
-            pipeline.register_step("funnel", lambda c, ctx: None)
-        pipeline.register_step("funnel", lambda c, ctx: {"v": 2}, replace=True)
+            pipeline.register_step("zz_extra", lambda c, ctx: None)
+        pipeline.register_step("zz_extra", lambda c, ctx: {"v": 2}, replace=True)
     finally:
-        pipeline.unregister_step("funnel")
+        pipeline.unregister_step("zz_extra")
+
+
+def test_m3_steps_register_on_import():
+    pipeline.load_optional_steps()
+    names = [s.name for s in pipeline.ordered_steps()]
+    assert names == ["ingest", "identify", "sessionize", "funnel", "diagnose", "impact", "recommend"]
 
 
 def test_failure_rolls_back_step_and_keeps_earlier_outputs(env):

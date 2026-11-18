@@ -21,6 +21,7 @@ REQ_COLS = (
     "ip_hash", "ip_prefix", "user_agent", "referer", "accept", "accept_language", "sec_ch_ua",
     "sec_fetch_site", "sec_fetch_mode", "sec_fetch_dest", "signature", "signature_input",
     "signature_agent", "signature_agent_origin", "cookie_sid_hash", "is_asset", "event_type", "error_code",
+        "unit_price", "product_id",
 )  # fmt: skip
 
 # `meta` keys we are willing to read. Anything else in meta is ignored, never stored.
@@ -150,7 +151,7 @@ def parse_jsonl_block(lines: list[bytes]) -> Batch:
                     _s(rec.get("signature_input")), sig_agent,
                     parse_signature_agent(sig_agent) if sig_agent else None,
                     _s(rec.get("cookie_sid_hash")), bool(rec.get("is_asset")), event, _s(meta.get("error_code")),
-                )
+                                        _num(meta.get("unit_price")), _s(meta.get("product_id")),                )
             )  # fmt: skip
             if method == "POST" and path == "/api/checkout" and status == 201 and meta.get("order_id"):
                 batch.add_order(
@@ -256,7 +257,7 @@ def parse_nginx_block(lines: list[bytes], *, source: str, base_offset: int, defa
                     None if nbytes == "-" else int(nbytes), int(float(rtime) * 1000) if rtime else None,
                     ip_hash, ip_prefix, _unescape(ua), _unescape(ref), None, None, None, None, None, None,
                     _unescape(sig), _unescape(sig_in), sa, parse_signature_agent(sa) if sa else None, None,
-                    is_asset, event, None,
+                    is_asset, event, None, None, None,
                 )
             )  # fmt: skip
         except (ValueError, KeyError) as exc:
