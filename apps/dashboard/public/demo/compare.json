@@ -149,9 +149,9 @@
   "conversion": 0.05140845070422535,
   "agent_revenue_inr": 160817.0,
   "risk_inr": {
-   "low": 217122,
-   "base": 407106,
-   "high": 587924
+   "low": 250858,
+   "base": 470361,
+   "high": 752577
   },
   "funnel": {
    "segment": "all_agents",
@@ -228,16 +228,16 @@
    {
     "blocker_id": "B10",
     "name": "Checkout validation failure",
-    "sessions_blocked": 42,
-    "share_of_failed": 0.031180400890868598,
-    "risk_base_inr": 237921
+    "sessions_blocked": 225,
+    "share_of_failed": 0.16703786191536749,
+    "risk_base_inr": 281952
    },
    {
     "blocker_id": "B09",
     "name": "Size guide is image-only",
-    "sessions_blocked": 198,
-    "share_of_failed": 0.14699331848552338,
-    "risk_base_inr": 130797
+    "sessions_blocked": 199,
+    "share_of_failed": 0.147735708982925,
+    "risk_base_inr": 131457
    },
    {
     "blocker_id": "B07",
@@ -247,6 +247,13 @@
     "risk_base_inr": 27158
    },
    {
+    "blocker_id": "B02",
+    "name": "Captcha at checkout",
+    "sessions_blocked": 14,
+    "share_of_failed": 0.010393466963622866,
+    "risk_base_inr": 17544
+   },
+   {
     "blocker_id": "B08",
     "name": "Out-of-stock dead end",
     "sessions_blocked": 17,
@@ -254,10 +261,24 @@
     "risk_base_inr": 11230
    },
    {
+    "blocker_id": "B13",
+    "name": "Slow response / timeout",
+    "sessions_blocked": 1,
+    "share_of_failed": 0.0007423904974016332,
+    "risk_base_inr": 661
+   },
+   {
+    "blocker_id": "B16",
+    "name": "Broken link / 404",
+    "sessions_blocked": 1,
+    "share_of_failed": 0.0007423904974016332,
+    "risk_base_inr": 359
+   },
+   {
     "blocker_id": "B99",
     "name": "Unknown",
-    "sessions_blocked": 236,
-    "share_of_failed": 0.17520415738678544,
+    "sessions_blocked": 36,
+    "share_of_failed": 0.026726057906458798,
     "risk_base_inr": 0
    }
   ]
@@ -267,7 +288,7 @@
   "conversion_pp": 5.140845070422535,
   "conversion_relative": null,
   "agent_revenue_inr": 160817.0,
-  "risk_base_inr": -1520449
+  "risk_base_inr": -1457194
  },
  "significance": {
   "test": "two_proportion_z",

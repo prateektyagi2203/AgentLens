@@ -1,0 +1,227 @@
+{
+ "session": {
+  "session_id": "b0134b1d119efc39",
+  "start_ts": "2026-11-10T03:10:00Z",
+  "duration_s": 7.851,
+  "request_count": 12,
+  "page_count": 7,
+  "identity_tier": "suspected",
+  "operator": "unknown",
+  "agent_name": "unknown",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 0.7,
+  "entry_page": "/",
+  "exit_page": "/checkout",
+  "max_stage": "S6",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B02",
+  "terminal_blocker_name": "Captcha at checkout",
+  "blocker_confidence": 0.8,
+  "diagnosis_method": "llm"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 70.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "9b582886-16a0-4145-868e-61cbe87be637",
+   "ts": "2026-11-10T03:10:00Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 136,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "8df657cc-3fb9-43e7-851e-59108a5dda35",
+   "ts": "2026-11-10T03:10:02Z",
+   "offset_ms": 1198,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 5,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "43bf57f5-2d44-4731-89a2-90962e313d23",
+   "ts": "2026-11-10T03:10:02Z",
+   "offset_ms": 1760,
+   "method": "GET",
+   "path": "/c/mens-shirts",
+   "status": 200,
+   "duration_ms": 117,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "c77b20e6-c4b7-4956-8225-5b7b4e2db13f",
+   "ts": "2026-11-10T03:10:03Z",
+   "offset_ms": 2912,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 4,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "9159ef43-c803-4cdb-8c03-3cc838f198a9",
+   "ts": "2026-11-10T03:10:04Z",
+   "offset_ms": 3407,
+   "method": "GET",
+   "path": "/p/black-checked-flannel-shirt",
+   "status": 200,
+   "duration_ms": 71,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "c4b2d316-d166-4f7a-8bd3-60926b01c91a",
+   "ts": "2026-11-10T03:10:05Z",
+   "offset_ms": 4289,
+   "method": "GET",
+   "path": "/api/products/SHT003/variants",
+   "status": 200,
+   "duration_ms": 30,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "ef9f094f-5075-44d9-874d-e7470c5ecb85",
+   "ts": "2026-11-10T03:10:05Z",
+   "offset_ms": 4334,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 11,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "e951540e-7256-4879-8e13-85034770a909",
+   "ts": "2026-11-10T03:10:05Z",
+   "offset_ms": 4997,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 201,
+   "duration_ms": 32,
+   "page_type": "cart_api",
+   "error_code": null,
+   "stage_id": "S5",
+   "is_asset": false
+  },
+  {
+   "request_id": "cb3c6352-ce63-47ef-81b3-1b9e8f111fc1",
+   "ts": "2026-11-10T03:10:06Z",
+   "offset_ms": 5587,
+   "method": "GET",
+   "path": "/cart",
+   "status": 200,
+   "duration_ms": 183,
+   "page_type": "cart",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "0de0b971-6505-488f-8147-ae7ebd0c78f7",
+   "ts": "2026-11-10T03:10:07Z",
+   "offset_ms": 6963,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 5,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "0a96b8e9-fe39-4dea-8466-3133543d7518",
+   "ts": "2026-11-10T03:10:08Z",
+   "offset_ms": 7317,
+   "method": "GET",
+   "path": "/checkout",
+   "status": 200,
+   "duration_ms": 38,
+   "page_type": "checkout",
+   "error_code": null,
+   "stage_id": "S6",
+   "is_asset": false
+  },
+  {
+   "request_id": "839a0432-7726-428d-84fb-b10a0de23760",
+   "ts": "2026-11-10T03:10:08Z",
+   "offset_ms": 7851,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 4,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-10T03:10:00Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-10T03:10:04Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-10T03:10:05Z"
+  },
+  {
+   "stage_id": "S5",
+   "first_reached_ts": "2026-11-10T03:10:05Z"
+  },
+  {
+   "stage_id": "S6",
+   "first_reached_ts": "2026-11-10T03:10:08Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B02",
+   "name": "Captcha at checkout",
+   "stage": "S6",
+   "confidence": 0.8,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "0a96b8e9-fe39-4dea-8466-3133543d7518",
+     "summary": "GET /checkout -> 200"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

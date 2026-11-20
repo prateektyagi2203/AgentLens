@@ -226,22 +226,22 @@
  ],
  "replays": [
   {
-   "replay_id": "rp_168f26eb80",
+   "replay_id": "rp_f1a67660cc",
    "blocker_id": "B07",
    "blocker_name": "Interstitial / popup overlay",
    "source_session_id": "",
    "mode": "browser",
    "status": "completed",
    "verdict": "confirmed",
-   "started_at": "2026-11-18T11:52:43Z",
-   "finished_at": "2026-11-18T11:53:04Z",
+   "started_at": "2026-11-20T12:09:13Z",
+   "finished_at": "2026-11-20T12:09:41Z",
    "steps_count": 5,
-   "verdict_explanation": "Reproduced B07 (A full-screen overlay covers the page): a full-screen app-download interstitial covers the product page (close button appeared after 3061 ms) (step 5)."
+   "verdict_explanation": "Reproduced B07 (A full-screen overlay covers the page): a full-screen app-download interstitial covers the product page (close button appeared after 2843 ms) (step 5)."
   }
  ],
  "recommendation": {
   "rec_id": "rec_B07",
-  "run_id": "b953b1002c33",
+  "run_id": "8ad92909184b",
   "blocker_id": "B07",
   "blocker_name": "Interstitial / popup overlay",
   "title": "Interstitial / popup overlay: Delay or remove overlays, never block content, and provide an accessible close button.",
@@ -255,6 +255,6 @@
   "risk_inr_base": 12149,
   "status": "open",
   "fixed_annotation_id": null,
-  "llm_explanation": "8% of failed agent sessions (144) ended on interstitial / popup overlay. Typical failing call: GET /p/bandhani-flared-kurta-in-sky-blue -> 200. Fixing it could recover about ₹12,664 a month."
+  "llm_explanation": "Blocker B07, which involves interstitial or popup overlays, has caused 144 sessions to fail, accounting for 8% of the total failed agent sessions. Fixing this issue will improve user experience by allowing smoother navigation and reducing session interruptions, ultimately leading to higher conversion rates."
  }
 }

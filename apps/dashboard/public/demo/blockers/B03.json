@@ -238,22 +238,22 @@
  ],
  "replays": [
   {
-   "replay_id": "rp_e74f965e5a",
+   "replay_id": "rp_79ef31f3a7",
    "blocker_id": "B03",
    "blocker_name": "JS-only product content",
    "source_session_id": "93da0c60453e3e12",
    "mode": "fetch",
    "status": "completed",
    "verdict": "confirmed",
-   "started_at": "2026-11-18T11:52:32Z",
-   "finished_at": "2026-11-18T11:52:36Z",
+   "started_at": "2026-11-20T12:09:01Z",
+   "finished_at": "2026-11-20T12:09:06Z",
    "steps_count": 4,
    "verdict_explanation": "Reproduced B03 (Price/stock exist only after client-side JS): no price in server-rendered HTML or JSON-LD (client-side only) (step 4)."
   }
  ],
  "recommendation": {
   "rec_id": "rec_B03",
-  "run_id": "b953b1002c33",
+  "run_id": "8ad92909184b",
   "blocker_id": "B03",
   "blocker_name": "JS-only product content",
   "title": "JS-only product content: Server-render price and stock and include them in JSON-LD.",
@@ -267,6 +267,6 @@
   "risk_inr_base": 87687,
   "status": "open",
   "fixed_annotation_id": null,
-  "llm_explanation": "27% of failed agent sessions (498) ended on js-only product content. Typical failing call: GET /p/navy-daily-walk-sneaker -> 200. Fixing it could recover about ₹43,798 a month."
+  "llm_explanation": "Blocker B03, which pertains to JS-only product content, has caused 498 sessions, or 27% of failed agent sessions, to be unsuccessful. Fixing this issue will enable agents to access product information more effectively, improving overall shopping experiences."
  }
 }

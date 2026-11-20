@@ -206,22 +206,22 @@
  ],
  "replays": [
   {
-   "replay_id": "rp_d0ad8f072f",
+   "replay_id": "rp_231f908065",
    "blocker_id": "B06",
    "blocker_name": "Login / OTP wall before cart",
    "source_session_id": "e71b72933565934f",
    "mode": "fetch",
    "status": "completed",
    "verdict": "confirmed",
-   "started_at": "2026-11-18T11:51:53Z",
-   "finished_at": "2026-11-18T11:52:09Z",
-   "steps_count": 10,
-   "verdict_explanation": "Reproduced B06 (Add to cart requires an OTP login): add to cart rejected with 401 AUTH_REQUIRED (OTP login before cart) (step 10)."
+   "started_at": "2026-11-20T12:08:08Z",
+   "finished_at": "2026-11-20T12:08:27Z",
+   "steps_count": 9,
+   "verdict_explanation": "Reproduced B06 (Add to cart requires an OTP login): add to cart rejected with 401 AUTH_REQUIRED (OTP login before cart) (step 9)."
   }
  ],
  "recommendation": {
   "rec_id": "rec_B06",
-  "run_id": "b953b1002c33",
+  "run_id": "8ad92909184b",
   "blocker_id": "B06",
   "blocker_name": "Login / OTP wall before cart",
   "title": "Login / OTP wall before cart: Allow guest cart and defer login to checkout, or offer guest checkout.",
@@ -235,6 +235,6 @@
   "risk_inr_base": 1218645,
   "status": "open",
   "fixed_annotation_id": null,
-  "llm_explanation": "22% of failed agent sessions (417) ended on login / otp wall before cart. Typical failing call: POST /api/cart -> 401 AUTH_REQUIRED. Fixing it could recover about ₹170,734 a month."
+  "llm_explanation": "Blocker B06, which involves a login or OTP wall before accessing the cart, has caused 22% of failed AI shopping agent sessions, as indicated by 417 sessions resulting in a 401 AUTH_REQUIRED error. Fixing this issue will streamline the user experience by allowing agents to access the cart without unnecessary authentication barriers, thereby reducing session failures."
  }
 }

@@ -15,10 +15,10 @@
   "max_stage": "S5",
   "converted": false,
   "order_value_inr": null,
-  "terminal_blocker_id": "B99",
-  "terminal_blocker_name": "Unknown",
-  "blocker_confidence": 0.3,
-  "diagnosis_method": "rule"
+  "terminal_blocker_id": "B10",
+  "terminal_blocker_name": "Checkout validation failure",
+  "blocker_confidence": 0.8,
+  "diagnosis_method": "llm"
  },
  "identity": {
   "signature_status": "valid",
@@ -374,10 +374,10 @@
  ],
  "fired_rules": [
   {
-   "blocker_id": "B99",
-   "name": "Unknown",
+   "blocker_id": "B10",
+   "name": "Checkout validation failure",
    "stage": "S5",
-   "confidence": 0.3,
+   "confidence": 0.8,
    "is_terminal": true,
    "evidence": [
     {

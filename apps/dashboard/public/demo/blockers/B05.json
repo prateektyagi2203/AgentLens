@@ -206,22 +206,22 @@
  ],
  "replays": [
   {
-   "replay_id": "rp_e8ebb5ae2d",
+   "replay_id": "rp_08db7464e4",
    "blocker_id": "B05",
    "blocker_name": "Pincode / serviceability wall",
    "source_session_id": "224d2596846fc967",
    "mode": "fetch",
    "status": "completed",
    "verdict": "confirmed",
-   "started_at": "2026-11-18T11:52:36Z",
-   "finished_at": "2026-11-18T11:52:40Z",
+   "started_at": "2026-11-20T12:09:06Z",
+   "finished_at": "2026-11-20T12:09:10Z",
    "steps_count": 4,
    "verdict_explanation": "Reproduced B05 (Add to cart is gated by a pincode check): a pincode modal is server-rendered on the product page and blocks interaction (step 4)."
   }
  ],
  "recommendation": {
   "rec_id": "rec_B05",
-  "run_id": "b953b1002c33",
+  "run_id": "8ad92909184b",
   "blocker_id": "B05",
   "blocker_name": "Pincode / serviceability wall",
   "title": "Pincode / serviceability wall: Make pincode optional before cart, accept it by URL or API, and show the delivery promise without a modal.",
@@ -235,6 +235,6 @@
   "risk_inr_base": 260095,
   "status": "open",
   "fixed_annotation_id": null,
-  "llm_explanation": "5% of failed agent sessions (89) ended on pincode / serviceability wall. Typical failing call: POST /api/cart -> 409 PINCODE_REQUIRED. Fixing it could recover about ₹36,440 a month."
+  "llm_explanation": "Blocker B05, which involves a pincode or serviceability wall, has caused 89 sessions to fail, accounting for 5% of all failed agent sessions due to the error POST /api/cart -> 409 PINCODE_REQUIRED. Fixing this issue will allow agents to process requests without being hindered by pincode requirements, thereby improving overall session success rates."
  }
 }

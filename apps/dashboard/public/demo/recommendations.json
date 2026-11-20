@@ -2,7 +2,7 @@
  "items": [
   {
    "rec_id": "rec_B06",
-   "run_id": "b953b1002c33",
+   "run_id": "8ad92909184b",
    "blocker_id": "B06",
    "blocker_name": "Login / OTP wall before cart",
    "title": "Login / OTP wall before cart: Allow guest cart and defer login to checkout, or offer guest checkout.",
@@ -16,11 +16,11 @@
    "risk_inr_base": 1218645,
    "status": "open",
    "fixed_annotation_id": null,
-   "llm_explanation": "22% of failed agent sessions (417) ended on login / otp wall before cart. Typical failing call: POST /api/cart -> 401 AUTH_REQUIRED. Fixing it could recover about ₹170,734 a month."
+   "llm_explanation": "Blocker B06, which involves a login or OTP wall before accessing the cart, has caused 22% of failed AI shopping agent sessions, as indicated by 417 sessions resulting in a 401 AUTH_REQUIRED error. Fixing this issue will streamline the user experience by allowing agents to access the cart without unnecessary authentication barriers, thereby reducing session failures."
   },
   {
    "rec_id": "rec_B09",
-   "run_id": "b953b1002c33",
+   "run_id": "8ad92909184b",
    "blocker_id": "B09",
    "blocker_name": "Size guide is image-only",
    "title": "Size guide is image-only: Provide an HTML table size guide.",
@@ -34,11 +34,11 @@
    "risk_inr_base": 326798,
    "status": "open",
    "fixed_annotation_id": null,
-   "llm_explanation": "22% of failed agent sessions (419) ended on size guide is image-only. Typical failing call: GET /size-guide/mens-sneakers -> 200. Fixing it could recover about ₹73,606 a month."
+   "llm_explanation": "The AI shopping agents were blocked by the size guide being image-only, which led to 420 sessions failing, accounting for 22% of the total failed sessions. Fixing this issue by providing a text-based size guide will improve accessibility and reduce the failure rate of agent sessions."
   },
   {
    "rec_id": "rec_B05",
-   "run_id": "b953b1002c33",
+   "run_id": "8ad92909184b",
    "blocker_id": "B05",
    "blocker_name": "Pincode / serviceability wall",
    "title": "Pincode / serviceability wall: Make pincode optional before cart, accept it by URL or API, and show the delivery promise without a modal.",
@@ -52,11 +52,11 @@
    "risk_inr_base": 260095,
    "status": "open",
    "fixed_annotation_id": null,
-   "llm_explanation": "5% of failed agent sessions (89) ended on pincode / serviceability wall. Typical failing call: POST /api/cart -> 409 PINCODE_REQUIRED. Fixing it could recover about ₹36,440 a month."
+   "llm_explanation": "Blocker B05, which involves a pincode or serviceability wall, has caused 89 sessions to fail, accounting for 5% of all failed agent sessions due to the error POST /api/cart -> 409 PINCODE_REQUIRED. Fixing this issue will allow agents to process requests without being hindered by pincode requirements, thereby improving overall session success rates."
   },
   {
    "rec_id": "rec_B03",
-   "run_id": "b953b1002c33",
+   "run_id": "8ad92909184b",
    "blocker_id": "B03",
    "blocker_name": "JS-only product content",
    "title": "JS-only product content: Server-render price and stock and include them in JSON-LD.",
@@ -70,11 +70,11 @@
    "risk_inr_base": 87687,
    "status": "open",
    "fixed_annotation_id": null,
-   "llm_explanation": "27% of failed agent sessions (498) ended on js-only product content. Typical failing call: GET /p/navy-daily-walk-sneaker -> 200. Fixing it could recover about ₹43,798 a month."
+   "llm_explanation": "Blocker B03, which pertains to JS-only product content, has caused 498 sessions, or 27% of failed agent sessions, to be unsuccessful. Fixing this issue will enable agents to access product information more effectively, improving overall shopping experiences."
   },
   {
    "rec_id": "rec_B08",
-   "run_id": "b953b1002c33",
+   "run_id": "8ad92909184b",
    "blocker_id": "B08",
    "blocker_name": "Out-of-stock dead end",
    "title": "Out-of-stock dead end: Suggest in-stock alternatives and expose availability per variant in HTML and JSON-LD.",
@@ -88,11 +88,11 @@
    "risk_inr_base": 22181,
    "status": "open",
    "fixed_annotation_id": null,
-   "llm_explanation": "2% of failed agent sessions (32) ended on out-of-stock dead end. Typical failing call: POST /api/cart -> 409 OUT_OF_STOCK. Fixing it could recover about ₹5,621 a month."
+   "llm_explanation": "Blocker B08, which refers to out-of-stock items causing a dead end, affected 2% of failed AI shopping agent sessions, as evidenced by 32 sessions resulting in a 409 OUT_OF_STOCK error during cart operations. Fixing this issue will enhance the shopping experience by allowing agents to suggest alternatives or notify customers when items are back in stock, thereby reducing session failures."
   },
   {
    "rec_id": "rec_B07",
-   "run_id": "b953b1002c33",
+   "run_id": "8ad92909184b",
    "blocker_id": "B07",
    "blocker_name": "Interstitial / popup overlay",
    "title": "Interstitial / popup overlay: Delay or remove overlays, never block content, and provide an accessible close button.",
@@ -106,7 +106,7 @@
    "risk_inr_base": 12149,
    "status": "open",
    "fixed_annotation_id": null,
-   "llm_explanation": "8% of failed agent sessions (144) ended on interstitial / popup overlay. Typical failing call: GET /p/bandhani-flared-kurta-in-sky-blue -> 200. Fixing it could recover about ₹12,664 a month."
+   "llm_explanation": "Blocker B07, which involves interstitial or popup overlays, has caused 144 sessions to fail, accounting for 8% of the total failed agent sessions. Fixing this issue will improve user experience by allowing smoother navigation and reducing session interruptions, ultimately leading to higher conversion rates."
   }
  ]
 }

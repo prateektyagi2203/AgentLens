@@ -1,0 +1,63 @@
+{
+ "session": {
+  "session_id": "1bfd83fdf23a622b",
+  "start_ts": "2026-11-10T15:39:08Z",
+  "duration_s": 0.0,
+  "request_count": 1,
+  "page_count": 1,
+  "identity_tier": "suspected",
+  "operator": "unknown",
+  "agent_name": "unknown",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.8,
+  "entry_page": "/p/maroon-fleet-foam-runner",
+  "exit_page": "/p/maroon-fleet-foam-runner",
+  "max_stage": null,
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B16",
+  "terminal_blocker_name": "Broken link / 404",
+  "blocker_confidence": 0.9,
+  "diagnosis_method": "llm"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 80.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "a3f1f2fb-1cba-4bc4-8412-1673f861c238",
+   "ts": "2026-11-10T15:39:08Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/p/maroon-fleet-foam-runner",
+   "status": 500,
+   "duration_ms": 159,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [],
+ "fired_rules": [
+  {
+   "blocker_id": "B16",
+   "name": "Broken link / 404",
+   "stage": "S1",
+   "confidence": 0.9,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "a3f1f2fb-1cba-4bc4-8412-1673f861c238",
+     "summary": "GET /p/maroon-fleet-foam-runner -> 500"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

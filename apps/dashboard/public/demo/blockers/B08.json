@@ -227,7 +227,7 @@
  "replays": [],
  "recommendation": {
   "rec_id": "rec_B08",
-  "run_id": "b953b1002c33",
+  "run_id": "8ad92909184b",
   "blocker_id": "B08",
   "blocker_name": "Out-of-stock dead end",
   "title": "Out-of-stock dead end: Suggest in-stock alternatives and expose availability per variant in HTML and JSON-LD.",
@@ -241,6 +241,6 @@
   "risk_inr_base": 22181,
   "status": "open",
   "fixed_annotation_id": null,
-  "llm_explanation": "2% of failed agent sessions (32) ended on out-of-stock dead end. Typical failing call: POST /api/cart -> 409 OUT_OF_STOCK. Fixing it could recover about ₹5,621 a month."
+  "llm_explanation": "Blocker B08, which refers to out-of-stock items causing a dead end, affected 2% of failed AI shopping agent sessions, as evidenced by 32 sessions resulting in a 409 OUT_OF_STOCK error during cart operations. Fixing this issue will enhance the shopping experience by allowing agents to suggest alternatives or notify customers when items are back in stock, thereby reducing session failures."
  }
 }

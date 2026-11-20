@@ -1,0 +1,379 @@
+{
+ "session": {
+  "session_id": "2f9d896e02e0bd95",
+  "start_ts": "2026-11-09T00:01:19Z",
+  "duration_s": 17.868,
+  "request_count": 24,
+  "page_count": 6,
+  "identity_tier": "verified",
+  "operator": "AgentLens Test Operator",
+  "agent_name": "TestSignedAgent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 1.0,
+  "entry_page": "/",
+  "exit_page": "/cart",
+  "max_stage": "S5",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B99",
+  "terminal_blocker_name": "Unknown",
+  "blocker_confidence": 0.3,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "valid",
+  "signature_agent": "https://agents.desithreads.test",
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 TestSignedAgent/1.0",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "8798bd1c-ce06-488e-8940-76a4dfd5e5ea",
+   "ts": "2026-11-09T00:01:19Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 60,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "1c7739ef-c9e2-43b4-8c08-a2ecee312d13",
+   "ts": "2026-11-09T00:01:19Z",
+   "offset_ms": 118,
+   "method": "GET",
+   "path": "/_next/static/chunks/app.js",
+   "status": 200,
+   "duration_ms": 15,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "e0260587-bcfe-4980-825a-4877e1ebbd53",
+   "ts": "2026-11-09T00:01:19Z",
+   "offset_ms": 150,
+   "method": "GET",
+   "path": "/img/p/floral-dobby-kurta-in-white-1.svg",
+   "status": 200,
+   "duration_ms": 9,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "3688f0ff-31f8-45bd-801d-8d0c11e56508",
+   "ts": "2026-11-09T00:01:19Z",
+   "offset_ms": 167,
+   "method": "GET",
+   "path": "/favicon.ico",
+   "status": 200,
+   "duration_ms": 10,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "22b21c32-472e-4aaf-87a0-3c236bd77f57",
+   "ts": "2026-11-09T00:01:19Z",
+   "offset_ms": 275,
+   "method": "GET",
+   "path": "/img/p/mustard-mandarin-collar-shirt-3.svg",
+   "status": 200,
+   "duration_ms": 22,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "14ba1cfb-1def-45d3-8204-54a107f53a3b",
+   "ts": "2026-11-09T00:01:19Z",
+   "offset_ms": 391,
+   "method": "GET",
+   "path": "/_next/static/css/app.css",
+   "status": 200,
+   "duration_ms": 5,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "167b93fa-61f3-4305-8fef-bd30fc5143cc",
+   "ts": "2026-11-09T00:01:19Z",
+   "offset_ms": 504,
+   "method": "GET",
+   "path": "/_next/static/chunks/main.js",
+   "status": 200,
+   "duration_ms": 11,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "2391eb8f-10ad-4cdc-8bf7-53c62e40d72a",
+   "ts": "2026-11-09T00:01:20Z",
+   "offset_ms": 1117,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 8,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "3e52b52f-580f-426c-811a-2516a50ba75d",
+   "ts": "2026-11-09T00:01:27Z",
+   "offset_ms": 8633,
+   "method": "GET",
+   "path": "/c/womens-kurtas",
+   "status": 200,
+   "duration_ms": 55,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "6ab701e5-77e6-4ba4-8a65-ffe96fa2f571",
+   "ts": "2026-11-09T00:01:28Z",
+   "offset_ms": 8791,
+   "method": "GET",
+   "path": "/img/p/canvas-tote-bag-in-indigo-1.svg",
+   "status": 200,
+   "duration_ms": 18,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "16a98929-1856-4568-898d-7659c8a9c044",
+   "ts": "2026-11-09T00:01:28Z",
+   "offset_ms": 9175,
+   "method": "GET",
+   "path": "/img/p/grey-retro-trainer-2.svg",
+   "status": 200,
+   "duration_ms": 19,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "c542ce80-0815-4d3e-8d0c-999584a49685",
+   "ts": "2026-11-09T00:01:29Z",
+   "offset_ms": 9952,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 7,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "7f860f04-113c-4e97-800d-1fe97bb52081",
+   "ts": "2026-11-09T00:01:30Z",
+   "offset_ms": 10810,
+   "method": "GET",
+   "path": "/p/bandhani-flared-kurta-in-sky-blue",
+   "status": 200,
+   "duration_ms": 77,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "f9239225-5e0a-411e-86d6-035809e1c73a",
+   "ts": "2026-11-09T00:01:30Z",
+   "offset_ms": 11065,
+   "method": "GET",
+   "path": "/img/p/teal-poplin-slim-shirt-1.svg",
+   "status": 200,
+   "duration_ms": 10,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "70c559fe-9540-4962-8b4a-4d5b7875227f",
+   "ts": "2026-11-09T00:01:30Z",
+   "offset_ms": 11506,
+   "method": "GET",
+   "path": "/img/p/olive-denim-overshirt-3.svg",
+   "status": 200,
+   "duration_ms": 22,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "e6f55200-7f50-436b-8f38-fc198388add1",
+   "ts": "2026-11-09T00:01:31Z",
+   "offset_ms": 12116,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 8,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "139a72b5-c077-454a-810a-a0328757499f",
+   "ts": "2026-11-09T00:01:32Z",
+   "offset_ms": 13036,
+   "method": "GET",
+   "path": "/api/products/KRT004/variants",
+   "status": 200,
+   "duration_ms": 12,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "46e6fa41-114a-44f2-8342-0880d05189ff",
+   "ts": "2026-11-09T00:01:35Z",
+   "offset_ms": 15891,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 201,
+   "duration_ms": 19,
+   "page_type": "cart_api",
+   "error_code": null,
+   "stage_id": "S5",
+   "is_asset": false
+  },
+  {
+   "request_id": "bd2eb46a-e7e4-40a7-8864-38a4e19986de",
+   "ts": "2026-11-09T00:01:36Z",
+   "offset_ms": 16885,
+   "method": "GET",
+   "path": "/cart",
+   "status": 200,
+   "duration_ms": 90,
+   "page_type": "cart",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "a5c3a6da-ac95-403d-8191-a8bfc70855aa",
+   "ts": "2026-11-09T00:01:36Z",
+   "offset_ms": 17139,
+   "method": "GET",
+   "path": "/img/p/mustard-mandarin-collar-shirt-1.svg",
+   "status": 200,
+   "duration_ms": 15,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "64666e39-a60d-4fbe-8bf2-05f7399b7f2d",
+   "ts": "2026-11-09T00:01:36Z",
+   "offset_ms": 17283,
+   "method": "GET",
+   "path": "/img/p/maroon-fleet-foam-runner-3.svg",
+   "status": 200,
+   "duration_ms": 16,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "48e5c6d9-f2b3-40f9-8f9d-ff55c575b1d6",
+   "ts": "2026-11-09T00:01:36Z",
+   "offset_ms": 17410,
+   "method": "GET",
+   "path": "/img/p/baseball-cap-in-teal-2.svg",
+   "status": 200,
+   "duration_ms": 17,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "2cc7bef5-ae72-4225-81ed-0f7c037e1794",
+   "ts": "2026-11-09T00:01:36Z",
+   "offset_ms": 17434,
+   "method": "GET",
+   "path": "/img/p/teal-half-sleeve-linen-shirt-3.svg",
+   "status": 200,
+   "duration_ms": 24,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "5fddf37e-ce36-4f56-8184-9e60d4f1113a",
+   "ts": "2026-11-09T00:01:37Z",
+   "offset_ms": 17868,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 4,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-09T00:01:19Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-09T00:01:30Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-09T00:01:32Z"
+  },
+  {
+   "stage_id": "S5",
+   "first_reached_ts": "2026-11-09T00:01:35Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B99",
+   "name": "Unknown",
+   "stage": "S5",
+   "confidence": 0.3,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "bd2eb46a-e7e4-40a7-8864-38a4e19986de",
+     "summary": "GET /cart -> 200"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

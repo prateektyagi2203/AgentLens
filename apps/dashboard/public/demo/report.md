@@ -1,10 +1,10 @@
 # Agent Readiness Report
 
-*Data window 2026-11-01 to 2026-11-07 (7 days). Filters: segment: all agents. Generated 2026-11-18 11:56 UTC. All money in INR; figures are estimates per 30 days.*
+*Data window 2026-11-01 to 2026-11-07 (7 days). Filters: segment: all agents. Generated 2026-11-20 12:13 UTC. All money in INR; figures are estimates per 30 days.*
 
 ## Executive summary
 
-Between 2026-11-01 and 2026-11-07 (7 days), all agents generated 1,489 of 5,823 sessions (25.6%). Agents converted at 0.0% against 2.5% for human visitors. The biggest blocker is Login / OTP wall before cart (B06): it ended 417 agent sessions (28% of failed ones). Across all blockers AgentLens estimates ₹19.3 L of agent revenue at risk per month (range ₹10.3 L to ₹30.8 L). After the change "F03 off; F05 off; F06 off", agent conversion moved from 0.0% to 5.1% and estimated risk fell from ₹19.3 L to ₹4.1 L per month.
+Between 2026-11-01 and 2026-11-07 (7 days), all agents generated 1,489 of 5,823 sessions (25.6%). Agents converted at 0.0% against 2.5% for human visitors. The biggest blocker is Login / OTP wall before cart (B06): it ended 417 agent sessions (28% of failed ones). Across all blockers AgentLens estimates ₹19.3 L of agent revenue at risk per month (range ₹10.3 L to ₹30.8 L). After the change "F03 off; F05 off; F06 off", agent conversion moved from 0.0% to 5.1% and estimated risk fell from ₹19.3 L to ₹4.7 L per month.
 
 ## Headline numbers
 
@@ -46,15 +46,15 @@ Between 2026-11-01 and 2026-11-07 (7 days), all agents generated 1,489 of 5,823 
 1. **Login / OTP wall before cart** (B06, effort M, owner Product): Allow guest cart and defer login to checkout, or offer guest checkout.
    - Worth about ₹12.2 L per month.
    - How to verify: Add-to-cart 401 count falls; PDP to cart step conversion for agents rises.
-   - Why: 22% of failed agent sessions (417) ended on login / otp wall before cart. Typical failing call: POST /api/cart -> 401 AUTH_REQUIRED. Fixing it could recover about ₹170,734 a month.
+   - Why: Blocker B06, which involves a login or OTP wall before accessing the cart, has caused 22% of failed AI shopping agent sessions, as indicated by 417 sessions resulting in a 401 AUTH_REQUIRED error. Fixing this issue will streamline the user experience by allowing agents to access the cart without unnecessary authentication barriers, thereby reducing session failures.
 2. **Size guide is image-only** (B09, effort S, owner Content): Provide an HTML table size guide.
    - Worth about ₹3.3 L per month.
    - How to verify: Site check "size guide has HTML table" passes; size-guide sessions continue to cart.
-   - Why: 22% of failed agent sessions (419) ended on size guide is image-only. Typical failing call: GET /size-guide/mens-sneakers -> 200. Fixing it could recover about ₹73,606 a month.
+   - Why: The AI shopping agents were blocked by the size guide being image-only, which led to 420 sessions failing, accounting for 22% of the total failed sessions. Fixing this issue by providing a text-based size guide will improve accessibility and reduce the failure rate of agent sessions.
 3. **Pincode / serviceability wall** (B05, effort S, owner Product): Make pincode optional before cart, accept it by URL or API, and show the delivery promise without a modal.
    - Worth about ₹2.6 L per month.
    - How to verify: Add-to-cart 409 PINCODE_REQUIRED count falls to near zero; PDP to cart step conversion for agents rises.
-   - Why: 5% of failed agent sessions (89) ended on pincode / serviceability wall. Typical failing call: POST /api/cart -> 409 PINCODE_REQUIRED. Fixing it could recover about ₹36,440 a month.
+   - Why: Blocker B05, which involves a pincode or serviceability wall, has caused 89 sessions to fail, accounting for 5% of all failed agent sessions due to the error POST /api/cart -> 409 PINCODE_REQUIRED. Fixing this issue will allow agents to process requests without being hindered by pincode requirements, thereby improving overall session success rates.
 
 ## Replay evidence
 
@@ -62,12 +62,12 @@ A replay agent re-ran the shopping task against the test store to check each hyp
 
 | Blocker | Verdict | Mode | Steps | When | What happened |
 |---|---|---|---:|---|---|
-| B03 | Confirmed | fetch | 4 | 2026-11-18 11:52 UTC | Reproduced B03 (Price/stock exist only after client-side JS): no price in server-rendered HTML or JSON-LD (client-side only) (step 4). |
-| B05 | Confirmed | fetch | 4 | 2026-11-18 11:52 UTC | Reproduced B05 (Add to cart is gated by a pincode check): a pincode modal is server-rendered on the product page and blocks interaction (step 4). |
-| B06 | Confirmed | fetch | 10 | 2026-11-18 11:51 UTC | Reproduced B06 (Add to cart requires an OTP login): add to cart rejected with 401 AUTH_REQUIRED (OTP login before cart) (step 10). |
-| B07 | Confirmed | browser | 5 | 2026-11-18 11:52 UTC | Reproduced B07 (A full-screen overlay covers the page): a full-screen app-download interstitial covers the product page (close button appeared after 3061 ms) (step 5). |
-| B09 | Confirmed | fetch | 6 | 2026-11-18 11:52 UTC | Reproduced B09 (The size guide is an image with no HTML table): size guide is an image only; no HTML table to read (step 6). |
-| B10 | Confirmed | fetch | 16 | 2026-11-18 11:52 UTC | Reproduced B10 (Checkout rejects a plain 10-digit phone number): checkout rejected a plain 10-digit phone (422 PHONE_FORMAT); only '+91 XXXXX XXXXX' passes (step 16). |
+| B03 | Confirmed | fetch | 4 | 2026-11-20 12:09 UTC | Reproduced B03 (Price/stock exist only after client-side JS): no price in server-rendered HTML or JSON-LD (client-side only) (step 4). |
+| B05 | Confirmed | fetch | 4 | 2026-11-20 12:09 UTC | Reproduced B05 (Add to cart is gated by a pincode check): a pincode modal is server-rendered on the product page and blocks interaction (step 4). |
+| B06 | Confirmed | fetch | 9 | 2026-11-20 12:08 UTC | Reproduced B06 (Add to cart requires an OTP login): add to cart rejected with 401 AUTH_REQUIRED (OTP login before cart) (step 9). |
+| B07 | Confirmed | browser | 5 | 2026-11-20 12:09 UTC | Reproduced B07 (A full-screen overlay covers the page): a full-screen app-download interstitial covers the product page (close button appeared after 2843 ms) (step 5). |
+| B09 | Confirmed | fetch | 12 | 2026-11-20 12:08 UTC | Reproduced B09 (The size guide is an image with no HTML table): size guide is an image only; no HTML table to read (step 12). |
+| B10 | Confirmed | fetch | 16 | 2026-11-20 12:08 UTC | Reproduced B10 (Checkout rejects a plain 10-digit phone number): checkout rejected a plain 10-digit phone (422 PHONE_FORMAT); only '+91 XXXXX XXXXX' passes (step 16). |
 
 ## Before and after
 
@@ -78,7 +78,7 @@ Comparison: Around "F03 off; F05 off; F06 off" (2026-11-01 to 2026-11-07 vs 2026
 | Agent sessions | 1,489 | 1,420 |
 | Agent conversion | 0.0% | 5.1% |
 | Agent revenue | ₹0 | ₹1.6 L |
-| Revenue at risk / month | ₹19.3 L | ₹4.1 L |
+| Revenue at risk / month | ₹19.3 L | ₹4.7 L |
 
 The change in conversion is statistically significant (two-proportion z-test, p < 0.001).
 

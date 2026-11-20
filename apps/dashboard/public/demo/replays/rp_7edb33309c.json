@@ -1,0 +1,310 @@
+{
+ "replay": {
+  "replay_id": "rp_7edb33309c",
+  "blocker_id": "B10",
+  "blocker_name": "Checkout validation failure",
+  "source_session_id": "dd1736b25a363d9d",
+  "mode": "fetch",
+  "status": "completed",
+  "verdict": "confirmed",
+  "started_at": "2026-11-20T12:08:27Z",
+  "finished_at": "2026-11-20T12:08:49Z",
+  "steps_count": 16,
+  "verdict_explanation": "Reproduced B10 (Checkout rejects a plain 10-digit phone number): checkout rejected a plain 10-digit phone (422 PHONE_FORMAT); only '+91 XXXXX XXXXX' passes (step 16)."
+ },
+ "user_agent": "AgentLens-Replay/1.0 (+https://github.com/prateektyagi2203/AgentLens; run=rp_7edb33309c)",
+ "signed_requests": false,
+ "steps": [
+  {
+   "n": 1,
+   "action": "robots",
+   "method": "GET",
+   "url": "http://localhost:3100/robots.txt",
+   "status": 200,
+   "duration_ms": 2175,
+   "note": "read robots.txt",
+   "screenshot_url": null
+  },
+  {
+   "n": 2,
+   "action": "open_home",
+   "method": "GET",
+   "url": "http://localhost:3100/",
+   "status": 200,
+   "duration_ms": 658,
+   "note": "open home page",
+   "screenshot_url": null
+  },
+  {
+   "n": 3,
+   "action": "search",
+   "method": "GET",
+   "url": "http://localhost:3100/search?q=blue%20shirt",
+   "status": 200,
+   "duration_ms": 477,
+   "note": "search 'blue shirt'; 3 candidate products",
+   "screenshot_url": null
+  },
+  {
+   "n": 4,
+   "action": "open_product",
+   "method": "GET",
+   "url": "http://localhost:3100/p/sky-blue-linen-casual-shirt",
+   "status": 200,
+   "duration_ms": 553,
+   "note": "open product page /p/sky-blue-linen-casual-shirt",
+   "screenshot_url": null
+  },
+  {
+   "n": 5,
+   "action": "check_delivery",
+   "method": "GET",
+   "url": "http://localhost:3100/api/serviceability?pincode=560001",
+   "status": 200,
+   "duration_ms": 137,
+   "note": "check delivery to test pincode 560001",
+   "screenshot_url": null
+  },
+  {
+   "n": 6,
+   "action": "check_variant",
+   "method": "GET",
+   "url": "http://localhost:3100/api/products/sky-blue-linen-casual-shirt/variants?size=M&colour=Sky+Blue",
+   "status": 200,
+   "duration_ms": 199,
+   "note": "check M/Sky Blue availability",
+   "screenshot_url": null
+  },
+  {
+   "n": 7,
+   "action": "open_product",
+   "method": "GET",
+   "url": "http://localhost:3100/p/sky-blue-chambray-work-shirt",
+   "status": 200,
+   "duration_ms": 338,
+   "note": "open product page /p/sky-blue-chambray-work-shirt",
+   "screenshot_url": null
+  },
+  {
+   "n": 8,
+   "action": "check_variant",
+   "method": "GET",
+   "url": "http://localhost:3100/api/products/sky-blue-chambray-work-shirt/variants?size=M&colour=Sky+Blue",
+   "status": 200,
+   "duration_ms": 195,
+   "note": "check M/Sky Blue availability",
+   "screenshot_url": null
+  },
+  {
+   "n": 9,
+   "action": "add_to_cart",
+   "method": "POST",
+   "url": "http://localhost:3100/api/cart",
+   "status": 401,
+   "duration_ms": 68,
+   "note": "add sky-blue-chambray-work-shirt to cart",
+   "screenshot_url": null
+  },
+  {
+   "n": 10,
+   "action": "otp_send",
+   "method": "POST",
+   "url": "http://localhost:3100/api/otp/send",
+   "status": 200,
+   "duration_ms": 1459,
+   "note": "request a login OTP for the test phone number",
+   "screenshot_url": null
+  },
+  {
+   "n": 11,
+   "action": "otp_verify",
+   "method": "POST",
+   "url": "http://localhost:3100/api/otp/verify",
+   "status": 200,
+   "duration_ms": 1126,
+   "note": "submit the store's documented test OTP (local test hosts only)",
+   "screenshot_url": null
+  },
+  {
+   "n": 12,
+   "action": "read_size_guide",
+   "method": "GET",
+   "url": "http://localhost:3100/size-guide/mens-shirts",
+   "status": 200,
+   "duration_ms": 2095,
+   "note": "read size guide /size-guide/mens-shirts",
+   "screenshot_url": null
+  },
+  {
+   "n": 13,
+   "action": "add_to_cart",
+   "method": "POST",
+   "url": "http://localhost:3100/api/cart",
+   "status": 201,
+   "duration_ms": 163,
+   "note": "add sky-blue-chambray-work-shirt to cart",
+   "screenshot_url": null
+  },
+  {
+   "n": 14,
+   "action": "verify_cart",
+   "method": "GET",
+   "url": "http://localhost:3100/api/cart",
+   "status": 200,
+   "duration_ms": 63,
+   "note": "read the cart and compare prices",
+   "screenshot_url": null
+  },
+  {
+   "n": 15,
+   "action": "open_checkout",
+   "method": "GET",
+   "url": "http://localhost:3100/checkout",
+   "status": 200,
+   "duration_ms": 2661,
+   "note": "open checkout page",
+   "screenshot_url": null
+  },
+  {
+   "n": 16,
+   "action": "submit_checkout",
+   "method": "POST",
+   "url": "http://localhost:3100/api/checkout",
+   "status": 422,
+   "duration_ms": 2213,
+   "note": "submit checkout (COD, plain phone)",
+   "screenshot_url": null
+  }
+ ],
+ "network_log": [
+  {
+   "ts": "2026-11-20T12:08:27.795Z",
+   "method": "GET",
+   "url": "http://localhost:3100/robots.txt",
+   "status": 200,
+   "duration_ms": 2175,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-20T12:08:30.276Z",
+   "method": "GET",
+   "url": "http://localhost:3100/",
+   "status": 200,
+   "duration_ms": 658,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-20T12:08:31.235Z",
+   "method": "GET",
+   "url": "http://localhost:3100/search?q=blue%20shirt",
+   "status": 200,
+   "duration_ms": 477,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-20T12:08:32.015Z",
+   "method": "GET",
+   "url": "http://localhost:3100/p/sky-blue-linen-casual-shirt",
+   "status": 200,
+   "duration_ms": 553,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-20T12:08:32.873Z",
+   "method": "GET",
+   "url": "http://localhost:3100/api/serviceability?pincode=560001",
+   "status": 200,
+   "duration_ms": 137,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-20T12:08:34.011Z",
+   "method": "GET",
+   "url": "http://localhost:3100/api/products/sky-blue-linen-casual-shirt/variants?size=M&colour=Sky+Blue",
+   "status": 200,
+   "duration_ms": 199,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-20T12:08:34.512Z",
+   "method": "GET",
+   "url": "http://localhost:3100/p/sky-blue-chambray-work-shirt",
+   "status": 200,
+   "duration_ms": 338,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-20T12:08:35.740Z",
+   "method": "GET",
+   "url": "http://localhost:3100/api/products/sky-blue-chambray-work-shirt/variants?size=M&colour=Sky+Blue",
+   "status": 200,
+   "duration_ms": 195,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-20T12:08:36.829Z",
+   "method": "POST",
+   "url": "http://localhost:3100/api/cart",
+   "status": 401,
+   "duration_ms": 68,
+   "error_code": "AUTH_REQUIRED"
+  },
+  {
+   "ts": "2026-11-20T12:08:37.198Z",
+   "method": "POST",
+   "url": "http://localhost:3100/api/otp/send",
+   "status": 200,
+   "duration_ms": 1459,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-20T12:08:38.959Z",
+   "method": "POST",
+   "url": "http://localhost:3100/api/otp/verify",
+   "status": 200,
+   "duration_ms": 1126,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-20T12:08:41.076Z",
+   "method": "GET",
+   "url": "http://localhost:3100/size-guide/mens-shirts",
+   "status": 200,
+   "duration_ms": 2095,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-20T12:08:43.476Z",
+   "method": "POST",
+   "url": "http://localhost:3100/api/cart",
+   "status": 201,
+   "duration_ms": 163,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-20T12:08:43.926Z",
+   "method": "GET",
+   "url": "http://localhost:3100/api/cart",
+   "status": 200,
+   "duration_ms": 63,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-20T12:08:44.290Z",
+   "method": "GET",
+   "url": "http://localhost:3100/checkout",
+   "status": 200,
+   "duration_ms": 2661,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-20T12:08:47.253Z",
+   "method": "POST",
+   "url": "http://localhost:3100/api/checkout",
+   "status": 422,
+   "duration_ms": 2213,
+   "error_code": "PHONE_FORMAT"
+  }
+ ],
+ "explanation": "Reproduced B10 (Checkout rejects a plain 10-digit phone number): checkout rejected a plain 10-digit phone (422 PHONE_FORMAT); only '+91 XXXXX XXXXX' passes (step 16)."
+}

@@ -1,6 +1,6 @@
 {
- "run_id": "eval-20261118115540",
- "ts": "2026-11-18T11:55:40Z",
+ "run_id": "eval-20261120121247",
+ "ts": "2026-11-20T12:12:47Z",
  "dataset": "demo: 12,000 sessions (synthetic)",
  "identification": {
   "tier_accuracy": 0.9915833333333334,
@@ -39,8 +39,15 @@
  },
  "diagnosis": {
   "top1_accuracy": 1.0,
-  "coverage": 0.47496382054992764,
+  "coverage": 0.5328509406657019,
   "per_blocker": [
+   {
+    "blocker_id": "B02",
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support": 0
+   },
    {
     "blocker_id": "B03",
     "precision": 0.8674698795180723,
@@ -78,17 +85,31 @@
    },
    {
     "blocker_id": "B09",
-    "precision": 0.8496420047732697,
+    "precision": 0.8476190476190476,
     "recall": 1.0,
-    "f1": 0.9187096774193548,
+    "f1": 0.9175257731958762,
     "support": 356
    },
    {
     "blocker_id": "B10",
-    "precision": 1.0,
+    "precision": 0.18666666666666668,
     "recall": 1.0,
-    "f1": 1.0,
+    "f1": 0.3146067415730337,
     "support": 42
+   },
+   {
+    "blocker_id": "B13",
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support": 0
+   },
+   {
+    "blocker_id": "B16",
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support": 0
    }
   ]
  },
@@ -102,7 +123,7 @@
  "notes": [
   "Identification: 12000 synthetic sessions evaluated (0 unmatched).",
   "Verified precision target 100%; identification checks pass.",
-  "Diagnosis: 3528 agent sessions in scope; precision 91.8%, recall 100.0% (meets the SC4 targets).",
+  "Diagnosis: 3528 agent sessions in scope; precision 81.8%, recall 100.0% (below the SC4 targets).",
   "Impact error is not evaluated: the synthetic generator has no counterfactual revenue.",
   "Ground truth is synthetic; real traffic will score lower, especially for the Suspected tier."
  ]

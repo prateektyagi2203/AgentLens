@@ -1,82 +1,82 @@
 {
  "items": [
   {
-   "replay_id": "rp_168f26eb80",
+   "replay_id": "rp_f1a67660cc",
    "blocker_id": "B07",
    "blocker_name": "Interstitial / popup overlay",
    "source_session_id": "",
    "mode": "browser",
    "status": "completed",
    "verdict": "confirmed",
-   "started_at": "2026-11-18T11:52:43Z",
-   "finished_at": "2026-11-18T11:53:04Z",
+   "started_at": "2026-11-20T12:09:13Z",
+   "finished_at": "2026-11-20T12:09:41Z",
    "steps_count": 5,
-   "verdict_explanation": "Reproduced B07 (A full-screen overlay covers the page): a full-screen app-download interstitial covers the product page (close button appeared after 3061 ms) (step 5)."
+   "verdict_explanation": "Reproduced B07 (A full-screen overlay covers the page): a full-screen app-download interstitial covers the product page (close button appeared after 2843 ms) (step 5)."
   },
   {
-   "replay_id": "rp_e8ebb5ae2d",
+   "replay_id": "rp_08db7464e4",
    "blocker_id": "B05",
    "blocker_name": "Pincode / serviceability wall",
    "source_session_id": "224d2596846fc967",
    "mode": "fetch",
    "status": "completed",
    "verdict": "confirmed",
-   "started_at": "2026-11-18T11:52:36Z",
-   "finished_at": "2026-11-18T11:52:40Z",
+   "started_at": "2026-11-20T12:09:06Z",
+   "finished_at": "2026-11-20T12:09:10Z",
    "steps_count": 4,
    "verdict_explanation": "Reproduced B05 (Add to cart is gated by a pincode check): a pincode modal is server-rendered on the product page and blocks interaction (step 4)."
   },
   {
-   "replay_id": "rp_e74f965e5a",
+   "replay_id": "rp_79ef31f3a7",
    "blocker_id": "B03",
    "blocker_name": "JS-only product content",
    "source_session_id": "93da0c60453e3e12",
    "mode": "fetch",
    "status": "completed",
    "verdict": "confirmed",
-   "started_at": "2026-11-18T11:52:32Z",
-   "finished_at": "2026-11-18T11:52:36Z",
+   "started_at": "2026-11-20T12:09:01Z",
+   "finished_at": "2026-11-20T12:09:06Z",
    "steps_count": 4,
    "verdict_explanation": "Reproduced B03 (Price/stock exist only after client-side JS): no price in server-rendered HTML or JSON-LD (client-side only) (step 4)."
   },
   {
-   "replay_id": "rp_597a935177",
+   "replay_id": "rp_f6e7450170",
    "blocker_id": "B09",
    "blocker_name": "Size guide is image-only",
    "source_session_id": "994603cee7c6e49e",
    "mode": "fetch",
    "status": "completed",
    "verdict": "confirmed",
-   "started_at": "2026-11-18T11:52:26Z",
-   "finished_at": "2026-11-18T11:52:32Z",
-   "steps_count": 6,
-   "verdict_explanation": "Reproduced B09 (The size guide is an image with no HTML table): size guide is an image only; no HTML table to read (step 6)."
+   "started_at": "2026-11-20T12:08:49Z",
+   "finished_at": "2026-11-20T12:09:01Z",
+   "steps_count": 12,
+   "verdict_explanation": "Reproduced B09 (The size guide is an image with no HTML table): size guide is an image only; no HTML table to read (step 12)."
   },
   {
-   "replay_id": "rp_c530adca8b",
+   "replay_id": "rp_7edb33309c",
    "blocker_id": "B10",
    "blocker_name": "Checkout validation failure",
-   "source_session_id": "d06a62e9c8fcb5b5",
+   "source_session_id": "dd1736b25a363d9d",
    "mode": "fetch",
    "status": "completed",
    "verdict": "confirmed",
-   "started_at": "2026-11-18T11:52:10Z",
-   "finished_at": "2026-11-18T11:52:26Z",
+   "started_at": "2026-11-20T12:08:27Z",
+   "finished_at": "2026-11-20T12:08:49Z",
    "steps_count": 16,
    "verdict_explanation": "Reproduced B10 (Checkout rejects a plain 10-digit phone number): checkout rejected a plain 10-digit phone (422 PHONE_FORMAT); only '+91 XXXXX XXXXX' passes (step 16)."
   },
   {
-   "replay_id": "rp_d0ad8f072f",
+   "replay_id": "rp_231f908065",
    "blocker_id": "B06",
    "blocker_name": "Login / OTP wall before cart",
    "source_session_id": "e71b72933565934f",
    "mode": "fetch",
    "status": "completed",
    "verdict": "confirmed",
-   "started_at": "2026-11-18T11:51:53Z",
-   "finished_at": "2026-11-18T11:52:09Z",
-   "steps_count": 10,
-   "verdict_explanation": "Reproduced B06 (Add to cart requires an OTP login): add to cart rejected with 401 AUTH_REQUIRED (OTP login before cart) (step 10)."
+   "started_at": "2026-11-20T12:08:08Z",
+   "finished_at": "2026-11-20T12:08:27Z",
+   "steps_count": 9,
+   "verdict_explanation": "Reproduced B06 (Add to cart requires an OTP login): add to cart rejected with 401 AUTH_REQUIRED (OTP login before cart) (step 9)."
   }
  ]
 }

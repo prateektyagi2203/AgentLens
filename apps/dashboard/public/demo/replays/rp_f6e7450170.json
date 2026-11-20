@@ -1,0 +1,238 @@
+{
+ "replay": {
+  "replay_id": "rp_f6e7450170",
+  "blocker_id": "B09",
+  "blocker_name": "Size guide is image-only",
+  "source_session_id": "994603cee7c6e49e",
+  "mode": "fetch",
+  "status": "completed",
+  "verdict": "confirmed",
+  "started_at": "2026-11-20T12:08:49Z",
+  "finished_at": "2026-11-20T12:09:01Z",
+  "steps_count": 12,
+  "verdict_explanation": "Reproduced B09 (The size guide is an image with no HTML table): size guide is an image only; no HTML table to read (step 12)."
+ },
+ "user_agent": "AgentLens-Replay/1.0 (+https://github.com/prateektyagi2203/AgentLens; run=rp_f6e7450170)",
+ "signed_requests": false,
+ "steps": [
+  {
+   "n": 1,
+   "action": "robots",
+   "method": "GET",
+   "url": "http://localhost:3100/robots.txt",
+   "status": 200,
+   "duration_ms": 2189,
+   "note": "read robots.txt",
+   "screenshot_url": null
+  },
+  {
+   "n": 2,
+   "action": "open_home",
+   "method": "GET",
+   "url": "http://localhost:3100/",
+   "status": 200,
+   "duration_ms": 762,
+   "note": "open home page",
+   "screenshot_url": null
+  },
+  {
+   "n": 3,
+   "action": "search",
+   "method": "GET",
+   "url": "http://localhost:3100/search?q=blue%20shirt",
+   "status": 200,
+   "duration_ms": 382,
+   "note": "search 'blue shirt'; 3 candidate products",
+   "screenshot_url": null
+  },
+  {
+   "n": 4,
+   "action": "open_product",
+   "method": "GET",
+   "url": "http://localhost:3100/p/sky-blue-linen-casual-shirt",
+   "status": 200,
+   "duration_ms": 518,
+   "note": "open product page /p/sky-blue-linen-casual-shirt",
+   "screenshot_url": null
+  },
+  {
+   "n": 5,
+   "action": "check_delivery",
+   "method": "GET",
+   "url": "http://localhost:3100/api/serviceability?pincode=560001",
+   "status": 200,
+   "duration_ms": 150,
+   "note": "check delivery to test pincode 560001",
+   "screenshot_url": null
+  },
+  {
+   "n": 6,
+   "action": "check_variant",
+   "method": "GET",
+   "url": "http://localhost:3100/api/products/sky-blue-linen-casual-shirt/variants?size=M&colour=Sky+Blue",
+   "status": 200,
+   "duration_ms": 222,
+   "note": "check M/Sky Blue availability",
+   "screenshot_url": null
+  },
+  {
+   "n": 7,
+   "action": "open_product",
+   "method": "GET",
+   "url": "http://localhost:3100/p/sky-blue-chambray-work-shirt",
+   "status": 200,
+   "duration_ms": 360,
+   "note": "open product page /p/sky-blue-chambray-work-shirt",
+   "screenshot_url": null
+  },
+  {
+   "n": 8,
+   "action": "check_variant",
+   "method": "GET",
+   "url": "http://localhost:3100/api/products/sky-blue-chambray-work-shirt/variants?size=M&colour=Sky+Blue",
+   "status": 200,
+   "duration_ms": 192,
+   "note": "check M/Sky Blue availability",
+   "screenshot_url": null
+  },
+  {
+   "n": 9,
+   "action": "add_to_cart",
+   "method": "POST",
+   "url": "http://localhost:3100/api/cart",
+   "status": 401,
+   "duration_ms": 104,
+   "note": "add sky-blue-chambray-work-shirt to cart",
+   "screenshot_url": null
+  },
+  {
+   "n": 10,
+   "action": "otp_send",
+   "method": "POST",
+   "url": "http://localhost:3100/api/otp/send",
+   "status": 200,
+   "duration_ms": 151,
+   "note": "request a login OTP for the test phone number",
+   "screenshot_url": null
+  },
+  {
+   "n": 11,
+   "action": "otp_verify",
+   "method": "POST",
+   "url": "http://localhost:3100/api/otp/verify",
+   "status": 200,
+   "duration_ms": 172,
+   "note": "submit the store's documented test OTP (local test hosts only)",
+   "screenshot_url": null
+  },
+  {
+   "n": 12,
+   "action": "read_size_guide",
+   "method": "GET",
+   "url": "http://localhost:3100/size-guide/mens-shirts",
+   "status": 200,
+   "duration_ms": 459,
+   "note": "read size guide /size-guide/mens-shirts",
+   "screenshot_url": null
+  }
+ ],
+ "network_log": [
+  {
+   "ts": "2026-11-20T12:08:49.635Z",
+   "method": "GET",
+   "url": "http://localhost:3100/robots.txt",
+   "status": 200,
+   "duration_ms": 2189,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-20T12:08:52.118Z",
+   "method": "GET",
+   "url": "http://localhost:3100/",
+   "status": 200,
+   "duration_ms": 762,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-20T12:08:53.183Z",
+   "method": "GET",
+   "url": "http://localhost:3100/search?q=blue%20shirt",
+   "status": 200,
+   "duration_ms": 382,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-20T12:08:53.869Z",
+   "method": "GET",
+   "url": "http://localhost:3100/p/sky-blue-linen-casual-shirt",
+   "status": 200,
+   "duration_ms": 518,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-20T12:08:54.684Z",
+   "method": "GET",
+   "url": "http://localhost:3100/api/serviceability?pincode=560001",
+   "status": 200,
+   "duration_ms": 150,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-20T12:08:55.856Z",
+   "method": "GET",
+   "url": "http://localhost:3100/api/products/sky-blue-linen-casual-shirt/variants?size=M&colour=Sky+Blue",
+   "status": 200,
+   "duration_ms": 222,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-20T12:08:56.379Z",
+   "method": "GET",
+   "url": "http://localhost:3100/p/sky-blue-chambray-work-shirt",
+   "status": 200,
+   "duration_ms": 360,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-20T12:08:57.924Z",
+   "method": "GET",
+   "url": "http://localhost:3100/api/products/sky-blue-chambray-work-shirt/variants?size=M&colour=Sky+Blue",
+   "status": 200,
+   "duration_ms": 192,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-20T12:08:59.142Z",
+   "method": "POST",
+   "url": "http://localhost:3100/api/cart",
+   "status": 401,
+   "duration_ms": 104,
+   "error_code": "AUTH_REQUIRED"
+  },
+  {
+   "ts": "2026-11-20T12:08:59.547Z",
+   "method": "POST",
+   "url": "http://localhost:3100/api/otp/send",
+   "status": 200,
+   "duration_ms": 151,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-20T12:09:00.000Z",
+   "method": "POST",
+   "url": "http://localhost:3100/api/otp/verify",
+   "status": 200,
+   "duration_ms": 172,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-20T12:09:01.018Z",
+   "method": "GET",
+   "url": "http://localhost:3100/size-guide/mens-shirts",
+   "status": 200,
+   "duration_ms": 459,
+   "error_code": null
+  }
+ ],
+ "explanation": "Reproduced B09 (The size guide is an image with no HTML table): size guide is an image only; no HTML table to read (step 12)."
+}

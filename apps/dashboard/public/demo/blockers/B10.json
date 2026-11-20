@@ -67,22 +67,22 @@
  "sample_sessions": [],
  "replays": [
   {
-   "replay_id": "rp_c530adca8b",
+   "replay_id": "rp_7edb33309c",
    "blocker_id": "B10",
    "blocker_name": "Checkout validation failure",
-   "source_session_id": "d06a62e9c8fcb5b5",
+   "source_session_id": "dd1736b25a363d9d",
    "mode": "fetch",
    "status": "completed",
    "verdict": "confirmed",
-   "started_at": "2026-11-18T11:52:10Z",
-   "finished_at": "2026-11-18T11:52:26Z",
+   "started_at": "2026-11-20T12:08:27Z",
+   "finished_at": "2026-11-20T12:08:49Z",
    "steps_count": 16,
    "verdict_explanation": "Reproduced B10 (Checkout rejects a plain 10-digit phone number): checkout rejected a plain 10-digit phone (422 PHONE_FORMAT); only '+91 XXXXX XXXXX' passes (step 16)."
   }
  ],
  "recommendation": {
   "rec_id": "rec_B10",
-  "run_id": "b953b1002c33",
+  "run_id": "8ad92909184b",
   "blocker_id": "B10",
   "blocker_name": "Checkout validation failure",
   "title": "Checkout validation failure: Relax and normalise validation (accept +91 variants) and return clear error messages.",
@@ -96,6 +96,6 @@
   "risk_inr_base": 0,
   "status": "open",
   "fixed_annotation_id": null,
-  "llm_explanation": "2% of failed agent sessions (42) ended on checkout validation failure. Typical failing call: POST /api/checkout -> 422 PHONE_FORMAT. Fixing it could recover about ₹118,961 a month."
+  "llm_explanation": "Blocker B10 caused checkout validation failures in 12% of failed agent sessions, as indicated by evidence from 225 sessions. Fixing this issue will improve the checkout process, allowing AI shopping agents to complete transactions successfully and enhance overall customer satisfaction."
  }
 }

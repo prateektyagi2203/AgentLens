@@ -1,8 +1,8 @@
 {
  "items": [
   {
-   "check_id": "6363fa884245821c",
-   "run_ts": "2026-11-18T11:51:38Z",
+   "check_id": "0014273cfcacbb93",
+   "run_ts": "2026-11-20T12:04:37Z",
    "check_name": "captcha_presence",
    "target": "/api/captcha",
    "result": "pass",
@@ -11,16 +11,16 @@
    }
   },
   {
-   "check_id": "54cfaab9775cebaa",
-   "run_ts": "2026-11-18T11:51:38Z",
+   "check_id": "6cef1c15fb480776",
+   "run_ts": "2026-11-20T12:04:37Z",
    "check_name": "llms_txt",
    "target": "/llms.txt",
    "result": "warn",
    "details": {}
   },
   {
-   "check_id": "20741bd221fc218d",
-   "run_ts": "2026-11-18T11:51:38Z",
+   "check_id": "1539c291d33fe3e2",
+   "run_ts": "2026-11-20T12:04:37Z",
    "check_name": "pdp_jsonld_product",
    "target": "/p/*",
    "result": "warn",
@@ -31,8 +31,8 @@
    }
   },
   {
-   "check_id": "ac406f32c4b24591",
-   "run_ts": "2026-11-18T11:51:38Z",
+   "check_id": "9749611685740645",
+   "run_ts": "2026-11-20T12:04:37Z",
    "check_name": "pdp_ssr_price",
    "target": "/p/*",
    "result": "fail",
@@ -42,8 +42,8 @@
    }
   },
   {
-   "check_id": "28aacd431954d4f5",
-   "run_ts": "2026-11-18T11:51:38Z",
+   "check_id": "16045e97e9a81868",
+   "run_ts": "2026-11-20T12:04:37Z",
    "check_name": "robots_txt",
    "target": "/robots.txt",
    "result": "pass",
@@ -52,16 +52,16 @@
    }
   },
   {
-   "check_id": "ddb8bc8bf580dd6a",
-   "run_ts": "2026-11-18T11:51:38Z",
+   "check_id": "d7dba6df3742a927",
+   "run_ts": "2026-11-20T12:04:37Z",
    "check_name": "sitemap",
    "target": "/robots.txt",
    "result": "warn",
    "details": {}
   },
   {
-   "check_id": "d3bdf2676cf4c642",
-   "run_ts": "2026-11-18T11:51:38Z",
+   "check_id": "4f422e6e57868681",
+   "run_ts": "2026-11-20T12:04:37Z",
    "check_name": "size_guide_table",
    "target": "/size-guide/*",
    "result": "fail",

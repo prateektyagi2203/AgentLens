@@ -1,0 +1,128 @@
+{
+ "session": {
+  "session_id": "86d5437fefaecccb",
+  "start_ts": "2026-11-09T13:46:57Z",
+  "duration_s": 4.969,
+  "request_count": 5,
+  "page_count": 5,
+  "identity_tier": "suspected",
+  "operator": "unknown",
+  "agent_name": "unknown",
+  "agent_class": "user_fetcher",
+  "identity_confidence": 0.8,
+  "entry_page": "/",
+  "exit_page": "/api/cart",
+  "max_stage": "S3",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B13",
+  "terminal_blocker_name": "Slow response / timeout",
+  "blocker_confidence": 0.9,
+  "diagnosis_method": "llm"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 80.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "9025a10a-e201-49ff-88bf-a50cbc8244b1",
+   "ts": "2026-11-09T13:46:57Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/",
+   "status": 200,
+   "duration_ms": 47,
+   "page_type": "home",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "54a17623-4a7c-482f-875c-9fbca0fead77",
+   "ts": "2026-11-09T13:46:58Z",
+   "offset_ms": 1806,
+   "method": "GET",
+   "path": "/c/accessories",
+   "status": 200,
+   "duration_ms": 96,
+   "page_type": "plp",
+   "error_code": null,
+   "stage_id": "S1",
+   "is_asset": false
+  },
+  {
+   "request_id": "e03350ed-5440-4a04-87a2-0fd8e8e39508",
+   "ts": "2026-11-09T13:47:00Z",
+   "offset_ms": 3443,
+   "method": "GET",
+   "path": "/p/bifold-wallet-in-black",
+   "status": 200,
+   "duration_ms": 84,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "04a1d963-d8bb-4182-87d6-502acbc2476c",
+   "ts": "2026-11-09T13:47:01Z",
+   "offset_ms": 4218,
+   "method": "GET",
+   "path": "/api/products/ACC002/variants",
+   "status": 200,
+   "duration_ms": 43,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "64cba638-c2ba-40d2-865a-62f7ff96076b",
+   "ts": "2026-11-09T13:47:02Z",
+   "offset_ms": 4969,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 503,
+   "duration_ms": 20,
+   "page_type": "cart_api",
+   "error_code": "UPSTREAM_ERROR",
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S1",
+   "first_reached_ts": "2026-11-09T13:46:57Z"
+  },
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-09T13:47:00Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-09T13:47:01Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B13",
+   "name": "Slow response / timeout",
+   "stage": "S3",
+   "confidence": 0.9,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "64cba638-c2ba-40d2-865a-62f7ff96076b",
+     "summary": "POST /api/cart -> 503 UPSTREAM_ERROR"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

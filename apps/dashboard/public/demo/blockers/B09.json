@@ -225,22 +225,22 @@
  ],
  "replays": [
   {
-   "replay_id": "rp_597a935177",
+   "replay_id": "rp_f6e7450170",
    "blocker_id": "B09",
    "blocker_name": "Size guide is image-only",
    "source_session_id": "994603cee7c6e49e",
    "mode": "fetch",
    "status": "completed",
    "verdict": "confirmed",
-   "started_at": "2026-11-18T11:52:26Z",
-   "finished_at": "2026-11-18T11:52:32Z",
-   "steps_count": 6,
-   "verdict_explanation": "Reproduced B09 (The size guide is an image with no HTML table): size guide is an image only; no HTML table to read (step 6)."
+   "started_at": "2026-11-20T12:08:49Z",
+   "finished_at": "2026-11-20T12:09:01Z",
+   "steps_count": 12,
+   "verdict_explanation": "Reproduced B09 (The size guide is an image with no HTML table): size guide is an image only; no HTML table to read (step 12)."
   }
  ],
  "recommendation": {
   "rec_id": "rec_B09",
-  "run_id": "b953b1002c33",
+  "run_id": "8ad92909184b",
   "blocker_id": "B09",
   "blocker_name": "Size guide is image-only",
   "title": "Size guide is image-only: Provide an HTML table size guide.",
@@ -254,6 +254,6 @@
   "risk_inr_base": 326798,
   "status": "open",
   "fixed_annotation_id": null,
-  "llm_explanation": "22% of failed agent sessions (419) ended on size guide is image-only. Typical failing call: GET /size-guide/mens-sneakers -> 200. Fixing it could recover about ₹73,606 a month."
+  "llm_explanation": "The AI shopping agents were blocked by the size guide being image-only, which led to 420 sessions failing, accounting for 22% of the total failed sessions. Fixing this issue by providing a text-based size guide will improve accessibility and reduce the failure rate of agent sessions."
  }
 }

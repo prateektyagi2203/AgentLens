@@ -1,0 +1,94 @@
+{
+ "replay": {
+  "replay_id": "rp_08db7464e4",
+  "blocker_id": "B05",
+  "blocker_name": "Pincode / serviceability wall",
+  "source_session_id": "224d2596846fc967",
+  "mode": "fetch",
+  "status": "completed",
+  "verdict": "confirmed",
+  "started_at": "2026-11-20T12:09:06Z",
+  "finished_at": "2026-11-20T12:09:10Z",
+  "steps_count": 4,
+  "verdict_explanation": "Reproduced B05 (Add to cart is gated by a pincode check): a pincode modal is server-rendered on the product page and blocks interaction (step 4)."
+ },
+ "user_agent": "AgentLens-Replay/1.0 (+https://github.com/prateektyagi2203/AgentLens; run=rp_08db7464e4)",
+ "signed_requests": false,
+ "steps": [
+  {
+   "n": 1,
+   "action": "robots",
+   "method": "GET",
+   "url": "http://localhost:3100/robots.txt",
+   "status": 200,
+   "duration_ms": 2182,
+   "note": "read robots.txt",
+   "screenshot_url": null
+  },
+  {
+   "n": 2,
+   "action": "open_home",
+   "method": "GET",
+   "url": "http://localhost:3100/",
+   "status": 200,
+   "duration_ms": 463,
+   "note": "open home page",
+   "screenshot_url": null
+  },
+  {
+   "n": 3,
+   "action": "search",
+   "method": "GET",
+   "url": "http://localhost:3100/search?q=blue%20shirt",
+   "status": 200,
+   "duration_ms": 469,
+   "note": "search 'blue shirt'; 3 candidate products",
+   "screenshot_url": null
+  },
+  {
+   "n": 4,
+   "action": "open_product",
+   "method": "GET",
+   "url": "http://localhost:3100/p/sky-blue-linen-casual-shirt",
+   "status": 200,
+   "duration_ms": 459,
+   "note": "open product page /p/sky-blue-linen-casual-shirt",
+   "screenshot_url": null
+  }
+ ],
+ "network_log": [
+  {
+   "ts": "2026-11-20T12:09:06.372Z",
+   "method": "GET",
+   "url": "http://localhost:3100/robots.txt",
+   "status": 200,
+   "duration_ms": 2182,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-20T12:09:08.861Z",
+   "method": "GET",
+   "url": "http://localhost:3100/",
+   "status": 200,
+   "duration_ms": 463,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-20T12:09:09.626Z",
+   "method": "GET",
+   "url": "http://localhost:3100/search?q=blue%20shirt",
+   "status": 200,
+   "duration_ms": 469,
+   "error_code": null
+  },
+  {
+   "ts": "2026-11-20T12:09:10.398Z",
+   "method": "GET",
+   "url": "http://localhost:3100/p/sky-blue-linen-casual-shirt",
+   "status": 200,
+   "duration_ms": 459,
+   "error_code": null
+  }
+ ],
+ "explanation": "Reproduced B05 (Add to cart is gated by a pincode check): a pincode modal is server-rendered on the product page and blocks interaction (step 4)."
+}

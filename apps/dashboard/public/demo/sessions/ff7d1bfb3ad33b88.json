@@ -1,0 +1,340 @@
+{
+ "session": {
+  "session_id": "ff7d1bfb3ad33b88",
+  "start_ts": "2026-11-08T05:06:26Z",
+  "duration_s": 9.575,
+  "request_count": 21,
+  "page_count": 5,
+  "identity_tier": "verified",
+  "operator": "AgentLens Test Operator",
+  "agent_name": "TestSignedAgent",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 1.0,
+  "entry_page": "/p/ankle-socks-pack-in-white",
+  "exit_page": "/checkout",
+  "max_stage": "S6",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B99",
+  "terminal_blocker_name": "Unknown",
+  "blocker_confidence": 0.3,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "valid",
+  "signature_agent": "https://agents.desithreads.test",
+  "suspicion_score": 0.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 TestSignedAgent/1.0",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "28e68339-fea6-49b4-85df-f20b42e8ac78",
+   "ts": "2026-11-08T05:06:26Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/p/ankle-socks-pack-in-white",
+   "status": 200,
+   "duration_ms": 58,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "439ef9e1-e007-48c1-8e90-c8618cee7a19",
+   "ts": "2026-11-08T05:06:26Z",
+   "offset_ms": 175,
+   "method": "GET",
+   "path": "/_next/static/chunks/main.js",
+   "status": 200,
+   "duration_ms": 12,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "3e13d94e-2134-4509-8ef4-cc7bb35a4e38",
+   "ts": "2026-11-08T05:06:26Z",
+   "offset_ms": 216,
+   "method": "GET",
+   "path": "/img/p/bifold-wallet-in-black-1.svg",
+   "status": 200,
+   "duration_ms": 9,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "262922e2-0f6a-4a77-8f60-ece01a37997d",
+   "ts": "2026-11-08T05:06:26Z",
+   "offset_ms": 352,
+   "method": "GET",
+   "path": "/img/p/indigo-terrain-trail-sneaker-1.svg",
+   "status": 200,
+   "duration_ms": 17,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "b6745fd0-92b6-4c59-8437-aa7b5da5bb98",
+   "ts": "2026-11-08T05:06:26Z",
+   "offset_ms": 365,
+   "method": "GET",
+   "path": "/_next/static/css/app.css",
+   "status": 200,
+   "duration_ms": 13,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "0f5addd0-c7fb-4999-8d6a-25c06d66382d",
+   "ts": "2026-11-08T05:06:26Z",
+   "offset_ms": 396,
+   "method": "GET",
+   "path": "/img/p/teal-half-sleeve-linen-shirt-3.svg",
+   "status": 200,
+   "duration_ms": 9,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "89e69d43-203c-4891-8d20-176af9348d5d",
+   "ts": "2026-11-08T05:06:26Z",
+   "offset_ms": 444,
+   "method": "GET",
+   "path": "/_next/static/chunks/app.js",
+   "status": 200,
+   "duration_ms": 7,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "c15ef3f8-91cf-494d-86d2-cd3c78084be5",
+   "ts": "2026-11-08T05:06:26Z",
+   "offset_ms": 597,
+   "method": "GET",
+   "path": "/favicon.ico",
+   "status": 200,
+   "duration_ms": 14,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "4c276d26-acb6-49e8-801e-3956fcae7f8c",
+   "ts": "2026-11-08T05:06:26Z",
+   "offset_ms": 676,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 7,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "3ce6dce5-1ec0-4401-8173-aeedcf774e52",
+   "ts": "2026-11-08T05:06:27Z",
+   "offset_ms": 1178,
+   "method": "GET",
+   "path": "/api/products/ACC014/variants",
+   "status": 200,
+   "duration_ms": 31,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "c39f94f0-5290-42ff-8d53-069abaedbc02",
+   "ts": "2026-11-08T05:06:28Z",
+   "offset_ms": 1957,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 201,
+   "duration_ms": 18,
+   "page_type": "cart_api",
+   "error_code": null,
+   "stage_id": "S5",
+   "is_asset": false
+  },
+  {
+   "request_id": "cf0f588b-6759-449b-827c-2a4678ce5e07",
+   "ts": "2026-11-08T05:06:30Z",
+   "offset_ms": 3940,
+   "method": "GET",
+   "path": "/cart",
+   "status": 200,
+   "duration_ms": 56,
+   "page_type": "cart",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "61e148e1-01d4-427c-8e6c-198c23d3867f",
+   "ts": "2026-11-08T05:06:30Z",
+   "offset_ms": 4126,
+   "method": "GET",
+   "path": "/img/p/grey-retro-trainer-1.svg",
+   "status": 200,
+   "duration_ms": 23,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "2a4eb6fd-6761-44cf-849f-d6dc09b48523",
+   "ts": "2026-11-08T05:06:30Z",
+   "offset_ms": 4300,
+   "method": "GET",
+   "path": "/img/p/baseball-cap-in-teal-1.svg",
+   "status": 200,
+   "duration_ms": 9,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "4a92c1b4-f769-4eea-87b2-2239629a2d53",
+   "ts": "2026-11-08T05:06:30Z",
+   "offset_ms": 4566,
+   "method": "GET",
+   "path": "/img/p/floral-dobby-kurta-in-white-3.svg",
+   "status": 200,
+   "duration_ms": 19,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "12894822-57fb-46da-8f6c-75a61453128b",
+   "ts": "2026-11-08T05:06:31Z",
+   "offset_ms": 4935,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 11,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "1b62ab34-bf20-46f1-82f9-5478b6d7f56a",
+   "ts": "2026-11-08T05:06:35Z",
+   "offset_ms": 9020,
+   "method": "GET",
+   "path": "/checkout",
+   "status": 200,
+   "duration_ms": 73,
+   "page_type": "checkout",
+   "error_code": null,
+   "stage_id": "S6",
+   "is_asset": false
+  },
+  {
+   "request_id": "bce09064-05e1-43ba-8100-832d14c82d70",
+   "ts": "2026-11-08T05:06:35Z",
+   "offset_ms": 9163,
+   "method": "GET",
+   "path": "/img/p/pink-seersucker-weekend-shirt-3.svg",
+   "status": 200,
+   "duration_ms": 18,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "a1a6b7c0-0a47-4ad5-84e3-d6b0c4250bae",
+   "ts": "2026-11-08T05:06:35Z",
+   "offset_ms": 9442,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 13,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "cab3ca74-46be-4fec-8553-bec6581ee119",
+   "ts": "2026-11-08T05:06:35Z",
+   "offset_ms": 9472,
+   "method": "GET",
+   "path": "/img/p/canvas-tote-bag-in-indigo-3.svg",
+   "status": 200,
+   "duration_ms": 14,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  },
+  {
+   "request_id": "5e669fe2-7fc7-4906-857b-13d219a5a63d",
+   "ts": "2026-11-08T05:06:35Z",
+   "offset_ms": 9575,
+   "method": "GET",
+   "path": "/img/p/white-sprint-knit-runner-2.svg",
+   "status": 200,
+   "duration_ms": 11,
+   "page_type": "asset",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": true
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-08T05:06:26Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-08T05:06:27Z"
+  },
+  {
+   "stage_id": "S5",
+   "first_reached_ts": "2026-11-08T05:06:28Z"
+  },
+  {
+   "stage_id": "S6",
+   "first_reached_ts": "2026-11-08T05:06:35Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B99",
+   "name": "Unknown",
+   "stage": "S6",
+   "confidence": 0.3,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "1b62ab34-bf20-46f1-82f9-5478b6d7f56a",
+     "summary": "GET /checkout -> 200"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}

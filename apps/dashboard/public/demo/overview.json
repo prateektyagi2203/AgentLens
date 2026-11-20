@@ -14,14 +14,14 @@
   "human_conversion": 0.03576487252124646,
   "agent_revenue_inr": 160817.0,
   "risk_inr": {
-   "low": 246307,
-   "base": 461824,
-   "high": 707197
+   "low": 262960,
+   "base": 493050,
+   "high": 788882
   },
-  "risk_pct_of_agent_revenue": 1.3401435586204609,
+  "risk_pct_of_agent_revenue": 1.4307566986077342,
   "identity_coverage": 0.7772430388449639,
   "verified_share": 0.2509453420419388,
-  "diagnosis_coverage": 0.5786318758815233
+  "diagnosis_coverage": 0.6491537376586742
  },
  "kpi_deltas": {
   "agent_sessions": null,
@@ -269,9 +269,9 @@
    "blocker_id": "B10",
    "blocker_name": "Checkout validation failure",
    "title": "Checkout validation failure: Relax and normalise validation (accept +91 variants) and return clear error messages.",
-   "risk_inr_base": 118961,
+   "risk_inr_base": 140976,
    "effort": "S",
-   "priority_score": 118961,
+   "priority_score": 140976,
    "owner": "Eng",
    "status": "open"
   },
@@ -291,9 +291,9 @@
    "blocker_id": "B09",
    "blocker_name": "Size guide is image-only",
    "title": "Size guide is image-only: Provide an HTML table size guide.",
-   "risk_inr_base": 73606,
+   "risk_inr_base": 73782,
    "effort": "S",
-   "priority_score": 73606,
+   "priority_score": 73782,
    "owner": "Content",
    "status": "open"
   }

@@ -1,0 +1,171 @@
+{
+ "session": {
+  "session_id": "651ac095eae7b18a",
+  "start_ts": "2026-11-08T16:52:20Z",
+  "duration_s": 4.524,
+  "request_count": 8,
+  "page_count": 5,
+  "identity_tier": "suspected",
+  "operator": "unknown",
+  "agent_name": "unknown",
+  "agent_class": "browsing_agent",
+  "identity_confidence": 0.65,
+  "entry_page": "/p/bandhani-flared-kurta-in-sky-blue",
+  "exit_page": "/checkout",
+  "max_stage": "S6",
+  "converted": false,
+  "order_value_inr": null,
+  "terminal_blocker_id": "B99",
+  "terminal_blocker_name": "Unknown",
+  "blocker_confidence": 0.3,
+  "diagnosis_method": "rule"
+ },
+ "identity": {
+  "signature_status": "none",
+  "signature_agent": null,
+  "suspicion_score": 65.0,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36",
+  "ip_match": null
+ },
+ "requests": [
+  {
+   "request_id": "b18c8098-8a98-493f-8514-43e7a4677b6f",
+   "ts": "2026-11-08T16:52:20Z",
+   "offset_ms": 0,
+   "method": "GET",
+   "path": "/p/bandhani-flared-kurta-in-sky-blue",
+   "status": 200,
+   "duration_ms": 215,
+   "page_type": "pdp",
+   "error_code": null,
+   "stage_id": "S2",
+   "is_asset": false
+  },
+  {
+   "request_id": "f439ee38-c640-4c1d-8557-7dc8d926bac3",
+   "ts": "2026-11-08T16:52:21Z",
+   "offset_ms": 951,
+   "method": "GET",
+   "path": "/api/products/KRT004/variants",
+   "status": 200,
+   "duration_ms": 38,
+   "page_type": "variant_api",
+   "error_code": null,
+   "stage_id": "S3",
+   "is_asset": false
+  },
+  {
+   "request_id": "00d96441-499e-4cfe-82a9-a438106309ca",
+   "ts": "2026-11-08T16:52:21Z",
+   "offset_ms": 1270,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 9,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "b92f7940-630d-4725-8f9b-c85fef07e88f",
+   "ts": "2026-11-08T16:52:22Z",
+   "offset_ms": 1745,
+   "method": "POST",
+   "path": "/api/cart",
+   "status": 201,
+   "duration_ms": 31,
+   "page_type": "cart_api",
+   "error_code": null,
+   "stage_id": "S5",
+   "is_asset": false
+  },
+  {
+   "request_id": "5e10d241-9dd2-48f7-8518-c11929ae8b47",
+   "ts": "2026-11-08T16:52:23Z",
+   "offset_ms": 2393,
+   "method": "GET",
+   "path": "/cart",
+   "status": 200,
+   "duration_ms": 79,
+   "page_type": "cart",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "16ec98fe-190a-47c9-8840-902da15cf357",
+   "ts": "2026-11-08T16:52:24Z",
+   "offset_ms": 3499,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 6,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  },
+  {
+   "request_id": "ee8f9f63-9e4a-416d-8615-9ed7226f6bf5",
+   "ts": "2026-11-08T16:52:24Z",
+   "offset_ms": 4003,
+   "method": "GET",
+   "path": "/checkout",
+   "status": 200,
+   "duration_ms": 151,
+   "page_type": "checkout",
+   "error_code": null,
+   "stage_id": "S6",
+   "is_asset": false
+  },
+  {
+   "request_id": "7a527999-e55b-43ff-8b54-45d8de5c2112",
+   "ts": "2026-11-08T16:52:25Z",
+   "offset_ms": 4524,
+   "method": "POST",
+   "path": "/api/beacon",
+   "status": 204,
+   "duration_ms": 9,
+   "page_type": "beacon",
+   "error_code": null,
+   "stage_id": null,
+   "is_asset": false
+  }
+ ],
+ "stage_events": [
+  {
+   "stage_id": "S2",
+   "first_reached_ts": "2026-11-08T16:52:20Z"
+  },
+  {
+   "stage_id": "S3",
+   "first_reached_ts": "2026-11-08T16:52:21Z"
+  },
+  {
+   "stage_id": "S5",
+   "first_reached_ts": "2026-11-08T16:52:22Z"
+  },
+  {
+   "stage_id": "S6",
+   "first_reached_ts": "2026-11-08T16:52:24Z"
+  }
+ ],
+ "fired_rules": [
+  {
+   "blocker_id": "B99",
+   "name": "Unknown",
+   "stage": "S6",
+   "confidence": 0.3,
+   "is_terminal": true,
+   "evidence": [
+    {
+     "type": "request",
+     "request_id": "ee8f9f63-9e4a-416d-8615-9ed7226f6bf5",
+     "summary": "GET /checkout -> 200"
+    }
+   ]
+  }
+ ],
+ "replay_ids": []
+}
