@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import logging
+import os
 from typing import Any
 
 from fastapi import FastAPI, Request
@@ -11,21 +12,31 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from starlette.exceptions import HTTPException as StarletteHTTPException
 
-from . import __version__
+from . import __version__, settings
 from .routers import router
 from .routers.deps import ApiError
 
 log = logging.getLogger("agentlens.api")
 
 app = FastAPI(title="AgentLens API", version=__version__)
+# Extra browser origins (comma separated), e.g. https://agentlens.ptlabs.in for a public deployment.
+_extra_origins = [o.strip().rstrip("/") for o in os.getenv("AGENTLENS_CORS_ORIGINS", "").split(",") if o.strip()]
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3101", "http://127.0.0.1:3101"],
+    allow_origins=["http://localhost:3101", "http://127.0.0.1:3101", *_extra_origins],
     allow_methods=["*"],
     allow_headers=["*"],
     expose_headers=["Content-Disposition"],
 )
 app.include_router(router, prefix="/api")
+
+
+@app.middleware("http")
+async def read_only_in_demo(request: Request, call_next: Any) -> Any:
+    # Public deployments run with DEMO_MODE=1: no pipeline/LLM/replay runs, annotations or settings edits.
+    if settings.demo_mode() and request.method not in ("GET", "HEAD", "OPTIONS"):
+        return _error(403, "demo_mode", "This public demo is read-only")
+    return await call_next(request)
 
 CODES = {400: "bad_request", 404: "not_found", 405: "method_not_allowed", 409: "run_in_progress", 501: "not_implemented"}
 

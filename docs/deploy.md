@@ -58,6 +58,51 @@ docker compose run --rm api agentlens run-all
 docker compose up
 ```
 
+## 4. Full public stack on your own domain (VPS + Caddy)
+
+`docker-compose.prod.yml` runs the store, the API and the dashboard behind Caddy, which gets HTTPS certificates
+automatically. The public API is **read-only** (`DEMO_MODE=1`: every non-GET request returns 403) and the store has
+`/admin` disabled, so visitors cannot trigger pipeline or LLM runs. The server does not need an OpenAI key: you generate
+the data on your machine and upload it.
+
+| URL | Service |
+|---|---|
+| `https://<domain>` | dashboard |
+| `https://api.<domain>` | API |
+| `https://store.<domain>` | Desi Threads store (a visitor's session is logged to its own volume, not to the demo data) |
+
+**1. Generate the data locally** (optionally with the real LLM classifier: put `AGENTLENS_LLM_PROVIDER=openai` and
+`OPENAI_API_KEY=...` in your local `.env` first; the key never leaves your machine):
+
+```powershell
+./tasks.ps1 demo          # writes data/demo/agentlens.duckdb (about 8 minutes)
+```
+
+**2. Server.** A VPS with 2 vCPU / 4 GB RAM, Docker and the Compose plugin; ports 80 and 443 open.
+Add DNS A records for `<domain>`, `api.<domain>` and `store.<domain>` (or one `*.<domain>` record) pointing at the server.
+
+**3. Deploy.**
+
+```bash
+git clone https://github.com/prateektyagi2203/AgentLens.git && cd AgentLens
+cp .env.production.example .env      # set AGENTLENS_DOMAIN, AGENTLENS_IP_SALT, AGENTLENS_ADMIN_PASSWORD (openssl rand -hex 24)
+mkdir -p data
+# from your machine:  scp -r data/demo user@server:~/AgentLens/data/demo
+docker compose -f docker-compose.prod.yml up -d --build
+docker compose -f docker-compose.prod.yml ps        # all services should become "healthy"
+```
+
+The dashboard bakes the API URL in at build time. If you change `AGENTLENS_DOMAIN`, rebuild with `--build`.
+
+**4. Check.** Open `https://<domain>` (eight pages, no error banner), `https://api.<domain>/health` (`"demo_mode": true`),
+`https://store.<domain>/robots.txt`, and confirm `curl -X POST https://api.<domain>/api/pipeline/run` returns 403.
+
+**To refresh the data:** regenerate locally, `scp` the new `data/demo`, then
+`docker compose -f docker-compose.prod.yml restart api`.
+
+**Cost control if you do enable the LLM locally:** set a monthly spend limit on the OpenAI project;
+`AGENTLENS_LLM_MAX_SESSIONS` caps sessions classified per run.
+
 ## Recording the demo video (60 to 90 seconds)
 
 Use [demo-script.md](demo-script.md) for the flow and wording. Setup checklist:

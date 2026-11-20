@@ -1,0 +1,26 @@
+(security_headers) {
+	header {
+		Strict-Transport-Security "max-age=31536000"
+		X-Content-Type-Options "nosniff"
+		Referrer-Policy "strict-origin-when-cross-origin"
+		-Server
+	}
+}
+
+{$AGENTLENS_DOMAIN} {
+	encode zstd gzip
+	import security_headers
+	reverse_proxy dashboard:3101
+}
+
+api.{$AGENTLENS_DOMAIN} {
+	encode zstd gzip
+	import security_headers
+	reverse_proxy api:8100
+}
+
+store.{$AGENTLENS_DOMAIN} {
+	encode zstd gzip
+	import security_headers
+	reverse_proxy store:3100
+}

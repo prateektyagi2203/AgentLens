@@ -170,12 +170,14 @@ function FilterBar() {
 
 function TopBar() {
   const { filters } = useFilters();
+  const { meta } = useMeta();
+  const synthetic = IS_DEMO || (!IS_MOCK && !!meta?.demo_mode);
   return (
     <div className="sticky top-0 z-20 border-b border-border bg-background/95 backdrop-blur">
       <div className="flex flex-wrap items-center justify-between gap-3 px-6 py-3">
         <FilterBar />
         <div className="flex items-center gap-2">
-          {(IS_DEMO || IS_MOCK) && <Badge tone="warning" className="h-9 px-3" data-testid="demo-badge">{IS_DEMO ? "Demo data (synthetic)" : "Mock data"}</Badge>}
+          {(synthetic || IS_MOCK) && <Badge tone="warning" className="h-9 px-3" data-testid="demo-badge">{synthetic ? "Demo data (synthetic)" : "Mock data"}</Badge>}
           <RunChip />
           <StoryToggle />
           <ThemeToggle />

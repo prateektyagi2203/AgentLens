@@ -1,10 +1,18 @@
+import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import "./globals.css";
 import { THEME_INIT_SCRIPT } from "@/lib/theme-script";
 
-export const metadata = {
-  title: "AgentLens - Agent Readiness",
-  description: "See how AI shopping agents experience your store, what blocks them, and what to fix first.",
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://agentlens.ptlabs.in";
+const TITLE = "AgentLens - Agent Readiness";
+const DESCRIPTION = "See how AI shopping agents experience your store, what blocks them, and what to fix first.";
+
+export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
+  title: TITLE,
+  description: DESCRIPTION,
+  openGraph: { title: TITLE, description: DESCRIPTION, url: "/", siteName: "AgentLens", type: "website", images: [{ url: "/og.png", width: 1200, height: 630, alt: "AgentLens dashboard" }] },
+  twitter: { card: "summary_large_image", title: TITLE, description: DESCRIPTION, images: ["/og.png"] },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

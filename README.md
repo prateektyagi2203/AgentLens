@@ -32,8 +32,10 @@ replay, and puts a rupee value on it.
 The demo store is **Desi Threads**, a Next.js shop in `apps/store` with toggleable friction (`/admin`) that produces
 realistic blockers.
 
-- Live demo: not published yet. Build and deploy the static demo with [docs/deploy.md](docs/deploy.md).
-- Demo video: not published yet. A 5-minute walkthrough script is in [docs/demo-script.md](docs/demo-script.md).
+- Live demo: <https://agentlens.ptlabs.in> (read-only, synthetic data; the store is at <https://store.agentlens.ptlabs.in>).
+  To host your own copy: [docs/deploy.md](docs/deploy.md).
+- Demo video: not published yet. A 60-90 second shot list is in [docs/launch/video-script.md](docs/launch/video-script.md) and
+  a 5-minute walkthrough script in [docs/demo-script.md](docs/demo-script.md).
 
 ## Quick start
 

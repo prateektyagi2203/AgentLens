@@ -2,6 +2,16 @@
 
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versions follow the milestones in the PRD.
 
+## [Unreleased]
+
+### Added
+- Public deployment: `docker-compose.prod.yml` (Caddy + HTTPS, store, API, dashboard), `deploy/Caddyfile`,
+  `.env.production.example`, container health checks and `.dockerignore`; guide in `docs/deploy.md` section 4.
+- API: `DEMO_MODE=1` now rejects every non-GET request with 403 (`demo_mode`); `AGENTLENS_CORS_ORIGINS` adds allowed origins.
+- Dashboard: Open Graph / Twitter card metadata and `og.png`; the "Demo data (synthetic)" badge also shows when the live API
+  reports `demo_mode`.
+- Launch material in `docs/launch/` (60-90 s video shot list, LinkedIn post drafts).
+
 ## [1.0.0] - 2026-11-18
 
 First complete release (milestones M0 to M6).

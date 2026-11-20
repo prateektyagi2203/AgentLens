@@ -107,6 +107,15 @@ def test_error_shapes(client: TestClient) -> None:
     assert_error(client.get("/api/overview", params={"from": "yesterday"}).json(), "validation_error", fields=True)
 
 
+def test_demo_mode_is_read_only(client: TestClient, monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.setenv("DEMO_MODE", "1")
+    r = client.post("/api/pipeline/run", json={})
+    assert r.status_code == 403
+    assert_error(r.json(), "demo_mode")
+    assert client.put("/api/settings", json={}).status_code == 403
+    assert client.get("/api/meta").status_code == 200
+
+
 # ---------------------------------------------------------------- overview / funnel / compare
 def test_overview(client: TestClient, bounds: dict[str, str]) -> None:
     o = get(client, "/overview")

@@ -1,0 +1,52 @@
+# Public deployment: Caddy (HTTPS) -> dashboard / read-only API / store. See docs/deploy.md section 4.
+# Needs a .env next to this file (cp .env.production.example .env) and the generated data in ./data/demo.
+name: agentlens
+services:
+  caddy:
+    image: caddy:2
+    restart: unless-stopped
+    ports: ["80:80", "443:443"]
+    environment:
+      AGENTLENS_DOMAIN: ${AGENTLENS_DOMAIN:?set AGENTLENS_DOMAIN in .env}
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on: [dashboard, api, store]
+
+  store:
+    build: { context: ., dockerfile: docker/store.Dockerfile }
+    restart: unless-stopped
+    env_file: [.env]
+    environment:
+      DEMO_MODE: "1"
+      AGENTLENS_DATA_DIR: /app/data
+    volumes: ["store_data:/app/data"]
+    expose: ["3100"]
+
+  api:
+    build: { context: ., dockerfile: docker/api.Dockerfile }
+    restart: unless-stopped
+    env_file: [.env]
+    environment:
+      DEMO_MODE: "1"
+      AGENTLENS_DATA_DIR: /app/data
+      AGENTLENS_CORS_ORIGINS: https://${AGENTLENS_DOMAIN}
+    volumes: ["./data/demo:/app/data"]
+    expose: ["8100"]
+
+  dashboard:
+    build:
+      context: .
+      dockerfile: docker/dashboard.Dockerfile
+      args:
+        NEXT_PUBLIC_API_URL: "https://api.${AGENTLENS_DOMAIN}/api"
+        NEXT_PUBLIC_SITE_URL: "https://${AGENTLENS_DOMAIN}"
+    restart: unless-stopped
+    depends_on: [api]
+    expose: ["3101"]
+
+volumes:
+  caddy_data:
+  caddy_config:
+  store_data:

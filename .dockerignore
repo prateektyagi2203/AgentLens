@@ -1,0 +1,17 @@
+.git
+.github
+.venv
+.env
+.env.*
+!.env.example
+**/node_modules
+**/.next
+**/out
+**/test-results
+**/playwright-report
+**/*.tsbuildinfo
+data
+data_smoke
+data_perf
+docs/screenshots
+*.docx
